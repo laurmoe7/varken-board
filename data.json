@@ -1083,7 +1083,15 @@
       "scope": "petshopper",
       "text": "make layout look more like an old tome with turning pages, still dark to not hurt eyes",
       "created": 1791244688318,
-      "updated": 1791244688318
+      "updated": 1791244755845,
+      "deleted": true
+    },
+    {
+      "id": "muvwvppsowcoe",
+      "scope": "pathfinder",
+      "text": "make layout look more like an old tome with turning pages, still dark to not hurt eyes",
+      "created": 1791244759024,
+      "updated": 1791244759024
     }
   ],
   "images": {
