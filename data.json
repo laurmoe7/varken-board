@@ -337,12 +337,12 @@
       "type": "fix",
       "priority": "soon",
       "status": "open",
-      "title": "fix pretzel, bacon emoji",
-      "notes": "",
+      "title": "fix pretzel, bacon emoji transparency",
+      "notes": "sp",
       "build": "",
       "images": [],
       "created": 1791234319501,
-      "updated": 1791234339205
+      "updated": 1791234744049
     },
     {
       "id": "muvqo5c7zv9xz",
