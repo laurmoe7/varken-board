@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T21:05:13.082Z_
+_Updated 2026-10-05T21:05:23.705Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **fix pretzel, bacon emoji** `muvqnyj1pqh6u`
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
 - [ ] 💡 **color variations for skins !soemday** `muvqmyc8968to`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
