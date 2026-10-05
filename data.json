@@ -7,7 +7,9 @@
       "emoji": "🐹",
       "color": "#ff9ec7",
       "repo": "https://github.com/laurmoe7/pet-shopper",
-      "updated": 1791231689099
+      "updated": 1791236179661,
+      "gallery": "Cosmetics",
+      "slots": "Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy"
     },
     {
       "id": "funfx",
@@ -37,6 +39,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791224356717,
       "updated": 1791232442463
     },
@@ -52,6 +56,8 @@
       "images": [
         "muvkreo7u0x0q"
       ],
+      "gallery": false,
+      "slot": "",
       "created": 1791224395357,
       "updated": 1791232240255,
       "deleted": true
@@ -66,6 +72,8 @@
       "notes": "All 15 comic_*.tga are registered but unused; every trigger still defaults to popup.tga. The suggested next step in funFX CLAUDE.md.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791232246102,
       "deleted": true
@@ -80,6 +88,8 @@
       "notes": "/funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791231087088
     },
@@ -93,6 +103,8 @@
       "notes": "Visual of missing files works with /funfx missingtest; detection needs /funfx assetcheck in game.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791231087088
     },
@@ -106,6 +118,8 @@
       "notes": "Built but never confirmed in game.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791231087088
     },
@@ -119,6 +133,8 @@
       "notes": "First /funfx fishlog showed no event at the bite. Needs a longer recording that runs past the cast.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791232251156,
       "deleted": true
@@ -133,6 +149,8 @@
       "notes": "In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791231087088
     },
@@ -146,6 +164,8 @@
       "notes": "Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791231087088
     },
@@ -159,6 +179,8 @@
       "notes": "Not supported yet.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791231087088
     },
@@ -172,6 +194,8 @@
       "notes": "Not modelled yet.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087088,
       "updated": 1791231087088
     },
@@ -185,6 +209,8 @@
       "notes": "They are shown as plain text instead (proficiencies, deeds, bonus spells).",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087089,
       "updated": 1791231087089
     },
@@ -198,6 +224,8 @@
       "notes": "All pet data already lives in state.pet, so this stays possible.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087089,
       "updated": 1791231087089
     },
@@ -211,6 +239,8 @@
       "notes": "Swap the Voice object in app-voice.js for the phone's own recognition.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087089,
       "updated": 1791231087089
     },
@@ -224,6 +254,8 @@
       "notes": "The dressing room tests the idea; no payments yet.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087089,
       "updated": 1791231087089
     },
@@ -237,6 +269,8 @@
       "notes": "They still use CSS scale/rotate. Firefox-only seam is acceptable; move to svgSquish if it shows in Chrome or Safari.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791231087089,
       "updated": 1791232281974
     },
@@ -250,6 +284,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791232417546,
       "updated": 1791232434599
     },
@@ -263,6 +299,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791232459489,
       "updated": 1791232459489
     },
@@ -276,6 +314,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791234248146,
       "updated": 1791234248146
     },
@@ -289,6 +329,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791234260378,
       "updated": 1791234260378
     },
@@ -302,6 +344,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791234272600,
       "updated": 1791234272600
     },
@@ -315,6 +359,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791234285463,
       "updated": 1791234285463
     },
@@ -328,6 +374,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791234308675,
       "updated": 1791234343261
     },
@@ -341,6 +389,8 @@
       "notes": "space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791234319501,
       "updated": 1791234774742
     },
@@ -354,6 +404,8 @@
       "notes": "",
       "build": "",
       "images": [],
+      "gallery": false,
+      "slot": "",
       "created": 1791234328327,
       "updated": 1791234453982
     }
