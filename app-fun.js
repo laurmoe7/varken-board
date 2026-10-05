@@ -64,7 +64,8 @@ function confetti(x, y) {
 }
 
 // Called when something gets checked off; `el` is the card, so the confetti pops out of its tick.
-function celebrate(el) {
+function celebrate(el, allClear) {
+  pigCheer(allClear); // the pig cheers even with sound off
   if (!fun.on) return;
   chime();
   const box = el && (el.querySelector('.check') || el).getBoundingClientRect();

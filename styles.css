@@ -282,7 +282,7 @@ dialog { border-radius: 26px; }
 .top { background: linear-gradient(120deg, #3a2a6a99, #5a2a5a66); border: 1px solid var(--line); border-radius: 30px; padding: 14px 24px 14px 16px; position: relative; overflow: hidden; align-items: center; }
 .top::before { content: '✦  ♡  ✧'; position: absolute; right: 18px; top: 8px; color: #ffffff22; letter-spacing: .6em; font-size: 14px; pointer-events: none; }
 .hero { display: flex; align-items: center; gap: 16px; min-width: 0; }
-.hero-pig { flex: none; width: 104px; height: 100px; }
+.hero-pig { flex: none; }
 .hero-pig .pig { width: 100%; height: 100%; animation: bob 4s ease-in-out infinite; filter: drop-shadow(0 6px 10px #0005); }
 .pig .ear-l { transform-box: view-box; transform-origin: 30px 24px; animation: wiggle-l 5s ease-in-out infinite; }
 .pig .ear-r { transform-box: view-box; transform-origin: 50px 24px; animation: wiggle-r 5s ease-in-out infinite 1.2s; }
@@ -347,3 +347,56 @@ dialog { border-radius: 26px; }
 .confetti { position: fixed; inset: 0; pointer-events: none; z-index: 60; }
 .check-row { display: flex !important; align-items: center; gap: 10px; color: var(--text) !important; }
 .check-row input { width: auto !important; margin: 0 !important; accent-color: var(--pink); }
+
+/* the pig's floating hooves and what he does with them */
+.hero-pig { position: relative; width: 112px; height: 112px; }
+.hoof { transform-box: fill-box; transform-origin: center; }
+.hoof-in { animation: hoof-float 3.2s ease-in-out infinite; }
+.hoof-r .hoof-in { animation-delay: -1.6s; }
+@keyframes hoof-float { 50% { translate: 0 -2.2px; } }
+.pig.act-wave .hoof-r { animation: hoof-wave 1.6s ease-in-out; }
+@keyframes hoof-wave {
+  0%, 100% { translate: 0 0; rotate: 0deg; }
+  15%, 85% { translate: 27px -22px; rotate: 0deg; }
+  28% { translate: 27px -22px; rotate: -24deg; } 42% { translate: 27px -22px; rotate: 20deg; }
+  56% { translate: 27px -22px; rotate: -24deg; } 70% { translate: 27px -22px; rotate: 18deg; }
+}
+.pig.act-cheer { animation: pig-hop .55s ease-out 2; }
+.pig.act-cheer .hoof-l { animation: cheer-l 1.1s ease-in-out; }
+.pig.act-cheer .hoof-r { animation: cheer-r 1.1s ease-in-out; }
+@keyframes cheer-l { 0%, 100% { translate: 0 0; } 20%, 80% { translate: -19px -40px; rotate: -20deg; } 50% { translate: -19px -46px; rotate: 10deg; } }
+@keyframes cheer-r { 0%, 100% { translate: 0 0; } 20%, 80% { translate: 19px -40px; rotate: 20deg; } 50% { translate: 19px -46px; rotate: -10deg; } }
+@keyframes pig-hop { 0%, 100% { transform: translateY(0); } 45% { transform: translateY(-12px); } }
+.pig.act-hop { animation: pig-hop .5s ease-out 2; }
+.pig.act-clap .hoof-l { animation: clap-l 1.3s ease-in-out; }
+.pig.act-clap .hoof-r { animation: clap-r 1.3s ease-in-out; }
+@keyframes clap-l { 0%, 100% { translate: 0 0; } 12% { translate: 4px -9px; } 25%, 55%, 85% { translate: 16px -9px; } 40%, 70% { translate: 6px -9px; } }
+@keyframes clap-r { 0%, 100% { translate: 0 0; } 12% { translate: -4px -9px; } 25%, 55%, 85% { translate: -16px -9px; } 40%, 70% { translate: -6px -9px; } }
+.pig.act-shy .hoof-l { animation: shy-l 1.8s ease-in-out; }
+.pig.act-shy .hoof-r { animation: shy-r 1.8s ease-in-out; }
+@keyframes shy-l { 0%, 100% { translate: 0 0; } 20%, 75% { translate: 6px -36px; } }
+@keyframes shy-r { 0%, 100% { translate: 0 0; } 20%, 75% { translate: -6px -36px; } }
+.heart { position: absolute; left: 50%; bottom: 40%; font-size: 16px; color: var(--pink); pointer-events: none; animation: heart-up 1.3s ease-out forwards; }
+@keyframes heart-up { from { opacity: 1; transform: translate(0, 0) scale(.6); } to { opacity: 0; transform: translate(var(--dx), -70px) scale(1.2); } }
+.keys { border-collapse: collapse; width: 100%; margin: 8px 0 12px; }
+.keys td { padding: 5px 4px; border-bottom: 1px dashed var(--line); }
+.keys td:first-child { white-space: nowrap; width: 38%; }
+kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 7px; padding: 0 7px; font: 700 12px/1.6 inherit; color: var(--butter); }
+@media (prefers-reduced-motion: reduce) { .hoof-in, .heart { animation: none !important; } }
+
+.pig { overflow: visible; }
+
+/* notes pages */
+.notes { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; align-items: start; }
+.note { background: linear-gradient(160deg, #3a2f66, var(--card)); border: 1px solid var(--line); border-radius: 22px; padding: 12px 14px 10px; box-shadow: 0 4px 12px #0003; transition: transform .15s; }
+.note:nth-child(3n+2) { background: linear-gradient(160deg, #4a2f5e, var(--card)); }
+.note:nth-child(3n) { background: linear-gradient(160deg, #2f4a5e, var(--card)); }
+.note:focus-within { border-color: var(--lav); transform: translateY(-2px); }
+.note textarea { width: 100%; background: transparent; border: 0; box-shadow: none; padding: 2px 0; resize: none; overflow: hidden; line-height: 1.45; min-height: 52px; }
+.note textarea:focus { outline: none; box-shadow: none; }
+.note-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 6px; }
+.note-btns { display: flex; gap: 6px; opacity: 0; transition: opacity .12s; }
+.note:hover .note-btns, .note:focus-within .note-btns { opacity: 1; }
+.ghost.small { padding: 3px 11px; font-size: 12px; }
+.note-foot .muted { white-space: nowrap; }
+.note-btns button { white-space: nowrap; }

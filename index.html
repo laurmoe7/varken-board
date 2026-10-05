@@ -25,6 +25,7 @@
       <button class="hint-btn" id="cleanHint" hidden></button>
       <div class="side-foot">
         <button class="pill" id="syncPill" title="Sync with GitHub"></button>
+        <button class="ghost icon" id="helpBtn" title="Shortcuts ( ? )" aria-label="Shortcuts">?</button>
         <button class="ghost icon" id="settingsBtn" title="Sync and backup" aria-label="Sync and backup">⚙️</button>
       </div>
     </div>
@@ -148,6 +149,26 @@
   </div>
 </dialog>
 
+<dialog id="helpDlg">
+  <div class="dlg">
+    <h2>Shortcuts</h2>
+    <table class="keys">
+      <tr><td><kbd>N</kbd></td><td>New item</td></tr>
+      <tr><td><kbd>/</kbd></td><td>Search</td></tr>
+      <tr><td><kbd>?</kbd></td><td>This list</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>Close the panel or leave a box</td></tr>
+      <tr><td><kbd>Tab</kbd></td><td>From the title line, jump to the notes</td></tr>
+      <tr><td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td><td>Add the new item from the panel</td></tr>
+      <tr><td><kbd>Alt</kbd> + <kbd>↑</kbd> <kbd>↓</kbd></td><td>Move a focused card</td></tr>
+      <tr><td><kbd>Ctrl</kbd> + <kbd>V</kbd></td><td>Paste a picture</td></tr>
+    </table>
+    <p class="muted small">In the title line, type these anywhere:</p>
+    <p><code>#project</code> <code>!now</code> <code>!soon</code> <code>!someday</code> <code>:idea</code> <code>:fix</code> <code>:bug</code> <code>~easy</code> <code>~medium</code> <code>~hard</code></p>
+    <p class="muted small">Click the pig to make it wave, clap or hide. 🐷</p>
+    <div class="row end"><button class="ghost" id="helpClose">Close</button></div>
+  </div>
+</dialog>
+
 <dialog id="compareDlg">
   <div class="cmp-wrap">
     <div class="cmp-head"><h2>⚖ Side by side</h2><button class="ghost" id="cmpClose">Close</button></div>
@@ -170,6 +191,7 @@
 <script src="app-pig.js"></script>
 <script src="app-gallery.js"></script>
 <script src="app-compare.js"></script>
+<script src="app-notes.js"></script>
 <script src="app-fun.js"></script>
 <script src="app-reorder.js"></script>
 <script src="app-annotate.js"></script>

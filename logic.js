@@ -46,6 +46,7 @@
         { id: 'pathfinder', name: 'Pathfinder sheet', emoji: '🎲', color: COLORS[2], repo: 'https://github.com/laurmoe7/pathfinder-sheet', updated: now },
       ],
       items: [],
+      notes: [],
       images: {},
     };
   }
@@ -53,10 +54,23 @@
   function createItem(fields) {
     const now = Date.now();
     return Object.assign(
-      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', effort: '', images: [], gallery: false, slot: '', created: now, updated: now },
+      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', effort: '', doneAt: 0, images: [], gallery: false, slot: '', created: now, updated: now },
       fields
     );
   }
+
+  // Loose notes: free text with no type or priority. `scope` is '' for the general page or a project id for
+  // that project's gallery notes.
+  const createNote = (fields) => {
+    const now = Date.now();
+    return Object.assign({ id: uid(), scope: '', text: '', created: now, updated: now }, fields);
+  };
+  const liveNotes = (state, scope, q) => {
+    const needle = String(q || '').trim().toLowerCase();
+    return (state.notes || [])
+      .filter((n) => !n.deleted && (n.scope || '') === (scope || '') && (!needle || n.text.toLowerCase().includes(needle)))
+      .sort((a, b) => b.created - a.created);
+  };
 
   const liveProjects = (state) => state.projects.filter((p) => !p.deleted);
 // "Hat, Clothes, Face" -> ['Hat', 'Clothes', 'Face'] (trimmed, no repeats, at most 24).
@@ -175,6 +189,12 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     Array.from(counts.keys()).filter((x) => !order.includes(x)).sort().forEach((x) => order.push(x));
     return order.map((slot) => ({ slot, count: counts.get(slot) }));
   }
+  // How many things were checked off today (since local midnight), for one project or 'all'.
+  function doneToday(items, now, project) {
+    const d = new Date(now == null ? Date.now() : now);
+    d.setHours(0, 0, 0, 0);
+    return items.filter((i) => !i.deleted && i.status === 'done' && i.doneAt >= d.getTime() && (!project || project === 'all' || i.project === project)).length;
+  }
   const countGallery = (items, project) => items.filter((i) => !i.deleted && i.gallery && i.project === project).length;
 
   // Newer `updated` wins per item and per project; deletions are kept as `deleted: true` so they sync too.
@@ -193,6 +213,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       v: 1,
       projects: mergeById(local.projects, remote.projects),
       items: mergeById(local.items, remote.items),
+      notes: mergeById(local.notes, remote.notes),
       images: Object.assign({}, remote.images, local.images),
     };
   }
@@ -204,7 +225,8 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     const items = obj.items
       .filter((i) => i && i.id)
       .map((i) => createItem(Object.assign({}, i, { images: Array.isArray(i.images) ? i.images : [] })));
-    return { v: 1, projects, items, images: obj.images && typeof obj.images === 'object' ? obj.images : {} };
+    const notes = Array.isArray(obj.notes) ? obj.notes.filter((n) => n && n.id).map((n) => createNote(Object.assign({}, n, { text: String(n.text || '') }))) : [];
+    return { v: 1, projects, items, notes, images: obj.images && typeof obj.images === 'object' ? obj.images : {} };
   }
 
   function fitSize(w, h, max) {
@@ -283,14 +305,26 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
         }
         out.push('');
       }
+      const pnotes = liveNotes(state, p.id);
+      if (p.gallery && pnotes.length) {
+        out.push('### ' + p.gallery + ' notes', '');
+        pnotes.forEach((n) => out.push('- ' + n.text.replace(/\n/g, '\n  ')));
+        out.push('');
+      }
+    }
+    const general = liveNotes(state, '');
+    if (general.length) {
+      out.push('## 📝 Notes', '');
+      general.forEach((n) => out.push('- ' + n.text.replace(/\n/g, '\n  ')));
+      out.push('');
     }
     return out.join('\n');
   }
 
   const api = {
     TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
-    uid, slug, typeOf, effortOf, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
-    filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery,
+    uid, slug, typeOf, effortOf, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
+    filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday,
     mergeStates, validateState, fitSize, projectName, copyForClaude, boardMarkdown,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

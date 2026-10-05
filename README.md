@@ -18,6 +18,9 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - The pig in the header changes mood with the board (sleeping when clear, worried at too many Nows) and shows up in empty lists.
 - A quiet "N unused pictures" button appears in the sidebar.
 - Checking something off plays a soft chime and pops confetti (switch off in Options). The details panel slides over the page instead of squeezing the list.
+- The pig has little floating hooves: click him and he waves, hops, claps or hides his eyes; he cheers and sends hearts when you check something off, and says so when the whole list is clear.
+- The header says how many things you checked off today. `?` opens a shortcut sheet.
+- Notes pages: a loose-thoughts page (sidebar, Notes) and one for each gallery (Cosmetics, Notes) with no categories; "→ Task" or "→ Card" turns a note into a real item.
 - Keys: `N` new item, `/` search, `Esc` close.
 
 Plain web app, no build step, no dependencies. Open it over http (for example `python3 -m http.server`) or from GitHub Pages. `npm test` runs the logic and sync tests.
