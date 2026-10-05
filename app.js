@@ -461,6 +461,7 @@ function toggleDone(id) {
   if (!it) return;
   const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"], .gcard[data-id="${CSS.escape(id)}"]`);
   setField(it, 'status', it.status === 'done' ? 'open' : 'done');
+  if (it.status === 'done') celebrate(card);
   if (it.status === 'done' && ui.status === 'active' && card && !galleryProject()) {
     card.classList.add('done', 'sparkle');
     setTimeout(() => renderAll(true), 450);

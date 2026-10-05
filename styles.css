@@ -34,7 +34,6 @@ code { background: var(--bg2); border: 1px solid var(--line); border-radius: 8px
 hr { border: 0; border-top: 1px dashed var(--line); margin: 14px 0; }
 
 .app { display: grid; grid-template-columns: 250px 1fr; height: 100%; position: relative; }
-.app.has-detail { grid-template-columns: 250px 1fr 440px; }
 
 /* sidebar */
 .side { background: var(--bg2); border-right: 1px solid var(--line); padding: 18px 14px; display: flex; flex-direction: column; gap: 10px; overflow: auto; }
@@ -123,7 +122,8 @@ input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: n
 .empty b { display: block; color: var(--text); font-size: 18px; margin: 8px 0 2px; }
 
 /* detail */
-.detail { background: var(--bg2); border-left: 1px solid var(--line); padding: 18px 20px 40px; overflow: auto; }
+.detail { background: var(--bg2); border-left: 1px solid var(--line); padding: 18px 20px 40px; overflow: auto; position: fixed; top: 0; right: 0; bottom: 0; width: 440px; max-width: 100vw; z-index: 5; animation: slide-in .22s cubic-bezier(.2,.9,.3,1.1); }
+@keyframes slide-in { from { transform: translateX(40px); opacity: 0; } }
 .detail[hidden] { display: none; }
 .detail h3 { margin: 0 0 12px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .detail label, .dlg label { display: block; margin: 12px 0 0; color: var(--muted); font-size: 13px; font-weight: 700; }
@@ -221,7 +221,7 @@ dialog::backdrop { background: #0b0816cc; backdrop-filter: blur(3px); }
   .app, .app.has-detail { grid-template-columns: 1fr; height: auto; }
   .side { flex-direction: row; flex-wrap: wrap; align-items: center; }
   #projects { flex-direction: row; flex-wrap: wrap; }
-  .detail { position: fixed; inset: 0; z-index: 5; }
+  .detail { position: fixed; inset: 0; width: auto; z-index: 5; }
 }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 
@@ -343,3 +343,7 @@ dialog { border-radius: 26px; }
   ::-webkit-scrollbar-corner { background: transparent; }
 }
 .hint[hidden] { display: none; }
+
+.confetti { position: fixed; inset: 0; pointer-events: none; z-index: 60; }
+.check-row { display: flex !important; align-items: center; gap: 10px; color: var(--text) !important; }
+.check-row input { width: auto !important; margin: 0 !important; accent-color: var(--pink); }

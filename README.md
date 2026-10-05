@@ -17,6 +17,7 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - Gallery cards have a ⚖ to pick two to four and compare them big and side by side.
 - The pig in the header changes mood with the board (sleeping when clear, worried at too many Nows) and shows up in empty lists.
 - A quiet "N unused pictures" button appears in the sidebar.
+- Checking something off plays a soft chime and pops confetti (switch off in Options). The details panel slides over the page instead of squeezing the list.
 - Keys: `N` new item, `/` search, `Esc` close.
 
 Plain web app, no build step, no dependencies. Open it over http (for example `python3 -m http.server`) or from GitHub Pages. `npm test` runs the logic and sync tests.
