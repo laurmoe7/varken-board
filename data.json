@@ -32,13 +32,13 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "done",
+      "status": "open",
       "title": "furniture locking and tweaks",
       "notes": "",
       "build": "",
       "images": [],
       "created": 1791224356717,
-      "updated": 1791224363726
+      "updated": 1791232249299
     },
     {
       "id": "muvkr90dnmqfu",
@@ -67,7 +67,8 @@
       "build": "",
       "images": [],
       "created": 1791231087088,
-      "updated": 1791231226423
+      "updated": 1791232246102,
+      "deleted": true
     },
     {
       "id": "seed-funfx-2",
