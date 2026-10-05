@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T20:32:00.020Z_
+_Updated 2026-10-05T20:33:41.880Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 ### Someday
