@@ -1011,6 +1011,23 @@
       "slot": "",
       "created": 1791244348897,
       "updated": 1791244348897
+    },
+    {
+      "id": "muvws9ekekw6e",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list",
+      "notes": "",
+      "build": "",
+      "effort": "hard",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791244597916,
+      "updated": 1791244597916
     }
   ],
   "notes": [
