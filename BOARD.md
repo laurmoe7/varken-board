@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T21:37:38.597Z_
+_Updated 2026-10-05T21:38:02.615Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -31,7 +31,8 @@ _1 done._
 
 ### Cosmetics gallery
 
-_Nothing here yet._
+- 🎀 **Joker jester** [Hat] `muvrtvop8h4zk`
+  - images: images/muvrtap4catm0.jpg, images/muvrtfexageh1.jpg
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
 
