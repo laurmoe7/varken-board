@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T20:34:06.613Z_
+_Updated 2026-10-05T20:34:23.583Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Someday
 
+- [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **Shared household pet** `seed-petshopper-11`
   > All pet data already lives in state.pet, so this stays possible.
