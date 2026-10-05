@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:52:33.199Z_
+_Updated 2026-10-05T23:56:42.189Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -85,6 +85,7 @@ _2 done._
 
 ### Soon
 
+- [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
 - [ ] 💡 **better support for summons** _(medium)_ `muvwiuwf1mdcm`
   > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
