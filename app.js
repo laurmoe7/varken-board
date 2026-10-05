@@ -675,9 +675,10 @@ function wire() {
     if (e.target.id === 'dFile') { addFiles(e.target.files, it); e.target.value = ''; }
   });
   d.addEventListener('keydown', (e) => {
-    if (e.target.id === 'dTitle' && e.key === 'Enter' && !e.ctrlKey && !e.metaKey) { e.preventDefault(); e.target.blur(); return; }
+    if (e.target.id === 'dTitle' && e.key === 'Enter' && !e.ctrlKey && !e.metaKey && !ui.drafting) { e.preventDefault(); e.target.blur(); return; }
     if (!ui.drafting) return;
-    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); commitDraft(); }
+    // while drafting, a plain Enter in the title or notes adds the item (Shift+Enter is a new line in the notes)
+    if (e.key === 'Enter' && !e.isComposing && (e.ctrlKey || e.metaKey || ((e.target.id === 'dTitle' || e.target.id === 'dNotes') && !e.shiftKey))) { e.preventDefault(); commitDraft(); }
     else if (e.key === 'Tab' && e.shiftKey && e.target.id === 'dNotes') { e.preventDefault(); qi.focus(); }
   });
 
