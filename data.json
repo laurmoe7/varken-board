@@ -205,13 +205,13 @@
       "title": "Prestige classes in the level-up wizard and compute()",
       "notes": "Not supported yet.",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
+      "updated": 1791244119338,
       "doneBuild": ""
     },
     {
@@ -223,13 +223,13 @@
       "title": "Familiar variants (Improved Familiar, archetypes)",
       "notes": "Not modelled yet.",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
+      "updated": 1791244121519,
       "doneBuild": ""
     },
     {
