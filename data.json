@@ -719,6 +719,23 @@
       "slot": "",
       "created": 1791242595479,
       "updated": 1791242596761
+    },
+    {
+      "id": "muvvm1bugro2i",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "show spells you can actually learn when leveling up",
+      "notes": "when adding spells while making or leveling a character up, only show spells you can learn at that level, and have the slots for. ex: a level 1 bard can learn 4 cantrips and 2 level 1 spells. so only let them learn those spells. while in the window for choosing spells, show in the top what spells they have left to choose. ex: 2 level 1 spells, 1 level 3 spell. also keep the window open until either they choose all their spells, or they exit the window themself.",
+      "build": "",
+      "effort": "",
+      "doneAt": 1791242629259,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791242627897,
+      "updated": 1791242629259
     }
   ],
   "notes": [
