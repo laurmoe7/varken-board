@@ -59,8 +59,37 @@ async function deleteUnused() {
   if (Sync.config()) Sync.forget(gone);
   unusedFound = null;
   save();
+  refreshUnusedHint();
   cleanMsg(`Deleted ${gone.length} ${gone.length === 1 ? 'picture' : 'pictures'}.` + (failed ? ` ${failed} could not be deleted; try again later.` : ''), failed > 0);
 }
 
 $('#cleanScan').onclick = scanUnused;
 $('#cleanGo').onclick = deleteUnused;
+
+// A quiet hint in the sidebar when this browser holds pictures nothing uses. Local only and cheap; the real
+// check (which also looks in the data repo) is the button in Options.
+async function refreshUnusedHint() {
+  const el = $('#cleanHint');
+  if (!el) return;
+  try {
+    const ids = L.findUnusedImages(state, await Store.allImageIds(), keepImages());
+    el.hidden = !ids.length;
+    el.textContent = `🧹 ${ids.length} unused ${ids.length === 1 ? 'picture' : 'pictures'}`;
+  } catch { el.hidden = true; }
+}
+
+// The sync dialog warns when the data repo is public.
+async function checkPublic() {
+  const w = $('#syncWarn');
+  w.hidden = true;
+  if (!Sync.config()) return;
+  if ((await Sync.isPublic()) === true) w.hidden = false;
+}
+
+function refreshHints() {
+  refreshUnusedHint();
+  if (Sync.config()) checkPublic();
+}
+
+$('#cleanHint').onclick = () => { $('#settingsBtn').click(); scanUnused(); };
+setInterval(refreshUnusedHint, 120000); // pictures become "unused" once they are 10 minutes old

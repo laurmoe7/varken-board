@@ -212,3 +212,22 @@ test('findUnusedImages keeps used, drafted and brand-new pictures', () => {
   const known = ['used', 'ofDeleted', 'drafted', 'fresh', 'old', 'noMeta', 'used'];
   assert.deepStrictEqual(L.findUnusedImages(s, known, ['drafted'], now), ['noMeta', 'ofDeleted', 'old']);
 });
+
+test('~effort shorthand sets the effort, and the effort filter and copy text use it', () => {
+  const r = L.parseQuick('fix glow ~hard !now', state().projects);
+  assert.deepStrictEqual([r.effort, r.title], ['hard', 'fix glow']);
+  assert.strictEqual(L.parseQuick('plain', state().projects).effort, '');
+  assert.strictEqual(L.stripToken('fix ~easy glow', state().projects, 'effort'), 'fix glow');
+  const items = [L.createItem({ title: 'a', project: 'funfx', effort: 'easy' }), L.createItem({ title: 'b', project: 'funfx' })];
+  assert.deepStrictEqual(L.filterItems(items, { status: 'active', effort: 'easy' }).map((i) => i.title), ['a']);
+  const s = Object.assign(state(), { items });
+  assert.match(L.copyForClaude(s, 'funfx'), /\[Idea, soon, easy\] a/);
+  assert.match(L.boardMarkdown(s), /\*\*a\*\* _\(easy\)_/);
+});
+
+test('done-in-build is kept, searchable and written into the copy text', () => {
+  const it = L.createItem({ title: 'a', project: 'funfx', doneBuild: '214' });
+  assert.strictEqual(L.createItem({}).doneBuild, '');
+  assert.strictEqual(L.filterItems([it], { status: 'all', q: '214' }).length, 1);
+  assert.match(L.copyForClaude(Object.assign(state(), { items: [it] }), 'funfx'), /Done in build 214/);
+});

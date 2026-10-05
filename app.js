@@ -6,8 +6,8 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 
 let state = L.defaultState();
 // ui.drafting: the right panel is in "new item" mode, filling ui.draftItem until Add.
-const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', slot: '', build: '', notes: '', images: [] });
-const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
+const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', slot: '', build: '', notes: '', images: [] });
+const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', builds: {}, status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
 
 // ---------- saving ----------
@@ -35,7 +35,7 @@ window.addEventListener('pagehide', flushSave);
 function loadUi() {
   try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, q: '', drafting: false, draftItem: blankDraft() }); } catch { /* fresh */ }
 }
-function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, view: ui.view, type: ui.type, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
+function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, view: ui.view, type: ui.type, effort: ui.effort, builds: ui.builds, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
 
 // ---------- sync ----------
 function setPill(kind, text) {
@@ -59,6 +59,7 @@ async function doSync() {
     await Store.saveState(state);
     setPill('ok', '✓ Synced ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     renderAll(true);
+    refreshHints();
     $('#syncMsg').textContent = 'Synced.';
     $('#syncMsg').classList.remove('err');
     syncing = false;
@@ -184,6 +185,7 @@ function renderHead() {
   const now = L.countNow(state.items);
   const sub = $('#viewSub');
   sub.className = 'sub';
+  paintHero(!!gp, gp ? L.countGallery(state.items, gp.id) : n, now);
   if (gp) {
     const g = L.countGallery(state.items, gp.id);
     sub.textContent = `${gp.emoji} ${gp.name} · ${g} ${g === 1 ? 'idea' : 'ideas'}`;
@@ -207,6 +209,8 @@ function renderHead() {
       .join('');
     $('#typeChips').hidden = false;
   }
+  $('#effortSel').hidden = !!gp;
+  $('#effortSel').value = ui.effort;
   $('#statusSel').hidden = !!gp;
   $('#statusSel').value = ui.status;
   $('#copyBtn').hidden = !gp && ui.status === 'done';
@@ -227,11 +231,13 @@ function cardHtml(it) {
   return `<article class="card p-${it.priority} ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
     <button class="check" data-check aria-label="${it.status === 'done' ? 'Mark not done' : 'Mark done'}">✓</button>
     <div class="card-body">
-      <div class="card-title">${L.typeOf(it.type).emoji} ${esc(it.title)}</div>
+      <div class="card-title ${it.effort ? 'fx-' + it.effort : ''}">${L.typeOf(it.type).emoji} ${esc(it.title)}</div>
       <div class="meta">
+        ${it.effort ? `<span class="tag fx fx-${it.effort}">${L.effortOf(it.effort).emoji} ${L.effortOf(it.effort).label.toLowerCase()}</span>` : ''}
         ${ui.project === 'all' && p ? `<span class="tag proj-tag" style="background:${esc(p.color)}">${esc(p.emoji)} ${esc(p.name)}</span>` : ''}
         ${it.status === 'doing' ? '<span class="tag doing">doing</span>' : ''}
-        ${it.build ? `<span class="tag">build ${esc(it.build)}</span>` : ''}
+        ${it.build ? `<span class="tag">seen in ${esc(it.build)}</span>` : ''}
+        ${it.doneBuild ? `<span class="tag done-b">✓ build ${esc(it.doneBuild)}</span>` : ''}
         ${it.notes ? '<span class="tag">📝</span>' : ''}
         ${it.images.length > 4 ? `<span class="tag">🖼 ${it.images.length}</span>` : ''}
       </div>
@@ -245,10 +251,10 @@ function renderListView() {
   const groups = L.groupByPriority(items);
   const el = $('#list');
   if (!groups.length) {
-    const searching = ui.q || ui.type !== 'all' || ui.status !== 'active';
-    el.innerHTML = `<div class="empty">${$('.logo .pig').outerHTML}<b>${searching ? 'Nothing matches' : 'All clear!'}</b>${
-      searching ? 'Try a different filter.' : 'Add an idea or a fix above and Varken will keep it safe.'
-    }</div>`;
+    const searching = ui.q || ui.type !== 'all' || ui.effort !== 'all' || ui.status !== 'active';
+    el.innerHTML = searching
+      ? emptyHtml('sniff', 'Nothing matches', 'I sniffed everywhere. Try a different filter.')
+      : emptyHtml('sleep', 'All clear!', 'Add an idea or a fix above and Varken will keep it safe.');
   } else {
     el.innerHTML = groups
       .map(
@@ -266,6 +272,7 @@ function renderList() {
   else renderListView();
   renderSide();
   renderHead();
+  paintCompareBar();
 }
 
 const item = () => state.items.find((i) => i.id === ui.open && !i.deleted);
@@ -309,10 +316,12 @@ function renderDetail() {
     <h3>${draft ? 'New ' + (gal ? 'idea' : 'item') : 'Details'} <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
     ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<textarea id="dTitle" rows="2" aria-label="Title">${esc(it.title)}</textarea>`}
     ${gal ? images + slotRow : `<label>Type ${seg('type', L.TYPES, v.type)}</label>
-    <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>`}
+    <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>
+    <label>Effort <span class="muted small">(click again to clear)</span> ${seg('effort', L.EFFORTS, v.effort)}</label>`}
     ${draft ? '' : `<label>Status ${seg('status', gal ? GALLERY_STATUSES : L.STATUSES, it.status)}</label>`}
     ${gal ? '' : `<label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
-    <label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>`}
+    <div class="two-col"><label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>
+    ${draft ? '' : `<label>Done in build <input id="dDoneBuild" value="${esc(it.doneBuild)}" placeholder="when fixed" autocomplete="off"></label>`}</div>`}
     <label>Notes <textarea id="dNotes" placeholder="${gal ? 'What is it? Colours, which slot, where it goes…' : 'What is it, what should happen instead…'}">${esc(it.notes)}</textarea></label>
     ${gal ? '' : images}
     <div class="row">${
@@ -385,6 +394,7 @@ function quickDefaults() {
     project: d.project || (ui.project !== 'all' ? ui.project : ui.last || (projectsLive()[0] || {}).id || ''),
     type: d.type,
     priority: d.priority,
+    effort: d.effort,
   };
 }
 
@@ -420,7 +430,7 @@ function commitDraft() {
   const it = L.createItem(
     gp
       ? { project: gp.id, gallery: true, slot: d.slot, title: r.title, notes: d.notes, images: d.images.slice() }
-      : { project: r.project || defaults.project, type: r.type, priority: r.priority, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
+      : { project: r.project || defaults.project, type: r.type, priority: r.priority, effort: r.effort, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
   );
   state.items.push(it);
   ui.last = it.project;
@@ -454,6 +464,11 @@ function toggleDone(id) {
   if (!it) return;
   const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"], .gcard[data-id="${CSS.escape(id)}"]`);
   setField(it, 'status', it.status === 'done' ? 'open' : 'done');
+  if (it.status !== 'done') it.doneBuild = '';
+  if (it.status === 'done' && !it.gallery && !it.doneBuild && ui.builds[it.project]) {
+    it.doneBuild = ui.builds[it.project]; // the build you last finished something in; change it in the panel
+    toast('Done in build ' + it.doneBuild + ' (change it in the panel)');
+  }
   if (it.status === 'done' && ui.status === 'active' && card && !galleryProject()) {
     card.classList.add('done', 'sparkle');
     setTimeout(() => renderAll(true), 450);
@@ -563,6 +578,7 @@ function wire() {
     const b = e.target.closest('[data-type]');
     if (b) { ui.type = b.dataset.type; saveUi(); renderList(); }
   });
+  $('#effortSel').onchange = (e) => { ui.effort = e.target.value; saveUi(); renderList(); };
   $('#statusSel').onchange = (e) => { ui.status = e.target.value; saveUi(); renderList(); };
   $('#search').oninput = (e) => { ui.q = e.target.value; renderList(); };
   $('#copyBtn').onclick = async () => {
@@ -592,7 +608,7 @@ function wire() {
     const sb = e.target.closest('[data-seg] [data-val]');
     if (sb) {
       const field = sb.parentElement.dataset.seg;
-      setField(it, field, field === 'slot' && it.slot === sb.dataset.val ? '' : sb.dataset.val);
+      setField(it, field, (field === 'slot' || field === 'effort') && it[field] === sb.dataset.val ? '' : sb.dataset.val);
       if (ui.drafting) {
         qi.value = L.stripToken(qi.value, projectsLive(), field); // a typed #tag or !word would override the click
         paintDraft();
@@ -621,6 +637,10 @@ function wire() {
     if (e.target.id === 'dTitle') { setField(it, 'title', e.target.value.replace(/\s*\n\s*/g, ' ')); }
     else if (e.target.id === 'dNotes') setField(it, 'notes', e.target.value);
     else if (e.target.id === 'dBuild') setField(it, 'build', e.target.value.trim());
+    else if (e.target.id === 'dDoneBuild') {
+      setField(it, 'doneBuild', e.target.value.trim());
+      if (it.doneBuild) { ui.builds[it.project] = it.doneBuild; saveUi(); }
+    }
     else return;
     if (!ui.drafting) renderList();
   });
@@ -691,6 +711,7 @@ function wire() {
     $('#syncToken').value = c.token || '';
     $('#syncMsg').textContent = '';
     $('#settingsDlg').showModal();
+    checkPublic();
   };
   $('#settingsBtn').onclick = openSettings;
   $('#syncPill').onclick = () => (Sync.config() ? doSync() : openSettings());
@@ -754,5 +775,6 @@ async function start() {
   if (!galleryProject()) ui.view = 'list';
   ready = true;
   renderAll();
+  refreshHints();
   doSync();
 }

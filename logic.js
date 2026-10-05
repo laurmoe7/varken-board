@@ -18,6 +18,12 @@
     { id: 'doing', label: 'Doing' },
     { id: 'done', label: 'Done' },
   ];
+  // How hard a task is. Empty means not rated yet.
+  const EFFORTS = [
+    { id: 'easy', label: 'Easy', emoji: '🌱' },
+    { id: 'medium', label: 'Medium', emoji: '🌿' },
+    { id: 'hard', label: 'Hard', emoji: '🔥' },
+  ];
   const COLORS = ['#ff9ec7', '#b9a4ff', '#8ff0c8', '#ffe29a', '#ffb38a', '#8fd3ff'];
   const NOW_CAP = 5;
   const DEFAULT_SLOTS = 'Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy';
@@ -28,6 +34,7 @@
   const slug = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
   const ids = (list) => list.map((x) => x.id);
   const typeOf = (id) => TYPES.find((t) => t.id === id) || TYPES[0];
+  const effortOf = (id) => EFFORTS.find((e) => e.id === id) || null;
 
   function defaultState() {
     const now = Date.now();
@@ -46,7 +53,7 @@
   function createItem(fields) {
     const now = Date.now();
     return Object.assign(
-      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', images: [], gallery: false, slot: '', created: now, updated: now },
+      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', doneBuild: '', effort: '', images: [], gallery: false, slot: '', created: now, updated: now },
       fields
     );
   }
@@ -64,7 +71,7 @@ const parseSlots = (str) => {
 // Projects with a picture gallery (`gallery` is its name, e.g. "Cosmetics").
 const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
-  // Which field a shorthand word sets: #project, !priority or :type. Unknown words are plain text.
+  // Which field a shorthand word sets: #project, !priority, :type or ~effort. Unknown words are plain text.
   // A #tag matches the start of a project's name without spaces.
   function classifyToken(word, projects) {
     const w = word.toLowerCase();
@@ -76,12 +83,13 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     }
     if ((m = /^!(.+)$/.exec(w)) && ids(PRIORITIES).includes(m[1])) return { field: 'priority', value: m[1] };
     if ((m = /^:(.+)$/.exec(w)) && ids(TYPES).includes(m[1])) return { field: 'type', value: m[1] };
+    if ((m = /^~(.+)$/.exec(w)) && ids(EFFORTS).includes(m[1])) return { field: 'effort', value: m[1] };
     return null;
   }
 
   // "#funfx fix the glow !now :bug" -> project, priority, type, and the title left over.
   function parseQuick(text, projects, defaults) {
-    const out = Object.assign({ project: '', priority: 'soon', type: 'idea' }, defaults);
+    const out = Object.assign({ project: '', priority: 'soon', type: 'idea', effort: '' }, defaults);
     const keep = [];
     for (const word of String(text || '').trim().split(/\s+/)) {
       const t = classifyToken(word, projects);
@@ -92,7 +100,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     return out;
   }
 
-  // Removes the shorthand for one field ('project', 'priority' or 'type') so a menu choice isn't overridden.
+  // Removes the shorthand for one field ('project', 'priority', 'type' or 'effort') so a menu choice isn't overridden.
   function stripToken(text, projects, field) {
     const src = String(text || '');
     const words = src.trim().split(/\s+/).filter((w) => w && (classifyToken(w, projects) || {}).field !== field);
@@ -115,9 +123,10 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       if (f.slot && f.slot !== 'all' && it.slot !== f.slot) return false;
       if (f.project && f.project !== 'all' && it.project !== f.project) return false;
       if (f.type && f.type !== 'all' && it.type !== f.type) return false;
+      if (f.effort && f.effort !== 'all' && it.effort !== f.effort) return false;
       if (f.status === 'active' && it.status === 'done') return false;
       if (f.status && f.status !== 'active' && f.status !== 'all' && it.status !== f.status) return false;
-      if (q && !(it.title + ' ' + it.notes + ' ' + it.build).toLowerCase().includes(q)) return false;
+      if (q && !(it.title + ' ' + it.notes + ' ' + it.build + ' ' + it.doneBuild).toLowerCase().includes(q)) return false;
       return true;
     });
   }
@@ -233,11 +242,12 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     if (!items.length) return 'Nothing open for ' + title + '.';
     const lines = ['Open ' + what + ' for ' + title + ':', ''];
     items.forEach((it, n) => {
-      const bits = gallery ? (it.slot ? [it.slot] : []) : [typeOf(it.type).label, it.priority];
+      const bits = gallery ? (it.slot ? [it.slot] : []) : [typeOf(it.type).label, it.priority].concat(it.effort ? [it.effort] : []);
       if (it.status === 'doing') bits.push(gallery ? 'making it' : 'doing');
       if (project === 'all') bits.push(projectName(state, it.project));
       lines.push(n + 1 + '. ' + (bits.length ? '[' + bits.join(', ') + '] ' : '') + it.title);
       if (it.build) lines.push('   Seen in build ' + it.build);
+      if (it.doneBuild) lines.push('   Done in build ' + it.doneBuild);
       if (it.notes) it.notes.split('\n').forEach((l) => lines.push('   ' + l));
       if (it.images.length) lines.push('   (' + it.images.length + ' image' + (it.images.length > 1 ? 's' : '') + ' on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', ') + ')');
     });
@@ -255,8 +265,9 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       for (const g of groupByPriority(items)) {
         out.push('### ' + g.priority.label, '');
         for (const it of g.items) {
-          out.push('- [ ] ' + typeOf(it.type).emoji + ' **' + it.title + '**' + (it.status === 'doing' ? ' _(doing)_' : '') + ' `' + it.id + '`');
+          out.push('- [ ] ' + typeOf(it.type).emoji + ' **' + it.title + '**' + (it.effort ? ' _(' + it.effort + ')_' : '') + (it.status === 'doing' ? ' _(doing)_' : '') + ' `' + it.id + '`');
           if (it.build) out.push('  - seen in build ' + it.build);
+          if (it.doneBuild) out.push('  - done in build ' + it.doneBuild);
           if (it.notes) it.notes.split('\n').forEach((l) => out.push('  > ' + l));
           if (it.images.length) out.push('  - images: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
         }
@@ -279,8 +290,8 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
   }
 
   const api = {
-    TYPES, PRIORITIES, STATUSES, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
-    uid, slug, typeOf, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
+    TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
+    uid, slug, typeOf, effortOf, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
     filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery,
     mergeStates, validateState, fitSize, projectName, copyForClaude, boardMarkdown,
   };

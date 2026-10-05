@@ -13,6 +13,11 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - A project can have a picture gallery (Pet Shopper has Cosmetics): a big-picture grid kept apart from the to-do list.
 - Gallery cards can carry a slot tag (Hat, Clothes, Face...) and be filtered by it; each project can set its own slot list.
 - Options > Sync and backup can find and delete pictures nothing uses any more.
+- Effort: rate a task Easy, Medium or Hard (`~easy` `~medium` `~hard` in the quick line, or the panel). The title takes a colour (mint, butter, coral) and a tag; filter by effort in the header.
+- "Done in build" is kept per item; marking something done fills in the build you last finished something in.
+- Gallery cards have a ⚖ to pick two to four and compare them big and side by side.
+- The pig in the header changes mood with the board (sleeping when clear, worried at too many Nows) and shows up in empty lists.
+- A quiet "N unused pictures" button appears in the sidebar; the sync dialog warns if the data repo is public.
 - Keys: `N` new item, `/` search, `Esc` close.
 
 Plain web app, no build step, no dependencies. Open it over http (for example `python3 -m http.server`) or from GitHub Pages. `npm test` runs the logic and sync tests.

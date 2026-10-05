@@ -8,9 +8,10 @@ function galleryItems(gp) {
 function gcardHtml(it) {
   const first = it.images[0];
   const badge = it.status === 'done' ? '<span class="gbadge made">In the game ✓</span>' : it.status === 'doing' ? '<span class="gbadge doing">Making it</span>' : '';
-  return `<article class="gcard ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
+  return `<article class="gcard ${it.status} ${ui.open === it.id ? 'sel' : ''} ${compare.has(it.id) ? 'cmp-on' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
     <div class="gimg ${first ? '' : 'none'}">${first ? `<img data-img="${esc(first)}" alt="">` : '🎀'}</div>
     ${badge}
+    <button class="cmp" data-cmp aria-pressed="${compare.has(it.id)}" title="Pick to compare side by side">⚖</button>
     <button class="check" data-check aria-label="${it.status === 'done' ? 'Mark not in the game' : 'Mark in the game'}">✓</button>
     <div class="gbody">
       <div class="gtitle">${esc(it.title)}</div>
@@ -26,9 +27,9 @@ function renderGallery(gp) {
   const items = galleryItems(gp);
   const el = $('#list');
   if (!items.length) {
-    el.innerHTML = `<div class="empty">${$('.logo .pig').outerHTML}<b>${ui.q ? 'Nothing matches' : 'No ' + esc(gp.gallery.toLowerCase()) + ' ideas yet'}</b>${
-      ui.q ? 'Try a different search.' : 'Type a name above, then paste or drop a picture.'
-    }</div>`;
+    el.innerHTML = ui.q
+      ? emptyHtml('sniff', 'Nothing matches', 'I sniffed everywhere. Try a different search.')
+      : emptyHtml('sleep', 'No ' + gp.gallery.toLowerCase() + ' ideas yet', 'Type a name above, then paste or drop a picture.');
     return;
   }
   el.innerHTML = `<div class="gallery">${items.map(gcardHtml).join('')}</div>`;
