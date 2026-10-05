@@ -1,0 +1,8 @@
+{
+  "name": "varken-board",
+  "private": true,
+  "description": "A cute dark idea and fix board for all my projects",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}
