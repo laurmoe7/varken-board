@@ -22,17 +22,19 @@ function pigSvg(mood, cls) {
     sniff: '<circle cx="68" cy="47" r="5" fill="#b9a4ff33" stroke="#b9a4ff" stroke-width="2.2"/><path d="M71.5 50.5 l4.5 4.5" stroke="#b9a4ff" stroke-width="3" stroke-linecap="round"/>',
   }[m];
   const mouth = m === 'sleep' ? '' : `<path d="M38.8 53.6 q1.2 1.2 2.4 0" fill="none" ${line} stroke-width="1.2"/>`;
-  return `<svg class="pig ${cls || ''} pig-${m}" viewBox="0 0 80 64" aria-hidden="true">
-    <g class="ear ear-l"><path d="M11 30 Q3 15 11 4 Q28 5 38 22 Z" fill="#ffb8cf" ${line}/><path d="M14 25 Q9 14 14 9 Q24 11 30 20 Z" fill="#ff8fae"/></g>
-    <g class="ear ear-r"><path d="M69 30 Q77 15 69 4 Q52 5 42 22 Z" fill="#ffb8cf" ${line}/><path d="M66 25 Q71 14 66 9 Q56 11 50 20 Z" fill="#ff8fae"/></g>
-    <ellipse cx="40" cy="38" rx="32" ry="24" fill="#ffb8cf" ${line}/>
+  return `<svg class="pig ${cls || ''} pig-${m}" viewBox="0 0 80 66" aria-hidden="true">
+    <g class="ear ear-l"><path d="M11 30 Q3 15 11 4 Q28 5 38 22 Z" fill="#ffa6c4" stroke="#ffa6c4" stroke-width="2" stroke-linejoin="round"/><path d="M14 25 Q9 14 14 9 Q24 11 30 20 Z" fill="#ff8fae"/></g>
+    <g class="ear ear-r"><path d="M69 30 Q77 15 69 4 Q52 5 42 22 Z" fill="#ffa6c4" stroke="#ffa6c4" stroke-width="2" stroke-linejoin="round"/><path d="M66 25 Q71 14 66 9 Q56 11 50 20 Z" fill="#ff8fae"/></g>
+    <ellipse cx="40" cy="38" rx="36" ry="27" fill="#ffb8cf"/>
+    <g transform="translate(40 40) scale(1.12) translate(-40 -40)">
     <ellipse cx="17" cy="45" rx="7" ry="4.6" fill="#ff8cb4" opacity=".9"/>
     <ellipse cx="63" cy="45" rx="7" ry="4.6" fill="#ff8cb4" opacity=".9"/>
     <path d="M13.5 43 l2 4 M17.5 42.5 l2 4 M21.5 43 l2 4 M56.5 43 l2 4 M60.5 42.5 l2 4 M64.5 43 l2 4" stroke="${PIG_INK}" stroke-width="1.5" stroke-linecap="round"/>
     <g class="pig-eyes">${eyes}</g>
-    <path d="M35 43.4 Q40 40.4 45 43.4 Q46 49.6 40 49.8 Q34 49.6 35 43.4 Z" fill="#ff9dbf" ${line} stroke-width="2"/>
+    <path d="M35 43.4 Q40 40.4 45 43.4 Q46 49.6 40 49.8 Q34 49.6 35 43.4 Z" fill="#f2709f"/>
     <ellipse cx="38.2" cy="45.6" rx=".8" ry="1.2" fill="${PIG_INK}"/><ellipse cx="41.8" cy="45.6" rx=".8" ry="1.2" fill="${PIG_INK}"/>
     ${mouth}
+    </g>
     ${extra}
   </svg>`;
 }
