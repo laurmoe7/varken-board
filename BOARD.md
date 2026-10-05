@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T20:31:26.074Z_
+_Updated 2026-10-05T20:32:00.020Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -37,7 +37,7 @@ _1 done._
 - [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
-## 🎲 Pathfinder sheet (https://github.com/laurmoe7/pathfinder-sheet)
+## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
 ### Someday
 
