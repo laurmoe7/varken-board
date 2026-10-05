@@ -857,6 +857,24 @@
       "created": 1791243753367,
       "updated": 1791243858380,
       "deleted": true
+    },
+    {
+      "id": "muvwchhrhtgpf",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "a",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791243861903,
+      "updated": 1791243864579,
+      "deleted": true
     }
   ],
   "notes": [
