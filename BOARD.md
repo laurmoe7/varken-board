@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:59:09.282Z_
+_Updated 2026-10-05T23:59:20.411Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -52,7 +52,6 @@ _2 done._
 
 ### Notes
 
-- make layout look more like an old tome with turning pages, still dark to not hurt eyes
 - name it "cookie sheets" or "cookie's sheets"
 - 10 goodnight kisses to unlock carer persona
 
@@ -109,4 +108,8 @@ _2 done._
   > Not modelled yet.
 
 _5 done._
+
+### Notes
+
+- make layout look more like an old tome with turning pages, still dark to not hurt eyes
 
