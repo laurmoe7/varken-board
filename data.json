@@ -926,6 +926,23 @@
       "slot": "",
       "created": 1791244159215,
       "updated": 1791244159215
+    },
+    {
+      "id": "muvwjg7739aoj",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "spot for character image",
+      "notes": "space on overview page to upload a custom image of your character. another space, on the top to the left of your character name to upload another, smaller image",
+      "build": "",
+      "effort": "",
+      "doneAt": 1791244188138,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791244186819,
+      "updated": 1791244188138
     }
   ],
   "notes": [
