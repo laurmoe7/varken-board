@@ -691,17 +691,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "test",
       "notes": "",
       "build": "",
       "effort": "",
-      "doneAt": 0,
+      "doneAt": 1791240080642,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791239247218,
-      "updated": 1791240068771
+      "updated": 1791240080642
     }
   ],
   "notes": [],
