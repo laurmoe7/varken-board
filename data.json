@@ -278,6 +278,19 @@
       "images": [],
       "created": 1791234248146,
       "updated": 1791234248146
+    },
+    {
+      "id": "muvqmowq1668d",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "add color variations to outfits/hats. maybe skins?",
+      "notes": "",
+      "build": "",
+      "images": [],
+      "created": 1791234260378,
+      "updated": 1791234260378
     }
   ],
   "images": {
