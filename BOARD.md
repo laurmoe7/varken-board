@@ -1,12 +1,8 @@
 # Varken board
 
-_Updated 2026-10-05T20:33:58.762Z_
+_Updated 2026-10-05T20:34:06.613Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
-
-### Soon
-
-- [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 ### Someday
 
@@ -17,6 +13,7 @@ _Updated 2026-10-05T20:33:58.762Z_
   > Swap the Voice object in app-voice.js for the phone's own recognition.
 - [ ] 💡 **Paid pet customization** `seed-petshopper-13`
   > The dressing room tests the idea; no payments yet.
+- [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 _1 done._
 
