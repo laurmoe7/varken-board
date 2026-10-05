@@ -30,6 +30,8 @@ const Store = (() => {
     saveState: (st) => run('meta', 'readwrite', (s) => s.put(st, 'state')),
     putImage: (id, blob) => run('images', 'readwrite', (s) => s.put(blob, id)),
     getImage: (id) => run('images', 'readonly', (s) => s.get(id)),
+    allImageIds: () => run('images', 'readonly', (s) => s.getAllKeys()),
+    delImage: (id) => run('images', 'readwrite', (s) => s.delete(id)),
     hasImage: async (id) => (await run('images', 'readonly', (s) => s.count(id))) > 0,
     persist: () => (navigator.storage && navigator.storage.persist ? navigator.storage.persist() : null),
   };

@@ -132,6 +132,10 @@ input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: n
 .seg { display: flex; gap: 4px; margin-top: 4px; }
 .seg button { flex: 1; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 7px 4px; font-weight: 700; color: var(--muted); }
 .seg button.on { background: var(--card-hi); color: var(--text); border-color: var(--lav); }
+.seg.wrap { flex-wrap: wrap; }
+.seg.wrap button { flex: none; padding: 6px 12px; }
+.chips small { opacity: .65; font-weight: 800; }
+.tag.slot { color: var(--pink); border-color: #ff9ec766; }
 .imgs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
 .img { position: relative; }
 .imgs img { height: 92px; width: 92px; cursor: zoom-in; }

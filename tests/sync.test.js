@@ -14,9 +14,21 @@ function fakeGithub(files) {
     calls.push(method + ' ' + path);
     assert.match(opt.headers.Authorization, /^Bearer tok$/);
     const f = files.get(path);
+    if (method === 'DELETE') {
+      const b = JSON.parse(opt.body);
+      if (!f) return { ok: false, status: 404, json: async () => ({}) };
+      if (b.sha !== f.sha) return { ok: false, status: 409, json: async () => ({}) };
+      files.delete(path);
+      return { ok: true, status: 200, json: async () => ({}) };
+    }
     const json = (status, body) => ({ ok: status < 300, status, json: async () => body, blob: async () => new Blob([Buffer.from(body.content, 'base64')]) });
     if (method === 'GET') {
-      if (!f) return json(404, {});
+      if (!f) {
+        const prefix = path + '/';
+        const kids = Array.from(files.keys()).filter((k) => k.startsWith(prefix));
+        if (kids.length) return json(200, kids.map((k) => ({ name: k.slice(prefix.length), type: 'file', sha: files.get(k).sha, size: 4 })));
+        return json(404, {});
+      }
       if (opt.headers.Accept.includes('raw')) return { ok: true, status: 200, blob: async () => new Blob([Buffer.from(f.content, 'base64')]) };
       return json(200, { content: f.content, sha: f.sha });
     }
@@ -92,4 +104,22 @@ test('a deletion on one side wins when it is newer', async () => {
   local.items = [L.createItem({ id: 'x', title: 't', updated: 20, deleted: true })];
   const merged = await Sync.run(local, imgs().hooks);
   assert.strictEqual(merged.items[0].deleted, true);
+});
+
+test('the clean-up can list and delete pictures in the data repo', async () => {
+  const files = new Map();
+  const { Sync } = load(files);
+  files.set('images/a.jpg', { content: Buffer.from('AAAA').toString('base64'), sha: 's1' });
+  files.set('images/b.jpg', { content: Buffer.from('BBBB').toString('base64'), sha: 's2' });
+  files.set('data.json', { content: Buffer.from('{}').toString('base64'), sha: 's3' });
+  const list = await Sync.listImages();
+  assert.deepStrictEqual(list.map((i) => i.id), ['a', 'b']);
+  await Sync.deleteImage('a', list[0].sha);
+  assert.deepStrictEqual((await Sync.listImages()).map((i) => i.id), ['b']);
+  assert.ok(files.has('data.json'), 'only the picture is removed');
+});
+
+test('an empty repo has no pictures to list', async () => {
+  const { Sync } = load(new Map());
+  assert.strictEqual((await Sync.listImages()).length, 0);
 });

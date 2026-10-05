@@ -167,3 +167,48 @@ test('boardMarkdown lists the gallery with its picture files', () => {
   assert.match(md, /Star wand\*\* `g1`/);
   assert.match(md, /images\/p1\.jpg/);
 });
+
+test('parseSlots trims, drops repeats and empties', () => {
+  assert.deepStrictEqual(L.parseSlots(' Hat, Neck ,hat,, Feet '), ['Hat', 'Neck', 'Feet']);
+  assert.deepStrictEqual(L.parseSlots(''), []);
+});
+
+test('slotCounts lists the project order first, then others, only for live gallery items', () => {
+  const items = [
+    L.createItem({ project: 'petshopper', gallery: true, slot: 'Neck' }),
+    L.createItem({ project: 'petshopper', gallery: true, slot: 'Hat' }),
+    L.createItem({ project: 'petshopper', gallery: true, slot: 'Hat' }),
+    L.createItem({ project: 'petshopper', gallery: true, slot: 'Wings' }),
+    L.createItem({ project: 'petshopper', gallery: true, slot: 'Feet', deleted: true }),
+    L.createItem({ project: 'petshopper', slot: 'Feet' }),
+    L.createItem({ project: 'funfx', gallery: true, slot: 'Hat' }),
+  ];
+  assert.deepStrictEqual(L.slotCounts(items, 'petshopper', 'Hat, Face, Neck, Feet'), [
+    { slot: 'Hat', count: 2 }, { slot: 'Neck', count: 1 }, { slot: 'Wings', count: 1 },
+  ]);
+});
+
+test('the slot filter and the gallery text use the slot', () => {
+  const s = state();
+  s.items = [
+    L.createItem({ title: 'cap', project: 'petshopper', gallery: true, slot: 'Hat' }),
+    L.createItem({ title: 'scarf', project: 'petshopper', gallery: true, slot: 'Neck' }),
+  ];
+  const f = { project: 'petshopper', status: 'all', gallery: true };
+  assert.deepStrictEqual(L.filterItems(s.items, Object.assign({ slot: 'Hat' }, f)).map((i) => i.title), ['cap']);
+  assert.strictEqual(L.filterItems(s.items, Object.assign({ slot: 'all' }, f)).length, 2);
+  assert.match(L.copyForClaude(s, 'petshopper', true), /\[Hat\] cap/);
+  assert.match(L.boardMarkdown(s, 'today'), /\*\*cap\*\* \[Hat\]/);
+});
+
+test('findUnusedImages keeps used, drafted and brand-new pictures', () => {
+  const s = state();
+  const now = 1000000;
+  s.items = [
+    L.createItem({ images: ['used'] }),
+    L.createItem({ images: ['ofDeleted'], deleted: true }),
+  ];
+  s.images = { fresh: { added: now - 60000 }, old: { added: now - 3600000 } };
+  const known = ['used', 'ofDeleted', 'drafted', 'fresh', 'old', 'noMeta', 'used'];
+  assert.deepStrictEqual(L.findUnusedImages(s, known, ['drafted'], now), ['noMeta', 'ofDeleted', 'old']);
+});

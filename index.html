@@ -87,6 +87,13 @@
       <input type="file" id="importFile" accept="application/json" hidden>
     </div>
     <p class="muted small">Export has the board's text only; images travel through sync.</p>
+    <hr>
+    <p class="muted small"><b>Unused pictures.</b> Pictures you removed, replaced or drew over stay stored. This looks for ones no item uses; it deletes nothing until you say so.</p>
+    <div class="row">
+      <button type="button" class="ghost" id="cleanScan">🧹 Look for unused pictures</button>
+      <button type="button" class="danger" id="cleanGo" hidden>Delete them</button>
+    </div>
+    <p class="status small" id="cleanMsg"></p>
     <div class="row end"><button class="ghost" value="close">Close</button></div>
   </form>
 </dialog>
@@ -100,7 +107,8 @@
       <label>Repo link (optional) <input id="pRepo" placeholder="https://github.com/…" autocomplete="off"></label>
     </div>
     <label>Picture gallery (optional) <input id="pGallery" placeholder="e.g. Cosmetics. Leave empty for none." autocomplete="off"></label>
-    <p class="muted small">A gallery is a separate area for ideas where the pictures come first, shown under the project in the sidebar.</p>
+    <label>Slot tags for the gallery (optional) <input id="pSlots" placeholder="Hat, Clothes, Face, Neck, Feet" autocomplete="off"></label>
+    <p class="muted small">A gallery is a separate area for ideas where the pictures come first, shown under the project in the sidebar. Slot tags let you label and filter its cards.</p>
     <div class="swatches" id="pColors"></div>
     <div class="row">
       <button type="submit" class="primary" id="pSave" value="save">Save</button>
@@ -145,6 +153,7 @@
 <script src="app-gallery.js"></script>
 <script src="app-reorder.js"></script>
 <script src="app-annotate.js"></script>
+<script src="app-cleanup.js"></script>
 <script src="app-start.js"></script>
 </body>
 </html>

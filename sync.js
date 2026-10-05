@@ -92,5 +92,24 @@ const Sync = (() => {
     return merged;
   }
 
-  return { config, setConfig, run };
+  // The pictures in the data repo, for the clean-up: [{ id, sha, size }].
+  async function listImages() {
+    const cfg = config();
+    if (!cfg) return [];
+    const dir = await call(cfg, 'images');
+    return Array.isArray(dir)
+      ? dir.filter((f) => f.type === 'file' && /\.jpg$/.test(f.name)).map((f) => ({ id: f.name.replace(/\.jpg$/, ''), sha: f.sha, size: f.size }))
+      : [];
+  }
+  async function deleteImage(id, sha) {
+    await call(config(), 'images/' + id + '.jpg', { method: 'DELETE', body: { message: 'Remove unused image ' + id, sha } });
+  }
+  // Forget that these were uploaded (they are gone now).
+  function forget(ids) {
+    const sent = uploaded();
+    ids.forEach((id) => sent.delete(id));
+    markUploaded(sent);
+  }
+
+  return { config, setConfig, run, listImages, deleteImage, forget };
 })();

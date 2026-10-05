@@ -20,6 +20,8 @@
   ];
   const COLORS = ['#ff9ec7', '#b9a4ff', '#8ff0c8', '#ffe29a', '#ffb38a', '#8fd3ff'];
   const NOW_CAP = 5;
+  const DEFAULT_SLOTS = 'Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy';
+  const MIN_UNUSED_AGE = 10 * 60 * 1000; // a picture younger than this is never called unused
   const MAX_IMAGE_SIDE = 1600;
 
   const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
@@ -32,7 +34,7 @@
     return {
       v: 1,
       projects: [
-        { id: 'petshopper', name: 'Pet Shopper', emoji: '🐹', color: COLORS[0], repo: 'https://github.com/laurmoe7/pet-shopper', gallery: 'Cosmetics', updated: now },
+        { id: 'petshopper', name: 'Pet Shopper', emoji: '🐹', color: COLORS[0], repo: 'https://github.com/laurmoe7/pet-shopper', gallery: 'Cosmetics', slots: DEFAULT_SLOTS, updated: now },
         { id: 'funfx', name: 'funFX', emoji: '✨', color: COLORS[1], repo: 'https://github.com/laurmoe7/funFX', updated: now },
         { id: 'pathfinder', name: 'Pathfinder sheet', emoji: '🎲', color: COLORS[2], repo: 'https://github.com/laurmoe7/pathfinder-sheet', updated: now },
       ],
@@ -44,12 +46,21 @@
   function createItem(fields) {
     const now = Date.now();
     return Object.assign(
-      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', images: [], gallery: false, created: now, updated: now },
+      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', images: [], gallery: false, slot: '', created: now, updated: now },
       fields
     );
   }
 
   const liveProjects = (state) => state.projects.filter((p) => !p.deleted);
+// "Hat, Clothes, Face" -> ['Hat', 'Clothes', 'Face'] (trimmed, no repeats, at most 24).
+const parseSlots = (str) => {
+  const seen = new Set();
+  return String(str || '')
+    .split(',')
+    .map((x) => x.trim())
+    .filter((x) => x && !seen.has(x.toLowerCase()) && seen.add(x.toLowerCase()))
+    .slice(0, 24);
+};
 // Projects with a picture gallery (`gallery` is its name, e.g. "Cosmetics").
 const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
@@ -101,6 +112,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     return items.filter((it) => {
       if (it.deleted) return false;
       if (!!it.gallery !== !!f.gallery) return false;
+      if (f.slot && f.slot !== 'all' && it.slot !== f.slot) return false;
       if (f.project && f.project !== 'all' && it.project !== f.project) return false;
       if (f.type && f.type !== 'all' && it.type !== f.type) return false;
       if (f.status === 'active' && it.status === 'done') return false;
@@ -146,6 +158,14 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
   const countNow = (items) => items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && i.priority === 'now').length;
   const countOpen = (items, project) =>
     items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && (project === 'all' || i.project === project)).length;
+  // The slot tags on a project's gallery items, with counts: the project's own list first (its order), then any others.
+  function slotCounts(items, project, configured) {
+    const counts = new Map();
+    items.forEach((i) => i.gallery && !i.deleted && i.project === project && i.slot && counts.set(i.slot, (counts.get(i.slot) || 0) + 1));
+    const order = parseSlots(configured).filter((x) => counts.has(x));
+    Array.from(counts.keys()).filter((x) => !order.includes(x)).sort().forEach((x) => order.push(x));
+    return order.map((slot) => ({ slot, count: counts.get(slot) }));
+  }
   const countGallery = (items, project) => items.filter((i) => !i.deleted && i.gallery && i.project === project).length;
 
   // Newer `updated` wins per item and per project; deletions are kept as `deleted: true` so they sync too.
@@ -184,6 +204,21 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     return { w: Math.max(1, Math.round(w * s)), h: Math.max(1, Math.round(h * s)) };
   }
 
+  // Pictures nobody points to: in `known` (everything stored, locally or in the data repo) but not on a live item,
+  // not in `keep` (unsaved drafts, the picture being drawn on) and not brand new.
+  function findUnusedImages(state, known, keep, now, minAge) {
+    const used = new Set(keep || []);
+    state.items.forEach((i) => !i.deleted && (i.images || []).forEach((id) => used.add(id)));
+    const age = minAge == null ? MIN_UNUSED_AGE : minAge;
+    return Array.from(new Set(known))
+      .filter((id) => {
+        if (used.has(id)) return false;
+        const meta = state.images && state.images[id];
+        return !(meta && meta.added && (now || Date.now()) - meta.added < age);
+      })
+      .sort();
+  }
+
   const projectName = (state, id) => (state.projects.find((p) => p.id === id) || { name: 'No project' }).name;
 
   // A paste-ready task list for one project (or all) to hand to a Claude session.
@@ -198,7 +233,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     if (!items.length) return 'Nothing open for ' + title + '.';
     const lines = ['Open ' + what + ' for ' + title + ':', ''];
     items.forEach((it, n) => {
-      const bits = gallery ? [] : [typeOf(it.type).label, it.priority];
+      const bits = gallery ? (it.slot ? [it.slot] : []) : [typeOf(it.type).label, it.priority];
       if (it.status === 'doing') bits.push(gallery ? 'making it' : 'doing');
       if (project === 'all') bits.push(projectName(state, it.project));
       lines.push(n + 1 + '. ' + (bits.length ? '[' + bits.join(', ') + '] ' : '') + it.title);
@@ -233,7 +268,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
         out.push('### ' + p.gallery + ' gallery', '');
         if (!pics.length) out.push('_Nothing here yet._');
         for (const it of pics) {
-          out.push('- 🎀 **' + it.title + '**' + (it.status === 'doing' ? ' _(making it)_' : '') + ' `' + it.id + '`');
+          out.push('- 🎀 **' + it.title + '**' + (it.slot ? ' [' + it.slot + ']' : '') + (it.status === 'doing' ? ' _(making it)_' : '') + ' `' + it.id + '`');
           if (it.notes) it.notes.split('\n').forEach((l) => out.push('  > ' + l));
           if (it.images.length) out.push('  - images: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
         }
@@ -244,8 +279,8 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
   }
 
   const api = {
-    TYPES, PRIORITIES, STATUSES, COLORS, NOW_CAP, MAX_IMAGE_SIDE,
-    uid, slug, typeOf, defaultState, createItem, liveProjects, galleryProjects, parseQuick, stripToken,
+    TYPES, PRIORITIES, STATUSES, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
+    uid, slug, typeOf, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
     filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery,
     mergeStates, validateState, fitSize, projectName, copyForClaude, boardMarkdown,
   };

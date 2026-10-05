@@ -6,8 +6,8 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 
 let state = L.defaultState();
 // ui.drafting: the right panel is in "new item" mode, filling ui.draftItem until Add.
-const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', build: '', notes: '', images: [] });
-const ui = { project: 'all', view: 'list', type: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
+const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', slot: '', build: '', notes: '', images: [] });
+const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
 
 // ---------- saving ----------
@@ -49,7 +49,7 @@ function scheduleSync() {
   syncTimer = setTimeout(doSync, 3000);
 }
 async function doSync() {
-  if (!Sync.config() || syncing || !ready) return;
+  if (!Sync.config() || syncing || !ready) return false;
   syncing = true;
   changedDuringSync = false;
   setPill('busy', '⏳ Syncing…');
@@ -61,6 +61,9 @@ async function doSync() {
     renderAll(true);
     $('#syncMsg').textContent = 'Synced.';
     $('#syncMsg').classList.remove('err');
+    syncing = false;
+    if (changedDuringSync) scheduleSync();
+    return true;
   } catch (e) {
     const offline = !navigator.onLine || /fetch/i.test(e.message);
     setPill('bad', offline ? '⚠ Offline' : '⚠ Sync problem');
@@ -70,6 +73,7 @@ async function doSync() {
   }
   syncing = false;
   if (changedDuringSync) scheduleSync();
+  return false;
 }
 function initPill() {
   if (Sync.config()) setPill('', '☁ Sync on');
@@ -143,6 +147,7 @@ const GALLERY_STATUSES = [{ id: 'open', label: 'Idea' }, { id: 'doing', label: '
 function showView(projectId, view) {
   ui.project = projectId;
   ui.view = view;
+  ui.slot = 'all';
   ui.open = null;
   saveUi();
   renderAll();
@@ -188,11 +193,20 @@ function renderHead() {
   } else {
     sub.textContent = n === 1 ? '1 thing to do' : n + ' things to do';
   }
-  $('#typeChips').innerHTML = [{ id: 'all', label: 'All' }]
-    .concat(L.TYPES.map((t) => ({ id: t.id, label: t.emoji + ' ' + t.label })))
-    .map((t) => `<button data-type="${t.id}" class="${ui.type === t.id ? 'on' : ''}">${esc(t.label)}</button>`)
-    .join('');
-  $('#typeChips').hidden = !!gp;
+  if (gp) {
+    const slots = L.slotCounts(state.items, gp.id, gp.slots);
+    $('#typeChips').innerHTML = slots.length
+      ? `<button data-slot="all" class="${ui.slot === 'all' ? 'on' : ''}">All</button>` +
+        slots.map((x) => `<button data-slot="${esc(x.slot)}" class="${ui.slot === x.slot ? 'on' : ''}">${esc(x.slot)} <small>${x.count}</small></button>`).join('')
+      : '';
+    $('#typeChips').hidden = !slots.length;
+  } else {
+    $('#typeChips').innerHTML = [{ id: 'all', label: 'All' }]
+      .concat(L.TYPES.map((t) => ({ id: t.id, label: t.emoji + ' ' + t.label })))
+      .map((t) => `<button data-type="${t.id}" class="${ui.type === t.id ? 'on' : ''}">${esc(t.label)}</button>`)
+      .join('');
+    $('#typeChips').hidden = false;
+  }
   $('#statusSel').hidden = !!gp;
   $('#statusSel').value = ui.status;
   $('#copyBtn').hidden = !gp && ui.status === 'done';
@@ -256,14 +270,14 @@ function renderList() {
 
 const item = () => state.items.find((i) => i.id === ui.open && !i.deleted);
 
-function seg(field, list, cur) {
-  return `<div class="seg" data-seg="${field}">${list.map((o) => `<button type="button" data-val="${o.id}" class="${cur === o.id ? 'on' : ''}">${o.emoji ? o.emoji + ' ' : ''}${o.label}</button>`).join('')}</div>`;
+function seg(field, list, cur, cls) {
+  return `<div class="seg ${cls || ''}" data-seg="${field}">${list.map((o) => `<button type="button" data-val="${esc(o.id)}" class="${cur === o.id ? 'on' : ''}">${o.emoji ? o.emoji + ' ' : ''}${esc(o.label)}</button>`).join('')}</div>`;
 }
 
 const current = () => (ui.drafting ? ui.draftItem : item());
 
 // What the new-item panel shows: the panel's choices with anything typed as #project !now :bug on top.
-const draftValues = () => L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults());
+const draftValues = () => Object.assign(L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults()), { slot: ui.draftItem.slot });
 
 function renderDetail() {
   const d = $('#detail');
@@ -275,13 +289,17 @@ function renderDetail() {
   const gal = draft ? !!galleryProject() : !!it.gallery;
   d.classList.toggle('gal', gal);
   const v = draft ? draftValues() : it;
+  const slotProject = gal ? (draft ? galleryProject() : project(it.project)) : null;
+  const slotNames = slotProject ? L.parseSlots(slotProject.slots) : [];
+  if (gal && it.slot && !slotNames.includes(it.slot)) slotNames.push(it.slot);
+  const slotRow = slotNames.length ? `<label>Slot ${seg('slot', slotNames.map((x) => ({ id: x, label: x })), v.slot || '', 'wrap')}</label>` : '';
   const images = `<label>Images</label>
     <div class="imgs" id="dImgs"></div>
     <div class="drop" id="dDrop">Paste (Ctrl+V), drop images here, or <button type="button" id="dPick">pick files</button><input type="file" id="dFile" accept="image/*" multiple hidden></div>`;
   d.innerHTML = `
     <h3>${draft ? 'New ' + (gal ? 'idea' : 'item') : 'Details'} <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
     ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<input id="dTitle" value="${esc(it.title)}" aria-label="Title">`}
-    ${gal ? images : `<label>Type ${seg('type', L.TYPES, v.type)}</label>
+    ${gal ? images + slotRow : `<label>Type ${seg('type', L.TYPES, v.type)}</label>
     <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>`}
     ${draft ? '' : `<label>Status ${seg('status', gal ? GALLERY_STATUSES : L.STATUSES, it.status)}</label>`}
     ${gal ? '' : `<label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
@@ -391,7 +409,7 @@ function commitDraft() {
   const gp = galleryProject();
   const it = L.createItem(
     gp
-      ? { project: gp.id, gallery: true, title: r.title, notes: d.notes, images: d.images.slice() }
+      ? { project: gp.id, gallery: true, slot: d.slot, title: r.title, notes: d.notes, images: d.images.slice() }
       : { project: r.project || defaults.project, type: r.type, priority: r.priority, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
   );
   state.items.push(it);
@@ -453,6 +471,7 @@ function openProjectDlg(id) {
   $('#pEmoji').value = editingProject ? editingProject.emoji : '🌟';
   $('#pRepo').value = editingProject ? editingProject.repo || '' : '';
   $('#pGallery').value = editingProject ? editingProject.gallery || '' : '';
+  $('#pSlots').value = editingProject ? editingProject.slots || '' : '';
   $('#pDelete').hidden = !editingProject;
   $('#pMsg').textContent = '';
   pickedColor = editingProject ? editingProject.color : L.COLORS[projectsLive().length % L.COLORS.length];
@@ -466,7 +485,7 @@ function drawSwatches() {
 function saveProject() {
   const name = $('#pName').value.trim();
   if (!name) return;
-  const fields = { name, emoji: $('#pEmoji').value.trim() || '🌟', color: pickedColor, repo: $('#pRepo').value.trim(), gallery: $('#pGallery').value.trim() };
+  const fields = { name, emoji: $('#pEmoji').value.trim() || '🌟', color: pickedColor, repo: $('#pRepo').value.trim(), gallery: $('#pGallery').value.trim(), slots: $('#pSlots').value.trim() };
   if (editingProject) {
     Object.assign(editingProject, fields);
     touch(editingProject);
@@ -529,6 +548,8 @@ function wire() {
   });
   $('#addProject').onclick = () => openProjectDlg(null);
   $('#typeChips').addEventListener('click', (e) => {
+    const slot = e.target.closest('[data-slot]');
+    if (slot) { ui.slot = slot.dataset.slot; renderList(); return; }
     const b = e.target.closest('[data-type]');
     if (b) { ui.type = b.dataset.type; saveUi(); renderList(); }
   });
@@ -561,12 +582,12 @@ function wire() {
     const sb = e.target.closest('[data-seg] [data-val]');
     if (sb) {
       const field = sb.parentElement.dataset.seg;
-      setField(it, field, sb.dataset.val);
+      setField(it, field, field === 'slot' && it.slot === sb.dataset.val ? '' : sb.dataset.val);
       if (ui.drafting) {
         qi.value = L.stripToken(qi.value, projectsLive(), field); // a typed #tag or !word would override the click
         paintDraft();
       } else {
-        sb.parentElement.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === sb));
+        sb.parentElement.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.val === it[field]));
         renderList();
       }
       return;
@@ -716,6 +737,7 @@ async function start() {
   }
   const ps = state.projects.find((p) => p.id === 'petshopper' && !p.deleted);
   if (ps && ps.gallery === undefined) { ps.gallery = 'Cosmetics'; touch(ps); save(); } // Pet Shopper's cosmetics gallery
+  if (ps && ps.slots === undefined) { ps.slots = L.DEFAULT_SLOTS; touch(ps); save(); }
   if (!project(ui.project) && ui.project !== 'all') ui.project = 'all';
   if (!galleryProject()) ui.view = 'list';
   ready = true;

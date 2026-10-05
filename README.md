@@ -11,6 +11,8 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - Draw on screenshots (pen, arrow, circle, box) before keeping them.
 - Drag cards to put them in order, or into another priority group. Alt+arrow keys do the same.
 - A project can have a picture gallery (Pet Shopper has Cosmetics): a big-picture grid kept apart from the to-do list.
+- Gallery cards can carry a slot tag (Hat, Clothes, Face...) and be filtered by it; each project can set its own slot list.
+- Options > Sync and backup can find and delete pictures nothing uses any more.
 - Keys: `N` new item, `/` search, `Esc` close.
 
 Plain web app, no build step, no dependencies. Open it over http (for example `python3 -m http.server`) or from GitHub Pages. `npm test` runs the logic and sync tests.

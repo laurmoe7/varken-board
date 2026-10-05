@@ -2,7 +2,7 @@
 // The data is ordinary items with `gallery: true`; list views never show them.
 
 function galleryItems(gp) {
-  return L.sortGallery(L.filterItems(state.items, { project: gp.id, status: 'all', gallery: true, q: ui.q }));
+  return L.sortGallery(L.filterItems(state.items, { project: gp.id, status: 'all', gallery: true, q: ui.q, slot: ui.slot }));
 }
 
 function gcardHtml(it) {
@@ -13,13 +13,16 @@ function gcardHtml(it) {
     ${badge}
     <button class="check" data-check aria-label="${it.status === 'done' ? 'Mark not in the game' : 'Mark in the game'}">✓</button>
     <div class="gbody">
-      <div class="gtitle">${esc(it.title)}${it.images.length > 1 ? ` <span class="tag">🖼 ${it.images.length}</span>` : ''}</div>
+      <div class="gtitle">${esc(it.title)}</div>
+      ${it.slot || it.images.length > 1 ? `<div class="meta">${it.slot ? `<span class="tag slot">${esc(it.slot)}</span>` : ''}${it.images.length > 1 ? `<span class="tag">🖼 ${it.images.length}</span>` : ''}</div>` : ''}
       ${it.notes ? `<div class="gnotes">${esc(it.notes)}</div>` : ''}
     </div>
   </article>`;
 }
 
 function renderGallery(gp) {
+  const used = L.slotCounts(state.items, gp.id, gp.slots).map((x) => x.slot);
+  if (ui.slot !== 'all' && !used.includes(ui.slot)) ui.slot = 'all'; // the last card of a slot moved on
   const items = galleryItems(gp);
   const el = $('#list');
   if (!items.length) {
