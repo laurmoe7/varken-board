@@ -704,7 +704,15 @@
       "updated": 1791240080642
     }
   ],
-  "notes": [],
+  "notes": [
+    {
+      "id": "muvugt0x2wkys",
+      "scope": "petshopper",
+      "text": "test",
+      "created": 1791240704241,
+      "updated": 1791240704241
+    }
+  ],
   "images": {
     "muvkreo7u0x0q": {
       "name": "1.png",
