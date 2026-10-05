@@ -265,6 +265,19 @@
       "images": [],
       "created": 1791232459489,
       "updated": 1791232459489
+    },
+    {
+      "id": "muvqmfgyzon70",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "special sounds on different maps",
+      "notes": "",
+      "build": "",
+      "images": [],
+      "created": 1791234248146,
+      "updated": 1791234248146
     }
   ],
   "images": {
