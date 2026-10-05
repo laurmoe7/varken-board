@@ -3,6 +3,11 @@ name: Test and deploy
 on:
   push:
     branches: [main]
+    # sync commits only touch these files, so they don't need a redeploy
+    paths-ignore:
+      - data.json
+      - BOARD.md
+      - images/**
   workflow_dispatch:
 
 permissions:
