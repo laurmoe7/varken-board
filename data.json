@@ -637,18 +637,18 @@
       "id": "muvtewqq1h90v",
       "project": "petshopper",
       "type": "idea",
-      "priority": "soon",
+      "priority": "now",
       "status": "open",
       "title": "make magnified eye get larger the second the magnifying glass is in front of it.",
       "notes": "currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting",
       "build": "",
       "doneBuild": "",
-      "effort": "",
+      "effort": "easy",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238936130,
-      "updated": 1791238936130
+      "updated": 1791238940816
     }
   ],
   "images": {
