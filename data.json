@@ -879,7 +879,7 @@
     {
       "id": "muvwgtsek11tj",
       "project": "pathfinder",
-      "type": "idea",
+      "type": "fix",
       "priority": "now",
       "status": "open",
       "title": "class skill red dot needs centered in skills page",
@@ -891,7 +891,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791244064462,
-      "updated": 1791244064462
+      "updated": 1791244251760
     },
     {
       "id": "muvwhnueie781",
