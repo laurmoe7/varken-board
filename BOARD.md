@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T21:48:18.336Z_
+_Updated 2026-10-05T21:54:16.203Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **celebrate holidays, birthdays** `muvset2l7bwrh`
 - [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** `muvry35yoek6i`
 - [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
