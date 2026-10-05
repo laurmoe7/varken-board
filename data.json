@@ -597,6 +597,23 @@
       "slot": "",
       "created": 1791237484488,
       "updated": 1791237846925
+    },
+    {
+      "id": "muvt1nee26as9",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "now",
+      "status": "open",
+      "title": "add placeholder shop button in menu bar, greyed out",
+      "notes": "",
+      "build": "",
+      "doneBuild": "",
+      "effort": "easy",
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791238317494,
+      "updated": 1791238317494
     }
   ],
   "images": {
