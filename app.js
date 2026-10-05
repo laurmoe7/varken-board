@@ -7,22 +7,35 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 let state = L.defaultState();
 // ui.drafting: the right panel is in "new item" mode, filling ui.draftItem until Add.
 const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', build: '', notes: '', images: [] });
-const ui = { project: 'all', type: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
+const ui = { project: 'all', view: 'list', type: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
 
 // ---------- saving ----------
-let saveTimer, syncTimer, syncing = false, changedDuringSync = false;
+let saveTimer, syncTimer, syncing = false, changedDuringSync = false, savePending = false;
 function touch(obj) { obj.updated = Date.now(); }
+function writeState() {
+  savePending = false;
+  return Store.saveState(state).catch(() => setPill('bad', 'Could not save in this browser'));
+}
 function save() {
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => Store.saveState(state).catch(() => setPill('bad', 'Could not save in this browser')), 150);
+  savePending = true;
+  saveTimer = setTimeout(writeState, 20);
   changedDuringSync = true;
   scheduleSync();
 }
+// Closing the tab right after a change must not lose it, so write at once when the page is hidden.
+function flushSave() {
+  if (!savePending) return;
+  clearTimeout(saveTimer);
+  writeState();
+}
+document.addEventListener('visibilitychange', () => document.hidden && flushSave());
+window.addEventListener('pagehide', flushSave);
 function loadUi() {
   try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, q: '', drafting: false, draftItem: blankDraft() }); } catch { /* fresh */ }
 }
-function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, type: ui.type, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
+function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, view: ui.view, type: ui.type, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
 
 // ---------- sync ----------
 function setPill(kind, text) {
@@ -76,6 +89,7 @@ async function imgUrl(id) {
 function hydrate(root) {
   root.querySelectorAll('img[data-img]').forEach(async (img) => {
     const u = await imgUrl(img.dataset.img);
+    img.draggable = false;
     if (u) img.src = u; else img.alt = 'still downloading';
   });
 }
@@ -119,28 +133,56 @@ function imageTarget(inDetail) {
 const project = (id) => state.projects.find((p) => p.id === id && !p.deleted);
 const projectsLive = () => L.liveProjects(state);
 
+// The project whose picture gallery is on show (view 'gallery'), else null.
+const galleryProject = () => {
+  const p = ui.view === 'gallery' ? project(ui.project) : null;
+  return p && p.gallery ? p : null;
+};
+const GALLERY_STATUSES = [{ id: 'open', label: 'Idea' }, { id: 'doing', label: 'Making it' }, { id: 'done', label: 'In the game' }];
+
+function showView(projectId, view) {
+  ui.project = projectId;
+  ui.view = view;
+  ui.open = null;
+  saveUi();
+  renderAll();
+}
+
 function renderSide() {
   const rows = [{ id: 'all', name: 'All projects', emoji: '🌈', color: '#f4eeff' }].concat(projectsLive());
+  const inGallery = !!galleryProject();
   $('#projects').innerHTML = rows
     .map(
-      (p) => `<div class="proj ${ui.project === p.id ? 'on' : ''}" data-project="${esc(p.id)}" role="button" tabindex="0">
+      (p) => `<div class="proj ${ui.project === p.id && !inGallery ? 'on' : ''}" data-project="${esc(p.id)}" role="button" tabindex="0">
         <span class="badge" style="background:${esc(p.color)}">${esc(p.emoji)}</span>
         <span class="name">${esc(p.name)}</span>
         <span class="count">${L.countOpen(state.items, p.id)}</span>
         ${p.id === 'all' ? '' : '<button class="edit" data-edit="' + esc(p.id) + '" title="Edit project" aria-label="Edit project">✎</button>'}
+      </div>${
+        p.gallery
+          ? `<div class="proj subrow ${ui.project === p.id && inGallery ? 'on' : ''}" data-gallery="${esc(p.id)}" role="button" tabindex="0">
+        <span class="badge" style="background:${esc(p.color)}">🎀</span>
+        <span class="name">${esc(p.gallery)}</span>
+        <span class="count">${L.countGallery(state.items, p.id)}</span>
       </div>`
+          : ''
+      }`
     )
     .join('');
 }
 
 function renderHead() {
+  const gp = galleryProject();
   const p = project(ui.project);
-  $('#viewTitle').textContent = p ? p.emoji + ' ' + p.name : '🌈 All projects';
+  $('#viewTitle').textContent = gp ? '🎀 ' + gp.gallery : p ? p.emoji + ' ' + p.name : '🌈 All projects';
   const n = L.countOpen(state.items, ui.project);
   const now = L.countNow(state.items);
   const sub = $('#viewSub');
   sub.className = 'sub';
-  if (now > L.NOW_CAP) {
+  if (gp) {
+    const g = L.countGallery(state.items, gp.id);
+    sub.textContent = `${gp.emoji} ${gp.name} · ${g} ${g === 1 ? 'idea' : 'ideas'}`;
+  } else if (now > L.NOW_CAP) {
     sub.classList.add('warn');
     sub.textContent = `${now} things marked Now. That's a lot, pick the real top ${L.NOW_CAP}. 🐷`;
   } else {
@@ -150,8 +192,16 @@ function renderHead() {
     .concat(L.TYPES.map((t) => ({ id: t.id, label: t.emoji + ' ' + t.label })))
     .map((t) => `<button data-type="${t.id}" class="${ui.type === t.id ? 'on' : ''}">${esc(t.label)}</button>`)
     .join('');
+  $('#typeChips').hidden = !!gp;
+  $('#statusSel').hidden = !!gp;
   $('#statusSel').value = ui.status;
-  $('#copyBtn').hidden = ui.status === 'done';
+  $('#copyBtn').hidden = !gp && ui.status === 'done';
+  const input = $('#quickInput');
+  const hint = $('#quickHint');
+  input.dataset.def = input.dataset.def || input.placeholder;
+  hint.dataset.def = hint.dataset.def || hint.innerHTML;
+  input.placeholder = gp ? `Name a ${gp.gallery.toLowerCase()} idea… ( N )` : input.dataset.def;
+  hint.innerHTML = gp ? 'Type a name, then paste or drop pictures (Ctrl+V). The panel on the right opens as you type. Drag cards to put them in order.' : hint.dataset.def;
 }
 
 function cardHtml(it) {
@@ -160,7 +210,7 @@ function cardHtml(it) {
     .slice(0, 4)
     .map((id) => `<img data-img="${esc(id)}" alt="">`)
     .join('');
-  return `<article class="card ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0">
+  return `<article class="card ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
     <button class="check" data-check aria-label="${it.status === 'done' ? 'Mark not done' : 'Mark done'}">✓</button>
     <div class="card-body">
       <div class="card-title">${L.typeOf(it.type).emoji} ${esc(it.title)}</div>
@@ -176,7 +226,7 @@ function cardHtml(it) {
   </article>`;
 }
 
-function renderList() {
+function renderListView() {
   const items = L.sortItems(L.filterItems(state.items, ui));
   const groups = L.groupByPriority(items);
   const el = $('#list');
@@ -188,12 +238,18 @@ function renderList() {
   } else {
     el.innerHTML = groups
       .map(
-        (g) => `<section class="group"><h2><span class="dot dot-${g.priority.id}"></span>${g.priority.label} <span>${g.items.length}</span></h2>
+        (g) => `<section class="group" data-priority="${g.priority.id}"><h2><span class="dot dot-${g.priority.id}"></span>${g.priority.label} <span>${g.items.length}</span></h2>
         <div class="cards">${g.items.map(cardHtml).join('')}</div></section>`
       )
       .join('');
     hydrate(el);
   }
+}
+
+function renderList() {
+  const gp = galleryProject();
+  if (gp) renderGallery(gp);
+  else renderListView();
   renderSide();
   renderHead();
 }
@@ -214,21 +270,24 @@ function renderDetail() {
   const it = current();
   $('.app').classList.toggle('has-detail', !!it);
   d.hidden = !it;
-  if (!it) { d.innerHTML = ''; return; }
+  if (!it) { d.innerHTML = ''; d.classList.remove('gal'); return; }
   const draft = ui.drafting;
+  const gal = draft ? !!galleryProject() : !!it.gallery;
+  d.classList.toggle('gal', gal);
   const v = draft ? draftValues() : it;
-  d.innerHTML = `
-    <h3>${draft ? 'New item' : 'Details'} <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
-    ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<input id="dTitle" value="${esc(it.title)}" aria-label="Title">`}
-    <label>Type ${seg('type', L.TYPES, v.type)}</label>
-    <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>
-    ${draft ? '' : `<label>Status ${seg('status', L.STATUSES, it.status)}</label>`}
-    <label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
-    <label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>
-    <label>Notes <textarea id="dNotes" placeholder="What is it, what should happen instead…">${esc(it.notes)}</textarea></label>
-    <label>Images</label>
+  const images = `<label>Images</label>
     <div class="imgs" id="dImgs"></div>
-    <div class="drop" id="dDrop">Paste (Ctrl+V), drop images here, or <button type="button" id="dPick">pick files</button><input type="file" id="dFile" accept="image/*" multiple hidden></div>
+    <div class="drop" id="dDrop">Paste (Ctrl+V), drop images here, or <button type="button" id="dPick">pick files</button><input type="file" id="dFile" accept="image/*" multiple hidden></div>`;
+  d.innerHTML = `
+    <h3>${draft ? 'New ' + (gal ? 'idea' : 'item') : 'Details'} <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
+    ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<input id="dTitle" value="${esc(it.title)}" aria-label="Title">`}
+    ${gal ? images : `<label>Type ${seg('type', L.TYPES, v.type)}</label>
+    <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>`}
+    ${draft ? '' : `<label>Status ${seg('status', gal ? GALLERY_STATUSES : L.STATUSES, it.status)}</label>`}
+    ${gal ? '' : `<label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
+    <label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>`}
+    <label>Notes <textarea id="dNotes" placeholder="${gal ? 'What is it? Colours, which slot, where it goes…' : 'What is it, what should happen instead…'}">${esc(it.notes)}</textarea></label>
+    ${gal ? '' : images}
     <div class="row">${
       draft
         ? '<button type="button" class="primary" id="dAdd">Add</button><button type="button" class="ghost" id="dClear">Clear</button><span class="muted small">Tab jumps here, Ctrl+Enter adds</span>'
@@ -258,7 +317,7 @@ function renderImages() {
   const it = current();
   const el = $('#dImgs');
   if (!it || !el) return;
-  el.innerHTML = it.images.map((id) => `<div class="img"><img data-img="${esc(id)}" data-zoom="${esc(id)}" alt="attached image"><button class="x" data-rm="${esc(id)}" aria-label="Remove image">×</button></div>`).join('');
+  el.innerHTML = it.images.map((id) => `<div class="img"><img data-img="${esc(id)}" data-zoom="${esc(id)}" alt="attached image"><button class="x ed" data-annot="${esc(id)}" title="Draw on it" aria-label="Draw on this image">✏️</button><button class="x" data-rm="${esc(id)}" aria-label="Remove image">×</button></div>`).join('');
   hydrate(el);
 }
 
@@ -329,7 +388,12 @@ function commitDraft() {
     return false;
   }
   const d = ui.draftItem;
-  const it = L.createItem({ project: r.project || defaults.project, type: r.type, priority: r.priority, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() });
+  const gp = galleryProject();
+  const it = L.createItem(
+    gp
+      ? { project: gp.id, gallery: true, title: r.title, notes: d.notes, images: d.images.slice() }
+      : { project: r.project || defaults.project, type: r.type, priority: r.priority, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
+  );
   state.items.push(it);
   ui.last = it.project;
   ui.draftItem = blankDraft();
@@ -340,7 +404,7 @@ function commitDraft() {
   renderDetail();
   renderList();
   const p = project(it.project);
-  toast('Added' + (p ? ' to ' + p.name : ''));
+  toast('Added' + (gp ? ' to ' + gp.gallery : p ? ' to ' + p.name : ''));
   input.focus();
   return true;
 }
@@ -360,9 +424,9 @@ function setField(it, field, val) {
 function toggleDone(id) {
   const it = state.items.find((i) => i.id === id);
   if (!it) return;
-  const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+  const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"], .gcard[data-id="${CSS.escape(id)}"]`);
   setField(it, 'status', it.status === 'done' ? 'open' : 'done');
-  if (it.status === 'done' && ui.status === 'active' && card) {
+  if (it.status === 'done' && ui.status === 'active' && card && !galleryProject()) {
     card.classList.add('done', 'sparkle');
     setTimeout(() => renderAll(true), 450);
   } else renderList();
@@ -388,6 +452,7 @@ function openProjectDlg(id) {
   $('#pName').value = editingProject ? editingProject.name : '';
   $('#pEmoji').value = editingProject ? editingProject.emoji : '🌟';
   $('#pRepo').value = editingProject ? editingProject.repo || '' : '';
+  $('#pGallery').value = editingProject ? editingProject.gallery || '' : '';
   $('#pDelete').hidden = !editingProject;
   $('#pMsg').textContent = '';
   pickedColor = editingProject ? editingProject.color : L.COLORS[projectsLive().length % L.COLORS.length];
@@ -401,7 +466,7 @@ function drawSwatches() {
 function saveProject() {
   const name = $('#pName').value.trim();
   if (!name) return;
-  const fields = { name, emoji: $('#pEmoji').value.trim() || '🌟', color: pickedColor, repo: $('#pRepo').value.trim() };
+  const fields = { name, emoji: $('#pEmoji').value.trim() || '🌟', color: pickedColor, repo: $('#pRepo').value.trim(), gallery: $('#pGallery').value.trim() };
   if (editingProject) {
     Object.assign(editingProject, fields);
     touch(editingProject);
@@ -414,6 +479,7 @@ function saveProject() {
     ui.project = id;
     saveUi();
   }
+  if (!galleryProject()) ui.view = 'list';
   save();
   renderAll();
 }
@@ -426,7 +492,7 @@ function deleteProject() {
   }
   editingProject.deleted = true;
   touch(editingProject);
-  if (ui.project === editingProject.id) ui.project = 'all';
+  if (ui.project === editingProject.id) { ui.project = 'all'; ui.view = 'list'; }
   saveUi();
   save();
   $('#projectDlg').close();
@@ -448,12 +514,18 @@ function wire() {
   $('#projects').addEventListener('click', (e) => {
     const ed = e.target.closest('[data-edit]');
     if (ed) return openProjectDlg(ed.dataset.edit);
+    const g = e.target.closest('[data-gallery]');
+    if (g) return showView(g.dataset.gallery, 'gallery');
     const p = e.target.closest('[data-project]');
-    if (p) { ui.project = p.dataset.project; saveUi(); renderList(); }
+    if (p) showView(p.dataset.project, 'list');
   });
   $('#projects').addEventListener('keydown', (e) => {
-    const p = e.target.closest('[data-project]');
-    if (p && e.target === p && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); ui.project = p.dataset.project; saveUi(); renderList(); }
+    const row = e.target.closest('[data-project], [data-gallery]');
+    if (row && e.target === row && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      if (row.dataset.gallery) showView(row.dataset.gallery, 'gallery');
+      else showView(row.dataset.project, 'list');
+    }
   });
   $('#addProject').onclick = () => openProjectDlg(null);
   $('#typeChips').addEventListener('click', (e) => {
@@ -463,19 +535,19 @@ function wire() {
   $('#statusSel').onchange = (e) => { ui.status = e.target.value; saveUi(); renderList(); };
   $('#search').oninput = (e) => { ui.q = e.target.value; renderList(); };
   $('#copyBtn').onclick = async () => {
-    try { await navigator.clipboard.writeText(L.copyForClaude(state, ui.project)); toast('Copied. Paste it into a Claude session.'); }
+    try { await navigator.clipboard.writeText(L.copyForClaude(state, ui.project, !!galleryProject())); toast('Copied. Paste it into a Claude session.'); }
     catch { toast('Could not copy'); }
   };
 
   $('#list').addEventListener('click', (e) => {
-    const card = e.target.closest('.card');
+    const card = e.target.closest('.card, .gcard');
     if (!card) return;
     if (e.target.closest('[data-check]')) return toggleDone(card.dataset.id);
     openItem(card.dataset.id);
   });
   $('#list').addEventListener('keydown', (e) => {
-    const card = e.target.closest('.card');
-    if (card && e.target === card && e.key === 'Enter') openItem(card.dataset.id);
+    const card = e.target.closest('.card, .gcard');
+    if (card && e.target === card && !e.altKey && e.key === 'Enter') openItem(card.dataset.id);
   });
   const d = $('#detail');
   d.addEventListener('click', (e) => {
@@ -506,6 +578,8 @@ function wire() {
       renderImages();
       return;
     }
+    const an = e.target.closest('[data-annot]');
+    if (an) return openAnnotate(it, an.dataset.annot);
     const z = e.target.closest('[data-zoom]');
     if (z && z.src) { $('#lightImg').src = z.src; $('#lightbox').showModal(); }
   });
@@ -640,9 +714,11 @@ async function start() {
     setPill('bad', '⚠ Browser storage is blocked');
     toast('Your browser is blocking storage, so nothing will be saved.');
   }
+  const ps = state.projects.find((p) => p.id === 'petshopper' && !p.deleted);
+  if (ps && ps.gallery === undefined) { ps.gallery = 'Cosmetics'; touch(ps); save(); } // Pet Shopper's cosmetics gallery
   if (!project(ui.project) && ui.project !== 'all') ui.project = 'all';
+  if (!galleryProject()) ui.view = 'list';
   ready = true;
   renderAll();
   doSync();
 }
-start();

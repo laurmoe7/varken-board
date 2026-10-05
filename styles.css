@@ -75,6 +75,7 @@ h1 { margin: 0; font-size: 28px; font-weight: 800; }
 .sub { margin: 2px 0 0; color: var(--muted); }
 .sub.warn { color: var(--butter); }
 .tools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.chips[hidden] { display: none; }
 .chips { display: flex; gap: 4px; background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 3px; }
 .chips button { background: none; border: 0; border-radius: 11px; padding: 5px 11px; font-weight: 700; color: var(--muted); }
 .chips button.on { background: var(--card-hi); color: var(--text); }
@@ -141,6 +142,56 @@ input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: n
 .row { display: flex; gap: 8px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
 .row.end { justify-content: flex-end; }
 .two { display: grid; grid-template-columns: 90px 1fr; gap: 10px; }
+
+/* picture gallery */
+.proj.subrow { margin: -2px 0 0 18px; width: calc(100% - 18px); padding: 6px 10px; }
+.proj.subrow .badge { width: 24px; height: 24px; border-radius: 8px; font-size: 13px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+.gcard { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; cursor: pointer; transition: transform .14s, border-color .14s, box-shadow .14s; }
+.gcard:hover, .gcard:focus-visible { transform: translateY(-3px); border-color: var(--pink); box-shadow: 0 14px 34px #0007; }
+.gimg { aspect-ratio: 5 / 4; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, #3a2f66, var(--bg2) 75%); }
+.gimg img { width: 100%; height: 100%; object-fit: contain; }
+.gimg.none { font-size: 72px; opacity: .55; }
+.gbody { padding: 12px 15px 15px; }
+.gtitle { font-weight: 800; font-size: 17px; word-break: break-word; }
+.gnotes { color: var(--muted); font-size: 13px; margin-top: 3px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.gbadge { position: absolute; top: 10px; left: 10px; background: #17122bcc; border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; font-size: 12px; font-weight: 800; backdrop-filter: blur(4px); }
+.gbadge.made { color: var(--mint); border-color: #8ff0c866; }
+.gbadge.doing { color: var(--butter); border-color: #ffe29a66; }
+.gcard .check { position: absolute; top: 10px; right: 10px; background: #17122bcc; }
+.gcard.sel { border-color: var(--lav); }
+.thumbs img, .gimg img { -webkit-user-drag: none; user-select: none; }
+.gcard.done .gimg img { opacity: .5; filter: saturate(.6); }
+
+/* drag to reorder */
+.card[draggable="true"], .gcard[draggable="true"] { cursor: grab; }
+.dragging { opacity: .4; }
+.drop-before { box-shadow: 0 -4px 0 -1px var(--pink); }
+.drop-after { box-shadow: 0 4px 0 -1px var(--pink); }
+.gcard.drop-before { box-shadow: -5px 0 0 -1px var(--pink); }
+.gcard.drop-after { box-shadow: 5px 0 0 -1px var(--pink); }
+.group.drop-end .cards { outline: 2px dashed var(--pink); outline-offset: 4px; border-radius: 12px; }
+
+/* the right panel for gallery items: pictures first and big */
+.detail.gal .imgs { flex-direction: column; }
+.detail.gal .img { width: 100%; }
+.detail.gal .imgs img { width: 100%; height: auto; max-height: 340px; object-fit: contain; background: radial-gradient(circle at 50% 40%, #3a2f66, var(--bg) 80%); border-radius: 16px; }
+.imgs .x.ed { right: auto; left: -6px; background: var(--lav); color: #2a1740; font-size: 11px; }
+.detail.gal .imgs .x { right: 8px; top: 8px; }
+.detail.gal .imgs .x.ed { left: 8px; right: auto; }
+
+/* annotate dialog */
+#annotDlg { max-width: 96vw; width: auto; }
+.annot { padding: 14px 16px; display: grid; gap: 10px; }
+.annot-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.annot-bar .seg { margin: 0; }
+.annot-bar .seg button { flex: none; padding: 7px 12px; }
+.annot-bar .swatches { margin: 0; }
+.annot-stage { display: grid; place-items: center; background: var(--bg); border-radius: 14px; padding: 8px; }
+#aCanvas { max-width: min(90vw, 1100px); max-height: 68vh; border-radius: 8px; touch-action: none; cursor: crosshair; background: #000; }
+.annot-foot { display: flex; gap: 8px; align-items: center; justify-content: flex-end; flex-wrap: wrap; }
+.annot-foot .muted { margin-right: auto; max-width: 420px; }
+.ghost.on { border-color: var(--lav); background: var(--card-hi); }
 
 /* dialogs */
 dialog { background: var(--card); color: var(--text); border: 1px solid var(--line); border-radius: 22px; padding: 0; max-width: min(520px, 94vw); width: 100%; box-shadow: 0 20px 70px #000a; }

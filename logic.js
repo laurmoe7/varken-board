@@ -32,7 +32,7 @@
     return {
       v: 1,
       projects: [
-        { id: 'petshopper', name: 'Pet Shopper', emoji: '🐹', color: COLORS[0], repo: 'https://github.com/laurmoe7/pet-shopper', updated: now },
+        { id: 'petshopper', name: 'Pet Shopper', emoji: '🐹', color: COLORS[0], repo: 'https://github.com/laurmoe7/pet-shopper', gallery: 'Cosmetics', updated: now },
         { id: 'funfx', name: 'funFX', emoji: '✨', color: COLORS[1], repo: 'https://github.com/laurmoe7/funFX', updated: now },
         { id: 'pathfinder', name: 'Pathfinder sheet', emoji: '🎲', color: COLORS[2], repo: 'https://github.com/laurmoe7/pathfinder-sheet', updated: now },
       ],
@@ -44,12 +44,14 @@
   function createItem(fields) {
     const now = Date.now();
     return Object.assign(
-      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', images: [], created: now, updated: now },
+      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', images: [], gallery: false, created: now, updated: now },
       fields
     );
   }
 
   const liveProjects = (state) => state.projects.filter((p) => !p.deleted);
+// Projects with a picture gallery (`gallery` is its name, e.g. "Cosmetics").
+const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   // Which field a shorthand word sets: #project, !priority or :type. Unknown words are plain text.
   // A #tag matches the start of a project's name without spaces.
@@ -88,12 +90,17 @@
 
   const priorityRank = (p) => Math.max(0, ids(PRIORITIES).indexOf(p));
   const statusRank = (s) => (s === 'doing' ? 0 : s === 'open' ? 1 : 2);
+  // Dragging gives items an `order`; items never dragged (new ones) come first.
+  const orderKey = (it) => (it.order == null ? -Infinity : it.order);
+  const cmp = (a, b) => (a === b ? 0 : a < b ? -1 : 1);
 
   // Filters: project ('all' or id), type ('all' or id), status ('active' = not done, 'all', or a status), q (text).
+  // Gallery items (cosmetic ideas with big pictures) are kept apart: they show only when f.gallery is set.
   function filterItems(items, f) {
     const q = String((f && f.q) || '').trim().toLowerCase();
     return items.filter((it) => {
       if (it.deleted) return false;
+      if (!!it.gallery !== !!f.gallery) return false;
       if (f.project && f.project !== 'all' && it.project !== f.project) return false;
       if (f.type && f.type !== 'all' && it.type !== f.type) return false;
       if (f.status === 'active' && it.status === 'done') return false;
@@ -103,23 +110,43 @@
     });
   }
 
-  // Priority first, then doing before open before done, then newest first.
+  // Priority first, then the order you dragged them into, then doing before open before done, then newest first.
   function sortItems(items) {
     return items.slice().sort(
       (a, b) =>
         priorityRank(a.priority) - priorityRank(b.priority) ||
+        cmp(orderKey(a), orderKey(b)) ||
         statusRank(a.status) - statusRank(b.status) ||
         b.created - a.created
     );
+  }
+
+  // The gallery has no priorities: your dragged order, new pictures first.
+  const sortGallery = (items) => items.slice().sort((a, b) => cmp(orderKey(a), orderKey(b)) || b.created - a.created);
+
+  // Moving `moved` before the item `beforeId` (or to the end) in `container` (the items on show, in order).
+  // Returns the changes to make: { id, order, priority? }. `priority` is only given for a move between groups.
+  function reorder(container, moved, beforeId, priority) {
+    const rest = container.filter((i) => i.id !== moved.id);
+    const at = beforeId ? rest.findIndex((i) => i.id === beforeId) : -1;
+    rest.splice(at < 0 ? rest.length : at, 0, moved);
+    const changes = [];
+    rest.forEach((it, order) => {
+      const change = { id: it.id, order };
+      if (it.id === moved.id && priority && it.priority !== priority) change.priority = priority;
+      if (it.order !== order || change.priority) changes.push(change);
+    });
+    return changes;
   }
 
   function groupByPriority(items) {
     return PRIORITIES.map((p) => ({ priority: p, items: items.filter((i) => i.priority === p.id) })).filter((g) => g.items.length);
   }
 
-  const countNow = (items) => items.filter((i) => !i.deleted && i.status !== 'done' && i.priority === 'now').length;
+  const countNow = (items) => items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && i.priority === 'now').length;
   const countOpen = (items, project) =>
-    items.filter((i) => !i.deleted && i.status !== 'done' && (project === 'all' || i.project === project)).length;
+    items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && (project === 'all' || i.project === project)).length;
+  const countGallery = (items, project) => items.filter((i) => !i.deleted && i.gallery && i.project === project).length;
 
   // Newer `updated` wins per item and per project; deletions are kept as `deleted: true` so they sync too.
   function mergeById(a, b) {
@@ -160,16 +187,21 @@
   const projectName = (state, id) => (state.projects.find((p) => p.id === id) || { name: 'No project' }).name;
 
   // A paste-ready task list for one project (or all) to hand to a Claude session.
-  function copyForClaude(state, project) {
-    const items = sortItems(filterItems(state.items, { project, status: 'active' }));
+  // With `gallery` it lists that project's gallery pictures instead (not done ones, in your order).
+  function copyForClaude(state, project, gallery) {
+    const proj = state.projects.find((p) => p.id === project);
+    const items = gallery
+      ? sortGallery(filterItems(state.items, { project, status: 'active', gallery: true }))
+      : sortItems(filterItems(state.items, { project, status: 'active' }));
     const title = project === 'all' ? 'all projects' : projectName(state, project);
+    const what = gallery ? (proj && proj.gallery ? proj.gallery.toLowerCase() : 'gallery') + ' ideas' : 'items';
     if (!items.length) return 'Nothing open for ' + title + '.';
-    const lines = ['Open items for ' + title + ':', ''];
+    const lines = ['Open ' + what + ' for ' + title + ':', ''];
     items.forEach((it, n) => {
-      const bits = [typeOf(it.type).label, it.priority];
-      if (it.status === 'doing') bits.push('doing');
+      const bits = gallery ? [] : [typeOf(it.type).label, it.priority];
+      if (it.status === 'doing') bits.push(gallery ? 'making it' : 'doing');
       if (project === 'all') bits.push(projectName(state, it.project));
-      lines.push(n + 1 + '. [' + bits.join(', ') + '] ' + it.title);
+      lines.push(n + 1 + '. ' + (bits.length ? '[' + bits.join(', ') + '] ' : '') + it.title);
       if (it.build) lines.push('   Seen in build ' + it.build);
       if (it.notes) it.notes.split('\n').forEach((l) => lines.push('   ' + l));
       if (it.images.length) lines.push('   (' + it.images.length + ' image' + (it.images.length > 1 ? 's' : '') + ' on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', ') + ')');
@@ -182,7 +214,7 @@
     const out = ['# Varken board', '', '_Updated ' + (when || new Date().toISOString()) + '_', ''];
     for (const p of liveProjects(state)) {
       const items = sortItems(filterItems(state.items, { project: p.id, status: 'active' }));
-      const done = state.items.filter((i) => !i.deleted && i.project === p.id && i.status === 'done').length;
+      const done = state.items.filter((i) => !i.deleted && !i.gallery && i.project === p.id && i.status === 'done').length;
       out.push('## ' + p.emoji + ' ' + p.name + (p.repo ? ' (' + p.repo + ')' : ''), '');
       if (!items.length) out.push('_Nothing open._');
       for (const g of groupByPriority(items)) {
@@ -196,14 +228,25 @@
         out.push('');
       }
       if (done) out.push('_' + done + ' done._', '');
+      if (p.gallery) {
+        const pics = sortGallery(filterItems(state.items, { project: p.id, status: 'active', gallery: true }));
+        out.push('### ' + p.gallery + ' gallery', '');
+        if (!pics.length) out.push('_Nothing here yet._');
+        for (const it of pics) {
+          out.push('- 🎀 **' + it.title + '**' + (it.status === 'doing' ? ' _(making it)_' : '') + ' `' + it.id + '`');
+          if (it.notes) it.notes.split('\n').forEach((l) => out.push('  > ' + l));
+          if (it.images.length) out.push('  - images: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
+        }
+        out.push('');
+      }
     }
     return out.join('\n');
   }
 
   const api = {
     TYPES, PRIORITIES, STATUSES, COLORS, NOW_CAP, MAX_IMAGE_SIDE,
-    uid, slug, typeOf, defaultState, createItem, liveProjects, parseQuick, stripToken,
-    filterItems, sortItems, groupByPriority, countNow, countOpen,
+    uid, slug, typeOf, defaultState, createItem, liveProjects, galleryProjects, parseQuick, stripToken,
+    filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery,
     mergeStates, validateState, fitSize, projectName, copyForClaude, boardMarkdown,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

@@ -7,7 +7,7 @@ Lauren's idea-and-fix board for all her projects (Pet Shopper, funFX, Pathfinder
 - She wants honest, unflattering feedback. Don't flatter; say when something looks bad or is a weak idea.
 - Cute and sweet, dark only (no light mode). It is deliberately not the Nibble look: night-purple, pastel accents, rounded cards.
 - Work on the session branch. Changes go live only when she says "big push": run `npm test`, then push to `main` (no pull request); the Pages workflow tests and deploys.
-- Keep files focused: `logic.js` rules (testable, no DOM), `store.js` IndexedDB, `sync.js` GitHub sync, `app.js` page code. Start a new `app-*.js` file when a topic needs one (add it to `index.html` and the workflow's file copy if it is not `*.js`).
+- Keep files focused: `logic.js` rules (testable, no DOM), `store.js` IndexedDB, `sync.js` GitHub sync, `app.js` page code (list, sidebar, right panel, projects). Topic files load after `app.js` in the order in `index.html`: `app-gallery.js` (the picture gallery view), `app-reorder.js` (drag to reorder), `app-annotate.js` (drawing on pictures), `app-start.js` (last: calls `start()`). Start a new `app-*.js` file when a topic needs one and add it to `index.html` (the workflow copies every `*.js`).
 
 ## How it works
 
@@ -15,7 +15,10 @@ Lauren's idea-and-fix board for all her projects (Pet Shopper, funFX, Pathfinder
 - State (`state`: `projects`, `items`, `images` metadata) is saved whole in IndexedDB `meta/state`; image Blobs are in `images/<id>`. Images are shrunk to 1600 px JPEG on the way in (`processImage`).
 - Items and projects carry `updated`; merging keeps the newer copy per id (`L.mergeStates`). Deleting sets `deleted: true` (a tombstone) so deletes sync. Always call `touch(obj)` when changing one.
 - Sync (`sync.js`) is optional: a fine-grained token for one private data repo, kept in `localStorage` `varken-sync`. It writes `data.json`, `BOARD.md` and `images/<id>.jpg` through the contents API. `tests/sync.test.js` runs it against a fake GitHub.
-- Quick-add shorthand lives in `L.parseQuick`.
+- Quick-add shorthand lives in `L.parseQuick`. Typing in the new-item line opens the right panel as a "New item" form (`ui.drafting`, `ui.draftItem`, `commitDraft`); nothing is saved until Add. Tab jumps to its notes, Ctrl+Enter adds, images pasted or dropped anywhere go to the draft.
+- Order: dragging gives items an `order` (`L.reorder`, `applyMove` in `app-reorder.js`); `L.sortItems` is priority, then `order` (never-dragged items first), then doing-first, then newest. Alt+arrows move a focused card. Dropping on another priority group changes the priority.
+- Gallery: a project with a `gallery` name (Pet Shopper has "Cosmetics"; set in the project dialog) shows a sub-row in the sidebar that opens a big-picture grid (`ui.view = 'gallery'`). Gallery items are ordinary items with `gallery: true`; every list, count, "Copy for Claude" and `BOARD.md` section keeps them apart (`filterItems` needs `gallery` set to see them). They have no type, priority or build; status reads Idea / Making it / In the game. Old saves get Pet Shopper's gallery in `start()`.
+- Pictures: each has a pencil that opens the annotation editor (pen, arrow, circle, box; Save replaces, Save as copy keeps the original). Removed or replaced pictures stay in the browser and data repo.
 
 ## Reading and updating the board from a session
 

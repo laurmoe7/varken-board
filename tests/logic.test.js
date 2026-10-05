@@ -32,7 +32,7 @@ test('filterItems hides done and deleted by default and searches text', () => {
   assert.deepStrictEqual(L.filterItems(items, { project: 'all', status: 'all', q: 'hat' }).map((i) => i.title), ['c']);
 });
 
-test('sortItems goes by priority, then doing first, then newest', () => {
+test('sortItems goes by priority, then dragged order, then doing first, then newest', () => {
   const items = [
     L.createItem({ title: 'soon-old', priority: 'soon', created: 1 }),
     L.createItem({ title: 'now-open', priority: 'now', created: 2 }),
@@ -105,4 +105,65 @@ test('stripToken removes only the shorthand for one field', () => {
   assert.strictEqual(L.stripToken('glow :bug ', ps, 'type'), 'glow ');
   assert.strictEqual(L.stripToken('#nope stays !later', ps, 'project'), '#nope stays !later');
   assert.strictEqual(L.stripToken('', ps, 'type'), '');
+});
+
+test('dragged order beats doing-first, and never-dragged items come first', () => {
+  const items = [
+    L.createItem({ title: 'a', priority: 'soon', order: 1, created: 1 }),
+    L.createItem({ title: 'b', priority: 'soon', order: 0, status: 'doing', created: 2 }),
+    L.createItem({ title: 'c', priority: 'soon', order: 2, created: 3 }),
+    L.createItem({ title: 'fresh', priority: 'soon', created: 9 }),
+  ];
+  assert.deepStrictEqual(L.sortItems(items).map((i) => i.title), ['fresh', 'b', 'a', 'c']);
+});
+
+test('reorder moves within a group and across groups', () => {
+  const a = L.createItem({ id: 'a', priority: 'soon' });
+  const b = L.createItem({ id: 'b', priority: 'soon' });
+  const c = L.createItem({ id: 'c', priority: 'soon' });
+  const x = L.createItem({ id: 'x', priority: 'now' });
+  // c before a: c, a, b
+  assert.deepStrictEqual(L.reorder([a, b, c], c, 'a', 'soon'), [{ id: 'c', order: 0 }, { id: 'a', order: 1 }, { id: 'b', order: 2 }]);
+  // to the end
+  assert.deepStrictEqual(L.reorder([a, b, c], a, null, 'soon').map((r) => r.id), ['b', 'c', 'a']);
+  // x from Now into the Soon group before b: a, x, b, c and x becomes Soon
+  const r = L.reorder([a, b, c], x, 'b', 'soon');
+  assert.deepStrictEqual(r.find((i) => i.id === 'x'), { id: 'x', order: 1, priority: 'soon' });
+  // nothing changes when dropped where it already is
+  const d = L.createItem({ id: 'd', priority: 'soon', order: 0 });
+  const e = L.createItem({ id: 'e', priority: 'soon', order: 1 });
+  assert.deepStrictEqual(L.reorder([d, e], d, 'e', 'soon'), []);
+});
+
+test('gallery items stay out of the to-do list, counts and copy text', () => {
+  const s = state();
+  s.items = [
+    L.createItem({ title: 'bow tie', project: 'petshopper', gallery: true, priority: 'now' }),
+    L.createItem({ title: 'fix hat', project: 'petshopper', priority: 'now' }),
+  ];
+  assert.deepStrictEqual(L.filterItems(s.items, { project: 'all', status: 'active' }).map((i) => i.title), ['fix hat']);
+  assert.deepStrictEqual(L.filterItems(s.items, { project: 'petshopper', status: 'all', gallery: true }).map((i) => i.title), ['bow tie']);
+  assert.strictEqual(L.countOpen(s.items, 'petshopper'), 1);
+  assert.strictEqual(L.countNow(s.items), 1);
+  assert.strictEqual(L.countGallery(s.items, 'petshopper'), 1);
+  assert.doesNotMatch(L.copyForClaude(s, 'petshopper'), /bow tie/);
+  assert.match(L.copyForClaude(s, 'petshopper', true), /Open cosmetics ideas for Pet Shopper:\n\n1\. bow tie/);
+});
+
+test('sortGallery puts your order first and new pictures at the top', () => {
+  const items = [
+    L.createItem({ title: 'old', order: 1, created: 1 }),
+    L.createItem({ title: 'first', order: 0, created: 2 }),
+    L.createItem({ title: 'new', created: 9 }),
+  ];
+  assert.deepStrictEqual(L.sortGallery(items).map((i) => i.title), ['new', 'first', 'old']);
+});
+
+test('boardMarkdown lists the gallery with its picture files', () => {
+  const s = state();
+  s.items = [L.createItem({ id: 'g1', title: 'Star wand', project: 'petshopper', gallery: true, images: ['p1'], notes: 'sparkly' })];
+  const md = L.boardMarkdown(s, 'today');
+  assert.match(md, /### Cosmetics gallery/);
+  assert.match(md, /Star wand\*\* `g1`/);
+  assert.match(md, /images\/p1\.jpg/);
 });
