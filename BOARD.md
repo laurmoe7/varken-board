@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T21:12:51.532Z_
+_Updated 2026-10-05T21:12:58.939Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -8,7 +8,7 @@ _Updated 2026-10-05T21:12:51.532Z_
 
 - [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
-  > space between 2 slices bacon has white space. parts of pretzel are bleeding color oout
+  > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
 - [ ] 💡 **color variations for skins !soemday** `muvqmyc8968to`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
