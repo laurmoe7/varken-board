@@ -3,17 +3,19 @@
 // many things you checked off today (bud, leaves, flower). It changes mood with the board.
 
 const PIG_INK = '#2d1633';
-const PIG_STAGES = 3;
 
-// The plant on his head: stage 0 a bud, 1 two leaves, 2 leaves and a flower.
+// The plant on his head grows every 3 tasks done today: 0 a bud, 3 two leaves, 6 a flower bud, 9 in full bloom.
 function sproutSvg(stage) {
   const stem = (top) => `<path d="M60 34 Q60 ${top + 12} 58 ${top}" fill="none" stroke="#5fd3a0" stroke-width="3.4" stroke-linecap="round"/>`;
+  const leaves = (y) => `<path d="M59 ${y} Q42 ${y - 6} 36 ${y + 4} Q48 ${y + 10} 59 ${y} Z" fill="#8ff0c8"/><path d="M60 ${y + 2} Q77 ${y - 6} 85 ${y + 4} Q71 ${y + 12} 60 ${y + 2} Z" fill="#6fe2b4"/>`;
   if (stage <= 0) return '<path d="M60 34 Q60 28 60 24" fill="none" stroke="#5fd3a0" stroke-width="3.4" stroke-linecap="round"/><ellipse cx="60" cy="21" rx="4" ry="5.5" fill="#8ff0c8"/>';
   if (stage === 1) return stem(14) + '<path d="M58 16 Q42 8 36 18 Q48 26 58 16 Z" fill="#8ff0c8"/><path d="M59 20 Q76 10 84 20 Q70 30 59 20 Z" fill="#6fe2b4"/>';
+  if (stage === 2) return stem(12) + leaves(26) + '<ellipse cx="58" cy="9" rx="5" ry="7" fill="#ff9ec7"/><path d="M53 12 Q58 16 63 12 Q61 17 58 17 Q55 17 53 12 Z" fill="#6fe2b4"/>';
   return (
     stem(10) +
-    '<path d="M59 26 Q42 20 36 30 Q48 36 59 26 Z" fill="#8ff0c8"/><path d="M60 28 Q77 20 85 30 Q71 38 60 28 Z" fill="#6fe2b4"/>' +
-    '<g transform="translate(58 8)"><circle r="3.2" fill="#ffe29a"/><g fill="#ff9ec7"><circle cy="-6.2" r="3.6"/><circle cx="5.9" cy="-1.9" r="3.6"/><circle cx="3.6" cy="5" r="3.6"/><circle cx="-3.6" cy="5" r="3.6"/><circle cx="-5.9" cy="-1.9" r="3.6"/></g><circle r="3.2" fill="#ffe29a"/></g>'
+    leaves(26) +
+    '<g transform="translate(58 8)"><circle r="3.4" fill="#ffe29a"/><g fill="#ff9ec7"><circle cy="-6.6" r="3.9"/><circle cx="6.3" cy="-2" r="3.9"/><circle cx="3.9" cy="5.3" r="3.9"/><circle cx="-3.9" cy="5.3" r="3.9"/><circle cx="-6.3" cy="-2" r="3.9"/></g><circle r="3.4" fill="#ffe29a"/></g>' +
+    '<path d="M76 8 l1.4 3 3 1.4 -3 1.4 -1.4 3 -1.4 -3 -3 -1.4 3 -1.4z" fill="#ffe29a"/><path d="M40 12 l1.1 2.4 2.4 1.1 -2.4 1.1 -1.1 2.4 -1.1 -2.4 -2.4 -1.1 2.4 -1.1z" fill="#ffe29a"/>'
   );
 }
 
@@ -92,7 +94,7 @@ function paintHero(gp, open, now, poke) {
   const mood = night ? 'sleep' : gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
   const key = mood + (night ? '-night' : '');
   const done = L.doneToday(state.items, Date.now(), 'all');
-  const stage = done >= 3 ? 2 : done >= 1 ? 1 : 0; // the plant grows through the day
+  const stage = Math.min(3, Math.floor(done / 3)); // the plant grows on the 3rd, 6th and 9th task of the day
   if (key !== heroMood) {
     $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap: night });
     heroMood = key;
