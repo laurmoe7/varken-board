@@ -1,14 +1,14 @@
 # Varken board
 
-_Updated 2026-10-05T22:01:02.093Z_
+_Updated 2026-10-05T22:04:11.228Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Now
 
-- [ ] 🔧 **fix box that pops up when a pet suggests a shopping item** `muvsjsncf6bkf`
+- [ ] 🔧 **fix box that pops up when a pet suggests a shopping item** _(easy)_ `muvsjsncf6bkf`
   > it sits in front of the shopping list and is too intrusive
-- [ ] 💡 **holding toy above head makes pet annoyed** `muvshzp12zzr2`
+- [ ] 💡 **holding toy above head makes pet annoyed** _(easy)_ `muvshzp12zzr2`
 - [ ] 💡 **search menu in dressing room** `muvsf90rbtfto`
 
 ### Soon
