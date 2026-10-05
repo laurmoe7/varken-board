@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:59:20.411Z_
+_Updated 2026-10-05T23:59:29.689Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -52,7 +52,6 @@ _2 done._
 
 ### Notes
 
-- name it "cookie sheets" or "cookie's sheets"
 - 10 goodnight kisses to unlock carer persona
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
