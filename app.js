@@ -224,7 +224,7 @@ function cardHtml(it) {
     .slice(0, 4)
     .map((id) => `<img data-img="${esc(id)}" alt="">`)
     .join('');
-  return `<article class="card ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
+  return `<article class="card p-${it.priority} ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
     <button class="check" data-check aria-label="${it.status === 'done' ? 'Mark not done' : 'Mark done'}">✓</button>
     <div class="card-body">
       <div class="card-title">${L.typeOf(it.type).emoji} ${esc(it.title)}</div>
@@ -281,10 +281,11 @@ const draftValues = () => Object.assign(L.parseQuick($('#quickInput').value, pro
 
 // The title box grows with its text, so long titles are easy to read and edit.
 function growTitle() {
-  const t = $('#dTitle');
-  if (!t) return;
-  t.style.height = 'auto';
-  t.style.height = t.scrollHeight + 'px';
+  for (const t of [$('#dTitle'), $('#dNotes')]) {
+    if (!t) continue;
+    t.style.height = 'auto';
+    t.style.height = t.scrollHeight + 2 + 'px';
+  }
 }
 
 function renderDetail() {
@@ -616,7 +617,8 @@ function wire() {
   d.addEventListener('input', (e) => {
     const it = current();
     if (!it) return;
-    if (e.target.id === 'dTitle') { growTitle(); setField(it, 'title', e.target.value.replace(/\s*\n\s*/g, ' ')); }
+    if (e.target.id === 'dTitle' || e.target.id === 'dNotes') growTitle();
+    if (e.target.id === 'dTitle') { setField(it, 'title', e.target.value.replace(/\s*\n\s*/g, ' ')); }
     else if (e.target.id === 'dNotes') setField(it, 'notes', e.target.value);
     else if (e.target.id === 'dBuild') setField(it, 'build', e.target.value.trim());
     else return;
