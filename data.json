@@ -787,6 +787,23 @@
       "slot": "",
       "created": 1791243103130,
       "updated": 1791243192636
+    },
+    {
+      "id": "muvw4oltfa8ba",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add confirmation before deleting a spells in spellbook, items, and other things that can be deleted",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791243497873,
+      "updated": 1791243497873
     }
   ],
   "notes": [
