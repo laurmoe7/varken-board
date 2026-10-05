@@ -10,10 +10,10 @@ function pigSvg(mood, cls) {
   const eye = (x, dx) => `<ellipse cx="${x}" cy="38" rx="3.8" ry="4.4" fill="${PIG_INK}"/><circle cx="${x - 1.2 + dx}" cy="36.2" r="1.7" fill="#fff"/><circle cx="${x + 1.3 + dx}" cy="40" r=".8" fill="#fff"/>`;
   const brows = (a, b) => `<path d="M${25} ${a} q4 ${b} 8 0 M${47} ${a} q4 ${-b} 8 0" fill="none" ${line} stroke-width="1.6"/>`;
   const eyes = {
-    happy: eye(29, 0) + eye(51, 0) + `<path d="M25 30 q4 -2.4 8 0 M47 30 q4 -2.4 8 0" fill="none" ${line} stroke-width="1.6"/>`,
+    happy: eye(29, 0) + eye(51, 0) + `<path d="M27 30 q2 -1.4 4 0 M49 30 q2 -1.4 4 0" fill="none" ${line} stroke-width="1.2"/>`,
     sleep: `<path d="M24.5 38 q4.5 4.5 9 0 M46.5 38 q4.5 4.5 9 0" fill="none" ${line}/>`,
-    worry: eye(29, 0) + eye(51, 0) + `<path d="M25 31 q4 -1 8 -3.4 M55 31 q-4 -1 -8 -3.4" fill="none" ${line} stroke-width="1.6"/>`,
-    sniff: eye(29, 1.4) + eye(51, 1.4) + `<path d="M25 30 q4 -2.4 8 0 M47 30 q4 -2.4 8 0" fill="none" ${line} stroke-width="1.6"/>`,
+    worry: eye(29, 0) + eye(51, 0) + `<path d="M26.5 30.5 l4.5 -2 M53.5 30.5 l-4.5 -2" fill="none" ${line} stroke-width="1.2"/>`,
+    sniff: eye(29, 1.4) + eye(51, 1.4) + `<path d="M27 30 q2 -1.4 4 0 M49 30 q2 -1.4 4 0" fill="none" ${line} stroke-width="1.2"/>`,
   }[m];
   const extra = {
     happy: '',
@@ -21,7 +21,7 @@ function pigSvg(mood, cls) {
     worry: '<path d="M62 14 q4 5 0 8.5 q-4 -3.5 0 -8.5z" fill="#8fd3ff"/>',
     sniff: '<circle cx="68" cy="47" r="5" fill="#b9a4ff33" stroke="#b9a4ff" stroke-width="2.2"/><path d="M71.5 50.5 l4.5 4.5" stroke="#b9a4ff" stroke-width="3" stroke-linecap="round"/>',
   }[m];
-  const mouth = m === 'sleep' ? '' : `<path d="M38.6 51.4 q1.4 1.4 2.8 0" fill="none" ${line} stroke-width="1.2"/>`;
+  const mouth = m === 'sleep' ? '' : `<path d="M38.8 53.6 q1.2 1.2 2.4 0" fill="none" ${line} stroke-width="1.2"/>`;
   return `<svg class="pig ${cls || ''} pig-${m}" viewBox="0 0 80 64" aria-hidden="true">
     <g class="ear ear-l"><path d="M11 30 Q3 15 11 4 Q28 5 38 22 Z" fill="#ffb8cf" ${line}/><path d="M14 25 Q9 14 14 9 Q24 11 30 20 Z" fill="#ff8fae"/></g>
     <g class="ear ear-r"><path d="M69 30 Q77 15 69 4 Q52 5 42 22 Z" fill="#ffb8cf" ${line}/><path d="M66 25 Q71 14 66 9 Q56 11 50 20 Z" fill="#ff8fae"/></g>
@@ -30,8 +30,8 @@ function pigSvg(mood, cls) {
     <ellipse cx="63" cy="45" rx="7" ry="4.6" fill="#ff8cb4" opacity=".9"/>
     <path d="M13.5 43 l2 4 M17.5 42.5 l2 4 M21.5 43 l2 4 M56.5 43 l2 4 M60.5 42.5 l2 4 M64.5 43 l2 4" stroke="${PIG_INK}" stroke-width="1.5" stroke-linecap="round"/>
     <g class="pig-eyes">${eyes}</g>
-    <ellipse cx="40" cy="45" rx="5.4" ry="4.2" fill="#f2709f" ${line} stroke-width="2"/>
-    <ellipse cx="38" cy="45" rx=".9" ry="1.4" fill="${PIG_INK}"/><ellipse cx="42" cy="45" rx=".9" ry="1.4" fill="${PIG_INK}"/>
+    <path d="M35 43.4 Q40 40.4 45 43.4 Q46 49.6 40 49.8 Q34 49.6 35 43.4 Z" fill="#ff9dbf" ${line} stroke-width="2"/>
+    <ellipse cx="38.2" cy="45.6" rx=".8" ry="1.2" fill="${PIG_INK}"/><ellipse cx="41.8" cy="45.6" rx=".8" ry="1.2" fill="${PIG_INK}"/>
     ${mouth}
     ${extra}
   </svg>`;
