@@ -55,7 +55,8 @@ hr { border: 0; border-top: 1px dashed var(--line); margin: 14px 0; }
 .proj .count { color: var(--muted); font-size: 13px; font-weight: 700; }
 .proj .edit { opacity: 0; border: 0; background: none; color: var(--muted); padding: 2px 4px; }
 .proj:hover .edit, .proj:focus-within .edit { opacity: 1; }
-.side-foot { margin-top: auto; display: flex; gap: 8px; align-items: center; justify-content: space-between; padding-top: 10px; }
+.side-bottom { margin-top: auto; display: flex; flex-direction: column; gap: 8px; align-items: stretch; }
+.side-foot { margin-top: 0; display: flex; gap: 8px; align-items: center; justify-content: space-between; padding-top: 10px; }
 
 /* buttons */
 .primary { background: linear-gradient(135deg, var(--pink), var(--lav)); color: #2a1740; border: 0; border-radius: 14px; padding: 9px 18px; font-weight: 800; }
@@ -281,8 +282,8 @@ dialog { border-radius: 26px; }
 .hero { display: flex; align-items: center; gap: 16px; min-width: 0; }
 .hero-pig { flex: none; width: 92px; height: 92px; }
 .hero-pig .pig { width: 100%; height: 100%; animation: bob 4s ease-in-out infinite; filter: drop-shadow(0 6px 10px #0005); }
-.pig .ear-l { transform-box: view-box; transform-origin: 20px 24px; animation: wiggle-l 5s ease-in-out infinite; }
-.pig .ear-r { transform-box: view-box; transform-origin: 44px 24px; animation: wiggle-r 5s ease-in-out infinite 1.2s; }
+.pig .ear-l { transform-box: view-box; transform-origin: 20px 26px; animation: wiggle-l 5s ease-in-out infinite; }
+.pig .ear-r { transform-box: view-box; transform-origin: 44px 26px; animation: wiggle-r 5s ease-in-out infinite 1.2s; }
 @keyframes wiggle-l { 0%, 90%, 100% { rotate: 0deg; } 94% { rotate: -9deg; } 97% { rotate: 4deg; } }
 @keyframes wiggle-r { 0%, 90%, 100% { rotate: 0deg; } 94% { rotate: 9deg; } 97% { rotate: -4deg; } }
 .pig-sleep { animation-duration: 6s; }
@@ -301,8 +302,6 @@ dialog { border-radius: 26px; }
 .tag.fx-easy { color: var(--mint); border-color: #8ff0c855; background: #8ff0c814; }
 .tag.fx-medium { color: var(--butter); border-color: #ffe29a55; background: #ffe29a14; }
 .tag.fx-hard { color: #ff9a8a; border-color: #ff9a8a55; background: #ff9a8a14; }
-.tag.done-b { color: var(--mint); border-color: #8ff0c844; }
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 
 /* compare */
 .gcard .cmp { position: absolute; top: 10px; right: 48px; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line); background: #17122bcc; font-size: 14px; opacity: 0; transition: opacity .12s, transform .12s; }
@@ -325,9 +324,20 @@ dialog { border-radius: 26px; }
 .cmp-col p { margin: 4px 0 0; color: var(--muted); font-size: 13px; white-space: pre-wrap; }
 
 /* hints */
-.hint-btn { background: var(--card); border: 1px dashed var(--line); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.hero-pig { cursor: pointer; }
+.hint-btn { align-self: flex-start; background: var(--card); border: 1px dashed var(--line); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: var(--muted); }
 .hint-btn:hover { color: var(--text); border-color: var(--lav); }
 .hint-btn[hidden] { display: none; }
-.warnbox { background: #ffe29a14; border: 1px solid #ffe29a55; color: var(--butter); border-radius: 14px; padding: 8px 12px; font-size: 13px; }
-.warnbox[hidden] { display: none; }
 @media (max-width: 900px) { .hero-pig { width: 64px; height: 64px; } .cmp-grid { grid-template-columns: 1fr; } }
+
+/* scroll bars: slim, round, pastel */
+* { scrollbar-width: thin; scrollbar-color: #5a4a96 transparent; }
+@supports selector(::-webkit-scrollbar) {
+  * { scrollbar-width: auto; scrollbar-color: auto; }
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #ff9ec799, #b9a4ff99); border-radius: 999px; border: 3px solid transparent; background-clip: padding-box; }
+  ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, var(--pink), var(--lav)); background-clip: padding-box; border: 3px solid transparent; }
+  ::-webkit-scrollbar-corner { background: transparent; }
+}
+.hint[hidden] { display: none; }

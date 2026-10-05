@@ -8,9 +8,7 @@ const L = require('../logic.js');
 function fakeGithub(files) {
   let n = 0;
   const calls = [];
-  const info = { private: true };
   const fetch = async (url, opt) => {
-    if (!url.includes('/contents/')) return info.fail ? { ok: false, status: 404 } : { ok: true, status: 200, json: async () => ({ private: info.private }) };
     const path = url.split('/contents/')[1];
     const method = (opt && opt.method) || 'GET';
     calls.push(method + ' ' + path);
@@ -39,7 +37,7 @@ function fakeGithub(files) {
     files.set(path, { content: b.content, sha: 's' + ++n });
     return json(201, {});
   };
-  return { fetch, calls, info };
+  return { fetch, calls };
 }
 
 function load(files) {
@@ -124,13 +122,4 @@ test('the clean-up can list and delete pictures in the data repo', async () => {
 test('an empty repo has no pictures to list', async () => {
   const { Sync } = load(new Map());
   assert.strictEqual((await Sync.listImages()).length, 0);
-});
-
-test('isPublic says whether the data repo can be read by anyone', async () => {
-  const { Sync, gh } = load(new Map());
-  assert.strictEqual(await Sync.isPublic(), false);
-  gh.info.private = false;
-  assert.strictEqual(await Sync.isPublic(), true);
-  gh.info.fail = true;
-  assert.strictEqual(await Sync.isPublic(), null);
 });

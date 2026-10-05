@@ -224,10 +224,3 @@ test('~effort shorthand sets the effort, and the effort filter and copy text use
   assert.match(L.copyForClaude(s, 'funfx'), /\[Idea, soon, easy\] a/);
   assert.match(L.boardMarkdown(s), /\*\*a\*\* _\(easy\)_/);
 });
-
-test('done-in-build is kept, searchable and written into the copy text', () => {
-  const it = L.createItem({ title: 'a', project: 'funfx', doneBuild: '214' });
-  assert.strictEqual(L.createItem({}).doneBuild, '');
-  assert.strictEqual(L.filterItems([it], { status: 'all', q: '214' }).length, 1);
-  assert.match(L.copyForClaude(Object.assign(state(), { items: [it] }), 'funfx'), /Done in build 214/);
-});

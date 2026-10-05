@@ -17,12 +17,12 @@
   <aside class="side">
     <div class="logo">
       <svg class="pig" viewBox="0 0 64 64" aria-hidden="true">
-        <ellipse cx="13" cy="17" rx="9" ry="11" fill="#ff8fbb" transform="rotate(-28 13 17)"/>
-        <ellipse cx="51" cy="17" rx="9" ry="11" fill="#ff8fbb" transform="rotate(28 51 17)"/>
+        <path d="M11 27 L12 8 L28 20 Z" fill="#ff8fbb" stroke="#ff8fbb" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M53 27 L52 8 L36 20 Z" fill="#ff8fbb" stroke="#ff8fbb" stroke-width="5" stroke-linejoin="round"/>
         <circle cx="32" cy="36" r="24" fill="#ffb3d1"/>
-        <ellipse cx="21" cy="42" rx="5" ry="3.5" fill="#ff7aa8" opacity=".45"/>
-        <ellipse cx="43" cy="42" rx="5" ry="3.5" fill="#ff7aa8" opacity=".45"/>
-        <ellipse cx="32" cy="42" rx="10" ry="7.5" fill="#ff8fbb"/>
+        <ellipse cx="17" cy="40" rx="5" ry="3.5" fill="#ffa98a" opacity=".75"/>
+        <ellipse cx="47" cy="40" rx="5" ry="3.5" fill="#ffa98a" opacity=".75"/>
+        <ellipse cx="32" cy="42" rx="10" ry="7.5" fill="#f2709f"/>
         <circle cx="28.5" cy="42" r="1.8" fill="#6b2a4a"/><circle cx="35.5" cy="42" r="1.8" fill="#6b2a4a"/>
         <circle cx="23" cy="30" r="3.2" fill="#3a1d3a"/><circle cx="41" cy="30" r="3.2" fill="#3a1d3a"/>
         <circle cx="24" cy="29" r="1" fill="#fff"/><circle cx="42" cy="29" r="1" fill="#fff"/>
@@ -31,10 +31,12 @@
     </div>
     <nav id="projects" aria-label="Projects"></nav>
     <button class="ghost wide" id="addProject">＋ New project</button>
-    <button class="hint-btn" id="cleanHint" hidden></button>
-    <div class="side-foot">
-      <button class="pill" id="syncPill" title="Sync with GitHub"></button>
-      <button class="ghost icon" id="settingsBtn" title="Sync and backup" aria-label="Sync and backup">⚙️</button>
+    <div class="side-bottom">
+      <button class="hint-btn" id="cleanHint" hidden></button>
+      <div class="side-foot">
+        <button class="pill" id="syncPill" title="Sync with GitHub"></button>
+        <button class="ghost icon" id="settingsBtn" title="Sync and backup" aria-label="Sync and backup">⚙️</button>
+      </div>
     </div>
   </aside>
 
@@ -71,7 +73,7 @@
       <input id="quickInput" placeholder="Add something… ( N )   e.g. #funfx glow looks flat !now :bug" aria-label="New item">
       <button type="submit" class="primary">Add</button>
     </form>
-    <p class="hint" id="quickHint">Type <code>#project</code> <code>!now</code> <code>!soon</code> <code>!someday</code> <code>:idea</code> <code>:fix</code> <code>:bug</code> <code>~easy</code> <code>~medium</code> <code>~hard</code> anywhere in the line. The panel on the right opens as you type: pick labels, add notes and images, then press Add.</p>
+    <p class="hint" id="quickHint"><code>#project</code> <code>!now</code> <code>!soon</code> <code>!someday</code> <code>:idea</code> <code>:fix</code> <code>:bug</code> <code>~easy</code> <code>~medium</code> <code>~hard</code></p>
 
     <section id="list" aria-live="polite"></section>
   </main>
@@ -85,7 +87,6 @@
     <p class="muted">Everything is already saved in this browser. Sync also keeps a copy in a private GitHub repo, so nothing is lost and Claude can read your board.</p>
     <label>Data repo <input id="syncRepo" placeholder="laurmoe7/varken-data" autocomplete="off"></label>
     <label>Token <input id="syncToken" type="password" placeholder="github_pat_…" autocomplete="off"></label>
-    <p class="warnbox" id="syncWarn" hidden>⚠ This data repo is <b>public</b>: anyone can read your board, notes and pictures. Fine if that's what you want. Otherwise make the repo private on GitHub (Settings, Danger zone).</p>
     <p class="muted small">Make a private repo for the data. Then make a fine-grained token (GitHub, Settings, Developer settings, Personal access tokens) for <b>only that repo</b> with <b>Contents: Read and write</b>. It stays in this browser.</p>
     <div class="row">
       <button type="button" class="primary" id="syncSave">Save and sync</button>

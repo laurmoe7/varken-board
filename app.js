@@ -7,7 +7,7 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 let state = L.defaultState();
 // ui.drafting: the right panel is in "new item" mode, filling ui.draftItem until Add.
 const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', slot: '', build: '', notes: '', images: [] });
-const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', builds: {}, status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
+const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
 
 // ---------- saving ----------
@@ -35,7 +35,7 @@ window.addEventListener('pagehide', flushSave);
 function loadUi() {
   try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, q: '', drafting: false, draftItem: blankDraft() }); } catch { /* fresh */ }
 }
-function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, view: ui.view, type: ui.type, effort: ui.effort, builds: ui.builds, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
+function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, view: ui.view, type: ui.type, effort: ui.effort, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
 
 // ---------- sync ----------
 function setPill(kind, text) {
@@ -177,7 +177,7 @@ function renderSide() {
     .join('');
 }
 
-function renderHead() {
+function renderHead(poke) {
   const gp = galleryProject();
   const p = project(ui.project);
   $('#viewTitle').textContent = gp ? '🎀 ' + gp.gallery : p ? p.emoji + ' ' + p.name : '🌈 All projects';
@@ -185,7 +185,7 @@ function renderHead() {
   const now = L.countNow(state.items);
   const sub = $('#viewSub');
   sub.className = 'sub';
-  paintHero(!!gp, gp ? L.countGallery(state.items, gp.id) : n, now);
+  paintHero(!!gp, gp ? L.countGallery(state.items, gp.id) : n, now, poke === true);
   if (gp) {
     const g = L.countGallery(state.items, gp.id);
     sub.textContent = `${gp.emoji} ${gp.name} · ${g} ${g === 1 ? 'idea' : 'ideas'}`;
@@ -217,9 +217,8 @@ function renderHead() {
   const input = $('#quickInput');
   const hint = $('#quickHint');
   input.dataset.def = input.dataset.def || input.placeholder;
-  hint.dataset.def = hint.dataset.def || hint.innerHTML;
   input.placeholder = gp ? `Name a ${gp.gallery.toLowerCase()} idea… ( N )` : input.dataset.def;
-  hint.innerHTML = gp ? 'Type a name, then paste or drop pictures (Ctrl+V). The panel on the right opens as you type. Drag cards to put them in order.' : hint.dataset.def;
+  hint.hidden = !!gp; // the shorthand doesn't apply to gallery ideas
 }
 
 function cardHtml(it) {
@@ -236,8 +235,7 @@ function cardHtml(it) {
         ${it.effort ? `<span class="tag fx fx-${it.effort}">${L.effortOf(it.effort).emoji} ${L.effortOf(it.effort).label.toLowerCase()}</span>` : ''}
         ${ui.project === 'all' && p ? `<span class="tag proj-tag" style="background:${esc(p.color)}">${esc(p.emoji)} ${esc(p.name)}</span>` : ''}
         ${it.status === 'doing' ? '<span class="tag doing">doing</span>' : ''}
-        ${it.build ? `<span class="tag">seen in ${esc(it.build)}</span>` : ''}
-        ${it.doneBuild ? `<span class="tag done-b">✓ build ${esc(it.doneBuild)}</span>` : ''}
+        ${it.build ? `<span class="tag">build ${esc(it.build)}</span>` : ''}
         ${it.notes ? '<span class="tag">📝</span>' : ''}
         ${it.images.length > 4 ? `<span class="tag">🖼 ${it.images.length}</span>` : ''}
       </div>
@@ -320,8 +318,7 @@ function renderDetail() {
     <label>Effort <span class="muted small">(click again to clear)</span> ${seg('effort', L.EFFORTS, v.effort)}</label>`}
     ${draft ? '' : `<label>Status ${seg('status', gal ? GALLERY_STATUSES : L.STATUSES, it.status)}</label>`}
     ${gal ? '' : `<label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
-    <div class="two-col"><label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>
-    ${draft ? '' : `<label>Done in build <input id="dDoneBuild" value="${esc(it.doneBuild)}" placeholder="when fixed" autocomplete="off"></label>`}</div>`}
+    <label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>`}
     <label>Notes <textarea id="dNotes" placeholder="${gal ? 'What is it? Colours, which slot, where it goes…' : 'What is it, what should happen instead…'}">${esc(it.notes)}</textarea></label>
     ${gal ? '' : images}
     <div class="row">${
@@ -464,11 +461,6 @@ function toggleDone(id) {
   if (!it) return;
   const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"], .gcard[data-id="${CSS.escape(id)}"]`);
   setField(it, 'status', it.status === 'done' ? 'open' : 'done');
-  if (it.status !== 'done') it.doneBuild = '';
-  if (it.status === 'done' && !it.gallery && !it.doneBuild && ui.builds[it.project]) {
-    it.doneBuild = ui.builds[it.project]; // the build you last finished something in; change it in the panel
-    toast('Done in build ' + it.doneBuild + ' (change it in the panel)');
-  }
   if (it.status === 'done' && ui.status === 'active' && card && !galleryProject()) {
     card.classList.add('done', 'sparkle');
     setTimeout(() => renderAll(true), 450);
@@ -637,10 +629,6 @@ function wire() {
     if (e.target.id === 'dTitle') { setField(it, 'title', e.target.value.replace(/\s*\n\s*/g, ' ')); }
     else if (e.target.id === 'dNotes') setField(it, 'notes', e.target.value);
     else if (e.target.id === 'dBuild') setField(it, 'build', e.target.value.trim());
-    else if (e.target.id === 'dDoneBuild') {
-      setField(it, 'doneBuild', e.target.value.trim());
-      if (it.doneBuild) { ui.builds[it.project] = it.doneBuild; saveUi(); }
-    }
     else return;
     if (!ui.drafting) renderList();
   });
@@ -711,7 +699,6 @@ function wire() {
     $('#syncToken').value = c.token || '';
     $('#syncMsg').textContent = '';
     $('#settingsDlg').showModal();
-    checkPublic();
   };
   $('#settingsBtn').onclick = openSettings;
   $('#syncPill').onclick = () => (Sync.config() ? doSync() : openSettings());

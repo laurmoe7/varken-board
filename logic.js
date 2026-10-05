@@ -53,7 +53,7 @@
   function createItem(fields) {
     const now = Date.now();
     return Object.assign(
-      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', doneBuild: '', effort: '', images: [], gallery: false, slot: '', created: now, updated: now },
+      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', effort: '', images: [], gallery: false, slot: '', created: now, updated: now },
       fields
     );
   }
@@ -126,7 +126,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       if (f.effort && f.effort !== 'all' && it.effort !== f.effort) return false;
       if (f.status === 'active' && it.status === 'done') return false;
       if (f.status && f.status !== 'active' && f.status !== 'all' && it.status !== f.status) return false;
-      if (q && !(it.title + ' ' + it.notes + ' ' + it.build + ' ' + it.doneBuild).toLowerCase().includes(q)) return false;
+      if (q && !(it.title + ' ' + it.notes + ' ' + it.build).toLowerCase().includes(q)) return false;
       return true;
     });
   }
@@ -247,7 +247,6 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       if (project === 'all') bits.push(projectName(state, it.project));
       lines.push(n + 1 + '. ' + (bits.length ? '[' + bits.join(', ') + '] ' : '') + it.title);
       if (it.build) lines.push('   Seen in build ' + it.build);
-      if (it.doneBuild) lines.push('   Done in build ' + it.doneBuild);
       if (it.notes) it.notes.split('\n').forEach((l) => lines.push('   ' + l));
       if (it.images.length) lines.push('   (' + it.images.length + ' image' + (it.images.length > 1 ? 's' : '') + ' on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', ') + ')');
     });
@@ -267,7 +266,6 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
         for (const it of g.items) {
           out.push('- [ ] ' + typeOf(it.type).emoji + ' **' + it.title + '**' + (it.effort ? ' _(' + it.effort + ')_' : '') + (it.status === 'doing' ? ' _(doing)_' : '') + ' `' + it.id + '`');
           if (it.build) out.push('  - seen in build ' + it.build);
-          if (it.doneBuild) out.push('  - done in build ' + it.doneBuild);
           if (it.notes) it.notes.split('\n').forEach((l) => out.push('  > ' + l));
           if (it.images.length) out.push('  - images: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
         }

@@ -78,17 +78,8 @@ async function refreshUnusedHint() {
   } catch { el.hidden = true; }
 }
 
-// The sync dialog warns when the data repo is public.
-async function checkPublic() {
-  const w = $('#syncWarn');
-  w.hidden = true;
-  if (!Sync.config()) return;
-  if ((await Sync.isPublic()) === true) w.hidden = false;
-}
-
 function refreshHints() {
   refreshUnusedHint();
-  if (Sync.config()) checkPublic();
 }
 
 $('#cleanHint').onclick = () => { $('#settingsBtn').click(); scanUnused(); };

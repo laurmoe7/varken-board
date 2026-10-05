@@ -104,19 +104,6 @@ const Sync = (() => {
   async function deleteImage(id, sha) {
     await call(config(), 'images/' + id + '.jpg', { method: 'DELETE', body: { message: 'Remove unused image ' + id, sha } });
   }
-  // True when the data repo is public (anyone could read the board and pictures), false when private, null if unknown.
-  async function isPublic() {
-    const cfg = config();
-    if (!cfg) return null;
-    try {
-      const res = await fetch('https://api.github.com/repos/' + cfg.repo, {
-        headers: { Authorization: 'Bearer ' + cfg.token, Accept: 'application/vnd.github+json' },
-      });
-      if (!res.ok) return null;
-      const info = await res.json();
-      return typeof info.private === 'boolean' ? !info.private : null;
-    } catch { return null; }
-  }
   // Forget that these were uploaded (they are gone now).
   function forget(ids) {
     const sent = uploaded();
@@ -124,5 +111,5 @@ const Sync = (() => {
     markUploaded(sent);
   }
 
-  return { config, setConfig, run, listImages, deleteImage, isPublic, forget };
+  return { config, setConfig, run, listImages, deleteImage, forget };
 })();
