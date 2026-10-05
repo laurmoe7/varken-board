@@ -1028,6 +1028,23 @@
       "slot": "",
       "created": 1791244597916,
       "updated": 1791244597916
+    },
+    {
+      "id": "muvwvexl5jwxp",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "try to find info on extra, newer spells",
+      "notes": "Not every spell: coverage is about 2,250 of the 2,900+ published. Feats, traits and archetypes stop at the Advanced Class Guide (2015), because that's where the free data source ends. Later books only contribute spells.\nsupport for rolling for stats",
+      "build": "",
+      "effort": "hard",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791244745049,
+      "updated": 1791244745049
     }
   ],
   "notes": [
