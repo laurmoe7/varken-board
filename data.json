@@ -776,17 +776,17 @@
       "project": "funfx",
       "type": "idea",
       "priority": "soon",
-      "status": "done",
+      "status": "open",
       "title": "test",
       "notes": "",
       "build": "",
       "effort": "",
-      "doneAt": 1791243186198,
+      "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243103130,
-      "updated": 1791243186198
+      "updated": 1791243192636
     }
   ],
   "notes": [
