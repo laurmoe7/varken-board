@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T21:38:02.615Z_
+_Updated 2026-10-05T21:41:16.084Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** `muvry35yoek6i`
 - [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
   > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
