@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T21:56:35.408Z_
+_Updated 2026-10-05T21:56:44.729Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Now
 
+- [ ] 💡 **holding toy above head makes pet annoyed** `muvshzp12zzr2`
 - [ ] 💡 **search menu in dressing room** `muvsf90rbtfto`
 
 ### Soon
