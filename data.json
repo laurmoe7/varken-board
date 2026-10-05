@@ -797,13 +797,13 @@
       "title": "add confirmation before deleting a spells in spellbook, items, and other things that can be deleted",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243497873,
-      "updated": 1791243497873
+      "updated": 1791244111713
     },
     {
       "id": "muvw6qqplhsc0",
@@ -832,13 +832,13 @@
       "title": "fix ability to recognize familiar eligibilty",
       "notes": "does not recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243709209,
-      "updated": 1791243709209
+      "updated": 1791244109115
     },
     {
       "id": "muvwa5qvbgfbp",
