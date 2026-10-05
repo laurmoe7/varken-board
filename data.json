@@ -232,13 +232,13 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "someday",
-      "status": "open",
+      "status": "done",
       "title": "Check the boogie dance and rock/roly/wiggle tilts for a seam",
       "notes": "They still use CSS scale/rotate. Firefox-only seam is acceptable; move to svgSquish if it shows in Chrome or Safari.",
       "build": "",
       "images": [],
       "created": 1791231087089,
-      "updated": 1791231087089
+      "updated": 1791232281974
     }
   ],
   "images": {
