@@ -710,7 +710,8 @@
       "scope": "petshopper",
       "text": "test",
       "created": 1791240704241,
-      "updated": 1791240704241
+      "updated": 1791240708193,
+      "deleted": true
     }
   ],
   "images": {
