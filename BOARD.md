@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:48:27.800Z_
+_Updated 2026-10-05T23:48:36.016Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -83,9 +83,9 @@ _2 done._
 
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
   > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
-- [ ] 💡 **fix ability to recognize familiar eligibilty** `muvw97o904dtq`
+- [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ `muvw97o904dtq`
   > does not recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
-- [ ] 💡 **add confirmation before deleting a spells in spellbook, items, and other things that can be deleted** `muvw4oltfa8ba`
+- [ ] 💡 **add confirmation before deleting a spells in spellbook, items, and other things that can be deleted** _(easy)_ `muvw4oltfa8ba`
 
 ### Someday
 
