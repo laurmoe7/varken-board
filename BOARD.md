@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T20:30:55.902Z_
+_Updated 2026-10-05T20:31:26.074Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -16,8 +16,8 @@ _Updated 2026-10-05T20:30:55.902Z_
   > Swap the Voice object in app-voice.js for the phone's own recognition.
 - [ ] 💡 **Paid pet customization** `seed-petshopper-13`
   > The dressing room tests the idea; no payments yet.
-- [ ] 🔧 **Check the boogie dance and rock/roly/wiggle tilts for a seam** `seed-petshopper-14`
-  > They still use CSS scale/rotate. Firefox-only seam is acceptable; move to svgSquish if it shows in Chrome or Safari.
+
+_1 done._
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
 
