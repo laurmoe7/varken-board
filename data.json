@@ -486,6 +486,21 @@
       "slot": "Face",
       "created": 1791237290537,
       "updated": 1791237290537
+    },
+    {
+      "id": "muvshshuzviba",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "clapping and wow noises in dressing room",
+      "notes": "",
+      "build": "",
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791237390978,
+      "updated": 1791237390978
     }
   ],
   "images": {
