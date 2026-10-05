@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T21:12:58.939Z_
+_Updated 2026-10-05T21:36:20.963Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -28,6 +28,10 @@ _Updated 2026-10-05T21:12:58.939Z_
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 _1 done._
+
+### Cosmetics gallery
+
+_Nothing here yet._
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
 
