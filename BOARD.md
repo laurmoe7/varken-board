@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T21:04:25.590Z_
+_Updated 2026-10-05T21:04:36.767Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **color variations for skins !soemday** `muvqmyc8968to`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
 
 ### Someday
