@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:33:16.900Z_
+_Updated 2026-10-05T23:38:22.150Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -74,6 +74,10 @@ _2 done._
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
+
+### Soon
+
+- [ ] 💡 **add confirmation before deleting a spells in spellbook, items, and other things that can be deleted** `muvw4oltfa8ba`
 
 ### Someday
 
