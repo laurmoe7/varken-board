@@ -471,6 +471,21 @@
       "slot": "",
       "created": 1791237272427,
       "updated": 1791237272427
+    },
+    {
+      "id": "muvsfmzt69fh4",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "Nerd glasses",
+      "notes": "nerd glasses that magnify eyes, like mag. glass\n",
+      "build": "",
+      "images": [],
+      "gallery": true,
+      "slot": "Face",
+      "created": 1791237290537,
+      "updated": 1791237290537
     }
   ],
   "images": {
