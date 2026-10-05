@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T22:12:01.812Z_
+_Updated 2026-10-05T22:14:59.053Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -38,7 +38,7 @@ _Updated 2026-10-05T22:12:01.812Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_1 done._
+_2 done._
 
 ### Cosmetics gallery
 
