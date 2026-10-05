@@ -1,12 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T22:22:20.428Z_
+_Updated 2026-10-05T22:22:26.101Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Now
 
-- [ ] 💡 **make magnified eye get larger the second the magnifying glass is in front of it.** `muvtewqq1h90v`
+- [ ] 💡 **make magnified eye get larger the second the magnifying glass is in front of it.** _(easy)_ `muvtewqq1h90v`
   > currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting
 - [ ] 💡 **add placeholder shop button in menu bar, greyed out** _(easy)_ `muvt1nee26as9`
 - [ ] 🔧 **fix box that pops up when a pet suggests a shopping item** _(easy)_ `muvsjsncf6bkf`
