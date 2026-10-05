@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:59:29.689Z_
+_Updated 2026-10-05T23:59:35.256Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -110,5 +110,6 @@ _5 done._
 
 ### Notes
 
+- name it "cookie sheets" or "cookie's sheets"
 - make layout look more like an old tome with turning pages, still dark to not hurt eyes
 
