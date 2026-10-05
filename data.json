@@ -45,7 +45,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "furniture locking and tweaks",
       "notes": "",
       "build": "",
@@ -53,20 +53,20 @@
         "muvkreo7u0x0q"
       ],
       "created": 1791224395357,
-      "updated": 1791224402701
+      "updated": 1791231190050
     },
     {
       "id": "seed-funfx-1",
       "project": "funfx",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "Assign the comic images to triggers",
       "notes": "All 15 comic_*.tga are registered but unused; every trigger still defaults to popup.tga. The suggested next step in funFX CLAUDE.md.",
       "build": "",
       "images": [],
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231226423
     },
     {
       "id": "seed-funfx-2",
@@ -112,13 +112,13 @@
       "project": "funfx",
       "type": "idea",
       "priority": "someday",
-      "status": "open",
+      "status": "done",
       "title": "Fish bite trigger",
       "notes": "First /funfx fishlog showed no event at the bite. Needs a longer recording that runs past the cast.",
       "build": "",
       "images": [],
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231207108
     },
     {
       "id": "seed-funfx-6",
