@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:56:42.189Z_
+_Updated 2026-10-05T23:56:57.539Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -100,7 +100,7 @@ _2 done._
   > They are shown as plain text instead (proficiencies, deeds, bonus spells).
 - [ ] 💡 **Prestige classes in the level-up wizard and compute()** _(medium)_ `seed-pathfinder-8`
   > Not supported yet.
-- [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(medium)_ `seed-pathfinder-9`
+- [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ `seed-pathfinder-9`
   > Not modelled yet.
 
 _5 done._
