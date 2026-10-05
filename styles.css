@@ -451,3 +451,23 @@ select option:checked { background: #4a3a86; color: #fff; }
 @keyframes peek { 0%, 56%, 70%, 100% { opacity: 0; } 59%, 66% { opacity: 1; } }
 @keyframes snot { 0%, 20% { opacity: 0; transform: scale(.2); } 25% { opacity: 1; transform: scale(.5); } 45% { opacity: 1; transform: scale(1.5); } 50% { opacity: 1; transform: scale(1.65); } 52% { opacity: 0; transform: scale(2.1); } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .pig-sleep .peek, .pig-sleep .snot { animation: none; } }
+
+/* daytime pig: blinks, hums, a butterfly drops by; mornings add a sun and a stretch */
+.pig-happy .pig-eyes { transform-box: fill-box; transform-origin: center; animation: pig-blink 6.5s ease-in-out infinite; }
+@keyframes pig-blink { 0%, 93%, 100% { transform: scaleY(1); } 95.5% { transform: scaleY(.08); } }
+.pig .day-note, .pig .day-fly { opacity: 0; }
+.pig .day-note { animation: day-note 21s ease-out 5s infinite; }
+@keyframes day-note { 0% { opacity: 0; transform: translate(0, 8px); } 6% { opacity: 1; } 18% { opacity: 1; transform: translate(5px, -6px); } 26%, 100% { opacity: 0; transform: translate(8px, -14px); } }
+.pig .day-fly { animation: day-fly 29s linear 9s infinite; }
+@keyframes day-fly {
+  0% { opacity: 0; transform: translate(-6px, 70px); } 3% { opacity: 1; }
+  10% { transform: translate(18px, 52px); } 17% { transform: translate(8px, 34px); } 24% { transform: translate(34px, 20px); }
+  31% { opacity: 1; transform: translate(60px, 8px); } 36%, 100% { opacity: 0; transform: translate(90px, -6px); }
+}
+.pig .day-rays { transform-box: fill-box; transform-origin: center; animation: day-spin 24s linear infinite; }
+@keyframes day-spin { to { transform: rotate(360deg); } }
+.pig .day-sun { animation: day-glow 4s ease-in-out infinite; }
+@keyframes day-glow { 50% { opacity: .7; } }
+.pig-morning .pig-all { animation: pig-stretch 23s ease-in-out 3s infinite; }
+@keyframes pig-stretch { 0%, 88%, 100% { transform: scale(1, 1); } 92% { transform: scale(.94, 1.09); } 96% { transform: scale(1.04, .96); } }
+@media (prefers-reduced-motion: reduce) { .pig-happy .pig-eyes, .pig .day-note, .pig .day-fly, .pig .day-rays, .pig .day-sun, .pig-morning .pig-all { animation: none; } }

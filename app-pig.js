@@ -38,7 +38,9 @@ function pigSvg(mood, cls, opts) {
     sniff: eye(45, 1.6) + eye(75, 1.6),
   }[m];
   const extra = {
-    happy: '',
+    happy: '<text class="day-note" x="96" y="46" font-size="13" font-weight="800" fill="#ffd1e6">♪</text>'
+      + '<g class="day-fly"><path d="M0 0 q-5 -7 -7 -2 q0 5 7 2 q5 3 7 -2 q-2 -5 -7 2z" fill="#ffe29a" stroke="#ffc46b" stroke-width=".8"/></g>'
+      + (o.morning ? '<g class="day-sun"><circle cx="16" cy="18" r="6" fill="#ffe29a"/><g class="day-rays" stroke="#ffe29a" stroke-width="2" stroke-linecap="round"><path d="M16 6v3M16 27v3M4 18h3M25 18h3M7.5 9.5l2 2M22.5 24.5l2 2M24.5 9.5l-2 2M9.5 24.5l-2 2"/></g></g>' : ''),
     sleep: '<text x="92" y="40" font-size="14" font-weight="800" fill="#b9a4ff">z</text><text x="102" y="28" font-size="10" font-weight="800" fill="#b9a4ff">z</text>',
     worry: '<path d="M98 36 q5 6 0 10.5 q-5 -4.5 0 -10.5z" fill="#8fd3ff"/>',
     sniff: '<circle cx="100" cy="30" r="7" fill="#b9a4ff33" stroke="#b9a4ff" stroke-width="2.6"/><path d="M105 35 l7 7" stroke="#b9a4ff" stroke-width="3.6" stroke-linecap="round"/>',
@@ -48,7 +50,7 @@ function pigSvg(mood, cls, opts) {
     <path d="M40 92 h26 M40 99 h18" stroke="#c9a24a" stroke-width="2.4" stroke-linecap="round"/><path d="M70 90 l4 4 8 -9" fill="none" stroke="#ff6f9f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></g>
     <ellipse cx="30" cy="92" rx="7" ry="9" transform="rotate(-24 30 92)" fill="#ffa6c4"/><ellipse cx="90" cy="92" rx="7" ry="9" transform="rotate(24 90 92)" fill="#ffa6c4"/></g>`
     : '<ellipse cx="14" cy="80" rx="7" ry="10" transform="rotate(20 14 80)" fill="#ffa6c4"/><ellipse cx="106" cy="80" rx="7" ry="10" transform="rotate(-20 106 80)" fill="#ffa6c4"/>';
-  return `<svg class="pig ${cls || ''} pig-${m}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
+  return `<svg class="pig ${cls || ''} pig-${m}${o.morning ? ' pig-morning' : ''}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
     <ellipse cx="44" cy="104" rx="10" ry="6" fill="#ff9fbc"/><ellipse cx="76" cy="104" rx="10" ry="6" fill="#ff9fbc"/>
     <g class="ear ear-l"><path d="M26 44 Q20 22 36 20 Q50 22 54 36 Z" fill="#ffa6c4"/></g><g class="ear ear-r"><path d="M94 44 Q100 22 84 20 Q70 22 66 36 Z" fill="#ffa6c4"/></g>
     <ellipse cx="60" cy="70" rx="46" ry="38" fill="#ffb8cf"/><ellipse cx="60" cy="82" rx="30" ry="20" fill="#ffd3e2" opacity=".55"/>
@@ -94,11 +96,13 @@ let heroMood = '', heroStage = -1;
 function paintHero(gp, open, now, poke) {
   const night = L.isNight(); // from 10 pm to 6 am he sleeps in his nightcap, whatever the list looks like
   const mood = night ? 'sleep' : gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
-  const key = mood + (night ? '-night' : '');
+  const hr = new Date().getHours();
+  const morning = !night && hr >= 6 && hr < 11; // a little sun and a stretch until eleven
+  const key = mood + (night ? '-night' : '') + (morning ? '-morning' : '');
   const done = L.doneToday(state.items, Date.now(), 'all');
   const stage = Math.min(3, Math.floor(done / 3)); // the plant grows on the 3rd, 6th and 9th task of the day
   if (key !== heroMood) {
-    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap: night });
+    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap: night, morning });
     heroMood = key;
     heroStage = stage;
   } else if (stage !== heroStage) {

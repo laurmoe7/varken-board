@@ -36,3 +36,4 @@ Plain web app, no build step, no dependencies. Open it over http (for example `p
 
 The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open items by project and priority) and `images/<id>.jpg`.
 - A 📋 copy button on every card title (shows on hover) copies the item for Claude. The sleeping pig sometimes peeks with one eye and blows a nose bubble.
+- Daytime pig: blinks, hums a note, a butterfly drops by now and then; mornings (6-11) add a little sun and a stretch.
