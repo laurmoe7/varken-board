@@ -58,6 +58,7 @@ async function doSync() {
     const merged = await Sync.run(state, { hasImage: Store.hasImage, getImage: Store.getImage, putImage: Store.putImage });
     state = L.mergeStates(state, merged);
     await Store.saveState(state);
+    pigSay('sync', { p: 0.25 });
     setPill('ok', '✓ Synced ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     renderAll(true);
     refreshHints();
@@ -68,6 +69,7 @@ async function doSync() {
     return true;
   } catch (e) {
     const offline = !navigator.onLine || /fetch/i.test(e.message);
+    pigSay('syncfail', { p: 0.6 });
     setPill('bad', offline ? '⚠ Offline' : '⚠ Sync problem');
     $('#syncPill').title = e.message;
     $('#syncMsg').textContent = offline ? 'Could not reach GitHub. Your board is safe in this browser.' : e.message;
@@ -127,6 +129,7 @@ async function addFiles(files, target) {
   save();
   renderImages();
   if (!isDraft) renderList();
+  pigSay('image', { p: 0.5 });
 }
 // Where a pasted or dropped image goes: the panel's item, or a new item (opening the panel for it).
 function imageTarget(inDetail) {
@@ -147,6 +150,7 @@ const galleryProject = () => {
 const GALLERY_STATUSES = [{ id: 'open', label: 'Idea' }, { id: 'doing', label: 'Making it' }, { id: 'done', label: 'In the game' }];
 
 function showView(projectId, view) {
+  pigSay('view', { p: 0.15 });
   if ((view === 'notes' || view === 'gnotes') && ui.drafting) { ui.drafting = false; ui.draftItem = blankDraft(); }
   ui.project = projectId;
   ui.view = view;
@@ -381,6 +385,7 @@ function toast(text, undo) {
 
 // ---------- actions ----------
 function openItem(id) {
+  pigSay('open', { p: 0.12 });
   ui.drafting = false;
   ui.open = id;
   renderDetail();
@@ -448,6 +453,7 @@ function commitDraft() {
   renderDetail();
   renderList();
   const p = project(it.project);
+  pigSay('add', { p: 0.3 });
   toast('Added' + (gp ? ' to ' + gp.gallery : p ? ' to ' + p.name : ''));
   input.focus();
   return true;
@@ -487,6 +493,7 @@ function deleteItem(id) {
   save();
   if (ui.open === id) ui.open = null;
   renderAll();
+  pigSay('delete', { p: 0.5 });
   toast('Deleted', () => { it.deleted = false; touch(it); save(); renderAll(); });
 }
 
@@ -584,6 +591,7 @@ function wire() {
   });
   $('#effortSel').onchange = (e) => { ui.effort = e.target.value; saveUi(); renderList(); };
   $('#statusSel').onchange = (e) => { ui.status = e.target.value; saveUi(); renderList(); };
+  $('#search').onfocus = () => pigSay('search', { p: 0.2 });
   $('#search').oninput = (e) => { ui.q = e.target.value; renderList(); };
   $('#copyBtn').onclick = async () => {
     try { await navigator.clipboard.writeText(L.copyForClaude(state, ui.project, !!galleryProject())); toast('Copied. Paste it into a Claude session.'); }
@@ -720,9 +728,10 @@ function wire() {
     $('#syncToken').value = c.token || '';
     $('#syncMsg').textContent = '';
     $('#settingsDlg').showModal();
+    pigSay('settings', { p: 0.4 });
   };
   $('#settingsBtn').onclick = openSettings;
-  $('#helpBtn').onclick = () => $('#helpDlg').showModal();
+  $('#helpBtn').onclick = () => { $('#helpDlg').showModal(); pigSay('help', { p: 0.4 }); };
   $('#helpClose').onclick = () => $('#helpDlg').close();
   $('#syncPill').onclick = () => (Sync.config() ? doSync() : openSettings());
   $('#syncSave').onclick = () => {

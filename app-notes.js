@@ -78,6 +78,7 @@ function addNote() {
   const input = $('#quickInput');
   const text = input.value.trim();
   if (!text) { toast('Type a note first'); return; }
+  pigSay('note', { p: 0.25 });
   state.notes.push(L.createNote({ scope: notesScope(), text }));
   input.value = '';
   save();
@@ -89,6 +90,7 @@ const findNote = (id) => state.notes.find((n) => n.id === id);
 
 // Turns a note into an item (general page: in the project you used last) or a gallery idea (project page).
 function promoteNote(n) {
+  pigSay('promote', { p: 0.6 });
   const [first, ...rest] = n.text.trim().split('\n');
   const title = first.trim().slice(0, 120);
   const more = (first.trim().length > 120 ? first.trim() : '') + (rest.length ? '\n' + rest.join('\n') : '');

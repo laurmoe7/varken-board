@@ -15,6 +15,7 @@ function paintCompareBar() {
 function openCompare() {
   const gp = galleryProject();
   if (!gp || compare.size < 2) return;
+  pigSay('compare', { p: 0.5 });
   const picks = galleryItems(gp).filter((i) => compare.has(i.id));
   $('#cmpGrid').style.setProperty('--n', picks.length);
   $('#cmpGrid').innerHTML = picks

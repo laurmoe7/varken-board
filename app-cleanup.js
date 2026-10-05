@@ -60,6 +60,7 @@ async function deleteUnused() {
   unusedFound = null;
   save();
   refreshUnusedHint();
+  pigSay('clean', { p: 0.6 });
   cleanMsg(`Deleted ${gone.length} ${gone.length === 1 ? 'picture' : 'pictures'}.` + (failed ? ` ${failed} could not be deleted; try again later.` : ''), failed > 0);
 }
 

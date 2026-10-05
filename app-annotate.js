@@ -80,6 +80,7 @@ async function openAnnotate(target, id) {
 async function saveAnnot(asCopy) {
   const dlg = $('#annotDlg');
   if (!ann.strokes.length) { dlg.close(); return; }
+  pigSay('draw', { p: 0.5 });
   const c = document.createElement('canvas');
   c.width = ann.img.width;
   c.height = ann.img.height;

@@ -104,8 +104,53 @@ function emptyHtml(mood, title, hint) {
   return `<div class="empty">${pigSvg(mood, 'big')}<b>${esc(title)}</b>${esc(hint)}</div>`;
 }
 
-// Actions: hop, show off the note, wiggle, sway the plant, and cheer. The class stays on the svg until it ends.
-const ACTS = ['hop', 'note', 'wiggle', 'sprout'];
+// Things he says about what you just did. Never spammy: each event has a chance (`p`), and there is a cooldown
+// between any two. A line is a string or { t: text, act: action }. The poke lines are his catchphrases.
+const REACT = {
+  done: ['Ding! Look at you.', 'One down. Smug mode: on.', { t: 'Varken nummer één!', act: 'dance' }, 'Hrrrrng.. productive.', 'Acceptable. 👌', 'Do it again, I dare you.', 'Crossed off! Delicious.'],
+  add: ['Another one?! You are insatiable.', 'Noted. Ominously.', 'Added. Future-you says thanks. Or ugh.', 'Bold of you to assume I will remember that.', 'Ooh, a new one. Excuse me, where will it sit?'],
+  delete: ['Excuse me! That was important. Maybe.', 'Gone. Poof. No regrets.', 'Hrrrrng.. fine, bye.', 'Deleted! Undo is right there, coward.'],
+  open: ['Nosy.', 'Peeking at the details, are we?', 'Excuse me, I was reading that.', 'Look all you want.'],
+  view: ['New page, who dis?', 'Change of scenery! Same pig.', 'Hrrrrng.. wake me when we get there.', 'Wandering around, hm?'],
+  sync: ['Synced. I feel so safe. 💗', 'Cloud nap complete.', 'Backed up! Dramatic.'],
+  syncfail: ['Sync is being a drama queen.', 'The internet ate it. Rude.', 'Hrrrrng.. offline again?'],
+  settings: ['Poking the settings. Brave.', 'Do not touch anything important.', 'Excuse me, private area!'],
+  image: ['Ooh, a picture!', 'Is that for me? It is for me.', 'Excuse me, who is that handsome one?'],
+  note: ['Thoughts! Delicious.', 'Hrrrrng.. interesting.', 'Jot it, do not lose it.'],
+  promote: ['Promotion! Look at that note go.', 'From thought to task. Terrifying.', { t: 'Varken nummer één! (that idea, I mean)', act: 'dance' }],
+  compare: ['Judgy, are we? I love it.', 'Side by side. Pick the cuter one. (Me.)'],
+  reorder: ['Excuse me! Careful with the merchandise.', 'Rearranging the furniture again?', 'Priorities! Spicy.'],
+  draw: ['Artist at work! 🎨', 'Is that a masterpiece? It is a masterpiece.'],
+  help: ['Need a hint? Me too, honestly.', 'Cheat sheet! Smart.'],
+  clean: ['Spring cleaning! Hrrrrng.. exhausting.', 'Bye-bye, mystery pictures.'],
+  search: ['Looking for something? Check the snacks.', 'Hrrrrng.. seek and ye shall find.'],
+  poke: [
+    { t: 'Excuse me!', act: 'hop' }, { t: 'Hrrrrng..', act: 'wiggle' }, { t: 'Varken nummer één!', act: 'dance' }, 'Hey! Personal space!', 'Boop received. Boop returned.',
+    'Are you going to feed me or just poke me?', 'I am working here! (I am not.)', { t: 'Hrrrrng.. five more minutes.', act: 'sprout' }, 'Do I look like a button? Do not answer that.',
+    { t: 'Excuse me, I have a schedule!', act: 'note' }, 'Tickles!', { t: 'Varken nummer één, reporting for duty!', act: 'dance' },
+  ],
+};
+let lastReact = 0, lastReactLine = '';
+function pigSay(key, opts) {
+  const o = opts || {};
+  const now = Date.now();
+  if (now < sayHold.until && !o.force) return; // a celebration is on show
+  if (!o.force && (now - lastReact < 9000 || Math.random() > (o.p == null ? 0.3 : o.p))) return;
+  const list = REACT[key];
+  if (!list || !$('#heroSay')) return;
+  let line = list[Math.floor(Math.random() * list.length)];
+  if ((line.t || line) === lastReactLine && list.length > 1) line = list[(list.indexOf(line) + 1) % list.length];
+  const text = line.t || line;
+  lastReact = now;
+  lastReactLine = text;
+  sayHold = { text, until: now + 4500 };
+  $('#heroSay').textContent = text;
+  setTimeout(() => { if (Date.now() >= sayHold.until) renderHead(); }, 4600);
+  if (line.act || o.force) pigAct(line.act || ACTS[Math.floor(Math.random() * ACTS.length)]);
+}
+
+// Actions: hop, show off the note, wiggle, sway the plant, dance and cheer. The class stays on the svg until it ends.
+const ACTS = ['hop', 'note', 'wiggle', 'sprout', 'dance'];
 let actTimer;
 function pigAct(name) {
   const svg = $('#heroPig svg');
@@ -114,7 +159,7 @@ function pigAct(name) {
   void svg.getBoundingClientRect(); // restart the animation if the same action repeats
   svg.classList.add('act-' + name);
   clearTimeout(actTimer);
-  actTimer = setTimeout(() => svg.classList.remove('act-' + name), name === 'wiggle' ? 2100 : 1800);
+  actTimer = setTimeout(() => svg.classList.remove('act-' + name), name === 'wiggle' ? 2100 : name === 'dance' ? 2700 : 1800);
 }
 function floatHearts(n) {
   const box = $('#heroPig');
@@ -132,6 +177,7 @@ function floatHearts(n) {
 const CLEAR_SAYS = ['EVERYTHING done!! Who is amazing? You.', 'Empty list! I am so proud of you. 🎉', 'All clear!! Time for a snack.', 'Look at you, being all productive. Ugh, adorable.', 'Zero tasks. I am obsessed with you right now.', 'Is there anything you cannot do? Rude.', 'Done, done, DONE. Take a bow. 🎀']; // when the whole list is clear
 function pigCheer(allClear) {
   pigAct('cheer');
+  if (!allClear) setTimeout(() => pigSay('done', { p: 0.3 }), 900); // after the cheer
   floatHearts(allClear ? 8 : 4);
   if (allClear) {
     sayHold = { text: CLEAR_SAYS[Math.floor(Math.random() * CLEAR_SAYS.length)], until: Date.now() + 6000 };
@@ -141,8 +187,8 @@ function pigCheer(allClear) {
 }
 // Poking the pig makes him do something and say something new.
 $('#heroPig').addEventListener('click', () => {
-  pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]);
-  renderHead(true);
+  if (Math.random() < 0.65) pigSay('poke', { force: true });
+  else { pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]); renderHead(true); }
 });
 // Now and then he does something on his own.
 setInterval(() => {

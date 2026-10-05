@@ -31,6 +31,7 @@ function dropPlace(e) {
 function applyMove(id, beforeId, priority) {
   const moved = state.items.find((i) => i.id === id);
   if (!moved) return;
+  pigSay('reorder', { p: 0.35 });
   const gp = galleryProject();
   const shown = gp ? galleryItems(gp) : L.sortItems(L.filterItems(state.items, ui)).filter((i) => i.priority === priority);
   const changes = L.reorder(shown, moved, beforeId, gp ? null : priority);

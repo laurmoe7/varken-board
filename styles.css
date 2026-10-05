@@ -367,6 +367,18 @@ dialog { border-radius: 26px; }
 .pig.act-wiggle .pig-all { animation: pig-wiggle .6s ease-in-out 3; }
 @keyframes pig-wiggle { 0%, 100% { rotate: -6deg; } 50% { rotate: 6deg; } }
 .pig.act-sprout .sprout-slot { animation: sprout-sway .5s ease-in-out 4; }
+.pig.act-dance .pig-all { animation: pig-dance 2.6s ease-in-out; }
+.pig.act-dance .note-grp { animation: note-up 1.3s ease-in-out 2; }
+.pig.act-dance .sprout-slot { animation: sprout-sway .4s ease-in-out 6; }
+.pig.act-dance .ear-l, .pig.act-dance .ear-r { animation: ear-flap .3s ease-in-out 8; }
+@keyframes pig-dance {
+  0%, 100% { translate: 0 0; rotate: 0deg; }
+  12% { translate: -9px -7px; rotate: -9deg; } 25% { translate: 0 0; rotate: 0deg; }
+  37% { translate: 9px -7px; rotate: 9deg; } 50% { translate: 0 0; rotate: 0deg; }
+  62% { translate: -9px -7px; rotate: -9deg; } 75% { translate: 9px -7px; rotate: 9deg; }
+  88% { translate: 0 -12px; rotate: 0deg; }
+}
+@keyframes ear-flap { 0%, 100% { rotate: 0deg; } 50% { rotate: -10deg; } }
 @keyframes sprout-sway { 0%, 100% { rotate: -12deg; } 50% { rotate: 12deg; } }
 .heart { position: absolute; left: 50%; bottom: 40%; font-size: 16px; color: var(--pink); pointer-events: none; animation: heart-up 1.3s ease-out forwards; }
 @keyframes heart-up { from { opacity: 1; transform: translate(0, 0) scale(.6); } to { opacity: 0; transform: translate(var(--dx), -70px) scale(1.2); } }
