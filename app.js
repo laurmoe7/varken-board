@@ -279,6 +279,14 @@ const current = () => (ui.drafting ? ui.draftItem : item());
 // What the new-item panel shows: the panel's choices with anything typed as #project !now :bug on top.
 const draftValues = () => Object.assign(L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults()), { slot: ui.draftItem.slot });
 
+// The title box grows with its text, so long titles are easy to read and edit.
+function growTitle() {
+  const t = $('#dTitle');
+  if (!t) return;
+  t.style.height = 'auto';
+  t.style.height = t.scrollHeight + 'px';
+}
+
 function renderDetail() {
   const d = $('#detail');
   const it = current();
@@ -298,7 +306,7 @@ function renderDetail() {
     <div class="drop" id="dDrop">Paste (Ctrl+V), drop images here, or <button type="button" id="dPick">pick files</button><input type="file" id="dFile" accept="image/*" multiple hidden></div>`;
   d.innerHTML = `
     <h3>${draft ? 'New ' + (gal ? 'idea' : 'item') : 'Details'} <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
-    ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<input id="dTitle" value="${esc(it.title)}" aria-label="Title">`}
+    ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<textarea id="dTitle" rows="2" aria-label="Title">${esc(it.title)}</textarea>`}
     ${gal ? images + slotRow : `<label>Type ${seg('type', L.TYPES, v.type)}</label>
     <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>`}
     ${draft ? '' : `<label>Status ${seg('status', gal ? GALLERY_STATUSES : L.STATUSES, it.status)}</label>`}
@@ -313,6 +321,7 @@ function renderDetail() {
     }</div>`;
   if (draft) paintDraft();
   renderImages();
+  growTitle();
 }
 
 // Refreshes the new-item panel's title and choices as you type, without rebuilding it.
@@ -607,7 +616,7 @@ function wire() {
   d.addEventListener('input', (e) => {
     const it = current();
     if (!it) return;
-    if (e.target.id === 'dTitle') setField(it, 'title', e.target.value);
+    if (e.target.id === 'dTitle') { growTitle(); setField(it, 'title', e.target.value.replace(/\s*\n\s*/g, ' ')); }
     else if (e.target.id === 'dNotes') setField(it, 'notes', e.target.value);
     else if (e.target.id === 'dBuild') setField(it, 'build', e.target.value.trim());
     else return;
@@ -623,6 +632,7 @@ function wire() {
     if (e.target.id === 'dFile') { addFiles(e.target.files, it); e.target.value = ''; }
   });
   d.addEventListener('keydown', (e) => {
+    if (e.target.id === 'dTitle' && e.key === 'Enter' && !e.ctrlKey && !e.metaKey) { e.preventDefault(); e.target.blur(); return; }
     if (!ui.drafting) return;
     if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); commitDraft(); }
     else if (e.key === 'Tab' && e.shiftKey && e.target.id === 'dNotes') { e.preventDefault(); qi.focus(); }

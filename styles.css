@@ -127,7 +127,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: n
 .detail input, .detail textarea, .detail select, .dlg input { width: 100%; margin-top: 4px; color: var(--text); font-weight: 500; }
 .draft-title { font-size: 18px; font-weight: 800; padding: 10px 12px; background: var(--bg); border: 1px dashed var(--lav); border-radius: 12px; word-break: break-word; }
 .draft-title.dim { color: var(--muted); font-weight: 600; }
-.detail #dTitle { font-size: 18px; font-weight: 800; }
+.detail #dTitle { font-size: 18px; font-weight: 800; min-height: 72px; resize: vertical; line-height: 1.35; overflow: hidden; }
 .detail textarea { min-height: 130px; resize: vertical; }
 .seg { display: flex; gap: 4px; margin-top: 4px; }
 .seg button { flex: 1; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 7px 4px; font-weight: 700; color: var(--muted); }
@@ -150,7 +150,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: n
 /* picture gallery */
 .proj.subrow { margin: -2px 0 0 18px; width: calc(100% - 18px); padding: 6px 10px; }
 .proj.subrow .badge { width: 24px; height: 24px; border-radius: 8px; font-size: 13px; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 22px; }
 .gcard { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; cursor: pointer; transition: transform .14s, border-color .14s, box-shadow .14s; }
 .gcard:hover, .gcard:focus-visible { transform: translateY(-3px); border-color: var(--pink); box-shadow: 0 14px 34px #0007; }
 .gimg { aspect-ratio: 5 / 4; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, #3a2f66, var(--bg2) 75%); }
@@ -179,7 +179,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: n
 /* the right panel for gallery items: pictures first and big */
 .detail.gal .imgs { flex-direction: column; }
 .detail.gal .img { width: 100%; }
-.detail.gal .imgs img { width: 100%; height: auto; max-height: 340px; object-fit: contain; background: radial-gradient(circle at 50% 40%, #3a2f66, var(--bg) 80%); border-radius: 16px; }
+.detail.gal .imgs img { width: 100%; height: auto; max-height: 238px; object-fit: contain; background: radial-gradient(circle at 50% 40%, #3a2f66, var(--bg) 80%); border-radius: 16px; }
 .imgs .x.ed { right: auto; left: -6px; background: var(--lav); color: #2a1740; font-size: 11px; }
 .detail.gal .imgs .x { right: 8px; top: 8px; }
 .detail.gal .imgs .x.ed { left: 8px; right: auto; }
