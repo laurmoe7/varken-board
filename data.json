@@ -38,13 +38,13 @@
       "title": "furniture locking and tweaks",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791224356717,
-      "updated": 1791232442463
+      "updated": 1791232442463,
+      "doneBuild": ""
     },
     {
       "id": "muvkr90dnmqfu",
@@ -55,7 +55,6 @@
       "title": "furniture locking and tweaks",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [
         "muvkreo7u0x0q"
@@ -64,6 +63,7 @@
       "slot": "",
       "created": 1791224395357,
       "updated": 1791232240255,
+      "doneBuild": "",
       "deleted": true
     },
     {
@@ -75,13 +75,13 @@
       "title": "Assign the comic images to triggers",
       "notes": "All 15 comic_*.tga are registered but unused; every trigger still defaults to popup.tga. The suggested next step in funFX CLAUDE.md.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
       "updated": 1791232246102,
+      "doneBuild": "",
       "deleted": true
     },
     {
@@ -93,13 +93,13 @@
       "title": "Check in game: Crowd control with a real stun/root",
       "notes": "/funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231087088,
+      "doneBuild": ""
     },
     {
       "id": "seed-funfx-3",
@@ -110,13 +110,13 @@
       "title": "Check in game: moved Image popups page, Quest complete, missing-file detection",
       "notes": "Visual of missing files works with /funfx missingtest; detection needs /funfx assetcheck in game.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231087088,
+      "doneBuild": ""
     },
     {
       "id": "seed-funfx-4",
@@ -127,13 +127,13 @@
       "title": "Check in game: new mail, auction sold and skill-up triggers",
       "notes": "Built but never confirmed in game.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231087088,
+      "doneBuild": ""
     },
     {
       "id": "seed-funfx-5",
@@ -144,13 +144,13 @@
       "title": "Fish bite trigger",
       "notes": "First /funfx fishlog showed no event at the bite. Needs a longer recording that runs past the cast.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
       "updated": 1791232251156,
+      "doneBuild": "",
       "deleted": true
     },
     {
@@ -162,13 +162,13 @@
       "title": "Buffs page can only compare buffs out of combat",
       "notes": "In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231087088,
+      "doneBuild": ""
     },
     {
       "id": "seed-funfx-7",
@@ -179,13 +179,13 @@
       "title": "Bring back Mute game sound?",
       "notes": "Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231087088,
+      "doneBuild": ""
     },
     {
       "id": "seed-pathfinder-8",
@@ -196,13 +196,13 @@
       "title": "Prestige classes in the level-up wizard and compute()",
       "notes": "Not supported yet.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231087088,
+      "doneBuild": ""
     },
     {
       "id": "seed-pathfinder-9",
@@ -213,13 +213,13 @@
       "title": "Familiar variants (Improved Familiar, archetypes)",
       "notes": "Not modelled yet.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088
+      "updated": 1791231087088,
+      "doneBuild": ""
     },
     {
       "id": "seed-pathfinder-10",
@@ -230,13 +230,13 @@
       "title": "About 18% of archetype \"replaces X\" targets do not match the class table",
       "notes": "They are shown as plain text instead (proficiencies, deeds, bonus spells).",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089
+      "updated": 1791231087089,
+      "doneBuild": ""
     },
     {
       "id": "seed-petshopper-11",
@@ -247,13 +247,13 @@
       "title": "Shared household pet",
       "notes": "All pet data already lives in state.pet, so this stays possible.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089
+      "updated": 1791231087089,
+      "doneBuild": ""
     },
     {
       "id": "seed-petshopper-12",
@@ -264,13 +264,13 @@
       "title": "App store release: native speech recognition",
       "notes": "Swap the Voice object in app-voice.js for the phone's own recognition.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089
+      "updated": 1791231087089,
+      "doneBuild": ""
     },
     {
       "id": "seed-petshopper-13",
@@ -281,13 +281,13 @@
       "title": "Paid pet customization",
       "notes": "The dressing room tests the idea; no payments yet.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089
+      "updated": 1791231087089,
+      "doneBuild": ""
     },
     {
       "id": "seed-petshopper-14",
@@ -298,13 +298,13 @@
       "title": "Check the boogie dance and rock/roly/wiggle tilts for a seam",
       "notes": "They still use CSS scale/rotate. Firefox-only seam is acceptable; move to svgSquish if it shows in Chrome or Safari.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791232281974
+      "updated": 1791232281974,
+      "doneBuild": ""
     },
     {
       "id": "muvpj6yyqg80s",
@@ -315,13 +315,13 @@
       "title": "nocturnal mode for pets",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791232417546,
-      "updated": 1791232434599
+      "updated": 1791232434599,
+      "doneBuild": ""
     },
     {
       "id": "muvpk3c1bpab8",
@@ -332,13 +332,13 @@
       "title": "more games to play/things to do with pet",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791232459489,
-      "updated": 1791232459489
+      "updated": 1791232459489,
+      "doneBuild": ""
     },
     {
       "id": "muvqmfgyzon70",
@@ -349,13 +349,13 @@
       "title": "special sounds on different maps",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234248146,
-      "updated": 1791234248146
+      "updated": 1791234248146,
+      "doneBuild": ""
     },
     {
       "id": "muvqmowq1668d",
@@ -366,13 +366,13 @@
       "title": "add color variations to outfits/hats. maybe skins?",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234260378,
-      "updated": 1791234260378
+      "updated": 1791234260378,
+      "doneBuild": ""
     },
     {
       "id": "muvqmyc8968to",
@@ -383,13 +383,13 @@
       "title": "color variations for skins",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234272600,
-      "updated": 1791237333217
+      "updated": 1791237333217,
+      "doneBuild": ""
     },
     {
       "id": "muvqn89jg1e4j",
@@ -400,13 +400,13 @@
       "title": "some kind of mystery boxes",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234285463,
-      "updated": 1791234285463
+      "updated": 1791234285463,
+      "doneBuild": ""
     },
     {
       "id": "muvqnq6bsc8ki",
@@ -417,13 +417,13 @@
       "title": "give birds tiny wing hands",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234308675,
-      "updated": 1791234343261
+      "updated": 1791234343261,
+      "doneBuild": ""
     },
     {
       "id": "muvqnyj1pqh6u",
@@ -434,13 +434,13 @@
       "title": "fix pretzel, bacon emoji transparency",
       "notes": "space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234319501,
-      "updated": 1791236896045
+      "updated": 1791236896045,
+      "doneBuild": ""
     },
     {
       "id": "muvqo5c7zv9xz",
@@ -451,13 +451,13 @@
       "title": "add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234328327,
-      "updated": 1791234453982
+      "updated": 1791234453982,
+      "doneBuild": ""
     },
     {
       "id": "muvrtvop8h4zk",
@@ -468,7 +468,6 @@
       "title": "Joker jester",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [
         "muvrtap4catm0",
@@ -477,7 +476,8 @@
       "gallery": true,
       "slot": "Hat",
       "created": 1791236275369,
-      "updated": 1791236275369
+      "updated": 1791236275369,
+      "doneBuild": ""
     },
     {
       "id": "muvry35yoek6i",
@@ -488,13 +488,13 @@
       "title": "blank templates for Nibble Sketchpad to make it easier to draw on skins",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791236471686,
-      "updated": 1791236471686
+      "updated": 1791236471686,
+      "doneBuild": ""
     },
     {
       "id": "muvset2l7bwrh",
@@ -505,13 +505,13 @@
       "title": "celebrate holidays, birthdays",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237251757,
-      "updated": 1791237251757
+      "updated": 1791237251757,
+      "doneBuild": ""
     },
     {
       "id": "muvsf90rbtfto",
@@ -522,13 +522,13 @@
       "title": "search menu in dressing room",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "easy",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237272427,
-      "updated": 1791237852761
+      "updated": 1791237852761,
+      "doneBuild": ""
     },
     {
       "id": "muvsfmzt69fh4",
@@ -539,13 +539,13 @@
       "title": "Nerd glasses",
       "notes": "nerd glasses that magnify eyes, like mag. glass\n",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": true,
       "slot": "Face",
       "created": 1791237290537,
-      "updated": 1791237290537
+      "updated": 1791237290537,
+      "doneBuild": ""
     },
     {
       "id": "muvshshuzviba",
@@ -556,13 +556,13 @@
       "title": "clapping and wow noises in dressing room",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237390978,
-      "updated": 1791237390978
+      "updated": 1791237390978,
+      "doneBuild": ""
     },
     {
       "id": "muvshzp12zzr2",
@@ -573,13 +573,13 @@
       "title": "holding toy above head makes pet annoyed",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "easy",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237400309,
-      "updated": 1791237851170
+      "updated": 1791237851170,
+      "doneBuild": ""
     },
     {
       "id": "muvsjsncf6bkf",
@@ -590,13 +590,13 @@
       "title": "fix box that pops up when a pet suggests a shopping item",
       "notes": "it sits in front of the shopping list and is too intrusive",
       "build": "",
-      "doneBuild": "",
       "effort": "easy",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237484488,
-      "updated": 1791237846925
+      "updated": 1791237846925,
+      "doneBuild": ""
     },
     {
       "id": "muvt1nee26as9",
@@ -607,13 +607,13 @@
       "title": "add placeholder shop button in menu bar, greyed out",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "easy",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238317494,
-      "updated": 1791238317494
+      "updated": 1791238317494,
+      "doneBuild": ""
     },
     {
       "id": "muvt5e6q8cet9",
@@ -624,13 +624,13 @@
       "title": "test",
       "notes": "",
       "build": "",
-      "doneBuild": "",
       "effort": "",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238492178,
       "updated": 1791238501781,
+      "doneBuild": "",
       "deleted": true
     },
     {
@@ -642,13 +642,13 @@
       "title": "make magnified eye get larger the second the magnifying glass is in front of it.",
       "notes": "currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting",
       "build": "",
-      "doneBuild": "",
       "effort": "easy",
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238936130,
-      "updated": 1791238940816
+      "updated": 1791238940816,
+      "doneBuild": ""
     }
   ],
   "images": {
