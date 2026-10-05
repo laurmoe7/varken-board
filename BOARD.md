@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:44:29.011Z_
+_Updated 2026-10-05T23:47:48.879Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -74,6 +74,10 @@ _2 done._
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
+
+### Now
+
+- [ ] 💡 **class skill red dot needs centered in skills page** _(easy)_ `muvwgtsek11tj`
 
 ### Soon
 
