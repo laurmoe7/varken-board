@@ -241,13 +241,13 @@
       "title": "About 18% of archetype \"replaces X\" targets do not match the class table",
       "notes": "They are shown as plain text instead (proficiencies, deeds, bonus spells).",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089,
+      "updated": 1791244125149,
       "doneBuild": ""
     },
     {
