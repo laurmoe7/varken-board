@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:50:58.477Z_
+_Updated 2026-10-05T23:51:21.131Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -77,6 +77,7 @@ _2 done._
 
 ### Now
 
+- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
 - [ ] 🔧 **make hover over pop-ups better fit the ui style of the app** _(easy)_ `muvwkrj32ubab`
 - [ ] 🔧 **class skill red dot needs centered in skills page** _(easy)_ `muvwgtsek11tj`
 
