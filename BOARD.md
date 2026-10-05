@@ -1,21 +1,31 @@
 # Varken board
 
-_Updated 2026-10-05T21:12:58.939Z_
+_Updated 2026-10-05T21:58:08.822Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
+### Now
+
+- [ ] 🔧 **fix box that pops up when a pet suggests a shopping item** `muvsjsncf6bkf`
+  > it sits in front of the shopping list and is too intrusive
+- [ ] 💡 **holding toy above head makes pet annoyed** `muvshzp12zzr2`
+- [ ] 💡 **search menu in dressing room** `muvsf90rbtfto`
+
 ### Soon
 
+- [ ] 💡 **clapping and wow noises in dressing room** `muvshshuzviba`
+- [ ] 💡 **celebrate holidays, birthdays** `muvset2l7bwrh`
+- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** `muvry35yoek6i`
 - [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
   > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
-- [ ] 💡 **color variations for skins !soemday** `muvqmyc8968to`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
 
 ### Someday
 
 - [ ] 💡 **some kind of mystery boxes** `muvqn89jg1e4j`
+- [ ] 💡 **color variations for skins** `muvqmyc8968to`
 - [ ] 💡 **add color variations to outfits/hats. maybe skins?** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
@@ -28,6 +38,14 @@ _Updated 2026-10-05T21:12:58.939Z_
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 _1 done._
+
+### Cosmetics gallery
+
+- 🎀 **Nerd glasses** [Face] `muvsfmzt69fh4`
+  > nerd glasses that magnify eyes, like mag. glass
+  > 
+- 🎀 **Joker jester** [Hat] `muvrtvop8h4zk`
+  - images: images/muvrtap4catm0.jpg, images/muvrtfexageh1.jpg
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
 
