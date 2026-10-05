@@ -26,9 +26,9 @@ function pigSvg(mood, cls) {
     <g class="ear ear-l"><path d="M11 30 Q3 15 11 4 Q28 5 38 22 Z" fill="#ffb8cf" ${line}/><path d="M14 25 Q9 14 14 9 Q24 11 30 20 Z" fill="#ff8fae"/></g>
     <g class="ear ear-r"><path d="M69 30 Q77 15 69 4 Q52 5 42 22 Z" fill="#ffb8cf" ${line}/><path d="M66 25 Q71 14 66 9 Q56 11 50 20 Z" fill="#ff8fae"/></g>
     <ellipse cx="40" cy="38" rx="32" ry="24" fill="#ffb8cf" ${line}/>
-    <ellipse cx="17" cy="45" rx="7" ry="4.6" fill="#ffa98a" opacity=".85"/>
-    <ellipse cx="63" cy="45" rx="7" ry="4.6" fill="#ffa98a" opacity=".85"/>
-    <path d="M13.5 43 l2 4 M17.5 42.5 l2 4 M21.5 43 l2 4 M56.5 43 l2 4 M60.5 42.5 l2 4 M64.5 43 l2 4" stroke="#d9634a" stroke-width="1.2" stroke-linecap="round"/>
+    <ellipse cx="17" cy="45" rx="7" ry="4.6" fill="#ff8cb4" opacity=".9"/>
+    <ellipse cx="63" cy="45" rx="7" ry="4.6" fill="#ff8cb4" opacity=".9"/>
+    <path d="M13.5 43 l2 4 M17.5 42.5 l2 4 M21.5 43 l2 4 M56.5 43 l2 4 M60.5 42.5 l2 4 M64.5 43 l2 4" stroke="${PIG_INK}" stroke-width="1.5" stroke-linecap="round"/>
     <g class="pig-eyes">${eyes}</g>
     <ellipse cx="40" cy="45" rx="5.4" ry="4.2" fill="#f2709f" ${line} stroke-width="2"/>
     <ellipse cx="38" cy="45" rx=".9" ry="1.4" fill="${PIG_INK}"/><ellipse cx="42" cy="45" rx=".9" ry="1.4" fill="${PIG_INK}"/>
