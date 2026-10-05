@@ -1,21 +1,20 @@
 # Varken board
 
-_Updated 2026-10-05T20:32:00.020Z_
+_Updated 2026-10-05T20:34:23.583Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
-### Soon
-
-- [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
-
 ### Someday
 
+- [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
+- [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **Shared household pet** `seed-petshopper-11`
   > All pet data already lives in state.pet, so this stays possible.
 - [ ] 💡 **App store release: native speech recognition** `seed-petshopper-12`
   > Swap the Voice object in app-voice.js for the phone's own recognition.
 - [ ] 💡 **Paid pet customization** `seed-petshopper-13`
   > The dressing room tests the idea; no payments yet.
+- [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 _1 done._
 
