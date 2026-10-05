@@ -810,17 +810,17 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "done",
+      "status": "open",
       "title": "a",
       "notes": "",
       "build": "",
       "effort": "",
-      "doneAt": 1791243596060,
+      "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243593953,
-      "updated": 1791243596060
+      "updated": 1791243599690
     }
   ],
   "notes": [
