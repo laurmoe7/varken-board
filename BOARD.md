@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T21:05:23.705Z_
+_Updated 2026-10-05T21:05:32.592Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric possible?** `muvqo5c7zv9xz`
 - [ ] 💡 **fix pretzel, bacon emoji** `muvqnyj1pqh6u`
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
 - [ ] 💡 **color variations for skins !soemday** `muvqmyc8968to`
