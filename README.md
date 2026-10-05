@@ -18,7 +18,7 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - The pig in the header changes mood with the board (sleeping when clear, worried at too many Nows) and shows up in empty lists.
 - A quiet "N unused pictures" button appears in the sidebar.
 - Checking something off plays a soft chime and pops confetti (switch off in Options). The details panel slides over the page instead of squeezing the list.
-- The header pig has a chubby little body: click him and he waves, hops, claps or dances; he cheers and sends hearts when you check something off, and says so when the whole list is clear.
+- The mascot is a round squishy pig with a seedling on his head and a task note in his hands. The plant grows with how many things you checked off today (bud, leaves, flower). Click him and he hops, shows off his note, wiggles or sways his plant; he cheers and sends hearts when you check something off, and says so when the whole list is clear.
 - The header says how many things you checked off today. `?` opens a shortcut sheet.
 - Notes: every project (and All projects) has a 📝 Notes tab beside its to-do list, and each gallery (Cosmetics) has one beside its ideas. Loose thoughts with no categories; "→ Task" or "→ Card" turns one into a real item.
 - Clicking anywhere outside the details panel closes it.

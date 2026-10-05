@@ -1,53 +1,58 @@
-// The pig: the header character and the pictures in empty lists. It changes mood with the board.
+// The pig: the header character, the pictures in empty lists and the app icon. A round squishy "mochi" blob
+// with a seedling on his head. In the header he also holds a sticky note, and the seedling grows with how
+// many things you checked off today (bud, leaves, flower). It changes mood with the board.
+
+const PIG_INK = '#2d1633';
+const PIG_STAGES = 3;
+
+// The plant on his head: stage 0 a bud, 1 two leaves, 2 leaves and a flower.
+function sproutSvg(stage) {
+  const stem = (top) => `<path d="M60 34 Q60 ${top + 12} 58 ${top}" fill="none" stroke="#5fd3a0" stroke-width="3.4" stroke-linecap="round"/>`;
+  if (stage <= 0) return '<path d="M60 34 Q60 28 60 24" fill="none" stroke="#5fd3a0" stroke-width="3.4" stroke-linecap="round"/><ellipse cx="60" cy="21" rx="4" ry="5.5" fill="#8ff0c8"/>';
+  if (stage === 1) return stem(14) + '<path d="M58 16 Q42 8 36 18 Q48 26 58 16 Z" fill="#8ff0c8"/><path d="M59 20 Q76 10 84 20 Q70 30 59 20 Z" fill="#6fe2b4"/>';
+  return (
+    stem(10) +
+    '<path d="M59 26 Q42 20 36 30 Q48 36 59 26 Z" fill="#8ff0c8"/><path d="M60 28 Q77 20 85 30 Q71 38 60 28 Z" fill="#6fe2b4"/>' +
+    '<g transform="translate(58 8)"><circle r="3.2" fill="#ffe29a"/><g fill="#ff9ec7"><circle cy="-6.2" r="3.6"/><circle cx="5.9" cy="-1.9" r="3.6"/><circle cx="3.6" cy="5" r="3.6"/><circle cx="-3.6" cy="5" r="3.6"/><circle cx="-5.9" cy="-1.9" r="3.6"/></g><circle r="3.2" fill="#ffe29a"/></g>'
+  );
+}
 
 // moods: happy (default), sleep (nothing to do), worry (too many Nows), sniff (nothing matches).
-// Drawn like a sticker: a wide round head, thick dark outline, floppy pointed ears, small wide-set eyes with
-// big shines, a small snout and hatched blush. viewBox is 80 x 64.
-const PIG_INK = '#2d1633';
+// opts: note (hold the sticky note, header only), stage (the plant, default leaves).
 function pigSvg(mood, cls, opts) {
   const m = mood || 'happy';
-  const body = !!(opts && opts.body); // the header pig also gets a chubby body with arms and feet
-  const line = `stroke="${PIG_INK}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"`;
-  const eye = (x, dx) => `<ellipse cx="${x}" cy="38" rx="3.8" ry="4.4" fill="${PIG_INK}"/><circle cx="${x - 1.2 + dx}" cy="36.2" r="1.7" fill="#fff"/><circle cx="${x + 1.3 + dx}" cy="40" r=".8" fill="#fff"/>`;
-  const brows = (a, b) => `<path d="M${25} ${a} q4 ${b} 8 0 M${47} ${a} q4 ${-b} 8 0" fill="none" ${line} stroke-width="1.6"/>`;
+  const o = opts || {};
+  const stage = o.stage == null ? 1 : o.stage;
+  const eye = (x, dx) => `<ellipse cx="${x}" cy="62" rx="4.4" ry="5.2" fill="${PIG_INK}"/><circle cx="${x - 1.4 + dx}" cy="60" r="1.9" fill="#fff"/>`;
   const eyes = {
-    happy: eye(29, 0) + eye(51, 0) + `<path d="M27 30 q2 -1.4 4 0 M49 30 q2 -1.4 4 0" fill="none" ${line} stroke-width="1.2"/>`,
-    sleep: `<path d="M24.5 38 q4.5 4.5 9 0 M46.5 38 q4.5 4.5 9 0" fill="none" ${line}/>`,
-    worry: eye(29, 0) + eye(51, 0) + `<path d="M26.5 30.5 l4.5 -2 M53.5 30.5 l-4.5 -2" fill="none" ${line} stroke-width="1.2"/>`,
-    sniff: eye(29, 1.4) + eye(51, 1.4) + `<path d="M27 30 q2 -1.4 4 0 M49 30 q2 -1.4 4 0" fill="none" ${line} stroke-width="1.2"/>`,
+    happy: eye(45, 0) + eye(75, 0),
+    sleep: `<path d="M39.5 63 q5.5 5 11 0 M69.5 63 q5.5 5 11 0" fill="none" stroke="${PIG_INK}" stroke-width="2.6" stroke-linecap="round"/>`,
+    worry: eye(45, 0) + eye(75, 0) + `<path d="M38 55 l11 -3.5 M82 55 l-11 -3.5" fill="none" stroke="${PIG_INK}" stroke-width="2" stroke-linecap="round"/>`,
+    sniff: eye(45, 1.6) + eye(75, 1.6),
   }[m];
   const extra = {
     happy: '',
-    sleep: '<text x="62" y="13" font-size="10" font-weight="800" fill="#b9a4ff">z</text><text x="69" y="7" font-size="7" font-weight="800" fill="#b9a4ff">z</text>',
-    worry: '<path d="M62 14 q4 5 0 8.5 q-4 -3.5 0 -8.5z" fill="#8fd3ff"/>',
-    sniff: '<circle cx="68" cy="47" r="5" fill="#b9a4ff33" stroke="#b9a4ff" stroke-width="2.2"/><path d="M71.5 50.5 l4.5 4.5" stroke="#b9a4ff" stroke-width="3" stroke-linecap="round"/>',
+    sleep: '<text x="92" y="40" font-size="14" font-weight="800" fill="#b9a4ff">z</text><text x="102" y="28" font-size="10" font-weight="800" fill="#b9a4ff">z</text>',
+    worry: '<path d="M98 36 q5 6 0 10.5 q-5 -4.5 0 -10.5z" fill="#8fd3ff"/>',
+    sniff: '<circle cx="100" cy="30" r="7" fill="#b9a4ff33" stroke="#b9a4ff" stroke-width="2.6"/><path d="M105 35 l7 7" stroke="#b9a4ff" stroke-width="3.6" stroke-linecap="round"/>',
   }[m];
-  const mouth = m === 'sleep' ? '' : `<path d="M38.8 53.6 q1.2 1.2 2.4 0" fill="none" ${line} stroke-width="1.2"/>`;
-  return `<svg class="pig ${cls || ''} pig-${m}" viewBox="0 0 80 ${body ? 96 : 66}" aria-hidden="true">
-    ${body ? bodyParts() : ''}
-    <g class="ear ear-l"><path d="M11 30 Q3 15 11 4 Q28 5 38 22 Z" fill="#ffa6c4" stroke="#ffa6c4" stroke-width="2" stroke-linejoin="round"/><path d="M14 25 Q9 14 14 9 Q24 11 30 20 Z" fill="#ff8fae"/></g>
-    <g class="ear ear-r"><path d="M69 30 Q77 15 69 4 Q52 5 42 22 Z" fill="#ffa6c4" stroke="#ffa6c4" stroke-width="2" stroke-linejoin="round"/><path d="M66 25 Q71 14 66 9 Q56 11 50 20 Z" fill="#ff8fae"/></g>
-    <ellipse cx="40" cy="38" rx="36" ry="27" fill="#ffb8cf"/>
-    <g transform="translate(40 40) scale(1.12) translate(-40 -40)">
-    <ellipse cx="17" cy="45" rx="7" ry="4.6" fill="#ff8cb4" opacity=".9"/>
-    <ellipse cx="63" cy="45" rx="7" ry="4.6" fill="#ff8cb4" opacity=".9"/>
-    <path d="M13.5 43 l2 4 M17.5 42.5 l2 4 M21.5 43 l2 4 M56.5 43 l2 4 M60.5 42.5 l2 4 M64.5 43 l2 4" stroke="${PIG_INK}" stroke-width="1.5" stroke-linecap="round"/>
+  const note = o.note
+    ? `<g class="note-grp"><g transform="rotate(-6 60 92)"><rect x="32" y="82" width="56" height="34" rx="5" fill="#ffe29a"/><path d="M32 106 q10 -2 18 4 l-18 6 z" fill="#f0cc78"/>
+    <path d="M40 92 h26 M40 99 h18" stroke="#c9a24a" stroke-width="2.4" stroke-linecap="round"/><path d="M70 90 l4 4 8 -9" fill="none" stroke="#ff6f9f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <ellipse cx="30" cy="92" rx="7" ry="9" transform="rotate(-24 30 92)" fill="#ffa6c4"/><ellipse cx="90" cy="92" rx="7" ry="9" transform="rotate(24 90 92)" fill="#ffa6c4"/></g>`
+    : '<ellipse cx="14" cy="80" rx="7" ry="10" transform="rotate(20 14 80)" fill="#ffa6c4"/><ellipse cx="106" cy="80" rx="7" ry="10" transform="rotate(-20 106 80)" fill="#ffa6c4"/>';
+  return `<svg class="pig ${cls || ''} pig-${m}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
+    <ellipse cx="44" cy="104" rx="10" ry="6" fill="#ff9fbc"/><ellipse cx="76" cy="104" rx="10" ry="6" fill="#ff9fbc"/>
+    <g class="ear ear-l"><path d="M26 44 Q20 22 36 20 Q50 22 54 36 Z" fill="#ffa6c4"/></g><g class="ear ear-r"><path d="M94 44 Q100 22 84 20 Q70 22 66 36 Z" fill="#ffa6c4"/></g>
+    <ellipse cx="60" cy="70" rx="46" ry="38" fill="#ffb8cf"/><ellipse cx="60" cy="82" rx="30" ry="20" fill="#ffd3e2" opacity=".55"/>
+    <g class="sprout-slot">${sproutSvg(stage)}</g>
     <g class="pig-eyes">${eyes}</g>
-    <path d="M35 43.4 Q40 40.4 45 43.4 Q46 49.6 40 49.8 Q34 49.6 35 43.4 Z" fill="#f2709f"/>
-    <ellipse cx="38.2" cy="45.6" rx=".8" ry="1.2" fill="${PIG_INK}"/><ellipse cx="41.8" cy="45.6" rx=".8" ry="1.2" fill="${PIG_INK}"/>
-    ${mouth}
-    </g>
-    ${body ? armParts() : ''}
-    ${extra}
+    <ellipse cx="33" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/><ellipse cx="87" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/>
+    <ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/>
+    ${note}
+    </g>${extra}
   </svg>`;
 }
-
-// The chubby body sits behind the head: a round tummy, stubby feet, and (drawn in front) two arms that turn
-// about their shoulders for the actions. All inside one group so the whole body can sway.
-const bodyParts = () => `<g class="body-all"><ellipse cx="29" cy="90" rx="8" ry="5.5" fill="#ff9fbc"/><ellipse cx="51" cy="90" rx="8" ry="5.5" fill="#ff9fbc"/>
-    <ellipse cx="40" cy="76" rx="24" ry="19" fill="#ffb8cf"/><ellipse cx="40" cy="79" rx="13" ry="10" fill="#ffd3e2"/></g>`;
-const armParts = () => `<g class="arm arm-l"><ellipse cx="17" cy="72" rx="5.6" ry="10" transform="rotate(14 17 72)" fill="#ffa6c4"/></g>
-    <g class="arm arm-r"><ellipse cx="63" cy="72" rx="5.6" ry="10" transform="rotate(-14 63 72)" fill="#ffa6c4"/></g>`;
 
 // What the pig says in the header, by what the board looks like. Several lines each; one stays until you
 // poke the pig or the board changes.
@@ -76,10 +81,21 @@ function heroSay(gp, open, now, poke) {
   return sayText.replace('{n}', open);
 }
 
-let heroMood = '';
+let heroMood = '', heroStage = -1;
 function paintHero(gp, open, now, poke) {
   const mood = gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
-  if (mood !== heroMood) { $('#heroPig').innerHTML = pigSvg(mood, '', { body: true }); heroMood = mood; } // keeps a running action going
+  const done = L.doneToday(state.items, Date.now(), 'all');
+  const stage = done >= 3 ? 2 : done >= 1 ? 1 : 0; // the plant grows through the day
+  if (mood !== heroMood) {
+    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage });
+    heroMood = mood;
+    heroStage = stage;
+  } else if (stage !== heroStage) {
+    const svg = $('#heroPig svg'); // swap only the plant so a running action isn't cut
+    svg.querySelector('.sprout-slot').innerHTML = sproutSvg(stage);
+    if (stage > heroStage) { svg.classList.add('grew'); setTimeout(() => svg.classList.remove('grew'), 900); }
+    heroStage = stage;
+  }
   $('#heroSay').textContent = heroSay(gp, open, now, poke);
 }
 
@@ -88,8 +104,8 @@ function emptyHtml(mood, title, hint) {
   return `<div class="empty">${pigSvg(mood, 'big')}<b>${esc(title)}</b>${esc(hint)}</div>`;
 }
 
-// Actions: wave, hop, clap, dance and cheer. The class stays on the svg until it ends.
-const ACTS = ['wave', 'hop', 'clap', 'dance'];
+// Actions: hop, show off the note, wiggle, sway the plant, and cheer. The class stays on the svg until it ends.
+const ACTS = ['hop', 'note', 'wiggle', 'sprout'];
 let actTimer;
 function pigAct(name) {
   const svg = $('#heroPig svg');
@@ -98,7 +114,7 @@ function pigAct(name) {
   void svg.getBoundingClientRect(); // restart the animation if the same action repeats
   svg.classList.add('act-' + name);
   clearTimeout(actTimer);
-  actTimer = setTimeout(() => svg.classList.remove('act-' + name), name === 'dance' ? 2300 : 1800);
+  actTimer = setTimeout(() => svg.classList.remove('act-' + name), name === 'wiggle' ? 2100 : 1800);
 }
 function floatHearts(n) {
   const box = $('#heroPig');
@@ -128,9 +144,9 @@ $('#heroPig').addEventListener('click', () => {
   pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]);
   renderHead(true);
 });
-// Now and then he waves or hops on his own.
+// Now and then he does something on his own.
 setInterval(() => {
-  if (!document.hidden && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) pigAct(Math.random() < 0.6 ? 'wave' : 'hop');
+  if (!document.hidden && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]);
 }, 35000);
 
 // The little pig by the name in the sidebar.
