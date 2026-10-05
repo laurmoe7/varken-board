@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T22:04:17.218Z_
+_Updated 2026-10-05T22:12:01.812Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Now
 
+- [ ] 💡 **add placeholder shop button in menu bar, greyed out** _(easy)_ `muvt1nee26as9`
 - [ ] 🔧 **fix box that pops up when a pet suggests a shopping item** _(easy)_ `muvsjsncf6bkf`
   > it sits in front of the shopping list and is too intrusive
 - [ ] 💡 **holding toy above head makes pet annoyed** _(easy)_ `muvshzp12zzr2`
