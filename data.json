@@ -338,11 +338,11 @@
       "priority": "soon",
       "status": "open",
       "title": "fix pretzel, bacon emoji transparency",
-      "notes": "space between 2 slices bacon has white space. parts of pretzel are bleeding color",
+      "notes": "space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.",
       "build": "",
       "images": [],
       "created": 1791234319501,
-      "updated": 1791234770392
+      "updated": 1791234774742
     },
     {
       "id": "muvqo5c7zv9xz",
