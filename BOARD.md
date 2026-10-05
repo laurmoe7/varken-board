@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:32:18.611Z_
+_Updated 2026-10-05T23:32:27.061Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -58,7 +58,6 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **test** `muvvw80q6m4cl`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
 - [ ] 🔧 **Check in game: moved Image popups page, Quest complete, missing-file detection** `seed-funfx-3`
@@ -72,6 +71,8 @@ _2 done._
   > In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.
 - [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
+
+_1 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
