@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T21:54:54.808Z_
+_Updated 2026-10-05T21:55:37.586Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -16,12 +16,12 @@ _Updated 2026-10-05T21:54:54.808Z_
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
   > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
-- [ ] 💡 **color variations for skins !soemday** `muvqmyc8968to`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
 
 ### Someday
 
 - [ ] 💡 **some kind of mystery boxes** `muvqn89jg1e4j`
+- [ ] 💡 **color variations for skins** `muvqmyc8968to`
 - [ ] 💡 **add color variations to outfits/hats. maybe skins?** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
