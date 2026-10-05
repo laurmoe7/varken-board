@@ -1,8 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T20:30:44.470Z_
+_Updated 2026-10-05T20:30:50.409Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
+
+### Soon
+
+- [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 ### Someday
 
@@ -14,8 +18,6 @@ _Updated 2026-10-05T20:30:44.470Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 🔧 **Check the boogie dance and rock/roly/wiggle tilts for a seam** `seed-petshopper-14`
   > They still use CSS scale/rotate. Firefox-only seam is acceptable; move to svgSquish if it shows in Chrome or Safari.
-
-_1 done._
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
 
@@ -35,7 +37,7 @@ _1 done._
 - [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
-_2 done._
+_1 done._
 
 ## 🎲 Pathfinder sheet (https://github.com/laurmoe7/pathfinder-sheet)
 
