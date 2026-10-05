@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:33:16.900Z_
+_Updated 2026-10-05T23:44:29.011Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -74,6 +74,12 @@ _2 done._
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
+
+### Soon
+
+- [ ] 💡 **fix ability to recognize familiar eligibilty** `muvw97o904dtq`
+  > does not recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
+- [ ] 💡 **add confirmation before deleting a spells in spellbook, items, and other things that can be deleted** `muvw4oltfa8ba`
 
 ### Someday
 
