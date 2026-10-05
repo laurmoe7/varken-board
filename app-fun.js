@@ -35,11 +35,11 @@ function confetti(x, y, count, lifeMs) {
   c.height = innerHeight;
   document.body.appendChild(c);
   const ctx = c.getContext('2d');
-  const life = lifeMs || 1400;
+  const life = lifeMs || 2400;
   const bits = Array.from({ length: count || 44 }, () => {
     const a = Math.random() * Math.PI * 2;
-    const v = 3 + Math.random() * 6;
-    return { x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 4, r: Math.random() * 6, vr: (Math.random() - 0.5) * 0.4, w: 5 + Math.random() * 5, h: 3 + Math.random() * 4, col: CONFETTI[Math.floor(Math.random() * CONFETTI.length)], heart: Math.random() < 0.18 };
+    const v = 2 + Math.random() * 3.6;
+    return { x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 2.4, r: Math.random() * 6, vr: (Math.random() - 0.5) * 0.2, w: 5 + Math.random() * 5, h: 3 + Math.random() * 4, col: CONFETTI[Math.floor(Math.random() * CONFETTI.length)], heart: Math.random() < 0.18 };
   });
   const born = performance.now();
   (function frame(now) {
@@ -47,8 +47,8 @@ function confetti(x, y, count, lifeMs) {
     ctx.clearRect(0, 0, c.width, c.height);
     ctx.globalAlpha = Math.max(0, Math.min(1, (life - age) / (life * 0.6)));
     for (const b of bits) {
-      b.vy += 0.28;
-      b.vx *= 0.985;
+      b.vy += 0.1;
+      b.vx *= 0.975;
       b.x += b.vx;
       b.y += b.vy;
       b.r += b.vr;
@@ -146,9 +146,9 @@ function celebrate(el, allClear, party) {
   const box = el && (el.querySelector('.check') || el).getBoundingClientRect();
   if (party) {
     fanfare();
-    confetti(innerWidth * 0.2, innerHeight * 0.85, 80, 2600);
-    setTimeout(() => confetti(innerWidth * 0.8, innerHeight * 0.85, 80, 2600), 180);
-    setTimeout(() => confetti(innerWidth * 0.5, innerHeight * 0.55, 90, 2800), 360);
+    confetti(innerWidth * 0.2, innerHeight * 0.85, 80, 4200);
+    setTimeout(() => confetti(innerWidth * 0.8, innerHeight * 0.85, 80, 4200), 180);
+    setTimeout(() => confetti(innerWidth * 0.5, innerHeight * 0.55, 90, 4400), 360);
     return;
   }
   chime();
