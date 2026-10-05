@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:24:22.703Z_
+_Updated 2026-10-05T23:27:51.995Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -83,5 +83,5 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** `seed-pathfinder-9`
   > Not modelled yet.
 
-_3 done._
+_4 done._
 
