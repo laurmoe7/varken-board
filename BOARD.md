@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T21:04:36.767Z_
+_Updated 2026-10-05T21:04:49.581Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,6 +11,7 @@ _Updated 2026-10-05T21:04:36.767Z_
 
 ### Someday
 
+- [ ] 💡 **some kind of mystery boxes** `muvqn89jg1e4j`
 - [ ] 💡 **add color variations to outfits/hats. maybe skins?** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
