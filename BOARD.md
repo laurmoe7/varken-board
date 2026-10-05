@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:41:53.546Z_
+_Updated 2026-10-05T23:42:37.731Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -77,6 +77,7 @@ _2 done._
 
 ### Soon
 
+- [ ] 💡 **test** `muvwa5qvbgfbp`
 - [ ] 💡 **fix ability to recognize familiar eligibilty** `muvw97o904dtq`
   > does not recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 - [ ] 💡 **add confirmation before deleting a spells in spellbook, items, and other things that can be deleted** `muvw4oltfa8ba`
