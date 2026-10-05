@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:40:05.675Z_
+_Updated 2026-10-05T23:40:11.187Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -77,7 +77,6 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **a** `muvw6qqplhsc0`
 - [ ] 💡 **add confirmation before deleting a spells in spellbook, items, and other things that can be deleted** `muvw4oltfa8ba`
 
 ### Someday
