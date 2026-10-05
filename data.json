@@ -321,7 +321,7 @@
     {
       "id": "muvqnq6bsc8ki",
       "project": "petshopper",
-      "type": "idea",
+      "type": "fix",
       "priority": "soon",
       "status": "open",
       "title": "give birds tiny wing hands",
@@ -329,12 +329,12 @@
       "build": "",
       "images": [],
       "created": 1791234308675,
-      "updated": 1791234308675
+      "updated": 1791234342244
     },
     {
       "id": "muvqnyj1pqh6u",
       "project": "petshopper",
-      "type": "idea",
+      "type": "fix",
       "priority": "soon",
       "status": "open",
       "title": "fix pretzel, bacon emoji",
@@ -342,7 +342,7 @@
       "build": "",
       "images": [],
       "created": 1791234319501,
-      "updated": 1791234319501
+      "updated": 1791234339205
     },
     {
       "id": "muvqo5c7zv9xz",
