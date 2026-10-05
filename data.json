@@ -753,6 +753,40 @@
       "slot": "",
       "created": 1791242657051,
       "updated": 1791242658342
+    },
+    {
+      "id": "muvvr5dsacvu0",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "archetypes in character creation",
+      "notes": "archetypes in character creation, with descriptions and whatever class changes they come with baked into the character on creation",
+      "build": "",
+      "effort": "",
+      "doneAt": 1791242867611,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791242866432,
+      "updated": 1791242867611
+    },
+    {
+      "id": "muvvw80q6m4cl",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "test",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791243103130,
+      "updated": 1791243192636
     }
   ],
   "notes": [
