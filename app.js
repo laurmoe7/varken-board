@@ -238,7 +238,7 @@ function cardHtml(it) {
   return `<article class="card p-${it.priority} ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
     <button class="check" data-check aria-label="${it.status === 'done' ? 'Mark not done' : 'Mark done'}">✓</button>
     <div class="card-body">
-      <div class="card-title ${it.effort ? 'fx-' + it.effort : ''}">${L.typeOf(it.type).emoji} ${esc(it.title)}</div>
+      <div class="card-title ${it.effort ? 'fx-' + it.effort : ''}">${L.typeOf(it.type).emoji} ${esc(it.title)}<button class="copy-mini" data-copy title="Copy for Claude" aria-label="Copy for Claude">📋</button></div>
       <div class="meta">
         ${it.effort ? `<span class="tag fx fx-${it.effort}">${L.effortOf(it.effort).emoji} ${L.effortOf(it.effort).label.toLowerCase()}</span>` : ''}
         ${ui.project === 'all' && p ? `<span class="tag proj-tag" style="background:${esc(p.color)}">${esc(p.emoji)} ${esc(p.name)}</span>` : ''}
@@ -374,6 +374,10 @@ function renderAll(keepDetail) {
 
 // ---------- toast ----------
 let toastTimer;
+function copyForClaude(it) {
+  if (!it) return;
+  navigator.clipboard.writeText(L.copyItem(state, it)).then(() => { toast('Copied. Paste it into a Claude session.'); pigSay('copy', { p: 0.5 }); }, () => toast('Could not copy'));
+}
 function toast(text, undo) {
   const t = $('#toast');
   t.innerHTML = esc(text) + (undo ? ' <button>Undo</button>' : '');
@@ -609,6 +613,7 @@ function wire() {
     const card = e.target.closest('.card, .gcard');
     if (!card) return;
     if (e.target.closest('[data-check]')) return toggleDone(card.dataset.id);
+    if (e.target.closest('[data-copy]')) return copyForClaude(state.items.find((x) => x.id === card.dataset.id));
     openItem(card.dataset.id);
   });
   $('#list').addEventListener('keydown', (e) => {
@@ -622,10 +627,7 @@ function wire() {
     if (e.target.closest('#dClose')) return ui.drafting ? endDraft() : closeItem();
     if (e.target.closest('#dAdd')) return commitDraft();
     if (e.target.closest('#dClear')) return clearDraft();
-    if (e.target.closest('#dCopy')) {
-      navigator.clipboard.writeText(L.copyItem(state, it)).then(() => { toast('Copied. Paste it into a Claude session.'); pigSay('copy', { p: 0.5 }); }, () => toast('Could not copy'));
-      return;
-    }
+    if (e.target.closest('#dCopy')) return copyForClaude(it);
     if (e.target.closest('#dDelete')) return deleteItem(it.id);
     if (e.target.closest('#dPick')) return $('#dFile').click();
     const sb = e.target.closest('[data-seg] [data-val]');

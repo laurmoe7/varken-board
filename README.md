@@ -35,3 +35,4 @@ Plain web app, no build step, no dependencies. Open it over http (for example `p
 3. In the board: gear button, paste `owner/repo` and the token, Save and sync.
 
 The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open items by project and priority) and `images/<id>.jpg`.
+- A 📋 copy button on every card title (shows on hover) copies the item for Claude. The sleeping pig sometimes peeks with one eye and blows a nose bubble.

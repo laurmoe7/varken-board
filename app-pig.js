@@ -32,7 +32,8 @@ function pigSvg(mood, cls, opts) {
   const eye = (x, dx) => `<ellipse cx="${x}" cy="62" rx="4.4" ry="5.2" fill="${PIG_INK}"/><circle cx="${x - 1.4 + dx}" cy="60" r="1.9" fill="#fff"/>`;
   const eyes = {
     happy: eye(45, 0) + eye(75, 0),
-    sleep: `<path d="M39.5 63 q5.5 5 11 0 M69.5 63 q5.5 5 11 0" fill="none" stroke="${PIG_INK}" stroke-width="2.6" stroke-linecap="round"/>`,
+    sleep: `<path d="M39.5 63 q5.5 5 11 0 M69.5 63 q5.5 5 11 0" fill="none" stroke="${PIG_INK}" stroke-width="2.6" stroke-linecap="round"/>
+      <g class="peek"><ellipse cx="75" cy="62" rx="5.4" ry="5.8" fill="#ffb8cf"/>${eye(75, 1.6)}</g>`,
     worry: eye(45, 0) + eye(75, 0) + `<path d="M38 55 l11 -3.5 M82 55 l-11 -3.5" fill="none" stroke="${PIG_INK}" stroke-width="2" stroke-linecap="round"/>`,
     sniff: eye(45, 1.6) + eye(75, 1.6),
   }[m];
@@ -56,6 +57,7 @@ function pigSvg(mood, cls, opts) {
     <ellipse cx="33" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/><ellipse cx="87" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/>
     <ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/>
     ${note}
+    ${m === 'sleep' ? '<g class="snot"><circle cx="64" cy="76" r="4.5" fill="#d9ecff88" stroke="#fff" stroke-width="1.2"/><circle cx="62.6" cy="74.4" r="1.2" fill="#fff"/></g>' : ''}
     </g>${extra}
   </svg>`;
 }

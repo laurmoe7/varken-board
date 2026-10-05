@@ -437,3 +437,17 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .tools select:hover, .detail select:hover, .dlg select:hover { transform: translateY(-1px); border-color: var(--lav); box-shadow: 0 3px 10px #0004; }
 select option { background: #241c44; color: var(--text); padding: 8px; }
 select option:checked { background: #4a3a86; color: #fff; }
+
+/* copy button on a card title */
+.copy-mini { background: none; border: 0; padding: 0 4px; margin-left: 6px; font-size: 13px; cursor: pointer; opacity: 0; transition: opacity .15s, transform .12s; vertical-align: 1px; }
+.card:hover .copy-mini, .card:focus-within .copy-mini, .copy-mini:focus-visible { opacity: .85; }
+.copy-mini:hover { transform: scale(1.25); opacity: 1; }
+@media (hover: none) { .copy-mini { opacity: .6; } }
+
+/* sleeping pig: peeks with one eye, blows a nose bubble */
+.pig-sleep .peek, .pig-sleep .snot { opacity: 0; transform-box: fill-box; transform-origin: center; }
+.pig-sleep .peek { animation: peek 17s ease-in-out 4s infinite; }
+.pig-sleep .snot { transform-origin: 20% 80%; animation: snot 13s ease-in-out 1s infinite; }
+@keyframes peek { 0%, 56%, 70%, 100% { opacity: 0; } 59%, 66% { opacity: 1; } }
+@keyframes snot { 0%, 20% { opacity: 0; transform: scale(.2); } 25% { opacity: 1; transform: scale(.5); } 45% { opacity: 1; transform: scale(1.5); } 50% { opacity: 1; transform: scale(1.65); } 52% { opacity: 0; transform: scale(2.1); } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .pig-sleep .peek, .pig-sleep .snot { animation: none; } }
