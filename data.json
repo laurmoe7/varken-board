@@ -804,6 +804,23 @@
       "slot": "",
       "created": 1791243497873,
       "updated": 1791243497873
+    },
+    {
+      "id": "muvw6qqplhsc0",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "a",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 1791243596060,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791243593953,
+      "updated": 1791243596060
     }
   ],
   "notes": [
