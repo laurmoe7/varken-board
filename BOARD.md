@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:48:36.016Z_
+_Updated 2026-10-05T23:48:46.001Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -89,11 +89,11 @@ _2 done._
 
 ### Someday
 
-- [ ] 🔧 **About 18% of archetype "replaces X" targets do not match the class table** `seed-pathfinder-10`
+- [ ] 🔧 **About 18% of archetype "replaces X" targets do not match the class table** _(medium)_ `seed-pathfinder-10`
   > They are shown as plain text instead (proficiencies, deeds, bonus spells).
-- [ ] 💡 **Prestige classes in the level-up wizard and compute()** `seed-pathfinder-8`
+- [ ] 💡 **Prestige classes in the level-up wizard and compute()** _(medium)_ `seed-pathfinder-8`
   > Not supported yet.
-- [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** `seed-pathfinder-9`
+- [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(medium)_ `seed-pathfinder-9`
   > Not modelled yet.
 
 _4 done._
