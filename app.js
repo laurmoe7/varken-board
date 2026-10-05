@@ -221,7 +221,7 @@ function renderHead(poke) {
   $('#effortSel').value = ui.effort;
   $('#statusSel').hidden = !!gp;
   $('#statusSel').value = ui.status;
-  $('#copyBtn').hidden = !gp && ui.status === 'done';
+  $('#pickBtn').hidden = !!gp || ui.status === 'done';
   const input = $('#quickInput');
   const hint = $('#quickHint');
   input.dataset.def = input.dataset.def || input.placeholder;
@@ -336,7 +336,7 @@ function renderDetail() {
     <div class="row">${
       draft
         ? '<button type="button" class="primary" id="dAdd">Add</button><button type="button" class="ghost" id="dClear">Clear</button><span class="muted small">Tab jumps here, Ctrl+Enter adds</span>'
-        : '<button class="danger" id="dDelete">Delete</button>'
+        : '<button class="ghost" id="dCopy" title="Copy this item as text to paste into a Claude session">📋 Copy for Claude</button><button class="danger" id="dDelete">Delete</button>'
     }</div>`;
   if (draft) paintDraft();
   renderImages();
@@ -477,7 +477,10 @@ function toggleDone(id) {
   if (!it) return;
   const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"], .gcard[data-id="${CSS.escape(id)}"]`);
   setField(it, 'status', it.status === 'done' ? 'open' : 'done');
-  if (it.status === 'done') celebrate(card, !galleryProject() && L.countOpen(state.items, 'all') === 0);
+  if (it.status === 'done') {
+    const today = L.doneToday(state.items, Date.now(), 'all');
+    celebrate(card, !galleryProject() && L.countOpen(state.items, 'all') === 0, today > 0 && today % 5 === 0 ? today : 0); // every fifth one of the day is a party
+  }
   if (it.status === 'done' && ui.status === 'active' && card && !galleryProject()) {
     card.classList.add('done', 'sparkle');
     setTimeout(() => renderAll(true), 450);
@@ -593,9 +596,13 @@ function wire() {
   $('#statusSel').onchange = (e) => { ui.status = e.target.value; saveUi(); renderList(); };
   $('#search').onfocus = () => pigSay('search', { p: 0.2 });
   $('#search').oninput = (e) => { ui.q = e.target.value; renderList(); };
-  $('#copyBtn').onclick = async () => {
-    try { await navigator.clipboard.writeText(L.copyForClaude(state, ui.project, !!galleryProject())); toast('Copied. Paste it into a Claude session.'); }
-    catch { toast('Could not copy'); }
+  $('#pickBtn').onclick = () => {
+    const it = L.pickForMe(state.items, ui);
+    if (!it) { toast('Nothing to pick: all clear!'); return; }
+    openItem(it.id);
+    pigSay('pick', { force: true });
+    const card = document.querySelector(`.card[data-id="${CSS.escape(it.id)}"]`);
+    if (card) { card.scrollIntoView({ block: 'center', behavior: 'smooth' }); card.classList.add('picked'); setTimeout(() => card.classList.remove('picked'), 1800); }
   };
 
   $('#list').addEventListener('click', (e) => {
@@ -615,6 +622,10 @@ function wire() {
     if (e.target.closest('#dClose')) return ui.drafting ? endDraft() : closeItem();
     if (e.target.closest('#dAdd')) return commitDraft();
     if (e.target.closest('#dClear')) return clearDraft();
+    if (e.target.closest('#dCopy')) {
+      navigator.clipboard.writeText(L.copyItem(state, it)).then(() => { toast('Copied. Paste it into a Claude session.'); pigSay('copy', { p: 0.5 }); }, () => toast('Could not copy'));
+      return;
+    }
     if (e.target.closest('#dDelete')) return deleteItem(it.id);
     if (e.target.closest('#dPick')) return $('#dFile').click();
     const sb = e.target.closest('[data-seg] [data-val]');
@@ -671,7 +682,7 @@ function wire() {
   // clicking anywhere outside the open details panel closes it (cards open their own item; dialogs and toasts don't count)
   document.addEventListener('click', (e) => {
     if (!ui.open || !e.target.isConnected) return;
-    if (e.target.closest('#detail, .card, .gcard, dialog, #toast, #cmpBar')) return;
+    if (e.target.closest('#detail, .card, .gcard, dialog, #toast, #cmpBar, #pickBtn')) return;
     closeItem();
   });
 
@@ -796,5 +807,6 @@ async function start() {
   ready = true;
   renderAll();
   refreshHints();
+  greetOnce();
   doSync();
 }

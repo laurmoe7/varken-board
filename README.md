@@ -6,7 +6,8 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - Projects in the sidebar, items grouped by priority, status Open / Doing / Done.
 - Attach images: paste with Ctrl+V, drop them on the page, or pick files. They are shrunk to 1600 px.
 - Everything is saved in the browser (IndexedDB). Optional sync to a private GitHub data repo keeps a backup and lets Claude read the board.
-- **Copy for Claude** turns the open items of a project into a task list to paste into a session.
+- **Copy for Claude** (in an item's panel) copies that one item, with its labels, notes and picture names, to paste into a session.
+- **🎲 Pig's pick** (header) opens one open item to start with: easy ones first, then the most urgent, within the view you're on.
 - The panel on the right opens as you type a new item, so labels, notes and images go in the first time (Tab jumps to notes, Ctrl+Enter adds).
 - Draw on screenshots (pen, arrow, circle, box) before keeping them.
 - Drag cards to put them in order, or into another priority group. Alt+arrow keys do the same.
@@ -22,6 +23,7 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - The header says how many things you checked off today. `?` opens a shortcut sheet.
 - Notes: every project (and All projects) has a 📝 Notes tab beside its to-do list, and each gallery (Cosmetics) has one beside its ideas. Loose thoughts with no categories; "→ Task" or "→ Card" turns one into a real item.
 - Clicking anywhere outside the details panel closes it.
+- Every fifth thing you finish in a day is a party: a triumphant fanfare, big confetti and a dance. Poking the pig gives a little oink. From 10 pm to 6 am he sleeps in a nightcap, and he says hello the first time you open the board each day.
 - Keys: `N` new item, `/` search, `Esc` close.
 
 Plain web app, no build step, no dependencies. Open it over http (for example `python3 -m http.server`) or from GitHub Pages. `npm test` runs the logic and sync tests.

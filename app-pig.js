@@ -17,8 +17,12 @@ function sproutSvg(stage) {
   );
 }
 
+const NIGHTCAP = `<g class="nightcap"><path d="M32 44 Q36 16 66 14 Q92 14 98 30 Q104 40 108 56 Q100 50 94 50 Q80 44 62 44 Q44 44 32 44 Z" fill="#b9a4ff"/>
+    <path d="M32 44 Q50 38 64 40 Q84 40 96 48" fill="none" stroke="#d8ccff" stroke-width="5" stroke-linecap="round"/><circle cx="109" cy="58" r="6.5" fill="#fff4de"/>
+    <path d="M62 24 l1.6 3.4 3.6 .4 -2.7 2.4 .8 3.6 -3.3 -1.9 -3.3 1.9 .8 -3.6 -2.7 -2.4 3.6 -.4z" fill="#ffe29a"/></g>`;
+
 // moods: happy (default), sleep (nothing to do), worry (too many Nows), sniff (nothing matches).
-// opts: note (hold the sticky note, header only), stage (the plant, default leaves).
+// opts: note (hold the sticky note, header only), stage (the plant, default leaves), cap (a nightcap instead of the plant).
 function pigSvg(mood, cls, opts) {
   const m = mood || 'happy';
   const o = opts || {};
@@ -45,7 +49,7 @@ function pigSvg(mood, cls, opts) {
     <ellipse cx="44" cy="104" rx="10" ry="6" fill="#ff9fbc"/><ellipse cx="76" cy="104" rx="10" ry="6" fill="#ff9fbc"/>
     <g class="ear ear-l"><path d="M26 44 Q20 22 36 20 Q50 22 54 36 Z" fill="#ffa6c4"/></g><g class="ear ear-r"><path d="M94 44 Q100 22 84 20 Q70 22 66 36 Z" fill="#ffa6c4"/></g>
     <ellipse cx="60" cy="70" rx="46" ry="38" fill="#ffb8cf"/><ellipse cx="60" cy="82" rx="30" ry="20" fill="#ffd3e2" opacity=".55"/>
-    <g class="sprout-slot">${sproutSvg(stage)}</g>
+    ${o.cap ? NIGHTCAP : `<g class="sprout-slot">${sproutSvg(stage)}</g>`}
     <g class="pig-eyes">${eyes}</g>
     <ellipse cx="33" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/><ellipse cx="87" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/>
     <ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/>
@@ -57,6 +61,7 @@ function pigSvg(mood, cls, opts) {
 // What the pig says in the header, by what the board looks like. Several lines each; one stays until you
 // poke the pig or the board changes.
 const SAYINGS = {
+  night: ['Hrrrrng.. it is late. Go to bed.', 'Shh. Even the plant is asleep.', 'Excuse me, some of us are sleeping.', 'Zzz.. one more task and then bed.. zzz..', 'It is the middle of the night. I judge you lovingly.'],
   gallery: ['Pretty things to make! ✨', 'Ooh, what will they wear next?', 'Every little hat counts.', 'Sparkly ideas only, please.', 'Fashion emergency! I need a hat.', 'I demand a tiny crown. Just saying.', 'Make me look fabulous, no pressure.', 'Obviously I will wear all of them.'],
   gallery0: ['No ideas yet. Feed me a picture?', 'Paste a picture, I will wait.', 'My wardrobe is empty. Rude.', 'Naked pig, no ideas. Help!'],
   notes: ['Jot it down, sort it later.', 'Loose thoughts are welcome here.', 'No categories, no pressure. 🌸', 'Ooh, what are you thinking about?', 'Write it down before it escapes!', 'Brain dump time. I will not judge. Much.', 'Half-baked ideas are my favourite.'],
@@ -70,7 +75,7 @@ let sayKey = '', sayText = '', sayN = 0;
 let sayHold = { text: '', until: 0 };
 function heroSay(gp, open, now, poke) {
   if (Date.now() < sayHold.until && !poke) return sayHold.text;
-  const key = gp === 'notes' ? (open ? 'notes' : 'notes0') : gp ? (open ? 'gallery' : 'gallery0') : now > L.NOW_CAP ? 'many' : !open ? 'clear' : open === 1 ? 'one' : 'some';
+  const key = L.isNight() ? 'night' : gp === 'notes' ? (open ? 'notes' : 'notes0') : gp ? (open ? 'gallery' : 'gallery0') : now > L.NOW_CAP ? 'many' : !open ? 'clear' : open === 1 ? 'one' : 'some';
   if (key !== sayKey || poke) {
     const list = SAYINGS[key];
     let pick = list[Math.floor(Math.random() * list.length)];
@@ -83,17 +88,20 @@ function heroSay(gp, open, now, poke) {
 
 let heroMood = '', heroStage = -1;
 function paintHero(gp, open, now, poke) {
-  const mood = gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
+  const night = L.isNight(); // from 10 pm to 6 am he sleeps in his nightcap, whatever the list looks like
+  const mood = night ? 'sleep' : gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
+  const key = mood + (night ? '-night' : '');
   const done = L.doneToday(state.items, Date.now(), 'all');
   const stage = done >= 3 ? 2 : done >= 1 ? 1 : 0; // the plant grows through the day
-  if (mood !== heroMood) {
-    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage });
-    heroMood = mood;
+  if (key !== heroMood) {
+    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap: night });
+    heroMood = key;
     heroStage = stage;
   } else if (stage !== heroStage) {
     const svg = $('#heroPig svg'); // swap only the plant so a running action isn't cut
-    svg.querySelector('.sprout-slot').innerHTML = sproutSvg(stage);
-    if (stage > heroStage) { svg.classList.add('grew'); setTimeout(() => svg.classList.remove('grew'), 900); }
+    const slot = svg.querySelector('.sprout-slot');
+    if (slot) slot.innerHTML = sproutSvg(stage);
+    if (slot && stage > heroStage) { svg.classList.add('grew'); setTimeout(() => svg.classList.remove('grew'), 900); }
     heroStage = stage;
   }
   $('#heroSay').textContent = heroSay(gp, open, now, poke);
@@ -124,6 +132,8 @@ const REACT = {
   help: ['Need a hint? Me too, honestly.', 'Cheat sheet! Smart.'],
   clean: ['Spring cleaning! Hrrrrng.. exhausting.', 'Bye-bye, mystery pictures.'],
   search: ['Looking for something? Check the snacks.', 'Hrrrrng.. seek and ye shall find.'],
+  pick: ['Start with this one. Trust me.', 'Easy one first. I will not tell.', 'This one looks scared of you. Go!', 'Eeny, meeny, miny... this!'],
+  copy: ['Copied! Go bother Claude.', 'Off to Claude it goes.', 'Excuse me, I wrote that. Credit please.'],
   poke: [
     { t: 'Excuse me!', act: 'hop' }, { t: 'Hrrrrng..', act: 'wiggle' }, { t: 'Varken nummer één!', act: 'dance' }, 'Hey! Personal space!', 'Boop received. Boop returned.',
     'Are you going to feed me or just poke me?', 'I am working here! (I am not.)', { t: 'Hrrrrng.. five more minutes.', act: 'sprout' }, 'Do I look like a button? Do not answer that.',
@@ -131,6 +141,12 @@ const REACT = {
   ],
 };
 let lastReact = 0, lastReactLine = '';
+// Puts `text` in his bubble for a while, then lets the usual line come back.
+function holdSay(text, ms) {
+  sayHold = { text, until: Date.now() + ms };
+  $('#heroSay').textContent = text;
+  setTimeout(() => { if (Date.now() >= sayHold.until) renderHead(); }, ms + 100);
+}
 function pigSay(key, opts) {
   const o = opts || {};
   const now = Date.now();
@@ -143,10 +159,29 @@ function pigSay(key, opts) {
   const text = line.t || line;
   lastReact = now;
   lastReactLine = text;
-  sayHold = { text, until: now + 4500 };
-  $('#heroSay').textContent = text;
-  setTimeout(() => { if (Date.now() >= sayHold.until) renderHead(); }, 4600);
+  holdSay(text, 4500);
   if (line.act || o.force) pigAct(line.act || ACTS[Math.floor(Math.random() * ACTS.length)]);
+}
+
+// The first time you open the board each day he says hello.
+const GREET = {
+  morning: ['Good morning! Coffee first, tasks second.', 'Morning! I have been here all night. Waiting. Judging.', 'Goedemorgen! Varken nummer één is ready.', 'Good morning! Shall we do one tiny thing?'],
+  afternoon: ['Good afternoon! The list missed you.', 'Oh, you remembered I exist. Good afternoon!', 'Afternoon! Snack, then tasks. In that order.'],
+  evening: ['Good evening! Last push, then snacks.', 'Evening! Still working? Respect. Or concern.', 'Goedenavond! Let us be quick about it.'],
+  night: ['Hrrrrng.. it is the middle of the night. Why are you up?', 'Shh. Pigs sleep now. You too, ideally.', 'Excuse me! Bedtime was hours ago.'],
+};
+function greetOnce() {
+  const today = new Date().toDateString();
+  try {
+    if (localStorage.getItem('varken-greeted') === today) return;
+    localStorage.setItem('varken-greeted', today);
+  } catch { return; }
+  const h = new Date().getHours();
+  const pool = L.isNight() ? GREET.night : h < 12 ? GREET.morning : h < 18 ? GREET.afternoon : GREET.evening;
+  setTimeout(() => {
+    holdSay(pool[Math.floor(Math.random() * pool.length)], 6500);
+    pigAct(L.isNight() ? 'sprout' : 'hop');
+  }, 1200);
 }
 
 // Actions: hop, show off the note, wiggle, sway the plant, dance and cheer. The class stays on the svg until it ends.
@@ -175,7 +210,14 @@ function floatHearts(n) {
 }
 // Something got checked off: the pig cheers; when the whole list is clear he says so for a while.
 const CLEAR_SAYS = ['EVERYTHING done!! Who is amazing? You.', 'Empty list! I am so proud of you. 🎉', 'All clear!! Time for a snack.', 'Look at you, being all productive. Ugh, adorable.', 'Zero tasks. I am obsessed with you right now.', 'Is there anything you cannot do? Rude.', 'Done, done, DONE. Take a bow. 🎀']; // when the whole list is clear
-function pigCheer(allClear) {
+const PARTY_SAYS = ['Varken nummer één! {n} done today!', 'HIGH FIVE! I have no hands, so imagine it.', '{n} today?! Who gave you permission to be this good.', '{n} down! You are on fire. 🔥', 'That is {n}! Someone call the newspaper.'];
+function pigCheer(allClear, party) {
+  if (party) {
+    pigAct('dance');
+    floatHearts(14);
+    holdSay(PARTY_SAYS[Math.floor(Math.random() * PARTY_SAYS.length)].replace('{n}', party), 7000);
+    return;
+  }
   pigAct('cheer');
   if (!allClear) setTimeout(() => pigSay('done', { p: 0.3 }), 900); // after the cheer
   floatHearts(allClear ? 8 : 4);
@@ -187,12 +229,14 @@ function pigCheer(allClear) {
 }
 // Poking the pig makes him do something and say something new.
 $('#heroPig').addEventListener('click', () => {
+  oink();
   if (Math.random() < 0.65) pigSay('poke', { force: true });
   else { pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]); renderHead(true); }
 });
 // Now and then he does something on his own.
+setInterval(renderHead, 300000); // nightcap on at 10 pm, off at 6 am
 setInterval(() => {
-  if (!document.hidden && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]);
+  if (!document.hidden && !L.isNight() && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]);
 }, 35000);
 
 // The little pig by the name in the sidebar.

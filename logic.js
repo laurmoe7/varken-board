@@ -252,28 +252,36 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   const projectName = (state, id) => (state.projects.find((p) => p.id === id) || { name: 'No project' }).name;
 
-  // A paste-ready task list for one project (or all) to hand to a Claude session.
-  // With `gallery` it lists that project's gallery pictures instead (not done ones, in your order).
-  function copyForClaude(state, project, gallery) {
-    const proj = state.projects.find((p) => p.id === project);
-    const items = gallery
-      ? sortGallery(filterItems(state.items, { project, status: 'active', gallery: true }))
-      : sortItems(filterItems(state.items, { project, status: 'active' }));
-    const title = project === 'all' ? 'all projects' : projectName(state, project);
-    const what = gallery ? (proj && proj.gallery ? proj.gallery.toLowerCase() : 'gallery') + ' ideas' : 'items';
-    if (!items.length) return 'Nothing open for ' + title + '.';
-    const lines = ['Open ' + what + ' for ' + title + ':', ''];
-    items.forEach((it, n) => {
-      const bits = gallery ? (it.slot ? [it.slot] : []) : [typeOf(it.type).label, it.priority].concat(it.effort ? [it.effort] : []);
-      if (it.status === 'doing') bits.push(gallery ? 'making it' : 'doing');
-      if (project === 'all') bits.push(projectName(state, it.project));
-      lines.push(n + 1 + '. ' + (bits.length ? '[' + bits.join(', ') + '] ' : '') + it.title);
-      if (it.build) lines.push('   Seen in build ' + it.build);
-      if (it.notes) it.notes.split('\n').forEach((l) => lines.push('   ' + l));
-      if (it.images.length) lines.push('   (' + it.images.length + ' image' + (it.images.length > 1 ? 's' : '') + ' on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', ') + ')');
-    });
+  // A paste-ready description of one item to hand to a Claude session: where it lives, its labels, notes and pictures.
+  function copyItem(state, it) {
+    const bits = it.gallery ? (it.slot ? [it.slot] : []) : [typeOf(it.type).label, it.priority].concat(it.effort ? [it.effort] : []);
+    if (it.status === 'doing') bits.push(it.gallery ? 'making it' : 'doing');
+    const proj = state.projects.find((p) => p.id === it.project);
+    const lines = [projectName(state, it.project) + (it.gallery && proj && proj.gallery ? ' (' + proj.gallery + ')' : '') + ': ' + it.title];
+    if (bits.length) lines.push('[' + bits.join(', ') + ']');
+    if (it.build) lines.push('Seen in build ' + it.build);
+    if (it.notes) lines.push('', 'Notes:', it.notes);
+    if (it.images.length) lines.push('', 'Pictures on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
     return lines.join('\n');
   }
+
+  // The pig's pick: an open item to start with. Easy ones first, then the most urgent; ties are picked at random.
+  // `f` is the view's filter (project, type, effort, search); `rnd` is for tests.
+  function pickForMe(items, f, rnd) {
+    const live = filterItems(items, Object.assign({}, f, { status: 'active', gallery: false }));
+    const open = live.filter((i) => i.status === 'open');
+    const pool = open.length ? open : live;
+    const rank = (i) => (i.effort === 'easy' ? 0 : i.effort === 'hard' ? 2 : 1) * 10 + priorityRank(i.priority);
+    const best = Math.min.apply(null, pool.map(rank));
+    const top = pool.filter((i) => rank(i) === best);
+    return top.length ? top[Math.floor((rnd || Math.random)() * top.length)] : null;
+  }
+
+  // The pig sleeps from 10 pm to 6 am (local time).
+  const isNight = (d) => {
+    const h = (d || new Date()).getHours();
+    return h >= 22 || h < 6;
+  };
 
   // BOARD.md written next to data.json by the sync, so Claude can read the backlog at a glance.
   function boardMarkdown(state, when) {
@@ -331,7 +339,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
     uid, slug, typeOf, effortOf, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
     filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday,
-    mergeStates, validateState, fitSize, projectName, copyForClaude, boardMarkdown,
+    mergeStates, validateState, fitSize, projectName, copyItem, pickForMe, isNight, boardMarkdown,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.BoardLogic = api;

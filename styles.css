@@ -412,3 +412,6 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .vtabs button.on { background: linear-gradient(135deg, #4a3a86, var(--card-hi)); color: var(--text); border-color: var(--lav); box-shadow: 0 3px 10px #0004; }
 .vtabs small { opacity: .7; margin-left: 4px; }
 #list { margin-top: 14px; }
+
+.card.picked { animation: picked 1.8s ease-out; }
+@keyframes picked { 0%, 100% { box-shadow: 0 3px 10px #0003; } 15%, 60% { box-shadow: 0 0 0 4px #ff9ec799, 0 0 30px #ff9ec766; } }

@@ -75,18 +75,37 @@ test('fitSize shrinks big images and leaves small ones', () => {
   assert.deepStrictEqual(L.fitSize(800, 600), { w: 800, h: 600 });
 });
 
-test('copyForClaude lists open items with notes, build and images', () => {
+test('copyItem describes one item with notes, build and pictures', () => {
   const s = state();
-  s.items = [
-    L.createItem({ title: 'Hat clips', project: 'petshopper', type: 'bug', priority: 'now', build: '212', notes: 'left ear', images: ['a1'] }),
-    L.createItem({ title: 'Done one', project: 'petshopper', status: 'done' }),
-  ];
-  const t = L.copyForClaude(s, 'petshopper');
-  assert.match(t, /1\. \[Bug, now\] Hat clips/);
-  assert.match(t, /Seen in build 212/);
+  const it = L.createItem({ title: 'Hat clips', project: 'petshopper', type: 'bug', priority: 'now', effort: 'easy', build: '212', notes: 'left ear\nonly on cats', images: ['a1'] });
+  const t = L.copyItem(s, it);
+  assert.match(t, /^Pet Shopper: Hat clips\n\[Bug, now, easy\]\nSeen in build 212/);
+  assert.match(t, /Notes:\nleft ear\nonly on cats/);
   assert.match(t, /images\/a1\.jpg/);
-  assert.doesNotMatch(t, /Done one/);
-  assert.strictEqual(L.copyForClaude(s, 'funfx'), 'Nothing open for funFX.');
+  const g = L.copyItem(s, L.createItem({ title: 'cap', project: 'petshopper', gallery: true, slot: 'Hat', status: 'doing' }));
+  assert.match(g, /^Pet Shopper \(Cosmetics\): cap\n\[Hat, making it\]/);
+});
+
+test('pickForMe prefers easy, then urgent, ignores gallery and done, respects the view filter', () => {
+  const mk = (title, o) => L.createItem(Object.assign({ title, project: 'funfx' }, o));
+  const items = [
+    mk('hard now', { effort: 'hard', priority: 'now' }),
+    mk('easy someday', { effort: 'easy', priority: 'someday' }),
+    mk('easy now', { effort: 'easy', priority: 'now' }),
+    mk('easy done', { effort: 'easy', priority: 'now', status: 'done' }),
+    mk('easy gallery', { effort: 'easy', priority: 'now', gallery: true }),
+    mk('other project', { effort: 'easy', priority: 'now', project: 'pathfinder' }),
+  ];
+  assert.strictEqual(L.pickForMe(items, { project: 'funfx' }, () => 0).title, 'easy now');
+  assert.strictEqual(L.pickForMe(items, { project: 'funfx', effort: 'hard' }).title, 'hard now');
+  assert.strictEqual(L.pickForMe(items, { project: 'petshopper' }), null);
+  const doing = [mk('started', { status: 'doing' })];
+  assert.strictEqual(L.pickForMe(doing, { project: 'all' }).title, 'started');
+});
+
+test('isNight is 10 pm to 6 am', () => {
+  const at = (h) => new Date(2026, 0, 5, h, 30);
+  assert.deepStrictEqual([21, 22, 23, 0, 5, 6, 12].map((h) => L.isNight(at(h))), [false, true, true, true, true, false, false]);
 });
 
 test('boardMarkdown groups by project and priority', () => {
@@ -146,8 +165,6 @@ test('gallery items stay out of the to-do list, counts and copy text', () => {
   assert.strictEqual(L.countOpen(s.items, 'petshopper'), 1);
   assert.strictEqual(L.countNow(s.items), 1);
   assert.strictEqual(L.countGallery(s.items, 'petshopper'), 1);
-  assert.doesNotMatch(L.copyForClaude(s, 'petshopper'), /bow tie/);
-  assert.match(L.copyForClaude(s, 'petshopper', true), /Open cosmetics ideas for Pet Shopper:\n\n1\. bow tie/);
 });
 
 test('sortGallery puts your order first and new pictures at the top', () => {
@@ -197,7 +214,7 @@ test('the slot filter and the gallery text use the slot', () => {
   const f = { project: 'petshopper', status: 'all', gallery: true };
   assert.deepStrictEqual(L.filterItems(s.items, Object.assign({ slot: 'Hat' }, f)).map((i) => i.title), ['cap']);
   assert.strictEqual(L.filterItems(s.items, Object.assign({ slot: 'all' }, f)).length, 2);
-  assert.match(L.copyForClaude(s, 'petshopper', true), /\[Hat\] cap/);
+  assert.match(L.copyItem(s, s.items[0]), /\[Hat\]/);
   assert.match(L.boardMarkdown(s, 'today'), /\*\*cap\*\* \[Hat\]/);
 });
 
@@ -221,7 +238,7 @@ test('~effort shorthand sets the effort, and the effort filter and copy text use
   const items = [L.createItem({ title: 'a', project: 'funfx', effort: 'easy' }), L.createItem({ title: 'b', project: 'funfx' })];
   assert.deepStrictEqual(L.filterItems(items, { status: 'active', effort: 'easy' }).map((i) => i.title), ['a']);
   const s = Object.assign(state(), { items });
-  assert.match(L.copyForClaude(s, 'funfx'), /\[Idea, soon, easy\] a/);
+  assert.match(L.copyItem(s, items[0]), /\[Idea, soon, easy\]/);
   assert.match(L.boardMarkdown(s), /\*\*a\*\* _\(easy\)_/);
 });
 

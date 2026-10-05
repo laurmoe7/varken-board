@@ -18,7 +18,7 @@ function renderNotesHead(poke) {
   $('#typeChips').hidden = true;
   $('#effortSel').hidden = true;
   $('#statusSel').hidden = true;
-  $('#copyBtn').hidden = true;
+  $('#pickBtn').hidden = true;
   const input = $('#quickInput');
   input.dataset.def = input.dataset.def || input.placeholder;
   input.placeholder = 'Jot something down… ( N )';
