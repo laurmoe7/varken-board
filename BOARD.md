@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:52:07.937Z_
+_Updated 2026-10-05T23:52:33.199Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -77,6 +77,7 @@ _2 done._
 
 ### Now
 
+- [ ] 💡 **search bar in character sheet on the top, only for character sheet** _(easy)_ `muvwmx9d24fnz`
 - [ ] 💡 **notes space on overview page, underneath everything else** _(easy)_ `muvwmdprbxza2`
 - [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
 - [ ] 🔧 **make hover over pop-ups better fit the ui style of the app** _(easy)_ `muvwkrj32ubab`
