@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T22:52:45.442Z_
+_Updated 2026-10-05T22:55:07.208Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -49,6 +49,10 @@ _2 done._
   > 
 - 🎀 **Joker jester** [Hat] `muvrtvop8h4zk`
   - images: images/muvrtap4catm0.jpg, images/muvrtfexageh1.jpg
+
+### Notes
+
+- 10 goodnight kisses to unlock carer persona
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
 
