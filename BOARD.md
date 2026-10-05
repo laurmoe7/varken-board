@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:27:51.995Z_
+_Updated 2026-10-05T23:31:50.182Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -71,6 +71,8 @@ _2 done._
   > In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.
 - [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
+
+_1 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
