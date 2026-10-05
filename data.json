@@ -350,12 +350,12 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "add support to grab ingredients from a recipe link, including amounts. change amount to metric possible?",
+      "title": "add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?",
       "notes": "",
       "build": "",
       "images": [],
       "created": 1791234328327,
-      "updated": 1791234328327
+      "updated": 1791234453982
     }
   ],
   "images": {
