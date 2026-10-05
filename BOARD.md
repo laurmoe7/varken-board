@@ -1,13 +1,8 @@
 # Varken board
 
-_Updated 2026-10-05T20:13:07.828Z_
+_Updated 2026-10-05T20:25:07.798Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
-
-### Soon
-
-- [ ] 💡 **furniture locking and tweaks** `muvkr90dnmqfu`
-  - images: images/muvkreo7u0x0q.jpg
 
 ### Someday
 
@@ -20,14 +15,12 @@ _Updated 2026-10-05T20:13:07.828Z_
 - [ ] 🔧 **Check the boogie dance and rock/roly/wiggle tilts for a seam** `seed-petshopper-14`
   > They still use CSS scale/rotate. Firefox-only seam is acceptable; move to svgSquish if it shows in Chrome or Safari.
 
-_1 done._
+_2 done._
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
 
 ### Soon
 
-- [ ] 💡 **Assign the comic images to triggers** `seed-funfx-1`
-  > All 15 comic_*.tga are registered but unused; every trigger still defaults to popup.tga. The suggested next step in funFX CLAUDE.md.
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
 - [ ] 🔧 **Check in game: moved Image popups page, Quest complete, missing-file detection** `seed-funfx-3`
@@ -37,12 +30,12 @@ _1 done._
 
 ### Someday
 
-- [ ] 💡 **Fish bite trigger** `seed-funfx-5`
-  > First /funfx fishlog showed no event at the bite. Needs a longer recording that runs past the cast.
 - [ ] 💡 **Buffs page can only compare buffs out of combat** `seed-funfx-6`
   > In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.
 - [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
+
+_2 done._
 
 ## 🎲 Pathfinder sheet (https://github.com/laurmoe7/pathfinder-sheet)
 
