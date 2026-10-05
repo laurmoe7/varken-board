@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:49:52.591Z_
+_Updated 2026-10-05T23:50:52.624Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -77,7 +77,8 @@ _2 done._
 
 ### Now
 
-- [ ] 💡 **class skill red dot needs centered in skills page** _(easy)_ `muvwgtsek11tj`
+- [ ] 🔧 **make hover over pop-ups better fit the ui style of the app** _(easy)_ `muvwkrj32ubab`
+- [ ] 🔧 **class skill red dot needs centered in skills page** _(easy)_ `muvwgtsek11tj`
 
 ### Soon
 
