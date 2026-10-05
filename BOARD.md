@@ -1,8 +1,12 @@
 # Varken board
 
-_Updated 2026-10-05T21:54:16.203Z_
+_Updated 2026-10-05T21:54:37.208Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
+
+### Now
+
+- [ ] 💡 **search menu in dressing room** `muvsf90rbtfto`
 
 ### Soon
 
