@@ -655,7 +655,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "test",
       "notes": "",
       "build": "",
@@ -664,7 +664,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791239247218,
-      "updated": 1791239268983
+      "updated": 1791239280013
     }
   ],
   "images": {
