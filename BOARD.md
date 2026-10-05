@@ -1,16 +1,16 @@
 # Varken board
 
-_Updated 2026-10-05T20:33:41.880Z_
+_Updated 2026-10-05T20:33:58.762Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
-- [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
 ### Someday
 
+- [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **Shared household pet** `seed-petshopper-11`
   > All pet data already lives in state.pet, so this stays possible.
 - [ ] 💡 **App store release: native speech recognition** `seed-petshopper-12`
