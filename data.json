@@ -736,6 +736,23 @@
       "slot": "",
       "created": 1791242627897,
       "updated": 1791242629259
+    },
+    {
+      "id": "muvvmntnnb227",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "animal companion tab",
+      "notes": "eidolon/animal companion stat blocks. add a tab or some kind of section for this",
+      "build": "",
+      "effort": "",
+      "doneAt": 1791242658342,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791242657051,
+      "updated": 1791242658342
     }
   ],
   "notes": [
