@@ -82,22 +82,9 @@ select, input, textarea { background: var(--bg2); border: 1px solid var(--line);
 input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: none; box-shadow: 0 0 0 3px #b9a4ff33; }
 #search { width: 150px; }
 
-#quick { display: flex; gap: 10px; margin-top: 18px; position: relative; }
+#quick { display: flex; gap: 10px; margin-top: 18px; }
 #quickInput { flex: 1; font-size: 16px; padding: 13px 16px; border-radius: 16px; background: var(--card); }
 .hint { color: var(--muted); font-size: 13px; margin: 8px 4px 0; }
-.pending { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-.pending:empty { display: none; }
-
-/* the pop-up under the new-item line */
-.qmenu { position: absolute; left: 0; top: calc(100% + 8px); z-index: 4; width: min(580px, 100%); background: var(--card-hi); border: 1px solid var(--lav); border-radius: 18px; padding: 12px 14px 10px; box-shadow: 0 14px 40px #000a; display: grid; gap: 9px; }
-.qmenu[hidden] { display: none; }
-.qrow { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-.qrow > span { width: 78px; color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.qopt { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-weight: 700; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
-.qopt:hover { color: var(--text); border-color: var(--lav); }
-.qopt.on { background: var(--card); color: var(--text); border-color: var(--pink); box-shadow: 0 0 0 2px #ff9ec733; }
-.qopt i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
-.qfoot { color: var(--muted); font-size: 12px; margin: 0; }
 
 /* list */
 #list { margin-top: 18px; display: flex; flex-direction: column; gap: 22px; }
@@ -137,6 +124,8 @@ input:focus, textarea:focus, select:focus { border-color: var(--lav); outline: n
 .detail h3 { margin: 0 0 12px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .detail label, .dlg label { display: block; margin: 12px 0 0; color: var(--muted); font-size: 13px; font-weight: 700; }
 .detail input, .detail textarea, .detail select, .dlg input { width: 100%; margin-top: 4px; color: var(--text); font-weight: 500; }
+.draft-title { font-size: 18px; font-weight: 800; padding: 10px 12px; background: var(--bg); border: 1px dashed var(--lav); border-radius: 12px; word-break: break-word; }
+.draft-title.dim { color: var(--muted); font-weight: 600; }
 .detail #dTitle { font-size: 18px; font-weight: 800; }
 .detail textarea { min-height: 130px; resize: vertical; }
 .seg { display: flex; gap: 4px; margin-top: 4px; }

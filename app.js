@@ -5,7 +5,9 @@ const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 let state = L.defaultState();
-const ui = { project: 'all', type: 'all', status: 'active', q: '', open: null, pending: [], last: '', draft: {} };
+// ui.drafting: the right panel is in "new item" mode, filling ui.draftItem until Add.
+const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', build: '', notes: '', images: [] });
+const ui = { project: 'all', type: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
 
 // ---------- saving ----------
@@ -18,7 +20,7 @@ function save() {
   scheduleSync();
 }
 function loadUi() {
-  try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, pending: [], q: '', draft: {} }); } catch { /* fresh */ }
+  try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, q: '', drafting: false, draftItem: blankDraft() }); } catch { /* fresh */ }
 }
 function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, type: ui.type, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
 
@@ -92,17 +94,25 @@ async function processImage(file) {
   state.images[id] = { name: file.name || 'pasted image', added: Date.now() };
   return id;
 }
-async function addFiles(files, toItem) {
+async function addFiles(files, target) {
   const pics = Array.from(files).filter((f) => f.type.startsWith('image/'));
-  if (!pics.length) return;
+  if (!pics.length || !target) return;
+  const isDraft = target === ui.draftItem;
   for (const f of pics) {
     try {
-      const id = await processImage(f);
-      if (toItem) { toItem.images.push(id); touch(toItem); } else ui.pending.push(id);
+      target.images.push(await processImage(f));
+      if (!isDraft) touch(target);
     } catch { toast('Could not read that image'); }
   }
   save();
-  if (toItem) { renderImages(); renderList(); } else renderPending();
+  renderImages();
+  if (!isDraft) renderList();
+}
+// Where a pasted or dropped image goes: the panel's item, or a new item (opening the panel for it).
+function imageTarget(inDetail) {
+  if (inDetail && current()) return current();
+  startDraft();
+  return ui.draftItem;
 }
 
 // ---------- rendering ----------
@@ -188,45 +198,64 @@ function renderList() {
   renderHead();
 }
 
-function renderPending() {
-  const el = $('#pending');
-  el.innerHTML = ui.pending
-    .map((id) => `<div class="img"><img data-img="${esc(id)}" alt=""><button class="x" data-unpend="${esc(id)}" aria-label="Remove image">×</button></div>`)
-    .join('');
-  el.querySelectorAll('img').forEach((i) => (i.style.cssText = 'height:52px;width:52px;object-fit:cover;border-radius:10px;border:1px solid var(--line)'));
-  hydrate(el);
-}
-
 const item = () => state.items.find((i) => i.id === ui.open && !i.deleted);
 
 function seg(field, list, cur) {
   return `<div class="seg" data-seg="${field}">${list.map((o) => `<button type="button" data-val="${o.id}" class="${cur === o.id ? 'on' : ''}">${o.emoji ? o.emoji + ' ' : ''}${o.label}</button>`).join('')}</div>`;
 }
 
+const current = () => (ui.drafting ? ui.draftItem : item());
+
+// What the new-item panel shows: the panel's choices with anything typed as #project !now :bug on top.
+const draftValues = () => L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults());
+
 function renderDetail() {
   const d = $('#detail');
-  const it = item();
+  const it = current();
   $('.app').classList.toggle('has-detail', !!it);
   d.hidden = !it;
   if (!it) { d.innerHTML = ''; return; }
+  const draft = ui.drafting;
+  const v = draft ? draftValues() : it;
   d.innerHTML = `
-    <h3>Details <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
-    <input id="dTitle" value="${esc(it.title)}" aria-label="Title">
-    <label>Type ${seg('type', L.TYPES, it.type)}</label>
-    <label>Priority ${seg('priority', L.PRIORITIES, it.priority)}</label>
-    <label>Status ${seg('status', L.STATUSES, it.status)}</label>
-    <label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === it.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
+    <h3>${draft ? 'New item' : 'Details'} <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
+    ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<input id="dTitle" value="${esc(it.title)}" aria-label="Title">`}
+    <label>Type ${seg('type', L.TYPES, v.type)}</label>
+    <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>
+    ${draft ? '' : `<label>Status ${seg('status', L.STATUSES, it.status)}</label>`}
+    <label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
     <label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>
     <label>Notes <textarea id="dNotes" placeholder="What is it, what should happen instead…">${esc(it.notes)}</textarea></label>
     <label>Images</label>
     <div class="imgs" id="dImgs"></div>
     <div class="drop" id="dDrop">Paste (Ctrl+V), drop images here, or <button type="button" id="dPick">pick files</button><input type="file" id="dFile" accept="image/*" multiple hidden></div>
-    <div class="row"><button class="danger" id="dDelete">Delete</button></div>`;
+    <div class="row">${
+      draft
+        ? '<button type="button" class="primary" id="dAdd">Add</button><button type="button" class="ghost" id="dClear">Clear</button><span class="muted small">Tab jumps here, Ctrl+Enter adds</span>'
+        : '<button class="danger" id="dDelete">Delete</button>'
+    }</div>`;
+  if (draft) paintDraft();
   renderImages();
 }
 
+// Refreshes the new-item panel's title and choices as you type, without rebuilding it.
+function paintDraft() {
+  if (!ui.drafting) return;
+  const v = draftValues();
+  const prev = $('#dPreview');
+  if (prev) {
+    prev.textContent = v.title || 'Start typing your title above…';
+    prev.classList.toggle('dim', !v.title);
+  }
+  document.querySelectorAll('#detail [data-seg]').forEach((g) =>
+    g.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.val === v[g.dataset.seg]))
+  );
+  const sel = $('#dProject');
+  if (sel) sel.value = v.project;
+}
+
 function renderImages() {
-  const it = item();
+  const it = current();
   const el = $('#dImgs');
   if (!it || !el) return;
   el.innerHTML = it.images.map((id) => `<div class="img"><img data-img="${esc(id)}" data-zoom="${esc(id)}" alt="attached image"><button class="x" data-rm="${esc(id)}" aria-label="Remove image">×</button></div>`).join('');
@@ -251,6 +280,7 @@ function toast(text, undo) {
 
 // ---------- actions ----------
 function openItem(id) {
+  ui.drafting = false;
   ui.open = id;
   renderDetail();
   renderList();
@@ -261,55 +291,68 @@ function closeItem() {
   renderList();
 }
 
-// What a new item gets when the line has no shorthand: the menu's choices, else the project on show.
+// What a new item gets when the line has no shorthand: the panel's choices, else the project on show.
 function quickDefaults() {
-  const d = ui.draft;
+  const d = ui.draftItem;
   return {
     project: d.project || (ui.project !== 'all' ? ui.project : ui.last || (projectsLive()[0] || {}).id || ''),
-    type: d.type || 'idea',
-    priority: d.priority || 'soon',
+    type: d.type,
+    priority: d.priority,
   };
 }
 
-function addFromQuick(text) {
+const draftHasContent = () => !!(ui.draftItem.notes || ui.draftItem.build || ui.draftItem.images.length);
+function startDraft() {
+  if (ui.drafting) return;
+  ui.drafting = true;
+  ui.open = null;
+  renderDetail();
+  renderList();
+}
+function endDraft() {
+  ui.drafting = false;
+  renderDetail();
+}
+// The panel opens as soon as there is something typed (or pasted) and closes again if there is nothing to keep.
+function syncDraft() {
+  if ($('#quickInput').value.trim() !== '') ui.drafting ? paintDraft() : startDraft();
+  else if (ui.drafting && !draftHasContent()) endDraft();
+  else paintDraft();
+}
+function commitDraft() {
+  const input = $('#quickInput');
   const defaults = quickDefaults();
-  const r = L.parseQuick(text, projectsLive(), defaults);
-  if (!r.title) return false;
-  const it = L.createItem({ project: r.project || defaults.project, type: r.type, priority: r.priority, title: r.title, images: ui.pending.slice() });
+  const r = L.parseQuick(input.value, projectsLive(), defaults);
+  if (!r.title) {
+    toast('Type a title first');
+    input.focus();
+    return false;
+  }
+  const d = ui.draftItem;
+  const it = L.createItem({ project: r.project || defaults.project, type: r.type, priority: r.priority, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() });
   state.items.push(it);
   ui.last = it.project;
-  ui.pending = [];
-  ui.draft = {};
+  ui.draftItem = blankDraft();
+  ui.drafting = false;
+  input.value = '';
   saveUi();
   save();
-  renderPending();
+  renderDetail();
   renderList();
   const p = project(it.project);
   toast('Added' + (p ? ' to ' + p.name : ''));
+  input.focus();
   return true;
 }
-
-// The pop-up shows while you type in the new-item line, so project, type and priority can be picked right away.
-function renderQuickMenu() {
-  const input = $('#quickInput');
-  const menu = $('#quickMenu');
-  const open = document.activeElement === input && input.value.trim() !== '';
-  menu.hidden = !open;
-  if (!open) return;
-  const cur = L.parseQuick(input.value, projectsLive(), quickDefaults());
-  const row = (label, field, opts) =>
-    `<div class="qrow"><span>${label}</span>${opts
-      .map((o) => `<button type="button" class="qopt ${cur[field] === o.id ? 'on' : ''}" data-qf="${field}" data-qv="${esc(o.id)}">${o.dot ? `<i style="background:${esc(o.dot)}"></i>` : ''}${esc(o.label)}</button>`)
-      .join('')}</div>`;
-  menu.innerHTML =
-    row('Project', 'project', projectsLive().map((p) => ({ id: p.id, label: p.emoji + ' ' + p.name, dot: p.color }))) +
-    row('Type', 'type', L.TYPES.map((t) => ({ id: t.id, label: t.emoji + ' ' + t.label }))) +
-    row('Priority', 'priority', L.PRIORITIES) +
-    '<p class="qfoot">Enter adds it. Esc closes. You can still type #project !now :bug.</p>';
+function clearDraft() {
+  $('#quickInput').value = '';
+  ui.draftItem = blankDraft();
+  endDraft();
 }
 
 function setField(it, field, val) {
   it[field] = val;
+  if (it === ui.draftItem) return; // a new item is only saved by Add
   touch(it);
   save();
 }
@@ -392,23 +435,15 @@ function deleteProject() {
 
 // ---------- wiring ----------
 function wire() {
+  const qi = $('#quickInput');
   $('#quick').addEventListener('submit', (e) => {
     e.preventDefault();
-    const input = $('#quickInput');
-    if (addFromQuick(input.value)) input.value = '';
-    renderQuickMenu();
+    commitDraft();
   });
-  const qi = $('#quickInput');
-  qi.addEventListener('input', renderQuickMenu);
-  qi.addEventListener('focus', renderQuickMenu);
-  qi.addEventListener('blur', renderQuickMenu);
-  $('#quickMenu').addEventListener('mousedown', (e) => e.preventDefault()); // keep typing in the line
-  $('#quickMenu').addEventListener('click', (e) => {
-    const b = e.target.closest('[data-qf]');
-    if (!b) return;
-    ui.draft[b.dataset.qf] = b.dataset.qv;
-    qi.value = L.stripToken(qi.value, projectsLive(), b.dataset.qf);
-    renderQuickMenu();
+  qi.addEventListener('input', syncDraft);
+  qi.addEventListener('focus', syncDraft);
+  qi.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab' && !e.shiftKey && ui.drafting && $('#dNotes')) { e.preventDefault(); $('#dNotes').focus(); }
   });
   $('#projects').addEventListener('click', (e) => {
     const ed = e.target.closest('[data-edit]');
@@ -442,53 +477,68 @@ function wire() {
     const card = e.target.closest('.card');
     if (card && e.target === card && e.key === 'Enter') openItem(card.dataset.id);
   });
-  $('#pending').addEventListener('click', (e) => {
-    const b = e.target.closest('[data-unpend]');
-    if (b) { ui.pending = ui.pending.filter((i) => i !== b.dataset.unpend); renderPending(); }
-  });
-
   const d = $('#detail');
   d.addEventListener('click', (e) => {
-    const it = item();
+    const it = current();
     if (!it) return;
-    if (e.target.closest('#dClose')) return closeItem();
+    if (e.target.closest('#dClose')) return ui.drafting ? endDraft() : closeItem();
+    if (e.target.closest('#dAdd')) return commitDraft();
+    if (e.target.closest('#dClear')) return clearDraft();
     if (e.target.closest('#dDelete')) return deleteItem(it.id);
     if (e.target.closest('#dPick')) return $('#dFile').click();
     const sb = e.target.closest('[data-seg] [data-val]');
     if (sb) {
-      setField(it, sb.parentElement.dataset.seg, sb.dataset.val);
-      sb.parentElement.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === sb));
-      renderList();
+      const field = sb.parentElement.dataset.seg;
+      setField(it, field, sb.dataset.val);
+      if (ui.drafting) {
+        qi.value = L.stripToken(qi.value, projectsLive(), field); // a typed #tag or !word would override the click
+        paintDraft();
+      } else {
+        sb.parentElement.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === sb));
+        renderList();
+      }
       return;
     }
     const rm = e.target.closest('[data-rm]');
-    if (rm) { it.images = it.images.filter((i) => i !== rm.dataset.rm); touch(it); save(); renderImages(); renderList(); return; }
+    if (rm) {
+      it.images = it.images.filter((i) => i !== rm.dataset.rm);
+      if (!ui.drafting) { touch(it); save(); renderList(); }
+      renderImages();
+      return;
+    }
     const z = e.target.closest('[data-zoom]');
     if (z && z.src) { $('#lightImg').src = z.src; $('#lightbox').showModal(); }
   });
   d.addEventListener('input', (e) => {
-    const it = item();
+    const it = current();
     if (!it) return;
     if (e.target.id === 'dTitle') setField(it, 'title', e.target.value);
     else if (e.target.id === 'dNotes') setField(it, 'notes', e.target.value);
     else if (e.target.id === 'dBuild') setField(it, 'build', e.target.value.trim());
     else return;
-    renderList();
+    if (!ui.drafting) renderList();
   });
   d.addEventListener('change', (e) => {
-    const it = item();
+    const it = current();
     if (!it) return;
-    if (e.target.id === 'dProject') { setField(it, 'project', e.target.value); renderList(); }
+    if (e.target.id === 'dProject') {
+      setField(it, 'project', e.target.value);
+      if (ui.drafting) { qi.value = L.stripToken(qi.value, projectsLive(), 'project'); paintDraft(); } else renderList();
+    }
     if (e.target.id === 'dFile') { addFiles(e.target.files, it); e.target.value = ''; }
   });
+  d.addEventListener('keydown', (e) => {
+    if (!ui.drafting) return;
+    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); commitDraft(); }
+    else if (e.key === 'Tab' && e.shiftKey && e.target.id === 'dNotes') { e.preventDefault(); qi.focus(); }
+  });
 
-  // paste and drop: inside the detail panel they go to that item, anywhere else to the new-item line
+  // paste and drop: inside the panel they go to its item, anywhere else to a new item
   document.addEventListener('paste', (e) => {
     const files = Array.from(e.clipboardData ? e.clipboardData.files : []);
     if (!files.some((f) => f.type.startsWith('image/'))) return;
     e.preventDefault();
-    const inDetail = e.target.closest && e.target.closest('#detail');
-    addFiles(files, inDetail ? item() : null);
+    addFiles(files, imageTarget(e.target.closest && e.target.closest('#detail')));
   });
   document.addEventListener('dragover', (e) => {
     e.preventDefault();
@@ -500,8 +550,8 @@ function wire() {
     e.preventDefault();
     const z = $('#dDrop');
     if (z) z.classList.remove('over');
-    const inDetail = e.target.closest && e.target.closest('#detail');
-    addFiles(e.dataTransfer.files, inDetail ? item() : null);
+    if (!Array.from(e.dataTransfer.files).some((f) => f.type.startsWith('image/'))) return;
+    addFiles(e.dataTransfer.files, imageTarget(e.target.closest && e.target.closest('#detail')));
   });
 
   document.addEventListener('keydown', (e) => {
@@ -593,7 +643,6 @@ async function start() {
   if (!project(ui.project) && ui.project !== 'all') ui.project = 'all';
   ready = true;
   renderAll();
-  renderPending();
   doSync();
 }
 start();
