@@ -426,6 +426,21 @@
       "slot": "Hat",
       "created": 1791236275369,
       "updated": 1791236275369
+    },
+    {
+      "id": "muvry35yoek6i",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "blank templates for Nibble Sketchpad to make it easier to draw on skins",
+      "notes": "",
+      "build": "",
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791236471686,
+      "updated": 1791236471686
     }
   ],
   "images": {
