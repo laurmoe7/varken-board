@@ -51,26 +51,39 @@
 
   const liveProjects = (state) => state.projects.filter((p) => !p.deleted);
 
+  // Which field a shorthand word sets: #project, !priority or :type. Unknown words are plain text.
+  // A #tag matches the start of a project's name without spaces.
+  function classifyToken(word, projects) {
+    const w = word.toLowerCase();
+    let m;
+    if ((m = /^#(.+)$/.exec(w))) {
+      const tag = slug(m[1]);
+      const hit = tag && projects.find((p) => slug(p.name).startsWith(tag) || p.id.startsWith(tag));
+      return hit ? { field: 'project', value: hit.id } : null;
+    }
+    if ((m = /^!(.+)$/.exec(w)) && ids(PRIORITIES).includes(m[1])) return { field: 'priority', value: m[1] };
+    if ((m = /^:(.+)$/.exec(w)) && ids(TYPES).includes(m[1])) return { field: 'type', value: m[1] };
+    return null;
+  }
+
   // "#funfx fix the glow !now :bug" -> project, priority, type, and the title left over.
-  // A #tag matches the start of a project's name without spaces; unknown tags stay in the title.
   function parseQuick(text, projects, defaults) {
     const out = Object.assign({ project: '', priority: 'soon', type: 'idea' }, defaults);
     const keep = [];
     for (const word of String(text || '').trim().split(/\s+/)) {
-      const w = word.toLowerCase();
-      let m;
-      if ((m = /^#(.+)$/.exec(w))) {
-        const hit = projects.find((p) => slug(p.name).startsWith(slug(m[1])) || p.id.startsWith(slug(m[1])));
-        if (hit && slug(m[1])) { out.project = hit.id; continue; }
-      } else if ((m = /^!(.+)$/.exec(w)) && ids(PRIORITIES).includes(m[1])) {
-        out.priority = m[1]; continue;
-      } else if ((m = /^:(.+)$/.exec(w)) && ids(TYPES).includes(m[1])) {
-        out.type = m[1]; continue;
-      }
-      keep.push(word);
+      const t = classifyToken(word, projects);
+      if (t) out[t.field] = t.value;
+      else keep.push(word);
     }
     out.title = keep.join(' ');
     return out;
+  }
+
+  // Removes the shorthand for one field ('project', 'priority' or 'type') so a menu choice isn't overridden.
+  function stripToken(text, projects, field) {
+    const src = String(text || '');
+    const words = src.trim().split(/\s+/).filter((w) => w && (classifyToken(w, projects) || {}).field !== field);
+    return words.join(' ') + (words.length && /\s$/.test(src) ? ' ' : '');
   }
 
   const priorityRank = (p) => Math.max(0, ids(PRIORITIES).indexOf(p));
@@ -189,7 +202,7 @@
 
   const api = {
     TYPES, PRIORITIES, STATUSES, COLORS, NOW_CAP, MAX_IMAGE_SIDE,
-    uid, slug, typeOf, defaultState, createItem, liveProjects, parseQuick,
+    uid, slug, typeOf, defaultState, createItem, liveProjects, parseQuick, stripToken,
     filterItems, sortItems, groupByPriority, countNow, countOpen,
     mergeStates, validateState, fitSize, projectName, copyForClaude, boardMarkdown,
   };

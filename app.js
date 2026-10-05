@@ -5,7 +5,7 @@ const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 let state = L.defaultState();
-const ui = { project: 'all', type: 'all', status: 'active', q: '', open: null, pending: [], last: '' };
+const ui = { project: 'all', type: 'all', status: 'active', q: '', open: null, pending: [], last: '', draft: {} };
 let ready = false;
 
 // ---------- saving ----------
@@ -18,7 +18,7 @@ function save() {
   scheduleSync();
 }
 function loadUi() {
-  try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, pending: [], q: '' }); } catch { /* fresh */ }
+  try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, pending: [], q: '', draft: {} }); } catch { /* fresh */ }
 }
 function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, type: ui.type, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
 
@@ -261,14 +261,25 @@ function closeItem() {
   renderList();
 }
 
+// What a new item gets when the line has no shorthand: the menu's choices, else the project on show.
+function quickDefaults() {
+  const d = ui.draft;
+  return {
+    project: d.project || (ui.project !== 'all' ? ui.project : ui.last || (projectsLive()[0] || {}).id || ''),
+    type: d.type || 'idea',
+    priority: d.priority || 'soon',
+  };
+}
+
 function addFromQuick(text) {
-  const defaults = { project: ui.project !== 'all' ? ui.project : ui.last || (projectsLive()[0] || {}).id || '' };
+  const defaults = quickDefaults();
   const r = L.parseQuick(text, projectsLive(), defaults);
   if (!r.title) return false;
   const it = L.createItem({ project: r.project || defaults.project, type: r.type, priority: r.priority, title: r.title, images: ui.pending.slice() });
   state.items.push(it);
   ui.last = it.project;
   ui.pending = [];
+  ui.draft = {};
   saveUi();
   save();
   renderPending();
@@ -276,6 +287,25 @@ function addFromQuick(text) {
   const p = project(it.project);
   toast('Added' + (p ? ' to ' + p.name : ''));
   return true;
+}
+
+// The pop-up shows while you type in the new-item line, so project, type and priority can be picked right away.
+function renderQuickMenu() {
+  const input = $('#quickInput');
+  const menu = $('#quickMenu');
+  const open = document.activeElement === input && input.value.trim() !== '';
+  menu.hidden = !open;
+  if (!open) return;
+  const cur = L.parseQuick(input.value, projectsLive(), quickDefaults());
+  const row = (label, field, opts) =>
+    `<div class="qrow"><span>${label}</span>${opts
+      .map((o) => `<button type="button" class="qopt ${cur[field] === o.id ? 'on' : ''}" data-qf="${field}" data-qv="${esc(o.id)}">${o.dot ? `<i style="background:${esc(o.dot)}"></i>` : ''}${esc(o.label)}</button>`)
+      .join('')}</div>`;
+  menu.innerHTML =
+    row('Project', 'project', projectsLive().map((p) => ({ id: p.id, label: p.emoji + ' ' + p.name, dot: p.color }))) +
+    row('Type', 'type', L.TYPES.map((t) => ({ id: t.id, label: t.emoji + ' ' + t.label }))) +
+    row('Priority', 'priority', L.PRIORITIES) +
+    '<p class="qfoot">Enter adds it. Esc closes. You can still type #project !now :bug.</p>';
 }
 
 function setField(it, field, val) {
@@ -366,6 +396,19 @@ function wire() {
     e.preventDefault();
     const input = $('#quickInput');
     if (addFromQuick(input.value)) input.value = '';
+    renderQuickMenu();
+  });
+  const qi = $('#quickInput');
+  qi.addEventListener('input', renderQuickMenu);
+  qi.addEventListener('focus', renderQuickMenu);
+  qi.addEventListener('blur', renderQuickMenu);
+  $('#quickMenu').addEventListener('mousedown', (e) => e.preventDefault()); // keep typing in the line
+  $('#quickMenu').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-qf]');
+    if (!b) return;
+    ui.draft[b.dataset.qf] = b.dataset.qv;
+    qi.value = L.stripToken(qi.value, projectsLive(), b.dataset.qf);
+    renderQuickMenu();
   });
   $('#projects').addEventListener('click', (e) => {
     const ed = e.target.closest('[data-edit]');

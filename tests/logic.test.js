@@ -97,3 +97,12 @@ test('boardMarkdown groups by project and priority', () => {
   assert.match(md, /### Now/);
   assert.match(md, /\*\*Glow\*\* `abc`/);
 });
+
+test('stripToken removes only the shorthand for one field', () => {
+  const ps = state().projects;
+  assert.strictEqual(L.stripToken('#funfx glow !now :bug', ps, 'priority'), '#funfx glow :bug');
+  assert.strictEqual(L.stripToken('#funfx glow !now :bug', ps, 'project'), 'glow !now :bug');
+  assert.strictEqual(L.stripToken('glow :bug ', ps, 'type'), 'glow ');
+  assert.strictEqual(L.stripToken('#nope stays !later', ps, 'project'), '#nope stays !later');
+  assert.strictEqual(L.stripToken('', ps, 'type'), '');
+});
