@@ -57,14 +57,14 @@ function pigSvg(mood, cls, opts) {
 // What the pig says in the header, by what the board looks like. Several lines each; one stays until you
 // poke the pig or the board changes.
 const SAYINGS = {
-  gallery: ['Pretty things to make! ✨', 'Ooh, what will they wear next?', 'Every little hat counts.', 'Sparkly ideas only, please.'],
-  notes: ['Jot it down, sort it later.', 'Loose thoughts are welcome here.', 'No categories, no pressure. 🌸', 'Ooh, what are you thinking about?'],
-  notes0: ['A blank page. Write me something!', 'Nothing yet. Even tiny thoughts count.'],
-  gallery0: ['No ideas yet. Feed me a picture?', 'Paste a picture, I will wait.'],
-  many: ['Oink! So many Nows. Pick the real few.', 'Deep breath. Which one matters most?', 'Not everything is a Now, friend.'],
-  clear: ['All clear. Snout up, nap time.', 'Nothing to do. You earned it. 💤', 'Zzz... good job... zzz...'],
-  one: ['Just one thing. You can do it!', 'One little task. Easy peasy.', 'Only one left. Almost there!'],
-  some: ['Oink! {n} things. One at a time.', 'You are doing great, truly. 💗', 'Small steps still get you there.', 'I believe in you! {n} to go.', 'Tiny wins add up. Go go go!', 'Take a sip of water, then the next one.', 'You make it look easy.'],
+  gallery: ['Pretty things to make! ✨', 'Ooh, what will they wear next?', 'Every little hat counts.', 'Sparkly ideas only, please.', 'Fashion emergency! I need a hat.', 'I demand a tiny crown. Just saying.', 'Make me look fabulous, no pressure.', 'Obviously I will wear all of them.'],
+  gallery0: ['No ideas yet. Feed me a picture?', 'Paste a picture, I will wait.', 'My wardrobe is empty. Rude.', 'Naked pig, no ideas. Help!'],
+  notes: ['Jot it down, sort it later.', 'Loose thoughts are welcome here.', 'No categories, no pressure. 🌸', 'Ooh, what are you thinking about?', 'Write it down before it escapes!', 'Brain dump time. I will not judge. Much.', 'Half-baked ideas are my favourite.'],
+  notes0: ['A blank page. Write me something!', 'Nothing yet. Even tiny thoughts count.', 'So empty. Say something clever.'],
+  many: ['Oink! So many Nows. Pick the real few.', 'Deep breath. Which one matters most?', 'Not everything is a Now, friend.', 'Everything is urgent? Sure it is. 🙄', 'That is not a list, that is a cry for help.', 'Bold of you to call all of these Now.', 'I am sweating. Please demote some.'],
+  clear: ['All clear. Snout up, nap time.', 'Nothing to do. You earned it. 💤', 'Zzz... good job... zzz...', 'Empty list. Who even are you?', 'Do not wake me. I am dreaming of snacks.', 'Done already? Show-off.'],
+  one: ['Just one thing. You can do it!', 'One little task. Easy peasy.', 'Only one left. Almost there!', 'One task. I have seen you do worse.', 'Just one. Do it, or I will stare.', 'One! Even I could do that. (I will not.)'],
+  some: ['Oink! {n} things. One at a time.', 'You are doing great, truly. 💗', 'Small steps still get you there.', 'I believe in you! {n} to go.', 'Tiny wins add up. Go go go!', 'Take a sip of water, then the next one.', 'You make it look easy.', '{n} things. I will supervise from here.', 'Procrastinating? I can tell. 👀', 'Stop reading me and do a task!', 'I am cheering extremely quietly. Do not test me.', 'Ooh, {n} tasks. Ambitious. I like it.', 'Pick the easy one first. I will not tell.', 'You are one task away from feeling smug.', 'Less staring at the pig, more doing.'],
 };
 let sayKey = '', sayText = '', sayN = 0;
 let sayHold = { text: '', until: 0 };
@@ -129,7 +129,7 @@ function floatHearts(n) {
   }
 }
 // Something got checked off: the pig cheers; when the whole list is clear he says so for a while.
-const CLEAR_SAYS = ['EVERYTHING done!! Who is amazing? You.', 'Empty list! I am so proud of you. 🎉', 'All clear!! Time for a snack.'];
+const CLEAR_SAYS = ['EVERYTHING done!! Who is amazing? You.', 'Empty list! I am so proud of you. 🎉', 'All clear!! Time for a snack.', 'Look at you, being all productive. Ugh, adorable.', 'Zero tasks. I am obsessed with you right now.', 'Is there anything you cannot do? Rude.', 'Done, done, DONE. Take a bow. 🎀']; // when the whole list is clear
 function pigCheer(allClear) {
   pigAct('cheer');
   floatHearts(allClear ? 8 : 4);
