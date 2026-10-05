@@ -349,40 +349,42 @@ dialog { border-radius: 26px; }
 .check-row input { width: auto !important; margin: 0 !important; accent-color: var(--pink); }
 
 /* the pig's floating hooves and what he does with them */
-.hero-pig { position: relative; width: 112px; height: 112px; }
-.hoof { transform-box: fill-box; transform-origin: center; }
-.hoof-in { animation: hoof-float 3.2s ease-in-out infinite; }
-.hoof-r .hoof-in { animation-delay: -1.6s; }
-@keyframes hoof-float { 50% { translate: 0 -2.2px; } }
-.pig.act-wave .hoof-r { animation: hoof-wave 1.6s ease-in-out; }
-@keyframes hoof-wave {
-  0%, 100% { translate: 0 0; rotate: 0deg; }
-  15%, 85% { translate: 27px -22px; rotate: 0deg; }
-  28% { translate: 27px -22px; rotate: -24deg; } 42% { translate: 27px -22px; rotate: 20deg; }
-  56% { translate: 27px -22px; rotate: -24deg; } 70% { translate: 27px -22px; rotate: 18deg; }
+.hero-pig { position: relative; width: 104px; height: 124px; }
+/* the pig's chubby body (header only): arms turn about their shoulders */
+.arm, .legs, .body-all { transform-box: view-box; }
+.arm-l { transform-origin: 20px 63px; }
+.arm-r { transform-origin: 60px 63px; }
+.body-all { transform-origin: 40px 90px; }
+.pig.act-wave .arm-r { animation: arm-wave 1.7s ease-in-out; }
+@keyframes arm-wave {
+  0%, 100% { rotate: 0deg; }
+  15%, 85% { rotate: -140deg; }
+  30% { rotate: -118deg; } 45% { rotate: -150deg; } 60% { rotate: -118deg; } 72% { rotate: -148deg; }
 }
 .pig.act-cheer { animation: pig-hop .55s ease-out 2; }
-.pig.act-cheer .hoof-l { animation: cheer-l 1.1s ease-in-out; }
-.pig.act-cheer .hoof-r { animation: cheer-r 1.1s ease-in-out; }
-@keyframes cheer-l { 0%, 100% { translate: 0 0; } 20%, 80% { translate: -19px -40px; rotate: -20deg; } 50% { translate: -19px -46px; rotate: 10deg; } }
-@keyframes cheer-r { 0%, 100% { translate: 0 0; } 20%, 80% { translate: 19px -40px; rotate: 20deg; } 50% { translate: 19px -46px; rotate: -10deg; } }
+.pig.act-cheer .arm-l { animation: cheer-l 1.1s ease-in-out; }
+.pig.act-cheer .arm-r { animation: cheer-r 1.1s ease-in-out; }
+@keyframes cheer-l { 0%, 100% { rotate: 0deg; } 20%, 80% { rotate: 150deg; } 50% { rotate: 128deg; } }
+@keyframes cheer-r { 0%, 100% { rotate: 0deg; } 20%, 80% { rotate: -150deg; } 50% { rotate: -128deg; } }
 @keyframes pig-hop { 0%, 100% { transform: translateY(0); } 45% { transform: translateY(-12px); } }
 .pig.act-hop { animation: pig-hop .5s ease-out 2; }
-.pig.act-clap .hoof-l { animation: clap-l 1.3s ease-in-out; }
-.pig.act-clap .hoof-r { animation: clap-r 1.3s ease-in-out; }
-@keyframes clap-l { 0%, 100% { translate: 0 0; } 12% { translate: 4px -9px; } 25%, 55%, 85% { translate: 16px -9px; } 40%, 70% { translate: 6px -9px; } }
-@keyframes clap-r { 0%, 100% { translate: 0 0; } 12% { translate: -4px -9px; } 25%, 55%, 85% { translate: -16px -9px; } 40%, 70% { translate: -6px -9px; } }
-.pig.act-shy .hoof-l { animation: shy-l 1.8s ease-in-out; }
-.pig.act-shy .hoof-r { animation: shy-r 1.8s ease-in-out; }
-@keyframes shy-l { 0%, 100% { translate: 0 0; } 20%, 75% { translate: 6px -36px; } }
-@keyframes shy-r { 0%, 100% { translate: 0 0; } 20%, 75% { translate: -6px -36px; } }
+.pig.act-clap .arm-l { animation: clap-l 1.3s ease-in-out; }
+.pig.act-clap .arm-r { animation: clap-r 1.3s ease-in-out; }
+@keyframes clap-l { 0%, 100% { rotate: 0deg; } 15%, 45%, 75% { rotate: -52deg; } 30%, 60% { rotate: -22deg; } }
+@keyframes clap-r { 0%, 100% { rotate: 0deg; } 15%, 45%, 75% { rotate: 52deg; } 30%, 60% { rotate: 22deg; } }
+.pig.act-dance .body-all { animation: dance-sway .7s ease-in-out 3; }
+.pig.act-dance .arm-l { animation: dance-l .7s ease-in-out 3; }
+.pig.act-dance .arm-r { animation: dance-r .7s ease-in-out 3; }
+@keyframes dance-sway { 0%, 100% { rotate: -5deg; } 50% { rotate: 5deg; } }
+@keyframes dance-l { 0%, 100% { rotate: 30deg; } 50% { rotate: 120deg; } }
+@keyframes dance-r { 0%, 100% { rotate: -120deg; } 50% { rotate: -30deg; } }
 .heart { position: absolute; left: 50%; bottom: 40%; font-size: 16px; color: var(--pink); pointer-events: none; animation: heart-up 1.3s ease-out forwards; }
 @keyframes heart-up { from { opacity: 1; transform: translate(0, 0) scale(.6); } to { opacity: 0; transform: translate(var(--dx), -70px) scale(1.2); } }
 .keys { border-collapse: collapse; width: 100%; margin: 8px 0 12px; }
 .keys td { padding: 5px 4px; border-bottom: 1px dashed var(--line); }
 .keys td:first-child { white-space: nowrap; width: 38%; }
 kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 7px; padding: 0 7px; font: 700 12px/1.6 inherit; color: var(--butter); }
-@media (prefers-reduced-motion: reduce) { .hoof-in, .heart { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { .heart { animation: none !important; } }
 
 .pig { overflow: visible; }
 
@@ -400,3 +402,11 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .ghost.small { padding: 3px 11px; font-size: 12px; }
 .note-foot .muted { white-space: nowrap; }
 .note-btns button { white-space: nowrap; }
+
+/* tabs between a view and its notes */
+.vtabs { display: flex; gap: 6px; margin-top: 16px; }
+.vtabs button { background: var(--bg2); border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; font-weight: 800; color: var(--muted); transition: transform .12s; }
+.vtabs button:hover { transform: translateY(-1px); color: var(--text); }
+.vtabs button.on { background: linear-gradient(135deg, #4a3a86, var(--card-hi)); color: var(--text); border-color: var(--lav); box-shadow: 0 3px 10px #0004; }
+.vtabs small { opacity: .7; margin-left: 4px; }
+#list { margin-top: 14px; }

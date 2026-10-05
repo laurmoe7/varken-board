@@ -243,11 +243,13 @@ test('doneToday counts items checked off since midnight, per project', () => {
 test('notes: scoped, newest first, searchable, merged, validated and written to BOARD.md', () => {
   const a = L.createNote({ text: 'first idea', created: 1, updated: 1 });
   const b = L.createNote({ text: 'Second thing', created: 2, updated: 2 });
-  const c = L.createNote({ text: 'hat sketch', scope: 'petshopper', created: 3, updated: 3 });
+  const c = L.createNote({ text: 'hat sketch', scope: 'petshopper/gallery', created: 3, updated: 3 });
+  const e = L.createNote({ text: 'room idea', scope: 'petshopper', created: 3, updated: 3 });
   const d = L.createNote({ text: 'gone', created: 4, updated: 4, deleted: true });
-  const s = Object.assign(state(), { notes: [a, b, c, d] });
+  const s = Object.assign(state(), { notes: [a, b, c, d, e] });
   assert.deepStrictEqual(L.liveNotes(s, '').map((n) => n.text), ['Second thing', 'first idea']);
-  assert.deepStrictEqual(L.liveNotes(s, 'petshopper').map((n) => n.text), ['hat sketch']);
+  assert.deepStrictEqual(L.liveNotes(s, 'petshopper/gallery').map((n) => n.text), ['hat sketch']);
+  assert.deepStrictEqual(L.liveNotes(s, 'petshopper').map((n) => n.text), ['room idea']);
   assert.deepStrictEqual(L.liveNotes(s, '', 'SECOND').map((n) => n.text), ['Second thing']);
   const edited = Object.assign({}, a, { text: 'first idea v2', updated: 9 });
   const m = L.mergeStates(s, { items: [], projects: [], notes: [edited, L.createNote({ text: 'remote', created: 5, updated: 5 })] });
@@ -256,6 +258,7 @@ test('notes: scoped, newest first, searchable, merged, validated and written to 
   assert.strictEqual(L.validateState({ projects: [], items: [], notes: [{ id: 'x', text: 'hi' }, null] }).notes.length, 1);
   const md = L.boardMarkdown(s);
   assert.match(md, /## 📝 Notes[\s\S]*- Second thing/);
+  assert.match(md, /### Notes[\s\S]*- room idea/);
   assert.match(md, /Cosmetics notes[\s\S]*- hat sketch/);
   assert.doesNotMatch(md, /gone/);
 });

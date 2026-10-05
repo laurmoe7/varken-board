@@ -9,6 +9,7 @@ let state = L.defaultState();
 const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', slot: '', build: '', notes: '', images: [] });
 const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
+const isNotesView = () => ui.view === 'notes' || ui.view === 'gnotes'; // notes of a project (or All) or of a gallery
 
 // ---------- saving ----------
 let saveTimer, syncTimer, syncing = false, changedDuringSync = false, savePending = false;
@@ -146,7 +147,7 @@ const galleryProject = () => {
 const GALLERY_STATUSES = [{ id: 'open', label: 'Idea' }, { id: 'doing', label: 'Making it' }, { id: 'done', label: 'In the game' }];
 
 function showView(projectId, view) {
-  if (view === 'notes' && ui.drafting) { ui.drafting = false; ui.draftItem = blankDraft(); }
+  if ((view === 'notes' || view === 'gnotes') && ui.drafting) { ui.drafting = false; ui.draftItem = blankDraft(); }
   ui.project = projectId;
   ui.view = view;
   ui.slot = 'all';
@@ -158,33 +159,28 @@ function showView(projectId, view) {
 function renderSide() {
   const rows = [{ id: 'all', name: 'All projects', emoji: '🌈', color: '#f4eeff' }].concat(projectsLive());
   const inGallery = !!galleryProject();
-  const noteRow = (id, label, sub) => `<div class="proj ${sub ? 'subrow' : ''} ${ui.view === 'notes' && ui.project === (id || 'all') ? 'on' : ''}" data-notes="${esc(id)}" role="button" tabindex="0">
-        <span class="badge" style="background:${sub ? esc(sub) : '#ffe29a'}">📝</span>
-        <span class="name">${esc(label)}</span>
-        <span class="count">${L.liveNotes(state, id).length}</span>
-      </div>`;
   $('#projects').innerHTML = rows
     .map(
-      (p) => `<div class="proj ${ui.project === p.id && ui.view === 'list' ? 'on' : ''}" data-project="${esc(p.id)}" role="button" tabindex="0">
+      (p) => `<div class="proj ${ui.project === p.id && (ui.view === 'list' || ui.view === 'notes') ? 'on' : ''}" data-project="${esc(p.id)}" role="button" tabindex="0">
         <span class="badge" style="background:${esc(p.color)}">${esc(p.emoji)}</span>
         <span class="name">${esc(p.name)}</span>
         <span class="count">${L.countOpen(state.items, p.id)}</span>
         ${p.id === 'all' ? '' : '<button class="edit" data-edit="' + esc(p.id) + '" title="Edit project" aria-label="Edit project">✎</button>'}
       </div>${
         p.gallery
-          ? `<div class="proj subrow ${ui.project === p.id && inGallery ? 'on' : ''}" data-gallery="${esc(p.id)}" role="button" tabindex="0">
+          ? `<div class="proj subrow ${ui.project === p.id && (inGallery || ui.view === 'gnotes') ? 'on' : ''}" data-gallery="${esc(p.id)}" role="button" tabindex="0">
         <span class="badge" style="background:${esc(p.color)}">🎀</span>
         <span class="name">${esc(p.gallery)}</span>
         <span class="count">${L.countGallery(state.items, p.id)}</span>
-      </div>${noteRow(p.id, 'Notes', p.color)}`
+      </div>`
           : ''
       }`
     )
-    .join('') + noteRow('', 'Notes');
+    .join('');
 }
 
 function renderHead(poke) {
-  if (ui.view === 'notes') return renderNotesHead(poke);
+  if (isNotesView()) return renderNotesHead(poke);
   const gp = galleryProject();
   const p = project(ui.project);
   $('#viewTitle').textContent = gp ? '🎀 ' + gp.gallery : p ? p.emoji + ' ' + p.name : '🌈 All projects';
@@ -275,12 +271,13 @@ function renderListView() {
 function renderList() {
   const gp = galleryProject();
   const typing = document.activeElement;
-  if (ui.view === 'notes' && typing && typing.tagName === 'TEXTAREA' && typing.closest('.note')) { renderSide(); renderHead(); return; } // don't pull the note you are typing in away
-  if (ui.view === 'notes') renderNotes();
+  if (isNotesView() && typing && typing.tagName === 'TEXTAREA' && typing.closest('.note')) { renderSide(); renderHead(); return; } // don't pull the note you are typing in away
+  if (isNotesView()) renderNotes();
   else if (gp) renderGallery(gp);
   else renderListView();
   renderSide();
   renderHead();
+  renderTabs();
   paintCompareBar();
 }
 
@@ -420,7 +417,7 @@ function endDraft() {
 }
 // The panel opens as soon as there is something typed (or pasted) and closes again if there is nothing to keep.
 function syncDraft() {
-  if (ui.view === 'notes') return; // notes have no side panel
+  if (isNotesView()) return; // notes have no side panel
   if ($('#quickInput').value.trim() !== '') ui.drafting ? paintDraft() : startDraft();
   else if (ui.drafting && !draftHasContent()) endDraft();
   else paintDraft();
@@ -529,7 +526,7 @@ function saveProject() {
     ui.project = id;
     saveUi();
   }
-  if (ui.view !== 'notes' && !galleryProject()) ui.view = 'list';
+  if (!isNotesView() && !galleryProject()) ui.view = 'list';
   save();
   renderAll();
 }
@@ -554,7 +551,7 @@ function wire() {
   const qi = $('#quickInput');
   $('#quick').addEventListener('submit', (e) => {
     e.preventDefault();
-    if (ui.view === 'notes') addNote();
+    if (isNotesView()) addNote();
     else commitDraft();
   });
   qi.addEventListener('input', syncDraft);
@@ -565,15 +562,13 @@ function wire() {
   $('#projects').addEventListener('click', (e) => {
     const ed = e.target.closest('[data-edit]');
     if (ed) return openProjectDlg(ed.dataset.edit);
-    const nt = e.target.closest('[data-notes]');
-    if (nt) return showView(nt.dataset.notes || 'all', 'notes');
     const g = e.target.closest('[data-gallery]');
     if (g) return showView(g.dataset.gallery, 'gallery');
     const p = e.target.closest('[data-project]');
     if (p) showView(p.dataset.project, 'list');
   });
   $('#projects').addEventListener('keydown', (e) => {
-    const row = e.target.closest('[data-project], [data-gallery], [data-notes]');
+    const row = e.target.closest('[data-project], [data-gallery]');
     if (row && e.target === row && (e.key === 'Enter' || e.key === ' ')) {
       e.preventDefault();
       if (row.dataset.gallery) showView(row.dataset.gallery, 'gallery');
@@ -665,9 +660,16 @@ function wire() {
     else if (e.key === 'Tab' && e.shiftKey && e.target.id === 'dNotes') { e.preventDefault(); qi.focus(); }
   });
 
+  // clicking anywhere outside the open details panel closes it (cards open their own item; dialogs and toasts don't count)
+  document.addEventListener('click', (e) => {
+    if (!ui.open || !e.target.isConnected) return;
+    if (e.target.closest('#detail, .card, .gcard, dialog, #toast, #cmpBar')) return;
+    closeItem();
+  });
+
   // paste and drop: inside the panel they go to its item, anywhere else to a new item
   document.addEventListener('paste', (e) => {
-    if (ui.view === 'notes') return;
+    if (isNotesView()) return;
     const files = Array.from(e.clipboardData ? e.clipboardData.files : []);
     if (!files.some((f) => f.type.startsWith('image/'))) return;
     e.preventDefault();
@@ -780,8 +782,8 @@ async function start() {
   if (ps && ps.gallery === undefined) { ps.gallery = 'Cosmetics'; touch(ps); save(); } // Pet Shopper's cosmetics gallery
   if (ps && ps.slots === undefined) { ps.slots = L.DEFAULT_SLOTS; touch(ps); save(); }
   if (!project(ui.project) && ui.project !== 'all') ui.project = 'all';
-  if (ui.view === 'notes') { if (ui.project !== 'all' && !(project(ui.project) || {}).gallery) ui.view = 'list'; }
-  else if (!galleryProject()) ui.view = 'list';
+  if (ui.view === 'gnotes' && !(project(ui.project) || {}).gallery) ui.view = 'list';
+  else if (ui.view !== 'notes' && ui.view !== 'gnotes' && !galleryProject()) ui.view = 'list';
   ready = true;
   renderAll();
   refreshHints();

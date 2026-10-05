@@ -59,8 +59,8 @@
     );
   }
 
-  // Loose notes: free text with no type or priority. `scope` is '' for the general page or a project id for
-  // that project's gallery notes.
+  // Loose notes: free text with no type or priority. `scope` is '' for the All projects page, a project id for
+  // that project's notes, or '<project id>/gallery' for its gallery's notes.
   const createNote = (fields) => {
     const now = Date.now();
     return Object.assign({ id: uid(), scope: '', text: '', created: now, updated: now }, fields);
@@ -306,9 +306,15 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
         out.push('');
       }
       const pnotes = liveNotes(state, p.id);
-      if (p.gallery && pnotes.length) {
-        out.push('### ' + p.gallery + ' notes', '');
+      if (pnotes.length) {
+        out.push('### Notes', '');
         pnotes.forEach((n) => out.push('- ' + n.text.replace(/\n/g, '\n  ')));
+        out.push('');
+      }
+      const gnotes = p.gallery ? liveNotes(state, p.id + '/gallery') : [];
+      if (gnotes.length) {
+        out.push('### ' + p.gallery + ' notes', '');
+        gnotes.forEach((n) => out.push('- ' + n.text.replace(/\n/g, '\n  ')));
         out.push('');
       }
     }

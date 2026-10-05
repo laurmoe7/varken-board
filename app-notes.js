@@ -1,14 +1,16 @@
-// Notes pages: quick, loose thoughts with no type or priority. One general page, and one for each project's
-// gallery (Pet Shopper: "Cosmetics notes"). Notes live in `state.notes` (see L.createNote, L.liveNotes);
+// Notes pages: quick, loose thoughts with no type or priority. Every project has a Notes tab beside its list, each
+// gallery has one beside its ideas (Pet Shopper: Cosmetics), and All projects has one too. Notes live in `state.notes` (see L.createNote, L.liveNotes);
 // a note can be turned into a real item or gallery idea when it is ready.
 
-const notesScope = () => (ui.project === 'all' ? '' : ui.project);
+// Which notes are on show: All projects' (''), a project's (its id), or a gallery's ('<id>/gallery').
+const notesScope = () => (ui.view === 'gnotes' ? ui.project + '/gallery' : ui.project === 'all' ? '' : ui.project);
+const notesProject = () => project(ui.project);
 
 function renderNotesHead(poke) {
-  const scope = notesScope();
-  const gp = scope ? project(scope) : null;
-  const count = L.liveNotes(state, scope).length;
-  $('#viewTitle').textContent = gp ? '📝 ' + (gp.gallery || gp.name) + ' notes' : '📝 Notes';
+  const gp = ui.view === 'gnotes' ? notesProject() : null;
+  const p = notesProject();
+  const count = L.liveNotes(state, notesScope()).length;
+  $('#viewTitle').textContent = gp ? '🎀 ' + gp.gallery : p ? p.emoji + ' ' + p.name : '🌈 All projects';
   const sub = $('#viewSub');
   sub.className = 'sub';
   sub.textContent = count === 1 ? '1 loose thought' : count + ' loose thoughts';
@@ -19,9 +21,27 @@ function renderNotesHead(poke) {
   $('#copyBtn').hidden = true;
   const input = $('#quickInput');
   input.dataset.def = input.dataset.def || input.placeholder;
-  input.placeholder = gp ? `Jot down a ${(gp.gallery || gp.name).toLowerCase()} thought… ( N )` : 'Jot something down… ( N )';
+  input.placeholder = 'Jot something down… ( N )';
   $('#quickHint').hidden = true;
 }
+
+// The two tabs under the input: the view itself and its notes.
+function renderTabs() {
+  const gal = ui.view === 'gallery' || ui.view === 'gnotes';
+  const gp = gal ? notesProject() : null;
+  const mainCount = gal && gp ? L.countGallery(state.items, gp.id) : L.countOpen(state.items, ui.project);
+  const noteCount = L.liveNotes(state, notesScope()).length;
+  const main = gal ? '🎀 Ideas' : '📋 To-do';
+  const notes = isNotesView();
+  $('#viewTabs').innerHTML = `<button data-vt="main" class="${notes ? '' : 'on'}">${main} <small>${mainCount}</small></button><button data-vt="notes" class="${notes ? 'on' : ''}">📝 Notes <small>${noteCount}</small></button>`;
+}
+
+$('#viewTabs').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-vt]');
+  if (!b) return;
+  const gal = ui.view === 'gallery' || ui.view === 'gnotes';
+  showView(ui.project, b.dataset.vt === 'notes' ? (gal ? 'gnotes' : 'notes') : gal ? 'gallery' : 'list');
+});
 
 const noteDate = (n) => new Date(n.created).toLocaleDateString([], { day: 'numeric', month: 'short' });
 
@@ -31,7 +51,7 @@ function renderNotes() {
   if (!list.length) {
     el.innerHTML = ui.q
       ? emptyHtml('sniff', 'Nothing matches', 'I sniffed every note. Try a different search.')
-      : emptyHtml('sleep', 'No notes yet', 'Type above and press Enter. Sort the good ones into tasks later.');
+      : emptyHtml('sleep', 'No notes yet', 'Type above and press Enter. Turn the good ones into tasks later.');
     return;
   }
   el.innerHTML = `<div class="notes">${list
@@ -39,7 +59,7 @@ function renderNotes() {
       (n) => `<article class="note" data-note="${esc(n.id)}">
       <textarea rows="2" aria-label="Note">${esc(n.text)}</textarea>
       <div class="note-foot"><span class="muted small">${esc(noteDate(n))}</span>
-        <span class="note-btns"><button class="ghost small" data-promote title="Turn this note into a real ${notesScope() ? 'gallery card' : 'task'}">→ ${notesScope() ? 'Card' : 'Task'}</button><button class="ghost small" data-note-del aria-label="Delete note">Delete</button></span>
+        <span class="note-btns"><button class="ghost small" data-promote title="Turn this note into a real ${ui.view === 'gnotes' ? 'gallery card' : 'task'}">→ ${ui.view === 'gnotes' ? 'Card' : 'Task'}</button><button class="ghost small" data-note-del aria-label="Delete note">Delete</button></span>
       </div>
     </article>`
     )
@@ -72,18 +92,19 @@ function promoteNote(n) {
   const [first, ...rest] = n.text.trim().split('\n');
   const title = first.trim().slice(0, 120);
   const more = (first.trim().length > 120 ? first.trim() : '') + (rest.length ? '\n' + rest.join('\n') : '');
-  const scope = n.scope;
+  const gal = n.scope.endsWith('/gallery');
+  const proj = n.scope.replace('/gallery', '');
   const it = L.createItem(
-    scope
-      ? { project: scope, gallery: true, title, notes: more.trim() }
-      : { project: ui.last || (projectsLive()[0] || {}).id || '', title, notes: more.trim() }
+    gal
+      ? { project: proj, gallery: true, title, notes: more.trim() }
+      : { project: proj || ui.last || (projectsLive()[0] || {}).id || '', title, notes: more.trim() }
   );
   state.items.push(it);
   n.deleted = true;
   touch(n);
   save();
   renderAll();
-  toast(scope ? 'Moved to the gallery' : 'Moved to your list', () => {
+  toast(gal ? 'Moved to the gallery' : 'Moved to your list', () => {
     it.deleted = true; touch(it);
     n.deleted = false; touch(n);
     save();
