@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T03:46:59.652Z_
+_Updated 2026-10-06T03:47:16.939Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -23,7 +23,6 @@ _Updated 2026-10-06T03:46:59.652Z_
 - [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
   > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. 
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
-- [ ] 💡 **player profile** _(medium)_ `muvxb48osnspa`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
 - [ ] 💡 **color variations for skins** `muvqmyc8968to`
@@ -38,7 +37,7 @@ _Updated 2026-10-06T03:46:59.652Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_8 done._
+_9 done._
 
 ### Cosmetics gallery
 
