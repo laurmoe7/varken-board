@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T12:13:38.468Z_
+_Updated 2026-10-06T12:13:53.462Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -30,7 +30,6 @@ _Updated 2026-10-06T12:13:38.468Z_
   > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. 
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
-  > allow using the widget to use the recipe parser, so you can easily send a parsed ingredient list to your phone.
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
 - [ ] 💡 **color variations for skins** `muvqmyc8968to`
 - [ ] 💡 **add color variations to outfits/hats** `muvqmowq1668d`
