@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T01:55:32.921Z_
+_Updated 2026-10-06T02:52:38.426Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -20,6 +20,7 @@ _Updated 2026-10-06T01:55:32.921Z_
 
 ### Someday
 
+- [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
 - [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
   > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. 
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
