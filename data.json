@@ -2078,17 +2078,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "**varken board changes",
       "notes": "remove time of day based background effects like the moon. screen is looking cluttered",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791324674926,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791315832477,
-      "updated": 1791315832477
+      "updated": 1791324674926
     },
     {
       "id": "mux3qjhkxlrp3",
