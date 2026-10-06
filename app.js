@@ -189,7 +189,7 @@ function renderHead(poke) {
   const p = project(ui.project);
   $('#viewTitle').textContent = gp ? '🎀 ' + gp.gallery : p ? p.emoji + ' ' + p.name : '🌈 All projects';
   const n = L.countOpen(state.items, ui.project);
-  const now = L.countNow(state.items);
+  const now = L.countNow(state.items, ui.project); // per project, so another project's ASAPs don't count here
   const sub = $('#viewSub');
   sub.className = 'sub';
   paintHero(!!gp, gp ? L.countGallery(state.items, gp.id) : n, now, poke === true);
@@ -198,7 +198,7 @@ function renderHead(poke) {
     sub.textContent = `${gp.emoji} ${gp.name} · ${g} ${g === 1 ? 'idea' : 'ideas'}`;
   } else if (now > L.NOW_CAP) {
     sub.classList.add('warn');
-    sub.textContent = `${now} things marked Now. Not everything can be first: maybe move a few to Soon? 🐷`;
+    sub.textContent = `${now} things marked ASAP. That's a lot! 🐷`;
   } else {
     const today = L.doneToday(state.items, Date.now(), ui.project);
     sub.textContent = (n === 1 ? '1 thing to do' : n + ' things to do') + (today ? ` · ✨ ${today} done today` : '');

@@ -9,7 +9,7 @@
     { id: 'bug', label: 'Bug', emoji: '🐛' },
   ];
   const PRIORITIES = [
-    { id: 'now', label: 'Now' },
+    { id: 'now', label: 'ASAP' },
     { id: 'soon', label: 'Soon' },
     { id: 'someday', label: 'Someday' },
   ];
@@ -95,7 +95,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       const hit = tag && projects.find((p) => slug(p.name).startsWith(tag) || p.id.startsWith(tag));
       return hit ? { field: 'project', value: hit.id } : null;
     }
-    if ((m = /^!(.+)$/.exec(w)) && ids(PRIORITIES).includes(m[1])) return { field: 'priority', value: m[1] };
+    if ((m = /^!(.+)$/.exec(w)) && (m[1] === 'asap' || ids(PRIORITIES).includes(m[1]))) return { field: 'priority', value: m[1] === 'asap' ? 'now' : m[1] };
     if ((m = /^:(.+)$/.exec(w)) && ids(TYPES).includes(m[1])) return { field: 'type', value: m[1] };
     if ((m = /^~(.+)$/.exec(w)) && ids(EFFORTS).includes(m[1])) return { field: 'effort', value: m[1] };
     return null;
@@ -178,7 +178,8 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     return PRIORITIES.map((p) => ({ priority: p, items: items.filter((i) => i.priority === p.id) })).filter((g) => g.items.length);
   }
 
-  const countNow = (items) => items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && i.priority === 'now').length;
+  // ASAP items (id 'now'), for one project or, with 'all' or nothing, for the whole board.
+  const countNow = (items, project) => items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && i.priority === 'now' && (!project || project === 'all' || i.project === project)).length;
   const countOpen = (items, project) =>
     items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && (project === 'all' || i.project === project)).length;
   // The slot tags on a project's gallery items, with counts: the project's own list first (its order), then any others.

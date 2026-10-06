@@ -42,7 +42,7 @@ test('sortItems goes by priority, then dragged order, then doing first, then new
   assert.deepStrictEqual(L.sortItems(items).map((i) => i.title), ['now-open', 'soon-doing', 'soon-new', 'soon-old']);
 });
 
-test('countNow counts only live Now items', () => {
+test('countNow counts only live ASAP items', () => {
   const items = [
     L.createItem({ priority: 'now' }),
     L.createItem({ priority: 'now', status: 'done' }),
@@ -114,7 +114,7 @@ test('boardMarkdown groups by project and priority', () => {
   s.items = [L.createItem({ id: 'abc', title: 'Glow', project: 'funfx', priority: 'now' })];
   const md = L.boardMarkdown(s, 'today');
   assert.match(md, /## ✨ funFX/);
-  assert.match(md, /### Now/);
+  assert.match(md, /### ASAP/);
   assert.match(md, /\*\*Glow\*\* `abc`/);
 });
 
@@ -336,4 +336,14 @@ test('more holidays: birthday, Dutch and American days', () => {
   assert.strictEqual(h(2027, 1, 7), 'carnival'); // Easter 28 Mar 2027, so Carnival Sunday is 7 Feb
   assert.strictEqual(h(2027, 1, 9), 'carnival');
   assert.strictEqual(h(2027, 1, 10), '');
+});
+
+test('countNow can count one project; !asap is the same as !now', () => {
+  const mk = (project) => L.createItem({ title: 'x', project, priority: 'now' });
+  const items = [mk('a'), mk('a'), mk('b')];
+  assert.strictEqual(L.countNow(items), 3);
+  assert.strictEqual(L.countNow(items, 'all'), 3);
+  assert.strictEqual(L.countNow(items, 'a'), 2);
+  assert.strictEqual(L.parseQuick('fix it !asap', []).priority, 'now');
+  assert.strictEqual(L.PRIORITIES[0].label, 'ASAP');
 });

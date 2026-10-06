@@ -72,14 +72,14 @@ function pigSvg(mood, cls, opts) {
 // poke the pig or the board changes.
 const SAYINGS = {
   birthday: ['Happy birthday, Lauren! 🎂', 'It is your day! Do nothing. Or one tiny task.', 'Varken nummer één has a birthday!', 'Gefeliciteerd! I got you a hat. You are welcome.', 'Cake first, tasks later. Pig rules.'],
-  night: ['Hrrrrng.. it is late. Go to bed.', 'Shh. Even the plant is asleep.', 'Excuse me, some of us are sleeping.', 'Zzz.. one more task and then bed.. zzz..', 'It is the middle of the night. I judge you lovingly.'],
-  gallery: ['Pretty things to make! ✨', 'Ooh, what will they wear next?', 'Every little hat counts.', 'Sparkly ideas only, please.', 'Fashion emergency! I need a hat.', 'I demand a tiny crown. Just saying.', 'Make me look fabulous, no pressure.', 'Obviously I will wear all of them.'],
-  gallery0: ['No ideas yet. Feed me a picture?', 'Paste a picture, I will wait.', 'My wardrobe is empty. Rude.', 'Naked pig, no ideas. Help!'],
+  night: ['Hrrrrng.. it is late. Go to bed.', 'Shh. Even the plant is asleep.', 'Excuse me, some of us are sleeping. hehe', 'Zzz.. one more task and then bed.. zzz..', 'It is the middle of the night. I judge you lovingly.'],
+  gallery: ['Pretty things to make! ✨', 'Ooh, what will they wear next?', 'Every little hat counts.', 'Sparkly ideas only, please.', 'Fashion emergency! I need a hat.', 'I demand a tiny crown. Just saying. hehe', 'Make me look fabulous, no pressure.', 'Obviously I will wear all of them. hehe'],
+  gallery0: ['No ideas yet. Feed me a picture?', 'Paste a picture, I will wait.', 'My wardrobe is empty. Rude.', 'Naked pig, no ideas. Help! hehe'],
   notes: ['Jot it down, sort it later.', 'Loose thoughts are welcome here.', 'No categories, no pressure. 🌸', 'Ooh, what are you thinking about?', 'Write it down before it escapes!', 'Brain dump time. I will not judge. Much.', 'Half-baked ideas are my favourite.'],
   notes0: ['A blank page. Write me something!', 'Nothing yet. Even tiny thoughts count.', 'So empty. Say something clever.'],
-  many: ['Oink! So many Nows. Pick the real few.', 'Deep breath. Which one matters most?', 'Not everything is a Now, friend.', 'Everything is urgent? Sure it is. 🙄', 'That is not a list, that is a cry for help.', 'Bold of you to call all of these Now.', 'I am sweating. Please demote some.'],
-  clear: ['All clear. Snout up, nap time.', 'Nothing to do. You earned it. 💤', 'Zzz... good job... zzz...', 'Empty list. Who even are you?', 'Do not wake me. I am dreaming of snacks.', 'Done already? Show-off.'],
-  one: ['Just one thing. You can do it!', 'One little task. Easy peasy.', 'Only one left. Almost there!', 'One task. I have seen you do worse.', 'Just one. Do it, or I will stare.', 'One! Even I could do that. (I will not.)'],
+  many: ['Oink! So many ASAPs. Which ones are really ASAP?', 'Deep breath. Which one matters most?', 'Not everything is ASAP, friend.', 'Everything is urgent? Sure it is. 🙄 hehe', 'That is not a list, that is a cry for help. hehe', 'Bold of you to call all of these ASAP. hehe', 'I am sweating. Please demote some. hehe'],
+  clear: ['All clear. Snout up, nap time.', 'Nothing to do. You earned it. 💤', 'Zzz... good job... zzz...', 'Empty list. Who even are you? hehe', 'Do not wake me. I am dreaming of snacks.', 'Done already? Show-off. hehe'],
+  one: ['Just one thing. You can do it!', 'One little task. Easy peasy.', 'Only one left. Almost there!', 'One task. I have seen you do worse.', 'Just one. Do it, or I will stare. hehe', 'One! Even I could do that. (I will not.)'],
   some: ['Oink! {n} things. One at a time.', 'You are doing great, truly. 💗', 'Small steps still get you there.', 'I believe in you! {n} to go.', 'Tiny wins add up. Go go go!', 'Take a sip of water, then the next one.', 'You make it look easy.', '{n} things. I will supervise from here.', 'Procrastinating? I can tell. 👀', 'Stop reading me and do a task!', 'I am cheering extremely quietly. Do not test me.', 'Ooh, {n} tasks. Ambitious. I like it.', 'Pick the easy one first. I will not tell.', 'You are one task away from feeling smug.', 'Less staring at the pig, more doing.'],
 };
 let sayKey = '', sayText = '', sayN = 0;
@@ -130,10 +130,10 @@ function emptyHtml(mood, title, hint) {
 // Things he says about what you just did. Never spammy: each event has a chance (`p`), and there is a cooldown
 // between any two. A line is a string or { t: text, act: action }. The poke lines are his catchphrases.
 const REACT = {
-  done: ['Bigg could not have done that. Sweet little guy. 🐷', 'Ding! Look at you.', 'One down. Smug mode: on.', { t: 'Varken nummer één!', act: 'dance' }, 'Hrrrrng.. productive.', 'Acceptable. 👌', 'Do it again, I dare you.', 'Crossed off! Delicious.'],
-  add: ['Another one?! You are insatiable.', 'Noted. Ominously.', 'Added. Future-you says thanks. Or ugh.', 'Bold of you to assume I will remember that.', 'Ooh, a new one. Excuse me, where will it sit?'],
-  delete: ['Excuse me! That was important. Maybe.', 'Gone. Poof. No regrets.', 'Hrrrrng.. fine, bye.', 'Deleted! Undo is right there, coward.'],
-  open: ['Nosy.', 'Peeking at the details, are we?', 'Excuse me, I was reading that.', 'Look all you want.'],
+  done: ['Bigg could not have done that. Not even with snacks. 🐷 hehe', 'Ding! Look at you.', 'One down. Smug mode: on.', { t: 'Varken nummer één!', act: 'dance' }, 'Hrrrrng.. productive.', 'Acceptable. 👌', 'Do it again, I dare you. hehe', 'Crossed off! Delicious.'],
+  add: ['Another one?! You are insatiable.', 'Noted. Ominously.', 'Added. Future-you says thanks. Or ugh.', 'Bold of you to assume I will remember that. hehe', 'Ooh, a new one. Excuse me, where will it sit?'],
+  delete: ['Excuse me! That was important. Maybe. hehe', 'Gone. Poof. No regrets.', 'Hrrrrng.. fine, bye.', 'Deleted! Undo is right there, coward. hehe'],
+  open: ['Nosy. hehe', 'Peeking at the details, are we?', 'Excuse me, I was reading that.', 'Look all you want.'],
   view: ['Bigg got lost on a page like this once. Cute.', 'New page, who dis?', 'Change of scenery! Same pig.', 'Hrrrrng.. wake me when we get there.', 'Wandering around, hm?'],
   sync: ['Synced. I feel so safe. 💗', 'Cloud nap complete.', 'Backed up! Dramatic.'],
   syncfail: ['Sync is being a drama queen.', 'The internet ate it. Rude.', 'Hrrrrng.. offline again?'],
@@ -147,13 +147,13 @@ const REACT = {
   clean: ['Spring cleaning! Hrrrrng.. exhausting.', 'Bye-bye, mystery pictures.'],
   search: ['Looking for something? Check the snacks.', 'Hrrrrng.. seek and ye shall find.'],
   pick: ['Start with this one. Trust me.', 'Easy one first. I will not tell.', 'This one looks scared of you. Go!', 'Eeny, meeny, miny... this!'],
-  bigg: ['Bigg could never finish this many. He gets distracted by snacks.', 'Little Bigg looks up to me. Obviously.', 'I taught Bigg everything he knows. Which is nothing. Sweet boy.', 'Bigg says hi! (He did not. I am lying. He is asleep.)', 'Hrrrrng.. Bigg is snoring in the next room again. Rude. Cute.'],
+  bigg: ['Bigg could never finish this many. He gets distracted by snacks. hehe', 'Little Bigg looks up to me. Obviously.', 'I taught Bigg everything he knows. Which is nothing. hehe', 'Bigg says hi! (He did not. I am lying. He is asleep.) hehe', 'Hrrrrng.. Bigg is snoring in the next room again. Rude. Cute.'],
   copy: ['Copied! Go bother Claude.', 'Off to Claude it goes.', 'Excuse me, I wrote that. Credit please.'],
   poke: [
     { t: 'Excuse me!', act: 'hop' }, { t: 'Hrrrrng..', act: 'wiggle' }, { t: 'Varken nummer één!', act: 'dance' }, 'Hey! Personal space!', 'Boop received. Boop returned.',
-    'Are you going to feed me or just poke me?', 'I am working here! (I am not.)', { t: 'Hrrrrng.. five more minutes.', act: 'sprout' }, 'Do I look like a button? Do not answer that.',
+    'Are you going to feed me or just poke me?', 'I am working here! (I am not.) hehe', { t: 'Hrrrrng.. five more minutes.', act: 'sprout' }, 'Do I look like a button? Do not answer that. hehe',
     { t: 'Excuse me, I have a schedule!', act: 'note' }, 'Tickles!', { t: 'Varken nummer één, reporting for duty!', act: 'dance' },
-    'Bigg would have poked me back. Slowly. He is slow. 🐷', 'Do not tell Bigg I said he is sweet. I will deny it.', 'Bigg still thinks he can out-nap me. Adorable.',
+    'Bigg would have poked me back. Slowly. He is slow. 🐷', 'Bigg asked me for advice once. I charged him one snack. hehe', 'Bigg still thinks he can out-nap me. Adorable. hehe',
     { t: 'Excuse me, I am the BIGGER pig. Bigg is the smaller one. Confusing, I know.', act: 'wiggle' },
   ],
 };
