@@ -96,13 +96,13 @@
       "title": "Check in game: Crowd control with a real stun/root",
       "notes": "/funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
+      "updated": 1791245218663,
       "doneBuild": ""
     },
     {
@@ -1063,6 +1063,23 @@
       "slot": "",
       "created": 1791245145613,
       "updated": 1791245145613
+    },
+    {
+      "id": "muvx5hnv9cih9",
+      "project": "funfx",
+      "type": "fix",
+      "priority": "soon",
+      "status": "open",
+      "title": "check if record heal works and is worth it",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791245215147,
+      "updated": 1791245215147
     }
   ],
   "notes": [
