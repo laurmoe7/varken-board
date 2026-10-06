@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:10:21.105Z_
+_Updated 2026-10-06T00:10:42.496Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -16,6 +16,7 @@ _Updated 2026-10-06T00:10:21.105Z_
 
 ### Soon
 
+- [ ] 💡 **photoshoot mode in dressing room** _(easy)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** `muvshshuzviba`
 - [ ] 💡 **celebrate holidays, birthdays** `muvset2l7bwrh`
