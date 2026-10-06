@@ -1,12 +1,8 @@
 # Varken board
 
-_Updated 2026-10-06T01:29:00.194Z_
+_Updated 2026-10-06T01:55:32.921Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
-
-### ASAP
-
-- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** _(easy)_ `muvry35yoek6i`
 
 ### Soon
 
@@ -42,7 +38,7 @@ _Updated 2026-10-06T01:29:00.194Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_7 done._
+_8 done._
 
 ### Cosmetics gallery
 
