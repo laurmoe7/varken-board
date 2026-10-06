@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-05T23:59:35.256Z_
+_Updated 2026-10-06T00:05:50.029Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -77,6 +77,7 @@ _2 done._
 
 ### Now
 
+- [ ] 💡 **fix slight lag when clicking on custom spell to read pop out menu on right, if possible** _(easy)_ `muvx400dup2g9`
 - [ ] 💡 **search bar in character sheet on the top, only for character sheet** _(easy)_ `muvwmx9d24fnz`
 - [ ] 💡 **notes space on overview page, underneath everything else** _(easy)_ `muvwmdprbxza2`
 - [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
