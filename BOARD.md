@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:06:33.345Z_
+_Updated 2026-10-06T00:07:00.562Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -58,7 +58,8 @@ _2 done._
 
 ### Soon
 
-- [ ] 🔧 **Check in game: Crowd control with a real stun/root** `seed-funfx-2`
+- [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
+- [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
 - [ ] 🔧 **Check in game: moved Image popups page, Quest complete, missing-file detection** `seed-funfx-3`
   > Visual of missing files works with /funfx missingtest; detection needs /funfx assetcheck in game.
