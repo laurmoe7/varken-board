@@ -373,9 +373,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791234248146,
-      "updated": 1791245510300,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 9
+      "order": 8
     },
     {
       "id": "muvqmowq1668d",
@@ -418,19 +418,19 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "some kind of mystery boxes",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234285463,
-      "updated": 1791245510300,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 8
+      "order": 4
     },
     {
       "id": "muvqnq6bsc8ki",
@@ -545,9 +545,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791237251757,
-      "updated": 1791246955611,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 3
+      "order": 5
     },
     {
       "id": "muvsf90rbtfto",
@@ -600,9 +600,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791237390978,
-      "updated": 1791246952654,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 2
+      "order": 3
     },
     {
       "id": "muvshzp12zzr2",
@@ -1106,8 +1106,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791245416652,
-      "updated": 1791245510300,
-      "order": 1
+      "updated": 1791258418444,
+      "order": 2
     },
     {
       "id": "muvxa9fki689g",
@@ -1124,8 +1124,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791245437760,
-      "updated": 1791258397450,
-      "order": 0
+      "updated": 1791258418444,
+      "order": 1
     },
     {
       "id": "muvxaekqjpzbb",
@@ -1227,7 +1227,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791246947870,
-      "updated": 1791258369864
+      "updated": 1791258418444,
+      "order": 0
     },
     {
       "id": "muvydgd83y39n",
