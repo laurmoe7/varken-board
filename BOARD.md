@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T11:52:51.247Z_
+_Updated 2026-10-06T11:58:59.272Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -18,8 +18,6 @@ _Updated 2026-10-06T11:52:51.247Z_
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
 - [ ] 💡 **some kind of mystery boxes** _(medium)_ _(doing)_ `muvqn89jg1e4j`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
-- [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
-  > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
 
@@ -44,7 +42,7 @@ _Updated 2026-10-06T11:52:51.247Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_10 done._
+_11 done._
 
 ### Cosmetics gallery
 
