@@ -1268,7 +1268,7 @@
     {
       "id": "muw57mgm92ved",
       "project": "petshopper",
-      "type": "idea",
+      "type": "fix",
       "priority": "now",
       "status": "doing",
       "title": "improve ability to read measurements in recipes",
@@ -1280,7 +1280,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791258751606,
-      "updated": 1791287505435
+      "updated": 1791289823193
     },
     {
       "id": "muwkhvsr9p1ub",
