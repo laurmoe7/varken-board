@@ -51,7 +51,7 @@ const fallPieces = (shape, colors) => colors.map((c, i) => `<g class="fall" styl
 const FALLS = {
   petal: fallPieces((c) => petalPath(c, 1.2), ['#ffc6dc', '#fff0f6', '#ffa6c4', '#e9d8ff', '#ffe0ec', '#ffb3cf']),
   orange: fallPieces((c) => petalPath(c, 1.2), ['#ffa94d', '#ff8a3d', '#ffd9a8', '#fffaf0', '#ffc27a', '#ff9a3d']),
-  leaf: fallPieces((c) => petalPath(c, 1.5), ['#ffb26b', '#e8624a', '#ffd35a', '#c9794a', '#ff9a3d', '#d9a066', '#f2784b']),
+  leaf: fallPieces((c) => petalPath(c, 1.5), ['#ffb26b', '#e8624a', '#ffd35a', '#c9794a', '#ff9a3d']),
   snow: fallPieces((c, i) => `<circle r="${[2.8, 2, 3.2, 1.8, 2.5, 2.2][i % 6]}" fill="${c}"/>`, ['#ffffff', '#e6f1ff', '#ffffff', '#d4e8ff', '#ffffff', '#f0f7ff']),
   hearts: fallPieces((c) => heart(0, 0, .45, c), ['#ff7fa6', '#ffb3cf', '#ff4f7d', '#ffd0e0', '#ff9ec7', '#e0457b']),
   clover: fallPieces((c) => `<circle cx="-1.6" r="1.8" fill="${c}"/><circle cx="1.6" r="1.8" fill="${c}"/><circle cy="-2" r="1.8" fill="${c}"/>`, ['#4ec98a', '#8ff0c8', '#3aa06b', '#b8f5d0', '#5fd3a0', '#6ee0a8']),
@@ -119,7 +119,7 @@ const TIME_SAYS = {
   friday: ['It is Friday! Do the hard ones now, party later. 🎉', 'Friday! Almost weekend. Almost. hehe..'],
   weekend: ['It is the weekend and you are still here? Respect. Or concern. hehe..', 'Weekend vibes. Tasks are optional. (They are not.)'],
 };
-// Morning 6-11, lunch 12-14, evening 18-22; the rest of the day he is simply awake (night: asleep, see L.isNight).
+// Morning 6-11, lunch 12-14 (lunch has comments only), evening 18-22; the rest of the day he is simply awake (night: asleep, see L.isNight).
 const phaseNow = (d) => { const h = (d || new Date()).getHours(); return h >= 6 && h < 11 ? 'morning' : h >= 12 && h < 14 ? 'lunch' : h >= 18 && h < 22 ? 'evening' : ''; };
 function contextLines(d) {
   const date = d || new Date(), wd = date.getDay(), out = [];
@@ -149,7 +149,7 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
   const paintPrev = () => {
     const id = looks.preview === 'none' ? '' : currentLook();
     const asleep = state0.value === 'asleep';
-    const phase = ['morning', 'lunch', 'evening'].includes(state0.value) ? state0.value : '';
+    const phase = ['morning', 'evening'].includes(state0.value) ? state0.value : '';
     prev.innerHTML = pigSvg(asleep ? 'sleep' : 'happy', 'look-prev-pig', { stage: 1, look: id, phase, cap: asleep && !looks.preview });
   };
   const apply = () => { renderHead(); paintPrev(); };
@@ -163,7 +163,7 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
   $('#settingsBtn').addEventListener('click', paintPrev);
 
   // The effect buttons: one-off versions of the pig's idle effects on the preview pig, or page-wide ones after closing the window.
-  const FX_MS = { fall: 6500, fly: 8200, note: 5200, blink: 2000, stretch: 1900, peek: 4200, bubble: 5200 };
+  const FX_MS = { fall: 6500, note: 5200, blink: 2000, stretch: 1900, peek: 4200, bubble: 5200 };
   let fxTimer;
   const showPage = (fn) => { $('#settingsDlg').close(); setTimeout(fn, 400); };
   $('#fxGrid').addEventListener('click', (e) => {
@@ -177,7 +177,7 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
     if (fx === 'birthday') return showPage(birthdayHello);
     if (fx === 'wrap') return showPage(weekWrap);
     if ((fx === 'peek' || fx === 'bubble') && state0.value !== 'asleep') { state0.value = 'asleep'; state0.dispatchEvent(new Event('change')); }
-    if (['stretch', 'fall', 'fly', 'note', 'blink'].includes(fx) && state0.value === 'asleep') { state0.value = 'day'; state0.dispatchEvent(new Event('change')); }
+    if (['stretch', 'fall', 'note', 'blink'].includes(fx) && state0.value === 'asleep') { state0.value = 'day'; state0.dispatchEvent(new Event('change')); }
     const now = prev.querySelector('svg');
     Object.keys(FX_MS).forEach((n) => now.classList.remove('fx-' + n));
     void now.getBoundingClientRect();

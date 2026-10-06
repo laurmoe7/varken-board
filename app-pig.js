@@ -34,16 +34,14 @@ function pigSvg(mood, cls, opts) {
   const eye = (x, dx) => `<ellipse cx="${x}" cy="62" rx="4.4" ry="5.2" fill="${PIG_INK}"/><circle cx="${x - 1.4 + dx}" cy="60" r="1.9" fill="#fff"/>`;
   const eyes = {
     happy: eye(45, 0) + eye(75, 0),
-    sleep: `<path d="M39.5 63 q5.5 5 11 0 M69.5 63 q5.5 5 11 0" fill="none" stroke="${PIG_INK}" stroke-width="2.6" stroke-linecap="round"/>
+    sleep: `<path d="M39.5 63 q5.5 5 11 0" fill="none" stroke="${PIG_INK}" stroke-width="2.6" stroke-linecap="round"/><path class="shut-r" d="M69.5 63 q5.5 5 11 0" fill="none" stroke="${PIG_INK}" stroke-width="2.6" stroke-linecap="round"/>
       <g class="peek"><ellipse cx="75" cy="62" rx="5.4" ry="5.8" fill="#ffb8cf"/>${eye(75, 1.6)}</g>`,
     worry: eye(45, 0) + eye(75, 0) + `<path d="M38 55 l11 -3.5 M82 55 l-11 -3.5" fill="none" stroke="${PIG_INK}" stroke-width="2" stroke-linecap="round"/>`,
     sniff: eye(45, 1.6) + eye(75, 1.6),
   }[m];
   const extra = {
     happy: '<text class="day-note" x="96" y="46" font-size="13" font-weight="800" fill="#ffd1e6">♪</text>'
-      + '<g class="day-fly"><path d="M0 0 q-5 -7 -7 -2 q0 5 7 2 q5 3 7 -2 q-2 -5 -7 2z" fill="#ffe29a" stroke="#ffc46b" stroke-width=".8"/></g>'
       + (phase === 'morning' ? '<g class="day-sun"><circle cx="16" cy="18" r="6" fill="#ffe29a"/><g class="day-rays" stroke="#ffe29a" stroke-width="2" stroke-linecap="round"><path d="M16 6v3M16 27v3M4 18h3M25 18h3M7.5 9.5l2 2M22.5 24.5l2 2M24.5 9.5l-2 2M9.5 24.5l-2 2"/></g></g>' : '')
-      + (phase === 'lunch' ? '<g class="day-snack"><circle cx="102" cy="100" r="6.5" fill="#ff6b82"/><path d="M102 93.5 q1 -4 4 -5" fill="none" stroke="#7a5644" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="106" cy="91" rx="3.2" ry="1.7" fill="#8ff0c8" transform="rotate(-30 106 91)"/><path d="M98.5 98 q-1 -3 2 -4.5" fill="none" stroke="#ffd0e0" stroke-width="1.4" stroke-linecap="round"/></g>' : '')
       + (phase === 'evening' ? '<g class="eve-moon"><path d="M26 6 A14 14 0 0 0 26 34 A20 20 0 0 1 26 6 Z" fill="#fff4c8"/></g>' + [[10, 52, '0s'], [111, 58, '1.1s'], [108, 98, '2.2s'], [9, 100, '.6s']].map(([x, y, d]) => `<g class="eve-fire" style="--d:${d}"><circle cx="${x}" cy="${y}" r="3.6" fill="#ffe97a" opacity=".3"/><circle cx="${x}" cy="${y}" r="1.6" fill="#fff6a8"/></g>`).join('') : ''),
     sleep: '<text x="92" y="40" font-size="14" font-weight="800" fill="#b9a4ff">z</text><text x="102" y="28" font-size="10" font-weight="800" fill="#b9a4ff">z</text>',
     worry: '<path d="M98 36 q5 6 0 10.5 q-5 -4.5 0 -10.5z" fill="#8fd3ff"/>',
@@ -108,7 +106,7 @@ function paintHero(gp, open, now, poke) {
   const night = L.isNight(); // from 10 pm to 6 am he sleeps in his nightcap, whatever the list looks like
   const mood = night ? 'sleep' : gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
   const hr = new Date().getHours();
-  const phase = night ? '' : phaseNow(); // morning sun and stretch, a lunch snack, an evening moon with fireflies
+  const phase = night ? '' : phaseNow(); // morning sun and stretch, an evening moon with fireflies
   const look = currentLook();
   const cap = night && !looks.preview; // a look being previewed shows even at night
   const key = mood + (cap ? '-night' : '') + (phase ? '-' + phase : '') + '-' + look;

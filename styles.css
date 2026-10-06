@@ -421,25 +421,19 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 @keyframes snot { 0%, 20% { opacity: 0; transform: scale(.2); } 25% { opacity: 1; transform: scale(.5); } 45% { opacity: 1; transform: scale(1.5); } 50% { opacity: 1; transform: scale(1.65); } 52% { opacity: 0; transform: scale(2.1); } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .pig-sleep .peek, .pig-sleep .snot { animation: none; } }
 
-/* daytime pig: blinks, hums, a butterfly drops by; mornings add a sun and a stretch */
+/* daytime pig: blinks, hums; mornings add a sun and a stretch */
 .pig-happy .pig-eyes { transform-box: fill-box; transform-origin: center; animation: pig-blink 6.5s ease-in-out infinite; }
 @keyframes pig-blink { 0%, 93%, 100% { transform: scaleY(1); } 95.5% { transform: scaleY(.08); } }
-.pig .day-note, .pig .day-fly { opacity: 0; }
+.pig .day-note { opacity: 0; }
 .pig .day-note { animation: day-note 21s ease-out 5s infinite; }
 @keyframes day-note { 0% { opacity: 0; transform: translate(0, 8px); } 6% { opacity: 1; } 18% { opacity: 1; transform: translate(5px, -6px); } 26%, 100% { opacity: 0; transform: translate(8px, -14px); } }
-.pig .day-fly { animation: day-fly 29s linear 9s infinite; }
-@keyframes day-fly {
-  0% { opacity: 0; transform: translate(-6px, 70px); } 3% { opacity: 1; }
-  10% { transform: translate(18px, 52px); } 17% { transform: translate(8px, 34px); } 24% { transform: translate(34px, 20px); }
-  31% { opacity: 1; transform: translate(60px, 8px); } 36%, 100% { opacity: 0; transform: translate(90px, -6px); }
-}
 .pig .day-rays { transform-box: fill-box; transform-origin: center; animation: day-spin 24s linear infinite; }
 @keyframes day-spin { to { transform: rotate(360deg); } }
 .pig .day-sun { animation: day-glow 4s ease-in-out infinite; }
 @keyframes day-glow { 50% { opacity: .7; } }
 .pig-morning .pig-all { animation: pig-stretch 23s ease-in-out 3s infinite; }
 @keyframes pig-stretch { 0%, 88%, 100% { transform: scale(1, 1); } 92% { transform: scale(.94, 1.09); } 96% { transform: scale(1.04, .96); } }
-@media (prefers-reduced-motion: reduce) { .pig-happy .pig-eyes, .pig .day-note, .pig .day-fly, .pig .day-rays, .pig .day-sun, .pig-morning .pig-all { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .pig-happy .pig-eyes, .pig .day-note, .pig .day-rays, .pig .day-sun, .pig-morning .pig-all { animation: none; } }
 
 /* cute dropdowns */
 .dd { position: relative; display: inline-block; }
@@ -487,7 +481,7 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .pig .fall { animation: pig-fall var(--t, 17s) linear var(--d, 0s) infinite; }
 @keyframes pig-fall { 0% { opacity: 0; transform: translate(calc(var(--x, 0px) + 100px), 2px) rotate(0deg); } 6% { opacity: 1; } 35% { transform: translate(calc(var(--x, 0px) + 92px), 40px) rotate(120deg); } 65% { transform: translate(calc(var(--x, 0px) + 108px), 78px) rotate(250deg); } 92% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(var(--x, 0px) + 98px), 112px) rotate(360deg); } }
 /* the tiny pigs (sidebar logo, the shrunken header) keep it simple: no falling bits or fluttering */
-.pig.logo .fall, .pig.logo .day-note, .pig.logo .day-fly, .sticky-top.compact .fall, .sticky-top.compact .day-note, .sticky-top.compact .day-fly { display: none; }
+.pig.logo .fall, .pig.logo .day-note, .sticky-top.compact .fall, .sticky-top.compact .day-note { display: none; }
 .pig-sleep .fall { display: none; }
 @media (prefers-reduced-motion: reduce) { .pig .fall { animation: none; } }
 
@@ -500,7 +494,6 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 /* effect tester in Options: one-off runs of the idle effects on the preview pig */
 .fx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-top: 12px; }
 .fx-grid button { padding: 8px 10px; font-size: 13px; text-align: left; }
-.pig.fx-fly .day-fly { animation: day-fly 8s linear 0s 1; }
 .pig.fx-note .day-note { animation: day-note 5s ease-out 0s 1; }
 .pig.fx-fall .fall { animation-duration: 5.5s; animation-delay: calc(var(--d, 0s) * .25); animation-iteration-count: 1; }
 .pig.fx-blink.pig-happy .pig-eyes { animation: pig-blink-now .5s ease-in-out 3; }
@@ -512,11 +505,16 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .pig-sleep.fx-bubble .snot { animation: snot 5s ease-in-out 0s 1; }
 .pig-sleep.fx-bubble .snot { animation-delay: -1s; }
 
-/* time of day: a lunch snack, an evening moon and fireflies */
-.pig .day-snack { animation: snack-bob 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-@keyframes snack-bob { 0%, 100% { transform: translateY(0) rotate(-6deg); } 50% { transform: translateY(-5px) rotate(8deg); } }
+/* time of day: an evening moon and fireflies */
 .pig .eve-moon { animation: day-glow 6s ease-in-out infinite; }
 .pig .eve-fire { opacity: 0; animation: eve-twinkle 4s ease-in-out var(--d, 0s) infinite; }
 @keyframes eve-twinkle { 0%, 100% { opacity: 0; transform: translate(0, 0); } 30%, 70% { opacity: 1; transform: translate(2px, -4px); } }
-.sticky-top.compact .day-snack, .sticky-top.compact .eve-fire { display: none; }
-@media (prefers-reduced-motion: reduce) { .pig .day-snack, .pig .eve-fire, .pig .eve-moon { animation: none; } .pig .eve-fire { opacity: 1; } }
+.sticky-top.compact .eve-fire { display: none; }
+@media (prefers-reduced-motion: reduce) { .pig .eve-fire, .pig .eve-moon { animation: none; } .pig .eve-fire { opacity: 1; } }
+
+/* peek: the closed right eye hides while the open one shows, so they never overlap */
+.pig-sleep .shut-r { animation: shut 17s ease-in-out 4s infinite; }
+@keyframes shut { 0%, 56%, 70%, 100% { opacity: 1; } 59%, 66% { opacity: 0; } }
+.pig-sleep.fx-peek .shut-r { animation: shut-now 4s ease-in-out 0s 1; }
+@keyframes shut-now { 0%, 100% { opacity: 1; } 15%, 75% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .pig-sleep .shut-r { animation: none; } }

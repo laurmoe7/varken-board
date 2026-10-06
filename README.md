@@ -35,10 +35,10 @@ Plain web app, no build step, no dependencies. Open it over http (for example `p
 
 The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open items by project and priority) and `images/<id>.jpg`.
 - A 📋 copy button on every card title (shows on hover) copies the item for Claude. The sleeping pig sometimes peeks with one eye and blows a nose bubble.
-- Daytime pig: blinks, hums a note, a butterfly drops by now and then; mornings (6-11) add a little sun and a stretch.
+- Daytime pig: blinks, hums a note, mornings (6-11) add a little sun and a stretch.
 - Undo on the done toast; Sundays the pig sums up the week (done count, busiest project); seasonal looks: winter earmuffs, spring petals, summer shades, autumn leaf. The header, input and tabs stay on top and shrink when you scroll.
 - Holiday looks: Santa hat 18-25 Dec, witch hat 25-31 Oct, crown on King's Day, pilgrim hat for Thanksgiving, bunny ears Easter weekend. Options has a switch for all seasonal clothes and a preview menu.
 - More looks: Sinterklaas, New Year, Carnival, Valentine, St Patrick, 4th of July, and a birthday on 10 May (party hat, confetti, fanfare, dance on first open).
 - Bigg, the pig's sweet little brother, comes up in his lines.
-- Options has an effect tester: pick a look and the pig's state, then run dance, falling bits, butterfly, peek, bubble, party, birthday hello and more.
+- Options has an effect tester: pick a look and the pig's state, then run dance, falling bits, peek, bubble, party, birthday hello and more.
 - Winter scarf; more holidays with hats (Mother's Day, Father's Day, Prinsjesdag, Sint-Maarten, Bevrijdingsdag); time-of-day effects (morning sun, lunch apple, evening moon and fireflies); special-day, weekday and season comments; a party on first open for the big holidays.
