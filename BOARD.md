@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T12:14:27.069Z_
+_Updated 2026-10-06T12:14:38.393Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -27,7 +27,7 @@ _Updated 2026-10-06T12:14:27.069Z_
 - [ ] 💡 **export nibble as whatsapp sticker** _(medium)_ `muwkhvsr9p1ub`
 - [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
 - [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
-  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is before implementing, so dont do this yet until you tell me. want it focused more on the pet and it's cute animations. allow using the widget to use the recipe parser, so you can easily send a parsed ingredient list to your phone from your pc.
+  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is before implementing, so dont do this yet until you tell me. want it focused more on the pet and it's cute animations. allow using the desktop pet to use the recipe parser, so you can easily send a parsed ingredient list to your phone from your pc.
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
