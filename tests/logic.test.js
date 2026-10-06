@@ -322,3 +322,19 @@ test('lookOf falls back to the season', () => {
   assert.strictEqual(L.lookOf(new Date(2026, 11, 28)), 'winter');
   assert.strictEqual(L.lookOf(new Date(2026, 6, 10)), 'summer');
 });
+
+test('more holidays: birthday, Dutch and American days', () => {
+  const h = (y, m, d) => L.holidayOf(new Date(y, m, d));
+  assert.strictEqual(h(2026, 4, 10), 'birthday');
+  assert.strictEqual(h(2026, 4, 11), '');
+  assert.strictEqual(h(2026, 11, 5), 'sinterklaas');
+  assert.strictEqual(h(2026, 11, 6), '');
+  assert.strictEqual(h(2026, 11, 31), 'newyear');
+  assert.strictEqual(h(2027, 0, 1), 'newyear');
+  assert.strictEqual(h(2027, 1, 14), 'valentine');
+  assert.strictEqual(h(2027, 2, 17), 'stpatrick');
+  assert.strictEqual(h(2027, 6, 4), 'fourth');
+  assert.strictEqual(h(2027, 1, 7), 'carnival'); // Easter 28 Mar 2027, so Carnival Sunday is 7 Feb
+  assert.strictEqual(h(2027, 1, 9), 'carnival');
+  assert.strictEqual(h(2027, 1, 10), '');
+});

@@ -218,7 +218,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     return new Date(y, Math.floor(n / 31) - 1, (n % 31) + 1);
   }
   // A holiday look for the day, or ''. Christmas 18-25 Dec, Halloween 25-31 Oct, King's Day 27 Apr (26 if that is
-  // a Sunday), Thanksgiving (US: 4th Thursday of Nov) and the day before, Easter from Good Friday to Easter Monday.
+  // a Sunday), Sinterklaas 3-5 Dec, New Year 30 Dec-1 Jan, Valentine 12-14 Feb, St Patrick, 4 July, Carnival, birthday 10 May, Thanksgiving (US: 4th Thursday of Nov) and the day before, Easter from Good Friday to Easter Monday.
   function holidayOf(d) {
     const date = d || new Date(), y = date.getFullYear(), m = date.getMonth(), day = date.getDate();
     if (m === 11 && day >= 18 && day <= 25) return 'christmas';
@@ -228,7 +228,14 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       const fourth = 1 + ((4 - new Date(y, 10, 1).getDay() + 7) % 7) + 21;
       if (day === fourth || day === fourth - 1) return 'thanksgiving';
     }
+    if (m === 4 && day === 10) return 'birthday'; // Lauren's
+    if (m === 11 && day >= 3 && day <= 5) return 'sinterklaas';
+    if ((m === 11 && day >= 30) || (m === 0 && day === 1)) return 'newyear';
+    if (m === 1 && day >= 12 && day <= 14) return 'valentine';
+    if (m === 2 && day === 17) return 'stpatrick';
+    if (m === 6 && (day === 3 || day === 4)) return 'fourth';
     const diff = Math.round((new Date(y, m, day) - easterSunday(y)) / 86400000);
+    if (diff >= -50 && diff <= -47) return 'carnival'; // Saturday to Tuesday before Ash Wednesday
     return diff >= -2 && diff <= 1 ? 'easter' : '';
   }
   const lookOf = (d) => holidayOf(d) || seasonOf(d);

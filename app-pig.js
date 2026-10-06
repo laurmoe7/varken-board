@@ -71,6 +71,7 @@ function pigSvg(mood, cls, opts) {
 // What the pig says in the header, by what the board looks like. Several lines each; one stays until you
 // poke the pig or the board changes.
 const SAYINGS = {
+  birthday: ['Happy birthday, Lauren! 🎂', 'It is your day! Do nothing. Or one tiny task.', 'Varken nummer één has a birthday!', 'Gefeliciteerd! I got you a hat. You are welcome.', 'Cake first, tasks later. Pig rules.'],
   night: ['Hrrrrng.. it is late. Go to bed.', 'Shh. Even the plant is asleep.', 'Excuse me, some of us are sleeping.', 'Zzz.. one more task and then bed.. zzz..', 'It is the middle of the night. I judge you lovingly.'],
   gallery: ['Pretty things to make! ✨', 'Ooh, what will they wear next?', 'Every little hat counts.', 'Sparkly ideas only, please.', 'Fashion emergency! I need a hat.', 'I demand a tiny crown. Just saying.', 'Make me look fabulous, no pressure.', 'Obviously I will wear all of them.'],
   gallery0: ['No ideas yet. Feed me a picture?', 'Paste a picture, I will wait.', 'My wardrobe is empty. Rude.', 'Naked pig, no ideas. Help!'],
@@ -85,7 +86,7 @@ let sayKey = '', sayText = '', sayN = 0;
 let sayHold = { text: '', until: 0 };
 function heroSay(gp, open, now, poke) {
   if (Date.now() < sayHold.until && !poke) return sayHold.text;
-  const key = L.isNight() ? 'night' : gp === 'notes' ? (open ? 'notes' : 'notes0') : gp ? (open ? 'gallery' : 'gallery0') : now > L.NOW_CAP ? 'many' : !open ? 'clear' : open === 1 ? 'one' : 'some';
+  const key = L.holidayOf() === 'birthday' ? 'birthday' : L.isNight() ? 'night' : gp === 'notes' ? (open ? 'notes' : 'notes0') : gp ? (open ? 'gallery' : 'gallery0') : now > L.NOW_CAP ? 'many' : !open ? 'clear' : open === 1 ? 'one' : 'some';
   if (key !== sayKey || poke) {
     const list = SAYINGS[key];
     let pick = list[Math.floor(Math.random() * list.length)];
@@ -192,10 +193,14 @@ function greetOnce() {
   } catch { return; }
   const h = new Date().getHours();
   const pool = L.isNight() ? GREET.night : h < 12 ? GREET.morning : h < 18 ? GREET.afternoon : GREET.evening;
-  setTimeout(() => {
+  if (L.holidayOf() !== 'birthday') setTimeout(() => {
     holdSay(pool[Math.floor(Math.random() * pool.length)], 6500);
     pigAct(L.isNight() ? 'sprout' : 'hop');
   }, 1200);
+  if (L.holidayOf() === 'birthday') {
+    setTimeout(() => { celebrate(null, false, 10); holdSay('Happy birthday, Lauren!! 🎂🎉 Varken nummer één!', 12000); }, 1400);
+    return;
+  }
   if (new Date().getDay() === 0) setTimeout(weekWrap, 8200); // Sundays: how the week went
 }
 function weekWrap() {
