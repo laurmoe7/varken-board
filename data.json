@@ -1332,6 +1332,23 @@
       "slot": "",
       "created": 1791287567007,
       "updated": 1791287940283
+    },
+    {
+      "id": "muwmrjs5kub1f",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make tool to easily view and edit dialogue",
+      "notes": "maybe some kind of spreedsheet? whatever works best",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791288234725,
+      "updated": 1791288234725
     }
   ],
   "notes": [
