@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:07:00.562Z_
+_Updated 2026-10-06T00:10:21.105Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -16,6 +16,7 @@ _Updated 2026-10-06T00:07:00.562Z_
 
 ### Soon
 
+- [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** `muvshshuzviba`
 - [ ] 💡 **celebrate holidays, birthdays** `muvset2l7bwrh`
 - [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** `muvry35yoek6i`
