@@ -1440,17 +1440,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "someday",
-      "status": "doing",
+      "status": "done",
       "title": "augmented reality for the pet to take screenshots of",
       "notes": "hopefully people would share images, helping with sharing word of the app",
       "build": "",
       "effort": "hard",
-      "doneAt": 0,
+      "doneAt": 1791292613460,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791291369731,
-      "updated": 1791292584643
+      "updated": 1791292613460
     },
     {
       "id": "muwpd9fj9aykv",
