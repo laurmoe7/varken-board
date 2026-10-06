@@ -478,3 +478,25 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .dd-opt.on::after { content: ' ♡'; color: var(--pink); }
 @keyframes dd-pop { from { opacity: 0; transform: translateY(-4px) scale(.97); } }
 .top { overflow: visible; z-index: 5; }
+
+/* the header, input and tabs stay on top while the list scrolls; they shrink once you scroll */
+.sticky-top { position: sticky; top: -22px; z-index: 20; margin: -22px -28px 0; padding: 22px 28px 10px; background: linear-gradient(var(--bg) 85%, #17122b00); }
+.sticky-top.compact { padding-top: 10px; }
+.sticky-top.compact .top { padding: 8px 16px 8px 12px; border-radius: 24px; flex-wrap: nowrap; }
+.sticky-top.compact .hero { height: 52px; flex: 1 1 auto; min-width: 0; }
+.sticky-top.compact .hero-pig { width: 52px; height: 52px; }
+.sticky-top.compact h1 { font-size: 20px; margin: 0; }
+.sticky-top.compact .sub, .sticky-top.compact .say, .sticky-top.compact #quickHint { display: none; }
+.sticky-top.compact #quick { margin-top: 10px; }
+.sticky-top.compact .vtabs { margin-top: 10px; }
+.sticky-top.compact .tools { flex-wrap: nowrap; }
+.sticky-top .top, .sticky-top .hero-pig { transition: padding .2s, height .2s, width .2s; }
+.sticky-top.compact h1 { white-space: nowrap; }
+.sticky-top.compact .tools { gap: 6px; }
+.sticky-top.compact #search { width: 96px; padding: 8px 12px; }
+.sticky-top.compact .chips button { padding: 5px 8px; }
+.sticky-top.compact .dd-btn { padding: 8px 30px 8px 12px; }
+.sticky-top.compact #pickBtn { padding: 8px 12px; }
+.sticky-top.compact .hero { gap: 10px; }
+.sticky-top.compact .hero h1 { font-size: 18px; }
+@media (max-width: 1250px) { .sticky-top.compact .hero h1 { max-width: 130px; overflow: hidden; text-overflow: ellipsis; } }
