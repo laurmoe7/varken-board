@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T12:27:09.123Z_
+_Updated 2026-10-06T12:30:21.841Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,6 +11,7 @@ _Updated 2026-10-06T12:27:09.123Z_
 
 ### Soon
 
+- [ ] 💡 **put year in "come back" text if year is not current year on calendar** _(easy)_ `muwnpgy5ks8kb`
 - [ ] 💡 **animation of the pet searching with the mag. glass while recipe parser is open** _(easy)_ `muwn6ynls0ywa`
 - [ ] 💡 **clean up "What's in it" on github** _(easy)_ `muwmtx6328ol3`
 - [ ] 💡 **make tool to easily view and edit dialogue** _(easy)_ `muwmrjs5kub1f`
