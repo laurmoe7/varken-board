@@ -2055,6 +2055,23 @@
       "slot": "",
       "created": 1791315435237,
       "updated": 1791315610666
+    },
+    {
+      "id": "mux35e946incw",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add tails?",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791315754600,
+      "updated": 1791315754600
     }
   ],
   "notes": [
