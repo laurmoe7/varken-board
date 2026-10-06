@@ -1245,6 +1245,23 @@
       "created": 1791247266332,
       "updated": 1791250135743,
       "deleted": true
+    },
+    {
+      "id": "muw32ie6yf0nc",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "add syncing to google calendar to easily add other automated scheduled tasks, maybe",
+      "notes": "",
+      "build": "",
+      "effort": "hard",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791255153822,
+      "updated": 1791255153822
     }
   ],
   "notes": [
