@@ -2131,34 +2131,34 @@
       "project": "funfx",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "when hovering over a sound in the soundboard menu, show origin of sound (dark souls, Ragnarok Online, meme, etc)",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791330619517,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791325553215,
-      "updated": 1791326238736
+      "updated": 1791330619517
     },
     {
       "id": "mux903byxmye4",
       "project": "funfx",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add soundboard, probably on general tab so you can preview all sounds easily",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791330617691,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791325584862,
-      "updated": 1791325584862
+      "updated": 1791330617691
     }
   ],
   "notes": [
