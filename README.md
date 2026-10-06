@@ -40,3 +40,4 @@ The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open item
 - Holiday looks: Santa hat 18-25 Dec, witch hat 25-31 Oct, crown on King's Day, pilgrim hat for Thanksgiving, bunny ears Easter weekend. Options has a switch for all seasonal clothes and a preview menu.
 - More looks: Sinterklaas, New Year, Carnival, Valentine, St Patrick, 4th of July, and a birthday on 10 May (party hat, confetti, fanfare, dance on first open).
 - Bigg, the pig's sweet little brother, comes up in his lines.
+- Options has an effect tester: pick a look and the pig's state, then run dance, falling bits, butterfly, peek, bubble, party, birthday hello and more.

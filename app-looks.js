@@ -31,17 +31,20 @@ const HATS = {
     <path d="M82 40 Q92 6 78 3 Q66 4 66 38 Z" fill="#fff4f8"/><path d="M78 36 Q84 10 77 8 Q70 9 71 35 Z" fill="#ffb3cf"/>
     <path d="M34 44 Q60 36 86 44" fill="none" stroke="#d9a6ff" stroke-width="5" stroke-linecap="round"/></g>`,
 };
-const fallShape = (fill, extra) => `<g class="fall fall-a">${extra || `<path d="M0 0 q3 -5 6 0 q-3 5 -6 0z" fill="${fill}"/>`}</g><g class="fall fall-b">${extra || `<path d="M0 0 q3 -5 6 0 q-3 5 -6 0z" fill="${fill}"/>`}</g>`;
+// Falling bits: one piece per colour, each with its own start, speed and delay so they never move in step.
+const petalPath = (f, s) => `<path transform="scale(${s || 1})" d="M0 0 q3 -5 6 0 q-3 5 -6 0z" fill="${f}"/>`;
+const starPath = (f) => `<path d="M0 -3 l.9 2 2.1 .2 -1.6 1.4 .5 2.2 -1.9 -1.1 -1.9 1.1 .5 -2.2 -1.6 -1.4 2.1 -.2z" fill="${f}"/>`;
+const fallPieces = (shape, colors) => colors.map((c, i) => `<g class="fall" style="--x:${-84 + i * (96 / Math.max(1, colors.length - 1)) | 0}px;--t:${14 + (i % 3) * 3}s;--d:${(i * 2.9) % 12}s">${shape(c, i)}</g>`).join('');
 const FALLS = {
-  petal: fallShape('#ffc6dc'),
-  orange: fallShape('#ffa94d'),
-  snow: fallShape('', '<circle r="2.6" fill="#fff"/><circle cx="1" cy="-1" r="1" fill="#e6f1ff"/>'),
-  hearts: fallShape('', heart(0, 0, .5, '#ff7fa6')),
-  clover: fallShape('', '<circle cx="-1.6" r="1.8" fill="#4ec98a"/><circle cx="1.6" r="1.8" fill="#4ec98a"/><circle cy="-2" r="1.8" fill="#4ec98a"/>'),
-  stars: fallShape('', '<path d="M0 -3 l.9 2 2.1 .2 -1.6 1.4 .5 2.2 -1.9 -1.1 -1.9 1.1 .5 -2.2 -1.6 -1.4 2.1 -.2z" fill="#ffe29a"/>'),
-  nuts: fallShape('', '<circle r="1.8" fill="#d9a066"/><circle cx="4" cy="3" r="1.5" fill="#c68a4f"/>'),
-  confetti: '<g class="fall fall-a"><rect width="5" height="2.4" fill="#ff7fa6" transform="rotate(30)"/></g><g class="fall fall-b"><rect width="5" height="2.4" fill="#8fd3ff" transform="rotate(-20)"/></g>',
-  leaf: '<g class="fall fall-a"><path d="M0 0 q6 -3 9 3 q-5 5 -9 -3z M0 0 l-3 4" fill="#ffb26b" stroke="#e8893f" stroke-width=".9"/></g>',
+  petal: fallPieces((c) => petalPath(c, 1.2), ['#ffc6dc', '#fff0f6', '#ffa6c4', '#e9d8ff', '#ffe0ec', '#ffb3cf']),
+  orange: fallPieces((c) => petalPath(c, 1.2), ['#ffa94d', '#ff8a3d', '#ffd9a8', '#fffaf0', '#ffc27a', '#ff9a3d']),
+  leaf: fallPieces((c) => petalPath(c, 1.5), ['#ffb26b', '#e8624a', '#ffd35a', '#c9794a', '#ff9a3d', '#d9a066', '#f2784b']),
+  snow: fallPieces((c, i) => `<circle r="${[2.8, 2, 3.2, 1.8, 2.5, 2.2][i % 6]}" fill="${c}"/>`, ['#ffffff', '#e6f1ff', '#ffffff', '#d4e8ff', '#ffffff', '#f0f7ff']),
+  hearts: fallPieces((c) => heart(0, 0, .45, c), ['#ff7fa6', '#ffb3cf', '#ff4f7d', '#ffd0e0', '#ff9ec7', '#e0457b']),
+  clover: fallPieces((c) => `<circle cx="-1.6" r="1.8" fill="${c}"/><circle cx="1.6" r="1.8" fill="${c}"/><circle cy="-2" r="1.8" fill="${c}"/>`, ['#4ec98a', '#8ff0c8', '#3aa06b', '#b8f5d0', '#5fd3a0', '#6ee0a8']),
+  stars: fallPieces((c) => starPath(c), ['#ffe29a', '#fffaf0', '#ff8aa0', '#8fb4ff', '#ffd35a', '#ffffff']),
+  nuts: fallPieces((c) => `<circle r="1.9" fill="${c}"/><circle cx="4" cy="3" r="1.4" fill="${c}"/>`, ['#d9a066', '#c68a4f', '#e8b878', '#b97a46', '#f0c890']),
+  confetti: fallPieces((c, i) => `<rect width="5" height="2.4" fill="${c}" transform="rotate(${i * 37})"/>`, ['#ff7fa6', '#8fd3ff', '#ffe29a', '#b9a4ff', '#8ff0c8', '#ffa94d', '#ff6b82']),
 };
 const LOOK_DEFS = {
   winter: { label: '❄️ Winter', earmuffs: true },
@@ -68,21 +71,47 @@ try { looks.on = localStorage.getItem('varken-looks') !== 'off'; } catch { /* de
 const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
 
 (function wireLooks() {
-  const sel = $('#lookSel'), on = $('#looksOn'), prev = $('#lookPrev');
+  const sel = $('#lookSel'), on = $('#looksOn'), prev = $('#lookPrev'), state0 = $('#fxState');
   if (!sel) return;
   sel.innerHTML = '<option value="">Today\'s look</option><option value="none">No clothes</option>'
     + Object.keys(LOOK_DEFS).map((id) => `<option value="${id}">${LOOK_DEFS[id].label}</option>`).join('');
   on.checked = looks.on;
   const paintPrev = () => {
     const id = looks.preview === 'none' ? '' : currentLook();
-    prev.innerHTML = pigSvg('happy', 'look-prev-pig', { stage: 1, look: id });
+    const asleep = state0.value === 'asleep';
+    prev.innerHTML = pigSvg(asleep ? 'sleep' : 'happy', 'look-prev-pig', { stage: 1, look: id, morning: state0.value === 'morning', cap: asleep && !looks.preview });
   };
   const apply = () => { renderHead(); paintPrev(); };
   sel.onchange = () => { looks.preview = sel.value; apply(); };
+  state0.onchange = paintPrev;
   on.onchange = () => {
     looks.on = on.checked;
     try { localStorage.setItem('varken-looks', looks.on ? 'on' : 'off'); } catch { /* ignore */ }
     apply();
   };
   $('#settingsBtn').addEventListener('click', paintPrev);
+
+  // The effect buttons: one-off versions of the pig's idle effects on the preview pig, or page-wide ones after closing the window.
+  const FX_MS = { fall: 6500, fly: 8200, note: 5200, blink: 2000, stretch: 1900, peek: 4200, bubble: 5200 };
+  let fxTimer;
+  const showPage = (fn) => { $('#settingsDlg').close(); setTimeout(fn, 400); };
+  $('#fxGrid').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-fx]');
+    if (!b) return;
+    const fx = b.dataset.fx, svg = prev.querySelector('svg');
+    if (['dance', 'hop', 'wiggle'].includes(fx)) return pigAct(fx, svg);
+    if (fx === 'oink') return oink();
+    if (fx === 'chime') return showPage(() => celebrate($('#heroPig'), false, 0));
+    if (fx === 'party') return showPage(() => celebrate($('#heroPig'), false, 5));
+    if (fx === 'birthday') return showPage(birthdayHello);
+    if (fx === 'wrap') return showPage(weekWrap);
+    if ((fx === 'peek' || fx === 'bubble') && state0.value !== 'asleep') { state0.value = 'asleep'; state0.dispatchEvent(new Event('change')); }
+    if (['stretch', 'fall', 'fly', 'note', 'blink'].includes(fx) && state0.value === 'asleep') { state0.value = 'day'; state0.dispatchEvent(new Event('change')); }
+    const now = prev.querySelector('svg');
+    Object.keys(FX_MS).forEach((n) => now.classList.remove('fx-' + n));
+    void now.getBoundingClientRect();
+    now.classList.add('fx-' + fx);
+    clearTimeout(fxTimer);
+    fxTimer = setTimeout(() => now.classList.remove('fx-' + fx), FX_MS[fx] || 3000);
+  });
 })();

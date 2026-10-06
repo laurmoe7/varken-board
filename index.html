@@ -102,7 +102,25 @@
       <label>Preview <select id="lookSel" aria-label="Preview a look"></select></label>
       <div class="look-prev" id="lookPrev"></div>
     </div>
-    <p class="muted small">Previews reset when you reload the page.</p>
+    <label>Pig is <select id="fxState" aria-label="Pig state for testing"><option value="day">awake</option><option value="morning">awake, in the morning</option><option value="asleep">asleep</option></select></label>
+    <div class="fx-grid" id="fxGrid">
+      <button type="button" class="ghost" data-fx="dance">🕺 Dance</button>
+      <button type="button" class="ghost" data-fx="hop">🦘 Hop</button>
+      <button type="button" class="ghost" data-fx="wiggle">〰️ Wiggle</button>
+      <button type="button" class="ghost" data-fx="fall">🍂 Falling bits</button>
+      <button type="button" class="ghost" data-fx="fly">🦋 Butterfly</button>
+      <button type="button" class="ghost" data-fx="note">♪ Humming</button>
+      <button type="button" class="ghost" data-fx="blink">😌 Blink</button>
+      <button type="button" class="ghost" data-fx="stretch">🙆 Stretch</button>
+      <button type="button" class="ghost" data-fx="peek">👁 Peek (asleep)</button>
+      <button type="button" class="ghost" data-fx="bubble">🫧 Bubble (asleep)</button>
+      <button type="button" class="ghost" data-fx="oink">🐷 Oink</button>
+      <button type="button" class="ghost" data-fx="chime">✅ Check-off</button>
+      <button type="button" class="ghost" data-fx="party">🎉 Party</button>
+      <button type="button" class="ghost" data-fx="birthday">🎂 Birthday hello</button>
+      <button type="button" class="ghost" data-fx="wrap">📅 Sunday wrap-up</button>
+    </div>
+    <p class="muted small">Try the pig's looks and effects here. Previews reset when you reload the page. Check-off, party, birthday and wrap-up close this window so you can see them on the page.</p>
     <hr>
     <div class="row">
       <button type="button" class="ghost" id="cleanScan">🧹 Look for unused pictures</button>

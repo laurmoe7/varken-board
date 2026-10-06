@@ -200,10 +200,14 @@ function greetOnce() {
     pigAct(L.isNight() ? 'sprout' : 'hop');
   }, 1200);
   if (L.holidayOf() === 'birthday') {
-    setTimeout(() => { celebrate(null, false, 10); holdSay('Happy birthday, Lauren!! 🎂🎉 Varken nummer één!', 12000); }, 1400);
+    setTimeout(birthdayHello, 1400);
     return;
   }
   if (new Date().getDay() === 0) setTimeout(weekWrap, 8200); // Sundays: how the week went
+}
+function birthdayHello() {
+  celebrate(null, false, 10);
+  holdSay('Happy birthday, Lauren!! 🎂🎉 Varken nummer één!', 12000);
 }
 function weekWrap() {
   const w = L.weekSummary(state.items, Date.now());
@@ -218,8 +222,8 @@ function weekWrap() {
 // Actions: hop, show off the note, wiggle, sway the plant, dance and cheer. The class stays on the svg until it ends.
 const ACTS = ['hop', 'note', 'wiggle', 'sprout', 'dance'];
 let actTimer;
-function pigAct(name) {
-  const svg = $('#heroPig svg');
+function pigAct(name, svgOverride) {
+  const svg = svgOverride || $('#heroPig svg');
   if (!svg) return;
   ACTS.concat('cheer').forEach((a) => svg.classList.remove('act-' + a));
   void svg.getBoundingClientRect(); // restart the animation if the same action repeats

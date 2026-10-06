@@ -484,14 +484,30 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 
 /* seasons: falling petals and a drifting leaf */
 .pig .fall { opacity: 0; }
-.pig .fall-a { animation: pig-fall 17s linear 3s infinite; }
-.pig .fall-b { animation: pig-fall 23s linear 11s infinite; }
-@keyframes pig-fall { 0% { opacity: 0; transform: translate(100px, 2px) rotate(0deg); } 6% { opacity: 1; } 35% { transform: translate(86px, 40px) rotate(120deg); } 65% { transform: translate(108px, 78px) rotate(250deg); } 92% { opacity: 1; } 100% { opacity: 0; transform: translate(94px, 112px) rotate(360deg); } }
+.pig .fall { animation: pig-fall var(--t, 17s) linear var(--d, 0s) infinite; }
+@keyframes pig-fall { 0% { opacity: 0; transform: translate(calc(var(--x, 0px) + 100px), 2px) rotate(0deg); } 6% { opacity: 1; } 35% { transform: translate(calc(var(--x, 0px) + 92px), 40px) rotate(120deg); } 65% { transform: translate(calc(var(--x, 0px) + 108px), 78px) rotate(250deg); } 92% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(var(--x, 0px) + 98px), 112px) rotate(360deg); } }
+/* the tiny pigs (sidebar logo, the shrunken header) keep it simple: no falling bits or fluttering */
+.pig.logo .fall, .pig.logo .day-note, .pig.logo .day-fly, .sticky-top.compact .fall, .sticky-top.compact .day-note, .sticky-top.compact .day-fly { display: none; }
 .pig-sleep .fall { display: none; }
 @media (prefers-reduced-motion: reduce) { .pig .fall { animation: none; } }
 
 /* look preview in Options */
 .look-row { display: flex; gap: 14px; align-items: center; margin-top: 10px; }
 .look-row label { flex: 1; }
-.look-prev { flex: none; width: 96px; height: 96px; }
+.look-prev { flex: none; width: 120px; height: 120px; }
 .look-prev .pig { width: 100%; height: 100%; animation: bob 4s ease-in-out infinite; }
+
+/* effect tester in Options: one-off runs of the idle effects on the preview pig */
+.fx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-top: 12px; }
+.fx-grid button { padding: 8px 10px; font-size: 13px; text-align: left; }
+.pig.fx-fly .day-fly { animation: day-fly 8s linear 0s 1; }
+.pig.fx-note .day-note { animation: day-note 5s ease-out 0s 1; }
+.pig.fx-fall .fall { animation-duration: 5.5s; animation-delay: calc(var(--d, 0s) * .25); animation-iteration-count: 1; }
+.pig.fx-blink.pig-happy .pig-eyes { animation: pig-blink-now .5s ease-in-out 3; }
+@keyframes pig-blink-now { 0%, 100% { transform: scaleY(1); } 45% { transform: scaleY(.08); } }
+.pig.fx-stretch .pig-all { animation: pig-stretch-now .9s ease-in-out 2; }
+@keyframes pig-stretch-now { 0%, 100% { transform: scale(1, 1); } 40% { transform: scale(.94, 1.09); } 75% { transform: scale(1.04, .96); } }
+.pig-sleep.fx-peek .peek { animation: peek-now 4s ease-in-out 0s 1; }
+@keyframes peek-now { 0%, 100% { opacity: 0; } 15%, 75% { opacity: 1; } }
+.pig-sleep.fx-bubble .snot { animation: snot 5s ease-in-out 0s 1; }
+.pig-sleep.fx-bubble .snot { animation-delay: -1s; }
