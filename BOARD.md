@@ -1,10 +1,10 @@
 # Varken board
 
-_Updated 2026-10-06T00:25:03.792Z_
+_Updated 2026-10-06T00:41:10.851Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
-### Now
+### ASAP
 
 - [ ] 💡 **make magnified eye get larger the second the magnifying glass is in front of it.** _(easy)_ `muvtewqq1h90v`
   > currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting
@@ -13,15 +13,17 @@ _Updated 2026-10-06T00:25:03.792Z_
   > it sits in front of the shopping list and is too intrusive
 - [ ] 💡 **holding toy above head makes pet annoyed** _(easy)_ `muvshzp12zzr2`
 - [ ] 💡 **search menu in dressing room** _(easy)_ `muvsf90rbtfto`
+- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** _(easy)_ `muvry35yoek6i`
 
 ### Soon
 
+- [ ] 💡 **change default bird to thrush. make chick a skin.** _(easy)_ `muvydgd83y39n`
+- [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
-- [ ] 💡 **clapping and wow noises in dressing room** `muvshshuzviba`
-- [ ] 💡 **celebrate holidays, birthdays** `muvset2l7bwrh`
-- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** `muvry35yoek6i`
-- [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** `muvqo5c7zv9xz`
+- [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
+- [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
+- [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** _(medium)_ `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
   > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
@@ -31,7 +33,7 @@ _Updated 2026-10-06T00:25:03.792Z_
 ### Someday
 
 - [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
-  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is.
+  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. 
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
 - [ ] 💡 **player profile** _(medium)_ `muvxb48osnspa`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
@@ -83,7 +85,7 @@ _2 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
-### Now
+### ASAP
 
 - [ ] 💡 **fix slight lag when clicking on custom spell to read pop out menu on right, if possible** _(easy)_ `muvx400dup2g9`
 - [ ] 💡 **search bar in character sheet on the top, only for character sheet** _(easy)_ `muvwmx9d24fnz`
