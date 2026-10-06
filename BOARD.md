@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T01:21:11.639Z_
+_Updated 2026-10-06T01:24:57.136Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -55,6 +55,7 @@ _7 done._
 
 ### Notes
 
+- hummingbird skin
 - 10 goodnight kisses to unlock carer persona
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)
