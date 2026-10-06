@@ -1,12 +1,13 @@
 # Varken board
 
-_Updated 2026-10-06T12:15:58.505Z_
+_Updated 2026-10-06T12:27:09.123Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 💡 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
+- [ ] 💡 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
 
 ### Soon
 
