@@ -1451,6 +1451,23 @@
       "slot": "",
       "created": 1791291369731,
       "updated": 1791292584643
+    },
+    {
+      "id": "muwpd9fj9aykv",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "improve AR photos and features",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791292606975,
+      "updated": 1791292606975
     }
   ],
   "notes": [
