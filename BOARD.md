@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T03:47:16.939Z_
+_Updated 2026-10-06T03:47:29.654Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -26,7 +26,7 @@ _Updated 2026-10-06T03:47:16.939Z_
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
 - [ ] 💡 **color variations for skins** `muvqmyc8968to`
-- [ ] 💡 **add color variations to outfits/hats. maybe skins?** `muvqmowq1668d`
+- [ ] 💡 **add color variations to outfits/hats** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **Shared household pet** `seed-petshopper-11`
