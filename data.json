@@ -1477,7 +1477,7 @@
       "type": "fix",
       "priority": "now",
       "status": "open",
-      "title": "cant see cursor following feature outside PC, so maybe remove this",
+      "title": "cant see cursor following feature outside PC, so remove this",
       "notes": "this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.",
       "build": "",
       "effort": "easy",
@@ -1486,7 +1486,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791293424578,
-      "updated": 1791324647104
+      "updated": 1791324658125
     },
     {
       "id": "muwvog8njv1ae",
