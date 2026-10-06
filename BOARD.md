@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:35:52.286Z_
+_Updated 2026-10-06T00:36:00.031Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -19,8 +19,8 @@ _Updated 2026-10-06T00:35:52.286Z_
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
-- [ ] 💡 **clapping and wow noises in dressing room** `muvshshuzviba`
-- [ ] 💡 **celebrate holidays, birthdays** `muvset2l7bwrh`
+- [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
+- [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
 - [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** `muvry35yoek6i`
 - [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
