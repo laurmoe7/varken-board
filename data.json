@@ -502,12 +502,13 @@
       "doneAt": 0,
       "images": [
         "muvrtap4catm0",
-        "muvrtfexageh1"
+        "muvrtfexageh1",
+        "muvxspa4g973z"
       ],
       "gallery": true,
       "slot": "Hat",
       "created": 1791236275369,
-      "updated": 1791236275369,
+      "updated": 1791246298111,
       "doneBuild": ""
     },
     {
@@ -1290,6 +1291,14 @@
     "muvs73xe0buw9": {
       "name": "image.png",
       "added": 1791236892583
+    },
+    "muvxsix962jcf": {
+      "name": "image.png",
+      "added": 1791246289871
+    },
+    "muvxspa4g973z": {
+      "name": "image.png",
+      "added": 1791246298111
     }
   }
 }
