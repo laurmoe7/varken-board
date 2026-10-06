@@ -1404,7 +1404,7 @@
     {
       "id": "muwnpgy5ks8kb",
       "project": "petshopper",
-      "type": "idea",
+      "type": "fix",
       "priority": "soon",
       "status": "open",
       "title": "put year in \"come back\" text if year is not current year on calendar",
@@ -1416,7 +1416,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791289817357,
-      "updated": 1791289817357
+      "updated": 1791289834307
     }
   ],
   "notes": [
