@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T22:25:57.727Z_
+_Updated 2026-10-06T22:26:08.203Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -135,7 +135,7 @@ _15 done._
 
 ### Soon
 
-- [ ] 💡 **when hovering over a sound in the random menu, show origin of sound (dark souls, Ragnarok Online, etc)** `mux8zewv2sees`
+- [ ] 💡 **when hovering over a sound in the random menu, show origin of sound (dark souls, Ragnarok Online, etc)** _(easy)_ `mux8zewv2sees`
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
