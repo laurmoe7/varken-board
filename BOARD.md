@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T19:06:17.555Z_
+_Updated 2026-10-06T19:07:41.552Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -117,6 +117,7 @@ _13 done._
 
 ### Notes
 
+- tiger cat skin
 - monkey species
 - hummingbird skin
 - 10 goodnight kisses to unlock carer persona
