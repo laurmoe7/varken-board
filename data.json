@@ -1960,6 +1960,25 @@
       "slot": "",
       "created": 1791313506140,
       "updated": 1791313506140
+    },
+    {
+      "id": "mux1u1z81skh2",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sailor cap",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [
+        "mux1u138t40rz"
+      ],
+      "gallery": true,
+      "slot": "",
+      "created": 1791313545860,
+      "updated": 1791313545860
     }
   ],
   "notes": [
@@ -2167,6 +2186,10 @@
     "mux1t6gzgxndl": {
       "name": "image.png",
       "added": 1791313505031
+    },
+    "mux1u138t40rz": {
+      "name": "image.png",
+      "added": 1791313544713
     }
   }
 }
