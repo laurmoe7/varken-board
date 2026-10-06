@@ -1151,7 +1151,7 @@
       "priority": "someday",
       "status": "open",
       "title": "phone widget, able to add to list with voice from widget",
-      "notes": "allow using the widget to use the recipe parser, so you can easily send a parsed ingredient list to your phone.",
+      "notes": "",
       "build": "",
       "effort": "hard",
       "doneAt": 0,
@@ -1159,7 +1159,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791245468814,
-      "updated": 1791288814008
+      "updated": 1791288829019
     },
     {
       "id": "muvxb48osnspa",
