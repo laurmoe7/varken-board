@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:41:10.851Z_
+_Updated 2026-10-06T00:55:44.371Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -8,7 +8,6 @@ _Updated 2026-10-06T00:41:10.851Z_
 
 - [ ] 💡 **make magnified eye get larger the second the magnifying glass is in front of it.** _(easy)_ `muvtewqq1h90v`
   > currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting
-- [ ] 💡 **add placeholder shop button in menu bar, greyed out** _(easy)_ `muvt1nee26as9`
 - [ ] 🔧 **fix box that pops up when a pet suggests a shopping item** _(easy)_ `muvsjsncf6bkf`
   > it sits in front of the shopping list and is too intrusive
 - [ ] 💡 **holding toy above head makes pet annoyed** _(easy)_ `muvshzp12zzr2`
@@ -50,7 +49,7 @@ _Updated 2026-10-06T00:41:10.851Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_2 done._
+_3 done._
 
 ### Cosmetics gallery
 
