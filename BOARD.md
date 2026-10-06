@@ -1,17 +1,17 @@
 # Varken board
 
-_Updated 2026-10-06T11:43:14.043Z_
+_Updated 2026-10-06T11:43:20.357Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
+- [ ] 💡 **change recipe time to "Let's cook" ** _(easy)_ `muwm0v58ei9ma`
+  > and change the purple pan emoji next to it, blends into the backgound
 - [ ] 💡 **improve ability to read measurements in recipes** _(easy)_ `muw57mgm92ved`
 
 ### Soon
 
-- [ ] 💡 **change recipe time to "Let's cook" and change the purple pan emoji next to it, blends into the backgound** `muwm0v58ei9ma`
-  > and change the purple pan emoji next to it, blends into the backgound
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
