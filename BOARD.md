@@ -1,31 +1,45 @@
 # Varken board
 
-_Updated 2026-10-06T03:52:35.950Z_
+_Updated 2026-10-06T22:07:45.992Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
-- [ ] 💡 **improve ability to read measurements in recipes** _(easy)_ `muw57mgm92ved`
+- [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
+- [ ] 🔧 ****varken board changes** _(easy)_ `mux372cdw2srj`
+  > remove time of day based background effects like the moon. screen is looking cluttered
+- [ ] 💡 **swipe items of shopping list to remove them** _(easy)_ `muwvog8njv1ae`
+- [ ] 🔧 **cant see cursor following feature outside PC, so maybe remove this** _(easy)_ `muwpusaq62rmp`
+  > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on them instead.
+- [ ] 🔧 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
 
 ### Soon
 
+- [ ] 💡 **add tails?** _(medium)_ `mux35e946incw`
+- [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
+  > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. allowing rotating of nibble in photoshoots. mute dressing room sounds in photo shoot menu.
+- [ ] 🔧 **put year in "come back" text if year is not current year on calendar** _(easy)_ `muwnpgy5ks8kb`
+- [ ] 💡 **animation of the pet searching with the mag. glass while recipe parser is open** _(easy)_ `muwn6ynls0ywa`
+- [ ] 🔧 **clean up "What's in it" on github** _(easy)_ `muwmtx6328ol3`
+- [ ] 💡 **make tool to easily view and edit dialogue** _(easy)_ `muwmrjs5kub1f`
+  > maybe some kind of spreedsheet? whatever works best
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
 - [ ] 💡 **some kind of mystery boxes** _(medium)_ _(doing)_ `muvqn89jg1e4j`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
-- [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
-  > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
 
 ### Someday
 
+- [ ] 💡 **additional interface themes** _(medium)_ `muwo5omjikzsu`
+- [ ] 💡 **export nibble as whatsapp sticker** _(medium)_ `muwkhvsr9p1ub`
 - [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
 - [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
-  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. 
+  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is before implementing, so dont do this yet until i tell you to start. want it focused more on the pet and it's cute animations. allow using the desktop pet to use the recipe parser, so you can easily send a parsed ingredient list to your phone from your pc. have way to easily send links/text from phone to PC using companion. maybe images too.
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
@@ -41,18 +55,81 @@ _Updated 2026-10-06T03:52:35.950Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_9 done._
+_14 done._
 
 ### Cosmetics gallery
 
+- 🎀 **farmers overalls** `mux4cvm3wzr6h`
+- 🎀 **fluffy dragon** `mux2yjtxyd49c`
+  - images: images/mux32b6uyuoes.jpg
+- 🎀 **stack of pancakes on head** `mux24try5il7z`
+  - images: images/mux24sunpi4mx.jpg
+- 🎀 **head sprout** `mux1z33uomtt4`
+  - images: images/mux1z2bjj4qma.jpg
+- 🎀 **bunny earmuffs** `mux1ujyyqltsv`
+  - images: images/mux1uluczo9dg.jpg
+- 🎀 **sailor cap** `mux1u1z81skh2`
+  - images: images/mux1u138t40rz.jpg
+- 🎀 **hungry frog** `mux1t7bw2sj85`
+  - images: images/mux1t6gzgxndl.jpg
+- 🎀 **chicken hat** `mux1s9da5gyms`
+  - images: images/mux1s8k5wsyrq.jpg
+- 🎀 **monkey on head** `mux1rixipzhl1`
+  - images: images/mux1rhzaft0ku.jpg
+- 🎀 **hunting cap** `mux1qcmljhxjc`
+  - images: images/mux1qbuiv56lj.jpg
+- 🎀 **flower crown** `mux1pjgcjlow2`
+  - images: images/mux1pioaa4un2.jpg
+- 🎀 **bowl of soup** `mux1p53vc1egs`
+  - images: images/mux1p4corhryv.jpg
+- 🎀 **rubber duckie** `mux1on8k5ahnk`
+  - images: images/mux1om9m1zjo4.jpg
+- 🎀 **side ribbon** `mux1o0qaxp2r6`
+  - images: images/mux1nzu76t5s9.jpg
+- 🎀 **halo** `mux1nnokvxruy`
+  - images: images/mux1nmpnwvlgh.jpg
+- 🎀 **lazy bunny band** `mux1n7w3ksjn4`
+  - images: images/mux1n71364656.jpg
+- 🎀 **mini tophat** `mux1mldobnowk`
+  - images: images/mux1mkf2m2s7s.jpg
+- 🎀 **beret** `mux1lw6zennpq`
+  - images: images/mux1lv512rxl8.jpg
+- 🎀 **hot blooded headband** `mux1l10ukpl92`
+  - images: images/mux1l04s1pbgr.jpg
+- 🎀 **angry mouth** `mux1kgn3x3i8w`
+  - images: images/mux1kfpqpkfpo.jpg
+- 🎀 **pom pom beanie** `mux1jf19ra61r`
+  - images: images/mux1je0t7j4lh.jpg
+- 🎀 **drooping bunny** `mux1hogohfwv6`
+  - images: images/mux1hnbmhp3ix.jpg
+- 🎀 **fish on head** `mux1gyaa9cmok`
+  - images: images/mux1gx7krwk8n.jpg
+- 🎀 **drooping cat** `mux1fyz2p8j0j`
+  - images: images/mux1ftcuf9pu8.jpg
+- 🎀 **devi hat** `mux1f2nl24fml`
+  - images: images/mux1f1k1p8hoq.jpg
+- 🎀 **panda hat** `mux1egcmh0z2y`
+  - images: images/mux1efea7y7wi.jpg
+- 🎀 **bucket hat** `mux1bslbt0fsl`
+  - images: images/mux1brkm5kp9q.jpg
+- 🎀 **big ribbon** `mux1b3ff60mf0`
+  - images: images/mux1b26fq3f9r.jpg
+- 🎀 **jack be dandy** `mux1acsgvba0f`
+  - images: images/mux1aau4igrr5.jpg
+- 🎀 **propeller beanie + lollipop** `mux161fqrn7xj`
+  - images: images/mux15ydf2e1qk.jpg
 - 🎀 **Nerd glasses** [Face] `muvsfmzt69fh4`
   > nerd glasses that magnify eyes, like mag. glass
   > 
+  - images: images/mux17u4kq1lpl.jpg
 - 🎀 **Joker jester** [Hat] `muvrtvop8h4zk`
   - images: images/muvrtap4catm0.jpg, images/muvrtfexageh1.jpg, images/muvxspa4g973z.jpg
 
 ### Notes
 
+- glorp alien skin
+- grumpy chef: import a recipe on 3 different days
+- tiger cat skin
 - hummingbird skin
 - 10 goodnight kisses to unlock carer persona
 
