@@ -1210,6 +1210,23 @@
       "slot": "",
       "created": 1791245611249,
       "updated": 1791246918632
+    },
+    {
+      "id": "muvy6mn2nea3p",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "daily log in bonus, probably mystery boxes",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791246947870,
+      "updated": 1791246947870
     }
   ],
   "notes": [
