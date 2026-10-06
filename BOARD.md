@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T11:51:49.698Z_
+_Updated 2026-10-06T11:52:51.247Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,6 +10,8 @@ _Updated 2026-10-06T11:51:49.698Z_
 
 ### Soon
 
+- [ ] 💡 **decrease font size in title ex "Strawberry's shopping list" to be smaller** _(easy)_ `muwmd8kf4xgq2`
+  > longer titles get cut off and it looks bad
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
