@@ -2094,12 +2094,12 @@
       "id": "mux3qjhkxlrp3",
       "project": "petshopper",
       "type": "idea",
-      "priority": "soon",
+      "priority": "now",
       "status": "open",
       "title": "monkey big toe sticks out too much. try again, without making any of the toes stick out",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "doneAt": 0,
       "images": [
         "mux3qie7foi12"
@@ -2107,7 +2107,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791316741160,
-      "updated": 1791316741160
+      "updated": 1791316746772
     }
   ],
   "notes": [
