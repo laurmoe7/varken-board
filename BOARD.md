@@ -1,14 +1,12 @@
 # Varken board
 
-_Updated 2026-10-06T22:11:02.526Z_
+_Updated 2026-10-06T22:11:19.292Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 🔧 ****varken board changes** _(easy)_ `mux372cdw2srj`
-  > remove time of day based background effects like the moon. screen is looking cluttered
 - [ ] 💡 **swipe items of shopping list to remove them** _(easy)_ `muwvog8njv1ae`
 - [ ] 🔧 **cant see cursor following feature outside PC, so remove this** _(easy)_ `muwpusaq62rmp`
   > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.
@@ -55,7 +53,7 @@ _Updated 2026-10-06T22:11:02.526Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_14 done._
+_15 done._
 
 ### Cosmetics gallery
 
