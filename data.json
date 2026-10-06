@@ -1148,6 +1148,23 @@
       "slot": "",
       "created": 1791245468814,
       "updated": 1791245468814
+    },
+    {
+      "id": "muvxb48osnspa",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "player profile",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791245477688,
+      "updated": 1791245477688
     }
   ],
   "notes": [
