@@ -1353,7 +1353,7 @@
     {
       "id": "muwmtx6328ol3",
       "project": "petshopper",
-      "type": "idea",
+      "type": "fix",
       "priority": "soon",
       "status": "open",
       "title": "clean up \"What's in it\" on github",
@@ -1365,7 +1365,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791288345387,
-      "updated": 1791288345387
+      "updated": 1791289840584
     },
     {
       "id": "muwn6ynls0ywa",
