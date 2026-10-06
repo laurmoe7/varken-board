@@ -62,8 +62,8 @@ function pigSvg(mood, cls, opts) {
     ${look.shades && !o.cap ? SHADES : ''}
     <ellipse cx="33" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/><ellipse cx="87" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/>
     <ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/>
-    ${look.scarf && !o.cap ? SCARF : ''}
     ${note}
+    ${look.scarf && !o.cap ? SCARF : ''}
     ${look.fall ? FALLS[look.fall] : ''}
     ${m === 'sleep' ? '<g class="snot"><circle cx="64" cy="76" r="4.5" fill="#d9ecff88" stroke="#fff" stroke-width="1.2"/><circle cx="62.6" cy="74.4" r="1.2" fill="#fff"/></g>' : ''}
     </g>${extra}

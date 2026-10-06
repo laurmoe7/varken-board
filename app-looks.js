@@ -3,9 +3,14 @@
 // A hat replaces the plant for those few days; at night the nightcap still wins, unless a look is being previewed.
 const party = (body, trim, dots) => `<g class="hat"><g transform="rotate(-9 60 46)"><path d="M43 46 L60 4 L77 46 Z" fill="${body}"/>${dots}<path d="M43 46 Q60 52 77 46" fill="none" stroke="${trim}" stroke-width="5" stroke-linecap="round"/><circle cx="60" cy="4" r="5.5" fill="${trim}"/></g></g>`;
 const heart = (x, y, s, f) => `<path transform="translate(${x} ${y}) scale(${s})" d="M0 4 C-6 -4 -12 4 0 12 C12 4 6 -4 0 4Z" fill="${f}"/>`;
-// A striped scarf round his middle with a tail on the right; drawn behind the sticky note.
-const SCARF = `<g class="scarf"><path d="M24 93 Q60 108 96 93 L95 102 Q60 117 25 102 Z" fill="#b9a4ff"/><path d="M33 99 l5 -2 M45 102 l5 -1.5 M58 104 l5 0 M71 102 l5 1.5 M83 99 l5 2" stroke="#ff9ec7" stroke-width="3.2" stroke-linecap="round"/>
-  <path d="M84 100 L98 104 L96 122 L84 118 Z" fill="#b9a4ff"/><path d="M85 108 l12 3 M84.5 114 l12 3" stroke="#ff9ec7" stroke-width="3.2" stroke-linecap="round"/><path d="M85 118 l-1 4 M89 119 l-1 4 M93 120.5 l-1 4" stroke="#efe8ff" stroke-width="1.6" stroke-linecap="round"/></g>`;
+// A striped scarf round his middle, just under the snout, with a tail on the right. Drawn over the sticky note. The
+// stripes are clipped to the scarf's own shape so they can't spill out.
+const SCARF_BAND = 'M20 79 Q60 95 100 79 L99 91 Q60 107 21 91 Z';
+const SCARF_TAIL = 'M82 94 L98 91 L100 114 L84 118 Z';
+const SCARF = `<g class="scarf"><clipPath id="scarfClip"><path d="${SCARF_BAND}"/><path d="${SCARF_TAIL}"/></clipPath>
+  <path d="${SCARF_BAND}" fill="#b9a4ff"/><path d="${SCARF_TAIL}" fill="#b9a4ff"/>
+  <g clip-path="url(#scarfClip)" stroke="#ff9ec7" stroke-width="3.6">${[24, 36, 48, 60, 72, 84, 96].map((x) => `<path d="M${x} 74 l8 48"/>`).join('')}</g>
+  <path d="M86 118 l-.5 4.5 M91 117 l-.5 4.5 M96 116 l-.5 4.5" stroke="#efe8ff" stroke-width="1.8" stroke-linecap="round"/></g>`;
 const EARMUFFS = `<g class="earmuffs"><path d="M17 56 Q60 -8 103 56" fill="none" stroke="#b9a4ff" stroke-width="4.5" stroke-linecap="round"/><circle cx="17" cy="58" r="9" fill="#c9b8ff"/><circle cx="103" cy="58" r="9" fill="#c9b8ff"/><circle cx="14.5" cy="55.5" r="2.4" fill="#efe8ff"/><circle cx="100.5" cy="55.5" r="2.4" fill="#efe8ff"/></g>`;
 const SHADES = `<g class="shades"><rect x="36" y="44" width="20" height="11" rx="5" fill="#3a2f66"/><rect x="64" y="44" width="20" height="11" rx="5" fill="#3a2f66"/><path d="M56 48 h8" stroke="#3a2f66" stroke-width="2.4"/><path d="M39 47 l6 0 M67 47 l6 0" stroke="#b9a4ff" stroke-width="1.6" stroke-linecap="round"/></g>`;
 const HATS = {
