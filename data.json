@@ -1281,6 +1281,23 @@
       "slot": "",
       "created": 1791258751606,
       "updated": 1791258751606
+    },
+    {
+      "id": "muwkhvsr9p1ub",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "export nibble as whatsapp sticker",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791284424507,
+      "updated": 1791284424507
     }
   ],
   "notes": [
