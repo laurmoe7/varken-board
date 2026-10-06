@@ -1,10 +1,10 @@
 # Varken board
 
-_Updated 2026-10-06T00:36:13.813Z_
+_Updated 2026-10-06T00:41:10.851Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
-### Now
+### ASAP
 
 - [ ] 💡 **make magnified eye get larger the second the magnifying glass is in front of it.** _(easy)_ `muvtewqq1h90v`
   > currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting
@@ -17,6 +17,7 @@ _Updated 2026-10-06T00:36:13.813Z_
 
 ### Soon
 
+- [ ] 💡 **change default bird to thrush. make chick a skin.** _(easy)_ `muvydgd83y39n`
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
@@ -84,7 +85,7 @@ _2 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
-### Now
+### ASAP
 
 - [ ] 💡 **fix slight lag when clicking on custom spell to read pop out menu on right, if possible** _(easy)_ `muvx400dup2g9`
 - [ ] 💡 **search bar in character sheet on the top, only for character sheet** _(easy)_ `muvwmx9d24fnz`
