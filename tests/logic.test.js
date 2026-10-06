@@ -296,3 +296,29 @@ test('seasonOf follows the months', () => {
   assert.strictEqual(L.seasonOf(new Date(2026, 6, 5)), 'summer');
   assert.strictEqual(L.seasonOf(new Date(2026, 9, 5)), 'autumn');
 });
+
+test('holidayOf finds the dressed-up days', () => {
+  const h = (y, m, d) => L.holidayOf(new Date(y, m, d));
+  assert.strictEqual(h(2026, 11, 18), 'christmas');
+  assert.strictEqual(h(2026, 11, 25), 'christmas');
+  assert.strictEqual(h(2026, 11, 17), '');
+  assert.strictEqual(h(2026, 11, 26), '');
+  assert.strictEqual(h(2026, 9, 31), 'halloween');
+  assert.strictEqual(h(2026, 9, 24), '');
+  assert.strictEqual(h(2026, 3, 27), 'kingsday');
+  assert.strictEqual(h(2025, 3, 26), 'kingsday'); // the 27th was a Sunday
+  assert.strictEqual(h(2025, 3, 27), '');
+  assert.strictEqual(h(2026, 10, 26), 'thanksgiving');
+  assert.strictEqual(h(2026, 10, 25), 'thanksgiving');
+  assert.strictEqual(h(2026, 10, 24), '');
+  assert.strictEqual(h(2026, 3, 3), 'easter'); // Good Friday, Easter is 5 April
+  assert.strictEqual(h(2026, 3, 6), 'easter');
+  assert.strictEqual(h(2026, 3, 7), '');
+  assert.strictEqual(h(2027, 2, 28), 'easter');
+});
+
+test('lookOf falls back to the season', () => {
+  assert.strictEqual(L.lookOf(new Date(2026, 11, 20)), 'christmas');
+  assert.strictEqual(L.lookOf(new Date(2026, 11, 28)), 'winter');
+  assert.strictEqual(L.lookOf(new Date(2026, 6, 10)), 'summer');
+});

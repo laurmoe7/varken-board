@@ -97,7 +97,13 @@
     <hr>
     <label class="check-row"><input type="checkbox" id="funOn"> Sound and confetti when you check something off</label>
     <hr>
-    <p class="muted small"><b>Unused pictures.</b> Pictures you removed, replaced or drew over stay stored. This looks for ones no item uses; it deletes nothing until you say so.</p>
+    <label class="check-row"><input type="checkbox" id="looksOn"> Seasonal and holiday clothes for the pig</label>
+    <div class="look-row">
+      <label>Preview <select id="lookSel" aria-label="Preview a look"></select></label>
+      <div class="look-prev" id="lookPrev"></div>
+    </div>
+    <p class="muted small">Previews reset when you reload the page.</p>
+    <hr>
     <div class="row">
       <button type="button" class="ghost" id="cleanScan">🧹 Look for unused pictures</button>
       <button type="button" class="danger" id="cleanGo" hidden>Delete them</button>
@@ -191,6 +197,7 @@
 <script src="store.js"></script>
 <script src="sync.js"></script>
 <script src="app.js"></script>
+<script src="app-looks.js"></script>
 <script src="app-pig.js"></script>
 <script src="app-gallery.js"></script>
 <script src="app-compare.js"></script>

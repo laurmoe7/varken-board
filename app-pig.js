@@ -19,9 +19,6 @@ function sproutSvg(stage) {
   );
 }
 
-// Seasons: winter earmuffs, summer shades pushed up on his forehead, falling petals in spring, a drifting leaf in autumn.
-const EARMUFFS = `<g class="earmuffs"><path d="M17 56 Q60 -8 103 56" fill="none" stroke="#b9a4ff" stroke-width="4.5" stroke-linecap="round"/><circle cx="17" cy="58" r="9" fill="#c9b8ff"/><circle cx="103" cy="58" r="9" fill="#c9b8ff"/><circle cx="14.5" cy="55.5" r="2.4" fill="#efe8ff"/><circle cx="100.5" cy="55.5" r="2.4" fill="#efe8ff"/></g>`;
-const SHADES = `<g class="shades"><rect x="36" y="44" width="20" height="11" rx="5" fill="#3a2f66"/><rect x="64" y="44" width="20" height="11" rx="5" fill="#3a2f66"/><path d="M56 48 h8" stroke="#3a2f66" stroke-width="2.4"/><path d="M39 47 l6 0 M67 47 l6 0" stroke="#b9a4ff" stroke-width="1.6" stroke-linecap="round"/></g>`;
 const NIGHTCAP = `<g class="nightcap"><path d="M32 44 Q36 16 66 14 Q92 14 98 30 Q104 40 108 56 Q100 50 94 50 Q80 44 62 44 Q44 44 32 44 Z" fill="#b9a4ff"/>
     <path d="M32 44 Q50 38 64 40 Q84 40 96 48" fill="none" stroke="#d8ccff" stroke-width="5" stroke-linecap="round"/><circle cx="109" cy="58" r="6.5" fill="#fff4de"/>
     <path d="M62 24 l1.6 3.4 3.6 .4 -2.7 2.4 .8 3.6 -3.3 -1.9 -3.3 1.9 .8 -3.6 -2.7 -2.4 3.6 -.4z" fill="#ffe29a"/></g>`;
@@ -32,6 +29,7 @@ function pigSvg(mood, cls, opts) {
   const m = mood || 'happy';
   const o = opts || {};
   const stage = o.stage == null ? 1 : o.stage;
+  const look = LOOK_DEFS[o.look] || {};
   const eye = (x, dx) => `<ellipse cx="${x}" cy="62" rx="4.4" ry="5.2" fill="${PIG_INK}"/><circle cx="${x - 1.4 + dx}" cy="60" r="1.9" fill="#fff"/>`;
   const eyes = {
     happy: eye(45, 0) + eye(75, 0),
@@ -53,19 +51,18 @@ function pigSvg(mood, cls, opts) {
     <path d="M40 92 h26 M40 99 h18" stroke="#c9a24a" stroke-width="2.4" stroke-linecap="round"/><path d="M70 90 l4 4 8 -9" fill="none" stroke="#ff6f9f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></g>
     <ellipse cx="30" cy="92" rx="7" ry="9" transform="rotate(-24 30 92)" fill="#ffa6c4"/><ellipse cx="90" cy="92" rx="7" ry="9" transform="rotate(24 90 92)" fill="#ffa6c4"/></g>`
     : '<ellipse cx="14" cy="80" rx="7" ry="10" transform="rotate(20 14 80)" fill="#ffa6c4"/><ellipse cx="106" cy="80" rx="7" ry="10" transform="rotate(-20 106 80)" fill="#ffa6c4"/>';
-  return `<svg class="pig ${cls || ''} pig-${m}${o.morning ? ' pig-morning' : ''}${o.season ? ' season-' + o.season : ''}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
+  return `<svg class="pig ${cls || ''} pig-${m}${o.morning ? ' pig-morning' : ''}${o.look ? ' look-' + o.look : ''}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
     <ellipse cx="44" cy="104" rx="10" ry="6" fill="#ff9fbc"/><ellipse cx="76" cy="104" rx="10" ry="6" fill="#ff9fbc"/>
     <g class="ear ear-l"><path d="M26 44 Q20 22 36 20 Q50 22 54 36 Z" fill="#ffa6c4"/></g><g class="ear ear-r"><path d="M94 44 Q100 22 84 20 Q70 22 66 36 Z" fill="#ffa6c4"/></g>
     <ellipse cx="60" cy="70" rx="46" ry="38" fill="#ffb8cf"/><ellipse cx="60" cy="82" rx="30" ry="20" fill="#ffd3e2" opacity=".55"/>
-    ${o.season === 'winter' && !o.cap ? EARMUFFS : ''}
-    ${o.cap ? NIGHTCAP : `<g class="sprout-slot">${sproutSvg(stage)}</g>`}
+    ${look.earmuffs && !o.cap ? EARMUFFS : ''}
+    ${o.cap ? NIGHTCAP : look.hat ? HATS[look.hat] : `<g class="sprout-slot">${sproutSvg(stage)}</g>`}
     <g class="pig-eyes">${eyes}</g>
-    ${o.season === 'summer' && !o.cap ? SHADES : ''}
+    ${look.shades && !o.cap ? SHADES : ''}
     <ellipse cx="33" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/><ellipse cx="87" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/>
     <ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/>
     ${note}
-    ${o.season === 'spring' ? '<g class="fall fall-a"><path d="M0 0 q3 -5 6 0 q-3 5 -6 0z" fill="#ffc6dc"/></g><g class="fall fall-b"><path d="M0 0 q3 -5 6 0 q-3 5 -6 0z" fill="#ffe0ec"/></g>' : ''}
-    ${o.season === 'autumn' ? '<g class="fall fall-a"><path d="M0 0 q6 -3 9 3 q-5 5 -9 -3z M0 0 l-3 4" fill="#ffb26b" stroke="#e8893f" stroke-width=".9"/></g>' : ''}
+    ${look.fall ? FALLS[look.fall] : ''}
     ${m === 'sleep' ? '<g class="snot"><circle cx="64" cy="76" r="4.5" fill="#d9ecff88" stroke="#fff" stroke-width="1.2"/><circle cx="62.6" cy="74.4" r="1.2" fill="#fff"/></g>' : ''}
     </g>${extra}
   </svg>`;
@@ -105,12 +102,13 @@ function paintHero(gp, open, now, poke) {
   const mood = night ? 'sleep' : gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
   const hr = new Date().getHours();
   const morning = !night && hr >= 6 && hr < 11; // a little sun and a stretch until eleven
-  const season = L.seasonOf();
-  const key = mood + (night ? '-night' : '') + (morning ? '-morning' : '') + '-' + season;
+  const look = currentLook();
+  const cap = night && !looks.preview; // a look being previewed shows even at night
+  const key = mood + (cap ? '-night' : '') + (morning ? '-morning' : '') + '-' + look;
   const done = L.doneToday(state.items, Date.now(), 'all');
   const stage = Math.min(3, Math.floor(done / 3)); // the plant grows on the 3rd, 6th and 9th task of the day
   if (key !== heroMood) {
-    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap: night, morning, season });
+    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap, morning, look });
     heroMood = key;
     heroStage = stage;
   } else if (stage !== heroStage) {

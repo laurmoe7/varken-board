@@ -38,3 +38,4 @@ The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open item
 - A 📋 copy button on every card title (shows on hover) copies the item for Claude. The sleeping pig sometimes peeks with one eye and blows a nose bubble.
 - Daytime pig: blinks, hums a note, a butterfly drops by now and then; mornings (6-11) add a little sun and a stretch.
 - Undo on the done toast; Sundays the pig sums up the week (done count, busiest project); seasonal looks: winter earmuffs, spring petals, summer shades, autumn leaf. The header, input and tabs stay on top and shrink when you scroll.
+- Holiday looks: Santa hat 18-25 Dec, witch hat 25-31 Oct, crown on King's Day, pilgrim hat for Thanksgiving, bunny ears Easter weekend. Options has a switch for all seasonal clothes and a preview menu.

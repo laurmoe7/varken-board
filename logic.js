@@ -209,6 +209,29 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     const m = (d || new Date()).getMonth();
     return m === 11 || m < 2 ? 'winter' : m < 5 ? 'spring' : m < 8 ? 'summer' : 'autumn';
   }
+  // Easter Sunday by the usual Gregorian computus.
+  function easterSunday(y) {
+    const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25);
+    const g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4;
+    const l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+    const n = h + l - 7 * m + 114;
+    return new Date(y, Math.floor(n / 31) - 1, (n % 31) + 1);
+  }
+  // A holiday look for the day, or ''. Christmas 18-25 Dec, Halloween 25-31 Oct, King's Day 27 Apr (26 if that is
+  // a Sunday), Thanksgiving (US: 4th Thursday of Nov) and the day before, Easter from Good Friday to Easter Monday.
+  function holidayOf(d) {
+    const date = d || new Date(), y = date.getFullYear(), m = date.getMonth(), day = date.getDate();
+    if (m === 11 && day >= 18 && day <= 25) return 'christmas';
+    if (m === 9 && day >= 25) return 'halloween';
+    if (m === 3 && day === (new Date(y, 3, 27).getDay() === 0 ? 26 : 27)) return 'kingsday';
+    if (m === 10) {
+      const fourth = 1 + ((4 - new Date(y, 10, 1).getDay() + 7) % 7) + 21;
+      if (day === fourth || day === fourth - 1) return 'thanksgiving';
+    }
+    const diff = Math.round((new Date(y, m, day) - easterSunday(y)) / 86400000);
+    return diff >= -2 && diff <= 1 ? 'easter' : '';
+  }
+  const lookOf = (d) => holidayOf(d) || seasonOf(d);
   const countGallery = (items, project) => items.filter((i) => !i.deleted && i.gallery && i.project === project).length;
 
   // Newer `updated` wins per item and per project; deletions are kept as `deleted: true` so they sync too.
@@ -352,7 +375,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
   const api = {
     TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
     uid, slug, typeOf, effortOf, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
-    filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday, weekSummary, seasonOf,
+    filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday, weekSummary, seasonOf, holidayOf, lookOf,
     mergeStates, validateState, fitSize, projectName, copyItem, pickForMe, isNight, boardMarkdown,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
