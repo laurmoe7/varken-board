@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T22:07:45.992Z_
+_Updated 2026-10-06T22:10:51.689Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,7 +11,7 @@ _Updated 2026-10-06T22:07:45.992Z_
   > remove time of day based background effects like the moon. screen is looking cluttered
 - [ ] 💡 **swipe items of shopping list to remove them** _(easy)_ `muwvog8njv1ae`
 - [ ] 🔧 **cant see cursor following feature outside PC, so maybe remove this** _(easy)_ `muwpusaq62rmp`
-  > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on them instead.
+  > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.
 - [ ] 🔧 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
 
 ### Soon
