@@ -2125,6 +2125,23 @@
       "slot": "",
       "created": 1791317783307,
       "updated": 1791317783307
+    },
+    {
+      "id": "mux8zewv2sees",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "when hovering over a sound in the random menu, show origin of sound (dark souls, Ragnarok Online, etc)",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791325553215,
+      "updated": 1791325553215
     }
   ],
   "notes": [
