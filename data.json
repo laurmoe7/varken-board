@@ -1202,7 +1202,7 @@
       "priority": "someday",
       "status": "open",
       "title": "desktop companion",
-      "notes": "would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. allow using the widget to use the recipe parser, so you can easily send a parsed ingredient list to your phone.",
+      "notes": "would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. allow using the widget to use the recipe parser, so you can easily send a parsed ingredient list to your phone from your pc.",
       "build": "",
       "effort": "hard",
       "doneAt": 0,
@@ -1210,7 +1210,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791245611249,
-      "updated": 1791288834663
+      "updated": 1791288843238
     },
     {
       "id": "muvy6mn2nea3p",
