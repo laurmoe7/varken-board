@@ -1272,7 +1272,7 @@
       "priority": "now",
       "status": "doing",
       "title": "improve ability to read measurements in recipes",
-      "notes": "increase speed of photo taking. mute dressing room sounds in photo shoot menu.",
+      "notes": "increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. mute dressing room sounds in photo shoot menu.",
       "build": "",
       "effort": "medium",
       "doneAt": 0,
@@ -1280,7 +1280,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791258751606,
-      "updated": 1791292699971
+      "updated": 1791292819763
     },
     {
       "id": "muwkhvsr9p1ub",
