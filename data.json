@@ -1131,6 +1131,23 @@
       "slot": "",
       "created": 1791245444426,
       "updated": 1791245444426
+    },
+    {
+      "id": "muvxaxe6yw4xw",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "phone widget, able to add to list with voice from widget",
+      "notes": "",
+      "build": "",
+      "effort": "hard",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791245468814,
+      "updated": 1791245468814
     }
   ],
   "notes": [
