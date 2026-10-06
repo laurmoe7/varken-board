@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T11:59:05.396Z_
+_Updated 2026-10-06T12:03:59.316Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,6 +10,8 @@ _Updated 2026-10-06T11:59:05.396Z_
 
 ### Soon
 
+- [ ] 💡 **make tool to easily view and edit dialogue** _(easy)_ `muwmrjs5kub1f`
+  > maybe some kind of spreedsheet? whatever works best
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
