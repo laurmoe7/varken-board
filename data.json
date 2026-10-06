@@ -2142,6 +2142,23 @@
       "slot": "",
       "created": 1791325553215,
       "updated": 1791325563910
+    },
+    {
+      "id": "mux903byxmye4",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add soundboard, probably on general tab so you can preview all sounds easily",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791325584862,
+      "updated": 1791325584862
     }
   ],
   "notes": [
