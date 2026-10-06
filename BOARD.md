@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:10:48.854Z_
+_Updated 2026-10-06T00:11:13.224Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -29,6 +29,7 @@ _Updated 2026-10-06T00:10:48.854Z_
 
 ### Someday
 
+- [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
 - [ ] 💡 **some kind of mystery boxes** `muvqn89jg1e4j`
 - [ ] 💡 **color variations for skins** `muvqmyc8968to`
