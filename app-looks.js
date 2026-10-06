@@ -124,7 +124,7 @@ const TIME_SAYS = {
   friday: ['It is Friday! Do the hard ones now, party later. 🎉', 'Friday! Almost weekend. Almost. hehe..'],
   weekend: ['It is the weekend and you are still here? Respect. Or concern. hehe..', 'Weekend vibes. Tasks are optional. (They are not.)'],
 };
-// Morning 6-11, lunch 12-14 (lunch has comments only), evening 18-22; the rest of the day he is simply awake (night: asleep, see L.isNight).
+// Morning 6-11 (he stretches), lunch 12-14 and evening 18-22 (comments only); the rest of the day he is simply awake (night: asleep, see L.isNight).
 const phaseNow = (d) => { const h = (d || new Date()).getHours(); return h >= 6 && h < 11 ? 'morning' : h >= 12 && h < 14 ? 'lunch' : h >= 18 && h < 22 ? 'evening' : ''; };
 function contextLines(d) {
   const date = d || new Date(), wd = date.getDay(), out = [];
@@ -154,8 +154,7 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
   const paintPrev = () => {
     const id = looks.preview === 'none' ? '' : currentLook();
     const asleep = state0.value === 'asleep';
-    const phase = ['morning', 'evening'].includes(state0.value) ? state0.value : '';
-    prev.innerHTML = pigSvg(asleep ? 'sleep' : 'happy', 'look-prev-pig', { stage: 1, look: id, phase, cap: asleep && !looks.preview });
+    prev.innerHTML = pigSvg(asleep ? 'sleep' : 'happy', 'look-prev-pig', { stage: 1, look: id, cap: asleep && !looks.preview });
   };
   const apply = () => { renderHead(); paintPrev(); };
   sel.onchange = () => { looks.preview = sel.value; apply(); };

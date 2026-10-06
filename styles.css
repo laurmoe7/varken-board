@@ -427,13 +427,10 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .pig .day-note { opacity: 0; }
 .pig .day-note { animation: day-note 21s ease-out 5s infinite; }
 @keyframes day-note { 0% { opacity: 0; transform: translate(0, 8px); } 6% { opacity: 1; } 18% { opacity: 1; transform: translate(5px, -6px); } 26%, 100% { opacity: 0; transform: translate(8px, -14px); } }
-.pig .day-rays { transform-box: fill-box; transform-origin: center; animation: day-spin 24s linear infinite; }
-@keyframes day-spin { to { transform: rotate(360deg); } }
-.pig .day-sun { animation: day-glow 4s ease-in-out infinite; }
 @keyframes day-glow { 50% { opacity: .7; } }
 .pig-morning .pig-all { animation: pig-stretch 23s ease-in-out 3s infinite; }
 @keyframes pig-stretch { 0%, 88%, 100% { transform: scale(1, 1); } 92% { transform: scale(.94, 1.09); } 96% { transform: scale(1.04, .96); } }
-@media (prefers-reduced-motion: reduce) { .pig-happy .pig-eyes, .pig .day-note, .pig .day-rays, .pig .day-sun, .pig-morning .pig-all { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .pig-happy .pig-eyes, .pig .day-note, .pig-morning .pig-all { animation: none; } }
 
 /* cute dropdowns */
 .dd { position: relative; display: inline-block; }
@@ -505,12 +502,11 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .pig-sleep.fx-bubble .snot { animation: snot 5s ease-in-out 0s 1; }
 .pig-sleep.fx-bubble .snot { animation-delay: -1s; }
 
-/* time of day: an evening moon and fireflies */
-.pig .eve-moon { animation: day-glow 6s ease-in-out infinite; }
+/* fireflies while he sleeps */
 .pig .eve-fire { opacity: 0; animation: eve-twinkle 4s ease-in-out var(--d, 0s) infinite; }
 @keyframes eve-twinkle { 0%, 100% { opacity: 0; transform: translate(0, 0); } 30%, 70% { opacity: 1; transform: translate(2px, -4px); } }
 .sticky-top.compact .eve-fire { display: none; }
-@media (prefers-reduced-motion: reduce) { .pig .eve-fire, .pig .eve-moon { animation: none; } .pig .eve-fire { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .pig .eve-fire { animation: none; } .pig .eve-fire { opacity: 1; } }
 
 /* peek: the closed right eye hides while the open one shows, so they never overlap */
 .pig-sleep .shut-r { animation: shut 17s ease-in-out 4s infinite; }

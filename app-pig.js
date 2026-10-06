@@ -40,10 +40,9 @@ function pigSvg(mood, cls, opts) {
     sniff: eye(45, 1.6) + eye(75, 1.6),
   }[m];
   const extra = {
-    happy: '<text class="day-note" x="96" y="46" font-size="13" font-weight="800" fill="#ffd1e6">♪</text>'
-      + (phase === 'morning' ? '<g class="day-sun"><circle cx="16" cy="18" r="6" fill="#ffe29a"/><g class="day-rays" stroke="#ffe29a" stroke-width="2" stroke-linecap="round"><path d="M16 6v3M16 27v3M4 18h3M25 18h3M7.5 9.5l2 2M22.5 24.5l2 2M24.5 9.5l-2 2M9.5 24.5l-2 2"/></g></g>' : '')
-      + (phase === 'evening' ? '<g class="eve-moon"><path d="M26 6 A14 14 0 0 0 26 34 A20 20 0 0 1 26 6 Z" fill="#fff4c8"/></g>' + [[10, 52, '0s'], [111, 58, '1.1s'], [108, 98, '2.2s'], [9, 100, '.6s']].map(([x, y, d]) => `<g class="eve-fire" style="--d:${d}"><circle cx="${x}" cy="${y}" r="3.6" fill="#ffe97a" opacity=".3"/><circle cx="${x}" cy="${y}" r="1.6" fill="#fff6a8"/></g>`).join('') : ''),
-    sleep: '<text x="92" y="40" font-size="14" font-weight="800" fill="#b9a4ff">z</text><text x="102" y="28" font-size="10" font-weight="800" fill="#b9a4ff">z</text>',
+    happy: '<text class="day-note" x="96" y="46" font-size="13" font-weight="800" fill="#ffd1e6">♪</text>',
+    sleep: '<text x="92" y="40" font-size="14" font-weight="800" fill="#b9a4ff">z</text><text x="102" y="28" font-size="10" font-weight="800" fill="#b9a4ff">z</text>'
+      + [[10, 52, '0s'], [111, 58, '1.1s'], [108, 98, '2.2s'], [9, 100, '.6s']].map(([x, y, d]) => `<g class="eve-fire" style="--d:${d}"><circle cx="${x}" cy="${y}" r="3.6" fill="#ffe97a" opacity=".3"/><circle cx="${x}" cy="${y}" r="1.6" fill="#fff6a8"/></g>`).join(''), // fireflies while he sleeps
     worry: '<path d="M98 36 q5 6 0 10.5 q-5 -4.5 0 -10.5z" fill="#8fd3ff"/>',
     sniff: '<circle cx="100" cy="30" r="7" fill="#b9a4ff33" stroke="#b9a4ff" stroke-width="2.6"/><path d="M105 35 l7 7" stroke="#b9a4ff" stroke-width="3.6" stroke-linecap="round"/>',
   }[m];
@@ -106,7 +105,7 @@ function paintHero(gp, open, now, poke) {
   const night = L.isNight(); // from 10 pm to 6 am he sleeps in his nightcap, whatever the list looks like
   const mood = night ? 'sleep' : gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
   const hr = new Date().getHours();
-  const phase = night ? '' : phaseNow(); // morning sun and stretch, an evening moon with fireflies
+  const phase = night ? '' : phaseNow(); // the morning stretch; the other phases only change what he says
   const look = currentLook();
   const cap = night && !looks.preview; // a look being previewed shows even at night
   const key = mood + (cap ? '-night' : '') + (phase ? '-' + phase : '') + '-' + look;
