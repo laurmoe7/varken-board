@@ -1321,17 +1321,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "decrease font size in title ex \"Strawberry's shopping list\" to be smaller",
       "notes": "longer titles get cut off and it looks bad",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791287940283,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791287567007,
-      "updated": 1791287567007
+      "updated": 1791287940283
     }
   ],
   "notes": [
