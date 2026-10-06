@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T22:37:23.350Z_
+_Updated 2026-10-06T23:50:23.962Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -135,8 +135,6 @@ _15 done._
 
 ### Soon
 
-- [ ] 💡 **add soundboard, probably on general tab so you can preview all sounds easily** _(easy)_ `mux903byxmye4`
-- [ ] 💡 **when hovering over a sound in the soundboard menu, show origin of sound (dark souls, Ragnarok Online, meme, etc)** _(easy)_ `mux8zewv2sees`
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
@@ -151,6 +149,8 @@ _15 done._
   > In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.
 - [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
+
+_2 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
