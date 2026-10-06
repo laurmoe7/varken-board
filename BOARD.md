@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T18:47:06.452Z_
+_Updated 2026-10-06T18:47:14.046Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -56,6 +56,8 @@ _13 done._
 
 ### Cosmetics gallery
 
+- 🎀 **propeller beanie + lollipop** `mux161fqrn7xj`
+  - images: images/mux15ydf2e1qk.jpg
 - 🎀 **Nerd glasses** [Face] `muvsfmzt69fh4`
   > nerd glasses that magnify eyes, like mag. glass
   > 
