@@ -1979,6 +1979,25 @@
       "slot": "",
       "created": 1791313545860,
       "updated": 1791313545860
+    },
+    {
+      "id": "mux1ujyyqltsv",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "bunny earmuffs",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [
+        "mux1uluczo9dg"
+      ],
+      "gallery": true,
+      "slot": "",
+      "created": 1791313569178,
+      "updated": 1791313571608
     }
   ],
   "notes": [
@@ -2190,6 +2209,10 @@
     "mux1u138t40rz": {
       "name": "image.png",
       "added": 1791313544713
+    },
+    "mux1uluczo9dg": {
+      "name": "image.png",
+      "added": 1791313571608
     }
   }
 }
