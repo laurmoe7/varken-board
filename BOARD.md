@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T23:50:23.962Z_
+_Updated 2026-10-06T23:55:45.662Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -135,6 +135,7 @@ _15 done._
 
 ### Soon
 
+- [ ] 🔧 **improve and clarify pack system** _(easy)_ `muxc6vzsp8wgi`
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
