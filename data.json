@@ -7,7 +7,7 @@
       "emoji": "🐹",
       "color": "#ff9ec7",
       "repo": "https://github.com/laurmoe7/pet-shopper",
-      "updated": 1791236179661,
+      "updated": 1791258481263,
       "gallery": "Cosmetics",
       "slots": "Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy"
     },
@@ -120,8 +120,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
-      "doneBuild": ""
+      "updated": 1791231087088
     },
     {
       "id": "seed-funfx-4",
@@ -138,8 +137,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
-      "doneBuild": ""
+      "updated": 1791231087088
     },
     {
       "id": "seed-funfx-5",
@@ -175,8 +173,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
-      "doneBuild": ""
+      "updated": 1791231087088
     },
     {
       "id": "seed-funfx-7",
@@ -193,8 +190,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
-      "doneBuild": ""
+      "updated": 1791231087088
     },
     {
       "id": "seed-pathfinder-8",
@@ -265,8 +261,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089,
-      "doneBuild": ""
+      "updated": 1791231087089
     },
     {
       "id": "seed-petshopper-12",
@@ -283,8 +278,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089,
-      "doneBuild": ""
+      "updated": 1791231087089
     },
     {
       "id": "seed-petshopper-13",
@@ -301,8 +295,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089,
-      "doneBuild": ""
+      "updated": 1791231087089
     },
     {
       "id": "seed-petshopper-14",
