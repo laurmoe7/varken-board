@@ -1,14 +1,12 @@
 # Varken board
 
-_Updated 2026-10-06T21:49:47.464Z_
+_Updated 2026-10-06T22:07:45.992Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 💡 **monkey big toe should melt in with rest of foot** _(easy)_ `mux3qjhkxlrp3`
-  - images: images/mux3qie7foi12.jpg
 - [ ] 🔧 ****varken board changes** _(easy)_ `mux372cdw2srj`
   > remove time of day based background effects like the moon. screen is looking cluttered
 - [ ] 💡 **swipe items of shopping list to remove them** _(easy)_ `muwvog8njv1ae`
@@ -57,7 +55,7 @@ _Updated 2026-10-06T21:49:47.464Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_13 done._
+_14 done._
 
 ### Cosmetics gallery
 
