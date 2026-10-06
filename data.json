@@ -1417,6 +1417,23 @@
       "slot": "",
       "created": 1791289817357,
       "updated": 1791289834307
+    },
+    {
+      "id": "muwo5omjikzsu",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "additional interface themes",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791290573803,
+      "updated": 1791290573803
     }
   ],
   "notes": [
