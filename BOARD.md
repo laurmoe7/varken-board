@@ -1,13 +1,13 @@
 # Varken board
 
-_Updated 2026-10-06T19:59:13.290Z_
+_Updated 2026-10-06T20:02:29.453Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 💡 **monkey big toe sticks out too much. try again, without making any of the toes stick out** _(easy)_ `mux3qjhkxlrp3`
+- [ ] 💡 **monkey big toe should melt in with rest of foot** _(easy)_ `mux3qjhkxlrp3`
   - images: images/mux3qie7foi12.jpg
 - [ ] 🔧 ****varken board changes** _(easy)_ `mux372cdw2srj`
   > remove time of day based background effects like the moon. screen is looking cluttered
