@@ -299,8 +299,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   // A paste-ready description of one item to hand to a Claude session: where it lives, its labels, notes and pictures.
   function copyItem(state, it) {
-    const proj = state.projects.find((p) => p.id === it.project);
-    const lines = [projectName(state, it.project) + (it.gallery && proj && proj.gallery ? ' (' + proj.gallery + ')' : '') + ': ' + it.title];
+    const lines = [it.title]; // no project name: she pastes it where the project is already clear
     if (it.build) lines.push('Seen in build ' + it.build);
     if (it.notes) lines.push('', 'Notes:', it.notes);
     if (it.images.length) lines.push('', 'Pictures on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));

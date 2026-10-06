@@ -79,11 +79,11 @@ test('copyItem describes one item with notes, build and pictures', () => {
   const s = state();
   const it = L.createItem({ title: 'Hat clips', project: 'petshopper', type: 'bug', priority: 'now', effort: 'easy', build: '212', notes: 'left ear\nonly on cats', images: ['a1'] });
   const t = L.copyItem(s, it);
-  assert.match(t, /^Pet Shopper: Hat clips\nSeen in build 212/);
+  assert.match(t, /^Hat clips\nSeen in build 212/);
   assert.match(t, /Notes:\nleft ear\nonly on cats/);
   assert.match(t, /images\/a1\.jpg/);
   const g = L.copyItem(s, L.createItem({ title: 'cap', project: 'petshopper', gallery: true, slot: 'Hat', status: 'doing' }));
-  assert.strictEqual(g, 'Pet Shopper (Cosmetics): cap');
+  assert.strictEqual(g, 'cap');
   assert.doesNotMatch(t, /\[/);
 });
 
