@@ -1303,18 +1303,18 @@
       "id": "muwm0v58ei9ma",
       "project": "petshopper",
       "type": "idea",
-      "priority": "soon",
+      "priority": "now",
       "status": "open",
-      "title": "change recipe time to \"Let's cook\" and change the purple pan emoji next to it, blends into the backgound",
+      "title": "change recipe time to \"Let's cook\" ",
       "notes": "and change the purple pan emoji next to it, blends into the backgound",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791286989740,
-      "updated": 1791286989740
+      "updated": 1791286995561
     }
   ],
   "notes": [
