@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:11:54.589Z_
+_Updated 2026-10-06T00:13:35.665Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -30,6 +30,8 @@ _Updated 2026-10-06T00:11:54.589Z_
 
 ### Someday
 
+- [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
+  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is.
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
 - [ ] 💡 **player profile** _(medium)_ `muvxb48osnspa`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
