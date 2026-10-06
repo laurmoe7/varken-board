@@ -2135,13 +2135,13 @@
       "title": "when hovering over a sound in the random menu, show origin of sound (dark souls, Ragnarok Online, etc)",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791325553215,
-      "updated": 1791325553215
+      "updated": 1791325563910
     }
   ],
   "notes": [
