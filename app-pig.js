@@ -130,29 +130,31 @@ function emptyHtml(mood, title, hint) {
 // Things he says about what you just did. Never spammy: each event has a chance (`p`), and there is a cooldown
 // between any two. A line is a string or { t: text, act: action }. The poke lines are his catchphrases.
 const REACT = {
-  done: ['Ding! Look at you.', 'One down. Smug mode: on.', { t: 'Varken nummer één!', act: 'dance' }, 'Hrrrrng.. productive.', 'Acceptable. 👌', 'Do it again, I dare you.', 'Crossed off! Delicious.'],
+  done: ['Bigg could not have done that. Sweet little guy. 🐷', 'Ding! Look at you.', 'One down. Smug mode: on.', { t: 'Varken nummer één!', act: 'dance' }, 'Hrrrrng.. productive.', 'Acceptable. 👌', 'Do it again, I dare you.', 'Crossed off! Delicious.'],
   add: ['Another one?! You are insatiable.', 'Noted. Ominously.', 'Added. Future-you says thanks. Or ugh.', 'Bold of you to assume I will remember that.', 'Ooh, a new one. Excuse me, where will it sit?'],
   delete: ['Excuse me! That was important. Maybe.', 'Gone. Poof. No regrets.', 'Hrrrrng.. fine, bye.', 'Deleted! Undo is right there, coward.'],
   open: ['Nosy.', 'Peeking at the details, are we?', 'Excuse me, I was reading that.', 'Look all you want.'],
-  view: ['New page, who dis?', 'Change of scenery! Same pig.', 'Hrrrrng.. wake me when we get there.', 'Wandering around, hm?'],
+  view: ['Bigg got lost on a page like this once. Cute.', 'New page, who dis?', 'Change of scenery! Same pig.', 'Hrrrrng.. wake me when we get there.', 'Wandering around, hm?'],
   sync: ['Synced. I feel so safe. 💗', 'Cloud nap complete.', 'Backed up! Dramatic.'],
   syncfail: ['Sync is being a drama queen.', 'The internet ate it. Rude.', 'Hrrrrng.. offline again?'],
   settings: ['Poking the settings. Brave.', 'Do not touch anything important.', 'Excuse me, private area!'],
   image: ['Ooh, a picture!', 'Is that for me? It is for me.', 'Excuse me, who is that handsome one?'],
   note: ['Thoughts! Delicious.', 'Hrrrrng.. interesting.', 'Jot it, do not lose it.'],
   promote: ['Promotion! Look at that note go.', 'From thought to task. Terrifying.', { t: 'Varken nummer één! (that idea, I mean)', act: 'dance' }],
-  compare: ['Judgy, are we? I love it.', 'Side by side. Pick the cuter one. (Me.)'],
   reorder: ['Excuse me! Careful with the merchandise.', 'Rearranging the furniture again?', 'Priorities! Spicy.'],
   draw: ['Artist at work! 🎨', 'Is that a masterpiece? It is a masterpiece.'],
   help: ['Need a hint? Me too, honestly.', 'Cheat sheet! Smart.'],
   clean: ['Spring cleaning! Hrrrrng.. exhausting.', 'Bye-bye, mystery pictures.'],
   search: ['Looking for something? Check the snacks.', 'Hrrrrng.. seek and ye shall find.'],
   pick: ['Start with this one. Trust me.', 'Easy one first. I will not tell.', 'This one looks scared of you. Go!', 'Eeny, meeny, miny... this!'],
+  bigg: ['Bigg could never finish this many. He gets distracted by snacks.', 'Little Bigg looks up to me. Obviously.', 'I taught Bigg everything he knows. Which is nothing. Sweet boy.', 'Bigg says hi! (He did not. I am lying. He is asleep.)', 'Hrrrrng.. Bigg is snoring in the next room again. Rude. Cute.'],
   copy: ['Copied! Go bother Claude.', 'Off to Claude it goes.', 'Excuse me, I wrote that. Credit please.'],
   poke: [
     { t: 'Excuse me!', act: 'hop' }, { t: 'Hrrrrng..', act: 'wiggle' }, { t: 'Varken nummer één!', act: 'dance' }, 'Hey! Personal space!', 'Boop received. Boop returned.',
     'Are you going to feed me or just poke me?', 'I am working here! (I am not.)', { t: 'Hrrrrng.. five more minutes.', act: 'sprout' }, 'Do I look like a button? Do not answer that.',
     { t: 'Excuse me, I have a schedule!', act: 'note' }, 'Tickles!', { t: 'Varken nummer één, reporting for duty!', act: 'dance' },
+    'Bigg would have poked me back. Slowly. He is slow. 🐷', 'Do not tell Bigg I said he is sweet. I will deny it.', 'Bigg still thinks he can out-nap me. Adorable.',
+    { t: 'Excuse me, I am the BIGGER pig. Bigg is the smaller one. Confusing, I know.', act: 'wiggle' },
   ],
 };
 let lastReact = 0, lastReactLine = '';
@@ -265,7 +267,9 @@ $('#heroPig').addEventListener('click', () => {
 // Now and then he does something on his own.
 setInterval(renderHead, 300000); // nightcap on at 10 pm, off at 6 am
 setInterval(() => {
-  if (!document.hidden && !L.isNight() && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]);
+  if (document.hidden || L.isNight() || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+  if (Math.random() < 0.2) pigSay('bigg', { p: 1 }); // now and then he brings up his little brother
+  else pigAct(ACTS[Math.floor(Math.random() * ACTS.length)]);
 }, 35000);
 
 // The little pig by the name in the sidebar.

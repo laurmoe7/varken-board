@@ -79,11 +79,12 @@ test('copyItem describes one item with notes, build and pictures', () => {
   const s = state();
   const it = L.createItem({ title: 'Hat clips', project: 'petshopper', type: 'bug', priority: 'now', effort: 'easy', build: '212', notes: 'left ear\nonly on cats', images: ['a1'] });
   const t = L.copyItem(s, it);
-  assert.match(t, /^Pet Shopper: Hat clips\n\[Bug, now, easy\]\nSeen in build 212/);
+  assert.match(t, /^Pet Shopper: Hat clips\nSeen in build 212/);
   assert.match(t, /Notes:\nleft ear\nonly on cats/);
   assert.match(t, /images\/a1\.jpg/);
   const g = L.copyItem(s, L.createItem({ title: 'cap', project: 'petshopper', gallery: true, slot: 'Hat', status: 'doing' }));
-  assert.match(g, /^Pet Shopper \(Cosmetics\): cap\n\[Hat, making it\]/);
+  assert.strictEqual(g, 'Pet Shopper (Cosmetics): cap');
+  assert.doesNotMatch(t, /\[/);
 });
 
 test('pickForMe prefers easy, then urgent, ignores gallery and done, respects the view filter', () => {
@@ -214,7 +215,6 @@ test('the slot filter and the gallery text use the slot', () => {
   const f = { project: 'petshopper', status: 'all', gallery: true };
   assert.deepStrictEqual(L.filterItems(s.items, Object.assign({ slot: 'Hat' }, f)).map((i) => i.title), ['cap']);
   assert.strictEqual(L.filterItems(s.items, Object.assign({ slot: 'all' }, f)).length, 2);
-  assert.match(L.copyItem(s, s.items[0]), /\[Hat\]/);
   assert.match(L.boardMarkdown(s, 'today'), /\*\*cap\*\* \[Hat\]/);
 });
 
@@ -238,7 +238,6 @@ test('~effort shorthand sets the effort, and the effort filter and copy text use
   const items = [L.createItem({ title: 'a', project: 'funfx', effort: 'easy' }), L.createItem({ title: 'b', project: 'funfx' })];
   assert.deepStrictEqual(L.filterItems(items, { status: 'active', effort: 'easy' }).map((i) => i.title), ['a']);
   const s = Object.assign(state(), { items });
-  assert.match(L.copyItem(s, items[0]), /\[Idea, soon, easy\]/);
   assert.match(L.boardMarkdown(s), /\*\*a\*\* _\(easy\)_/);
 });
 

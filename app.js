@@ -198,7 +198,7 @@ function renderHead(poke) {
     sub.textContent = `${gp.emoji} ${gp.name} · ${g} ${g === 1 ? 'idea' : 'ideas'}`;
   } else if (now > L.NOW_CAP) {
     sub.classList.add('warn');
-    sub.textContent = `${now} things marked Now. That's a lot, pick the real top ${L.NOW_CAP}. 🐷`;
+    sub.textContent = `${now} things marked Now. Not everything can be first: maybe move a few to Soon? 🐷`;
   } else {
     const today = L.doneToday(state.items, Date.now(), ui.project);
     sub.textContent = (n === 1 ? '1 thing to do' : n + ' things to do') + (today ? ` · ✨ ${today} done today` : '');
@@ -282,7 +282,6 @@ function renderList() {
   renderSide();
   renderHead();
   renderTabs();
-  paintCompareBar();
 }
 
 const item = () => state.items.find((i) => i.id === ui.open && !i.deleted);
@@ -687,7 +686,7 @@ function wire() {
   // clicking anywhere outside the open details panel closes it (cards open their own item; dialogs and toasts don't count)
   document.addEventListener('click', (e) => {
     if (!ui.open || !e.target.isConnected) return;
-    if (e.target.closest('#detail, .card, .gcard, dialog, #toast, #cmpBar, #pickBtn')) return;
+    if (e.target.closest('#detail, .card, .gcard, dialog, #toast, #pickBtn')) return;
     closeItem();
   });
 

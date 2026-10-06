@@ -15,7 +15,6 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - Gallery cards can carry a slot tag (Hat, Clothes, Face...) and be filtered by it; each project can set its own slot list.
 - Options > Sync and backup can find and delete pictures nothing uses any more.
 - Effort: rate a task Easy, Medium or Hard (`~easy` `~medium` `~hard` in the quick line, or the panel). The title takes a colour (mint, butter, coral) and a tag; filter by effort in the header.
-- Gallery cards have a ⚖ to pick two to four and compare them big and side by side.
 - The pig in the header changes mood with the board (sleeping when clear, worried at too many Nows) and shows up in empty lists.
 - A quiet "N unused pictures" button appears in the sidebar.
 - Checking something off plays a soft chime and pops confetti (switch off in Options). The details panel slides over the page instead of squeezing the list.
@@ -40,3 +39,4 @@ The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open item
 - Undo on the done toast; Sundays the pig sums up the week (done count, busiest project); seasonal looks: winter earmuffs, spring petals, summer shades, autumn leaf. The header, input and tabs stay on top and shrink when you scroll.
 - Holiday looks: Santa hat 18-25 Dec, witch hat 25-31 Oct, crown on King's Day, pilgrim hat for Thanksgiving, bunny ears Easter weekend. Options has a switch for all seasonal clothes and a preview menu.
 - More looks: Sinterklaas, New Year, Carnival, Valentine, St Patrick, 4th of July, and a birthday on 10 May (party hat, confetti, fanfare, dance on first open).
+- Bigg, the pig's sweet little brother, comes up in his lines.

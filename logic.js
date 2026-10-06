@@ -298,11 +298,8 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   // A paste-ready description of one item to hand to a Claude session: where it lives, its labels, notes and pictures.
   function copyItem(state, it) {
-    const bits = it.gallery ? (it.slot ? [it.slot] : []) : [typeOf(it.type).label, it.priority].concat(it.effort ? [it.effort] : []);
-    if (it.status === 'doing') bits.push(it.gallery ? 'making it' : 'doing');
     const proj = state.projects.find((p) => p.id === it.project);
     const lines = [projectName(state, it.project) + (it.gallery && proj && proj.gallery ? ' (' + proj.gallery + ')' : '') + ': ' + it.title];
-    if (bits.length) lines.push('[' + bits.join(', ') + ']');
     if (it.build) lines.push('Seen in build ' + it.build);
     if (it.notes) lines.push('', 'Notes:', it.notes);
     if (it.images.length) lines.push('', 'Pictures on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));

@@ -17,8 +17,8 @@ const HATS = {
     <rect x="46" y="35" width="28" height="8" fill="#3d2b24"/><rect x="55" y="33.5" width="10" height="11" rx="1.5" fill="none" stroke="#ffd35a" stroke-width="2.4"/><rect x="58" y="37" width="4" height="4" fill="#ffd35a"/></g>`,
   birthday: party('#ff9ec7', '#ffe29a', '<circle cx="56" cy="28" r="2.4" fill="#fff4b0"/><circle cx="64" cy="36" r="2.4" fill="#b9a4ff"/><circle cx="55" cy="40" r="2" fill="#8fd3ff"/><circle cx="62" cy="20" r="1.8" fill="#fff"/>'),
   newyear: party('#3a2f86', '#ffd35a', '<path d="M56 30 l1.3 2.8 3 .3 -2.2 2 .7 3 -2.8 -1.6 -2.8 1.6 .7 -3 -2.2 -2 3 -.3z" fill="#ffd35a"/><circle cx="64" cy="22" r="1.6" fill="#ffd35a"/>'),
-  sinterklaas: `<g class="hat"><path d="M40 46 Q42 22 60 4 Q78 22 80 46 Z" fill="#e63950"/><path d="M60 6 Q58 28 60 44" fill="none" stroke="#ffd35a" stroke-width="2.4"/>
-    <rect x="39" y="40" width="42" height="8" rx="3" fill="#ffd35a"/><path d="M60 14 v13 M54 20 h12" stroke="#ffd35a" stroke-width="3.4" stroke-linecap="round"/></g>`,
+  sinterklaas: `<g class="hat"><path d="M40 46 Q42 22 60 4 Q78 22 80 46 Z" fill="#e63950"/>
+    <rect x="39" y="40" width="42" height="8" rx="3" fill="#ffd35a"/><rect x="58.4" y="12" width="3.2" height="16" fill="#ffd35a"/><rect x="53" y="17.5" width="14" height="3.2" fill="#ffd35a"/></g>`,
   carnival: `<g class="hat"><path d="M36 46 Q30 28 31 14 Q44 22 54 36 Z" fill="#ff9a3d"/><path d="M48 38 Q54 20 60 6 Q66 20 72 38 Z" fill="#b57bff"/><path d="M66 36 Q76 22 89 14 Q90 28 84 46 Z" fill="#ff9a3d"/>
     <path d="M36 46 Q60 38 84 46" fill="none" stroke="#ffe29a" stroke-width="5" stroke-linecap="round"/><circle cx="31" cy="14" r="4" fill="#ffd35a"/><circle cx="60" cy="6" r="4" fill="#ffd35a"/><circle cx="89" cy="14" r="4" fill="#ffd35a"/></g>`,
   valentine: `<g class="hat"><path d="M34 44 Q60 34 86 44" fill="none" stroke="#ff7fa6" stroke-width="4.5" stroke-linecap="round"/><path d="M44 40 Q40 32 42 24 M76 40 Q80 32 78 24" fill="none" stroke="#ff7fa6" stroke-width="2.4" stroke-linecap="round"/>${heart(42, 12, 1, '#ff4f7d')}${heart(78, 12, 1, '#ffb3cf')}</g>`,
