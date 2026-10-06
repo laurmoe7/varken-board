@@ -1097,6 +1097,23 @@
       "slot": "",
       "created": 1791245416652,
       "updated": 1791245416652
+    },
+    {
+      "id": "muvxa9fki689g",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "photoshoot mode in dressing room",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791245437760,
+      "updated": 1791245437760
     }
   ],
   "notes": [
