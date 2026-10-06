@@ -1827,6 +1827,25 @@
       "slot": "",
       "created": 1791313264306,
       "updated": 1791313264306
+    },
+    {
+      "id": "mux1on8k5ahnk",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "rubber duckie",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [
+        "mux1om9m1zjo4"
+      ],
+      "gallery": true,
+      "slot": "",
+      "created": 1791313293476,
+      "updated": 1791313293476
     }
   ],
   "notes": [
@@ -1999,6 +2018,10 @@
     "mux1nzu76t5s9": {
       "name": "image.png",
       "added": 1791313263153
+    },
+    "mux1om9m1zjo4": {
+      "name": "image.png",
+      "added": 1791313292223
     }
   }
 }
