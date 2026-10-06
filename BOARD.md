@@ -1,13 +1,13 @@
 # Varken board
 
-_Updated 2026-10-06T13:20:24.416Z_
+_Updated 2026-10-06T13:22:27.345Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-  > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. mute dressing room sounds in photo shoot menu.
+  > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. allowing rotating of nibble in photoshoots. mute dressing room sounds in photo shoot menu.
 - [ ] 🔧 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
 
 ### Soon
