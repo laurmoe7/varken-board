@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T00:36:00.031Z_
+_Updated 2026-10-06T00:36:08.189Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,6 +13,7 @@ _Updated 2026-10-06T00:36:00.031Z_
   > it sits in front of the shopping list and is too intrusive
 - [ ] 💡 **holding toy above head makes pet annoyed** _(easy)_ `muvshzp12zzr2`
 - [ ] 💡 **search menu in dressing room** _(easy)_ `muvsf90rbtfto`
+- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** _(easy)_ `muvry35yoek6i`
 
 ### Soon
 
@@ -21,7 +22,6 @@ _Updated 2026-10-06T00:36:00.031Z_
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
-- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** `muvry35yoek6i`
 - [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
   > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
