@@ -1387,7 +1387,7 @@
     {
       "id": "muwnlcegebvcf",
       "project": "petshopper",
-      "type": "idea",
+      "type": "fix",
       "priority": "now",
       "status": "open",
       "title": "make pet less upset about eating fruit and veggies",
@@ -1399,7 +1399,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791289624840,
-      "updated": 1791289624840
+      "updated": 1791289829279
     },
     {
       "id": "muwnpgy5ks8kb",
