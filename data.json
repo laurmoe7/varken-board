@@ -1165,6 +1165,23 @@
       "slot": "",
       "created": 1791245477688,
       "updated": 1791245477688
+    },
+    {
+      "id": "muvxblwe4wtzu",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "accounts and syncing with other household members",
+      "notes": "",
+      "build": "",
+      "effort": "hard",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791245500574,
+      "updated": 1791245500574
     }
   ],
   "notes": [
