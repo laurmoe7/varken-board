@@ -1502,6 +1502,25 @@
       "slot": "",
       "created": 1791303206711,
       "updated": 1791303206711
+    },
+    {
+      "id": "mux161fqrn7xj",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "propeller beanie + lollipop",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [
+        "mux15ydf2e1qk"
+      ],
+      "gallery": true,
+      "slot": "",
+      "created": 1791312425414,
+      "updated": 1791312425414
     }
   ],
   "notes": [
