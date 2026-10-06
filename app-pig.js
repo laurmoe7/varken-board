@@ -30,6 +30,7 @@ function pigSvg(mood, cls, opts) {
   const o = opts || {};
   const stage = o.stage == null ? 1 : o.stage;
   const look = LOOK_DEFS[o.look] || {};
+  const phase = o.phase || (o.morning ? 'morning' : '');
   const eye = (x, dx) => `<ellipse cx="${x}" cy="62" rx="4.4" ry="5.2" fill="${PIG_INK}"/><circle cx="${x - 1.4 + dx}" cy="60" r="1.9" fill="#fff"/>`;
   const eyes = {
     happy: eye(45, 0) + eye(75, 0),
@@ -41,7 +42,9 @@ function pigSvg(mood, cls, opts) {
   const extra = {
     happy: '<text class="day-note" x="96" y="46" font-size="13" font-weight="800" fill="#ffd1e6">♪</text>'
       + '<g class="day-fly"><path d="M0 0 q-5 -7 -7 -2 q0 5 7 2 q5 3 7 -2 q-2 -5 -7 2z" fill="#ffe29a" stroke="#ffc46b" stroke-width=".8"/></g>'
-      + (o.morning ? '<g class="day-sun"><circle cx="16" cy="18" r="6" fill="#ffe29a"/><g class="day-rays" stroke="#ffe29a" stroke-width="2" stroke-linecap="round"><path d="M16 6v3M16 27v3M4 18h3M25 18h3M7.5 9.5l2 2M22.5 24.5l2 2M24.5 9.5l-2 2M9.5 24.5l-2 2"/></g></g>' : ''),
+      + (phase === 'morning' ? '<g class="day-sun"><circle cx="16" cy="18" r="6" fill="#ffe29a"/><g class="day-rays" stroke="#ffe29a" stroke-width="2" stroke-linecap="round"><path d="M16 6v3M16 27v3M4 18h3M25 18h3M7.5 9.5l2 2M22.5 24.5l2 2M24.5 9.5l-2 2M9.5 24.5l-2 2"/></g></g>' : '')
+      + (phase === 'lunch' ? '<g class="day-snack"><circle cx="102" cy="100" r="6.5" fill="#ff6b82"/><path d="M102 93.5 q1 -4 4 -5" fill="none" stroke="#7a5644" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="106" cy="91" rx="3.2" ry="1.7" fill="#8ff0c8" transform="rotate(-30 106 91)"/><path d="M98.5 98 q-1 -3 2 -4.5" fill="none" stroke="#ffd0e0" stroke-width="1.4" stroke-linecap="round"/></g>' : '')
+      + (phase === 'evening' ? '<g class="eve-moon"><path d="M26 6 A14 14 0 0 0 26 34 A20 20 0 0 1 26 6 Z" fill="#fff4c8"/></g>' + [[10, 52, '0s'], [111, 58, '1.1s'], [108, 98, '2.2s'], [9, 100, '.6s']].map(([x, y, d]) => `<g class="eve-fire" style="--d:${d}"><circle cx="${x}" cy="${y}" r="3.6" fill="#ffe97a" opacity=".3"/><circle cx="${x}" cy="${y}" r="1.6" fill="#fff6a8"/></g>`).join('') : ''),
     sleep: '<text x="92" y="40" font-size="14" font-weight="800" fill="#b9a4ff">z</text><text x="102" y="28" font-size="10" font-weight="800" fill="#b9a4ff">z</text>',
     worry: '<path d="M98 36 q5 6 0 10.5 q-5 -4.5 0 -10.5z" fill="#8fd3ff"/>',
     sniff: '<circle cx="100" cy="30" r="7" fill="#b9a4ff33" stroke="#b9a4ff" stroke-width="2.6"/><path d="M105 35 l7 7" stroke="#b9a4ff" stroke-width="3.6" stroke-linecap="round"/>',
@@ -51,7 +54,7 @@ function pigSvg(mood, cls, opts) {
     <path d="M40 92 h26 M40 99 h18" stroke="#c9a24a" stroke-width="2.4" stroke-linecap="round"/><path d="M70 90 l4 4 8 -9" fill="none" stroke="#ff6f9f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></g>
     <ellipse cx="30" cy="92" rx="7" ry="9" transform="rotate(-24 30 92)" fill="#ffa6c4"/><ellipse cx="90" cy="92" rx="7" ry="9" transform="rotate(24 90 92)" fill="#ffa6c4"/></g>`
     : '<ellipse cx="14" cy="80" rx="7" ry="10" transform="rotate(20 14 80)" fill="#ffa6c4"/><ellipse cx="106" cy="80" rx="7" ry="10" transform="rotate(-20 106 80)" fill="#ffa6c4"/>';
-  return `<svg class="pig ${cls || ''} pig-${m}${o.morning ? ' pig-morning' : ''}${o.look ? ' look-' + o.look : ''}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
+  return `<svg class="pig ${cls || ''} pig-${m}${phase ? ' pig-' + phase : ''}${o.look ? ' look-' + o.look : ''}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
     <ellipse cx="44" cy="104" rx="10" ry="6" fill="#ff9fbc"/><ellipse cx="76" cy="104" rx="10" ry="6" fill="#ff9fbc"/>
     <g class="ear ear-l"><path d="M26 44 Q20 22 36 20 Q50 22 54 36 Z" fill="#ffa6c4"/></g><g class="ear ear-r"><path d="M94 44 Q100 22 84 20 Q70 22 66 36 Z" fill="#ffa6c4"/></g>
     <ellipse cx="60" cy="70" rx="46" ry="38" fill="#ffb8cf"/><ellipse cx="60" cy="82" rx="30" ry="20" fill="#ffd3e2" opacity=".55"/>
@@ -61,6 +64,7 @@ function pigSvg(mood, cls, opts) {
     ${look.shades && !o.cap ? SHADES : ''}
     <ellipse cx="33" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/><ellipse cx="87" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/>
     <ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/>
+    ${look.scarf && !o.cap ? SCARF : ''}
     ${note}
     ${look.fall ? FALLS[look.fall] : ''}
     ${m === 'sleep' ? '<g class="snot"><circle cx="64" cy="76" r="4.5" fill="#d9ecff88" stroke="#fff" stroke-width="1.2"/><circle cx="62.6" cy="74.4" r="1.2" fill="#fff"/></g>' : ''}
@@ -90,7 +94,9 @@ function heroSay(gp, open, now, poke) {
   if (key !== sayKey || poke) {
     const list = SAYINGS[key];
     let pick = list[Math.floor(Math.random() * list.length)];
-    if (list.length > 1 && pick === sayText.replace(/\d+/, '{n}')) pick = list[(list.indexOf(pick) + 1) % list.length];
+    const ctx = key === 'night' || key === 'birthday' ? [] : contextLines(); // special days and times of day sneak in
+    if (ctx.length && Math.random() < (looks.on && L.holidayOf() ? 0.6 : 0.3)) pick = ctx[Math.floor(Math.random() * ctx.length)];
+    else if (list.length > 1 && pick === sayText.replace(/\d+/, '{n}')) pick = list[(list.indexOf(pick) + 1) % list.length];
     sayKey = key;
     sayText = pick;
   }
@@ -102,14 +108,14 @@ function paintHero(gp, open, now, poke) {
   const night = L.isNight(); // from 10 pm to 6 am he sleeps in his nightcap, whatever the list looks like
   const mood = night ? 'sleep' : gp ? (gp === 'notes' && !open ? 'sleep' : 'happy') : now > L.NOW_CAP ? 'worry' : open ? 'happy' : 'sleep';
   const hr = new Date().getHours();
-  const morning = !night && hr >= 6 && hr < 11; // a little sun and a stretch until eleven
+  const phase = night ? '' : phaseNow(); // morning sun and stretch, a lunch snack, an evening moon with fireflies
   const look = currentLook();
   const cap = night && !looks.preview; // a look being previewed shows even at night
-  const key = mood + (cap ? '-night' : '') + (morning ? '-morning' : '') + '-' + look;
+  const key = mood + (cap ? '-night' : '') + (phase ? '-' + phase : '') + '-' + look;
   const done = L.doneToday(state.items, Date.now(), 'all');
   const stage = Math.min(3, Math.floor(done / 3)); // the plant grows on the 3rd, 6th and 9th task of the day
   if (key !== heroMood) {
-    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap, morning, look });
+    $('#heroPig').innerHTML = pigSvg(mood, '', { note: true, stage, cap, phase, look });
     heroMood = key;
     heroStage = stage;
   } else if (stage !== heroStage) {
@@ -195,6 +201,15 @@ function greetOnce() {
   } catch { return; }
   const h = new Date().getHours();
   const pool = L.isNight() ? GREET.night : h < 12 ? GREET.morning : h < 18 ? GREET.afternoon : GREET.evening;
+  const hol = looks.on ? L.holidayOf() : '';
+  if (hol && hol !== 'birthday' && LOOK_SAYS[hol]) {
+    setTimeout(() => {
+      holdSay(LOOK_SAYS[hol][Math.floor(Math.random() * LOOK_SAYS[hol].length)], 8000);
+      if (['newyear', 'fourth', 'kingsday', 'christmas'].includes(hol)) celebrate($('#heroPig'), false, 5); // the big days get a party
+      else pigAct('dance');
+    }, 1300);
+    return;
+  }
   if (L.holidayOf() !== 'birthday') setTimeout(() => {
     holdSay(pool[Math.floor(Math.random() * pool.length)], 6500);
     pigAct(L.isNight() ? 'sprout' : 'hop');

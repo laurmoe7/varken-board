@@ -41,3 +41,4 @@ The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open item
 - More looks: Sinterklaas, New Year, Carnival, Valentine, St Patrick, 4th of July, and a birthday on 10 May (party hat, confetti, fanfare, dance on first open).
 - Bigg, the pig's sweet little brother, comes up in his lines.
 - Options has an effect tester: pick a look and the pig's state, then run dance, falling bits, butterfly, peek, bubble, party, birthday hello and more.
+- Winter scarf; more holidays with hats (Mother's Day, Father's Day, Prinsjesdag, Sint-Maarten, Bevrijdingsdag); time-of-day effects (morning sun, lunch apple, evening moon and fireflies); special-day, weekday and season comments; a party on first open for the big holidays.

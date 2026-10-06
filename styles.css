@@ -511,3 +511,12 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 @keyframes peek-now { 0%, 100% { opacity: 0; } 15%, 75% { opacity: 1; } }
 .pig-sleep.fx-bubble .snot { animation: snot 5s ease-in-out 0s 1; }
 .pig-sleep.fx-bubble .snot { animation-delay: -1s; }
+
+/* time of day: a lunch snack, an evening moon and fireflies */
+.pig .day-snack { animation: snack-bob 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes snack-bob { 0%, 100% { transform: translateY(0) rotate(-6deg); } 50% { transform: translateY(-5px) rotate(8deg); } }
+.pig .eve-moon { animation: day-glow 6s ease-in-out infinite; }
+.pig .eve-fire { opacity: 0; animation: eve-twinkle 4s ease-in-out var(--d, 0s) infinite; }
+@keyframes eve-twinkle { 0%, 100% { opacity: 0; transform: translate(0, 0); } 30%, 70% { opacity: 1; transform: translate(2px, -4px); } }
+.sticky-top.compact .day-snack, .sticky-top.compact .eve-fire { display: none; }
+@media (prefers-reduced-motion: reduce) { .pig .day-snack, .pig .eve-fire, .pig .eve-moon { animation: none; } .pig .eve-fire { opacity: 1; } }

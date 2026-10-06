@@ -347,3 +347,14 @@ test('countNow can count one project; !asap is the same as !now', () => {
   assert.strictEqual(L.parseQuick('fix it !asap', []).priority, 'now');
   assert.strictEqual(L.PRIORITIES[0].label, 'ASAP');
 });
+
+test('Dutch and American family days', () => {
+  const h = (y, m, d) => L.holidayOf(new Date(y, m, d));
+  assert.strictEqual(h(2027, 4, 9), 'mothersday'); // 2nd Sunday of May 2027
+  assert.strictEqual(h(2027, 4, 16), '');
+  assert.strictEqual(h(2026, 4, 10), 'birthday'); // her birthday wins over Mother's Day
+  assert.strictEqual(h(2027, 5, 20), 'fathersday'); // 3rd Sunday of June 2027
+  assert.strictEqual(h(2026, 8, 15), 'prinsjesdag'); // 3rd Tuesday of Sept 2026
+  assert.strictEqual(h(2026, 10, 11), 'sintmaarten');
+  assert.strictEqual(h(2026, 4, 5), 'bevrijding');
+});

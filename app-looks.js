@@ -1,8 +1,11 @@
 // The pig's seasonal and holiday clothes. Loads before app-pig.js, which draws them (pigSvg opts.look).
-// A look is a season (winter earmuffs, summer shades, falling petals or a leaf) or a holiday (a hat plus something falling).
+// (Holiday dates live in logic.js holidayOf.) A look is a season (winter earmuffs, summer shades, falling petals or a leaf) or a holiday (a hat plus something falling).
 // A hat replaces the plant for those few days; at night the nightcap still wins, unless a look is being previewed.
 const party = (body, trim, dots) => `<g class="hat"><g transform="rotate(-9 60 46)"><path d="M43 46 L60 4 L77 46 Z" fill="${body}"/>${dots}<path d="M43 46 Q60 52 77 46" fill="none" stroke="${trim}" stroke-width="5" stroke-linecap="round"/><circle cx="60" cy="4" r="5.5" fill="${trim}"/></g></g>`;
 const heart = (x, y, s, f) => `<path transform="translate(${x} ${y}) scale(${s})" d="M0 4 C-6 -4 -12 4 0 12 C12 4 6 -4 0 4Z" fill="${f}"/>`;
+// A striped scarf round his middle with a tail on the right; drawn behind the sticky note.
+const SCARF = `<g class="scarf"><path d="M24 93 Q60 108 96 93 L95 102 Q60 117 25 102 Z" fill="#b9a4ff"/><path d="M33 99 l5 -2 M45 102 l5 -1.5 M58 104 l5 0 M71 102 l5 1.5 M83 99 l5 2" stroke="#ff9ec7" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M84 100 L98 104 L96 122 L84 118 Z" fill="#b9a4ff"/><path d="M85 108 l12 3 M84.5 114 l12 3" stroke="#ff9ec7" stroke-width="3.2" stroke-linecap="round"/><path d="M85 118 l-1 4 M89 119 l-1 4 M93 120.5 l-1 4" stroke="#efe8ff" stroke-width="1.6" stroke-linecap="round"/></g>`;
 const EARMUFFS = `<g class="earmuffs"><path d="M17 56 Q60 -8 103 56" fill="none" stroke="#b9a4ff" stroke-width="4.5" stroke-linecap="round"/><circle cx="17" cy="58" r="9" fill="#c9b8ff"/><circle cx="103" cy="58" r="9" fill="#c9b8ff"/><circle cx="14.5" cy="55.5" r="2.4" fill="#efe8ff"/><circle cx="100.5" cy="55.5" r="2.4" fill="#efe8ff"/></g>`;
 const SHADES = `<g class="shades"><rect x="36" y="44" width="20" height="11" rx="5" fill="#3a2f66"/><rect x="64" y="44" width="20" height="11" rx="5" fill="#3a2f66"/><path d="M56 48 h8" stroke="#3a2f66" stroke-width="2.4"/><path d="M39 47 l6 0 M67 47 l6 0" stroke="#b9a4ff" stroke-width="1.6" stroke-linecap="round"/></g>`;
 const HATS = {
@@ -27,6 +30,16 @@ const HATS = {
   fourth: `<g class="hat"><path d="M46 42 L48 10 H72 L74 42 Z" fill="#fffaf5"/><path d="M48 12 h4 l1 30 h-4z M56 11 h4 v31 h-4z M64 11 h4 v31 h-4z M70 12 h2 l1.5 30 h-3z" fill="#ff6b82"/>
     <rect x="46" y="30" width="28" height="12" fill="#4a5fd0"/><path d="M52 36 l1 2 2 .2 -1.5 1.4 .5 2 -2 -1 -2 1 .5 -2 -1.5 -1.4 2 -.2z M66 36 l1 2 2 .2 -1.5 1.4 .5 2 -2 -1 -2 1 .5 -2 -1.5 -1.4 2 -.2z" fill="#fffaf5" transform="scale(.9) translate(6 3.5)"/>
     <ellipse cx="60" cy="43" rx="31" ry="6.5" fill="#3a47a8"/><ellipse cx="60" cy="10" rx="12" ry="3" fill="#ff8aa0"/></g>`,
+  mothersday: `<g class="hat"><path d="M30 47 Q60 22 90 47" fill="none" stroke="#5fd3a0" stroke-width="3.4" stroke-linecap="round"/>
+    ${[[34, 42, '#ff9ec7'], [46, 33, '#d9ccff'], [60, 29, '#fff0f6'], [74, 33, '#ffc6a0'], [86, 42, '#ff9ec7']].map(([x, y, c]) => `<g transform="translate(${x} ${y})"><circle cx="0" cy="-3.6" r="3.2" fill="${c}"/><circle cx="3.6" cy="0" r="3.2" fill="${c}"/><circle cx="0" cy="3.6" r="3.2" fill="${c}"/><circle cx="-3.6" cy="0" r="3.2" fill="${c}"/><circle r="2" fill="#ffd35a"/></g>`).join('')}</g>`,
+  fathersday: `<g class="hat"><path d="M36 46 Q38 20 62 18 Q86 20 88 46 Z" fill="#8a6a54"/><path d="M68 40 Q96 38 102 48 Q82 50 66 46 Z" fill="#6f523f"/><circle cx="62" cy="17" r="3.2" fill="#6f523f"/><path d="M40 40 Q62 34 86 40" fill="none" stroke="#a88468" stroke-width="2.4"/></g>`,
+  prinsjesdag: `<g class="hat"><ellipse cx="60" cy="44" rx="42" ry="8" fill="#d9ccff"/><path d="M42 44 Q44 22 60 20 Q76 22 78 44 Z" fill="#e8dcff"/><path d="M42 40 Q60 46 78 40 L78 45 Q60 51 42 45 Z" fill="#ff7fa6"/>
+    <g transform="translate(46 32)"><circle cx="0" cy="-3.2" r="3" fill="#fff0f6"/><circle cx="3.2" cy="0" r="3" fill="#fff0f6"/><circle cx="0" cy="3.2" r="3" fill="#fff0f6"/><circle cx="-3.2" cy="0" r="3" fill="#fff0f6"/><circle r="2" fill="#ffd35a"/></g>
+    <path d="M76 30 Q98 6 104 20 Q92 20 82 38 Z" fill="#fffaf5" stroke="#d9ccff" stroke-width="1"/></g>`,
+  sintmaarten: `<g class="hat"><path d="M53 24 Q60 6 67 24" fill="none" stroke="#8a6a54" stroke-width="2.4" stroke-linecap="round"/><path d="M47 44 L45 27 Q60 19 75 27 L73 44 Z" fill="#ff9a3d"/><ellipse cx="60" cy="44" rx="14" ry="3" fill="#e8762a"/><ellipse cx="60" cy="27" rx="15" ry="3.6" fill="#ffb26b"/>
+    <circle cx="60" cy="36" r="9" fill="#ffe97a" opacity=".9"/><path d="M60 31 l1.4 3 3.2 .3 -2.4 2.1 .8 3.2 -3 -1.7 -3 1.7 .8 -3.2 -2.4 -2.1 3.2 -.3z" fill="#ff9a3d"/></g>`,
+  bevrijding: `<g class="hat"><clipPath id="bevClip"><path d="M34 46 Q36 18 62 16 Q88 18 90 46 Z"/></clipPath><g clip-path="url(#bevClip)"><rect x="30" y="12" width="64" height="14" fill="#ff6b6b"/><rect x="30" y="26" width="64" height="10" fill="#fffaf5"/><rect x="30" y="36" width="64" height="12" fill="#5b7bff"/></g>
+    <path d="M32 46 Q62 40 92 46" fill="none" stroke="#ff9a3d" stroke-width="5" stroke-linecap="round"/><circle cx="62" cy="14" r="5.4" fill="#ff9a3d"/></g>`,
   bunny: `<g class="hat"><path d="M38 40 Q28 6 42 3 Q54 4 54 38 Z" fill="#fff4f8"/><path d="M42 36 Q36 10 43 8 Q50 9 49 35 Z" fill="#ffb3cf"/>
     <path d="M82 40 Q92 6 78 3 Q66 4 66 38 Z" fill="#fff4f8"/><path d="M78 36 Q84 10 77 8 Q70 9 71 35 Z" fill="#ffb3cf"/>
     <path d="M34 44 Q60 36 86 44" fill="none" stroke="#d9a6ff" stroke-width="5" stroke-linecap="round"/></g>`,
@@ -44,10 +57,11 @@ const FALLS = {
   clover: fallPieces((c) => `<circle cx="-1.6" r="1.8" fill="${c}"/><circle cx="1.6" r="1.8" fill="${c}"/><circle cy="-2" r="1.8" fill="${c}"/>`, ['#4ec98a', '#8ff0c8', '#3aa06b', '#b8f5d0', '#5fd3a0', '#6ee0a8']),
   stars: fallPieces((c) => starPath(c), ['#ffe29a', '#fffaf0', '#ff8aa0', '#8fb4ff', '#ffd35a', '#ffffff']),
   nuts: fallPieces((c) => `<circle r="1.9" fill="${c}"/><circle cx="4" cy="3" r="1.4" fill="${c}"/>`, ['#d9a066', '#c68a4f', '#e8b878', '#b97a46', '#f0c890']),
+  dutch: fallPieces((c, i) => `<rect width="5" height="2.4" fill="${c}" transform="rotate(${i * 41})"/>`, ['#ff6b6b', '#fffaf5', '#5b7bff', '#ff9a3d', '#fffaf5', '#ff6b6b']),
   confetti: fallPieces((c, i) => `<rect width="5" height="2.4" fill="${c}" transform="rotate(${i * 37})"/>`, ['#ff7fa6', '#8fd3ff', '#ffe29a', '#b9a4ff', '#8ff0c8', '#ffa94d', '#ff6b82']),
 };
 const LOOK_DEFS = {
-  winter: { label: '❄️ Winter', earmuffs: true },
+  winter: { label: '❄️ Winter (scarf and earmuffs)', earmuffs: true, scarf: true },
   spring: { label: '🌸 Spring', fall: 'petal' },
   summer: { label: '😎 Summer', shades: true },
   autumn: { label: '🍂 Autumn', fall: 'leaf' },
@@ -62,8 +76,64 @@ const LOOK_DEFS = {
   carnival: { label: '🎭 Carnival', hat: 'carnival', fall: 'confetti' },
   valentine: { label: '💘 Valentine (12-14 Feb)', hat: 'valentine', fall: 'hearts' },
   stpatrick: { label: '☘️ St Patrick (17 Mar)', hat: 'stpatrick', fall: 'clover' },
+  mothersday: { label: "💐 Mother's Day (2nd Sun of May)", hat: 'mothersday', fall: 'petal' },
+  fathersday: { label: "🧢 Father's Day (3rd Sun of June)", hat: 'fathersday' },
+  prinsjesdag: { label: '👒 Prinsjesdag (3rd Tue of Sept)', hat: 'prinsjesdag', fall: 'petal' },
+  sintmaarten: { label: '🏮 Sint-Maarten (11 Nov)', hat: 'sintmaarten', fall: 'stars' },
+  bevrijding: { label: '🇳🇱 Bevrijdingsdag (5 May)', hat: 'bevrijding', fall: 'dutch' },
   fourth: { label: '🎆 4th of July (3-4 Jul)', hat: 'fourth', fall: 'stars' },
 };
+
+// Things he says on special days, by season, by time of day and by weekday. contextLines() picks from them; heroSay
+// (app-pig.js) swaps one in now and then. Holiday lines are tried more often.
+const LOOK_SAYS = {
+  christmas: ['Kerstmis is coming! I want a snack under the tree.', 'Ho ho ho! (That is a pig laugh. Obviously.)', 'Is it cookies o\'clock yet? hehe..'],
+  halloween: ['Boo! Did I scare you? Be honest. hehe..', 'Trick or treat? I pick treat.', 'I am a witch pig. Respect the hat.'],
+  kingsday: ['Lang leve de koning! Everything is orange today. 🧡', 'Oranje boven! Vrijmarkt for pigs when?', 'Excuse me, I am royalty today. hehe..'],
+  thanksgiving: ['Thankful for snacks. Mostly snacks.', 'Gobble gobble! Pass the pumpkin.', 'Happy Thanksgiving! I am thankful for you. And pie. hehe..'],
+  easter: ['Hop hop! Where are the eggs?', 'Vrolijk Pasen! I am the Easter Pig now.', 'I am eating chocolate for the next four days. hehe..'],
+  sinterklaas: ['Sinterklaas kapoentje, gooi wat in mijn schoentje!', 'I have been a good pig. Mostly. hehe..', 'Pepernoten! Pepernoten! Pepernoten!'],
+  newyear: ['Gelukkig nieuwjaar! Oliebollen first, resolutions later.', 'New year, same pig. Fabulous.', '3, 2, 1.. oink! 🎆'],
+  carnival: ['Alaaf! Hrrrrng.. I am in disguise. (I am a pig.)', 'Carnival! Today the rules are suggestions. hehe..', 'Look at my jester hat. Look at it.'],
+  valentine: ['Happy Valentine! You are my favourite human. hehe..', 'Roses are red, pigs are pink, you finish tasks, that is what I think.', 'Boop. That is a kiss. Do not make it weird.'],
+  stpatrick: ['Lucky pig! Pot of gold? Pot of snacks.', 'Top o\' the morning to ya! hehe..', 'I found a four-leaf clover. It was a weed. Still lucky.'],
+  fourth: ['Happy 4th of July! Fireworks are loud and I am dramatic. 🎆', 'Hot dogs! I mean pigs in blankets. Wait.. no.', 'Land of the free, home of the snack.'],
+  mothersday: ['Happy Mother\'s Day! Call your mum. Moeder is the best. 💐', 'Moederdag! Flowers are for mums, and a tiny bit for pigs. hehe..'],
+  fathersday: ['Happy Father\'s Day! Dad jokes allowed today. Oink. hehe..', 'Vaderdag! Give your dad a hug, then a task.'],
+  prinsjesdag: ['Prinsjesdag! Look at my hat. Look at my HAT.', 'Is that the Gouden Koets? No, it is a pig on a tour. hehe..'],
+  sintmaarten: ['Sint-Maarten! Sing for the sweets, little lantern. 🏮', 'Sinte Sinte Maarten.. where are my sweets? hehe..'],
+  bevrijding: ['Bevrijdingsdag! Free as a pig. 🇳🇱', 'Freedom day! Do whatever you want. Except skip tasks. hehe..'],
+};
+const SEASON_SAYS = {
+  winter: ['Brrr. Warm scarf, warm heart, cold snout.', 'It is cold. Staying inside is a valid strategy. hehe..', 'Hot chocolate and tasks. Or just the chocolate.'],
+  spring: ['Spring! The plant is thrilled. I am sneezing.', 'Flowers everywhere. Hrrrrng.. allergies.', 'Lente! Time to clear out the old stuff. hehe..'],
+  summer: ['Summer! Shades on, tasks off. (Just kidding.)', 'It is hot. My snout is melting. hehe..', 'Ice cream break? I am only asking for me.'],
+  autumn: ['Autumn! Leaves, snacks, blankets. Hrrrrng.. cosy.', 'Crunchy leaves are the best. I have checked.', 'Pumpkin season! I demand pumpkin everything. hehe..'],
+};
+const TIME_SAYS = {
+  morning: ['Good morning, sunshine! Coffee, then chaos.', 'Morning stretch! Do you stretch? You should. hehe..', 'A fresh day, a fresh list. Do the easy one first.'],
+  lunch: ['Lunch time! Eat something. I will wait. (I will also eat.)', 'Hungry? Me too. This list can wait ten minutes. hehe..', 'No lunch, no tasks. Pig rules.'],
+  evening: ['Evening already? Time flies when you ignore tasks. hehe..', 'The moon is up. Wrap it up soon, okay?', 'Gezellig evening! One more task and then snacks.'],
+  monday: ['Monday. Ugh. Coffee? hehe..', 'New week, same pig. Let us be gentle with ourselves.'],
+  wednesday: ['Hump day! You are halfway there. Or halfway behind. hehe..'],
+  friday: ['It is Friday! Do the hard ones now, party later. 🎉', 'Friday! Almost weekend. Almost. hehe..'],
+  weekend: ['It is the weekend and you are still here? Respect. Or concern. hehe..', 'Weekend vibes. Tasks are optional. (They are not.)'],
+};
+// Morning 6-11, lunch 12-14, evening 18-22; the rest of the day he is simply awake (night: asleep, see L.isNight).
+const phaseNow = (d) => { const h = (d || new Date()).getHours(); return h >= 6 && h < 11 ? 'morning' : h >= 12 && h < 14 ? 'lunch' : h >= 18 && h < 22 ? 'evening' : ''; };
+function contextLines(d) {
+  const date = d || new Date(), wd = date.getDay(), out = [];
+  const hol = looks.on ? L.holidayOf(date) : '';
+  if (hol && LOOK_SAYS[hol]) out.push(...LOOK_SAYS[hol], ...LOOK_SAYS[hol]);
+  if (looks.on) out.push(...SEASON_SAYS[L.seasonOf(date)]);
+  const ph = phaseNow(date);
+  if (ph) out.push(...TIME_SAYS[ph]);
+  if (wd === 1 && date.getHours() < 12) out.push(...TIME_SAYS.monday);
+  if (wd === 3) out.push(...TIME_SAYS.wednesday);
+  if (wd === 5) out.push(...TIME_SAYS.friday);
+  if (wd === 0 || wd === 6) out.push(...TIME_SAYS.weekend);
+  return out;
+}
 
 const looks = { on: true, preview: '' }; // preview: a look id picked in Options, until you reload
 try { looks.on = localStorage.getItem('varken-looks') !== 'off'; } catch { /* default on */ }
@@ -79,7 +149,8 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
   const paintPrev = () => {
     const id = looks.preview === 'none' ? '' : currentLook();
     const asleep = state0.value === 'asleep';
-    prev.innerHTML = pigSvg(asleep ? 'sleep' : 'happy', 'look-prev-pig', { stage: 1, look: id, morning: state0.value === 'morning', cap: asleep && !looks.preview });
+    const phase = ['morning', 'lunch', 'evening'].includes(state0.value) ? state0.value : '';
+    prev.innerHTML = pigSvg(asleep ? 'sleep' : 'happy', 'look-prev-pig', { stage: 1, look: id, phase, cap: asleep && !looks.preview });
   };
   const apply = () => { renderHead(); paintPrev(); };
   sel.onchange = () => { looks.preview = sel.value; apply(); };

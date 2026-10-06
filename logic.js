@@ -219,7 +219,9 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     return new Date(y, Math.floor(n / 31) - 1, (n % 31) + 1);
   }
   // A holiday look for the day, or ''. Christmas 18-25 Dec, Halloween 25-31 Oct, King's Day 27 Apr (26 if that is
-  // a Sunday), Sinterklaas 3-5 Dec, New Year 30 Dec-1 Jan, Valentine 12-14 Feb, St Patrick, 4 July, Carnival, birthday 10 May, Thanksgiving (US: 4th Thursday of Nov) and the day before, Easter from Good Friday to Easter Monday.
+  // a Sunday), Mother's/Father's Day, Prinsjesdag, Sint-Maarten, Bevrijdingsdag, Sinterklaas 3-5 Dec, New Year 30 Dec-1 Jan, Valentine 12-14 Feb, St Patrick, 4 July, Carnival, birthday 10 May, Thanksgiving (US: 4th Thursday of Nov) and the day before, Easter from Good Friday to Easter Monday.
+  // The n-th given weekday (0 = Sunday) of a month, as a day number.
+  const nthWeekday = (y, m, weekday, n) => 1 + ((weekday - new Date(y, m, 1).getDay() + 7) % 7) + 7 * (n - 1);
   function holidayOf(d) {
     const date = d || new Date(), y = date.getFullYear(), m = date.getMonth(), day = date.getDate();
     if (m === 11 && day >= 18 && day <= 25) return 'christmas';
@@ -230,6 +232,11 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       if (day === fourth || day === fourth - 1) return 'thanksgiving';
     }
     if (m === 4 && day === 10) return 'birthday'; // Lauren's
+    if (m === 4 && day === 5) return 'bevrijding'; // Bevrijdingsdag
+    if (m === 4 && day === nthWeekday(y, 4, 0, 2)) return 'mothersday'; // 2nd Sunday of May, the same in NL and the US
+    if (m === 5 && day === nthWeekday(y, 5, 0, 3)) return 'fathersday'; // 3rd Sunday of June
+    if (m === 8 && day === nthWeekday(y, 8, 2, 3)) return 'prinsjesdag'; // 3rd Tuesday of September
+    if (m === 10 && day === 11) return 'sintmaarten';
     if (m === 11 && day >= 3 && day <= 5) return 'sinterklaas';
     if ((m === 11 && day >= 30) || (m === 0 && day === 1)) return 'newyear';
     if (m === 1 && day >= 12 && day <= 14) return 'valentine';
