@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T03:39:28.256Z_
+_Updated 2026-10-06T03:39:44.681Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,7 +10,6 @@ _Updated 2026-10-06T03:39:28.256Z_
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
-- [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** _(medium)_ `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
   > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
@@ -38,7 +37,7 @@ _Updated 2026-10-06T03:39:28.256Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_9 done._
+_10 done._
 
 ### Cosmetics gallery
 
