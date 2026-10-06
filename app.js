@@ -480,8 +480,10 @@ function toggleDone(id) {
   const it = state.items.find((i) => i.id === id);
   if (!it) return;
   const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"], .gcard[data-id="${CSS.escape(id)}"]`);
+  const before = it.status;
   setField(it, 'status', it.status === 'done' ? 'open' : 'done');
   if (it.status === 'done') {
+    toast('Done! ✓', () => { setField(it, 'status', before); renderAll(); if (ui.open === id) renderDetail(); });
     const today = L.doneToday(state.items, Date.now(), 'all');
     celebrate(card, !galleryProject() && L.countOpen(state.items, 'all') === 0, today > 0 && today % 5 === 0 ? today : 0); // every fifth one of the day is a party
   }

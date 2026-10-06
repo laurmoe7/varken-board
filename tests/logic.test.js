@@ -279,3 +279,20 @@ test('notes: scoped, newest first, searchable, merged, validated and written to 
   assert.match(md, /Cosmetics notes[\s\S]*- hat sketch/);
   assert.doesNotMatch(md, /gone/);
 });
+
+test('weekSummary counts the last seven days and the busiest project', () => {
+  const now = new Date(2026, 9, 4, 12).getTime();
+  const day = 86400000;
+  const it = (project, ago, over) => Object.assign({ id: Math.random() + '', project, status: 'done', doneAt: now - ago * day }, over);
+  const items = [it('a', 1), it('a', 2), it('b', 3), it('b', 9), it('a', 1, { deleted: true }), it('a', 1, { status: 'open' })];
+  assert.deepStrictEqual(L.weekSummary(items, now), { done: 3, top: 'a', topCount: 2 });
+  assert.deepStrictEqual(L.weekSummary([], now), { done: 0, top: '', topCount: 0 });
+});
+
+test('seasonOf follows the months', () => {
+  assert.strictEqual(L.seasonOf(new Date(2026, 11, 24)), 'winter');
+  assert.strictEqual(L.seasonOf(new Date(2026, 0, 5)), 'winter');
+  assert.strictEqual(L.seasonOf(new Date(2026, 3, 5)), 'spring');
+  assert.strictEqual(L.seasonOf(new Date(2026, 6, 5)), 'summer');
+  assert.strictEqual(L.seasonOf(new Date(2026, 9, 5)), 'autumn');
+});

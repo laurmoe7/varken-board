@@ -195,6 +195,20 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     d.setHours(0, 0, 0, 0);
     return items.filter((i) => !i.deleted && i.status === 'done' && i.doneAt >= d.getTime() && (!project || project === 'all' || i.project === project)).length;
   }
+  // Last seven days: how many finished and which project got the most.
+  function weekSummary(items, now) {
+    const since = (now == null ? Date.now() : now) - 7 * 86400000;
+    const done = items.filter((i) => !i.deleted && i.status === 'done' && i.doneAt >= since);
+    const by = {};
+    for (const i of done) by[i.project] = (by[i.project] || 0) + 1;
+    const top = Object.keys(by).sort((a, b) => by[b] - by[a])[0] || '';
+    return { done: done.length, top, topCount: top ? by[top] : 0 };
+  }
+  // winter, spring, summer or autumn (northern hemisphere, local time)
+  function seasonOf(d) {
+    const m = (d || new Date()).getMonth();
+    return m === 11 || m < 2 ? 'winter' : m < 5 ? 'spring' : m < 8 ? 'summer' : 'autumn';
+  }
   const countGallery = (items, project) => items.filter((i) => !i.deleted && i.gallery && i.project === project).length;
 
   // Newer `updated` wins per item and per project; deletions are kept as `deleted: true` so they sync too.
@@ -338,7 +352,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
   const api = {
     TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
     uid, slug, typeOf, effortOf, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
-    filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday,
+    filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday, weekSummary, seasonOf,
     mergeStates, validateState, fitSize, projectName, copyItem, pickForMe, isNight, boardMarkdown,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
