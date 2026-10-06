@@ -1304,17 +1304,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "change recipe time to \"Let's cook\" ",
       "notes": "and change the purple pan emoji next to it, blends into the backgound",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791287497406,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791286989740,
-      "updated": 1791286995561
+      "updated": 1791287497406
     }
   ],
   "notes": [
