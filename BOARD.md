@@ -1,13 +1,11 @@
 # Varken board
 
-_Updated 2026-10-06T11:43:20.357Z_
+_Updated 2026-10-06T11:51:41.710Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
-- [ ] 💡 **change recipe time to "Let's cook" ** _(easy)_ `muwm0v58ei9ma`
-  > and change the purple pan emoji next to it, blends into the backgound
 - [ ] 💡 **improve ability to read measurements in recipes** _(easy)_ `muw57mgm92ved`
 
 ### Soon
@@ -44,7 +42,7 @@ _Updated 2026-10-06T11:43:20.357Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_9 done._
+_10 done._
 
 ### Cosmetics gallery
 
