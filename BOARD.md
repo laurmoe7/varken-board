@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T21:23:15.951Z_
+_Updated 2026-10-06T21:23:24.219Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -131,7 +131,6 @@ _13 done._
 
 - grumpy chef: import a recipe on 3 different days
 - tiger cat skin
-- monkey species
 - hummingbird skin
 - 10 goodnight kisses to unlock carer persona
 
