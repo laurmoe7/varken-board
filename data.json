@@ -373,8 +373,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791234248146,
-      "updated": 1791234248146,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 9
     },
     {
       "id": "muvqmowq1668d",
@@ -416,7 +417,7 @@
       "id": "muvqn89jg1e4j",
       "project": "petshopper",
       "type": "idea",
-      "priority": "someday",
+      "priority": "soon",
       "status": "open",
       "title": "some kind of mystery boxes",
       "notes": "",
@@ -427,8 +428,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791234285463,
-      "updated": 1791234285463,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 8
     },
     {
       "id": "muvqnq6bsc8ki",
@@ -445,8 +447,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791234308675,
-      "updated": 1791234343261,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 7
     },
     {
       "id": "muvqnyj1pqh6u",
@@ -463,8 +466,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791234319501,
-      "updated": 1791236896045,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 6
     },
     {
       "id": "muvqo5c7zv9xz",
@@ -481,8 +485,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791234328327,
-      "updated": 1791234453982,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 5
     },
     {
       "id": "muvrtvop8h4zk",
@@ -520,8 +525,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791236471686,
-      "updated": 1791236471686,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 4
     },
     {
       "id": "muvset2l7bwrh",
@@ -538,8 +544,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791237251757,
-      "updated": 1791237251757,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 3
     },
     {
       "id": "muvsf90rbtfto",
@@ -592,8 +599,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791237390978,
-      "updated": 1791237390978,
-      "doneBuild": ""
+      "updated": 1791245510300,
+      "doneBuild": "",
+      "order": 2
     },
     {
       "id": "muvshzp12zzr2",
@@ -1096,7 +1104,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791245416652,
-      "updated": 1791245416652
+      "updated": 1791245510300,
+      "order": 1
     },
     {
       "id": "muvxa9fki689g",
@@ -1113,7 +1122,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791245437760,
-      "updated": 1791245437760
+      "updated": 1791245510300,
+      "order": 0
     },
     {
       "id": "muvxaekqjpzbb",
