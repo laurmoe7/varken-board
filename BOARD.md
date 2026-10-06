@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T19:03:53.628Z_
+_Updated 2026-10-06T19:04:29.121Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -56,6 +56,8 @@ _13 done._
 
 ### Cosmetics gallery
 
+- 🎀 **chicken hat** `mux1s9da5gyms`
+  - images: images/mux1s8k5wsyrq.jpg
 - 🎀 **monkey on head** `mux1rixipzhl1`
   - images: images/mux1rhzaft0ku.jpg
 - 🎀 **hunting cap** `mux1qcmljhxjc`
