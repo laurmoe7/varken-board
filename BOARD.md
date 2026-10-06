@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T01:24:57.136Z_
+_Updated 2026-10-06T01:29:00.194Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,7 +10,6 @@ _Updated 2026-10-06T01:24:57.136Z_
 
 ### Soon
 
-- [ ] 💡 **change default bird to thrush. make chick a skin.** _(easy)_ `muvydgd83y39n`
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
