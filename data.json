@@ -1227,6 +1227,23 @@
       "slot": "",
       "created": 1791246947870,
       "updated": 1791246947870
+    },
+    {
+      "id": "muvydgd83y39n",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "change default bird to thrush. make chick a skin.",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791247266332,
+      "updated": 1791247266332
     }
   ],
   "notes": [
