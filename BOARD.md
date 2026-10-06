@@ -1,45 +1,36 @@
 # Varken board
 
-_Updated 2026-10-06T00:41:10.851Z_
+_Updated 2026-10-06T03:52:35.950Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
-- [ ] 💡 **make magnified eye get larger the second the magnifying glass is in front of it.** _(easy)_ `muvtewqq1h90v`
-  > currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting
-- [ ] 💡 **add placeholder shop button in menu bar, greyed out** _(easy)_ `muvt1nee26as9`
-- [ ] 🔧 **fix box that pops up when a pet suggests a shopping item** _(easy)_ `muvsjsncf6bkf`
-  > it sits in front of the shopping list and is too intrusive
-- [ ] 💡 **holding toy above head makes pet annoyed** _(easy)_ `muvshzp12zzr2`
-- [ ] 💡 **search menu in dressing room** _(easy)_ `muvsf90rbtfto`
-- [ ] 💡 **blank templates for Nibble Sketchpad to make it easier to draw on skins** _(easy)_ `muvry35yoek6i`
+- [ ] 💡 **improve ability to read measurements in recipes** _(easy)_ `muw57mgm92ved`
 
 ### Soon
 
-- [ ] 💡 **change default bird to thrush. make chick a skin.** _(easy)_ `muvydgd83y39n`
-- [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
-- [ ] 💡 **photoshoot mode in dressing room** _(easy)_ `muvxa9fki689g`
+- [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
+- [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
+- [ ] 💡 **some kind of mystery boxes** _(medium)_ _(doing)_ `muvqn89jg1e4j`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
-- [ ] 💡 **add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?** _(medium)_ `muvqo5c7zv9xz`
 - [ ] 🔧 **fix pretzel, bacon emoji transparency** `muvqnyj1pqh6u`
   > space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
-- [ ] 💡 **some kind of mystery boxes** `muvqn89jg1e4j`
 - [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
 
 ### Someday
 
+- [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
 - [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
   > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is. want it focused more on the pet and it's cute animations. 
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
-- [ ] 💡 **player profile** _(medium)_ `muvxb48osnspa`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
 - [ ] 💡 **color variations for skins** `muvqmyc8968to`
-- [ ] 💡 **add color variations to outfits/hats. maybe skins?** `muvqmowq1668d`
+- [ ] 💡 **add color variations to outfits/hats** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **Shared household pet** `seed-petshopper-11`
@@ -50,7 +41,7 @@ _Updated 2026-10-06T00:41:10.851Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_2 done._
+_9 done._
 
 ### Cosmetics gallery
 
@@ -62,6 +53,7 @@ _2 done._
 
 ### Notes
 
+- hummingbird skin
 - 10 goodnight kisses to unlock carer persona
 
 ## ✨ funFX (https://github.com/laurmoe7/funFX)

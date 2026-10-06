@@ -7,7 +7,7 @@
       "emoji": "🐹",
       "color": "#ff9ec7",
       "repo": "https://github.com/laurmoe7/pet-shopper",
-      "updated": 1791236179661,
+      "updated": 1791258481263,
       "gallery": "Cosmetics",
       "slots": "Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy"
     },
@@ -373,9 +373,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791234248146,
-      "updated": 1791245510300,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 9
+      "order": 8
     },
     {
       "id": "muvqmowq1668d",
@@ -383,7 +383,7 @@
       "type": "idea",
       "priority": "someday",
       "status": "open",
-      "title": "add color variations to outfits/hats. maybe skins?",
+      "title": "add color variations to outfits/hats",
       "notes": "",
       "build": "",
       "effort": "",
@@ -392,7 +392,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791234260378,
-      "updated": 1791234260378,
+      "updated": 1791258445176,
       "doneBuild": ""
     },
     {
@@ -418,19 +418,19 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "some kind of mystery boxes",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234285463,
-      "updated": 1791245510300,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 8
+      "order": 4
     },
     {
       "id": "muvqnq6bsc8ki",
@@ -475,17 +475,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add support to grab ingredients from a recipe link, including amounts. change amount to metric/customary possible?",
       "notes": "",
       "build": "",
       "effort": "medium",
-      "doneAt": 0,
+      "doneAt": 1791257980285,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234328327,
-      "updated": 1791246968767,
+      "updated": 1791257980285,
       "doneBuild": "",
       "order": 5
     },
@@ -516,17 +516,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "blank templates for Nibble Sketchpad to make it easier to draw on skins",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791251728586,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791236471686,
-      "updated": 1791246963889,
+      "updated": 1791251728586,
       "doneBuild": "",
       "order": 4
     },
@@ -545,26 +545,26 @@
       "gallery": false,
       "slot": "",
       "created": 1791237251757,
-      "updated": 1791246955611,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 3
+      "order": 5
     },
     {
       "id": "muvsf90rbtfto",
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "search menu in dressing room",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791249667238,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237272427,
-      "updated": 1791237852761,
+      "updated": 1791249667238,
       "doneBuild": ""
     },
     {
@@ -600,26 +600,26 @@
       "gallery": false,
       "slot": "",
       "created": 1791237390978,
-      "updated": 1791246952654,
+      "updated": 1791258418444,
       "doneBuild": "",
-      "order": 2
+      "order": 3
     },
     {
       "id": "muvshzp12zzr2",
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "holding toy above head makes pet annoyed",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791249658213,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237400309,
-      "updated": 1791237851170,
+      "updated": 1791249658213,
       "doneBuild": ""
     },
     {
@@ -627,17 +627,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "fix box that pops up when a pet suggests a shopping item",
       "notes": "it sits in front of the shopping list and is too intrusive",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791249656918,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237484488,
-      "updated": 1791237846925,
+      "updated": 1791249656918,
       "doneBuild": ""
     },
     {
@@ -645,17 +645,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "add placeholder shop button in menu bar, greyed out",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791248140030,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238317494,
-      "updated": 1791238317494,
+      "updated": 1791248140030,
       "doneBuild": ""
     },
     {
@@ -682,17 +682,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "make magnified eye get larger the second the magnifying glass is in front of it.",
       "notes": "currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791248446525,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238936130,
-      "updated": 1791238940816,
+      "updated": 1791248446525,
       "doneBuild": ""
     },
     {
@@ -710,7 +710,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791239247218,
-      "updated": 1791240080642
+      "updated": 1791258389951,
+      "deleted": true
     },
     {
       "id": "muvvlcbb40k07",
@@ -1105,15 +1106,15 @@
       "gallery": false,
       "slot": "",
       "created": 1791245416652,
-      "updated": 1791245510300,
-      "order": 1
+      "updated": 1791258418444,
+      "order": 2
     },
     {
       "id": "muvxa9fki689g",
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "photoshoot mode in dressing room",
       "notes": "",
       "build": "",
@@ -1123,8 +1124,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791245437760,
-      "updated": 1791245510300,
-      "order": 0
+      "updated": 1791258418444,
+      "order": 1
     },
     {
       "id": "muvxaekqjpzbb",
@@ -1165,17 +1166,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "someday",
-      "status": "open",
+      "status": "done",
       "title": "player profile",
       "notes": "",
       "build": "",
       "effort": "medium",
-      "doneAt": 0,
+      "doneAt": 1791258432749,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245477688,
-      "updated": 1791245477688
+      "updated": 1791258432749
     },
     {
       "id": "muvxblwe4wtzu",
@@ -1216,7 +1217,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "daily log in bonus, probably mystery boxes",
       "notes": "",
       "build": "",
@@ -1226,7 +1227,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791246947870,
-      "updated": 1791246947870
+      "updated": 1791258418444,
+      "order": 0
     },
     {
       "id": "muvydgd83y39n",
@@ -1243,7 +1245,42 @@
       "gallery": false,
       "slot": "",
       "created": 1791247266332,
-      "updated": 1791247266332
+      "updated": 1791250135743,
+      "deleted": true
+    },
+    {
+      "id": "muw32ie6yf0nc",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "add syncing to google calendar to easily add other automated scheduled tasks, maybe",
+      "notes": "",
+      "build": "",
+      "effort": "hard",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791255153822,
+      "updated": 1791255153822
+    },
+    {
+      "id": "muw57mgm92ved",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "now",
+      "status": "open",
+      "title": "improve ability to read measurements in recipes",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791258751606,
+      "updated": 1791258751606
     }
   ],
   "notes": [
@@ -1299,6 +1336,13 @@
       "text": "name it \"cookie sheets\" or \"cookie's sheets\"",
       "created": 1791244768778,
       "updated": 1791244768778
+    },
+    {
+      "id": "muvzxqq75pxqo",
+      "scope": "petshopper",
+      "text": "hummingbird skin",
+      "created": 1791249892495,
+      "updated": 1791249892495
     }
   ],
   "images": {
