@@ -1192,6 +1192,23 @@
       "slot": "",
       "created": 1791245500574,
       "updated": 1791245500574
+    },
+    {
+      "id": "muvxdzapuz5v8",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "desktop companion",
+      "notes": "would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is.",
+      "build": "",
+      "effort": "hard",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791245611249,
+      "updated": 1791245611249
     }
   ],
   "notes": [
