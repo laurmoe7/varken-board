@@ -1272,7 +1272,7 @@
       "priority": "now",
       "status": "doing",
       "title": "improve ability to read measurements in recipes",
-      "notes": "increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. allowing rotating of nibble in photoshoots. mute dressing room sounds in photo shoot menu.",
+      "notes": "",
       "build": "",
       "effort": "medium",
       "doneAt": 0,
@@ -1280,7 +1280,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791258751606,
-      "updated": 1791292945937
+      "updated": 1791292969570
     },
     {
       "id": "muwkhvsr9p1ub",
@@ -1459,7 +1459,7 @@
       "priority": "soon",
       "status": "open",
       "title": "improve AR photos and features",
-      "notes": "",
+      "notes": "increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. allowing rotating of nibble in photoshoots. mute dressing room sounds in photo shoot menu.",
       "build": "",
       "effort": "medium",
       "doneAt": 0,
@@ -1467,7 +1467,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791292606975,
-      "updated": 1791292606975
+      "updated": 1791292970695
     }
   ],
   "notes": [
