@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T22:26:08.203Z_
+_Updated 2026-10-06T22:26:29.325Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -135,6 +135,7 @@ _15 done._
 
 ### Soon
 
+- [ ] 💡 **add soundboard, probably on general tab so you can preview all sounds easily** _(easy)_ `mux903byxmye4`
 - [ ] 💡 **when hovering over a sound in the random menu, show origin of sound (dark souls, Ragnarok Online, etc)** _(easy)_ `mux8zewv2sees`
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
