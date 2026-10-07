@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-06T23:55:45.662Z_
+_Updated 2026-10-07T00:26:53.354Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -135,6 +135,7 @@ _15 done._
 
 ### Soon
 
+- [ ] 💡 **add more crit sounds that would work well with magic spells** _(easy)_ `muxdaxaxx4xm6`
 - [ ] 🔧 **improve and clarify pack system** _(easy)_ `muxc6vzsp8wgi`
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
