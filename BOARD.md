@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T02:47:04.598Z_
+_Updated 2026-10-07T02:47:13.886Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -151,15 +151,10 @@ _2 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
-### ASAP
-
-- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
-- [ ] 🔧 **make hover over pop-ups better fit the ui style of the app** _(easy)_ `muvwkrj32ubab`
-- [ ] 🔧 **class skill red dot needs centered in skills page** _(easy)_ `muvwgtsek11tj`
-
 ### Soon
 
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
+- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
 - [ ] 💡 **better support for summons** _(medium)_ `muvwiuwf1mdcm`
   > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
@@ -180,7 +175,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_8 done._
+_10 done._
 
 ### Notes
 
