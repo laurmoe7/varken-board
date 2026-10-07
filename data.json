@@ -2462,6 +2462,24 @@
       "slot": "",
       "created": 1791361867704,
       "updated": 1791367575346
+    },
+    {
+      "id": "muxy734rozwxw",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "support to add images for familars, eidolons, etc",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791367901595,
+      "updated": 1791367901595
     }
   ],
   "notes": [
