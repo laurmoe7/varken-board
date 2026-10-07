@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T21:35:21.803Z_
+_Updated 2026-10-07T21:35:40.837Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -125,6 +125,7 @@ _28 done._
   
   ?: throw ball for pet x days
   
+  cozy: tuck pet in x times
 - tiger cat skin
 - hummingbird skin
 - 10 goodnight kisses to unlock carer persona
