@@ -60,7 +60,7 @@ function pigSvg(mood, cls, opts) {
     <g class="pig-eyes">${eyes}</g>
     ${look.shades && !o.cap ? SHADES : ''}
     <ellipse cx="33" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/><ellipse cx="87" cy="74" rx="8" ry="5" fill="#ff8cb4" opacity=".85"/>
-    <ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/>
+    <g class="snout"><ellipse cx="60" cy="74" rx="8" ry="5.6" fill="#f2709f"/><ellipse cx="57" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/><ellipse cx="63" cy="74" rx="1.1" ry="1.7" fill="${PIG_INK}"/></g>
     ${note}
     ${look.scarf && !o.cap ? SCARF : ''}
     ${look.fall ? FALLS[look.fall] : ''}
@@ -233,23 +233,31 @@ function weekWrap() {
 }
 
 // Actions: hop, show off the note, wiggle, sway the plant, dance and cheer. The class stays on the svg until it ends.
-const ACTS = ['hop', 'note', 'wiggle', 'sprout', 'dance'];
+const ACTS = ['hop', 'note', 'wiggle', 'sprout', 'dance', 'spin', 'boing', 'shy', 'sniff', 'bubbles', 'giggle'];
 let actTimer;
+const ACT_MS = { wiggle: 2100, dance: 2700, stretch: 2800, spin: 1400, boing: 2100, shy: 2800, sniff: 2100, bubbles: 3400, giggle: 1800 };
 function pigAct(name, svgOverride) {
   const svg = svgOverride || $('#heroPig svg');
   if (!svg) return;
   ACTS.concat('cheer', 'stretch').forEach((a) => svg.classList.remove('act-' + a));
   void svg.getBoundingClientRect(); // restart the animation if the same action repeats
   svg.classList.add('act-' + name);
+  const box = svgOverride ? svgOverride.parentElement : $('#heroPig');
+  if (name === 'shy') floatBits('♥', 3, box);
+  else if (name === 'bubbles') floatBits('🫧', 5, box);
+  else if (name === 'giggle') floatBits('✨', 3, box);
   clearTimeout(actTimer);
-  actTimer = setTimeout(() => svg.classList.remove('act-' + name), name === 'wiggle' ? 2100 : name === 'dance' ? 2700 : name === 'stretch' ? 2800 : 1800);
+  actTimer = setTimeout(() => svg.classList.remove('act-' + name), ACT_MS[name] || 1800);
 }
-function floatHearts(n) {
-  const box = $('#heroPig');
+function floatHearts(n) { floatBits('♥', n); }
+// Little things that float up from his card: hearts, sparkles, bubbles.
+function floatBits(ch, n, box0) {
+  const box = box0 || $('#heroPig');
+  if (!box) return;
   for (let i = 0; i < n; i++) {
     const h = document.createElement('span');
     h.className = 'heart';
-    h.textContent = '♥';
+    h.textContent = ch;
     h.style.setProperty('--dx', Math.round((Math.random() - 0.5) * 70) + 'px');
     h.style.animationDelay = i * 90 + 'ms';
     box.appendChild(h);

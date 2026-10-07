@@ -482,7 +482,7 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 /* look preview in Options */
 .look-row { display: flex; gap: 14px; align-items: center; margin-top: 10px; }
 .look-row label { flex: 1; }
-.look-prev { flex: none; width: 120px; height: 120px; }
+.look-prev { flex: none; width: 120px; height: 120px; position: relative; }
 .look-prev .pig { width: 100%; height: 100%; animation: bob 4s ease-in-out infinite; }
 
 /* effect tester in Options: one-off runs of the idle effects on the preview pig */
@@ -530,3 +530,23 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 /* a gust of wind: the falling leaves swirl across sideways, each a little differently */
 @keyframes pig-gust { 0% { opacity: 0; transform: translate(-8px, calc(30px + var(--x, 0px) * .3)) rotate(0deg); } 12% { opacity: 1; } 45% { transform: translate(52px, calc(14px + var(--x, 0px) * .25)) rotate(280deg); } 70% { transform: translate(96px, calc(44px + var(--x, 0px) * .2)) rotate(520deg); } 88% { opacity: 1; } 100% { opacity: 0; transform: translate(132px, calc(30px + var(--x, 0px) * .35)) rotate(760deg); } }
 .pig.fx-gust .fall { animation: pig-gust 3.6s ease-in-out calc(var(--d, 0s) * .07) 1 both; }
+
+/* more little acts: a twirl, a squishy bounce, a shy blush, a sniff, bubbles and a giggle */
+.pig.act-spin .pig-all { transform-origin: 60px 78px; animation: pig-spin 1.2s ease-in-out; }
+@keyframes pig-spin { 0% { rotate: 0deg; translate: 0 0; } 25% { translate: 0 -12px; } 75% { translate: 0 -12px; } 100% { rotate: 360deg; translate: 0 0; } }
+.pig.act-boing .pig-all { animation: pig-boing .7s ease-in-out 3; }
+@keyframes pig-boing { 0%, 100% { transform: scale(1.06, .92); } 20% { transform: scale(.94, 1.1) translateY(-3px); } 50% { transform: scale(.97, 1.05) translateY(-16px); } 80% { transform: scale(1.06, .92); } }
+.pig.act-shy .pig-all { animation: pig-shy 2.6s ease-in-out; }
+@keyframes pig-shy { 0%, 100% { rotate: 0deg; scale: 1; } 20%, 75% { rotate: -7deg; scale: .93; } }
+.pig.act-shy .pig-eyes { animation: pig-look-away 2.6s ease-in-out; }
+@keyframes pig-look-away { 0%, 100% { translate: 0 0; } 20%, 75% { translate: -3px 2px; } }
+.pig .snout { transform-box: fill-box; transform-origin: center; }
+.pig.act-sniff .snout { animation: snout-sniff .32s ease-in-out 6; }
+@keyframes snout-sniff { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.18, .9) translateY(1px); } }
+.pig.act-sniff .pig-all { animation: pig-sniff-nod 2s ease-in-out; }
+@keyframes pig-sniff-nod { 0%, 100% { rotate: 0deg; } 20%, 70% { rotate: 3deg; translate: 2px 2px; } }
+.pig.act-bubbles .pig-all { animation: pig-sway 3.2s ease-in-out; }
+@keyframes pig-sway { 0%, 100% { rotate: 0deg; } 25% { rotate: -3deg; } 75% { rotate: 3deg; } }
+.pig.act-giggle .pig-all { animation: pig-giggle .16s linear 10; }
+@keyframes pig-giggle { 0%, 100% { translate: -1.5px 0; } 50% { translate: 1.5px -1.5px; } }
+@media (prefers-reduced-motion: reduce) { .pig[class*="act-"] .pig-all, .pig[class*="act-"] .snout, .pig[class*="act-"] .pig-eyes { animation: none; } }

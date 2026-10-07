@@ -187,7 +187,7 @@ setInterval(() => {
     const b = e.target.closest('[data-fx]');
     if (!b) return;
     const fx = b.dataset.fx, svg = prev.querySelector('svg');
-    if (['dance', 'hop', 'wiggle'].includes(fx)) return pigAct(fx, svg);
+    if (['dance', 'hop', 'wiggle', 'spin', 'boing', 'shy', 'sniff', 'bubbles', 'giggle'].includes(fx)) return pigAct(fx, svg);
     if (fx === 'oink') return oink();
     if (fx === 'gust') { const own = prev.querySelector('svg'); if (state0.value === 'asleep') { state0.value = 'day'; state0.dispatchEvent(new Event('change')); } return windGust(prev.querySelector('svg') || own); }
     if (fx === 'gm') return showPage(goodMorning);
