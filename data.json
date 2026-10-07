@@ -1374,17 +1374,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "animation of the pet searching with the mag. glass while recipe parser is open",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791361007299,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791288953841,
-      "updated": 1791288953841
+      "updated": 1791361007299
     },
     {
       "id": "muwnlcegebvcf",
