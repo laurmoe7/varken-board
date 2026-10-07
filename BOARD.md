@@ -1,13 +1,13 @@
 # Varken board
 
-_Updated 2026-10-07T00:26:53.354Z_
+_Updated 2026-10-07T00:38:27.720Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 💡 **swipe items of shopping list to remove them** _(easy)_ `muwvog8njv1ae`
+- [ ] 💡 **swipe items off shopping list to remove them, dont have this count towards goals or go on the clean up list. just delete them. have the pet comment on this.** _(easy)_ `muwvog8njv1ae`
 - [ ] 🔧 **cant see cursor following feature outside PC, so remove this** _(easy)_ `muwpusaq62rmp`
   > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.
 - [ ] 🔧 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
