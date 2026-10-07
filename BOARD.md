@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T02:47:13.886Z_
+_Updated 2026-10-07T03:18:39.449Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,10 +153,10 @@ _2 done._
 
 ### Soon
 
+- [ ] 💡 **better support for summons** _(medium)_ _(doing)_ `muvwiuwf1mdcm`
+  > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
 - [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
-- [ ] 💡 **better support for summons** _(medium)_ `muvwiuwf1mdcm`
-  > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
   > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
 - [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ `muvw97o904dtq`
