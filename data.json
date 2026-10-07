@@ -2507,18 +2507,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "done",
+      "status": "open",
       "title": "test",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 1791375455040,
+      "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791375446345,
-      "updated": 1791375455040
+      "updated": 1791375459953
     }
   ],
   "notes": [
