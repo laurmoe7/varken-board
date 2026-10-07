@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T10:29:08.546Z_
+_Updated 2026-10-07T11:13:01.655Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -126,21 +126,21 @@ _24 done._
 
 ### Soon
 
-- [ ] 💡 **add more crit sounds that would work well with magic spells** _(easy)_ `muxdaxaxx4xm6`
-- [ ] 🔧 **improve and clarify pack system** _(easy)_ `muxc6vzsp8wgi`
-- [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
-- [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
+- [ ] 💡 **add more crit sounds that would work well with magic spells** _(easy)_ _(funFX)_ `muxdaxaxx4xm6`
+- [ ] 🔧 **improve and clarify pack system** _(easy)_ _(funFX)_ `muxc6vzsp8wgi`
+- [ ] 🔧 **check if record heal works and is worth it** _(medium)_ _(funFX)_ `muvx5hnv9cih9`
+- [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ _(funFX)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
-- [ ] 🔧 **Check in game: moved Image popups page, Quest complete, missing-file detection** `seed-funfx-3`
+- [ ] 🔧 **Check in game: moved Image popups page, Quest complete, missing-file detection** _(funFX)_ `seed-funfx-3`
   > Visual of missing files works with /funfx missingtest; detection needs /funfx assetcheck in game.
-- [ ] 🔧 **Check in game: new mail, auction sold and skill-up triggers** `seed-funfx-4`
+- [ ] 🔧 **Check in game: new mail, auction sold and skill-up triggers** _(funFX)_ `seed-funfx-4`
   > Built but never confirmed in game.
 
 ### Someday
 
-- [ ] 💡 **Buffs page can only compare buffs out of combat** `seed-funfx-6`
+- [ ] 💡 **Buffs page can only compare buffs out of combat** _(funFX)_ `seed-funfx-6`
   > In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.
-- [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
+- [ ] 💡 **Bring back Mute game sound?** _(funFX)_ `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
 _2 done._
@@ -149,32 +149,32 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **better support for summons** _(medium)_ _(doing)_ `muvwiuwf1mdcm`
+- [ ] 💡 **better support for summons** _(medium)_ _(Pathfinder)_ _(doing)_ `muvwiuwf1mdcm`
   > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
-- [ ] 💡 **improve summon menu in buffs** `muxytd7n7ule8`
+- [ ] 💡 **improve summon menu in buffs** _(Pathfinder)_ `muxytd7n7ule8`
   > move the summon button to roughly where i circled. just a bit right of the conjuration text. make the text you click on to summon the creature and add it to the buffs page look more like buttons, also improve the stats text. maybe also make it look like a button. add the ability to highlight and copy paste text in the stat block menus. add padding above the summon monster info in buffs page so boxes are not overlapping. 
   - images: images/muxyjr5sgtnwz.jpg, images/muxypvfkyz6rd.jpg
-- [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ `muxy734rozwxw`
-- [ ] 💡 **additional support for 3rd party publishers** _(medium)_ `muxujlnznx4aw`
+- [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ `muxy734rozwxw`
+- [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
-- [ ] 💡 **favored class bonus for racials** _(easy)_ `muxtzxcmwgyn9`
-- [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
-- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
-- [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
+- [ ] 💡 **favored class bonus for racials** _(easy)_ _(Pathfinder)_ `muxtzxcmwgyn9`
+- [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ _(Pathfinder)_ `muvws9ekekw6e`
+- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ _(Pathfinder)_ `muvwldlunxnxt`
+- [ ] 💡 **level-up warning for skills** _(easy)_ _(Pathfinder)_ `muvwhnueie781`
   > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
-- [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ `muvw97o904dtq`
+- [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ _(Pathfinder)_ `muvw97o904dtq`
   > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 
 ### Someday
 
-- [ ] 💡 **try to find info on extra, newer spells** _(hard)_ `muvwvexl5jwxp`
+- [ ] 💡 **try to find info on extra, newer spells** _(hard)_ _(Pathfinder)_ `muvwvexl5jwxp`
   > Not every spell: coverage is about 2,250 of the 2,900+ published. Feats, traits and archetypes stop at the Advanced Class Guide (2015), because that's where the free data source ends. Later books only contribute spells.
   > support for rolling for stats
-- [ ] 🔧 **About 18% of archetype "replaces X" targets do not match the class table** _(medium)_ `seed-pathfinder-10`
+- [ ] 🔧 **About 18% of archetype "replaces X" targets do not match the class table** _(medium)_ _(Pathfinder)_ `seed-pathfinder-10`
   > They are shown as plain text instead (proficiencies, deeds, bonus spells).
-- [ ] 💡 **Prestige classes in the level-up wizard and compute()** _(medium)_ `seed-pathfinder-8`
+- [ ] 💡 **Prestige classes in the level-up wizard and compute()** _(medium)_ _(Pathfinder)_ `seed-pathfinder-8`
   > Not supported yet.
-- [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ `seed-pathfinder-9`
+- [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
 _11 done._
