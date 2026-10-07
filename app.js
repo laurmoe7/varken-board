@@ -6,8 +6,8 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 
 let state = L.defaultState();
 // ui.drafting: the right panel is in "new item" mode, filling ui.draftItem until Add.
-const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', slot: '', build: '', notes: '', images: [] });
-const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
+const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', area: '', slot: '', build: '', notes: '', images: [] });
+const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', area: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
 const isNotesView = () => ui.view === 'notes' || ui.view === 'gnotes'; // notes of a project (or All) or of a gallery
 
@@ -36,7 +36,7 @@ window.addEventListener('pagehide', flushSave);
 function loadUi() {
   try { Object.assign(ui, JSON.parse(localStorage.getItem('varken-ui')) || {}, { open: null, q: '', drafting: false, draftItem: blankDraft() }); } catch { /* fresh */ }
 }
-function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, view: ui.view, type: ui.type, effort: ui.effort, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
+function saveUi() { try { localStorage.setItem('varken-ui', JSON.stringify({ project: ui.project, view: ui.view, type: ui.type, effort: ui.effort, area: ui.area, status: ui.status, last: ui.last })); } catch { /* ignore */ } }
 
 // ---------- sync ----------
 function setPill(kind, text) {
@@ -219,6 +219,8 @@ function renderHead(poke) {
   }
   $('#effortSel').hidden = !!gp;
   $('#effortSel').value = ui.effort;
+  $('#areaSel').hidden = !!gp;
+  $('#areaSel').value = ui.area;
   $('#statusSel').hidden = !!gp;
   $('#statusSel').value = ui.status;
   $('#pickBtn').hidden = !!gp || ui.status === 'done';
@@ -241,6 +243,7 @@ function cardHtml(it) {
       <div class="card-title ${it.effort ? 'fx-' + it.effort : ''}">${L.typeOf(it.type).emoji} ${esc(it.title)}<button class="copy-mini" data-copy title="Copy for Claude" aria-label="Copy for Claude">📋</button></div>
       <div class="meta">
         ${it.effort ? `<span class="tag fx fx-${it.effort}">${L.effortOf(it.effort).emoji} ${L.effortOf(it.effort).label.toLowerCase()}</span>` : ''}
+        ${it.area ? `<span class="tag area-tag">${L.areaOf(it.area).emoji} ${esc(L.areaOf(it.area).label)}</span>` : ''}
         ${ui.project === 'all' && p ? `<span class="tag proj-tag" style="background:${esc(p.color)}">${esc(p.emoji)} ${esc(p.name)}</span>` : ''}
         ${it.status === 'doing' ? '<span class="tag doing">doing</span>' : ''}
         ${it.build ? `<span class="tag">build ${esc(it.build)}</span>` : ''}
@@ -257,7 +260,7 @@ function renderListView() {
   const groups = L.groupByPriority(items);
   const el = $('#list');
   if (!groups.length) {
-    const searching = ui.q || ui.type !== 'all' || ui.effort !== 'all' || ui.status !== 'active';
+    const searching = ui.q || ui.type !== 'all' || ui.effort !== 'all' || ui.area !== 'all' || ui.status !== 'active';
     el.innerHTML = searching
       ? emptyHtml('sniff', 'Nothing matches', 'I sniffed everywhere. Try a different filter.')
       : emptyHtml('sleep', 'All clear!', 'Add an idea or a fix above and Varken will keep it safe.');
@@ -293,7 +296,7 @@ function seg(field, list, cur, cls) {
 const current = () => (ui.drafting ? ui.draftItem : item());
 
 // What the new-item panel shows: the panel's choices with anything typed as #project !now :bug on top.
-const draftValues = () => Object.assign(L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults()), { slot: ui.draftItem.slot });
+const draftValues = () => Object.assign(L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults()), { slot: ui.draftItem.slot, area: ui.draftItem.area });
 
 // The title box grows with its text, so long titles are easy to read and edit.
 function growTitle() {
@@ -326,7 +329,8 @@ function renderDetail() {
     ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<textarea id="dTitle" rows="2" aria-label="Title">${esc(it.title)}</textarea>`}
     ${gal ? images + slotRow : `<label>Type ${seg('type', L.TYPES, v.type)}</label>
     <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>
-    <label>Effort <span class="muted small">(click again to clear)</span> ${seg('effort', L.EFFORTS, v.effort)}</label>`}
+    <label>Effort <span class="muted small">(click again to clear)</span> ${seg('effort', L.EFFORTS, v.effort)}</label>
+    <label>For ${seg('area', L.AREAS, v.area || '', 'wrap')}</label>`}
     ${draft ? '' : `<label>Status ${seg('status', gal ? GALLERY_STATUSES : L.STATUSES, it.status)}</label>`}
     ${gal ? '' : `<label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
     <label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>`}
@@ -444,7 +448,7 @@ function commitDraft() {
   const it = L.createItem(
     gp
       ? { project: gp.id, gallery: true, slot: d.slot, title: r.title, notes: d.notes, images: d.images.slice() }
-      : { project: r.project || defaults.project, type: r.type, priority: r.priority, effort: r.effort, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
+      : { project: r.project || defaults.project, type: r.type, priority: r.priority, effort: r.effort, area: d.area, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
   );
   state.items.push(it);
   ui.last = it.project;
@@ -598,6 +602,7 @@ function wire() {
     if (b) { ui.type = b.dataset.type; saveUi(); renderList(); }
   });
   $('#effortSel').onchange = (e) => { ui.effort = e.target.value; saveUi(); renderList(); };
+  $('#areaSel').onchange = (e) => { ui.area = e.target.value; saveUi(); renderList(); };
   $('#statusSel').onchange = (e) => { ui.status = e.target.value; saveUi(); renderList(); };
   $('#search').onfocus = () => pigSay('search', { p: 0.2 });
   $('#search').oninput = (e) => { ui.q = e.target.value; renderList(); };
@@ -634,7 +639,7 @@ function wire() {
     const sb = e.target.closest('[data-seg] [data-val]');
     if (sb) {
       const field = sb.parentElement.dataset.seg;
-      setField(it, field, (field === 'slot' || field === 'effort') && it[field] === sb.dataset.val ? '' : sb.dataset.val);
+      setField(it, field, (field === 'slot' || field === 'effort' || field === 'area') && it[field] === sb.dataset.val ? '' : sb.dataset.val);
       if (ui.drafting) {
         qi.value = L.stripToken(qi.value, projectsLive(), field); // a typed #tag or !word would override the click
         paintDraft();
@@ -684,10 +689,22 @@ function wire() {
   });
 
   // clicking anywhere outside the open details panel closes it (cards open their own item; dialogs and toasts don't count)
+  // A drag that starts inside the panel (selecting text) and ends outside must not close it, so the press counts too.
+  const KEEP_OPEN = '#detail, .card, .gcard, dialog, #toast, #pickBtn';
+  let pressInside = false;
+  document.addEventListener('mousedown', (e) => { pressInside = !!(e.target.closest && e.target.closest(KEEP_OPEN)); }, true);
   document.addEventListener('click', (e) => {
-    if (!ui.open || !e.target.isConnected) return;
-    if (e.target.closest('#detail, .card, .gcard, dialog, #toast, #pickBtn')) return;
+    if (!ui.open || !e.target.isConnected || pressInside) return;
+    if (e.target.closest(KEEP_OPEN)) return;
     closeItem();
+  });
+  // clicking the dim backdrop closes a menu (the press has to start there too, so selecting text never closes it)
+  let pressBackdrop = null;
+  document.addEventListener('mousedown', (e) => { pressBackdrop = e.target; }, true);
+  document.addEventListener('click', (e) => {
+    const dlg = e.target;
+    if (!(dlg instanceof HTMLDialogElement) || pressBackdrop !== dlg || !['settingsDlg', 'helpDlg', 'projectDlg', 'lightbox'].includes(dlg.id)) return;
+    dlg.close();
   });
 
   // paste and drop: inside the panel they go to its item, anywhere else to a new item
@@ -742,9 +759,13 @@ function wire() {
     $('#syncRepo').value = c.repo || '';
     $('#syncToken').value = c.token || '';
     $('#syncMsg').textContent = '';
+    const box = $('#syncBox'), saved = (() => { try { return localStorage.getItem('varken-syncbox'); } catch { return null; } })();
+    box.open = saved ? saved === 'open' : !c.repo; // first time it is open; once connected it stays tucked away
+    $('#syncSum').textContent = c.repo ? '· ' + c.repo : '· not connected';
     $('#settingsDlg').showModal();
     pigSay('settings', { p: 0.4 });
   };
+  $('#syncBox > summary').addEventListener('click', () => setTimeout(() => { try { localStorage.setItem('varken-syncbox', $('#syncBox').open ? 'open' : 'closed'); } catch { /* ignore */ } }));
   $('#settingsBtn').onclick = openSettings;
   $('#helpBtn').onclick = () => { $('#helpDlg').showModal(); pigSay('help', { p: 0.4 }); };
   $('#helpClose').onclick = () => $('#helpDlg').close();

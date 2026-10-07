@@ -145,6 +145,19 @@ try { looks.on = localStorage.getItem('varken-looks') !== 'off'; } catch { /* de
 // The look the pig wears now: a preview if one is picked, else today's look (or none when switched off).
 const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
 
+// Now and then a gust of wind blows the falling leaves sideways across his card (only where leaves fall).
+function windGust(svg) {
+  const s = svg || document.querySelector('#heroPig svg');
+  if (!s || s.classList.contains('pig-sleep') || !s.querySelector('.fall') || s.classList.contains('fx-gust')) return;
+  s.classList.add('fx-gust');
+  setTimeout(() => s.classList.remove('fx-gust'), 4400);
+  pigSay('wind', { p: 0.5 });
+}
+setInterval(() => {
+  const s = document.querySelector('#heroPig svg');
+  if (!document.hidden && s && /look-(autumn|halloween|thanksgiving)/.test(s.getAttribute('class') || '') && Math.random() < 0.3) windGust(s);
+}, 12000);
+
 (function wireLooks() {
   const sel = $('#lookSel'), on = $('#looksOn'), prev = $('#lookPrev'), state0 = $('#fxState');
   if (!sel) return;
@@ -167,7 +180,7 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
   $('#settingsBtn').addEventListener('click', paintPrev);
 
   // The effect buttons: one-off versions of the pig's idle effects on the preview pig, or page-wide ones after closing the window.
-  const FX_MS = { fall: 6500, note: 5200, blink: 2000, stretch: 1900, peek: 4200, bubble: 5200 };
+  const FX_MS = { gust: 4400, fall: 6500, note: 5200, blink: 2000, stretch: 1900, peek: 4200, bubble: 5200 };
   let fxTimer;
   const showPage = (fn) => { $('#settingsDlg').close(); setTimeout(fn, 400); };
   $('#fxGrid').addEventListener('click', (e) => {
@@ -176,13 +189,14 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
     const fx = b.dataset.fx, svg = prev.querySelector('svg');
     if (['dance', 'hop', 'wiggle'].includes(fx)) return pigAct(fx, svg);
     if (fx === 'oink') return oink();
+    if (fx === 'gust') { const own = prev.querySelector('svg'); if (state0.value === 'asleep') { state0.value = 'day'; state0.dispatchEvent(new Event('change')); } return windGust(prev.querySelector('svg') || own); }
     if (fx === 'gm') return showPage(goodMorning);
     if (fx === 'chime') return showPage(() => celebrate($('#heroPig'), false, 0));
     if (fx === 'party') return showPage(() => celebrate($('#heroPig'), false, 5));
     if (fx === 'birthday') return showPage(birthdayHello);
     if (fx === 'wrap') return showPage(weekWrap);
     if ((fx === 'peek' || fx === 'bubble') && state0.value !== 'asleep') { state0.value = 'asleep'; state0.dispatchEvent(new Event('change')); }
-    if (['stretch', 'fall', 'note', 'blink'].includes(fx) && state0.value === 'asleep') { state0.value = 'day'; state0.dispatchEvent(new Event('change')); }
+    if (['stretch', 'fall', 'note', 'blink', 'gust'].includes(fx) && state0.value === 'asleep') { state0.value = 'day'; state0.dispatchEvent(new Event('change')); }
     const now = prev.querySelector('svg');
     Object.keys(FX_MS).forEach((n) => now.classList.remove('fx-' + n));
     void now.getBoundingClientRect();

@@ -50,6 +50,12 @@
           <option value="medium">🌿 Medium</option>
           <option value="hard">🔥 Hard</option>
         </select>
+        <select id="areaSel" aria-label="For which app">
+          <option value="all">Any app</option>
+          <option value="main">Pet Shopper</option>
+          <option value="sketchpad">✏️ Sketchpad</option>
+          <option value="varken">🐷 Varken Board</option>
+        </select>
         <select id="statusSel" aria-label="Show">
           <option value="active">Not done</option>
           <option value="doing">Doing</option>
@@ -57,7 +63,7 @@
           <option value="all">Everything</option>
         </select>
         <input id="search" type="search" placeholder="Search ( / )" autocomplete="off">
-        <button class="ghost" id="pickBtn" title="Let the pig pick something to start with">🎲 Pig's pick</button>
+        <button class="ghost" id="pickBtn" title="Let Varken pick something to start with">🎲 Varken's pick</button>
       </div>
     </header>
 
@@ -79,6 +85,7 @@
 <dialog id="settingsDlg">
   <form method="dialog" class="dlg">
     <h2>Sync and backup</h2>
+    <details class="fold" id="syncBox"><summary>☁️ GitHub sync <span class="muted small" id="syncSum"></span></summary>
     <p class="muted">Everything is already saved in this browser. Sync also keeps a copy in a private GitHub repo, so nothing is lost and Claude can read your board.</p>
     <label>Data repo <input id="syncRepo" placeholder="laurmoe7/varken-data" autocomplete="off"></label>
     <label>Token <input id="syncToken" type="password" placeholder="github_pat_…" autocomplete="off"></label>
@@ -88,6 +95,7 @@
       <button type="button" class="ghost" id="syncOff">Disconnect</button>
     </div>
     <p class="status small" id="syncMsg"></p>
+    </details>
     <hr>
     <div class="row">
       <button type="button" class="ghost" id="exportBtn">⬇ Export JSON</button>
@@ -98,17 +106,18 @@
     <hr>
     <label class="check-row"><input type="checkbox" id="funOn"> Sound and confetti when you check something off</label>
     <hr>
-    <label class="check-row"><input type="checkbox" id="looksOn"> Seasonal and holiday clothes for the pig</label>
+    <label class="check-row"><input type="checkbox" id="looksOn"> Seasonal and holiday clothes for Varken</label>
     <div class="look-row">
       <label>Preview <select id="lookSel" aria-label="Preview a look"></select></label>
       <div class="look-prev" id="lookPrev"></div>
     </div>
-    <label>Pig is <select id="fxState" aria-label="Pig state for testing"><option value="day">awake</option><option value="asleep">asleep</option></select></label>
+    <label>Varken is <select id="fxState" aria-label="Varken state for testing"><option value="day">awake</option><option value="asleep">asleep</option></select></label>
     <div class="fx-grid" id="fxGrid">
       <button type="button" class="ghost" data-fx="dance">🕺 Dance</button>
       <button type="button" class="ghost" data-fx="hop">🦘 Hop</button>
       <button type="button" class="ghost" data-fx="wiggle">〰️ Wiggle</button>
       <button type="button" class="ghost" data-fx="fall">🍂 Falling bits</button>
+      <button type="button" class="ghost" data-fx="gust">🍃 Wind gust (leaves)</button>
       <button type="button" class="ghost" data-fx="note">♪ Humming</button>
       <button type="button" class="ghost" data-fx="blink">😌 Blink</button>
       <button type="button" class="ghost" data-fx="stretch">🙆 Stretch</button>
@@ -121,7 +130,7 @@
       <button type="button" class="ghost" data-fx="birthday">🎂 Birthday hello</button>
       <button type="button" class="ghost" data-fx="wrap">📅 Sunday wrap-up</button>
     </div>
-    <p class="muted small">Try the pig's looks and effects here. Previews reset when you reload the page. Check-off, party, birthday and wrap-up close this window so you can see them on the page.</p>
+    <p class="muted small">Try Varken's looks and effects here. Previews reset when you reload the page. Check-off, party, birthday and wrap-up close this window so you can see them on the page.</p>
     <hr>
     <div class="row">
       <button type="button" class="ghost" id="cleanScan">🧹 Look for unused pictures</button>
@@ -192,7 +201,7 @@
     </table>
     <p class="muted small">In the title line, type these anywhere:</p>
     <p><code>#project</code> <code>!asap</code> <code>!soon</code> <code>!someday</code> <code>:idea</code> <code>:fix</code> <code>:bug</code> <code>~easy</code> <code>~medium</code> <code>~hard</code></p>
-    <p class="muted small">Click the pig and he hops, shows off his note, wiggles or sways his plant. 🐷</p>
+    <p class="muted small">Click Varken and he hops, shows off his note, wiggles or sways his plant. 🐷</p>
     <div class="row end"><button class="ghost" id="helpClose">Close</button></div>
   </div>
 </dialog>

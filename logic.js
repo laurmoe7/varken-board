@@ -24,6 +24,13 @@
     { id: 'medium', label: 'Medium', emoji: '🌿' },
     { id: 'hard', label: 'Hard', emoji: '🔥' },
   ];
+  // Which app an item is for. Empty is the default: just Pet Shopper itself.
+  const AREAS = [
+    { id: '', label: 'Pet Shopper' },
+    { id: 'sketchpad', label: 'Nibble Sketchpad', emoji: '✏️' },
+    { id: 'varken', label: 'Varken Board', emoji: '🐷' },
+  ];
+  const areaOf = (id) => AREAS.find((a) => a.id === (id || '')) || AREAS[0];
   const COLORS = ['#ff9ec7', '#b9a4ff', '#8ff0c8', '#ffe29a', '#ffb38a', '#8fd3ff'];
   const NOW_CAP = 5;
   const DEFAULT_SLOTS = 'Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy';
@@ -54,7 +61,7 @@
   function createItem(fields) {
     const now = Date.now();
     return Object.assign(
-      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', effort: '', doneAt: 0, images: [], gallery: false, slot: '', created: now, updated: now },
+      { id: uid(), project: '', type: 'idea', priority: 'soon', status: 'open', title: '', notes: '', build: '', effort: '', area: '', doneAt: 0, images: [], gallery: false, slot: '', created: now, updated: now },
       fields
     );
   }
@@ -138,6 +145,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       if (f.project && f.project !== 'all' && it.project !== f.project) return false;
       if (f.type && f.type !== 'all' && it.type !== f.type) return false;
       if (f.effort && f.effort !== 'all' && it.effort !== f.effort) return false;
+      if (f.area && f.area !== 'all' && (it.area || '') !== (f.area === 'main' ? '' : f.area)) return false;
       if (f.status === 'active' && it.status === 'done') return false;
       if (f.status && f.status !== 'active' && f.status !== 'all' && it.status !== f.status) return false;
       if (q && !(it.title + ' ' + it.notes + ' ' + it.build).toLowerCase().includes(q)) return false;
@@ -344,7 +352,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       for (const g of groupByPriority(items)) {
         out.push('### ' + g.priority.label, '');
         for (const it of g.items) {
-          out.push('- [ ] ' + typeOf(it.type).emoji + ' **' + it.title + '**' + (it.effort ? ' _(' + it.effort + ')_' : '') + (it.status === 'doing' ? ' _(doing)_' : '') + ' `' + it.id + '`');
+          out.push('- [ ] ' + typeOf(it.type).emoji + ' **' + it.title + '**' + (it.effort ? ' _(' + it.effort + ')_' : '') + (it.area ? ' _(' + areaOf(it.area).label + ')_' : '') + (it.status === 'doing' ? ' _(doing)_' : '') + ' `' + it.id + '`');
           if (it.build) out.push('  - seen in build ' + it.build);
           if (it.notes) it.notes.split('\n').forEach((l) => out.push('  > ' + l));
           if (it.images.length) out.push('  - images: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
@@ -387,7 +395,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   const api = {
     TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
-    uid, slug, typeOf, effortOf, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
+    uid, slug, typeOf, effortOf, AREAS, areaOf, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
     filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday, weekSummary, seasonOf, holidayOf, lookOf,
     mergeStates, validateState, fitSize, projectName, copyItem, pickForMe, isNight, boardMarkdown,
   };

@@ -7,7 +7,7 @@ A cute, dark idea-and-fix board for all my projects: Pet Shopper, funFX, Pathfin
 - Attach images: paste with Ctrl+V, drop them on the page, or pick files. They are shrunk to 1600 px.
 - Everything is saved in the browser (IndexedDB). Optional sync to a private GitHub data repo keeps a backup and lets Claude read the board.
 - **Copy for Claude** (in an item's panel) copies that one item, with its labels, notes and picture names, to paste into a session.
-- **🎲 Pig's pick** (header) opens one open item to start with: easy ones first, then the most urgent, within the view you're on.
+- **🎲 Varken's pick** (header) opens one open item to start with: easy ones first, then the most urgent, within the view you're on.
 - The panel on the right opens as you type a new item, so labels, notes and images go in the first time (Tab jumps to notes, Ctrl+Enter adds).
 - Draw on screenshots (pen, arrow, circle, box) before keeping them.
 - Drag cards to put them in order, or into another priority group. Alt+arrow keys do the same.

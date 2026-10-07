@@ -358,3 +358,19 @@ test('Dutch and American family days', () => {
   assert.strictEqual(h(2026, 10, 11), 'sintmaarten');
   assert.strictEqual(h(2026, 4, 5), 'bevrijding');
 });
+
+test('area: default is Pet Shopper itself, filter and board text know the others', () => {
+  const a = L.createItem({ title: 'plain', project: 'petshopper' });
+  const b = L.createItem({ title: 'pencil', project: 'petshopper', area: 'sketchpad' });
+  const c = L.createItem({ title: 'board', project: 'petshopper', area: 'varken' });
+  assert.strictEqual(a.area, '');
+  const all = [a, b, c];
+  const names = (f) => L.filterItems(all, Object.assign({ status: 'all' }, f)).map((i) => i.title);
+  assert.deepStrictEqual(names({}), ['plain', 'pencil', 'board']);
+  assert.deepStrictEqual(names({ area: 'main' }), ['plain']);
+  assert.deepStrictEqual(names({ area: 'sketchpad' }), ['pencil']);
+  assert.deepStrictEqual(names({ area: 'varken' }), ['board']);
+  assert.strictEqual(L.areaOf('').label, 'Pet Shopper');
+  const s = Object.assign(state(), { items: all });
+  assert.match(L.boardMarkdown(s), /\*\*pencil\*\* _\(Nibble Sketchpad\)_/);
+});

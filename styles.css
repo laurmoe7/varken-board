@@ -514,3 +514,19 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 /* the big good-morning stretch: up on tiptoes with a wiggle, then a settle */
 .pig.act-stretch .pig-all { animation: pig-bigstretch 2.6s ease-in-out; }
 @keyframes pig-bigstretch { 0%, 100% { transform: scale(1, 1); } 25%, 55% { transform: scale(.9, 1.16) translateY(-3px); } 62% { transform: scale(.9, 1.16) translateY(-3px) rotate(-3deg); } 70% { transform: scale(.9, 1.16) translateY(-3px) rotate(3deg); } 85% { transform: scale(1.06, .92); } }
+
+/* a select hidden by the app hides its pastel dropdown too */
+.dd:has(> .dd-native[hidden]) { display: none; }
+/* which app an item is for */
+.tag.area-tag { background: #8fd3ff22; border-color: #8fd3ff55; color: var(--sky); }
+/* the collapsible sync section in Options */
+.fold { margin: 6px 0 0; border: 1px solid var(--line); border-radius: 16px; padding: 0 14px; background: #ffffff08; }
+.fold > summary { cursor: pointer; padding: 11px 0; font-weight: 800; color: var(--text); list-style: none; display: flex; align-items: center; gap: 8px; }
+.fold > summary::-webkit-details-marker { display: none; }
+.fold > summary::before { content: '▸'; color: var(--pink); transition: transform .15s; }
+.fold[open] > summary::before { transform: rotate(90deg); }
+.fold[open] { padding-bottom: 12px; }
+.fold[open] > summary { padding-bottom: 2px; }
+/* a gust of wind: the falling leaves swirl across sideways, each a little differently */
+@keyframes pig-gust { 0% { opacity: 0; transform: translate(-8px, calc(30px + var(--x, 0px) * .3)) rotate(0deg); } 12% { opacity: 1; } 45% { transform: translate(52px, calc(14px + var(--x, 0px) * .25)) rotate(280deg); } 70% { transform: translate(96px, calc(44px + var(--x, 0px) * .2)) rotate(520deg); } 88% { opacity: 1; } 100% { opacity: 0; transform: translate(132px, calc(30px + var(--x, 0px) * .35)) rotate(760deg); } }
+.pig.fx-gust .fall { animation: pig-gust 3.6s ease-in-out calc(var(--d, 0s) * .07) 1 both; }

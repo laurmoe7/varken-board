@@ -26,3 +26,5 @@ Lauren's idea-and-fix board for all her projects (Pet Shopper, funFX, Pathfinder
 ## Reading and updating the board from a session
 
 If the data repo is attached to the session, read `BOARD.md` for the open items (and `data.json` for everything). To mark an item done, edit its object in `data.json`: set `status` to `"done"` and `updated` to the current time in milliseconds (`Date.now()`), so the newer copy wins on the next sync. Never remove items; set `deleted: true` instead.
+
+- Items have an `area` ("For": empty = Pet Shopper itself, `sketchpad`, `varken`; `L.AREAS`), shown as a tag, filtered by `#areaSel`. Details panel and Options close on an outside click only when the press started outside too (so selecting text never closes them). Autumn leaves get a wind gust now and then (`windGust` in app-looks.js, `fx-gust`). The sync settings sit in a collapsible `#syncBox`.
