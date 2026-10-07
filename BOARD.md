@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T13:12:21.831Z_
+_Updated 2026-10-07T13:13:34.823Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,6 +10,7 @@ _Updated 2026-10-07T13:12:21.831Z_
 
 ### Soon
 
+- [ ] 💡 **remove project drop down menu in details. remove seen in build option.** _(Varken Board)_ `muy4ovyhvy8s4`
 - [ ] 💡 **change input textbox for tasks to not be covered by details menu** _(easy)_ _(Varken Board)_ `muy3zgvk5e381`
   > also have details menu open with "type" at the top when inputting task.
 - [ ] 💡 **change background colors of icons on varken board, sketchbook, and cosmetics to make them stand out more** _(easy)_ _(Varken Board)_ `muy3tkzw0wh2c`
