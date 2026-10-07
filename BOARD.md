@@ -1,12 +1,13 @@
 # Varken board
 
-_Updated 2026-10-07T08:29:37.929Z_
+_Updated 2026-10-07T08:31:12.338Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
+- [ ] 💡 **fix details menu closing when selecting text to copy paste, and accidently moving the mouse outside the menu** _(easy)_ `muxulrcogzi17`
 
 ### Soon
 
