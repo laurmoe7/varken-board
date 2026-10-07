@@ -2538,6 +2538,24 @@
       "slot": "",
       "created": 1791376365361,
       "updated": 1791376750194
+    },
+    {
+      "id": "muy3spjime184",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add sound that plays when tagging as doing, maybe a little pop",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "varken",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791377308494,
+      "updated": 1791377308494
     }
   ],
   "notes": [
