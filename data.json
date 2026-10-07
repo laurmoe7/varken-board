@@ -2646,6 +2646,24 @@
       "slot": "",
       "created": 1791378737189,
       "updated": 1791378737189
+    },
+    {
+      "id": "muy4ovyhvy8s4",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "remove project drop down menu in details. remove seen in build option.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "varken",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791378809801,
+      "updated": 1791378809801
     }
   ],
   "notes": [
