@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:53:48.665Z_
+_Updated 2026-10-07T12:53:54.506Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,7 +10,7 @@ _Updated 2026-10-07T12:53:48.665Z_
 
 ### Soon
 
-- [ ] 💡 **change input textbox for tasks to not be covered by details menu** _(Varken Board)_ `muy3zgvk5e381`
+- [ ] 💡 **change input textbox for tasks to not be covered by details menu** _(easy)_ _(Varken Board)_ `muy3zgvk5e381`
   > also have details menu open with "type" at the top when inputting task.
 - [ ] 💡 **change background colors of icons on varken board, sketchbook, and cosmetics to make them stand out more** _(easy)_ _(Varken Board)_ `muy3tkzw0wh2c`
 - [ ] 💡 **add sound that plays when tagging as doing, maybe a little pop** _(easy)_ _(Varken Board)_ `muy3spjime184`
