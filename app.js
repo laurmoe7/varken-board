@@ -6,8 +6,8 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 
 let state = L.defaultState();
 // ui.drafting: the right panel is in "new item" mode, filling ui.draftItem until Add.
-const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', area: '', slot: '', build: '', notes: '', images: [] });
-const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', area: 'all', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
+const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', area: null, slot: '', build: '', notes: '', images: [] });
+const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', area: 'main', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
 const isNotesView = () => ui.view === 'notes' || ui.view === 'gnotes'; // notes of a project (or All) or of a gallery
 
@@ -149,10 +149,11 @@ const galleryProject = () => {
 };
 const GALLERY_STATUSES = [{ id: 'open', label: 'Idea' }, { id: 'doing', label: 'Making it' }, { id: 'done', label: 'In the game' }];
 
-function showView(projectId, view) {
+function showView(projectId, view, area) {
   pigSay('view', { p: 0.15 });
   if ((view === 'notes' || view === 'gnotes') && ui.drafting) { ui.drafting = false; ui.draftItem = blankDraft(); }
   ui.project = projectId;
+  ui.area = area || (projectId === 'petshopper' ? 'main' : 'all'); // Pet Shopper's own tab leaves out the Varken tabs' items
   ui.view = view;
   ui.slot = 'all';
   ui.open = null;
@@ -165,12 +166,20 @@ function renderSide() {
   const inGallery = !!galleryProject();
   $('#projects').innerHTML = rows
     .map(
-      (p) => `<div class="proj ${ui.project === p.id && (ui.view === 'list' || ui.view === 'notes') ? 'on' : ''}" data-project="${esc(p.id)}" role="button" tabindex="0">
+      (p) => `<div class="proj ${ui.project === p.id && (ui.view === 'list' || ui.view === 'notes') && !(p.id === 'petshopper' && ui.area !== 'main' && ui.area !== 'all') ? 'on' : ''}" data-project="${esc(p.id)}" role="button" tabindex="0">
         <span class="badge" style="background:${esc(p.color)}">${esc(p.emoji)}</span>
         <span class="name">${esc(p.name)}</span>
-        <span class="count">${L.countOpen(state.items, p.id)}</span>
+        <span class="count">${L.countOpen(state.items, p.id, p.id === 'petshopper' ? 'main' : 'all')}</span>
         ${p.id === 'all' ? '' : '<button class="edit" data-edit="' + esc(p.id) + '" title="Edit project" aria-label="Edit project">✎</button>'}
       </div>${
+        p.id === 'petshopper'
+          ? ['varken', 'sketchpad'].map((a) => `<div class="proj subrow ${ui.project === p.id && ui.area === a && (ui.view === 'list' || ui.view === 'notes') ? 'on' : ''}" data-project="${esc(p.id)}" data-area="${a}" role="button" tabindex="0">
+        <span class="badge" style="background:${esc(p.color)}">${L.areaOf(a).emoji}</span>
+        <span class="name">${esc(L.areaOf(a).label)}</span>
+        <span class="count">${L.countOpen(state.items, p.id, a)}</span>
+      </div>`).join('')
+          : ''
+      }${
         p.gallery
           ? `<div class="proj subrow ${ui.project === p.id && (inGallery || ui.view === 'gnotes') ? 'on' : ''}" data-gallery="${esc(p.id)}" role="button" tabindex="0">
         <span class="badge" style="background:${esc(p.color)}">🎀</span>
@@ -187,9 +196,10 @@ function renderHead(poke) {
   if (isNotesView()) return renderNotesHead(poke);
   const gp = galleryProject();
   const p = project(ui.project);
-  $('#viewTitle').textContent = gp ? '🎀 ' + gp.gallery : p ? p.emoji + ' ' + p.name : '🌈 All projects';
-  const n = L.countOpen(state.items, ui.project);
-  const now = L.countNow(state.items, ui.project); // per project, so another project's ASAPs don't count here
+  const sub0 = ui.project === 'petshopper' && (ui.area === 'varken' || ui.area === 'sketchpad') ? L.areaOf(ui.area) : null;
+  $('#viewTitle').textContent = gp ? '🎀 ' + gp.gallery : sub0 ? sub0.emoji + ' ' + sub0.label : p ? p.emoji + ' ' + p.name : '🌈 All projects';
+  const n = L.countOpen(state.items, ui.project, ui.area);
+  const now = L.countNow(state.items, ui.project, ui.area); // per project, so another project's ASAPs don't count here
   const sub = $('#viewSub');
   sub.className = 'sub';
   paintHero(!!gp, gp ? L.countGallery(state.items, gp.id) : n, now, poke === true);
@@ -200,7 +210,7 @@ function renderHead(poke) {
     sub.classList.add('warn');
     sub.textContent = `${now} things marked ASAP. That's a lot! 🐷`;
   } else {
-    const today = L.doneToday(state.items, Date.now(), ui.project);
+    const today = L.doneToday(state.items, Date.now(), ui.project, ui.area);
     sub.textContent = (n === 1 ? '1 thing to do' : n + ' things to do') + (today ? ` · ✨ ${today} done today` : '');
   }
   if (gp) {
@@ -219,8 +229,6 @@ function renderHead(poke) {
   }
   $('#effortSel').hidden = !!gp;
   $('#effortSel').value = ui.effort;
-  $('#areaSel').hidden = !!gp;
-  $('#areaSel').value = ui.area;
   $('#statusSel').hidden = !!gp;
   $('#statusSel').value = ui.status;
   $('#pickBtn').hidden = !!gp || ui.status === 'done';
@@ -243,7 +251,7 @@ function cardHtml(it) {
       <div class="card-title ${it.effort ? 'fx-' + it.effort : ''}">${L.typeOf(it.type).emoji} ${esc(it.title)}<button class="copy-mini" data-copy title="Copy for Claude" aria-label="Copy for Claude">📋</button></div>
       <div class="meta">
         ${it.effort ? `<span class="tag fx fx-${it.effort}">${L.effortOf(it.effort).emoji} ${L.effortOf(it.effort).label.toLowerCase()}</span>` : ''}
-        ${it.area ? `<span class="tag area-tag">${L.areaOf(it.area).emoji} ${esc(L.areaOf(it.area).label)}</span>` : ''}
+        ${(it.area === 'varken' || it.area === 'sketchpad') && ui.area !== it.area ? `<span class="tag area-tag">${L.areaOf(it.area).emoji} ${esc(L.areaOf(it.area).label)}</span>` : ''}
         ${ui.project === 'all' && p ? `<span class="tag proj-tag" style="background:${esc(p.color)}">${esc(p.emoji)} ${esc(p.name)}</span>` : ''}
         ${it.status === 'doing' ? '<span class="tag doing">doing</span>' : ''}
         ${it.build ? `<span class="tag">build ${esc(it.build)}</span>` : ''}
@@ -260,7 +268,7 @@ function renderListView() {
   const groups = L.groupByPriority(items);
   const el = $('#list');
   if (!groups.length) {
-    const searching = ui.q || ui.type !== 'all' || ui.effort !== 'all' || ui.area !== 'all' || ui.status !== 'active';
+    const searching = ui.q || ui.type !== 'all' || ui.effort !== 'all' || ui.status !== 'active';
     el.innerHTML = searching
       ? emptyHtml('sniff', 'Nothing matches', 'I sniffed everywhere. Try a different filter.')
       : emptyHtml('sleep', 'All clear!', 'Add an idea or a fix above and Varken will keep it safe.');
@@ -296,7 +304,12 @@ function seg(field, list, cur, cls) {
 const current = () => (ui.drafting ? ui.draftItem : item());
 
 // What the new-item panel shows: the panel's choices with anything typed as #project !now :bug on top.
-const draftValues = () => Object.assign(L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults()), { slot: ui.draftItem.slot, area: ui.draftItem.area });
+// A new item is for the tab you are typing in: a Varken sub-tab gives its own tag, funFX and Pathfinder give theirs.
+const draftArea = (projectId) => (ui.draftItem.area != null ? ui.draftItem.area : ui.project === 'petshopper' ? L.projectArea(projectId, ui.area) : L.projectArea(projectId, null));
+const draftValues = () => {
+  const v = L.parseQuick($('#quickInput').value, projectsLive(), quickDefaults());
+  return Object.assign(v, { slot: ui.draftItem.slot, area: draftArea(v.project) });
+};
 
 // The title box grows with its text, so long titles are easy to read and edit.
 function growTitle() {
@@ -448,7 +461,7 @@ function commitDraft() {
   const it = L.createItem(
     gp
       ? { project: gp.id, gallery: true, slot: d.slot, title: r.title, notes: d.notes, images: d.images.slice() }
-      : { project: r.project || defaults.project, type: r.type, priority: r.priority, effort: r.effort, area: d.area, title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
+      : { project: r.project || defaults.project, type: r.type, priority: r.priority, effort: r.effort, area: draftArea(r.project || defaults.project), title: r.title, build: d.build, notes: d.notes, images: d.images.slice() }
   );
   state.items.push(it);
   ui.last = it.project;
@@ -583,14 +596,17 @@ function wire() {
     if (ed) return openProjectDlg(ed.dataset.edit);
     const g = e.target.closest('[data-gallery]');
     if (g) return showView(g.dataset.gallery, 'gallery');
-    const p = e.target.closest('[data-project]');
+    const p = e.target.closest('[data-project]:not([data-area])');
+    const a = e.target.closest('[data-area]');
+    if (a) return showView('petshopper', 'list', a.dataset.area);
     if (p) showView(p.dataset.project, 'list');
   });
   $('#projects').addEventListener('keydown', (e) => {
-    const row = e.target.closest('[data-project], [data-gallery]');
+    const row = e.target.closest('[data-project], [data-gallery], [data-area]');
     if (row && e.target === row && (e.key === 'Enter' || e.key === ' ')) {
       e.preventDefault();
-      if (row.dataset.gallery) showView(row.dataset.gallery, 'gallery');
+      if (row.dataset.area) showView('petshopper', 'list', row.dataset.area);
+      else if (row.dataset.gallery) showView(row.dataset.gallery, 'gallery');
       else showView(row.dataset.project, 'list');
     }
   });
@@ -602,7 +618,6 @@ function wire() {
     if (b) { ui.type = b.dataset.type; saveUi(); renderList(); }
   });
   $('#effortSel').onchange = (e) => { ui.effort = e.target.value; saveUi(); renderList(); };
-  $('#areaSel').onchange = (e) => { ui.area = e.target.value; saveUi(); renderList(); };
   $('#statusSel').onchange = (e) => { ui.status = e.target.value; saveUi(); renderList(); };
   $('#search').onfocus = () => pigSay('search', { p: 0.2 });
   $('#search').oninput = (e) => { ui.q = e.target.value; renderList(); };
@@ -639,12 +654,18 @@ function wire() {
     const sb = e.target.closest('[data-seg] [data-val]');
     if (sb) {
       const field = sb.parentElement.dataset.seg;
-      setField(it, field, (field === 'slot' || field === 'effort' || field === 'area') && it[field] === sb.dataset.val ? '' : sb.dataset.val);
+      if (field === 'area') { // the tag also moves the item to the matching project (funFX and Pathfinder are projects; the Varken apps live in Pet Shopper)
+        const pid = L.areaProject(sb.dataset.val);
+        if (project(pid)) setField(it, 'project', pid);
+        if (ui.drafting) qi.value = L.stripToken(qi.value, projectsLive(), 'project');
+      }
+      setField(it, field, (field === 'slot' || field === 'effort') && it[field] === sb.dataset.val ? '' : sb.dataset.val);
       if (ui.drafting) {
         qi.value = L.stripToken(qi.value, projectsLive(), field); // a typed #tag or !word would override the click
         paintDraft();
       } else {
         sb.parentElement.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.val === it[field]));
+        if (field === 'area' && $('#dProject')) $('#dProject').value = it.project;
         renderList();
       }
       return;
@@ -676,6 +697,8 @@ function wire() {
     if (!it) return;
     if (e.target.id === 'dProject') {
       setField(it, 'project', e.target.value);
+      if (!ui.drafting) setField(it, 'area', L.projectArea(e.target.value, it.area));
+      else if (ui.draftItem.area != null) ui.draftItem.area = L.projectArea(e.target.value, ui.draftItem.area);
       if (ui.drafting) { qi.value = L.stripToken(qi.value, projectsLive(), 'project'); paintDraft(); } else renderList();
     }
     if (e.target.id === 'dFile') { addFiles(e.target.files, it); e.target.value = ''; }
@@ -827,6 +850,7 @@ async function start() {
   if (ps && ps.gallery === undefined) { ps.gallery = 'Cosmetics'; touch(ps); save(); } // Pet Shopper's cosmetics gallery
   if (ps && ps.slots === undefined) { ps.slots = L.DEFAULT_SLOTS; touch(ps); save(); }
   if (!project(ui.project) && ui.project !== 'all') ui.project = 'all';
+  ui.area = ui.project === 'petshopper' ? (['varken', 'sketchpad'].includes(ui.area) ? ui.area : 'main') : 'all';
   if (ui.view === 'gnotes' && !(project(ui.project) || {}).gallery) ui.view = 'list';
   else if (ui.view !== 'notes' && ui.view !== 'gnotes' && !galleryProject()) ui.view = 'list';
   ready = true;

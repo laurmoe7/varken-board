@@ -26,11 +26,19 @@
   ];
   // Which app an item is for. Empty is the default: just Pet Shopper itself.
   const AREAS = [
-    { id: '', label: 'Pet Shopper' },
-    { id: 'sketchpad', label: 'Nibble Sketchpad', emoji: '✏️' },
+    { id: '', label: 'Pet Shopper', emoji: '🐹' },
     { id: 'varken', label: 'Varken Board', emoji: '🐷' },
+    { id: 'sketchpad', label: 'Varken Sketchpad', emoji: '✏️' },
+    { id: 'funfx', label: 'funFX', emoji: '✨' },
+    { id: 'pathfinder', label: 'Pathfinder', emoji: '🎲' },
   ];
   const areaOf = (id) => AREAS.find((a) => a.id === (id || '')) || AREAS[0];
+  // Which project an area lives in: the Varken apps are tabs under Pet Shopper; funFX and Pathfinder are projects of their own.
+  const areaProject = (area) => (area === 'funfx' ? 'funfx' : area === 'pathfinder' ? 'pathfinder' : 'petshopper');
+  // The area a project's items get by default (`cur` keeps a Varken tag when staying in Pet Shopper).
+  const projectArea = (projectId, cur) => (projectId === 'funfx' ? 'funfx' : projectId === 'pathfinder' ? 'pathfinder' : projectId === 'petshopper' && (cur === 'varken' || cur === 'sketchpad') ? cur : '');
+  // Does an item belong to a view's area? 'all' (or nothing) is everything, 'main' is Pet Shopper itself (no tag).
+  const areaMatch = (it, area) => !area || area === 'all' || (it.area || '') === (area === 'main' ? '' : area);
   const COLORS = ['#ff9ec7', '#b9a4ff', '#8ff0c8', '#ffe29a', '#ffb38a', '#8fd3ff'];
   const NOW_CAP = 5;
   const DEFAULT_SLOTS = 'Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy';
@@ -145,7 +153,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       if (f.project && f.project !== 'all' && it.project !== f.project) return false;
       if (f.type && f.type !== 'all' && it.type !== f.type) return false;
       if (f.effort && f.effort !== 'all' && it.effort !== f.effort) return false;
-      if (f.area && f.area !== 'all' && (it.area || '') !== (f.area === 'main' ? '' : f.area)) return false;
+      if (!f.gallery && !areaMatch(it, f.area)) return false;
       if (f.status === 'active' && it.status === 'done') return false;
       if (f.status && f.status !== 'active' && f.status !== 'all' && it.status !== f.status) return false;
       if (q && !(it.title + ' ' + it.notes + ' ' + it.build).toLowerCase().includes(q)) return false;
@@ -187,9 +195,9 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
   }
 
   // ASAP items (id 'now'), for one project or, with 'all' or nothing, for the whole board.
-  const countNow = (items, project) => items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && i.priority === 'now' && (!project || project === 'all' || i.project === project)).length;
-  const countOpen = (items, project) =>
-    items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && (project === 'all' || i.project === project)).length;
+  const countNow = (items, project, area) => items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && i.priority === 'now' && (!project || project === 'all' || i.project === project) && areaMatch(i, area)).length;
+  const countOpen = (items, project, area) =>
+    items.filter((i) => !i.deleted && !i.gallery && i.status !== 'done' && (project === 'all' || i.project === project) && areaMatch(i, area)).length;
   // The slot tags on a project's gallery items, with counts: the project's own list first (its order), then any others.
   function slotCounts(items, project, configured) {
     const counts = new Map();
@@ -199,10 +207,10 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     return order.map((slot) => ({ slot, count: counts.get(slot) }));
   }
   // How many things were checked off today (since local midnight), for one project or 'all'.
-  function doneToday(items, now, project) {
+  function doneToday(items, now, project, area) {
     const d = new Date(now == null ? Date.now() : now);
     d.setHours(0, 0, 0, 0);
-    return items.filter((i) => !i.deleted && i.status === 'done' && i.doneAt >= d.getTime() && (!project || project === 'all' || i.project === project)).length;
+    return items.filter((i) => !i.deleted && i.status === 'done' && i.doneAt >= d.getTime() && (!project || project === 'all' || i.project === project) && areaMatch(i, area)).length;
   }
   // Last seven days: how many finished and which project got the most.
   function weekSummary(items, now) {
@@ -395,7 +403,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   const api = {
     TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
-    uid, slug, typeOf, effortOf, AREAS, areaOf, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
+    uid, slug, typeOf, effortOf, AREAS, areaOf, areaProject, projectArea, areaMatch, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
     filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday, weekSummary, seasonOf, holidayOf, lookOf,
     mergeStates, validateState, fitSize, projectName, copyItem, pickForMe, isNight, boardMarkdown,
   };

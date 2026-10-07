@@ -40,7 +40,7 @@ $('#viewTabs').addEventListener('click', (e) => {
   const b = e.target.closest('[data-vt]');
   if (!b) return;
   const gal = ui.view === 'gallery' || ui.view === 'gnotes';
-  showView(ui.project, b.dataset.vt === 'notes' ? (gal ? 'gnotes' : 'notes') : gal ? 'gallery' : 'list');
+  showView(ui.project, b.dataset.vt === 'notes' ? (gal ? 'gnotes' : 'notes') : gal ? 'gallery' : 'list', ui.area);
 });
 
 const noteDate = (n) => new Date(n.created).toLocaleDateString([], { day: 'numeric', month: 'short' });

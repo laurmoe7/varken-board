@@ -372,5 +372,19 @@ test('area: default is Pet Shopper itself, filter and board text know the others
   assert.deepStrictEqual(names({ area: 'varken' }), ['board']);
   assert.strictEqual(L.areaOf('').label, 'Pet Shopper');
   const s = Object.assign(state(), { items: all });
-  assert.match(L.boardMarkdown(s), /\*\*pencil\*\* _\(Nibble Sketchpad\)_/);
+  assert.match(L.boardMarkdown(s), /\*\*pencil\*\* _\(Varken Sketchpad\)_/);
+});
+
+test('areas map to projects and views', () => {
+  assert.strictEqual(L.areaProject('funfx'), 'funfx');
+  assert.strictEqual(L.areaProject('varken'), 'petshopper');
+  assert.strictEqual(L.projectArea('pathfinder', null), 'pathfinder');
+  assert.strictEqual(L.projectArea('petshopper', 'sketchpad'), 'sketchpad');
+  assert.strictEqual(L.projectArea('petshopper', 'funfx'), '');
+  const items = [L.createItem({ title: 'a', project: 'petshopper' }), L.createItem({ title: 'b', project: 'petshopper', area: 'varken', priority: 'now' })];
+  assert.strictEqual(L.countOpen(items, 'petshopper', 'main'), 1);
+  assert.strictEqual(L.countOpen(items, 'petshopper', 'varken'), 1);
+  assert.strictEqual(L.countOpen(items, 'petshopper'), 2);
+  assert.strictEqual(L.countNow(items, 'petshopper', 'main'), 0);
+  assert.strictEqual(L.countNow(items, 'petshopper', 'varken'), 1);
 });
