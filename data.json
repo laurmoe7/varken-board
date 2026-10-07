@@ -1408,17 +1408,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "put year in \"come back\" text if year is not current year on calendar",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791361003926,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791289817357,
-      "updated": 1791289834307
+      "updated": 1791361003926
     },
     {
       "id": "muwo5omjikzsu",
