@@ -174,7 +174,7 @@ function renderSide() {
       </div>${
         p.id === 'petshopper'
           ? ['varken', 'sketchpad'].map((a) => `<div class="proj subrow ${ui.project === p.id && ui.area === a && (ui.view === 'list' || ui.view === 'notes') ? 'on' : ''}" data-project="${esc(p.id)}" data-area="${a}" role="button" tabindex="0">
-        <span class="badge" style="background:${esc(p.color)}">${L.areaOf(a).emoji}</span>
+        <span class="badge sub-${a}">${L.areaOf(a).emoji}</span>
         <span class="name">${esc(L.areaOf(a).label)}</span>
         <span class="count">${L.countOpen(state.items, p.id, a)}</span>
       </div>`).join('')
@@ -182,7 +182,7 @@ function renderSide() {
       }${
         p.gallery
           ? `<div class="proj subrow ${ui.project === p.id && (inGallery || ui.view === 'gnotes') ? 'on' : ''}" data-gallery="${esc(p.id)}" role="button" tabindex="0">
-        <span class="badge" style="background:${esc(p.color)}">🎀</span>
+        <span class="badge sub-gallery">🎀</span>
         <span class="name">${esc(p.gallery)}</span>
         <span class="count">${L.countGallery(state.items, p.id)}</span>
       </div>`
@@ -345,14 +345,12 @@ function renderDetail() {
     <div class="drop" id="dDrop">Paste (Ctrl+V), drop images here, or <button type="button" id="dPick">pick files</button><input type="file" id="dFile" accept="image/*" multiple hidden></div>`;
   d.innerHTML = `
     <h3>${draft ? 'New ' + (gal ? 'idea' : 'item') : 'Details'} <button class="ghost icon" id="dClose" aria-label="Close">✕</button></h3>
-    ${draft ? '<div class="draft-title" id="dPreview"></div>' : `<textarea id="dTitle" rows="2" aria-label="Title">${esc(it.title)}</textarea>`}
+    ${draft ? '' : `<textarea id="dTitle" rows="2" aria-label="Title">${esc(it.title)}</textarea>`}
     ${gal ? images + slotRow : `<label>Type ${seg('type', L.TYPES, v.type)}</label>
     <label>Priority ${seg('priority', L.PRIORITIES, v.priority)}</label>
     <label>Effort <span class="muted small">(click again to clear)</span> ${seg('effort', L.EFFORTS, v.effort)}</label>
     <label>For ${seg('area', L.AREAS, v.area || '', 'wrap')}</label>`}
     ${draft ? '' : `<label>Status ${seg('status', gal ? GALLERY_STATUSES : L.STATUSES, it.status)}</label>`}
-    ${gal ? '' : `<label>Project <select id="dProject">${projectsLive().map((p) => `<option value="${esc(p.id)}" ${p.id === v.project ? 'selected' : ''}>${esc(p.emoji)} ${esc(p.name)}</option>`).join('')}</select></label>
-    <label>Seen in build <input id="dBuild" value="${esc(it.build)}" placeholder="e.g. 212" autocomplete="off"></label>`}
     <label>Notes <textarea id="dNotes" placeholder="${gal ? 'What is it? Colours, which slot, where it goes…' : 'What is it, what should happen instead…'}">${esc(it.notes)}</textarea></label>
     ${gal ? '' : images}
     <div class="row">${
@@ -492,7 +490,10 @@ function clearDraft() {
 
 function setField(it, field, val) {
   it[field] = val;
-  if (field === 'status') it.doneAt = val === 'done' ? Date.now() : 0;
+  if (field === 'status') {
+    it.doneAt = val === 'done' ? Date.now() : 0;
+    if (val === 'doing' && it !== ui.draftItem) popSound();
+  }
   if (it === ui.draftItem) return; // a new item is only saved by Add
   touch(it);
   save();
@@ -694,7 +695,6 @@ function wire() {
     if (e.target.id === 'dTitle' || e.target.id === 'dNotes') growTitle();
     if (e.target.id === 'dTitle') { setField(it, 'title', e.target.value.replace(/\s*\n\s*/g, ' ')); }
     else if (e.target.id === 'dNotes') setField(it, 'notes', e.target.value);
-    else if (e.target.id === 'dBuild') setField(it, 'build', e.target.value.trim());
     else return;
     if (!ui.drafting) renderList();
   });

@@ -26,6 +26,27 @@ function chime() {
   } catch { /* no audio available */ }
 }
 
+// A tiny bubble pop for marking something as doing: a quick pitch sweep up.
+function popSound() {
+  if (!fun.on) return;
+  try {
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    const t = audioCtx.currentTime;
+    const o = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+    o.type = 'sine';
+    o.frequency.setValueAtTime(380, t);
+    o.frequency.exponentialRampToValueAtTime(1100, t + 0.07);
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(0.16, t + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + 0.12);
+    o.connect(g).connect(audioCtx.destination);
+    o.start(t);
+    o.stop(t + 0.14);
+  } catch { /* no audio available */ }
+}
+
 const CONFETTI = ['#ff9ec7', '#b9a4ff', '#8ff0c8', '#ffe29a', '#ffb38a', '#8fd3ff'];
 function confetti(x, y, count, lifeMs) {
   if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;

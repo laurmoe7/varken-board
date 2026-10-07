@@ -574,3 +574,11 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .pig.fx-gust .pig-eyes { animation: pig-follow 4s ease-in-out both; }
 @keyframes pig-follow { 0%, 100% { translate: 0 0; } 10% { translate: -2.5px -1px; } 35% { translate: 0 1.5px; } 60% { translate: 3px 2px; } 80% { translate: 3px 1px; } }
 @media (prefers-reduced-motion: reduce) { .pig.fx-gust .pig-eyes { animation: none; } }
+
+/* the sub-tab icons get their own bright colours so they stand out from Pet Shopper */
+.proj.subrow .badge { color: #2a1740; box-shadow: 0 0 0 2px #ffffff22; }
+.badge.sub-varken { background: #ff7eb0; }
+.badge.sub-sketchpad { background: #7fd4ff; }
+.badge.sub-gallery { background: #ffd35e; }
+/* the details panel no longer covers the add box */
+@media (min-width: 901px) { .app.has-detail .main { padding-right: 468px; } }
