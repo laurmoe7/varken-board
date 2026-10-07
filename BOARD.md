@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T18:22:47.782Z_
+_Updated 2026-10-07T19:14:24.497Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -157,8 +157,6 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **remove light mode** _(medium)_ _(Pathfinder)_ _(doing)_ `muy4nbxh374ij`
-  > make dark mode the default. add a couple more ui themes. show me a mockup first before adding them to the program. make 5 different ones and let me choose. make at least 1 look like an old, dusty tome with turning page, but don't make it too bright. 
 - [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(Pathfinder)_ `muyfqj7tv0cyk`
 - [ ] 💡 **be able to drag and drop cookie to move him** _(Pathfinder)_ `muyeg9gs57isa`
 - [ ] 💡 **level up jingle and sound on full heal** _(easy)_ _(Pathfinder)_ `muy9q6p9399dh`
@@ -178,7 +176,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_23 done._
+_24 done._
 
 ### Notes
 
