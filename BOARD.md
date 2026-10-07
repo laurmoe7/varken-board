@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T13:44:04.376Z_
+_Updated 2026-10-07T13:44:46.272Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,7 +10,8 @@ _Updated 2026-10-07T13:44:04.376Z_
 
 ### Soon
 
-- [ ] 💡 **add sound that plays when tagging as doing, maybe a little pop** _(easy)_ _(Varken Board)_ _(doing)_ `muy3spjime184`
+- [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
+  - images: images/muy5s403rmwaj.jpg
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
@@ -44,7 +45,7 @@ _Updated 2026-10-07T13:44:04.376Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_27 done._
+_28 done._
 
 ### Cosmetics gallery
 
