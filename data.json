@@ -2810,6 +2810,24 @@
       "slot": "",
       "created": 1791397362377,
       "updated": 1791397362377
+    },
+    {
+      "id": "muyl2x5bbzko9",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make cookie eat a cookie",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791406338383,
+      "updated": 1791406338383
     }
   ],
   "notes": [
