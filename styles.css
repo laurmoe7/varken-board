@@ -452,7 +452,7 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 /* The header, input and tabs stay on top, and the pig card shrinks as you scroll. --p (0 to 1) is set from the scroll
    position in app-start.js; every part that changes is linear in --p, and a spacer gives back exactly the height the
    header loses, so the list never moves by itself and nothing flickers. */
-:root { --p: 0; --D: 200px; --hintH: 24px; --heroH: 120px; --heroDelta: 68px; }
+:root { --p: 0; --D: 200px; --hintH: 24px; --heroH: 120px; --heroDelta: 56px; }
 @media (max-width: 900px) { :root { --heroH: 64px; --heroDelta: 12px; } }
 .main { overflow-anchor: none; }
 .sticky-top { position: sticky; top: -22px; z-index: 20; margin: -22px -28px 0; padding: calc(22px - 12px * var(--p)) 28px 10px; background: var(--bg); }
@@ -464,7 +464,8 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .sticky-top .hero-pig { width: calc(var(--heroH) - var(--heroDelta) * var(--p)); height: calc(var(--heroH) - var(--heroDelta) * var(--p)); }
 .sticky-top .hero > div:last-child { overflow: hidden; max-height: 100%; }
 .sticky-top h1 { font-size: calc(31px - 11px * var(--p)); white-space: nowrap; }
-.sticky-top .sub, .sticky-top .say { opacity: calc(1 - 2.2 * var(--p)); }
+.sticky-top .sub { line-height: 18px; height: calc(18px * (1 - var(--p))); overflow: hidden; white-space: nowrap; opacity: calc(1 - 2.2 * var(--p)); }
+.sticky-top .say { margin-top: calc(8px - 5px * var(--p)); max-height: calc(44px - 18px * var(--p)); }
 .sticky-top #quick { margin-top: calc(18px - 8px * var(--p)); }
 .sticky-top #quickHint { height: calc(var(--hintH) * (1 - var(--p))); margin-top: calc(8px * (1 - var(--p))); overflow: hidden; opacity: calc(1 - 1.6 * var(--p)); }
 .sticky-top .vtabs { margin-top: calc(16px - 6px * var(--p)); }
