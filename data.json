@@ -2766,7 +2766,7 @@
       "priority": "now",
       "status": "open",
       "title": "fight arm not holding light in light up animation, he is covering his face",
-      "notes": "",
+      "notes": "also make the tears go down his face when he fake crys. they are currently static.",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
@@ -2775,7 +2775,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791392804386,
-      "updated": 1791392804386
+      "updated": 1791407407446
     },
     {
       "id": "muyeg9gs57isa",
