@@ -2450,18 +2450,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "fix details menu closing when selecting text to copy paste, and accidently moving the mouse outside the menu",
-      "notes": "dsda",
+      "notes": "",
       "build": "",
       "effort": "easy",
       "area": "varken",
-      "doneAt": 0,
+      "doneAt": 1791367575346,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791361867704,
-      "updated": 1791367569317
+      "updated": 1791367575346
     }
   ],
   "notes": [
