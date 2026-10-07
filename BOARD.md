@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T20:52:24.005Z_
+_Updated 2026-10-07T21:04:47.860Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -147,7 +147,7 @@ _28 done._
 
 _2 done._
 
-## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
+## 🍪 Cookie's Sheets (https://github.com/laurmoe7/pathfinder-sheet)
 
 ### ASAP
 
