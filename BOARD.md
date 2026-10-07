@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T01:06:12.476Z_
+_Updated 2026-10-07T01:25:52.916Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,7 +11,7 @@ _Updated 2026-10-07T01:06:12.476Z_
 ### Soon
 
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
-  > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. allowing rotating of nibble in photoshoots. mute dressing room sounds in photo shoot menu.
+  > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. mute dressing room sounds in photo shoot menu.
 - [ ] 🔧 **put year in "come back" text if year is not current year on calendar** _(easy)_ `muwnpgy5ks8kb`
 - [ ] 💡 **animation of the pet searching with the mag. glass while recipe parser is open** _(easy)_ `muwn6ynls0ywa`
 - [ ] 🔧 **clean up "What's in it" on github** _(easy)_ `muwmtx6328ol3`
