@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T21:10:12.295Z_
+_Updated 2026-10-07T21:35:09.623Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -120,6 +120,10 @@ _28 done._
 - have varken board say "Dansen!"
 - glorp alien skin
 - grumpy chef: import a recipe on 3 different days
+  
+  jester: tease pet by holding ball above head for x days
+  
+  
 - tiger cat skin
 - hummingbird skin
 - 10 goodnight kisses to unlock carer persona
