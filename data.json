@@ -2911,9 +2911,9 @@
     {
       "id": "mux6qs3i7mogw",
       "scope": "petshopper",
-      "text": "grumpy chef: import a recipe on 3 different days\n\njester: tease pet by holding ball above head for x days\n\n?: throw ball for pet x days",
+      "text": "grumpy chef: import a recipe on 3 different days\n\njester: tease pet by holding ball above head for x days\n\n?: throw ball for pet x days\n\ncozy: tuck pet in x times",
       "created": 1791321791166,
-      "updated": 1791408916923
+      "updated": 1791408936077
     },
     {
       "id": "mux7owa454h83",
