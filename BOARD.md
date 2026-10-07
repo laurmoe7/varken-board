@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:53:54.506Z_
+_Updated 2026-10-07T12:56:24.191Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -154,7 +154,6 @@ _2 done._
 ### Soon
 
 - [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muxy734rozwxw`
-- [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ _(Pathfinder)_ _(doing)_ `muvws9ekekw6e`
 - [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwldlunxnxt`
 - [ ] 💡 **level-up warning for skills** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwhnueie781`
   > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
@@ -177,7 +176,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_15 done._
+_16 done._
 
 ### Notes
 
