@@ -843,7 +843,7 @@
       "priority": "soon",
       "status": "open",
       "title": "fix ability to recognize familiar eligibilty",
-      "notes": "does not recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.",
+      "notes": "does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.",
       "build": "",
       "effort": "medium",
       "doneAt": 0,
@@ -851,7 +851,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791243709209,
-      "updated": 1791244109115
+      "updated": 1791360983023
     },
     {
       "id": "muvwa5qvbgfbp",
