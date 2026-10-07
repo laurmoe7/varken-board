@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T21:38:17.556Z_
+_Updated 2026-10-07T21:51:54.548Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -29,6 +29,8 @@ _Updated 2026-10-07T21:38:17.556Z_
 
 ### Someday
 
+- [ ] 💡 **household to-do lists aren't synced, but allow households to send recommended reminders to each other.** _(medium)_ `muyn7h0ayf8jv`
+  > something like "Mom sent: May 9th, grandma's at 5pm for dinner". when making a task for yourself, put an option to share with household members. give options to disable this.
 - [ ] 💡 **additional interface themes** _(medium)_ `muwo5omjikzsu`
 - [ ] 💡 **export nibble as whatsapp sticker** _(medium)_ `muwkhvsr9p1ub`
 - [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
