@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T08:18:30.470Z_
+_Updated 2026-10-07T08:25:04.024Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,6 +10,8 @@ _Updated 2026-10-07T08:18:30.470Z_
 
 ### Soon
 
+- [ ] 💡 **additional support for 3rd party publisher content** `muxudv5t72lnf`
+  > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
