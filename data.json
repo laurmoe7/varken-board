@@ -1477,8 +1477,8 @@
       "type": "fix",
       "priority": "now",
       "status": "open",
-      "title": "cant see cursor following feature outside PC, so maybe remove this",
-      "notes": "this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on them instead.",
+      "title": "cant see cursor following feature outside PC, so remove this",
+      "notes": "this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.",
       "build": "",
       "effort": "easy",
       "doneAt": 0,
@@ -1486,7 +1486,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791293424578,
-      "updated": 1791293424578
+      "updated": 1791324658125
     },
     {
       "id": "muwvog8njv1ae",
@@ -2078,17 +2078,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "**varken board changes",
       "notes": "remove time of day based background effects like the moon. screen is looking cluttered",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791324674926,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791315832477,
-      "updated": 1791315832477
+      "updated": 1791324674926
     },
     {
       "id": "mux3qjhkxlrp3",
@@ -2125,6 +2125,57 @@
       "slot": "",
       "created": 1791317783307,
       "updated": 1791317783307
+    },
+    {
+      "id": "mux8zewv2sees",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "when hovering over a sound in the soundboard menu, show origin of sound (dark souls, Ragnarok Online, meme, etc)",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 1791330619517,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791325553215,
+      "updated": 1791330619517
+    },
+    {
+      "id": "mux903byxmye4",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "add soundboard, probably on general tab so you can preview all sounds easily",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 1791330617691,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791325584862,
+      "updated": 1791330617691
+    },
+    {
+      "id": "muxc6vzsp8wgi",
+      "project": "funfx",
+      "type": "fix",
+      "priority": "soon",
+      "status": "open",
+      "title": "improve and clarify pack system",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791330940792,
+      "updated": 1791330940792
     }
   ],
   "notes": [

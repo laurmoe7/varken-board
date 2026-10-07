@@ -1,17 +1,15 @@
 # Varken board
 
-_Updated 2026-10-06T22:07:45.992Z_
+_Updated 2026-10-06T23:55:45.662Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 🔧 ****varken board changes** _(easy)_ `mux372cdw2srj`
-  > remove time of day based background effects like the moon. screen is looking cluttered
 - [ ] 💡 **swipe items of shopping list to remove them** _(easy)_ `muwvog8njv1ae`
-- [ ] 🔧 **cant see cursor following feature outside PC, so maybe remove this** _(easy)_ `muwpusaq62rmp`
-  > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on them instead.
+- [ ] 🔧 **cant see cursor following feature outside PC, so remove this** _(easy)_ `muwpusaq62rmp`
+  > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.
 - [ ] 🔧 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
 
 ### Soon
@@ -55,7 +53,7 @@ _Updated 2026-10-06T22:07:45.992Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_14 done._
+_15 done._
 
 ### Cosmetics gallery
 
@@ -137,6 +135,7 @@ _14 done._
 
 ### Soon
 
+- [ ] 🔧 **improve and clarify pack system** _(easy)_ `muxc6vzsp8wgi`
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
@@ -151,6 +150,8 @@ _14 done._
   > In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.
 - [ ] 💡 **Bring back Mute game sound?** `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
+
+_2 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
