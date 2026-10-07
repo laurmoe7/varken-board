@@ -2598,7 +2598,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed",
       "notes": "",
       "build": "",
@@ -2609,7 +2609,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791377529932,
-      "updated": 1791377529932
+      "updated": 1791378566164
     },
     {
       "id": "muy3zgvk5e381",
