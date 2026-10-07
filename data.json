@@ -2738,6 +2738,24 @@
       "slot": "",
       "created": 1791387259036,
       "updated": 1791387259036
+    },
+    {
+      "id": "muy9q6p9399dh",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "level up jingle",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791387268461,
+      "updated": 1791387268461
     }
   ],
   "notes": [
