@@ -2544,18 +2544,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "add sound that plays when tagging as doing, maybe a little pop",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "varken",
-      "doneAt": 0,
+      "doneAt": 1791380684100,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791377308494,
-      "updated": 1791380209405
+      "updated": 1791380684100
     },
     {
       "id": "muy3tkzw0wh2c",
