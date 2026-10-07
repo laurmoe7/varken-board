@@ -2248,6 +2248,23 @@
       "created": 1791360732506,
       "updated": 1791360754833,
       "deleted": true
+    },
+    {
+      "id": "muxtzxcmwgyn9",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "favored class bonus for racials",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791360849046,
+      "updated": 1791360849046
     }
   ],
   "notes": [
