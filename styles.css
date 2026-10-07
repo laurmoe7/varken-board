@@ -582,3 +582,8 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .badge.sub-gallery { background: #ffd35e; }
 /* the details panel no longer covers the add box */
 @media (min-width: 901px) { .app.has-detail .main { padding-right: 468px; } }
+
+/* the add box is a textarea that grows with its text */
+#quickInput { resize: none; overflow: hidden; line-height: 1.35; font-family: inherit; border-radius: 26px; display: block; min-height: 50px; }
+#quick { align-items: flex-start; }
+#quick .primary { height: 50px; }

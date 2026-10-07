@@ -365,6 +365,7 @@ function renderDetail() {
 
 // Refreshes the new-item panel's title and choices as you type, without rebuilding it.
 function paintDraft() {
+  growQuick();
   if (!ui.drafting) return;
   const v = draftValues();
   const prev = $('#dPreview');
@@ -472,6 +473,7 @@ function commitDraft() {
   ui.draftItem = blankDraft();
   ui.drafting = false;
   input.value = '';
+  growQuick();
   saveUi();
   save();
   renderDetail();
@@ -482,8 +484,16 @@ function commitDraft() {
   input.focus();
   return true;
 }
+// The add box grows with its text so everything typed stays in view.
+window.addEventListener('resize', () => growQuick());
+function growQuick() {
+  const q = $('#quickInput');
+  q.style.height = 'auto';
+  q.style.height = q.scrollHeight + 2 + 'px';
+}
 function clearDraft() {
   $('#quickInput').value = '';
+  growQuick();
   ui.draftItem = blankDraft();
   endDraft();
 }
@@ -593,9 +603,10 @@ function wire() {
     if (isNotesView()) addNote();
     else commitDraft();
   });
-  qi.addEventListener('input', syncDraft);
+  qi.addEventListener('input', () => { if (/\n/.test(qi.value)) qi.value = qi.value.replace(/\s*\n\s*/g, ' '); growQuick(); syncDraft(); });
   qi.addEventListener('focus', syncDraft);
   qi.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); $('#quick').requestSubmit(); return; } // one line of thought: Enter adds
     if (e.key === 'Tab' && !e.shiftKey && ui.drafting && $('#dNotes')) { e.preventDefault(); $('#dNotes').focus(); }
   });
   $('#projects').addEventListener('click', (e) => {

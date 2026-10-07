@@ -81,6 +81,7 @@ function addNote() {
   pigSay('note', { p: 0.25 });
   state.notes.push(L.createNote({ scope: notesScope(), text }));
   input.value = '';
+  growQuick();
   save();
   renderList();
   input.focus();
