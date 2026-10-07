@@ -33,8 +33,10 @@ function applyMove(id, beforeId, priority) {
   if (!moved) return;
   pigSay('reorder', { p: 0.35 });
   const gp = galleryProject();
-  const shown = gp ? galleryItems(gp) : L.sortItems(L.filterItems(state.items, ui)).filter((i) => i.priority === priority);
-  const changes = L.reorder(shown, moved, beforeId, gp ? null : priority);
+  const inDoing = priority === 'doing'; // the pinned group at the top: only reorders, never changes priority
+  const sorted = gp ? [] : L.sortItems(L.filterItems(state.items, ui));
+  const shown = gp ? galleryItems(gp) : inDoing ? sorted.filter((i) => i.status === 'doing') : sorted.filter((i) => i.priority === priority && i.status !== 'doing');
+  const changes = L.reorder(shown, moved, beforeId, gp || inDoing ? null : priority);
   changes.forEach((c) => {
     const it = state.items.find((i) => i.id === c.id);
     it.order = c.order;

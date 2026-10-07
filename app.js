@@ -266,7 +266,7 @@ function cardHtml(it) {
 
 function renderListView() {
   const items = L.sortItems(L.filterItems(state.items, ui));
-  const groups = L.groupByPriority(items);
+  const groups = L.groupByPriority(ui.status === 'done' ? items : items.filter((i) => i.status !== 'doing'));
   const el = $('#list');
   if (!groups.length) {
     const searching = ui.q || ui.type !== 'all' || ui.effort !== 'all' || ui.status !== 'active';
@@ -274,7 +274,12 @@ function renderListView() {
       ? emptyHtml('sniff', 'Nothing matches', 'I sniffed everywhere. Try a different filter.')
       : emptyHtml('sleep', 'All clear!', 'Add an idea or a fix above and Varken will keep it safe.');
   } else {
-    el.innerHTML = groups
+    const doing = ui.status === 'done' ? [] : items.filter((i) => i.status === 'doing');
+    const doingHtml = doing.length
+      ? `<section class="group group-doing" data-priority="doing"><h2><span class="dot-pin">📌</span>Doing <span>${doing.length}</span></h2>
+        <div class="cards">${doing.map(cardHtml).join('')}</div></section>`
+      : '';
+    el.innerHTML = doingHtml + groups
       .map(
         (g) => `<section class="group" data-priority="${g.priority.id}"><h2><span class="dot dot-${g.priority.id}"></span>${g.priority.label} <span>${g.items.length}</span></h2>
         <div class="cards">${g.items.map(cardHtml).join('')}</div></section>`

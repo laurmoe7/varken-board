@@ -567,3 +567,10 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .primary:active { transform: scale(.97); }
 #quickInput::placeholder { color: #b9a4ff99; }
 @media (prefers-reduced-motion: reduce) { .pin, .card.done .check { animation: none; } .card:hover .check, .tag:hover, .primary:hover { transform: none; } }
+
+.group-doing h2 { color: var(--butter); }
+.group-doing h2 .dot-pin { font-size: 14px; display: inline-block; transform: rotate(-60deg); }
+/* Varken watches the leaves and petals blow past */
+.pig.fx-gust .pig-eyes { animation: pig-follow 4s ease-in-out both; }
+@keyframes pig-follow { 0%, 100% { translate: 0 0; } 10% { translate: -2.5px -1px; } 35% { translate: 0 1.5px; } 60% { translate: 3px 2px; } 80% { translate: 3px 1px; } }
+@media (prefers-reduced-motion: reduce) { .pig.fx-gust .pig-eyes { animation: none; } }
