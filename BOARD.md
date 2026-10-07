@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:50:24.173Z_
+_Updated 2026-10-07T12:51:02.197Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -158,6 +158,7 @@ _2 done._
   > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
 - [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ _(Pathfinder)_ _(doing)_ `muvw97o904dtq`
   > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
+- [ ] 💡 **icons next to titles at top. overview, skills, etc** _(easy)_ _(Pathfinder)_ `muy3vwp67petl`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 
