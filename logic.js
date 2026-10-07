@@ -306,11 +306,13 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   // A paste-ready description of one item to hand to a Claude session: where it lives, its labels, notes and pictures.
   function copyItem(state, it) {
-    const lines = [it.title]; // no project name: she pastes it where the project is already clear
-    if (it.build) lines.push('Seen in build ' + it.build);
-    if (it.notes) lines.push('', 'Notes:', it.notes);
-    if (it.images.length) lines.push('', 'Pictures on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
-    return lines.join('\n');
+    // One run of text: title with a full stop, then the build, then the details. No project name, no labels.
+    const stop = (t) => (/[.!?]$/.test(t) ? t : t + '.');
+    const parts = [stop(it.title.trim())];
+    if (it.build) parts.push('Seen in build ' + it.build + '.');
+    if (it.notes) parts.push(it.notes.trim());
+    if (it.images.length) parts.push('Pictures on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
+    return parts.join(' ');
   }
 
   // The pig's pick: an open item to start with. Easy ones first, then the most urgent; ties are picked at random.
