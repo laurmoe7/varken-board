@@ -928,7 +928,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "better support for summons",
       "notes": "support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?",
       "build": "",
@@ -938,7 +938,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791244159215,
-      "updated": 1791244159215
+      "updated": 1791343115051
     },
     {
       "id": "muvwjg7739aoj",
