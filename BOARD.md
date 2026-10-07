@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T01:26:02.417Z_
+_Updated 2026-10-07T02:47:04.598Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,9 +153,6 @@ _2 done._
 
 ### ASAP
 
-- [ ] 💡 **fix slight lag when clicking on custom spell to read pop out menu on right, if possible** _(easy)_ `muvx400dup2g9`
-- [ ] 💡 **search bar in character sheet on the top, only for character sheet** _(easy)_ `muvwmx9d24fnz`
-- [ ] 💡 **notes space on overview page, underneath everything else** _(easy)_ `muvwmdprbxza2`
 - [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
 - [ ] 🔧 **make hover over pop-ups better fit the ui style of the app** _(easy)_ `muvwkrj32ubab`
 - [ ] 🔧 **class skill red dot needs centered in skills page** _(easy)_ `muvwgtsek11tj`
@@ -183,7 +180,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_5 done._
+_8 done._
 
 ### Notes
 
