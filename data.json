@@ -2414,18 +2414,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add tags to mark tasks for nibble sketchpad and varken board. default means it's just for pet shopper",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1791367581221,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791361739526,
-      "updated": 1791361739526
+      "updated": 1791367581221
     },
     {
       "id": "muxujlnznx4aw",
