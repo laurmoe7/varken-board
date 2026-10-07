@@ -959,18 +959,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "level-up warning for skills",
       "notes": "if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791378189019,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244103414,
-      "updated": 1791376755816
+      "updated": 1791378189019
     },
     {
       "id": "muvwiuwf1mdcm",
@@ -1031,18 +1031,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "a custom field in money for alternative currencies",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791378187131,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244276770,
-      "updated": 1791376754690
+      "updated": 1791378187131
     },
     {
       "id": "muvwmdprbxza2",
