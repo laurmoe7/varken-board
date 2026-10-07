@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T10:06:19.885Z_
+_Updated 2026-10-07T10:06:25.847Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,7 +10,6 @@ _Updated 2026-10-07T10:06:19.885Z_
 
 ### Soon
 
-- [ ] 💡 **add tags to mark tasks for nibble sketchpad and varken board. default means it's just for pet shopper** _(easy)_ `muxuj0g60umwx`
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
@@ -44,7 +43,7 @@ _Updated 2026-10-07T10:06:19.885Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_23 done._
+_24 done._
 
 ### Cosmetics gallery
 
