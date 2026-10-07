@@ -1,17 +1,15 @@
 # Varken board
 
-_Updated 2026-10-07T08:31:12.338Z_
+_Updated 2026-10-07T10:29:08.546Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 💡 **fix details menu closing when selecting text to copy paste, and accidently moving the mouse outside the menu** _(easy)_ `muxulrcogzi17`
 
 ### Soon
 
-- [ ] 💡 **add tags to mark tasks for nibble sketchpad and varken board. default means it's just for pet shopper** `muxuj0g60umwx`
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
@@ -45,7 +43,7 @@ _Updated 2026-10-07T08:31:12.338Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_22 done._
+_24 done._
 
 ### Cosmetics gallery
 
@@ -153,7 +151,11 @@ _2 done._
 
 - [ ] 💡 **better support for summons** _(medium)_ _(doing)_ `muvwiuwf1mdcm`
   > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
-- [ ] 💡 **additional support for 3rd party publishers** `muxujlnznx4aw`
+- [ ] 💡 **improve summon menu in buffs** `muxytd7n7ule8`
+  > move the summon button to roughly where i circled. just a bit right of the conjuration text. make the text you click on to summon the creature and add it to the buffs page look more like buttons, also improve the stats text. maybe also make it look like a button. add the ability to highlight and copy paste text in the stat block menus. add padding above the summon monster info in buffs page so boxes are not overlapping. 
+  - images: images/muxyjr5sgtnwz.jpg, images/muxypvfkyz6rd.jpg
+- [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ `muxy734rozwxw`
+- [ ] 💡 **additional support for 3rd party publishers** _(medium)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 - [ ] 💡 **favored class bonus for racials** _(easy)_ `muxtzxcmwgyn9`
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
