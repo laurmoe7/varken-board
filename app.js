@@ -764,6 +764,16 @@ function wire() {
     if (e.key === 'n' || e.key === 'N') { e.preventDefault(); $('#quickInput').focus(); }
     else if (e.key === '/') { e.preventDefault(); $('#search').focus(); }
     else if (e.key === '?') { e.preventDefault(); $('#helpDlg').showModal(); }
+    else if (e.key === 'd' || e.key === 'D') { // hover a card and press D: doing on, press again for off
+      const card = Array.from(document.querySelectorAll('.card:hover, .gcard:hover')).pop();
+      const it = card && state.items.find((i) => i.id === card.dataset.id);
+      if (!it) return;
+      e.preventDefault();
+      setField(it, 'status', it.status === 'doing' ? 'open' : 'doing');
+      renderAll();
+      if (ui.open === it.id) renderDetail();
+      toast(it.status === 'doing' ? '📌 Doing it!' : 'Back to open');
+    }
   });
 
   // dialogs
