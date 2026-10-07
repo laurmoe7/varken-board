@@ -451,34 +451,18 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 @keyframes dd-pop { from { opacity: 0; transform: translateY(-4px) scale(.97); } }
 .top { overflow: visible; z-index: 5; }
 
-/* the header, input and tabs stay on top while the list scrolls; they shrink once you scroll */
-.sticky-top { position: sticky; top: -22px; z-index: 20; margin: -22px -28px 0; padding: 22px 28px 10px; background: linear-gradient(var(--bg) 85%, #17122b00); }
-.sticky-top.compact { padding-top: 10px; }
-.sticky-top.compact .top { padding: 8px 16px 8px 12px; border-radius: 24px; flex-wrap: nowrap; }
-.sticky-top.compact .hero { height: 52px; flex: 1 1 auto; min-width: 0; }
-.sticky-top.compact .hero-pig { width: 52px; height: 52px; }
-.sticky-top.compact h1 { font-size: 20px; margin: 0; }
-.sticky-top.compact .sub, .sticky-top.compact .say, .sticky-top.compact #quickHint { display: none; }
-.sticky-top.compact #quick { margin-top: 10px; }
-.sticky-top.compact .vtabs { margin-top: 10px; }
-.sticky-top.compact .tools { flex-wrap: nowrap; }
-.sticky-top .top, .sticky-top .hero-pig { transition: padding .2s, height .2s, width .2s; }
-.sticky-top.compact h1 { white-space: nowrap; }
-.sticky-top.compact .tools { gap: 6px; }
-.sticky-top.compact #search { width: 96px; padding: 8px 12px; }
-.sticky-top.compact .chips button { padding: 5px 8px; }
-.sticky-top.compact .dd-btn { padding: 8px 30px 8px 12px; }
-.sticky-top.compact #pickBtn { padding: 8px 12px; }
-.sticky-top.compact .hero { gap: 10px; }
-.sticky-top.compact .hero h1 { font-size: 18px; }
-@media (max-width: 1250px) { .sticky-top.compact .hero h1 { max-width: 130px; overflow: hidden; text-overflow: ellipsis; } }
+/* The header, input and tabs stay on top while the list scrolls. Nothing resizes: the big pig-and-title part simply
+   scrolls away and the filter row, the input and the tabs stick (the offset is set in app-start.js), so it is smooth. */
+.sticky-top { position: sticky; top: -22px; z-index: 20; margin: -22px -28px 0; padding: 22px 28px 10px; background: var(--bg); }
+.sticky-top::after { content: ''; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: linear-gradient(var(--bg), #17122b00); pointer-events: none; }
+.sticky-top .top .tools { flex: 1 0 100%; }
 
 /* seasons: falling petals and a drifting leaf */
 .pig .fall { opacity: 0; }
 .pig .fall { animation: pig-fall var(--t, 17s) linear var(--d, 0s) infinite; }
 @keyframes pig-fall { 0% { opacity: 0; transform: translate(calc(var(--x, 0px) + 100px), 2px) rotate(0deg); } 6% { opacity: 1; } 35% { transform: translate(calc(var(--x, 0px) + 92px), 40px) rotate(120deg); } 65% { transform: translate(calc(var(--x, 0px) + 108px), 78px) rotate(250deg); } 92% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(var(--x, 0px) + 98px), 112px) rotate(360deg); } }
-/* the tiny pigs (sidebar logo, the shrunken header) keep it simple: no falling bits or fluttering */
-.pig.logo .fall, .pig.logo .day-note, .sticky-top.compact .fall, .sticky-top.compact .day-note { display: none; }
+/* the tiny sidebar pig keeps it simple: no falling bits or fluttering */
+.pig.logo .fall, .pig.logo .day-note { display: none; }
 .pig-sleep .fall { display: none; }
 @media (prefers-reduced-motion: reduce) { .pig .fall { animation: none; } }
 
@@ -505,7 +489,6 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 /* fireflies while he sleeps */
 .pig .eve-fire { opacity: 0; animation: eve-twinkle 4s ease-in-out var(--d, 0s) infinite; }
 @keyframes eve-twinkle { 0%, 100% { opacity: 0; transform: translate(0, 0); } 30%, 70% { opacity: 1; transform: translate(2px, -4px); } }
-.sticky-top.compact .eve-fire { display: none; }
 @media (prefers-reduced-motion: reduce) { .pig .eve-fire { animation: none; } .pig .eve-fire { opacity: 1; } }
 
 /* peek: the closed right eye hides while the open one shows, so they never overlap */
@@ -514,3 +497,7 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .pig-sleep.fx-peek .shut-r { animation: shut-now 4s ease-in-out 0s 1; }
 @keyframes shut-now { 0%, 100% { opacity: 1; } 15%, 75% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .pig-sleep .shut-r { animation: none; } }
+
+/* the big good-morning stretch: up on tiptoes with a wiggle, then a settle */
+.pig.act-stretch .pig-all { animation: pig-bigstretch 2.6s ease-in-out; }
+@keyframes pig-bigstretch { 0%, 100% { transform: scale(1, 1); } 25%, 55% { transform: scale(.9, 1.16) translateY(-3px); } 62% { transform: scale(.9, 1.16) translateY(-3px) rotate(-3deg); } 70% { transform: scale(.9, 1.16) translateY(-3px) rotate(3deg); } 85% { transform: scale(1.06, .92); } }

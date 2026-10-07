@@ -176,6 +176,7 @@ const currentLook = () => looks.preview || (looks.on ? L.lookOf() : '');
     const fx = b.dataset.fx, svg = prev.querySelector('svg');
     if (['dance', 'hop', 'wiggle'].includes(fx)) return pigAct(fx, svg);
     if (fx === 'oink') return oink();
+    if (fx === 'gm') return showPage(goodMorning);
     if (fx === 'chime') return showPage(() => celebrate($('#heroPig'), false, 0));
     if (fx === 'party') return showPage(() => celebrate($('#heroPig'), false, 5));
     if (fx === 'birthday') return showPage(birthdayHello);
