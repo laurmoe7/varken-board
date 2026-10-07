@@ -2684,6 +2684,24 @@
       "slot": "",
       "created": 1791380677358,
       "updated": 1791380677358
+    },
+    {
+      "id": "muy6hmnhb6cvy",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add extra tab for story notes",
+      "notes": "add any features that would useful for something like this",
+      "build": "",
+      "effort": "easy",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791381830381,
+      "updated": 1791381830381
     }
   ],
   "notes": [
