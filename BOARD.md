@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T13:08:15.195Z_
+_Updated 2026-10-07T13:09:30.954Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,7 +153,7 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ `muy3xgeky8v3i`
+- [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ _(doing)_ `muy3xgeky8v3i`
 - [ ] 💡 **icons next to titles at top. overview, skills, etc** _(easy)_ _(Pathfinder)_ `muy3vwp67petl`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
