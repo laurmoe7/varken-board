@@ -1,13 +1,12 @@
 # Varken board
 
-_Updated 2026-10-07T00:58:41.371Z_
+_Updated 2026-10-07T00:58:47.228Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 🔧 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
 
 ### Soon
 
@@ -50,7 +49,7 @@ _Updated 2026-10-07T00:58:41.371Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_17 done._
+_18 done._
 
 ### Cosmetics gallery
 
