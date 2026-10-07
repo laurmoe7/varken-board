@@ -1493,17 +1493,17 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "swipe items off shopping list to remove them, dont have this count towards goals or go on the clean up list. just delete them. have the pet comment on this.",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791334716835,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791303206711,
-      "updated": 1791333503479
+      "updated": 1791334716835
     },
     {
       "id": "mux161fqrn7xj",
