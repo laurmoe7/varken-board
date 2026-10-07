@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T14:22:24.960Z_
+_Updated 2026-10-07T15:34:23.867Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -148,6 +148,11 @@ _28 done._
 _2 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
+
+### ASAP
+
+- [ ] 💡 **cookie pet** _(hard)_ _(Pathfinder)_ `muy9pzfgzpi5w`
+  > i want to add a little friend that comments on what is happening while sitting in the bottom left of the program. use my characters and animations from https://github.com/laurmoe7/pet-shopper to get started. but i do not want him to be cutesy. use the bird, thrush skin. he is a very rude familiar. tell me how this could be done. i want him to respond to things you do in the program, like taking damage or summoning something, casting spells, getting new items..
 
 ### Soon
 
