@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:39:36.069Z_
+_Updated 2026-10-07T13:13:34.823Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,6 +10,11 @@ _Updated 2026-10-07T12:39:36.069Z_
 
 ### Soon
 
+- [ ] 💡 **remove project drop down menu in details. remove seen in build option.** _(Varken Board)_ `muy4ovyhvy8s4`
+- [ ] 💡 **change input textbox for tasks to not be covered by details menu** _(easy)_ _(Varken Board)_ `muy3zgvk5e381`
+  > also have details menu open with "type" at the top when inputting task.
+- [ ] 💡 **change background colors of icons on varken board, sketchbook, and cosmetics to make them stand out more** _(easy)_ _(Varken Board)_ `muy3tkzw0wh2c`
+- [ ] 💡 **add sound that plays when tagging as doing, maybe a little pop** _(easy)_ _(Varken Board)_ `muy3spjime184`
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
@@ -149,17 +154,12 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **change frames when a unit is downed v when it is dead.** _(Pathfinder)_ _(doing)_ `muy38htdt96xf`
-  > currently being downed greys the frames. when you are downed, show how at what point you would be considered dead someway.
-- [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muxy734rozwxw`
-- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwldlunxnxt`
-- [ ] 💡 **level-up warning for skills** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwhnueie781`
-  > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
+- [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ _(doing)_ `muy3xgeky8v3i`
+- [ ] 💡 **icons next to titles at top. overview, skills, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muy3vwp67petl`
+- [ ] 💡 **remove light mode** _(medium)_ _(Pathfinder)_ `muy4nbxh374ij`
+  > make dark mode the default. add a couple more ui themes. show me a mockup first before adding them to the program. make 5 different ones and let me choose. make at least 1 look like an old, dusty tome with turning page, but don't make it too bright. 
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
-- [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ _(Pathfinder)_ `muvws9ekekw6e`
-- [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ _(Pathfinder)_ `muvw97o904dtq`
-  > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 
 ### Someday
 
@@ -173,7 +173,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_14 done._
+_20 done._
 
 ### Notes
 
