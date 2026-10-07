@@ -2856,7 +2856,7 @@
       "priority": "someday",
       "status": "open",
       "title": "household to-do lists aren't synced, but allow households to send recommended reminders to each other.",
-      "notes": "something like \"Mom sent: May 9th, grandma's at 5pm for dinner\". when making a task for yourself, put an option to share with household members. give options to disable this.",
+      "notes": "something like \"Mom sent: May 9th, grandma's at 5pm for dinner\". when making a task for yourself, put an option to share with household members. give options to disable this. give sender a notification that",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
@@ -2865,7 +2865,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791409909978,
-      "updated": 1791409909978
+      "updated": 1791413058102
     }
   ],
   "notes": [
