@@ -2574,6 +2574,24 @@
       "slot": "",
       "created": 1791377349260,
       "updated": 1791377349260
+    },
+    {
+      "id": "muy3vwp67petl",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "icons next to titles at top. overview, skills, etc",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791377457738,
+      "updated": 1791377457738
     }
   ],
   "notes": [
