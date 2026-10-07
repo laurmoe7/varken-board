@@ -2544,7 +2544,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "add sound that plays when tagging as doing, maybe a little pop",
       "notes": "",
       "build": "",
@@ -2555,25 +2555,25 @@
       "gallery": false,
       "slot": "",
       "created": 1791377308494,
-      "updated": 1791377308494
+      "updated": 1791380209405
     },
     {
       "id": "muy3tkzw0wh2c",
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "change background colors of icons on varken board, sketchbook, and cosmetics to make them stand out more",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "varken",
-      "doneAt": 0,
+      "doneAt": 1791380207610,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791377349260,
-      "updated": 1791377349260
+      "updated": 1791380207610
     },
     {
       "id": "muy3vwp67petl",
@@ -2616,18 +2616,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "change input textbox for tasks to not be covered by details menu",
       "notes": "also have details menu open with \"type\" at the top when inputting task.",
       "build": "",
       "effort": "easy",
       "area": "varken",
-      "doneAt": 0,
+      "doneAt": 1791380206046,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791377623856,
-      "updated": 1791379635171
+      "updated": 1791380206046
     },
     {
       "id": "muy4nbxh374ij",
@@ -2652,18 +2652,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "remove project drop down menu in details. remove seen in build option.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "varken",
-      "doneAt": 0,
+      "doneAt": 1791380204537,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791378809801,
-      "updated": 1791379633837
+      "updated": 1791380204537
     }
   ],
   "notes": [
