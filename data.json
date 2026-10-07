@@ -2265,6 +2265,23 @@
       "slot": "",
       "created": 1791360849046,
       "updated": 1791360849046
+    },
+    {
+      "id": "muxudv5t72lnf",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "additional support for 3rd party publisher content",
+      "notes": "such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.",
+      "build": "",
+      "effort": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791361499393,
+      "updated": 1791361499393
     }
   ],
   "notes": [
