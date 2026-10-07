@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T08:12:42.500Z_
+_Updated 2026-10-07T08:14:13.450Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -155,6 +155,7 @@ _2 done._
 
 - [ ] 💡 **better support for summons** _(medium)_ _(doing)_ `muvwiuwf1mdcm`
   > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
+- [ ] 💡 **favored class bonus for racials** _(easy)_ `muxtzxcmwgyn9`
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
 - [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
