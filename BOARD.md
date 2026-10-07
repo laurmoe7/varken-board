@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T08:16:54.405Z_
+_Updated 2026-10-07T08:17:14.987Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -118,6 +118,7 @@ _20 done._
 
 ### Notes
 
+- have varken board say "Dansen!"
 - glorp alien skin
 - grumpy chef: import a recipe on 3 different days
 - tiger cat skin
