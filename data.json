@@ -2452,7 +2452,7 @@
       "priority": "now",
       "status": "open",
       "title": "fix details menu closing when selecting text to copy paste, and accidently moving the mouse outside the menu",
-      "notes": "",
+      "notes": "dsda",
       "build": "",
       "effort": "easy",
       "area": "varken",
@@ -2461,7 +2461,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791361867704,
-      "updated": 1791367562169
+      "updated": 1791367569317
     }
   ],
   "notes": [
