@@ -246,6 +246,7 @@ function cardHtml(it) {
     .map((id) => `<img data-img="${esc(id)}" alt="">`)
     .join('');
   return `<article class="card p-${it.priority} ${it.status} ${ui.open === it.id ? 'sel' : ''}" data-id="${esc(it.id)}" tabindex="0" draggable="true">
+    ${it.status === 'doing' ? '<span class="pin" aria-hidden="true">📌</span>' : ''}
     <button class="check" data-check aria-label="${it.status === 'done' ? 'Mark not done' : 'Mark done'}">✓</button>
     <div class="card-body">
       <div class="card-title ${it.effort ? 'fx-' + it.effort : ''}">${L.typeOf(it.type).emoji} ${esc(it.title)}<button class="copy-mini" data-copy title="Copy for Claude" aria-label="Copy for Claude">📋</button></div>
@@ -253,7 +254,7 @@ function cardHtml(it) {
         ${it.effort ? `<span class="tag fx fx-${it.effort}">${L.effortOf(it.effort).emoji} ${L.effortOf(it.effort).label.toLowerCase()}</span>` : ''}
         ${(it.area === 'varken' || it.area === 'sketchpad') && ui.area !== it.area ? `<span class="tag area-tag">${L.areaOf(it.area).emoji} ${esc(L.areaOf(it.area).label)}</span>` : ''}
         ${ui.project === 'all' && p ? `<span class="tag proj-tag" style="background:${esc(p.color)}">${esc(p.emoji)} ${esc(p.name)}</span>` : ''}
-        ${it.status === 'doing' ? '<span class="tag doing">doing</span>' : ''}
+        ${it.status === 'doing' ? '<span class="tag doing">📌 doing</span>' : ''}
         ${it.build ? `<span class="tag">build ${esc(it.build)}</span>` : ''}
         ${it.notes ? '<span class="tag">📝</span>' : ''}
         ${it.images.length > 4 ? `<span class="tag">🖼 ${it.images.length}</span>` : ''}
