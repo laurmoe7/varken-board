@@ -1,20 +1,19 @@
 # Varken board
 
-_Updated 2026-10-07T02:47:13.886Z_
+_Updated 2026-10-07T08:31:12.338Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
+- [ ] 💡 **fix details menu closing when selecting text to copy paste, and accidently moving the mouse outside the menu** _(easy)_ `muxulrcogzi17`
 
 ### Soon
 
+- [ ] 💡 **add tags to mark tasks for nibble sketchpad and varken board. default means it's just for pet shopper** `muxuj0g60umwx`
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
-- [ ] 🔧 **put year in "come back" text if year is not current year on calendar** _(easy)_ `muwnpgy5ks8kb`
-- [ ] 💡 **animation of the pet searching with the mag. glass while recipe parser is open** _(easy)_ `muwn6ynls0ywa`
-- [ ] 🔧 **clean up "What's in it" on github** _(easy)_ `muwmtx6328ol3`
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
   > maybe some kind of spreedsheet? whatever works best
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
@@ -42,13 +41,11 @@ _Updated 2026-10-07T02:47:13.886Z_
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
 - [ ] 💡 **Shared household pet** `seed-petshopper-11`
   > All pet data already lives in state.pet, so this stays possible.
-- [ ] 💡 **App store release: native speech recognition** `seed-petshopper-12`
-  > Swap the Voice object in app-voice.js for the phone's own recognition.
 - [ ] 💡 **Paid pet customization** `seed-petshopper-13`
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_18 done._
+_22 done._
 
 ### Cosmetics gallery
 
@@ -120,6 +117,7 @@ _18 done._
 
 ### Notes
 
+- have varken board say "Dansen!"
 - glorp alien skin
 - grumpy chef: import a recipe on 3 different days
 - tiger cat skin
@@ -153,15 +151,17 @@ _2 done._
 
 ### Soon
 
+- [ ] 💡 **better support for summons** _(medium)_ _(doing)_ `muvwiuwf1mdcm`
+  > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
+- [ ] 💡 **additional support for 3rd party publishers** `muxujlnznx4aw`
+  > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
+- [ ] 💡 **favored class bonus for racials** _(easy)_ `muxtzxcmwgyn9`
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
 - [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
-- [ ] 💡 **better support for summons** _(medium)_ `muvwiuwf1mdcm`
-  > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
   > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
 - [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ `muvw97o904dtq`
-  > does not recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
-- [ ] 💡 **add confirmation before deleting a spells in spellbook, items, and other things that can be deleted** _(easy)_ `muvw4oltfa8ba`
+  > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 
 ### Someday
 
@@ -175,7 +175,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_10 done._
+_11 done._
 
 ### Notes
 
