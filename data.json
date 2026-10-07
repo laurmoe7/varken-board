@@ -2848,6 +2848,24 @@
       "slot": "",
       "created": 1791409073231,
       "updated": 1791409073231
+    },
+    {
+      "id": "muyn7h0ayf8jv",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "household to-do lists aren't synced, but allow households to send recommended reminders to each other.",
+      "notes": "something like \"Mom sent: May 9th, grandma's at 5pm for dinner\". when making a task for yourself, put an option to share with household members. give options to disable this.",
+      "build": "",
+      "effort": "medium",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791409909978,
+      "updated": 1791409909978
     }
   ],
   "notes": [
