@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T13:09:56.290Z_
+_Updated 2026-10-07T13:12:21.831Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -155,6 +155,8 @@ _2 done._
 
 - [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ _(doing)_ `muy3xgeky8v3i`
 - [ ] 💡 **icons next to titles at top. overview, skills, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muy3vwp67petl`
+- [ ] 💡 **remove light mode** _(medium)_ _(Pathfinder)_ `muy4nbxh374ij`
+  > make dark mode the default. add a couple more ui themes. show me a mockup first before adding them to the program. make 5 different ones and let me choose. make at least 1 look like an old, dusty tome with turning page, but don't make it too bright. 
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 
