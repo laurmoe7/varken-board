@@ -894,17 +894,17 @@
       "project": "pathfinder",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "class skill red dot needs centered in skills page",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791341229258,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244064462,
-      "updated": 1791244251760
+      "updated": 1791341229258
     },
     {
       "id": "muvwhnueie781",
@@ -962,23 +962,23 @@
       "project": "pathfinder",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "make hover over pop-ups better fit the ui style of the app",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791341227874,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244248159,
-      "updated": 1791244248159
+      "updated": 1791341227874
     },
     {
       "id": "muvwldlunxnxt",
       "project": "pathfinder",
       "type": "idea",
-      "priority": "now",
+      "priority": "soon",
       "status": "open",
       "title": "a custom field in money for alternative currencies",
       "notes": "",
@@ -989,7 +989,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791244276770,
-      "updated": 1791244276770
+      "updated": 1791341225259
     },
     {
       "id": "muvwmdprbxza2",
