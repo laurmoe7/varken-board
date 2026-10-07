@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:18:03.826Z_
+_Updated 2026-10-07T12:29:10.159Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -149,11 +149,6 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **improve summon menu in buffs** _(Pathfinder)_ _(doing)_ `muxytd7n7ule8`
-  > move the summon button to roughly where i circled. just a bit right of the conjuration text. make the text you click on to summon the creature and add it to the buffs page look more like buttons, also improve the stats text. maybe also make it look like a button. add the ability to highlight and copy paste text in the stat block menus. add padding above the summon monster info in buffs page so boxes are not overlapping. 
-  - images: images/muxyjr5sgtnwz.jpg, images/muxypvfkyz6rd.jpg
-- [ ] 💡 **better support for summons** _(medium)_ _(Pathfinder)_ _(doing)_ `muvwiuwf1mdcm`
-  > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ `muxy734rozwxw`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
@@ -177,7 +172,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_11 done._
+_13 done._
 
 ### Notes
 
