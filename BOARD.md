@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T10:11:46.112Z_
+_Updated 2026-10-07T10:17:04.980Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -152,7 +152,7 @@ _2 done._
 - [ ] 💡 **better support for summons** _(medium)_ _(doing)_ `muvwiuwf1mdcm`
   > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ `muxy734rozwxw`
-- [ ] 💡 **additional support for 3rd party publishers** `muxujlnznx4aw`
+- [ ] 💡 **additional support for 3rd party publishers** _(medium)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 - [ ] 💡 **favored class bonus for racials** _(easy)_ `muxtzxcmwgyn9`
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
