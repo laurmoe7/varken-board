@@ -2526,18 +2526,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "change frames when a unit is downed v when it is dead.",
       "notes": "currently being downed greys the frames. when you are downed, show how at what point you would be considered dead someway.",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791377417622,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791376365361,
-      "updated": 1791376750194
+      "updated": 1791377417622
     },
     {
       "id": "muy3spjime184",
