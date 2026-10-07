@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T14:03:55.114Z_
+_Updated 2026-10-07T14:22:18.041Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -162,7 +162,7 @@ _2 done._
 
 - [ ] 💡 **try to find info on extra, newer spells** _(hard)_ _(Pathfinder)_ `muvwvexl5jwxp`
   > Not every spell: coverage is about 2,250 of the 2,900+ published. Feats, traits and archetypes stop at the Advanced Class Guide (2015), because that's where the free data source ends. Later books only contribute spells.
-  > support for rolling for stats
+  > 
 - [ ] 💡 **Prestige classes in the level-up wizard and compute()** _(medium)_ _(Pathfinder)_ `seed-pathfinder-8`
   > Not supported yet.
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
