@@ -846,6 +846,9 @@ async function start() {
     setPill('bad', '⚠ Browser storage is blocked');
     toast('Your browser is blocking storage, so nothing will be saved.');
   }
+  // funFX and Pathfinder items carry their own tag (older ones were saved without): the tag always matches the project there.
+  const retag = state.items.filter((i) => !i.gallery && !i.area && L.projectArea(i.project, '') !== '');
+  if (retag.length) { retag.forEach((i) => { i.area = L.projectArea(i.project, ''); touch(i); }); save(); }
   const ps = state.projects.find((p) => p.id === 'petshopper' && !p.deleted);
   if (ps && ps.gallery === undefined) { ps.gallery = 'Cosmetics'; touch(ps); save(); } // Pet Shopper's cosmetics gallery
   if (ps && ps.slots === undefined) { ps.slots = L.DEFAULT_SLOTS; touch(ps); save(); }
