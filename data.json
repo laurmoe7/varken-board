@@ -2620,14 +2620,14 @@
       "title": "change input textbox for tasks to not be covered by details menu",
       "notes": "also have details menu open with \"type\" at the top when inputting task.",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "varken",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791377623856,
-      "updated": 1791377623856
+      "updated": 1791377629760
     }
   ],
   "notes": [
