@@ -2664,6 +2664,26 @@
       "slot": "",
       "created": 1791378809801,
       "updated": 1791380204537
+    },
+    {
+      "id": "muy5swz2d5j1e",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "varken",
+      "doneAt": 0,
+      "images": [
+        "muy5s403rmwaj"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1791380677358,
+      "updated": 1791380677358
     }
   ],
   "notes": [
