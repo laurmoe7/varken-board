@@ -1391,17 +1391,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "make pet less upset about eating fruit and veggies",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791334722562,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791289624840,
-      "updated": 1791289829279
+      "updated": 1791334722562
     },
     {
       "id": "muwnpgy5ks8kb",
@@ -1476,17 +1476,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "cant see cursor following feature outside PC, so remove this",
       "notes": "this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791334720748,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791293424578,
-      "updated": 1791324658125
+      "updated": 1791334720748
     },
     {
       "id": "muwvog8njv1ae",
