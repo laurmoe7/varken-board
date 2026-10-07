@@ -2501,6 +2501,24 @@
       "slot": "",
       "created": 1791368941091,
       "updated": 1791374241772
+    },
+    {
+      "id": "muy2osp59lt90",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "test",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791375446345,
+      "updated": 1791375446345
     }
   ],
   "notes": [
