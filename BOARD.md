@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T00:58:47.228Z_
+_Updated 2026-10-07T01:06:06.197Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -16,7 +16,7 @@ _Updated 2026-10-07T00:58:47.228Z_
 - [ ] 🔧 **put year in "come back" text if year is not current year on calendar** _(easy)_ `muwnpgy5ks8kb`
 - [ ] 💡 **animation of the pet searching with the mag. glass while recipe parser is open** _(easy)_ `muwn6ynls0ywa`
 - [ ] 🔧 **clean up "What's in it" on github** _(easy)_ `muwmtx6328ol3`
-- [ ] 💡 **make tool to easily view and edit dialogue** _(easy)_ `muwmrjs5kub1f`
+- [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
   > maybe some kind of spreedsheet? whatever works best
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
