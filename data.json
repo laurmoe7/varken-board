@@ -885,18 +885,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "fix ability to recognize familiar eligibilty",
       "notes": "does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.",
       "build": "",
       "effort": "medium",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791378373972,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243709209,
-      "updated": 1791377413242
+      "updated": 1791378373972
     },
     {
       "id": "muvwa5qvbgfbp",
