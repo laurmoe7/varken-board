@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:56:24.191Z_
+_Updated 2026-10-07T13:03:13.824Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -154,9 +154,6 @@ _2 done._
 ### Soon
 
 - [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muxy734rozwxw`
-- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwldlunxnxt`
-- [ ] 💡 **level-up warning for skills** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwhnueie781`
-  > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
 - [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ _(Pathfinder)_ _(doing)_ `muvw97o904dtq`
   > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 - [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ `muy3xgeky8v3i`
@@ -176,7 +173,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_16 done._
+_18 done._
 
 ### Notes
 
