@@ -2634,7 +2634,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "remove light mode",
       "notes": "make dark mode the default. add a couple more ui themes. show me a mockup first before adding them to the program. make 5 different ones and let me choose. make at least 1 look like an old, dusty tome with turning page, but don't make it too bright. ",
       "build": "",
@@ -2645,7 +2645,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791378737189,
-      "updated": 1791378737189
+      "updated": 1791381625659
     },
     {
       "id": "muy4ovyhvy8s4",
