@@ -2702,6 +2702,24 @@
       "slot": "",
       "created": 1791381830381,
       "updated": 1791381830381
+    },
+    {
+      "id": "muy75ex8eppd5",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "support for rolling for stats",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791382940108,
+      "updated": 1791382940108
     }
   ],
   "notes": [
