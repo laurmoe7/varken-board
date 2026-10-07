@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T21:35:09.623Z_
+_Updated 2026-10-07T21:35:21.803Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -123,6 +123,7 @@ _28 done._
   
   jester: tease pet by holding ball above head for x days
   
+  ?: throw ball for pet x days
   
 - tiger cat skin
 - hummingbird skin
