@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T14:00:30.639Z_
+_Updated 2026-10-07T14:03:55.114Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,6 +153,8 @@ _2 done._
 
 - [ ] 💡 **remove light mode** _(medium)_ _(Pathfinder)_ _(doing)_ `muy4nbxh374ij`
   > make dark mode the default. add a couple more ui themes. show me a mockup first before adding them to the program. make 5 different ones and let me choose. make at least 1 look like an old, dusty tome with turning page, but don't make it too bright. 
+- [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
+  > add any features that would useful for something like this
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 
