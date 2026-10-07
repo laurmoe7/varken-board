@@ -806,17 +806,17 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add confirmation before deleting a spells in spellbook, items, and other things that can be deleted",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791360853863,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243497873,
-      "updated": 1791244111713
+      "updated": 1791360853863
     },
     {
       "id": "muvw6qqplhsc0",
