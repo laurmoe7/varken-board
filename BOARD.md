@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T21:37:58.051Z_
+_Updated 2026-10-07T21:38:17.556Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -25,7 +25,7 @@ _Updated 2026-10-07T21:37:58.051Z_
 - [ ] 💡 **some kind of mystery boxes** _(medium)_ _(doing)_ `muvqn89jg1e4j`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
-- [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
+- [ ] 💡 **special sounds on different maps** _(easy)_ `muvqmfgyzon70`
 
 ### Someday
 
