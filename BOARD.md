@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T13:44:52.688Z_
+_Updated 2026-10-07T13:45:09.382Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -151,8 +151,6 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ _(doing)_ `muy3xgeky8v3i`
-- [ ] 💡 **icons next to titles at top. overview, skills, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muy3vwp67petl`
 - [ ] 💡 **remove light mode** _(medium)_ _(Pathfinder)_ `muy4nbxh374ij`
   > make dark mode the default. add a couple more ui themes. show me a mockup first before adding them to the program. make 5 different ones and let me choose. make at least 1 look like an old, dusty tome with turning page, but don't make it too bright. 
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
@@ -170,7 +168,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_20 done._
+_22 done._
 
 ### Notes
 
