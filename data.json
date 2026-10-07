@@ -977,18 +977,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "better support for summons",
       "notes": "support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?",
       "build": "",
       "effort": "medium",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791376145297,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244159215,
-      "updated": 1791371579972
+      "updated": 1791376145297
     },
     {
       "id": "muvwjg7739aoj",
@@ -2377,18 +2377,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "favored class bonus for racials",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791376154896,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791360849046,
-      "updated": 1791371579972
+      "updated": 1791376154896
     },
     {
       "id": "muxudv5t72lnf",
@@ -2486,13 +2486,13 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "improve summon menu in buffs",
       "notes": "move the summon button to roughly where i circled. just a bit right of the conjuration text. make the text you click on to summon the creature and add it to the buffs page look more like buttons, also improve the stats text. maybe also make it look like a button. add the ability to highlight and copy paste text in the stat block menus. add padding above the summon monster info in buffs page so boxes are not overlapping. ",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791376148580,
       "images": [
         "muxyjr5sgtnwz",
         "muxypvfkyz6rd"
@@ -2500,7 +2500,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791368941091,
-      "updated": 1791374241772
+      "updated": 1791376148580
     },
     {
       "id": "muy2osp59lt90",
@@ -2520,6 +2520,24 @@
       "created": 1791375446345,
       "updated": 1791375479359,
       "deleted": true
+    },
+    {
+      "id": "muy38htdt96xf",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "change frames when a unit is downed v when it is dead.",
+      "notes": "currently being downed greys the frames. when you are downed, show how at what point you would be considered dead someway.",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791376365361,
+      "updated": 1791376365361
     }
   ],
   "notes": [
