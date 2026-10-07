@@ -2480,6 +2480,27 @@
       "slot": "",
       "created": 1791367901595,
       "updated": 1791367901595
+    },
+    {
+      "id": "muxytd7n7ule8",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "improve summon menu in buffs",
+      "notes": "move the summon button to roughly where i circled. just a bit right of the conjuration text. make the text you click on to summon the creature and add it to the buffs page look more like buttons, also improve the stats text. maybe also make it look like a button. add the ability to highlight and copy paste text in the stat block menus. add padding above the summon monster info in buffs page so boxes are not overlapping. ",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "muxyjr5sgtnwz",
+        "muxypvfkyz6rd"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1791368941091,
+      "updated": 1791368941091
     }
   ],
   "notes": [
