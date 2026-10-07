@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T08:14:20.627Z_
+_Updated 2026-10-07T08:16:27.646Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -161,7 +161,7 @@ _2 done._
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
   > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
 - [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ `muvw97o904dtq`
-  > does not recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
+  > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 
 ### Someday
 
