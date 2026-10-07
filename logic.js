@@ -26,19 +26,19 @@
   ];
   // Which app an item is for. Empty is the default: just Pet Shopper itself.
   const AREAS = [
-    { id: '', label: 'Pet Shopper', emoji: '🐹' },
+    { id: 'petshopper', label: 'Pet Shopper', emoji: '🐹' },
     { id: 'varken', label: 'Varken Board', emoji: '🐷' },
     { id: 'sketchpad', label: 'Varken Sketchpad', emoji: '✏️' },
     { id: 'funfx', label: 'funFX', emoji: '✨' },
     { id: 'pathfinder', label: 'Pathfinder', emoji: '🎲' },
   ];
-  const areaOf = (id) => AREAS.find((a) => a.id === (id || '')) || AREAS[0];
+  const areaOf = (id) => AREAS.find((a) => a.id === (id || 'petshopper')) || AREAS[0];
   // Which project an area lives in: the Varken apps are tabs under Pet Shopper; funFX and Pathfinder are projects of their own.
   const areaProject = (area) => (area === 'funfx' ? 'funfx' : area === 'pathfinder' ? 'pathfinder' : 'petshopper');
   // The area a project's items get by default (`cur` keeps a Varken tag when staying in Pet Shopper).
-  const projectArea = (projectId, cur) => (projectId === 'funfx' ? 'funfx' : projectId === 'pathfinder' ? 'pathfinder' : projectId === 'petshopper' && (cur === 'varken' || cur === 'sketchpad') ? cur : '');
-  // Does an item belong to a view's area? 'all' (or nothing) is everything, 'main' is Pet Shopper itself (no tag).
-  const areaMatch = (it, area) => !area || area === 'all' || (it.area || '') === (area === 'main' ? '' : area);
+  const projectArea = (projectId, cur) => (projectId === 'funfx' ? 'funfx' : projectId === 'pathfinder' ? 'pathfinder' : projectId === 'petshopper' ? (cur === 'varken' || cur === 'sketchpad' ? cur : 'petshopper') : '');
+  // Does an item belong to a view's area? 'all' (or nothing) is everything, 'main' is Pet Shopper itself (tagged Pet Shopper, or an older item with no tag).
+  const areaMatch = (it, area) => !area || area === 'all' || ((area === 'main' || area === 'petshopper') ? (!it.area || it.area === 'petshopper') : it.area === area);
   const COLORS = ['#ff9ec7', '#b9a4ff', '#8ff0c8', '#ffe29a', '#ffb38a', '#8fd3ff'];
   const NOW_CAP = 5;
   const DEFAULT_SLOTS = 'Hat, Clothes, Face, Mouth, Neck, Feet, Skin, Room, Background, Toy';
@@ -360,7 +360,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       for (const g of groupByPriority(items)) {
         out.push('### ' + g.priority.label, '');
         for (const it of g.items) {
-          out.push('- [ ] ' + typeOf(it.type).emoji + ' **' + it.title + '**' + (it.effort ? ' _(' + it.effort + ')_' : '') + (it.area ? ' _(' + areaOf(it.area).label + ')_' : '') + (it.status === 'doing' ? ' _(doing)_' : '') + ' `' + it.id + '`');
+          out.push('- [ ] ' + typeOf(it.type).emoji + ' **' + it.title + '**' + (it.effort ? ' _(' + it.effort + ')_' : '') + (it.area && it.area !== 'petshopper' ? ' _(' + areaOf(it.area).label + ')_' : '') + (it.status === 'doing' ? ' _(doing)_' : '') + ' `' + it.id + '`');
           if (it.build) out.push('  - seen in build ' + it.build);
           if (it.notes) it.notes.split('\n').forEach((l) => out.push('  > ' + l));
           if (it.images.length) out.push('  - images: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));

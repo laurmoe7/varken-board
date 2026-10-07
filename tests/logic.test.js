@@ -380,7 +380,8 @@ test('areas map to projects and views', () => {
   assert.strictEqual(L.areaProject('varken'), 'petshopper');
   assert.strictEqual(L.projectArea('pathfinder', null), 'pathfinder');
   assert.strictEqual(L.projectArea('petshopper', 'sketchpad'), 'sketchpad');
-  assert.strictEqual(L.projectArea('petshopper', 'funfx'), '');
+  assert.strictEqual(L.projectArea('petshopper', 'funfx'), 'petshopper');
+  assert.strictEqual(L.projectArea('other', 'varken'), '');
   const items = [L.createItem({ title: 'a', project: 'petshopper' }), L.createItem({ title: 'b', project: 'petshopper', area: 'varken', priority: 'now' })];
   assert.strictEqual(L.countOpen(items, 'petshopper', 'main'), 1);
   assert.strictEqual(L.countOpen(items, 'petshopper', 'varken'), 1);
