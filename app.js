@@ -266,15 +266,15 @@ function cardHtml(it) {
 
 function renderListView() {
   const items = L.sortItems(L.filterItems(state.items, ui));
+  const doing = ui.status === 'done' ? [] : items.filter((i) => i.status === 'doing');
   const groups = L.groupByPriority(ui.status === 'done' ? items : items.filter((i) => i.status !== 'doing'));
   const el = $('#list');
-  if (!groups.length) {
+  if (!groups.length && !doing.length) {
     const searching = ui.q || ui.type !== 'all' || ui.effort !== 'all' || ui.status !== 'active';
     el.innerHTML = searching
       ? emptyHtml('sniff', 'Nothing matches', 'I sniffed everywhere. Try a different filter.')
       : emptyHtml('sleep', 'All clear!', 'Add an idea or a fix above and Varken will keep it safe.');
   } else {
-    const doing = ui.status === 'done' ? [] : items.filter((i) => i.status === 'doing');
     const doingHtml = doing.length
       ? `<section class="group group-doing" data-priority="doing"><h2><span class="dot-pin">📌</span>Doing <span>${doing.length}</span></h2>
         <div class="cards">${doing.map(cardHtml).join('')}</div></section>`
