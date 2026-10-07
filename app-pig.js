@@ -154,7 +154,7 @@ const REACT = {
   bigg: ['Bigg is learning to do tasks too. Slowly. With snacks. 💗', 'Sometimes Bigg falls asleep in my plant. I let him.', 'I would never say it to Bigg, but I am proud of him. hehe..', 'Bigg stole my snack. I let him. Do not tell anyone. hehe..', 'Bigg tries to copy my dance. It is cute. It is also wrong. hehe..', 'If you see Bigg, tell him I said hi. Then tell him he owes me a snack.', 'Bigg could never finish this many. He gets distracted by snacks. hehe..', 'Little Bigg looks up to me. Obviously.', 'I taught Bigg everything he knows. Which is nothing. hehe..', 'Bigg says hi! (He did not. I am lying. He is asleep.) hehe..', 'Hrrrrng.. Bigg is snoring in the next room again. Rude. Cute.'],
   copy: ['Good luck, Claude! Be nice to my human. 💗', 'Copied! Now go make Claude do the hard part. hehe..', 'Passing the buck, I see. Smart. hehe..', 'Copied! Go bother Claude.', 'Off to Claude it goes.', 'Excuse me, I wrote that. Credit please.'],
   poke: ['Boop! You are my favourite human. 💗', 'Hehe.. that tickles. Do it again.', 'I love it when you visit. Do not tell the plant.', 'You have a very nice poking finger.', 'Oink! That is pig for "I like you".', 'Snuggle break! Just kidding. Unless you want one?', 'You make a very good pig-sitter.', 'Boop! Again. Again. I dare you. hehe..', 'Poke me one more time and I tell Bigg. hehe..', 'That tickles. Do it again. No wait, stop. Do it again. hehe..', 'I am a pig of dignity. (I am not.) hehe..', 'Ooh, are we being friendly? Suspicious. hehe..', 
-    { t: 'Excuse me!', act: 'hop' }, { t: 'Hrrrrng..', act: 'wiggle' }, { t: 'Varken nummer één!', act: 'dance' }, 'Hey! Personal space!', 'Boop received. Boop returned.',
+    { t: 'Excuse me!', act: 'boing' }, { t: 'Hrrrrng..', act: 'wiggle' }, { t: 'Varken nummer één!', act: 'dance' }, 'Hey! Personal space!', 'Boop received. Boop returned.',
     'Are you going to feed me or just poke me?', 'I am working here! (I am not.) hehe..', { t: 'Hrrrrng.. five more minutes.', act: 'sprout' }, 'Do I look like a button? Do not answer that. hehe..',
     { t: 'Excuse me, I have a schedule!', act: 'note' }, 'Tickles!', { t: 'Varken nummer één, reporting for duty!', act: 'dance' },
     'Bigg would have poked me back. Slowly. He is slow. 🐷', 'Bigg asked me for advice once. I charged him one snack. hehe..', 'Bigg still thinks he can out-nap me. Adorable. hehe..',
@@ -210,7 +210,7 @@ function greetOnce() {
   }
   if (L.holidayOf() !== 'birthday') setTimeout(() => {
     holdSay(pool[Math.floor(Math.random() * pool.length)], 6500);
-    pigAct(L.isNight() ? 'sprout' : 'hop');
+    pigAct(L.isNight() ? 'sprout' : 'boing');
   }, 1200);
   if (L.holidayOf() === 'birthday') {
     setTimeout(birthdayHello, 1400);
@@ -229,13 +229,13 @@ function weekWrap() {
     : w.done < 5 ? `${w.done} done this week${pr ? ', mostly ' + pr.name : ''}. Slow and steady!`
     : `${w.done} things done this week!${pr ? ' ' + pr.name + ' got the most love (' + w.topCount + ').' : ''} Varken nummer één!`;
   holdSay(text, 11000);
-  pigAct(w.done >= 5 ? 'dance' : 'hop');
+  pigAct(w.done >= 5 ? 'dance' : 'boing');
 }
 
-// Actions: hop, show off the note, wiggle, sway the plant, dance and cheer. The class stays on the svg until it ends.
-const ACTS = ['hop', 'note', 'wiggle', 'sprout', 'dance', 'spin', 'boing', 'shy', 'sniff', 'bubbles', 'giggle'];
+// Actions: show off the note, wiggle, sway the plant, dance and cheer. The class stays on the svg until it ends.
+const ACTS = ['note', 'wiggle', 'sprout', 'dance', 'spin', 'boing', 'shy', 'sniff'];
 let actTimer;
-const ACT_MS = { wiggle: 2100, dance: 2700, stretch: 2800, spin: 1400, boing: 2100, shy: 2800, sniff: 2100, bubbles: 3400, giggle: 1800 };
+const ACT_MS = { wiggle: 2100, dance: 2700, stretch: 2800, spin: 1400, boing: 2100, shy: 2800, sniff: 2100 };
 function pigAct(name, svgOverride) {
   const svg = svgOverride || $('#heroPig svg');
   if (!svg) return;
@@ -244,13 +244,11 @@ function pigAct(name, svgOverride) {
   svg.classList.add('act-' + name);
   const box = svgOverride ? svgOverride.parentElement : $('#heroPig');
   if (name === 'shy') floatBits('♥', 3, box);
-  else if (name === 'bubbles') floatBits('🫧', 5, box);
-  else if (name === 'giggle') floatBits('✨', 3, box);
   clearTimeout(actTimer);
   actTimer = setTimeout(() => svg.classList.remove('act-' + name), ACT_MS[name] || 1800);
 }
 function floatHearts(n) { floatBits('♥', n); }
-// Little things that float up from his card: hearts, sparkles, bubbles.
+// Little things that float up from his card: hearts.
 function floatBits(ch, n, box0) {
   const box = box0 || $('#heroPig');
   if (!box) return;
