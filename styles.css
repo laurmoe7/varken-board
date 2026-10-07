@@ -311,7 +311,6 @@ dialog { border-radius: 26px; }
 .hint-btn { align-self: flex-start; background: var(--card); border: 1px dashed var(--line); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700; color: var(--muted); }
 .hint-btn:hover { color: var(--text); border-color: var(--lav); }
 .hint-btn[hidden] { display: none; }
-@media (max-width: 900px) { .hero-pig { width: 64px; height: 64px; } }
 
 /* scroll bars: slim, round, pastel */
 * { scrollbar-width: thin; scrollbar-color: #5a4a96 transparent; }
@@ -330,7 +329,7 @@ dialog { border-radius: 26px; }
 .check-row input { width: auto !important; margin: 0 !important; accent-color: var(--pink); }
 
 /* the pig's floating hooves and what he does with them */
-.hero-pig { position: relative; width: 120px; height: 120px; }
+.hero-pig { position: relative; }
 /* the pig's actions: classes are added to the svg by pigAct() */
 .pig .pig-all, .pig .sprout-slot, .pig .note-grp { transform-box: view-box; }
 .pig .pig-all { transform-origin: 60px 112px; }
@@ -398,13 +397,12 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 @keyframes picked { 0%, 100% { box-shadow: 0 3px 10px #0003; } 15%, 60% { box-shadow: 0 0 0 4px #ff9ec799, 0 0 30px #ff9ec766; } }
 
 /* header stays put: fixed-height hero, bubble clamped, filters keep their spot */
-.hero { height: 120px; flex: 1 1 320px; max-width: 560px; }
+.hero { flex: 1 1 320px; max-width: 560px; }
 .hero > div:last-child { min-width: 0; }
 .hero .sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .say { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 100%; }
 .tools { flex: 0 0 auto; }
 .chips[hidden] { display: flex; visibility: hidden; }
-@media (max-width: 900px) { .hero { height: 64px; } }
 
 
 /* copy button on a card title */
@@ -451,11 +449,25 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 @keyframes dd-pop { from { opacity: 0; transform: translateY(-4px) scale(.97); } }
 .top { overflow: visible; z-index: 5; }
 
-/* The header, input and tabs stay on top while the list scrolls. Nothing resizes: the big pig-and-title part simply
-   scrolls away and the filter row, the input and the tabs stick (the offset is set in app-start.js), so it is smooth. */
-.sticky-top { position: sticky; top: -22px; z-index: 20; margin: -22px -28px 0; padding: 22px 28px 10px; background: var(--bg); }
+/* The header, input and tabs stay on top, and the pig card shrinks as you scroll. --p (0 to 1) is set from the scroll
+   position in app-start.js; every part that changes is linear in --p, and a spacer gives back exactly the height the
+   header loses, so the list never moves by itself and nothing flickers. */
+:root { --p: 0; --D: 200px; --hintH: 24px; --heroH: 120px; --heroDelta: 68px; }
+@media (max-width: 900px) { :root { --heroH: 64px; --heroDelta: 12px; } }
+.main { overflow-anchor: none; }
+.sticky-top { position: sticky; top: -22px; z-index: 20; margin: -22px -28px 0; padding: calc(22px - 12px * var(--p)) 28px 10px; background: var(--bg); }
 .sticky-top::after { content: ''; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: linear-gradient(var(--bg), #17122b00); pointer-events: none; }
+.sticky-spacer { height: calc(var(--D) * var(--p)); }
+.sticky-top .top { padding: calc(14px - 6px * var(--p)) calc(24px - 8px * var(--p)) calc(14px - 6px * var(--p)) calc(16px - 4px * var(--p)); border-radius: calc(30px - 6px * var(--p)); }
 .sticky-top .top .tools { flex: 1 0 100%; }
+.sticky-top .hero { height: calc(var(--heroH) - var(--heroDelta) * var(--p)); }
+.sticky-top .hero-pig { width: calc(var(--heroH) - var(--heroDelta) * var(--p)); height: calc(var(--heroH) - var(--heroDelta) * var(--p)); }
+.sticky-top .hero > div:last-child { overflow: hidden; max-height: 100%; }
+.sticky-top h1 { font-size: calc(31px - 11px * var(--p)); white-space: nowrap; }
+.sticky-top .sub, .sticky-top .say { opacity: calc(1 - 2.2 * var(--p)); }
+.sticky-top #quick { margin-top: calc(18px - 8px * var(--p)); }
+.sticky-top #quickHint { height: calc(var(--hintH) * (1 - var(--p))); margin-top: calc(8px * (1 - var(--p))); overflow: hidden; opacity: calc(1 - 1.6 * var(--p)); }
+.sticky-top .vtabs { margin-top: calc(16px - 6px * var(--p)); }
 
 /* seasons: falling petals and a drifting leaf */
 .pig .fall { opacity: 0; }

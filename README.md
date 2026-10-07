@@ -42,4 +42,4 @@ The sync writes `data.json` (the board), `BOARD.md` (readable backlog, open item
 - Bigg, the pig's sweet little brother, comes up in his lines.
 - Options has an effect tester: pick a look and the pig's state, then run dance, falling bits, peek, bubble, party, birthday hello and more.
 - Winter scarf; more holidays with hats (Mother's Day, Father's Day, Prinsjesdag, Sint-Maarten, Bevrijdingsdag); a morning stretch, fireflies while he sleeps; special-day, weekday and season comments; a party on first open for the big holidays.
-- The header stays on top without resizing (the pig card scrolls away, filters, input and tabs stick). The icon is just the pig on a transparent background. The first poke after 10 am gets a stretch and a good morning.
+- The header stays on top and the pig card shrinks as you scroll (smoothly, driven by the scroll position). The icon is just the pig on a transparent background. The first poke after 10 am gets a stretch and a good morning.
