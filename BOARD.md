@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T08:16:27.646Z_
+_Updated 2026-10-07T08:16:48.358Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -12,8 +12,6 @@ _Updated 2026-10-07T08:16:27.646Z_
 
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
-- [ ] 🔧 **put year in "come back" text if year is not current year on calendar** _(easy)_ `muwnpgy5ks8kb`
-- [ ] 💡 **animation of the pet searching with the mag. glass while recipe parser is open** _(easy)_ `muwn6ynls0ywa`
 - [ ] 🔧 **clean up "What's in it" on github** _(easy)_ `muwmtx6328ol3`
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
   > maybe some kind of spreedsheet? whatever works best
@@ -48,7 +46,7 @@ _Updated 2026-10-07T08:16:27.646Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_18 done._
+_20 done._
 
 ### Cosmetics gallery
 
