@@ -39,13 +39,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791224356717,
-      "updated": 1791232442463,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -58,7 +58,7 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [
         "muvkreo7u0x0q"
@@ -66,7 +66,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791224395357,
-      "updated": 1791232240255,
+      "updated": 1791371579972,
       "doneBuild": "",
       "deleted": true
     },
@@ -80,13 +80,13 @@
       "notes": "All 15 comic_*.tga are registered but unused; every trigger still defaults to popup.tga. The suggested next step in funFX CLAUDE.md.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791232246102,
+      "updated": 1791371579972,
       "doneBuild": "",
       "deleted": true
     },
@@ -100,13 +100,13 @@
       "notes": "/funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791245218663,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -119,13 +119,13 @@
       "notes": "Visual of missing files works with /funfx missingtest; detection needs /funfx assetcheck in game.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -138,13 +138,13 @@
       "notes": "Built but never confirmed in game.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -157,13 +157,13 @@
       "notes": "First /funfx fishlog showed no event at the bite. Needs a longer recording that runs past the cast.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791232251156,
+      "updated": 1791371579972,
       "doneBuild": "",
       "deleted": true
     },
@@ -177,13 +177,13 @@
       "notes": "In combat the game blocks aura reading (secret auras). Buffs from others, procs and refreshes are only noticed out of combat.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -196,13 +196,13 @@
       "notes": "Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791231087088,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -215,13 +215,13 @@
       "notes": "Not supported yet.",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791244119338,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -234,13 +234,13 @@
       "notes": "Not modelled yet.",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791244613122,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -253,13 +253,13 @@
       "notes": "They are shown as plain text instead (proficiencies, deeds, bonus spells).",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791244125149,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -272,13 +272,13 @@
       "notes": "All pet data already lives in state.pet, so this stays possible.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -291,13 +291,13 @@
       "notes": "Swap the Voice object in app-voice.js for the phone's own recognition.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791361106015,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791361106015,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -310,13 +310,13 @@
       "notes": "The dressing room tests the idea; no payments yet.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791231087089,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -329,13 +329,13 @@
       "notes": "They still use CSS scale/rotate. Firefox-only seam is acceptable; move to svgSquish if it shows in Chrome or Safari.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791232281974,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -348,13 +348,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791232417546,
-      "updated": 1791232434599,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -367,13 +367,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791232459489,
-      "updated": 1791232459489,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -386,13 +386,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234248146,
-      "updated": 1791258418444,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 8
     },
@@ -406,13 +406,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234260378,
-      "updated": 1791258445176,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -425,13 +425,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234272600,
-      "updated": 1791237333217,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -444,13 +444,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234285463,
-      "updated": 1791258418444,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 4
     },
@@ -464,13 +464,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234308675,
-      "updated": 1791245510300,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 7
     },
@@ -484,13 +484,13 @@
       "notes": "space between 2 slices bacon has white space. parts of pretzel are bleeding color outside edges.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791287934871,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234319501,
-      "updated": 1791287934871,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 6
     },
@@ -504,13 +504,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791257980285,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791234328327,
-      "updated": 1791257980285,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 5
     },
@@ -547,13 +547,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791251728586,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791236471686,
-      "updated": 1791251728586,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 4
     },
@@ -567,13 +567,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237251757,
-      "updated": 1791258418444,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 5
     },
@@ -587,13 +587,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791249667238,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237272427,
-      "updated": 1791249667238,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -627,13 +627,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237390978,
-      "updated": 1791258418444,
+      "updated": 1791371579972,
       "doneBuild": "",
       "order": 3
     },
@@ -647,13 +647,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791249658213,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237400309,
-      "updated": 1791249658213,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -666,13 +666,13 @@
       "notes": "it sits in front of the shopping list and is too intrusive",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791249656918,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791237484488,
-      "updated": 1791249656918,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -685,13 +685,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791248140030,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238317494,
-      "updated": 1791248140030,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -704,13 +704,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238492178,
-      "updated": 1791238501781,
+      "updated": 1791371579972,
       "doneBuild": "",
       "deleted": true
     },
@@ -724,13 +724,13 @@
       "notes": "currently it is too slow. the eye briefly is normal size. make the unmagnified eye close while the other is squinting",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791248446525,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791238936130,
-      "updated": 1791248446525,
+      "updated": 1791371579972,
       "doneBuild": ""
     },
     {
@@ -743,13 +743,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791240080642,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791239247218,
-      "updated": 1791258389951,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -762,13 +762,13 @@
       "notes": "support to better read descriptions of things like custom traits and spells. the long line of text in a small box is impossible to read. make it a hover over or make it clickable like normal, official traits, spells, items, and everything else. also, you should have to double click to edit things, so you don't do it on accident.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791242596761,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791242595479,
-      "updated": 1791242596761
+      "updated": 1791371579972
     },
     {
       "id": "muvvm1bugro2i",
@@ -780,13 +780,13 @@
       "notes": "when adding spells while making or leveling a character up, only show spells you can learn at that level, and have the slots for. ex: a level 1 bard can learn 4 cantrips and 2 level 1 spells. so only let them learn those spells. while in the window for choosing spells, show in the top what spells they have left to choose. ex: 2 level 1 spells, 1 level 3 spell. also keep the window open until either they choose all their spells, or they exit the window themself.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791242629259,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791242627897,
-      "updated": 1791242629259
+      "updated": 1791371579972
     },
     {
       "id": "muvvmntnnb227",
@@ -798,13 +798,13 @@
       "notes": "eidolon/animal companion stat blocks. add a tab or some kind of section for this",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791242658342,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791242657051,
-      "updated": 1791242658342
+      "updated": 1791371579972
     },
     {
       "id": "muvvr5dsacvu0",
@@ -816,13 +816,13 @@
       "notes": "archetypes in character creation, with descriptions and whatever class changes they come with baked into the character on creation",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791242867611,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791242866432,
-      "updated": 1791242867611
+      "updated": 1791371579972
     },
     {
       "id": "muvvw80q6m4cl",
@@ -834,13 +834,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243103130,
-      "updated": 1791245189061,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -853,13 +853,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791360853863,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243497873,
-      "updated": 1791360853863
+      "updated": 1791371579972
     },
     {
       "id": "muvw6qqplhsc0",
@@ -871,13 +871,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243593953,
-      "updated": 1791243606130,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -890,13 +890,13 @@
       "notes": "does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243709209,
-      "updated": 1791360983023
+      "updated": 1791371579972
     },
     {
       "id": "muvwa5qvbgfbp",
@@ -908,13 +908,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243753367,
-      "updated": 1791243858380,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -927,13 +927,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791243861903,
-      "updated": 1791243864579,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -946,13 +946,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791341229258,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244064462,
-      "updated": 1791341229258
+      "updated": 1791371579972
     },
     {
       "id": "muvwhnueie781",
@@ -964,13 +964,13 @@
       "notes": "if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244103414,
-      "updated": 1791244103414
+      "updated": 1791371579972
     },
     {
       "id": "muvwiuwf1mdcm",
@@ -982,13 +982,13 @@
       "notes": "support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244159215,
-      "updated": 1791343115051
+      "updated": 1791371579972
     },
     {
       "id": "muvwjg7739aoj",
@@ -1000,13 +1000,13 @@
       "notes": "space on overview page to upload a custom image of your character. another space, on the top to the left of your character name to upload another, smaller image",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791244188138,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244186819,
-      "updated": 1791244188138
+      "updated": 1791371579972
     },
     {
       "id": "muvwkrj32ubab",
@@ -1018,13 +1018,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791341227874,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244248159,
-      "updated": 1791341227874
+      "updated": 1791371579972
     },
     {
       "id": "muvwldlunxnxt",
@@ -1036,13 +1036,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244276770,
-      "updated": 1791341225259
+      "updated": 1791371579972
     },
     {
       "id": "muvwmdprbxza2",
@@ -1054,13 +1054,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791341220127,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244323567,
-      "updated": 1791341220127
+      "updated": 1791371579972
     },
     {
       "id": "muvwmx9d24fnz",
@@ -1072,13 +1072,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791341218783,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244348897,
-      "updated": 1791341218783
+      "updated": 1791371579972
     },
     {
       "id": "muvws9ekekw6e",
@@ -1090,13 +1090,13 @@
       "notes": "",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244597916,
-      "updated": 1791244597916
+      "updated": 1791371579972
     },
     {
       "id": "muvwvexl5jwxp",
@@ -1108,13 +1108,13 @@
       "notes": "Not every spell: coverage is about 2,250 of the 2,900+ published. Feats, traits and archetypes stop at the Advanced Class Guide (2015), because that's where the free data source ends. Later books only contribute spells.\nsupport for rolling for stats",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244745049,
-      "updated": 1791244745049
+      "updated": 1791371579972
     },
     {
       "id": "muvx400dup2g9",
@@ -1126,13 +1126,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791341216497,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245145613,
-      "updated": 1791341216497
+      "updated": 1791371579972
     },
     {
       "id": "muvx5hnv9cih9",
@@ -1144,13 +1144,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245215147,
-      "updated": 1791245215147
+      "updated": 1791371579972
     },
     {
       "id": "muvx9t58kv98s",
@@ -1162,13 +1162,13 @@
       "notes": "",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245416652,
-      "updated": 1791258418444,
+      "updated": 1791371579972,
       "order": 2
     },
     {
@@ -1181,13 +1181,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245437760,
-      "updated": 1791258418444,
+      "updated": 1791371579972,
       "order": 1
     },
     {
@@ -1200,13 +1200,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245444426,
-      "updated": 1791245444426
+      "updated": 1791371579972
     },
     {
       "id": "muvxaxe6yw4xw",
@@ -1218,13 +1218,13 @@
       "notes": "",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245468814,
-      "updated": 1791288829019
+      "updated": 1791371579972
     },
     {
       "id": "muvxb48osnspa",
@@ -1236,13 +1236,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791258432749,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245477688,
-      "updated": 1791258432749
+      "updated": 1791371579972
     },
     {
       "id": "muvxblwe4wtzu",
@@ -1254,13 +1254,13 @@
       "notes": "",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245500574,
-      "updated": 1791245500574
+      "updated": 1791371579972
     },
     {
       "id": "muvxdzapuz5v8",
@@ -1272,13 +1272,13 @@
       "notes": "would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is before implementing, so dont do this yet until i tell you to start. want it focused more on the pet and it's cute animations. allow using the desktop pet to use the recipe parser, so you can easily send a parsed ingredient list to your phone from your pc. have way to easily send links/text from phone to PC using companion. maybe images too.",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245611249,
-      "updated": 1791304675839
+      "updated": 1791371579972
     },
     {
       "id": "muvy6mn2nea3p",
@@ -1290,13 +1290,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791246947870,
-      "updated": 1791258418444,
+      "updated": 1791371579972,
       "order": 0
     },
     {
@@ -1309,13 +1309,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791247266332,
-      "updated": 1791250135743,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -1328,13 +1328,13 @@
       "notes": "",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791255153822,
-      "updated": 1791255153822
+      "updated": 1791371579972
     },
     {
       "id": "muw57mgm92ved",
@@ -1346,13 +1346,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791258751606,
-      "updated": 1791292969570
+      "updated": 1791371579972
     },
     {
       "id": "muwkhvsr9p1ub",
@@ -1364,13 +1364,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791284424507,
-      "updated": 1791284424507
+      "updated": 1791371579972
     },
     {
       "id": "muwm0v58ei9ma",
@@ -1382,13 +1382,13 @@
       "notes": "and change the purple pan emoji next to it, blends into the backgound",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791287497406,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791286989740,
-      "updated": 1791287497406
+      "updated": 1791371579972
     },
     {
       "id": "muwmd8kf4xgq2",
@@ -1400,13 +1400,13 @@
       "notes": "longer titles get cut off and it looks bad",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791287940283,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791287567007,
-      "updated": 1791287940283
+      "updated": 1791371579972
     },
     {
       "id": "muwmrjs5kub1f",
@@ -1418,13 +1418,13 @@
       "notes": "maybe some kind of spreedsheet? whatever works best",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791288234725,
-      "updated": 1791335161498
+      "updated": 1791371579972
     },
     {
       "id": "muwmtx6328ol3",
@@ -1436,13 +1436,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791361055267,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791288345387,
-      "updated": 1791361055267
+      "updated": 1791371579972
     },
     {
       "id": "muwn6ynls0ywa",
@@ -1454,13 +1454,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791361007299,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791288953841,
-      "updated": 1791361007299
+      "updated": 1791371579972
     },
     {
       "id": "muwnlcegebvcf",
@@ -1472,13 +1472,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791334722562,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791289624840,
-      "updated": 1791334722562
+      "updated": 1791371579972
     },
     {
       "id": "muwnpgy5ks8kb",
@@ -1490,13 +1490,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791361003926,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791289817357,
-      "updated": 1791361003926
+      "updated": 1791371579972
     },
     {
       "id": "muwo5omjikzsu",
@@ -1508,13 +1508,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791290573803,
-      "updated": 1791290573803
+      "updated": 1791371579972
     },
     {
       "id": "muwomqrnu9632",
@@ -1526,13 +1526,13 @@
       "notes": "hopefully people would share images, helping with sharing word of the app",
       "build": "",
       "effort": "hard",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791292613460,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791291369731,
-      "updated": 1791292613460
+      "updated": 1791371579972
     },
     {
       "id": "muwpd9fj9aykv",
@@ -1544,13 +1544,13 @@
       "notes": "increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. ",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791292606975,
-      "updated": 1791336357131
+      "updated": 1791371579972
     },
     {
       "id": "muwpusaq62rmp",
@@ -1562,13 +1562,13 @@
       "notes": "this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791334720748,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791293424578,
-      "updated": 1791334720748
+      "updated": 1791371579972
     },
     {
       "id": "muwvog8njv1ae",
@@ -1580,13 +1580,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791334716835,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791303206711,
-      "updated": 1791334716835
+      "updated": 1791371579972
     },
     {
       "id": "mux161fqrn7xj",
@@ -2178,13 +2178,13 @@
       "notes": "",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791315754600,
-      "updated": 1791335166530,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -2197,13 +2197,13 @@
       "notes": "remove time of day based background effects like the moon. screen is looking cluttered",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791324674926,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791315832477,
-      "updated": 1791324674926
+      "updated": 1791371579972
     },
     {
       "id": "mux3qjhkxlrp3",
@@ -2215,7 +2215,7 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791324461460,
       "images": [
         "mux3qie7foi12"
@@ -2223,7 +2223,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791316741160,
-      "updated": 1791324461460
+      "updated": 1791371579972
     },
     {
       "id": "mux4cvm3wzr6h",
@@ -2253,13 +2253,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "funfx",
       "doneAt": 1791330619517,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791325553215,
-      "updated": 1791330619517
+      "updated": 1791371579972
     },
     {
       "id": "mux903byxmye4",
@@ -2271,13 +2271,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "funfx",
       "doneAt": 1791330617691,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791325584862,
-      "updated": 1791330617691
+      "updated": 1791371579972
     },
     {
       "id": "muxc6vzsp8wgi",
@@ -2289,13 +2289,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791330940792,
-      "updated": 1791330940792
+      "updated": 1791371579972
     },
     {
       "id": "muxdaxaxx4xm6",
@@ -2307,13 +2307,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "funfx",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791332808729,
-      "updated": 1791332808729
+      "updated": 1791371579972
     },
     {
       "id": "muxtxdcg64roy",
@@ -2325,13 +2325,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791360735727,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791360729808,
-      "updated": 1791360756531,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -2344,13 +2344,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791360739568,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791360731686,
-      "updated": 1791360758036,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -2363,13 +2363,13 @@
       "notes": "",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 1791360741026,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791360732506,
-      "updated": 1791360754833,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -2382,13 +2382,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791360849046,
-      "updated": 1791360849046
+      "updated": 1791371579972
     },
     {
       "id": "muxudv5t72lnf",
@@ -2400,13 +2400,13 @@
       "notes": "such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791361499393,
-      "updated": 1791361773072,
+      "updated": 1791371579972,
       "deleted": true
     },
     {
@@ -2419,13 +2419,13 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "petshopper",
       "doneAt": 1791367581221,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791361739526,
-      "updated": 1791367581221
+      "updated": 1791371579972
     },
     {
       "id": "muxujlnznx4aw",
@@ -2437,13 +2437,13 @@
       "notes": "such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.",
       "build": "",
       "effort": "medium",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791361767023,
-      "updated": 1791368220394
+      "updated": 1791371579972
     },
     {
       "id": "muxulrcogzi17",
@@ -2473,25 +2473,25 @@
       "notes": "",
       "build": "",
       "effort": "easy",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791367901595,
-      "updated": 1791367901595
+      "updated": 1791371579972
     },
     {
       "id": "muxytd7n7ule8",
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "improve summon menu in buffs",
       "notes": "move the summon button to roughly where i circled. just a bit right of the conjuration text. make the text you click on to summon the creature and add it to the buffs page look more like buttons, also improve the stats text. maybe also make it look like a button. add the ability to highlight and copy paste text in the stat block menus. add padding above the summon monster info in buffs page so boxes are not overlapping. ",
       "build": "",
       "effort": "",
-      "area": "",
+      "area": "pathfinder",
       "doneAt": 0,
       "images": [
         "muxyjr5sgtnwz",
@@ -2500,7 +2500,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791368941091,
-      "updated": 1791368941091
+      "updated": 1791374241772
     }
   ],
   "notes": [
