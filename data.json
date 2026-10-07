@@ -1494,7 +1494,7 @@
       "type": "idea",
       "priority": "now",
       "status": "open",
-      "title": "swipe items of shopping list to remove them",
+      "title": "swipe items off shopping list to remove them, dont have this count towards goals or go on the clean up list. just delete them. have the pet comment on this.",
       "notes": "",
       "build": "",
       "effort": "easy",
@@ -1503,7 +1503,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791303206711,
-      "updated": 1791303206711
+      "updated": 1791333503479
     },
     {
       "id": "mux161fqrn7xj",
