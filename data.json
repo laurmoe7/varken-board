@@ -894,17 +894,17 @@
       "project": "pathfinder",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "class skill red dot needs centered in skills page",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791341229258,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244064462,
-      "updated": 1791244251760
+      "updated": 1791341229258
     },
     {
       "id": "muvwhnueie781",
@@ -962,23 +962,23 @@
       "project": "pathfinder",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "make hover over pop-ups better fit the ui style of the app",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791341227874,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244248159,
-      "updated": 1791244248159
+      "updated": 1791341227874
     },
     {
       "id": "muvwldlunxnxt",
       "project": "pathfinder",
       "type": "idea",
-      "priority": "now",
+      "priority": "soon",
       "status": "open",
       "title": "a custom field in money for alternative currencies",
       "notes": "",
@@ -989,41 +989,41 @@
       "gallery": false,
       "slot": "",
       "created": 1791244276770,
-      "updated": 1791244276770
+      "updated": 1791341225259
     },
     {
       "id": "muvwmdprbxza2",
       "project": "pathfinder",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "notes space on overview page, underneath everything else",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791341220127,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244323567,
-      "updated": 1791244323567
+      "updated": 1791341220127
     },
     {
       "id": "muvwmx9d24fnz",
       "project": "pathfinder",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "search bar in character sheet on the top, only for character sheet",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791341218783,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791244348897,
-      "updated": 1791244348897
+      "updated": 1791341218783
     },
     {
       "id": "muvws9ekekw6e",
@@ -1064,17 +1064,17 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "fix slight lag when clicking on custom spell to read pop out menu on right, if possible",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791341216497,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245145613,
-      "updated": 1791245145613
+      "updated": 1791341216497
     },
     {
       "id": "muvx5hnv9cih9",
@@ -1344,13 +1344,13 @@
       "title": "make tool to easily view and edit dialogue",
       "notes": "maybe some kind of spreedsheet? whatever works best",
       "build": "",
-      "effort": "easy",
+      "effort": "medium",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791288234725,
-      "updated": 1791288234725
+      "updated": 1791335161498
     },
     {
       "id": "muwmtx6328ol3",
@@ -1391,17 +1391,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "make pet less upset about eating fruit and veggies",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791334722562,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791289624840,
-      "updated": 1791289829279
+      "updated": 1791334722562
     },
     {
       "id": "muwnpgy5ks8kb",
@@ -1461,7 +1461,7 @@
       "priority": "soon",
       "status": "open",
       "title": "improve AR photos and features",
-      "notes": "increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. allowing rotating of nibble in photoshoots. mute dressing room sounds in photo shoot menu.",
+      "notes": "increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. ",
       "build": "",
       "effort": "medium",
       "doneAt": 0,
@@ -1469,41 +1469,41 @@
       "gallery": false,
       "slot": "",
       "created": 1791292606975,
-      "updated": 1791292970695
+      "updated": 1791336357131
     },
     {
       "id": "muwpusaq62rmp",
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "cant see cursor following feature outside PC, so remove this",
       "notes": "this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791334720748,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791293424578,
-      "updated": 1791324658125
+      "updated": 1791334720748
     },
     {
       "id": "muwvog8njv1ae",
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
-      "title": "swipe items of shopping list to remove them",
+      "status": "done",
+      "title": "swipe items off shopping list to remove them, dont have this count towards goals or go on the clean up list. just delete them. have the pet comment on this.",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791334716835,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791303206711,
-      "updated": 1791303206711
+      "updated": 1791334716835
     },
     {
       "id": "mux161fqrn7xj",
@@ -2071,7 +2071,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791315754600,
-      "updated": 1791315754600
+      "updated": 1791335166530,
+      "deleted": true
     },
     {
       "id": "mux372cdw2srj",
@@ -2176,6 +2177,23 @@
       "slot": "",
       "created": 1791330940792,
       "updated": 1791330940792
+    },
+    {
+      "id": "muxdaxaxx4xm6",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add more crit sounds that would work well with magic spells",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791332808729,
+      "updated": 1791332808729
     }
   ],
   "notes": [

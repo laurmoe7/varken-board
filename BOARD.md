@@ -1,26 +1,21 @@
 # Varken board
 
-_Updated 2026-10-06T23:55:45.662Z_
+_Updated 2026-10-07T02:47:13.886Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
-- [ ] 💡 **swipe items of shopping list to remove them** _(easy)_ `muwvog8njv1ae`
-- [ ] 🔧 **cant see cursor following feature outside PC, so remove this** _(easy)_ `muwpusaq62rmp`
-  > this also means the dialogue for going over items in the pet menu. you never see them on the phone because you cant mouse over things. maybe make that dialogue for clicking on the dress up items instead.
-- [ ] 🔧 **make pet less upset about eating fruit and veggies** _(easy)_ `muwnlcegebvcf`
 
 ### Soon
 
-- [ ] 💡 **add tails?** _(medium)_ `mux35e946incw`
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
-  > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. allowing rotating of nibble in photoshoots. mute dressing room sounds in photo shoot menu.
+  > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 🔧 **put year in "come back" text if year is not current year on calendar** _(easy)_ `muwnpgy5ks8kb`
 - [ ] 💡 **animation of the pet searching with the mag. glass while recipe parser is open** _(easy)_ `muwn6ynls0ywa`
 - [ ] 🔧 **clean up "What's in it" on github** _(easy)_ `muwmtx6328ol3`
-- [ ] 💡 **make tool to easily view and edit dialogue** _(easy)_ `muwmrjs5kub1f`
+- [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
   > maybe some kind of spreedsheet? whatever works best
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
@@ -53,7 +48,7 @@ _Updated 2026-10-06T23:55:45.662Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_15 done._
+_18 done._
 
 ### Cosmetics gallery
 
@@ -135,6 +130,7 @@ _15 done._
 
 ### Soon
 
+- [ ] 💡 **add more crit sounds that would work well with magic spells** _(easy)_ `muxdaxaxx4xm6`
 - [ ] 🔧 **improve and clarify pack system** _(easy)_ `muxc6vzsp8wgi`
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ `seed-funfx-2`
@@ -155,18 +151,10 @@ _2 done._
 
 ## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
 
-### ASAP
-
-- [ ] 💡 **fix slight lag when clicking on custom spell to read pop out menu on right, if possible** _(easy)_ `muvx400dup2g9`
-- [ ] 💡 **search bar in character sheet on the top, only for character sheet** _(easy)_ `muvwmx9d24fnz`
-- [ ] 💡 **notes space on overview page, underneath everything else** _(easy)_ `muvwmdprbxza2`
-- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
-- [ ] 🔧 **make hover over pop-ups better fit the ui style of the app** _(easy)_ `muvwkrj32ubab`
-- [ ] 🔧 **class skill red dot needs centered in skills page** _(easy)_ `muvwgtsek11tj`
-
 ### Soon
 
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ `muvws9ekekw6e`
+- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ `muvwldlunxnxt`
 - [ ] 💡 **better support for summons** _(medium)_ `muvwiuwf1mdcm`
   > support for easier use of summon spells, be able to see summon's stats easier. maybe be able to pin them temporarily?
 - [ ] 💡 **level-up warning for skills** _(easy)_ `muvwhnueie781`
@@ -187,7 +175,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_5 done._
+_10 done._
 
 ### Notes
 
