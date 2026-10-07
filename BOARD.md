@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:47:58.716Z_
+_Updated 2026-10-07T12:48:33.460Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,6 +10,7 @@ _Updated 2026-10-07T12:47:58.716Z_
 
 ### Soon
 
+- [ ] 💡 **add sound that plays when tagging as doing, maybe a little pop** _(easy)_ _(Varken Board)_ `muy3spjime184`
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
