@@ -2217,34 +2217,34 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "b",
       "notes": "",
       "build": "",
       "effort": "",
-      "doneAt": 0,
+      "doneAt": 1791360739568,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791360731686,
-      "updated": 1791360731686
+      "updated": 1791360739568
     },
     {
       "id": "muxtxffe3ed78",
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "c",
       "notes": "",
       "build": "",
       "effort": "",
-      "doneAt": 0,
+      "doneAt": 1791360741026,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791360732506,
-      "updated": 1791360732506
+      "updated": 1791360741026
     }
   ],
   "notes": [
