@@ -2774,6 +2774,24 @@
       "slot": "",
       "created": 1791392804386,
       "updated": 1791392804386
+    },
+    {
+      "id": "muyeg9gs57isa",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "be able to drag and drop cookie to move him",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791395203564,
+      "updated": 1791395203564
     }
   ],
   "notes": [
