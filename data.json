@@ -1357,17 +1357,17 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "clean up \"What's in it\" on github",
       "notes": "",
       "build": "",
       "effort": "easy",
-      "doneAt": 0,
+      "doneAt": 1791361055267,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791288345387,
-      "updated": 1791289840584
+      "updated": 1791361055267
     },
     {
       "id": "muwn6ynls0ywa",
