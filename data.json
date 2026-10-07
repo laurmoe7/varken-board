@@ -2176,6 +2176,23 @@
       "slot": "",
       "created": 1791330940792,
       "updated": 1791330940792
+    },
+    {
+      "id": "muxdaxaxx4xm6",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add more crit sounds that would work well with magic spells",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791332808729,
+      "updated": 1791332808729
     }
   ],
   "notes": [
