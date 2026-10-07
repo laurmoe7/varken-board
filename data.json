@@ -959,7 +959,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "level-up warning for skills",
       "notes": "if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.",
       "build": "",
@@ -970,7 +970,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791244103414,
-      "updated": 1791371579972
+      "updated": 1791376755816
     },
     {
       "id": "muvwiuwf1mdcm",
@@ -1031,7 +1031,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "a custom field in money for alternative currencies",
       "notes": "",
       "build": "",
@@ -1042,7 +1042,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791244276770,
-      "updated": 1791371579972
+      "updated": 1791376754690
     },
     {
       "id": "muvwmdprbxza2",
@@ -2468,7 +2468,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "support to add images for familars, eidolons, etc",
       "notes": "",
       "build": "",
@@ -2479,7 +2479,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791367901595,
-      "updated": 1791371579972
+      "updated": 1791376752524
     },
     {
       "id": "muxytd7n7ule8",
@@ -2526,7 +2526,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "change frames when a unit is downed v when it is dead.",
       "notes": "currently being downed greys the frames. when you are downed, show how at what point you would be considered dead someway.",
       "build": "",
@@ -2537,7 +2537,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791376365361,
-      "updated": 1791376365361
+      "updated": 1791376750194
     }
   ],
   "notes": [
