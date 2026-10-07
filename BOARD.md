@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T13:03:13.824Z_
+_Updated 2026-10-07T13:06:18.928Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -154,8 +154,6 @@ _2 done._
 ### Soon
 
 - [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muxy734rozwxw`
-- [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ _(Pathfinder)_ _(doing)_ `muvw97o904dtq`
-  > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 - [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ `muy3xgeky8v3i`
 - [ ] 💡 **icons next to titles at top. overview, skills, etc** _(easy)_ _(Pathfinder)_ `muy3vwp67petl`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
@@ -173,7 +171,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_18 done._
+_19 done._
 
 ### Notes
 
