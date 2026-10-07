@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-07T12:32:49.702Z_
+_Updated 2026-10-07T12:39:36.069Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -149,15 +149,15 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **change frames when a unit is downed v when it is dead.** _(Pathfinder)_ `muy38htdt96xf`
+- [ ] 💡 **change frames when a unit is downed v when it is dead.** _(Pathfinder)_ _(doing)_ `muy38htdt96xf`
   > currently being downed greys the frames. when you are downed, show how at what point you would be considered dead someway.
-- [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ `muxy734rozwxw`
+- [ ] 💡 **support to add images for familars, eidolons, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muxy734rozwxw`
+- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwldlunxnxt`
+- [ ] 💡 **level-up warning for skills** _(easy)_ _(Pathfinder)_ _(doing)_ `muvwhnueie781`
+  > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 - [ ] 💡 **tracking for special class mechanics, such as arcanist's arcane reservoir in the spell list** _(hard)_ _(Pathfinder)_ `muvws9ekekw6e`
-- [ ] 💡 **a custom field in money for alternative currencies** _(easy)_ _(Pathfinder)_ `muvwldlunxnxt`
-- [ ] 💡 **level-up warning for skills** _(easy)_ _(Pathfinder)_ `muvwhnueie781`
-  > if you do not choose all your skills or allocate all your points or forget anything else while leveling or making a character, put a warning before you are able to continue.
 - [ ] 💡 **fix ability to recognize familiar eligibilty** _(medium)_ _(Pathfinder)_ `muvw97o904dtq`
   > does not always recognize the ability to use a familiar, even when the familar arcane exploit is chosen. fix this and any other similar cases.
 
