@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T21:49:50.029Z_
+_Updated 2026-10-08T21:59:25.376Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -126,6 +126,7 @@ _52 done._
 
 ### Notes
 
+- "evil": try to take teddy x times
 - have varken board say "Dansen!"
 - glorp alien skin
 - grumpy chef: import a recipe on 3 different days
