@@ -1,20 +1,20 @@
 # Varken board
 
-_Updated 2026-10-08T02:42:40.566Z_
+_Updated 2026-10-08T02:42:48.206Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
+- [ ] 💡 **increase size of room menu to be like the other tall menus** _(easy)_ `muyxgbx1tbuas`
+  > room options are hidden behind bottom menu bar
 - [ ] 💡 **pc hotkey or mouse shortcut to quickly swap between little fumu and full app fumu** _(easy)_ `muywqx3my9hud`
   > and hotkey to swap between shopping fumu and to-do fumu.
 
 ### Soon
 
 - [ ] 💡 **grabbing toys with mouse does not feel smooth.** `muyxjkl2iiqbu`
-- [ ] 💡 **increase size of room menu to be like the other tall menus** `muyxgbx1tbuas`
-  > room options are hidden behind bottom menu bar
 - [ ] 💡 **increase size of emoji being eaten** `muyxfljvcr86d`
 - [ ] 💡 **store the last few received links in send to another device screen** `muyxbsda9jz7d`
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
