@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T16:09:19.467Z_
+_Updated 2026-10-08T16:35:05.681Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,8 +13,6 @@ _Updated 2026-10-08T16:09:19.467Z_
 
 ### Soon
 
-- [ ] 💡 **private and share shopping lists for hosueholds** `muzqeqmy4s8a1`
-- [ ] 💡 **make receiving animation for having text received from another device be the pet spitting the link out** `muzqca0cf31e7`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
 - [ ] 💡 **have him say something before he jumps to sit on a window** _(easy)_ `muzpt5ox3k7k6`
   > like "Let me see!". also have him say something when he jumps down
@@ -39,6 +37,7 @@ _Updated 2026-10-08T16:09:19.467Z_
 
 ### Someday
 
+- [ ] 💡 **private and share shopping lists for hosueholds** _(medium)_ `muzqeqmy4s8a1`
 - [ ] 💡 **household to-do lists aren't synced, but allow households to send recommended reminders to each other.** _(medium)_ `muyn7h0ayf8jv`
   > something like "Mom sent: May 9th, grandma's at 5pm for dinner". when making a task for yourself, put an option to share with household members. give options to disable this. give sender a notification that other person accepted your reminder?
 - [ ] 💡 **additional interface themes** _(medium)_ `muwo5omjikzsu`
@@ -55,7 +54,7 @@ _Updated 2026-10-08T16:09:19.467Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_50 done._
+_51 done._
 
 ### Cosmetics gallery
 
