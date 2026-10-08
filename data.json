@@ -2946,7 +2946,7 @@
       "priority": "now",
       "status": "open",
       "title": "hotkey or mouse shortcut to quickly swap between little fumu and full app fumu",
-      "notes": "and hotkey to swap between shopping fumu and ",
+      "notes": "and hotkey to swap between shopping fumu and to-do fumu.",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
@@ -2955,7 +2955,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791425933842,
-      "updated": 1791426149902
+      "updated": 1791426167877
     }
   ],
   "notes": [
