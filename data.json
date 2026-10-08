@@ -3398,19 +3398,19 @@
       "id": "muzqeqmy4s8a1",
       "project": "petshopper",
       "type": "idea",
-      "priority": "soon",
+      "priority": "someday",
       "status": "open",
       "title": "private and share shopping lists for hosueholds",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791475754074,
-      "updated": 1791475754074
+      "updated": 1791477300471
     }
   ],
   "notes": [
