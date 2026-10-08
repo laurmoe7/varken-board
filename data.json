@@ -2765,7 +2765,7 @@
       "type": "idea",
       "priority": "now",
       "status": "open",
-      "title": "arm not holding lighter in light up animation, he is covering his face",
+      "title": "arm not holding lighter in light up animation, he is covering his face with his arm instead",
       "notes": "also make the tears go down his face when he fake crys. they are currently static.",
       "build": "",
       "effort": "easy",
@@ -2775,7 +2775,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791392804386,
-      "updated": 1791469423615
+      "updated": 1791469431730
     },
     {
       "id": "muyeg9gs57isa",
