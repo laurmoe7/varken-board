@@ -3154,6 +3154,24 @@
       "slot": "",
       "created": 1791452618051,
       "updated": 1791452618051
+    },
+    {
+      "id": "muzcr6qre5gum",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "\"more privacy\" option.",
+      "notes": "essentially switch fumu to awreness level 1, so he comments less on what you're doing",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791452820195,
+      "updated": 1791452820195
     }
   ],
   "notes": [
