@@ -2944,18 +2944,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "pc hotkey or mouse shortcut to quickly swap between little fumu and full app fumu",
       "notes": "and hotkey to swap between shopping fumu and to-do fumu.",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791427501140,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791425933842,
-      "updated": 1791426172657
+      "updated": 1791427501140
     },
     {
       "id": "muyxbsda9jz7d",
