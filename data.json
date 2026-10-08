@@ -3160,20 +3160,20 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "\"more privacy\" option.",
       "notes": "essentially switch fumu to awreness level 1, so he comments less on what you're doing. also option to switch back to awareness level 2, of course.",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791462638621,
       "images": [
         "muzcv9buqnigp"
       ],
       "gallery": false,
       "slot": "",
       "created": 1791452820195,
-      "updated": 1791453937846
+      "updated": 1791462638621
     },
     {
       "id": "muzeawz9n6ksf",
