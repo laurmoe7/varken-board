@@ -3088,18 +3088,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "separate, larger options menu the opens when hovering over mini fumu and pressing a hotkey",
       "notes": "keep the special options pertaining to mini fumu here, and his hotkeys. still keep the most important options on right click. put some useful dev tools in this menu too. add toggle here to hide his toy and the carpet under him",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791456243528,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791451516398,
-      "updated": 1791454033930
+      "updated": 1791456243528
     },
     {
       "id": "muzc6d0a9sqmo",
