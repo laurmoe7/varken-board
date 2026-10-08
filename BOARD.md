@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T10:44:08.194Z_
+_Updated 2026-10-08T10:52:18.226Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -17,6 +17,10 @@ _Updated 2026-10-08T10:44:08.194Z_
 
 ### Soon
 
+- [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
+  > With two monitors, put him on the second one and unplug it. He should move to the main screen.
+  >  Plug it back in, and he should return to his old spot.
+  >  Change the resolution, and check he gets pulled back into view.
 - [ ] 🐛 **tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to** `muzeelwx9b87f`
 - [ ] 💡 **more apparent sitting animation** _(medium)_ `muzeawz9n6ksf`
   > animation where he sits on the ground, having the bottoms of his feet show to make it more obvious. shoe toe beans if he would have them in that skin
