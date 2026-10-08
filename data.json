@@ -3090,7 +3090,7 @@
       "priority": "soon",
       "status": "open",
       "title": "separate, larger options menu the opens when hovering over mini fumu and pressing a hotkey",
-      "notes": "keep the special options pertaining to mini fumu here, and his hotkeys. still keep the most important options on right click.",
+      "notes": "keep the special options pertaining to mini fumu here, and his hotkeys. still keep the most important options on right click. put some useful dev tools in this menu too.",
       "build": "",
       "effort": "",
       "area": "petshopper",
@@ -3099,7 +3099,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791451516398,
-      "updated": 1791451516398
+      "updated": 1791451587909
     }
   ],
   "notes": [
