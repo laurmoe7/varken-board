@@ -2992,6 +2992,24 @@
       "slot": "",
       "created": 1791427085275,
       "updated": 1791427085275
+    },
+    {
+      "id": "muyxgbx1tbuas",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "increase size of room menu to be like the other tall menus",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791427119445,
+      "updated": 1791427119445
     }
   ],
   "notes": [
