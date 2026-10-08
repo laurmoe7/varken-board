@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T22:42:56.282Z_
+_Updated 2026-10-08T23:08:36.268Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,7 +13,7 @@ _Updated 2026-10-08T22:42:56.282Z_
 
 ### Soon
 
-- [ ] 💡 **hovering over fumu while in a full screen game causes problems when you hover over him on accident** `muzwwwvr282ga`
+- [ ] 💡 **hovering over fumu while in a full screen game causes problems when you hover over him on accident** _(doing)_ `muzwwwvr282ga`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
 - [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
