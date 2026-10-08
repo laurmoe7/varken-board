@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T22:42:47.309Z_
+_Updated 2026-10-08T22:42:56.282Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -23,8 +23,6 @@ _Updated 2026-10-08T22:42:47.309Z_
 - [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
-- [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
-  - images: images/muy5s403rmwaj.jpg
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
@@ -53,7 +51,7 @@ _Updated 2026-10-08T22:42:47.309Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_53 done._
+_54 done._
 
 ### Cosmetics gallery
 
