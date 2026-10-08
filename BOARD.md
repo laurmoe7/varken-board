@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T15:21:46.207Z_
+_Updated 2026-10-08T15:26:51.637Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -17,7 +17,6 @@ _Updated 2026-10-08T15:21:46.207Z_
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
   >  Plug it back in, and he should return to his old spot.
   >  Change the resolution, and check he gets pulled back into view.
-- [ ] 🐛 **tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to** `muzeelwx9b87f`
 - [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
@@ -54,7 +53,7 @@ _Updated 2026-10-08T15:21:46.207Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_48 done._
+_49 done._
 
 ### Cosmetics gallery
 
