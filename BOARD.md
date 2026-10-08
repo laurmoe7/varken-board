@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:18:58.652Z_
+_Updated 2026-10-08T02:22:15.221Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -34,8 +34,6 @@ _Updated 2026-10-08T02:18:58.652Z_
 
 ### Someday
 
-- [ ] 💡 **rename app "Fumufumu"** _(medium)_ `muypjbndwrx5u`
-  > make mascot a pigeon. Fumufumu means "mhm" and you generally nod your head while you do this. pigeons like to bob your head, and are fond of eating all kinds of random food. i think this is cute and fits the app.
 - [ ] 💡 **household to-do lists aren't synced, but allow households to send recommended reminders to each other.** _(medium)_ `muyn7h0ayf8jv`
   > something like "Mom sent: May 9th, grandma's at 5pm for dinner". when making a task for yourself, put an option to share with household members. give options to disable this. give sender a notification that other person accepted your reminder?
 - [ ] 💡 **additional interface themes** _(medium)_ `muwo5omjikzsu`
@@ -56,7 +54,7 @@ _Updated 2026-10-08T02:18:58.652Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_29 done._
+_30 done._
 
 ### Cosmetics gallery
 
