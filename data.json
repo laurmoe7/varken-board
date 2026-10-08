@@ -3082,6 +3082,24 @@
       "slot": "",
       "created": 1791427719448,
       "updated": 1791427719448
+    },
+    {
+      "id": "muzbz8q6gc4bx",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "separate, larger options menu the opens when hovering over mini fumu and pressing a hotkey",
+      "notes": "keep the special options pertaining to mini fumu here, and his hotkeys. still keep the most important options on right click.",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791451516398,
+      "updated": 1791451516398
     }
   ],
   "notes": [
