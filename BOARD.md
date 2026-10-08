@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T15:21:21.858Z_
+_Updated 2026-10-08T15:21:32.938Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -19,10 +19,6 @@ _Updated 2026-10-08T15:21:21.858Z_
   >  Change the resolution, and check he gets pulled back into view.
 - [ ] 🐛 **tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to** `muzeelwx9b87f`
 - [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
-- [ ] 💡 **grabbing toys with mouse does not feel smooth.** _(easy)_ `muyxjkl2iiqbu`
-- [ ] 💡 **increase size of emoji being eaten** _(easy)_ `muyxfljvcr86d`
-- [ ] 💡 **store the last few received links in send to another device screen** _(easy)_ `muyxbsda9jz7d`
-  > remove duplicates
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
 - [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
@@ -60,7 +56,7 @@ _Updated 2026-10-08T15:21:21.858Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_45 done._
+_48 done._
 
 ### Cosmetics gallery
 
