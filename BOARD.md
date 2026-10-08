@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-08T02:38:44.070Z_
+_Updated 2026-10-08T02:40:24.880Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
+- [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
 - [ ] 💡 **pc hotkey or mouse shortcut to quickly swap between little fumu and full app fumu** _(easy)_ `muywqx3my9hud`
   > and hotkey to swap between shopping fumu and to-do fumu.
 
