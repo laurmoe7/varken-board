@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:40:24.880Z_
+_Updated 2026-10-08T02:41:14.950Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -12,6 +12,7 @@ _Updated 2026-10-08T02:40:24.880Z_
 
 ### Soon
 
+- [ ] 💡 **grabbing toys with mouse does not feel smooth.** `muyxjkl2iiqbu`
 - [ ] 💡 **increase size of room menu to be like the other tall menus** `muyxgbx1tbuas`
 - [ ] 💡 **increase size of emoji being eaten** `muyxfljvcr86d`
 - [ ] 💡 **store the last few received links in send to another device screen** `muyxbsda9jz7d`
