@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:15:51.903Z_
+_Updated 2026-10-08T02:17:28.108Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,10 +10,10 @@ _Updated 2026-10-08T02:15:51.903Z_
 
 ### Soon
 
+- [ ] 💡 **sending link/notes between devices runs a bit slowly.** _(doing)_ `muywiy2nw17ov`
+  > being called "send to my pc" doesn't make complete sense because you can send from pc to phone. make it send to other device, or something better. i don't think the device that send the link needs it to pop up on the same device again. just on the other device. see if you can speed up the initial link being sent
 - [ ] 💡 **want the little fumu window to be less busy.** `muywmwynu6q14`
   > i dont want it to have the tap to feed bubbles or dream bubbles. want it to have less clutter to it takes up less space. also move the speech bubble down a little.
-- [ ] 💡 **sending link/notes between devices runs a bit slowly.** `muywiy2nw17ov`
-  > being called "send to my pc" doesn't make complete sense because you can send from pc to phone. make it send to other device, or something better. i don't think the device that send the link needs it to pop up on the same device again. just on the other device. see if you can speed up the initial link being sent
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
 - [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
