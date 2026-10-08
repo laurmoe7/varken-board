@@ -3417,7 +3417,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "hovering over fumu while in a full screen game causes problems when you hover over him on accident",
       "notes": "",
       "build": "",
@@ -3428,7 +3428,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791486679671,
-      "updated": 1791486679671
+      "updated": 1791500911535
     },
     {
       "id": "mv02knix7j6ws",
