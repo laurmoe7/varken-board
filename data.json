@@ -2956,6 +2956,24 @@
       "slot": "",
       "created": 1791425933842,
       "updated": 1791426172657
+    },
+    {
+      "id": "muyxbsda9jz7d",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "store the last few received links in send to another device screen",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791426907486,
+      "updated": 1791426907486
     }
   ],
   "notes": [
