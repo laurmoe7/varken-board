@@ -3331,14 +3331,14 @@
       "title": "have him grab his toy if it enabled when you pick up and drag him",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791474291372,
-      "updated": 1791474291372
+      "updated": 1791474754945
     },
     {
       "id": "muzpt5ox3k7k6",
@@ -3349,14 +3349,14 @@
       "title": "have him say something before he jumps to sit on a window",
       "notes": "like \"Let me see!\". also have him say something when he jumps down",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791474747153,
-      "updated": 1791474747153
+      "updated": 1791474751051
     }
   ],
   "notes": [
