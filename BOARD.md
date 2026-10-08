@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T09:26:32.456Z_
+_Updated 2026-10-08T09:30:53.812Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -15,6 +15,7 @@ _Updated 2026-10-08T09:26:32.456Z_
 
 ### Soon
 
+- [ ] 💡 **show boundries of fumu's area when moving him on pc** `muzc6d0a9sqmo`
 - [ ] 💡 **separate, larger options menu the opens when hovering over mini fumu and pressing a hotkey** `muzbz8q6gc4bx`
   > keep the special options pertaining to mini fumu here, and his hotkeys. still keep the most important options on right click. put some useful dev tools in this menu too.
 - [ ] 💡 **animation for fumu that receives link is not being played.** `muyxt6vswri7p`
