@@ -3000,7 +3000,7 @@
       "priority": "soon",
       "status": "open",
       "title": "increase size of room menu to be like the other tall menus",
-      "notes": "",
+      "notes": "room options are hidden behind bottom menu bar",
       "build": "",
       "effort": "",
       "area": "petshopper",
@@ -3009,7 +3009,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791427119445,
-      "updated": 1791427119445
+      "updated": 1791427355857
     },
     {
       "id": "muyxihx9p0dsa",
