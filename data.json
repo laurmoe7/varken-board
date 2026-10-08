@@ -3339,6 +3339,24 @@
       "slot": "",
       "created": 1791474291372,
       "updated": 1791474291372
+    },
+    {
+      "id": "muzpt5ox3k7k6",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "have him say something before he jumps to sit on a window",
+      "notes": "like \"Let me see!\". also have him say something when he jumps down",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791474747153,
+      "updated": 1791474747153
     }
   ],
   "notes": [
