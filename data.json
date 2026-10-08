@@ -1269,18 +1269,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "someday",
-      "status": "open",
+      "status": "done",
       "title": "desktop companion",
       "notes": "would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is before implementing, so dont do this yet until i tell you to start. want it focused more on the pet and it's cute animations. allow using the desktop pet to use the recipe parser, so you can easily send a parsed ingredient list to your phone from your pc. have way to easily send links/text from phone to PC using companion. maybe images too.",
       "build": "",
       "effort": "hard",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791473233792,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245611249,
-      "updated": 1791371579972
+      "updated": 1791473233792
     },
     {
       "id": "muvy6mn2nea3p",
