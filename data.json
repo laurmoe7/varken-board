@@ -3357,6 +3357,24 @@
       "slot": "",
       "created": 1791474747153,
       "updated": 1791474751051
+    },
+    {
+      "id": "muzq2wdvgelfr",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "have him wiggle his arms up in the air when jumping down from sitting on a window",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791475201651,
+      "updated": 1791475201651
     }
   ],
   "notes": [
