@@ -2884,6 +2884,24 @@
       "slot": "",
       "created": 1791413822137,
       "updated": 1791413822137
+    },
+    {
+      "id": "muytdqp1osha2",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "done",
+      "title": "some face animations shrink or grow the size of the pigeon's beak. keep beak sizes the same",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 1791420282520,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791420280165,
+      "updated": 1791420282520
     }
   ],
   "notes": [
