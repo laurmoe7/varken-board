@@ -1343,18 +1343,18 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "now",
-      "status": "doing",
+      "status": "done",
       "title": "improve ability to read measurements in recipes",
       "notes": "",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791426179160,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791258751606,
-      "updated": 1791377274723
+      "updated": 1791426179160
     },
     {
       "id": "muwkhvsr9p1ub",
