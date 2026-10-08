@@ -3393,6 +3393,24 @@
       "slot": "",
       "created": 1791475639212,
       "updated": 1791475639212
+    },
+    {
+      "id": "muzqeqmy4s8a1",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "private and share shopping lists for hosueholds",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791475754074,
+      "updated": 1791475754074
     }
   ],
   "notes": [
