@@ -3345,18 +3345,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "have him say something before he jumps to sit on a window",
       "notes": "like \"Let me see!\". also have him say something when he jumps down",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791477813294,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791474747153,
-      "updated": 1791474751051
+      "updated": 1791477813294
     },
     {
       "id": "muzq2wdvgelfr",
