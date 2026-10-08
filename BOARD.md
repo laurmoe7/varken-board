@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:43:07.457Z_
+_Updated 2026-10-08T02:43:13.842Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -28,7 +28,6 @@ _Updated 2026-10-08T02:43:07.457Z_
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
-- [ ] 💡 **some kind of mystery boxes** _(medium)_ _(doing)_ `muvqn89jg1e4j`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
 - [ ] 💡 **special sounds on different maps** _(easy)_ `muvqmfgyzon70`
@@ -55,7 +54,7 @@ _Updated 2026-10-08T02:43:07.457Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_34 done._
+_35 done._
 
 ### Cosmetics gallery
 
