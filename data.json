@@ -3435,18 +3435,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "make it so notes can be dragged and dropped to be moved.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "varken",
-      "doneAt": 0,
+      "doneAt": 1791499362084,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791496185369,
-      "updated": 1791499357358
+      "updated": 1791499362084
     }
   ],
   "notes": [
