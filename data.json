@@ -280,8 +280,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087089,
-      "updated": 1791371579972,
-      "doneBuild": ""
+      "updated": 1791473250597,
+      "doneBuild": "",
+      "deleted": true
     },
     {
       "id": "seed-petshopper-12",
