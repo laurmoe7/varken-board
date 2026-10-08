@@ -1,11 +1,13 @@
 # Varken board
 
-_Updated 2026-10-08T09:30:53.812Z_
+_Updated 2026-10-08T09:32:46.353Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
+- [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
+  > perhaps a spreadsheet? tell me your ideas first
 - [ ] 💡 **quick way to get fumu to send a link.** _(easy)_ `muyxo2k5s0l3l`
   > with the link in your clipboard, press a hotkey to have fumu send it right away to your other device. have it work in mini and full fumu mode.
 - [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
