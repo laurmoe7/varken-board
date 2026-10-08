@@ -3192,6 +3192,24 @@
       "slot": "",
       "created": 1791455420277,
       "updated": 1791455420277
+    },
+    {
+      "id": "muzeelwx9b87f",
+      "project": "petshopper",
+      "type": "bug",
+      "priority": "soon",
+      "status": "open",
+      "title": "tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791455592561,
+      "updated": 1791455592561
     }
   ],
   "notes": [
