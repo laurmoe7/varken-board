@@ -1,36 +1,48 @@
 # Varken board
 
-_Updated 2026-10-07T13:36:54.202Z_
+_Updated 2026-10-08T21:49:50.029Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
-- [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
+- [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
+  > perhaps a spreadsheet? tell me your ideas first
+- [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
+  > not sure it is needed because the back to fumu button is there, so you can get rid of double click. but it  might be good to know why it doesn't work
 
 ### Soon
 
-- [ ] 💡 **add sound that plays when tagging as doing, maybe a little pop** _(easy)_ _(Varken Board)_ _(doing)_ `muy3spjime184`
+- [ ] 💡 **make it so notes can be dragged and dropped to be moved.** _(Varken Board)_ `mv02knix7j6ws`
+- [ ] 💡 **hovering over fumu while in a full screen game causes problems when you hover over him on accident** `muzwwwvr282ga`
+- [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
+- [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
+- [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
+  > With two monitors, put him on the second one and unplug it. He should move to the main screen.
+  >  Plug it back in, and he should return to his old spot.
+  >  Change the resolution, and check he gets pulled back into view.
+- [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
+- [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
+  > also allow the the bring them layers up and down.
+- [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
+  - images: images/muy5s403rmwaj.jpg
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
-- [ ] 💡 **make tool to easily view and edit dialogue** _(medium)_ `muwmrjs5kub1f`
-  > maybe some kind of spreedsheet? whatever works best
-- [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
-- [ ] 💡 **photoshoot mode in dressing room** _(easy)_ _(doing)_ `muvxa9fki689g`
+- [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
-- [ ] 💡 **some kind of mystery boxes** _(medium)_ _(doing)_ `muvqn89jg1e4j`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ `muvset2l7bwrh`
 - [ ] 💡 **give birds tiny wing hands** `muvqnq6bsc8ki`
-- [ ] 💡 **special sounds on different maps** `muvqmfgyzon70`
+- [ ] 💡 **special sounds on different maps** _(easy)_ `muvqmfgyzon70`
 
 ### Someday
 
+- [ ] 💡 **private and share shopping lists for hosueholds** _(medium)_ `muzqeqmy4s8a1`
+- [ ] 💡 **household to-do lists aren't synced, but allow households to send recommended reminders to each other.** _(medium)_ `muyn7h0ayf8jv`
+  > something like "Mom sent: May 9th, grandma's at 5pm for dinner". when making a task for yourself, put an option to share with household members. give options to disable this. give sender a notification that other person accepted your reminder?
 - [ ] 💡 **additional interface themes** _(medium)_ `muwo5omjikzsu`
 - [ ] 💡 **export nibble as whatsapp sticker** _(medium)_ `muwkhvsr9p1ub`
 - [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
-- [ ] 💡 **desktop companion** _(hard)_ `muvxdzapuz5v8`
-  > would be able to talk to you, remind you of things. would sync with phone. comments on things going on on your desktop. need to ask how possible this is before implementing, so dont do this yet until i tell you to start. want it focused more on the pet and it's cute animations. allow using the desktop pet to use the recipe parser, so you can easily send a parsed ingredient list to your phone from your pc. have way to easily send links/text from phone to PC using companion. maybe images too.
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
@@ -38,13 +50,11 @@ _Updated 2026-10-07T13:36:54.202Z_
 - [ ] 💡 **add color variations to outfits/hats** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
-- [ ] 💡 **Shared household pet** `seed-petshopper-11`
-  > All pet data already lives in state.pet, so this stays possible.
 - [ ] 💡 **Paid pet customization** `seed-petshopper-13`
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_27 done._
+_52 done._
 
 ### Cosmetics gallery
 
@@ -119,6 +129,12 @@ _27 done._
 - have varken board say "Dansen!"
 - glorp alien skin
 - grumpy chef: import a recipe on 3 different days
+  
+  jester: tease pet by holding ball above head for x days
+  
+  ?: throw ball for pet x days
+  
+  cozy: tuck pet in x times
 - tiger cat skin
 - hummingbird skin
 - 10 goodnight kisses to unlock carer persona
@@ -146,30 +162,38 @@ _27 done._
 
 _2 done._
 
-## 🎲 Pathfinder (https://github.com/laurmoe7/pathfinder-sheet)
+## 🍪 Cookie's Sheets (https://github.com/laurmoe7/pathfinder-sheet)
+
+### ASAP
+
+- [ ] 💡 **be able to drag and drop cookie to move him** _(easy)_ _(Pathfinder)_ `muyeg9gs57isa`
+- [ ] 💡 **arm not holding lighter in light up animation, he is covering his face with his arm instead** _(easy)_ _(Pathfinder)_ `muyd0u8yl4p2r`
+  > also make the tears go down his face when he fake crys. they are currently static.
 
 ### Soon
 
-- [ ] 💡 **option menu. add interface theme, and image selection for current character sheet to this menu as well as any other options needed** _(Pathfinder)_ _(doing)_ `muy3xgeky8v3i`
-- [ ] 💡 **icons next to titles at top. overview, skills, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muy3vwp67petl`
-- [ ] 💡 **remove light mode** _(medium)_ _(Pathfinder)_ `muy4nbxh374ij`
-  > make dark mode the default. add a couple more ui themes. show me a mockup first before adding them to the program. make 5 different ones and let me choose. make at least 1 look like an old, dusty tome with turning page, but don't make it too bright. 
+- [ ] 💡 **sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord** _(medium)_ _(Pathfinder)_ `muzof0cdcaqx1`
+- [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ `muzmmnty7qynm`
+- [ ] 💡 **make cookie eat a cookie** _(easy)_ _(Pathfinder)_ `muyl2x5bbzko9`
+- [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ `muyfqj7tv0cyk`
+- [ ] 💡 **level up jingle and sound on full heal** _(easy)_ _(Pathfinder)_ `muy9q6p9399dh`
+- [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
+  > add any features that would useful for something like this
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 
 ### Someday
 
+- [ ] 💡 **support for rolling for stats** _(easy)_ _(Pathfinder)_ `muy75ex8eppd5`
 - [ ] 💡 **try to find info on extra, newer spells** _(hard)_ _(Pathfinder)_ `muvwvexl5jwxp`
   > Not every spell: coverage is about 2,250 of the 2,900+ published. Feats, traits and archetypes stop at the Advanced Class Guide (2015), because that's where the free data source ends. Later books only contribute spells.
-  > support for rolling for stats
-- [ ] 🔧 **About 18% of archetype "replaces X" targets do not match the class table** _(medium)_ _(Pathfinder)_ `seed-pathfinder-10`
-  > They are shown as plain text instead (proficiencies, deeds, bonus spells).
+  > 
 - [ ] 💡 **Prestige classes in the level-up wizard and compute()** _(medium)_ _(Pathfinder)_ `seed-pathfinder-8`
   > Not supported yet.
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_20 done._
+_25 done._
 
 ### Notes
 
