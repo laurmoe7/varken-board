@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T16:35:11.807Z_
+_Updated 2026-10-08T16:43:37.946Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -14,8 +14,6 @@ _Updated 2026-10-08T16:35:11.807Z_
 ### Soon
 
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
-- [ ] 💡 **have him say something before he jumps to sit on a window** _(easy)_ `muzpt5ox3k7k6`
-  > like "Let me see!". also have him say something when he jumps down
 - [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
@@ -54,7 +52,7 @@ _Updated 2026-10-08T16:35:11.807Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_51 done._
+_52 done._
 
 ### Cosmetics gallery
 
