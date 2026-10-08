@@ -3270,18 +3270,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "make sure speech bubble doesnt clip off the screen in desktop mode",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791472159492,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791467016039,
-      "updated": 1791467016039
+      "updated": 1791472159492
     },
     {
       "id": "muzmmnty7qynm",
