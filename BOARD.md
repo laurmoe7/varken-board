@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T09:49:57.176Z_
+_Updated 2026-10-08T09:50:16.533Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -19,6 +19,7 @@ _Updated 2026-10-08T09:49:57.176Z_
 
 - [ ] 💡 **"more privacy" option.** `muzcr6qre5gum`
   > essentially switch fumu to awreness level 1, so he comments less on what you're doing
+  - images: images/muzcv9buqnigp.jpg
 - [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
 - [ ] 💡 **show boundries of fumu's area when moving him on pc** `muzc6d0a9sqmo`
 - [ ] 💡 **separate, larger options menu the opens when hovering over mini fumu and pressing a hotkey** `muzbz8q6gc4bx`
