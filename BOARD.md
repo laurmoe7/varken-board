@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T14:23:29.999Z_
+_Updated 2026-10-08T14:23:39.745Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -179,7 +179,7 @@ _2 done._
 
 ### ASAP
 
-- [ ] 💡 **fight arm not holding light in light up animation, he is covering his face** _(easy)_ _(Pathfinder)_ `muyd0u8yl4p2r`
+- [ ] 💡 **arm not holding light in light up animation, he is covering his face** _(easy)_ _(Pathfinder)_ `muyd0u8yl4p2r`
   > also make the tears go down his face when he fake crys. they are currently static.
 
 ### Soon
