@@ -3375,6 +3375,24 @@
       "slot": "",
       "created": 1791475201651,
       "updated": 1791475201651
+    },
+    {
+      "id": "muzqca0cf31e7",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make receiving animation for having text received from another device be the pet spitting the link out",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791475639212,
+      "updated": 1791475639212
     }
   ],
   "notes": [
