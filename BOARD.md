@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T22:42:41.468Z_
+_Updated 2026-10-08T22:42:47.309Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,7 +13,6 @@ _Updated 2026-10-08T22:42:41.468Z_
 
 ### Soon
 
-- [ ] 💡 **make it so notes can be dragged and dropped to be moved.** _(Varken Board)_ _(doing)_ `mv02knix7j6ws`
 - [ ] 💡 **hovering over fumu while in a full screen game causes problems when you hover over him on accident** `muzwwwvr282ga`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
 - [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
@@ -54,7 +53,7 @@ _Updated 2026-10-08T22:42:41.468Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_52 done._
+_53 done._
 
 ### Cosmetics gallery
 
