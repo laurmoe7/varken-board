@@ -3471,7 +3471,8 @@
       "scope": "petshopper",
       "text": "10 goodnight kisses to unlock carer persona",
       "created": 1791240902890,
-      "updated": 1791240902890
+      "updated": 1791496767849,
+      "order": 6
     },
     {
       "id": "muvwtlsulmv7s",
@@ -3508,7 +3509,8 @@
       "scope": "petshopper",
       "text": "hummingbird skin",
       "created": 1791249892495,
-      "updated": 1791249892495
+      "updated": 1791496767849,
+      "order": 5
     },
     {
       "id": "mux1qw5wbs7ek",
@@ -3523,35 +3525,40 @@
       "scope": "petshopper",
       "text": "tiger cat skin",
       "created": 1791313657104,
-      "updated": 1791313657104
+      "updated": 1791496767849,
+      "order": 4
     },
     {
       "id": "mux6qs3i7mogw",
       "scope": "petshopper",
       "text": "grumpy chef: import a recipe on 3 different days\n\njester: tease pet by holding ball above head for x days\n\n?: throw ball for pet x days\n\ncozy: tuck pet in x times",
       "created": 1791321791166,
-      "updated": 1791496154742
+      "updated": 1791496767849,
+      "order": 3
     },
     {
       "id": "mux7owa454h83",
       "scope": "petshopper",
       "text": "glorp alien skin",
       "created": 1791323382892,
-      "updated": 1791323382892
+      "updated": 1791496767849,
+      "order": 1
     },
     {
       "id": "muxu3t6xd37fu",
       "scope": "petshopper",
       "text": "have varken board say \"Dansen!\"",
       "created": 1791361030281,
-      "updated": 1791361030281
+      "updated": 1791496767849,
+      "order": 0
     },
     {
       "id": "mv02wzsi19kjm",
       "scope": "petshopper",
       "text": "\"evil\": try to take teddy x times",
       "created": 1791496761138,
-      "updated": 1791496761138
+      "updated": 1791496767849,
+      "order": 2
     }
   ],
   "images": {
