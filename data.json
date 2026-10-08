@@ -2998,18 +2998,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "increase size of room menu to be like the other tall menus",
       "notes": "room options are hidden behind bottom menu bar",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791459249244,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791427119445,
-      "updated": 1791427363687
+      "updated": 1791459249244
     },
     {
       "id": "muyxihx9p0dsa",
