@@ -3435,7 +3435,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make it so notes can be dragged and dropped to be moved.",
       "notes": "",
       "build": "",
@@ -3446,7 +3446,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791496185369,
-      "updated": 1791496185369
+      "updated": 1791499357358
     }
   ],
   "notes": [
