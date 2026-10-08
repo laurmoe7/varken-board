@@ -2872,18 +2872,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "someday",
-      "status": "open",
+      "status": "done",
       "title": "rename app \"Fumufumu\"",
       "notes": "make mascot a pigeon. Fumufumu means \"mhm\" and you generally nod your head while you do this. pigeons like to bob your head, and are fond of eating all kinds of random food. i think this is cute and fits the app.",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791426130528,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791413822137,
-      "updated": 1791413822137
+      "updated": 1791426130528
     },
     {
       "id": "muytdqp1osha2",
