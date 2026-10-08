@@ -1,12 +1,13 @@
 # Varken board
 
-_Updated 2026-10-08T02:18:08.370Z_
+_Updated 2026-10-08T02:18:58.652Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🔧 **improve ability to read measurements in recipes** _(medium)_ _(doing)_ `muw57mgm92ved`
+- [ ] 💡 **hotkey or mouse shortcut to quickly swap between little fumu and full app fumu** _(easy)_ `muywqx3my9hud`
 
 ### Soon
 
