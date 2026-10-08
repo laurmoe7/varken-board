@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T09:32:46.353Z_
+_Updated 2026-10-08T09:43:42.330Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -17,6 +17,7 @@ _Updated 2026-10-08T09:32:46.353Z_
 
 ### Soon
 
+- [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
 - [ ] 💡 **show boundries of fumu's area when moving him on pc** `muzc6d0a9sqmo`
 - [ ] 💡 **separate, larger options menu the opens when hovering over mini fumu and pressing a hotkey** `muzbz8q6gc4bx`
   > keep the special options pertaining to mini fumu here, and his hotkeys. still keep the most important options on right click. put some useful dev tools in this menu too.
