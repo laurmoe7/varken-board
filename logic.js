@@ -76,6 +76,8 @@
 
   // Loose notes: free text with no type or priority. `scope` is '' for the All projects page, a project id for
   // that project's notes, or '<project id>/gallery' for its gallery's notes.
+  const orderKey = (it) => (it.order == null ? -Infinity : it.order);
+  const cmp = (a, b) => (a === b ? 0 : a < b ? -1 : 1);
   const createNote = (fields) => {
     const now = Date.now();
     return Object.assign({ id: uid(), scope: '', text: '', created: now, updated: now }, fields);
@@ -84,7 +86,7 @@
     const needle = String(q || '').trim().toLowerCase();
     return (state.notes || [])
       .filter((n) => !n.deleted && (n.scope || '') === (scope || '') && (!needle || n.text.toLowerCase().includes(needle)))
-      .sort((a, b) => b.created - a.created);
+      .sort((a, b) => cmp(orderKey(a), orderKey(b)) || b.created - a.created); // dragged order, new notes first
   };
 
   const liveProjects = (state) => state.projects.filter((p) => !p.deleted);
@@ -139,8 +141,6 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
   const priorityRank = (p) => Math.max(0, ids(PRIORITIES).indexOf(p));
   const statusRank = (s) => (s === 'doing' ? 0 : s === 'open' ? 1 : 2);
   // Dragging gives items an `order`; items never dragged (new ones) come first.
-  const orderKey = (it) => (it.order == null ? -Infinity : it.order);
-  const cmp = (a, b) => (a === b ? 0 : a < b ? -1 : 1);
 
   // Filters: project ('all' or id), type ('all' or id), status ('active' = not done, 'all', or a status), q (text).
   // Gallery items (cosmetic ideas with big pictures) are kept apart: they show only when f.gallery is set.
@@ -327,7 +327,6 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
     const parts = [stop(it.title.trim())];
     if (it.build) parts.push('Seen in build ' + it.build + '.');
     if (it.notes) parts.push(it.notes.trim());
-    if (it.images.length) parts.push('Pictures on the board: ' + it.images.map((i) => 'images/' + i + '.jpg').join(', '));
     return parts.join(' ');
   }
 

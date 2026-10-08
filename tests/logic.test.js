@@ -81,7 +81,7 @@ test('copyItem describes one item with notes, build and pictures', () => {
   const t = L.copyItem(s, it);
   assert.match(t, /^Hat clips\. Seen in build 212\. left ear\nonly on cats/);
   assert.doesNotMatch(t, /Notes:/);
-  assert.match(t, /images\/a1\.jpg/);
+  assert.doesNotMatch(t, /images\//);
   const g = L.copyItem(s, L.createItem({ title: 'cap', project: 'petshopper', gallery: true, slot: 'Hat', status: 'doing' }));
   assert.strictEqual(g, 'cap.');
   assert.doesNotMatch(t, /\[/);
@@ -388,4 +388,16 @@ test('areas map to projects and views', () => {
   assert.strictEqual(L.countOpen(items, 'petshopper'), 2);
   assert.strictEqual(L.countNow(items, 'petshopper', 'main'), 0);
   assert.strictEqual(L.countNow(items, 'petshopper', 'varken'), 1);
+});
+
+test('notes keep a dragged order, new notes come first', () => {
+  const s = { notes: [] };
+  const a = L.createNote({ text: 'a', created: 1 }), b = L.createNote({ text: 'b', created: 2 }), c = L.createNote({ text: 'c', created: 3 });
+  s.notes.push(a, b, c);
+  assert.deepStrictEqual(L.liveNotes(s, '').map((n) => n.text), ['c', 'b', 'a']);
+  a.order = 0; b.order = 1; c.order = 2;
+  assert.deepStrictEqual(L.liveNotes(s, '').map((n) => n.text), ['a', 'b', 'c']);
+  const d = L.createNote({ text: 'd', created: 4 });
+  s.notes.push(d);
+  assert.strictEqual(L.liveNotes(s, '')[0].text, 'd');
 });

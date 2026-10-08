@@ -276,7 +276,7 @@ function renderListView() {
       : emptyHtml('sleep', 'All clear!', 'Add an idea or a fix above and Varken will keep it safe.');
   } else {
     const doingHtml = doing.length
-      ? `<section class="group group-doing" data-priority="doing"><h2><span class="dot-pin">📌</span>Doing <span>${doing.length}</span></h2>
+      ? `<section class="group group-doing" data-priority="doing"><h2><span class="dot-pin">⚡</span>Doing <span>${doing.length}</span></h2>
         <div class="cards">${doing.map(cardHtml).join('')}</div></section>`
       : '';
     el.innerHTML = doingHtml + groups
@@ -384,7 +384,7 @@ function renderImages() {
   const it = current();
   const el = $('#dImgs');
   if (!it || !el) return;
-  el.innerHTML = it.images.map((id) => `<div class="img"><img data-img="${esc(id)}" data-zoom="${esc(id)}" alt="attached image"><button class="x ed" data-annot="${esc(id)}" title="Draw on it" aria-label="Draw on this image">✏️</button><button class="x" data-rm="${esc(id)}" aria-label="Remove image">×</button></div>`).join('');
+  el.innerHTML = it.images.map((id) => `<div class="img"><img data-img="${esc(id)}" data-zoom="${esc(id)}" alt="attached image"><button class="x ed" data-annot="${esc(id)}" title="Draw on it" aria-label="Draw on this image">✏️</button><button class="x cp" data-copyimg="${esc(id)}" title="Copy picture to paste into Claude" aria-label="Copy this picture">📋</button><button class="x" data-rm="${esc(id)}" aria-label="Remove image">×</button></div>`).join('');
   hydrate(el);
 }
 
@@ -397,7 +397,21 @@ function renderAll(keepDetail) {
 let toastTimer;
 function copyForClaude(it) {
   if (!it) return;
-  navigator.clipboard.writeText(L.copyItem(state, it)).then(() => { toast('Copied. Paste it into a Claude session.'); pigSay('copy', { p: 0.5 }); }, () => toast('Could not copy'));
+  navigator.clipboard.writeText(L.copyItem(state, it)).then(() => { toast(it.images.length ? 'Copied. For the pictures, press 📋 on each in the panel.' : 'Copied. Paste it into a Claude session.'); pigSay('copy', { p: 0.5 }); }, () => toast('Could not copy'));
+}
+// Puts one picture on the clipboard (as PNG, the one format browsers accept) so it can be pasted into a Claude chat.
+async function copyImage(id) {
+  try {
+    const blob = await Store.getImage(id);
+    if (!blob) return toast('Picture not found');
+    const bmp = await createImageBitmap(blob);
+    const cv = document.createElement('canvas');
+    cv.width = bmp.width; cv.height = bmp.height;
+    cv.getContext('2d').drawImage(bmp, 0, 0);
+    const png = await new Promise((r) => cv.toBlob(r, 'image/png'));
+    await navigator.clipboard.write([new ClipboardItem({ 'image/png': png })]);
+    toast('Picture copied. Paste it into Claude.');
+  } catch { toast('Could not copy the picture'); }
 }
 function toast(text, undo) {
   const t = $('#toast');
@@ -695,6 +709,8 @@ function wire() {
       renderImages();
       return;
     }
+    const ci = e.target.closest('[data-copyimg]');
+    if (ci) return copyImage(ci.dataset.copyimg);
     const an = e.target.closest('[data-annot]');
     if (an) return openAnnotate(it, an.dataset.annot);
     const z = e.target.closest('[data-zoom]');

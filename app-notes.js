@@ -56,7 +56,7 @@ function renderNotes() {
   }
   el.innerHTML = `<div class="notes">${list
     .map(
-      (n) => `<article class="note" data-note="${esc(n.id)}">
+      (n) => `<article class="note" data-note="${esc(n.id)}"><span class="note-grip" title="Drag to move" aria-label="Drag to move">⠿</span>
       <textarea rows="2" aria-label="Note">${esc(n.text)}</textarea>
       <div class="note-foot"><span class="muted small">${esc(noteDate(n))}</span>
         <span class="note-btns"><button class="ghost small" data-promote title="Turn this note into a real ${ui.view === 'gnotes' ? 'gallery card' : 'task'}">→ ${ui.view === 'gnotes' ? 'Card' : 'Task'}</button><button class="ghost small" data-note-del aria-label="Delete note">Delete</button></span>
@@ -142,3 +142,56 @@ $('#list').addEventListener('click', (e) => {
     toast('Note deleted', () => { n.deleted = false; touch(n); save(); renderList(); });
   }
 });
+
+// Drag a note by its grip to move it: the drop lands before or after the note under the pointer.
+(function wireNoteDrag() {
+  const list = $('#list');
+  let dragNote = null;
+  list.addEventListener('mousedown', (e) => {
+    const g = e.target.closest('.note-grip');
+    if (g) g.closest('.note').draggable = true;
+  });
+  list.addEventListener('dragstart', (e) => {
+    const card = e.target.closest && e.target.closest('.note');
+    if (!card) return;
+    dragNote = card.dataset.note;
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', dragNote);
+    card.classList.add('dragging');
+  });
+  const clear = () => document.querySelectorAll('.note.drop-before, .note.drop-after, .note.dragging').forEach((c) => c.classList.remove('drop-before', 'drop-after', 'dragging'));
+  const before = (e, card) => { // side by side in a grid: left half = before; in a single column: top half
+    const r = card.getBoundingClientRect();
+    const wide = r.width > card.parentElement.clientWidth * 0.9;
+    return wide ? e.clientY < r.top + r.height / 2 : e.clientX < r.left + r.width / 2;
+  };
+  list.addEventListener('dragover', (e) => {
+    if (!dragNote) return;
+    const card = e.target.closest('.note');
+    e.preventDefault();
+    document.querySelectorAll('.note.drop-before, .note.drop-after').forEach((c) => c.classList.remove('drop-before', 'drop-after'));
+    if (card && card.dataset.note !== dragNote) card.classList.add(before(e, card) ? 'drop-before' : 'drop-after');
+  });
+  list.addEventListener('drop', (e) => {
+    if (!dragNote) return;
+    e.preventDefault();
+    const card = e.target.closest('.note');
+    const moved = findNote(dragNote);
+    if (moved && card && card.dataset.note !== dragNote) {
+      const rest = L.liveNotes(state, notesScope(), ui.q).filter((n) => n.id !== dragNote);
+      let at = rest.findIndex((n) => n.id === card.dataset.note);
+      if (!before(e, card)) at += 1;
+      rest.splice(at, 0, moved);
+      rest.forEach((n, i) => { if (n.order !== i) { n.order = i; touch(n); } });
+      save();
+      renderList();
+    }
+    dragNote = null;
+    clear();
+  });
+  list.addEventListener('dragend', () => {
+    dragNote = null;
+    clear();
+    document.querySelectorAll('.note[draggable]').forEach((c) => c.removeAttribute('draggable'));
+  });
+})();

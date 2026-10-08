@@ -569,7 +569,7 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 @media (prefers-reduced-motion: reduce) { .pin, .card.done .check { animation: none; } .card:hover .check, .tag:hover, .primary:hover { transform: none; } }
 
 .group-doing h2 { color: var(--butter); }
-.group-doing h2 .dot-pin { font-size: 14px; display: inline-block; transform: rotate(-60deg); }
+.group-doing h2 .dot-pin { font-size: 14px; display: inline-block; }
 /* Varken watches the leaves and petals blow past */
 .pig.fx-gust .pig-eyes { animation: pig-follow 4s ease-in-out both; }
 @keyframes pig-follow { 0%, 100% { translate: 0 0; } 10% { translate: -2.5px -1px; } 35% { translate: 0 1.5px; } 60% { translate: 3px 2px; } 80% { translate: 3px 1px; } }
@@ -587,3 +587,13 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 #quickInput { resize: none; overflow: hidden; line-height: 1.35; font-family: inherit; border-radius: 26px; display: block; min-height: 50px; }
 #quick { align-items: flex-start; }
 #quick .primary { height: 50px; }
+
+/* copy-picture button, note drag grip */
+.imgs .x.cp { right: auto; left: auto; top: auto; bottom: -6px; right: -6px; background: var(--mint); color: #17402f; font-size: 11px; }
+.detail.gal .imgs .x.cp { top: auto; bottom: 8px; }
+.note { position: relative; }
+.note-grip { position: absolute; top: 6px; right: 12px; cursor: grab; color: var(--muted); opacity: 0; font-size: 16px; line-height: 1; user-select: none; transition: opacity .12s; }
+.note:hover .note-grip { opacity: .8; }
+.note.dragging { opacity: .45; }
+.note.drop-before { box-shadow: -5px 0 0 -1px var(--pink); }
+.note.drop-after { box-shadow: 5px 0 0 -1px var(--pink); }
