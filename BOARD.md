@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T15:27:18.544Z_
+_Updated 2026-10-08T15:27:35.261Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -45,8 +45,6 @@ _Updated 2026-10-08T15:27:18.544Z_
 - [ ] 💡 **add color variations to outfits/hats** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
 - [ ] 💡 **nocturnal mode for pets** `muvpj6yyqg80s`
-- [ ] 💡 **Shared household pet** `seed-petshopper-11`
-  > All pet data already lives in state.pet, so this stays possible.
 - [ ] 💡 **Paid pet customization** `seed-petshopper-13`
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
