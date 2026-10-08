@@ -3228,6 +3228,24 @@
       "slot": "",
       "created": 1791456733641,
       "updated": 1791456733641
+    },
+    {
+      "id": "muzf9xzjc4tfb",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "hide though bubble when he is moving around quickly",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791457054543,
+      "updated": 1791457054543
     }
   ],
   "notes": [
