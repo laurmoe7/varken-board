@@ -3252,18 +3252,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "fix feet",
       "notes": "the feet when sitting are too big, make them small and cute. also, in varken sketchpad, add the bottom of feet to pet options so i can try drawing them myself. dont do this until you show me the resized feet though.",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791466614376,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791461000094,
-      "updated": 1791461000094
+      "updated": 1791466614376
     }
   ],
   "notes": [
