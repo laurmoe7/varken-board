@@ -3300,6 +3300,24 @@
       "slot": "",
       "created": 1791469405222,
       "updated": 1791469405222
+    },
+    {
+      "id": "muzof0cdcaqx1",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791472407421,
+      "updated": 1791472407421
     }
   ],
   "notes": [
