@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T12:03:25.225Z_
+_Updated 2026-10-08T12:30:43.869Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -23,9 +23,6 @@ _Updated 2026-10-08T12:03:25.225Z_
   >  Plug it back in, and he should return to his old spot.
   >  Change the resolution, and check he gets pulled back into view.
 - [ ] 🐛 **tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to** `muzeelwx9b87f`
-- [ ] 💡 **"more privacy" option.** `muzcr6qre5gum`
-  > essentially switch fumu to awreness level 1, so he comments less on what you're doing. also option to switch back to awareness level 2, of course.
-  - images: images/muzcv9buqnigp.jpg
 - [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
 - [ ] 💡 **show boundries of fumu's area when moving him on pc** `muzc6d0a9sqmo`
 - [ ] 💡 **animation for fumu that receives link is not being played.** `muyxt6vswri7p`
@@ -71,7 +68,7 @@ _Updated 2026-10-08T12:03:25.225Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_39 done._
+_40 done._
 
 ### Cosmetics gallery
 
