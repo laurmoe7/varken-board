@@ -2674,20 +2674,20 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "varken",
-      "doneAt": 0,
+      "doneAt": 1791499371841,
       "images": [
         "muy5s403rmwaj"
       ],
       "gallery": false,
       "slot": "",
       "created": 1791380677358,
-      "updated": 1791380677358
+      "updated": 1791499371841
     },
     {
       "id": "muy6hmnhb6cvy",
