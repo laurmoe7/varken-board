@@ -2908,18 +2908,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "sending link/notes between devices runs a bit slowly.",
       "notes": "being called \"send to my pc\" doesn't make complete sense because you can send from pc to phone. make it send to other device, or something better. i don't think the device that send the link needs it to pop up on the same device again. just on the other device. see if you can speed up the initial link being sent",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791426860066,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791425561855,
-      "updated": 1791425843285
+      "updated": 1791426860066
     },
     {
       "id": "muywmwynu6q14",
