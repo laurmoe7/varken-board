@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T09:50:16.533Z_
+_Updated 2026-10-08T10:05:42.622Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -18,7 +18,7 @@ _Updated 2026-10-08T09:50:16.533Z_
 ### Soon
 
 - [ ] 💡 **"more privacy" option.** `muzcr6qre5gum`
-  > essentially switch fumu to awreness level 1, so he comments less on what you're doing
+  > essentially switch fumu to awreness level 1, so he comments less on what you're doing. also option to switch back to awareness level 2, of course.
   - images: images/muzcv9buqnigp.jpg
 - [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
 - [ ] 💡 **show boundries of fumu's area when moving him on pc** `muzc6d0a9sqmo`
