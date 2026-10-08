@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:45:05.611Z_
+_Updated 2026-10-08T02:45:39.437Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -9,6 +9,7 @@ _Updated 2026-10-08T02:45:05.611Z_
 - [ ] 💡 **quick way to get fumu to send a link.** _(easy)_ `muyxo2k5s0l3l`
   > with the link in your clipboard, press a hotkey to have fumu send it right away to your other device. have it work in mini and full fumu mode.
 - [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
+  > not sure it is needed because the back to fumu button is there, so you can get rid of double click. but it  might be good to know why it doesn't work
 - [ ] 💡 **increase size of room menu to be like the other tall menus** _(easy)_ `muyxgbx1tbuas`
   > room options are hidden behind bottom menu bar
 
