@@ -3028,6 +3028,24 @@
       "slot": "",
       "created": 1791427220541,
       "updated": 1791427220541
+    },
+    {
+      "id": "muyxjkl2iiqbu",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "grabbing toys with mouse does not feel smooth.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791427270646,
+      "updated": 1791427270646
     }
   ],
   "notes": [
