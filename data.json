@@ -3210,6 +3210,24 @@
       "slot": "",
       "created": 1791455592561,
       "updated": 1791455592561
+    },
+    {
+      "id": "muzf32dlphixr",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need someone with 2 monitors to test",
+      "notes": "With two monitors, put him on the second one and unplug it. He should move to the main screen.\n Plug it back in, and he should return to his old spot.\n Change the resolution, and check he gets pulled back into view.",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791456733641,
+      "updated": 1791456733641
     }
   ],
   "notes": [
