@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:44:45.257Z_
+_Updated 2026-10-08T02:45:05.611Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,8 +11,6 @@ _Updated 2026-10-08T02:44:45.257Z_
 - [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
 - [ ] 💡 **increase size of room menu to be like the other tall menus** _(easy)_ `muyxgbx1tbuas`
   > room options are hidden behind bottom menu bar
-- [ ] 💡 **pc hotkey or mouse shortcut to quickly swap between little fumu and full app fumu** _(easy)_ `muywqx3my9hud`
-  > and hotkey to swap between shopping fumu and to-do fumu.
 
 ### Soon
 
@@ -56,7 +54,7 @@ _Updated 2026-10-08T02:44:45.257Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_35 done._
+_36 done._
 
 ### Cosmetics gallery
 
