@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:46:33.370Z_
+_Updated 2026-10-08T02:48:43.926Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -15,6 +15,8 @@ _Updated 2026-10-08T02:46:33.370Z_
 
 ### Soon
 
+- [ ] 💡 **animation for fumu that receives link is not being played.** `muyxt6vswri7p`
+  > can delay getting the link for a second or 2 if that means the animation will play. enough time to watch both animations would be good. link is sending super fast
 - [ ] 💡 **grabbing toys with mouse does not feel smooth.** _(easy)_ `muyxjkl2iiqbu`
 - [ ] 💡 **increase size of emoji being eaten** _(easy)_ `muyxfljvcr86d`
 - [ ] 💡 **store the last few received links in send to another device screen** _(easy)_ `muyxbsda9jz7d`
