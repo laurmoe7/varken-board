@@ -3100,6 +3100,24 @@
       "slot": "",
       "created": 1791451516398,
       "updated": 1791451587909
+    },
+    {
+      "id": "muzc6d0a9sqmo",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "show boundries of fumu's area when moving him on pc",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791451848538,
+      "updated": 1791451848538
     }
   ],
   "notes": [
