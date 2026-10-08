@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T14:58:07.413Z_
+_Updated 2026-10-08T15:09:25.542Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,7 +13,6 @@ _Updated 2026-10-08T14:58:07.413Z_
 
 ### Soon
 
-- [ ] 💡 **make sure speech bubble doesnt clip off the screen in desktop mode** `muzl7gbr3firz`
 - [ ] 💡 **hide thought bubble when he is moving around quickly** `muzf9xzjc4tfb`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
@@ -65,7 +64,7 @@ _Updated 2026-10-08T14:58:07.413Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_42 done._
+_43 done._
 
 ### Cosmetics gallery
 
