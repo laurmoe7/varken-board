@@ -3381,18 +3381,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "make receiving animation for having text received from another device be the pet spitting the link out",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791477305167,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791475639212,
-      "updated": 1791475639212
+      "updated": 1791477305167
     },
     {
       "id": "muzqeqmy4s8a1",
