@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T11:39:46.536Z_
+_Updated 2026-10-08T12:03:25.225Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -15,6 +15,8 @@ _Updated 2026-10-08T11:39:46.536Z_
 
 ### Soon
 
+- [ ] 💡 **fix feet** `muzhmie6v3qzz`
+  > the feet when sitting are too big, make them small and cute. also, in varken sketchpad, add the bottom of feet to pet options so i can try drawing them myself. dont do this until you show me the resized feet though.
 - [ ] 💡 **hide though bubble when he is moving around quickly** `muzf9xzjc4tfb`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
