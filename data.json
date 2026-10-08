@@ -3064,6 +3064,24 @@
       "slot": "",
       "created": 1791427480565,
       "updated": 1791427480565
+    },
+    {
+      "id": "muyxt6vswri7p",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "animation for fumu that receives link is not being played.",
+      "notes": "can delay getting the link for a second or 2 if that means the animation will play. enough time to watch both animations would be good. link is sending super fast",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791427719448,
+      "updated": 1791427719448
     }
   ],
   "notes": [
