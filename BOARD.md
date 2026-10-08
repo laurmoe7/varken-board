@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:45:39.437Z_
+_Updated 2026-10-08T02:46:33.370Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -18,6 +18,7 @@ _Updated 2026-10-08T02:45:39.437Z_
 - [ ] 💡 **grabbing toys with mouse does not feel smooth.** _(easy)_ `muyxjkl2iiqbu`
 - [ ] 💡 **increase size of emoji being eaten** _(easy)_ `muyxfljvcr86d`
 - [ ] 💡 **store the last few received links in send to another device screen** _(easy)_ `muyxbsda9jz7d`
+  > remove duplicates
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
 - [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
