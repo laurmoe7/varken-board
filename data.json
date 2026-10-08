@@ -3200,18 +3200,18 @@
       "project": "petshopper",
       "type": "bug",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791473206866,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791455592561,
-      "updated": 1791455592561
+      "updated": 1791473206866
     },
     {
       "id": "muzf32dlphixr",
