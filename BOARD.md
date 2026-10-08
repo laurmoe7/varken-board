@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T10:52:18.226Z_
+_Updated 2026-10-08T10:57:39.668Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -17,6 +17,7 @@ _Updated 2026-10-08T10:52:18.226Z_
 
 ### Soon
 
+- [ ] 💡 **hide though bubble when he is moving around quickly** `muzf9xzjc4tfb`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
   >  Plug it back in, and he should return to his old spot.
