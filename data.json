@@ -2966,14 +2966,14 @@
       "title": "store the last few received links in send to another device screen",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791426907486,
-      "updated": 1791426907486
+      "updated": 1791427371394
     },
     {
       "id": "muyxfljvcr86d",
@@ -2984,14 +2984,14 @@
       "title": "increase size of emoji being eaten",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791427085275,
-      "updated": 1791427085275
+      "updated": 1791427373979
     },
     {
       "id": "muyxgbx1tbuas",
@@ -3038,14 +3038,14 @@
       "title": "grabbing toys with mouse does not feel smooth.",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791427270646,
-      "updated": 1791427270646
+      "updated": 1791427376770
     }
   ],
   "notes": [
