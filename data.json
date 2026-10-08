@@ -3282,6 +3282,24 @@
       "slot": "",
       "created": 1791467016039,
       "updated": 1791467016039
+    },
+    {
+      "id": "muzmmnty7qynm",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "option to use your own audio files for heal, damage, full heal, etc",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791469405222,
+      "updated": 1791469405222
     }
   ],
   "notes": [
