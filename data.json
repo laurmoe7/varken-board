@@ -2920,6 +2920,24 @@
       "slot": "",
       "created": 1791425561855,
       "updated": 1791425561855
+    },
+    {
+      "id": "muywmwynu6q14",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "want the little fumu window to be less busy.",
+      "notes": "i dont want it to have the tap to feed bubbles or dream bubbles. want it to have less clutter to it takes up less space. also move the speech bubble down a little.",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791425747039,
+      "updated": 1791425747039
     }
   ],
   "notes": [
