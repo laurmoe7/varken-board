@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T11:34:14.067Z_
+_Updated 2026-10-08T11:39:46.536Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -21,8 +21,6 @@ _Updated 2026-10-08T11:34:14.067Z_
   >  Plug it back in, and he should return to his old spot.
   >  Change the resolution, and check he gets pulled back into view.
 - [ ] 🐛 **tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to** `muzeelwx9b87f`
-- [ ] 💡 **more apparent sitting animation** _(medium)_ `muzeawz9n6ksf`
-  > animation where he sits on the ground, having the bottoms of his feet show to make it more obvious. shoe toe beans if he would have them in that skin
 - [ ] 💡 **"more privacy" option.** `muzcr6qre5gum`
   > essentially switch fumu to awreness level 1, so he comments less on what you're doing. also option to switch back to awareness level 2, of course.
   - images: images/muzcv9buqnigp.jpg
@@ -71,7 +69,7 @@ _Updated 2026-10-08T11:34:14.067Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_38 done._
+_39 done._
 
 ### Cosmetics gallery
 
