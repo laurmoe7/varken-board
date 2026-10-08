@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T15:20:46.288Z_
+_Updated 2026-10-08T15:21:21.858Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -19,9 +19,6 @@ _Updated 2026-10-08T15:20:46.288Z_
   >  Change the resolution, and check he gets pulled back into view.
 - [ ] 🐛 **tap to feed tutorial does not go away after 4 times of it being seen, like it's supposed to** `muzeelwx9b87f`
 - [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
-- [ ] 💡 **show boundries of fumu's area when moving him on pc** `muzc6d0a9sqmo`
-- [ ] 💡 **animation for fumu that receives link is not being played.** `muyxt6vswri7p`
-  > can delay getting the link for a second or 2 if that means the animation will play. enough time to watch both animations would be good. link is sending super fast
 - [ ] 💡 **grabbing toys with mouse does not feel smooth.** _(easy)_ `muyxjkl2iiqbu`
 - [ ] 💡 **increase size of emoji being eaten** _(easy)_ `muyxfljvcr86d`
 - [ ] 💡 **store the last few received links in send to another device screen** _(easy)_ `muyxbsda9jz7d`
@@ -63,7 +60,7 @@ _Updated 2026-10-08T15:20:46.288Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_44 done._
+_45 done._
 
 ### Cosmetics gallery
 
