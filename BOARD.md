@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T00:44:47.016Z_
+_Updated 2026-10-08T02:12:47.063Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,6 +10,8 @@ _Updated 2026-10-08T00:44:47.016Z_
 
 ### Soon
 
+- [ ] 💡 **sending link/notes between devices runs a bit slowly.** `muywiy2nw17ov`
+  > being called "send to my pc" doesn't make complete sense because you can send from pc to phone. make it send to other device, or something better. i don't think the device that send the link needs it to pop up on the same device again. just on the other device. see if you can speed up the initial link being sent
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
 - [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
