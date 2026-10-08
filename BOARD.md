@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T15:13:39.718Z_
+_Updated 2026-10-08T15:13:47.024Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,6 +175,7 @@ _2 done._
 
 ### ASAP
 
+- [ ] 💡 **be able to drag and drop cookie to move him** _(easy)_ _(Pathfinder)_ `muyeg9gs57isa`
 - [ ] 💡 **arm not holding lighter in light up animation, he is covering his face with his arm instead** _(easy)_ _(Pathfinder)_ `muyd0u8yl4p2r`
   > also make the tears go down his face when he fake crys. they are currently static.
 
@@ -184,7 +185,6 @@ _2 done._
 - [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ `muzmmnty7qynm`
 - [ ] 💡 **make cookie eat a cookie** _(easy)_ _(Pathfinder)_ `muyl2x5bbzko9`
 - [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ `muyfqj7tv0cyk`
-- [ ] 💡 **be able to drag and drop cookie to move him** _(Pathfinder)_ `muyeg9gs57isa`
 - [ ] 💡 **level up jingle and sound on full heal** _(easy)_ _(Pathfinder)_ `muy9q6p9399dh`
 - [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
   > add any features that would useful for something like this
