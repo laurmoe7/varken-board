@@ -3180,18 +3180,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "more apparent sitting animation",
       "notes": "animation where he sits on the ground, having the bottoms of his feet show to make it more obvious. shoe toe beans if he would have them in that skin",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791459581836,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791455420277,
-      "updated": 1791455420277
+      "updated": 1791459581836
     },
     {
       "id": "muzeelwx9b87f",
