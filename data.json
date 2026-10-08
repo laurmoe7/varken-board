@@ -2964,7 +2964,7 @@
       "priority": "soon",
       "status": "open",
       "title": "store the last few received links in send to another device screen",
-      "notes": "",
+      "notes": "remove duplicates",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
@@ -2973,7 +2973,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791426907486,
-      "updated": 1791427371394
+      "updated": 1791427588545
     },
     {
       "id": "muyxfljvcr86d",
