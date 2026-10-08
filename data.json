@@ -3052,7 +3052,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "doing",
       "title": "quick way to get fumu to send a link.",
       "notes": "with the link in your clipboard, press a hotkey to have fumu send it right away to your other device. have it work in mini and full fumu mode.",
       "build": "",
@@ -3063,7 +3063,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791427480565,
-      "updated": 1791427480565
+      "updated": 1791468106758
     },
     {
       "id": "muyxt6vswri7p",
