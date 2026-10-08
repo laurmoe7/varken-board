@@ -3018,7 +3018,7 @@
       "priority": "now",
       "status": "open",
       "title": "double click bar to open small fumu shortcut not working",
-      "notes": "",
+      "notes": "not sure it is needed because the back to fumu button is there, so you can get rid of double click. but it  might be good to know why it doesn't work",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
@@ -3027,7 +3027,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791427220541,
-      "updated": 1791427220541
+      "updated": 1791427534790
     },
     {
       "id": "muyxjkl2iiqbu",
