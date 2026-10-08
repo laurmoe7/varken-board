@@ -3136,6 +3136,24 @@
       "slot": "",
       "created": 1791451961964,
       "updated": 1791451961964
+    },
+    {
+      "id": "muzcmurnusfm9",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make hamster's eyes bigger to differentiate it more from other species",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791452618051,
+      "updated": 1791452618051
     }
   ],
   "notes": [
