@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T10:07:19.860Z_
+_Updated 2026-10-08T10:30:24.955Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -17,6 +17,8 @@ _Updated 2026-10-08T10:07:19.860Z_
 
 ### Soon
 
+- [ ] 💡 **more apparent sitting animation** _(medium)_ `muzeawz9n6ksf`
+  > animation where he sits on the ground, having the bottoms of his feet show to make it more obvious. shoe toe beans if he would have them in that skin
 - [ ] 💡 **"more privacy" option.** `muzcr6qre5gum`
   > essentially switch fumu to awreness level 1, so he comments less on what you're doing. also option to switch back to awareness level 2, of course.
   - images: images/muzcv9buqnigp.jpg
