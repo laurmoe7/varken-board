@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T02:34:24.597Z_
+_Updated 2026-10-08T02:35:12.025Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,6 +11,7 @@ _Updated 2026-10-08T02:34:24.597Z_
 
 ### Soon
 
+- [ ] 💡 **store the last few received links in send to another device screen** `muyxbsda9jz7d`
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
 - [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
