@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-08T16:00:06.844Z_
+_Updated 2026-10-08T16:07:24.488Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,6 +13,7 @@ _Updated 2026-10-08T16:00:06.844Z_
 
 ### Soon
 
+- [ ] 💡 **make receiving animation for having text received from another device be the pet spitting the link out** `muzqca0cf31e7`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
 - [ ] 💡 **have him say something before he jumps to sit on a window** _(easy)_ `muzpt5ox3k7k6`
   > like "Let me see!". also have him say something when he jumps down
