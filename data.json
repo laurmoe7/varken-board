@@ -3781,7 +3781,7 @@
       "priority": "now",
       "status": "open",
       "title": "pet acts like it's in clickthrough mode sometimes even without enabling it.",
-      "notes": "happens most often when the clipping tool is used",
+      "notes": "make sure it is not accidently being triggered by something else",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
@@ -3790,7 +3790,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791575919926,
-      "updated": 1791578887133
+      "updated": 1791578901885
     },
     {
       "id": "mv1frvq9tdym9",
