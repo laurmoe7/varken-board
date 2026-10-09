@@ -3483,6 +3483,24 @@
       "slot": "",
       "created": 1791504617536,
       "updated": 1791504617536
+    },
+    {
+      "id": "mv07mnj4waf3i",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "ball disappeared behind pet when they jump to catch it",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791504676768,
+      "updated": 1791504676768
     }
   ],
   "notes": [
