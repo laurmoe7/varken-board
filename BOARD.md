@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T16:06:04.022Z_
+_Updated 2026-10-09T16:30:43.670Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,8 +13,6 @@ _Updated 2026-10-09T16:06:04.022Z_
 
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
-- [ ] 💡 **nightlight in full app blocks the x on the pet food suggestion bar** _(easy)_ `mv08jkg02ren4`
-- [ ] 💡 **ball disappeared behind pet when they jump to catch it** _(easy)_ `mv07mnj4waf3i`
 - [ ] 💡 **check if How much he chats on his own setting is affecting remarks** _(easy)_ `mv07ldtspx5x7`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
 - [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
@@ -53,7 +51,7 @@ _Updated 2026-10-09T16:06:04.022Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_63 done._
+_65 done._
 
 ### Cosmetics gallery
 
