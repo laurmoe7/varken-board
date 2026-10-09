@@ -3779,18 +3779,18 @@
       "project": "petshopper",
       "type": "bug",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "pet acts like it's in clickthrough mode sometimes even without enabling it.",
       "notes": "make sure it is not accidently being triggered by something else",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791590192820,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791575919926,
-      "updated": 1791578901885
+      "updated": 1791590192820
     },
     {
       "id": "mv1frvq9tdym9",
