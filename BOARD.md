@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T00:33:36.187Z_
+_Updated 2026-10-09T00:35:02.793Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -14,7 +14,7 @@ _Updated 2026-10-09T00:33:36.187Z_
 
 ### Soon
 
-- [ ] 💡 **window disappears off screen if you alt tab while playing a game in full screen windowed mode with the full app open. it is still there, just hidden behind the game and cant get it back without restarting the fumu app** `mv08f9d1n60y4`
+- [ ] 💡 **window disappears off screen if you alt tab while playing a game in full screen windowed mode with the full app open. it is still there, just hidden behind the game and cant get it back without restarting the fumu app** _(doing)_ `mv08f9d1n60y4`
 - [ ] 💡 **have fumu sit while he naps** _(easy)_ `mv082pdp2yilu`
 - [ ] 💡 **ball disappeared behind pet when they jump to catch it** _(easy)_ `mv07mnj4waf3i`
 - [ ] 💡 **check if How much he chats on his own setting is affecting remarks** _(easy)_ `mv07ldtspx5x7`
