@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T23:10:57.676Z_
+_Updated 2026-10-09T23:11:03.726Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -8,8 +8,6 @@ _Updated 2026-10-09T23:10:57.676Z_
 
 - [ ] 🐛 **pet acts like it's in clickthrough mode sometimes even without enabling it.** _(medium)_ `mv1e1n3qvgoxl`
   > make sure it is not accidently being triggered by something else
-- [ ] 💡 **let the wrecking ball bounce down to the taskbar.** _(easy)_ `mv1dw8mjl80dg`
-  > currently the lowest it can go is the floor the pet is sitting on
 - [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
   > perhaps a spreadsheet? tell me your ideas first
 
@@ -52,7 +50,7 @@ _Updated 2026-10-09T23:10:57.676Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_73 done._
+_74 done._
 
 ### Cosmetics gallery
 
