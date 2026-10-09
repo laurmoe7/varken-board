@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T14:54:59.697Z_
+_Updated 2026-10-09T15:15:24.701Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,7 +11,6 @@ _Updated 2026-10-09T14:54:59.697Z_
 
 ### Soon
 
-- [ ] 💡 **window disappears off screen if you alt tab while playing a game in full screen windowed mode with the full app open. it is still there, just hidden behind the game and cant get it back without restarting the fumu app** _(easy)_ _(doing)_ `mv08f9d1n60y4`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **nightlight in full app blocks the x on the pet food suggestion bar** _(easy)_ `mv08jkg02ren4`
@@ -55,7 +54,7 @@ _Updated 2026-10-09T14:54:59.697Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_61 done._
+_62 done._
 
 ### Cosmetics gallery
 
