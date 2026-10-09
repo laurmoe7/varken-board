@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T14:47:13.823Z_
+_Updated 2026-10-09T14:54:43.277Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -10,15 +10,11 @@ _Updated 2026-10-09T14:47:13.823Z_
 - [ ] 💡 **radial menu often not popping up** _(easy)_ `mv0x3x1o6s2f4`
 - [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
   > perhaps a spreadsheet? tell me your ideas first
-- [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
-  > not sure it is needed because the back to fumu button is there, so you can get rid of double click. but it  might be good to know why it doesn't work
 
 ### Soon
 
 - [ ] 💡 **window disappears off screen if you alt tab while playing a game in full screen windowed mode with the full app open. it is still there, just hidden behind the game and cant get it back without restarting the fumu app** _(easy)_ _(doing)_ `mv08f9d1n60y4`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
-- [ ] 🔧 **again he is not properly bouncing off the wall.** _(medium)_ `mv0xdkh3qhf19`
-  > i assume this is because of the extra window space. can you keep the space, but still make it look like he is hitting the wall?
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **nightlight in full app blocks the x on the pet food suggestion bar** _(easy)_ `mv08jkg02ren4`
 - [ ] 💡 **have fumu sit while he naps** _(easy)_ `mv082pdp2yilu`
@@ -61,7 +57,7 @@ _Updated 2026-10-09T14:47:13.823Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_57 done._
+_59 done._
 
 ### Cosmetics gallery
 
