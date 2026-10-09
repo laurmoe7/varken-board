@@ -3018,18 +3018,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "double click bar to open small fumu shortcut not working",
       "notes": "not sure it is needed because the back to fumu button is there, so you can get rid of double click. but it  might be good to know why it doesn't work",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791557678537,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791427220541,
-      "updated": 1791427534790
+      "updated": 1791557678537
     },
     {
       "id": "muyxjkl2iiqbu",
@@ -3635,18 +3635,18 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "again he is not properly bouncing off the wall.",
       "notes": "i assume this is because of the extra window space. can you keep the space, but still make it look like he is hitting the wall?",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791557675572,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791547922919,
-      "updated": 1791547922919
+      "updated": 1791557675572
     },
     {
       "id": "mv0xmbhld84dw",
