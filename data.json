@@ -3561,18 +3561,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "support for multiple canvases",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "sketchpad",
-      "doneAt": 0,
+      "doneAt": 1791544167265,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791540333755,
-      "updated": 1791540340227
+      "updated": 1791544167265
     }
   ],
   "notes": [
