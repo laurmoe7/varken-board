@@ -1,12 +1,12 @@
 # Varken board
 
-_Updated 2026-10-09T19:58:44.116Z_
+_Updated 2026-10-09T19:58:50.225Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
-- [ ] 💡 **wrecking ball not visible first seconds of throwing it** _(medium)_ `mv1dwynh462l7`
+- [ ] 🐛 **wrecking ball not visible first seconds of throwing it** _(medium)_ `mv1dwynh462l7`
   > also mouse lags a lot
 - [ ] 💡 **let the wrecking ball bounce down to the taskbar.** _(easy)_ `mv1dw8mjl80dg`
   > currently the lowest it can go is the floor the pet is sitting on
