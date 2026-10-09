@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T12:19:45.017Z_
+_Updated 2026-10-09T14:47:13.823Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -19,9 +19,6 @@ _Updated 2026-10-09T12:19:45.017Z_
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 🔧 **again he is not properly bouncing off the wall.** _(medium)_ `mv0xdkh3qhf19`
   > i assume this is because of the extra window space. can you keep the space, but still make it look like he is hitting the wall?
-- [ ] 🐛 **alert bar sometimes gets cut off.** _(easy)_ `mv0x6wruhr2yv`
-  > this specifically happened when he moved right before the alert appeared
-  - images: images/mv0x6rlennjmb.jpg
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **nightlight in full app blocks the x on the pet food suggestion bar** _(easy)_ `mv08jkg02ren4`
 - [ ] 💡 **have fumu sit while he naps** _(easy)_ `mv082pdp2yilu`
@@ -64,7 +61,7 @@ _Updated 2026-10-09T12:19:45.017Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_56 done._
+_57 done._
 
 ### Cosmetics gallery
 
