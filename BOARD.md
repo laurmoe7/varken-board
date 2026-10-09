@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-09T11:09:55.541Z_
+_Updated 2026-10-09T12:04:37.500Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
+- [ ] 💡 **radial menu often not popping up** _(easy)_ `mv0x3x1o6s2f4`
 - [ ] 💡 **fumu still not going back to his place properly after catching ball. make it more accurate** _(medium)_ `mv07jw4y6oha5`
 - [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
   > perhaps a spreadsheet? tell me your ideas first
