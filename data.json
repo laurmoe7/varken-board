@@ -3615,20 +3615,20 @@
       "project": "petshopper",
       "type": "bug",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "alert bar sometimes gets cut off.",
       "notes": "this specifically happened when he moved right before the alert appeared",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791557228871,
       "images": [
         "mv0x6rlennjmb"
       ],
       "gallery": false,
       "slot": "",
       "created": 1791547612266,
-      "updated": 1791547612266
+      "updated": 1791557228871
     },
     {
       "id": "mv0xdkh3qhf19",
