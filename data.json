@@ -3665,6 +3665,24 @@
       "slot": "",
       "created": 1791548331177,
       "updated": 1791548331177
+    },
+    {
+      "id": "mv0xndggz82ve",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add dark pink insides to mascot's ears",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "varken",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791548380384,
+      "updated": 1791548380384
     }
   ],
   "notes": [
