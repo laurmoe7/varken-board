@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T10:05:45.000Z_
+_Updated 2026-10-09T11:09:32.064Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -15,7 +15,6 @@ _Updated 2026-10-09T10:05:45.000Z_
 ### Soon
 
 - [ ] 💡 **window disappears off screen if you alt tab while playing a game in full screen windowed mode with the full app open. it is still there, just hidden behind the game and cant get it back without restarting the fumu app** _(doing)_ `mv08f9d1n60y4`
-- [ ] 💡 **support for multiple canvases** _(easy)_ _(Varken Sketchpad)_ `mv0suwmzyzcbj`
 - [ ] 💡 **nightlight in full app blocks the x on the pet food suggestion bar** _(easy)_ `mv08jkg02ren4`
 - [ ] 💡 **have fumu sit while he naps** _(easy)_ `mv082pdp2yilu`
 - [ ] 💡 **ball disappeared behind pet when they jump to catch it** _(easy)_ `mv07mnj4waf3i`
@@ -57,7 +56,7 @@ _Updated 2026-10-09T10:05:45.000Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_55 done._
+_56 done._
 
 ### Cosmetics gallery
 
