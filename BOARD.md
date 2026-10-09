@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T18:10:57.818Z_
+_Updated 2026-10-09T18:50:16.851Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,6 +13,7 @@ _Updated 2026-10-09T18:10:57.818Z_
 
 ### Soon
 
+- [ ] 💡 **make pieces of windows destroyed by the wrecking ball actually disappear** _(medium)_ `mv1blkp74tm8z`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
