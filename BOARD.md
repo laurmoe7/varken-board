@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T23:11:03.726Z_
+_Updated 2026-10-09T23:11:11.697Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -8,18 +8,17 @@ _Updated 2026-10-09T23:11:03.726Z_
 
 - [ ] 🐛 **pet acts like it's in clickthrough mode sometimes even without enabling it.** _(medium)_ `mv1e1n3qvgoxl`
   > make sure it is not accidently being triggered by something else
-- [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
-  > perhaps a spreadsheet? tell me your ideas first
 
 ### Soon
 
-- [ ] 💡 **the magic wand that the pet uses to fix the wrecking ball damage should make a magical noise** _(easy)_ `mv1frvq9tdym9`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
   >  Plug it back in, and he should return to his old spot.
   >  Change the resolution, and check he gets pulled back into view.
+- [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
+  > perhaps a spreadsheet? tell me your ideas first
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
@@ -50,7 +49,7 @@ _Updated 2026-10-09T23:11:03.726Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_74 done._
+_75 done._
 
 ### Cosmetics gallery
 
