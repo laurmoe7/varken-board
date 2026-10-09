@@ -3707,18 +3707,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "make pieces of windows destroyed by the wrecking ball actually disappear",
       "notes": "and have falling broken pieces actually have what that broken piece had on it",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791582391146,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791571811083,
-      "updated": 1791571856420
+      "updated": 1791582391146
     },
     {
       "id": "mv1cidxz6pbc1",
