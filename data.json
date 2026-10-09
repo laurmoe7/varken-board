@@ -3709,7 +3709,7 @@
       "priority": "soon",
       "status": "open",
       "title": "make pieces of windows destroyed by the wrecking ball actually disappear",
-      "notes": "",
+      "notes": "and have falling broken pieces actually have what that broken piece had on it",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
@@ -3718,7 +3718,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791571811083,
-      "updated": 1791571811083
+      "updated": 1791571856420
     }
   ],
   "notes": [
