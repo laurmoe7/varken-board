@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T00:09:13.769Z_
+_Updated 2026-10-09T00:10:22.299Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -15,6 +15,7 @@ _Updated 2026-10-09T00:09:13.769Z_
 ### Soon
 
 - [ ] 💡 **hovering over fumu while in a full screen game causes problems when you hover over him on accident** _(doing)_ `muzwwwvr282ga`
+- [ ] 💡 **check if How much he chats on his own setting is affecting remarks** _(easy)_ `mv07ldtspx5x7`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
 - [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
