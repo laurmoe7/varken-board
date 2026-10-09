@@ -3525,18 +3525,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "window disappears off screen if you alt tab while playing a game in full screen windowed mode with the full app open. it is still there, just hidden behind the game and cant get it back without restarting the fumu app",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791558919889,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791506011429,
-      "updated": 1791544177335
+      "updated": 1791558919889
     },
     {
       "id": "mv08jkg02ren4",
