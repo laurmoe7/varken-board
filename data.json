@@ -3701,6 +3701,24 @@
       "slot": "",
       "created": 1791569452051,
       "updated": 1791569452051
+    },
+    {
+      "id": "mv1blkp74tm8z",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make pieces of windows destroyed by the wrecking ball actually disappear",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791571811083,
+      "updated": 1791571811083
     }
   ],
   "notes": [
