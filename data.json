@@ -3815,18 +3815,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "have a special animation or something play while the app is loading.",
       "notes": "while the app/mini loads, after being turned on, a weird, small image of the full app shows. how about show some kind of loading animation or image until the app/mini fumu fully loads up. clicking the pet while the app isn't loaded yet can cause problems anyway.",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791589152570,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791587832475,
-      "updated": 1791587832475
+      "updated": 1791589152570
     }
   ],
   "notes": [
