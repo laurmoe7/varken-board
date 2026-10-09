@@ -1,11 +1,13 @@
 # Varken board
 
-_Updated 2026-10-09T19:15:47.089Z_
+_Updated 2026-10-09T19:54:32.555Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
+- [ ] 💡 **let the wrecking ball bounce down to the taskbar.** _(easy)_ `mv1dw8mjl80dg`
+  > currently the lowest it can go is the floor the pet is sitting on
 - [ ] 💡 **try making a new toy. you can switch toys thru the radial menu.** _(medium)_ `mv1a70gj54xpp`
   > make a toy called the wrecking ball. it's a spikey black ball. when you throw it, it starts to "destroy" the windows you have open, causing them to break apart. fumu will cause it all over the screen, trying to stop it. after 10 seconds, it will stop, fumu will wave his magic wand, and all the windows will be fixed.
 - [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
