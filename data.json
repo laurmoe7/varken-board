@@ -3629,6 +3629,24 @@
       "slot": "",
       "created": 1791547612266,
       "updated": 1791547612266
+    },
+    {
+      "id": "mv0xdkh3qhf19",
+      "project": "petshopper",
+      "type": "fix",
+      "priority": "soon",
+      "status": "open",
+      "title": "again he is not properly bouncing off the wall.",
+      "notes": "i assume this is because of the extra window space. can you keep the space, but still make it look like he is hitting the wall?",
+      "build": "",
+      "effort": "medium",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791547922919,
+      "updated": 1791547922919
     }
   ],
   "notes": [
