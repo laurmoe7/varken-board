@@ -3827,6 +3827,24 @@
       "slot": "",
       "created": 1791587832475,
       "updated": 1791589152570
+    },
+    {
+      "id": "mv1mg9ni6pfv5",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "polish cool theme for mini fumu",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791590039262,
+      "updated": 1791590039262
     }
   ],
   "notes": [
