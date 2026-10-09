@@ -3555,6 +3555,24 @@
       "slot": "",
       "created": 1791506212416,
       "updated": 1791506212416
+    },
+    {
+      "id": "mv0suwmzyzcbj",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "support for multiple canvases",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "sketchpad",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791540333755,
+      "updated": 1791540333755
     }
   ],
   "notes": [
