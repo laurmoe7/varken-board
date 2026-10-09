@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T00:11:21.993Z_
+_Updated 2026-10-09T00:12:12.221Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -14,7 +14,6 @@ _Updated 2026-10-09T00:11:21.993Z_
 
 ### Soon
 
-- [ ] 💡 **hovering over fumu while in a full screen game causes problems when you hover over him on accident** _(doing)_ `muzwwwvr282ga`
 - [ ] 💡 **ball disappeared behind pet when they jump to catch it** _(easy)_ `mv07mnj4waf3i`
 - [ ] 💡 **check if How much he chats on his own setting is affecting remarks** _(easy)_ `mv07ldtspx5x7`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
@@ -54,7 +53,7 @@ _Updated 2026-10-09T00:11:21.993Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_54 done._
+_55 done._
 
 ### Cosmetics gallery
 
