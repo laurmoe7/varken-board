@@ -3759,7 +3759,7 @@
     {
       "id": "mv1dwynh462l7",
       "project": "petshopper",
-      "type": "idea",
+      "type": "bug",
       "priority": "now",
       "status": "open",
       "title": "wrecking ball not visible first seconds of throwing it",
@@ -3772,7 +3772,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791575701613,
-      "updated": 1791575701613
+      "updated": 1791575924469
     },
     {
       "id": "mv1e1n3qvgoxl",
