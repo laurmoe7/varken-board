@@ -1,13 +1,13 @@
 # Varken board
 
-_Updated 2026-10-09T20:48:11.902Z_
+_Updated 2026-10-09T20:48:26.637Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
 - [ ] 🐛 **pet acts like it's in clickthrough mode sometimes even without enabling it.** _(medium)_ `mv1e1n3qvgoxl`
-  > make sure i
+  > make sure it is not accidently being triggered by something else
 - [ ] 🐛 **wrecking ball not visible first seconds of throwing it** _(medium)_ `mv1dwynh462l7`
   > also mouse lags a lot
 - [ ] 💡 **let the wrecking ball bounce down to the taskbar.** _(easy)_ `mv1dw8mjl80dg`
