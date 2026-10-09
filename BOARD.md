@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T21:46:52.784Z_
+_Updated 2026-10-09T23:10:57.676Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -15,7 +15,6 @@ _Updated 2026-10-09T21:46:52.784Z_
 
 ### Soon
 
-- [ ] 💡 **put pet behind the date/time and hidden icons menu, not run from them. that doesn't work very well** _(doing)_ `mv1cidxz6pbc1`
 - [ ] 💡 **the magic wand that the pet uses to fix the wrecking ball damage should make a magical noise** _(easy)_ `mv1frvq9tdym9`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
@@ -53,7 +52,7 @@ _Updated 2026-10-09T21:46:52.784Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_72 done._
+_73 done._
 
 ### Cosmetics gallery
 
