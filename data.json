@@ -3453,18 +3453,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "doing",
+      "status": "done",
       "title": "fumu still not going back to his place properly after catching ball. make it more accurate",
       "notes": "",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791557692155,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791504547954,
-      "updated": 1791547932074
+      "updated": 1791557692155
     },
     {
       "id": "mv07ldtspx5x7",
@@ -3597,18 +3597,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "radial menu often not popping up",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791557695097,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791547472652,
-      "updated": 1791547472652
+      "updated": 1791557695097
     },
     {
       "id": "mv0x6wruhr2yv",
