@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T23:17:17.390Z_
+_Updated 2026-10-09T23:39:17.094Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -11,8 +11,6 @@ _Updated 2026-10-09T23:17:17.390Z_
 
 ### Soon
 
-- [ ] 💡 **have a special animation or something play while the app is loading.** _(easy)_ `mv1l4yvvfmrl5`
-  > while the app/mini loads, after being turned on, a weird, small image of the full app shows. how about show some kind of loading animation or image until the app/mini fumu fully loads up. clicking the pet while the app isn't loaded yet can cause problems anyway.
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
@@ -51,7 +49,7 @@ _Updated 2026-10-09T23:17:17.390Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_75 done._
+_76 done._
 
 ### Cosmetics gallery
 
