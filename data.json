@@ -3543,18 +3543,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "nightlight in full app blocks the x on the pet food suggestion bar",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791563438954,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791506212416,
-      "updated": 1791506212416
+      "updated": 1791563438954
     },
     {
       "id": "mv0suwmzyzcbj",
