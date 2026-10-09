@@ -3573,6 +3573,24 @@
       "slot": "",
       "created": 1791540333755,
       "updated": 1791544167265
+    },
+    {
+      "id": "mv0v5krvv6fqd",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "change radial menu to more useful functions",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791544190827,
+      "updated": 1791544190827
     }
   ],
   "notes": [
