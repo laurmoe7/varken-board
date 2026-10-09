@@ -3743,18 +3743,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "let the wrecking ball bounce down to the taskbar.",
       "notes": "currently the lowest it can go is the floor the pet is sitting on",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791587458270,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791575667883,
-      "updated": 1791575667883
+      "updated": 1791587458270
     },
     {
       "id": "mv1dwynh462l7",
