@@ -3565,14 +3565,14 @@
       "title": "support for multiple canvases",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "sketchpad",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791540333755,
-      "updated": 1791540333755
+      "updated": 1791540340227
     }
   ],
   "notes": [
