@@ -3725,7 +3725,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "put pet behind the date/time and hidden icons menu, not run from them. that doesn't work very well",
       "notes": "",
       "build": "",
@@ -3736,7 +3736,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791573341975,
-      "updated": 1791573341975
+      "updated": 1791582408219
     },
     {
       "id": "mv1dw8mjl80dg",
