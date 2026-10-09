@@ -3689,18 +3689,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "try making a new toy. you can switch toys thru the radial menu.",
       "notes": "make a toy called the wrecking ball. it's a spikey black ball. when you throw it, it starts to \"destroy\" the windows you have open, causing them to break apart. fumu will cause it all over the screen, trying to stop it. after 10 seconds, it will stop, fumu will wave his magic wand, and all the windows will be fixed.",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791581431924,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791569452051,
-      "updated": 1791569452051
+      "updated": 1791581431924
     },
     {
       "id": "mv1blkp74tm8z",
