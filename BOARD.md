@@ -1,13 +1,8 @@
 # Varken board
 
-_Updated 2026-10-09T23:56:30.847Z_
+_Updated 2026-10-09T23:56:37.151Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
-
-### ASAP
-
-- [ ] 🐛 **pet acts like it's in clickthrough mode sometimes even without enabling it.** _(medium)_ `mv1e1n3qvgoxl`
-  > make sure it is not accidently being triggered by something else
 
 ### Soon
 
@@ -50,7 +45,7 @@ _Updated 2026-10-09T23:56:30.847Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_76 done._
+_77 done._
 
 ### Cosmetics gallery
 
