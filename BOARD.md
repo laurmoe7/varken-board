@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T18:51:01.061Z_
+_Updated 2026-10-09T19:15:47.089Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,6 +13,7 @@ _Updated 2026-10-09T18:51:01.061Z_
 
 ### Soon
 
+- [ ] 💡 **put pet behind the date/time and hidden icons menu, not run from them. that doesn't work very well** `mv1cidxz6pbc1`
 - [ ] 💡 **make pieces of windows destroyed by the wrecking ball actually disappear** _(medium)_ `mv1blkp74tm8z`
   > and have falling broken pieces actually have what that broken piece had on it
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
