@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T16:30:52.735Z_
+_Updated 2026-10-09T16:46:15.633Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -13,12 +13,10 @@ _Updated 2026-10-09T16:30:52.735Z_
 
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
-- [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
   >  Plug it back in, and he should return to his old spot.
   >  Change the resolution, and check he gets pulled back into view.
-- [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
@@ -49,7 +47,7 @@ _Updated 2026-10-09T16:30:52.735Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_67 done._
+_69 done._
 
 ### Cosmetics gallery
 
