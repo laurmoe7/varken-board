@@ -3501,6 +3501,24 @@
       "slot": "",
       "created": 1791504676768,
       "updated": 1791504676768
+    },
+    {
+      "id": "mv082pdp2yilu",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "have fumu sit while he naps",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791505425661,
+      "updated": 1791505425661
     }
   ],
   "notes": [
