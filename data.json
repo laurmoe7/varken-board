@@ -3145,18 +3145,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "make hamster's eyes bigger to differentiate it more from other species",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791564370924,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791452618051,
-      "updated": 1791452618051
+      "updated": 1791564370924
     },
     {
       "id": "muzcr6qre5gum",
@@ -3327,18 +3327,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "have him grab his toy if it enabled when you pick up and drag him",
       "notes": "",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791564369005,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791474291372,
-      "updated": 1791474754945
+      "updated": 1791564369005
     },
     {
       "id": "muzpt5ox3k7k6",
