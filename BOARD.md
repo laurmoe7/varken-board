@@ -1,11 +1,13 @@
 # Varken board
 
-_Updated 2026-10-09T19:54:32.555Z_
+_Updated 2026-10-09T19:58:44.116Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### ASAP
 
+- [ ] 💡 **wrecking ball not visible first seconds of throwing it** _(medium)_ `mv1dwynh462l7`
+  > also mouse lags a lot
 - [ ] 💡 **let the wrecking ball bounce down to the taskbar.** _(easy)_ `mv1dw8mjl80dg`
   > currently the lowest it can go is the floor the pet is sitting on
 - [ ] 💡 **try making a new toy. you can switch toys thru the radial menu.** _(medium)_ `mv1a70gj54xpp`
@@ -15,6 +17,8 @@ _Updated 2026-10-09T19:54:32.555Z_
 
 ### Soon
 
+- [ ] 🔧 **pet acts like it's in clickthrough mode sometimes even without enabling it.** _(medium)_ `mv1e1n3qvgoxl`
+  > happens most often when the clipping tool is used
 - [ ] 💡 **put pet behind the date/time and hidden icons menu, not run from them. that doesn't work very well** `mv1cidxz6pbc1`
 - [ ] 💡 **make pieces of windows destroyed by the wrecking ball actually disappear** _(medium)_ `mv1blkp74tm8z`
   > and have falling broken pieces actually have what that broken piece had on it
