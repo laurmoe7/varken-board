@@ -3761,18 +3761,18 @@
       "project": "petshopper",
       "type": "bug",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "wrecking ball not visible first seconds of throwing it",
       "notes": "also mouse lags a lot",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791582376836,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791575701613,
-      "updated": 1791575924469
+      "updated": 1791582376836
     },
     {
       "id": "mv1e1n3qvgoxl",
