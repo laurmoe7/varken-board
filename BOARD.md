@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T12:19:07.922Z_
+_Updated 2026-10-09T12:19:45.017Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -16,6 +16,7 @@ _Updated 2026-10-09T12:19:07.922Z_
 ### Soon
 
 - [ ] 💡 **window disappears off screen if you alt tab while playing a game in full screen windowed mode with the full app open. it is still there, just hidden behind the game and cant get it back without restarting the fumu app** _(easy)_ _(doing)_ `mv08f9d1n60y4`
+- [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 🔧 **again he is not properly bouncing off the wall.** _(medium)_ `mv0xdkh3qhf19`
   > i assume this is because of the extra window space. can you keep the space, but still make it look like he is hitting the wall?
 - [ ] 🐛 **alert bar sometimes gets cut off.** _(easy)_ `mv0x6wruhr2yv`
