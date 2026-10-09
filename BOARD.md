@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T19:58:50.225Z_
+_Updated 2026-10-09T20:47:08.327Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -17,6 +17,7 @@ _Updated 2026-10-09T19:58:50.225Z_
 
 ### Soon
 
+- [ ] 💡 **the magic wand that the pet uses to fix the wrecking ball damage should make a magical noise** _(easy)_ `mv1frvq9tdym9`
 - [ ] 🔧 **pet acts like it's in clickthrough mode sometimes even without enabling it.** _(medium)_ `mv1e1n3qvgoxl`
   > happens most often when the clipping tool is used
 - [ ] 💡 **put pet behind the date/time and hidden icons menu, not run from them. that doesn't work very well** `mv1cidxz6pbc1`
