@@ -3126,7 +3126,7 @@
       "id": "muzc8sj0njup6",
       "project": "petshopper",
       "type": "idea",
-      "priority": "now",
+      "priority": "soon",
       "status": "open",
       "title": "give me an easy way to look at and edit fumu's dialogue.",
       "notes": "perhaps a spreadsheet? tell me your ideas first",
@@ -3138,7 +3138,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791451961964,
-      "updated": 1791451961964
+      "updated": 1791587463759
     },
     {
       "id": "muzcmurnusfm9",
@@ -3797,18 +3797,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "the magic wand that the pet uses to fix the wrecking ball damage should make a magical noise",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791587467095,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791578823777,
-      "updated": 1791578823777
+      "updated": 1791587467095
     }
   ],
   "notes": [
