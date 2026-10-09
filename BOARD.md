@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-09T00:12:12.221Z_
+_Updated 2026-10-09T00:23:50.361Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -14,6 +14,7 @@ _Updated 2026-10-09T00:12:12.221Z_
 
 ### Soon
 
+- [ ] 💡 **have fumu sit while he naps** _(easy)_ `mv082pdp2yilu`
 - [ ] 💡 **ball disappeared behind pet when they jump to catch it** _(easy)_ `mv07mnj4waf3i`
 - [ ] 💡 **check if How much he chats on his own setting is affecting remarks** _(easy)_ `mv07ldtspx5x7`
 - [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
