@@ -3647,6 +3647,24 @@
       "slot": "",
       "created": 1791547922919,
       "updated": 1791547922919
+    },
+    {
+      "id": "mv0xmbhld84dw",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "volume slider",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791548331177,
+      "updated": 1791548331177
     }
   ],
   "notes": [
