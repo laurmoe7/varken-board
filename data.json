@@ -3791,6 +3791,24 @@
       "slot": "",
       "created": 1791575919926,
       "updated": 1791575919926
+    },
+    {
+      "id": "mv1frvq9tdym9",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "the magic wand that the pet uses to fix the wrecking ball damage should make a magical noise",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791578823777,
+      "updated": 1791578823777
     }
   ],
   "notes": [
