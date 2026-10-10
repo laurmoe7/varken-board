@@ -1,31 +1,23 @@
 # Varken board
 
-_Updated 2026-10-08T21:49:50.029Z_
+_Updated 2026-10-10T07:51:55.366Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
-### ASAP
-
-- [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
-  > perhaps a spreadsheet? tell me your ideas first
-- [ ] 💡 **double click bar to open small fumu shortcut not working** _(easy)_ `muyxihx9p0dsa`
-  > not sure it is needed because the back to fumu button is there, so you can get rid of double click. but it  might be good to know why it doesn't work
-
 ### Soon
 
-- [ ] 💡 **make it so notes can be dragged and dropped to be moved.** _(Varken Board)_ `mv02knix7j6ws`
-- [ ] 💡 **hovering over fumu while in a full screen game causes problems when you hover over him on accident** `muzwwwvr282ga`
-- [ ] 💡 **have him wiggle his arms up in the air when jumping down from sitting on a window** `muzq2wdvgelfr`
-- [ ] 💡 **have him grab his toy if it enabled when you pick up and drag him** _(medium)_ `muzpje0cvtvv4`
+- [ ] 💡 **make sure themes are checking profile, recipe input, and other less often used menus** `mv1mngc6q6yvl`
+- [ ] 💡 **polish cool and scribbling theme for mini fumu** `mv1mg9ni6pfv5`
+- [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
+- [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
   >  Plug it back in, and he should return to his old spot.
   >  Change the resolution, and check he gets pulled back into view.
-- [ ] 💡 **make hamster's eyes bigger to differentiate it more from other species** `muzcmurnusfm9`
+- [ ] 💡 **give me an easy way to look at and edit fumu's dialogue.** _(easy)_ `muzc8sj0njup6`
+  > perhaps a spreadsheet? tell me your ideas first
 - [ ] 💡 **allow people to move, rotate and resize cosmetics on their own** _(medium)_ `muympjdb9orqo`
   > also allow the the bring them layers up and down.
-- [ ] 💡 **change the pin icon here to something else. it looks too repetitive when there are many pinned tasks under it** _(Varken Board)_ `muy5swz2d5j1e`
-  - images: images/muy5s403rmwaj.jpg
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
 - [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
@@ -54,7 +46,7 @@ _Updated 2026-10-08T21:49:50.029Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_52 done._
+_77 done._
 
 ### Cosmetics gallery
 
@@ -128,6 +120,7 @@ _52 done._
 
 - have varken board say "Dansen!"
 - glorp alien skin
+- "evil": try to take teddy x times
 - grumpy chef: import a recipe on 3 different days
   
   jester: tease pet by holding ball above head for x days
@@ -172,11 +165,11 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord** _(medium)_ _(Pathfinder)_ `muzof0cdcaqx1`
+- [ ] 💡 **sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord** _(medium)_ _(Pathfinder)_ _(doing)_ `muzof0cdcaqx1`
+- [ ] 💡 **volume slider** _(easy)_ _(Pathfinder)_ `mv0xmbhld84dw`
 - [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ `muzmmnty7qynm`
 - [ ] 💡 **make cookie eat a cookie** _(easy)_ _(Pathfinder)_ `muyl2x5bbzko9`
 - [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ `muyfqj7tv0cyk`
-- [ ] 💡 **level up jingle and sound on full heal** _(easy)_ _(Pathfinder)_ `muy9q6p9399dh`
 - [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
   > add any features that would useful for something like this
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
@@ -193,7 +186,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_25 done._
+_26 done._
 
 ### Notes
 
