@@ -53,7 +53,7 @@ function pigSvg(mood, cls, opts) {
     : '<ellipse cx="14" cy="80" rx="7" ry="10" transform="rotate(20 14 80)" fill="#ffa6c4"/><ellipse cx="106" cy="80" rx="7" ry="10" transform="rotate(-20 106 80)" fill="#ffa6c4"/>';
   return `<svg class="pig ${cls || ''} pig-${m}${phase ? ' pig-' + phase : ''}${o.look ? ' look-' + o.look : ''}" viewBox="0 0 120 120" aria-hidden="true"><g class="pig-all">
     <ellipse cx="44" cy="104" rx="10" ry="6" fill="#ff9fbc"/><ellipse cx="76" cy="104" rx="10" ry="6" fill="#ff9fbc"/>
-    <g class="ear ear-l"><path d="M26 44 Q20 22 36 20 Q50 22 54 36 Z" fill="#ffa6c4"/></g><g class="ear ear-r"><path d="M94 44 Q100 22 84 20 Q70 22 66 36 Z" fill="#ffa6c4"/></g>
+    <g class="ear ear-l"><path d="M26 44 Q20 22 36 20 Q50 22 54 36 Z" fill="#ffa6c4"/><path d="M31 40 Q27 27 37 25 Q46 27 49 36 Z" fill="#e0638f"/></g><g class="ear ear-r"><path d="M94 44 Q100 22 84 20 Q70 22 66 36 Z" fill="#ffa6c4"/><path d="M89 40 Q93 27 83 25 Q74 27 71 36 Z" fill="#e0638f"/></g>
     <ellipse cx="60" cy="70" rx="46" ry="38" fill="#ffb8cf"/><ellipse cx="60" cy="82" rx="30" ry="20" fill="#ffd3e2" opacity=".55"/>
     ${look.earmuffs && !o.cap ? EARMUFFS : ''}
     ${o.cap ? NIGHTCAP : look.hat ? HATS[look.hat] : `<g class="sprout-slot">${sproutSvg(stage)}</g>`}

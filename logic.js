@@ -62,6 +62,7 @@
       ],
       items: [],
       notes: [],
+      pages: [],
       images: {},
     };
   }
@@ -82,6 +83,12 @@
     const now = Date.now();
     return Object.assign({ id: uid(), scope: '', text: '', created: now, updated: now }, fields);
   };
+  // Notebook pages: one big free-text field each, shown as tabs in the order they were made.
+  const createPage = (fields) => {
+    const now = Date.now();
+    return Object.assign({ id: uid(), title: 'Page', text: '', created: now, updated: now }, fields);
+  };
+  const livePages = (state) => (state.pages || []).filter((p) => !p.deleted).sort((a, b) => a.created - b.created);
   const liveNotes = (state, scope, q) => {
     const needle = String(q || '').trim().toLowerCase();
     return (state.notes || [])
@@ -282,6 +289,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       projects: mergeById(local.projects, remote.projects),
       items: mergeById(local.items, remote.items),
       notes: mergeById(local.notes, remote.notes),
+      pages: mergeById(local.pages || [], remote.pages || []),
       images: Object.assign({}, remote.images, local.images),
     };
   }
@@ -294,7 +302,8 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
       .filter((i) => i && i.id)
       .map((i) => createItem(Object.assign({}, i, { images: Array.isArray(i.images) ? i.images : [] })));
     const notes = Array.isArray(obj.notes) ? obj.notes.filter((n) => n && n.id).map((n) => createNote(Object.assign({}, n, { text: String(n.text || '') }))) : [];
-    return { v: 1, projects, items, notes, images: obj.images && typeof obj.images === 'object' ? obj.images : {} };
+    const pages = Array.isArray(obj.pages) ? obj.pages.filter((p) => p && p.id).map((p) => createPage(Object.assign({}, p, { title: String(p.title || 'Page'), text: String(p.text || '') }))) : [];
+    return { v: 1, projects, items, notes, pages, images: obj.images && typeof obj.images === 'object' ? obj.images : {} };
   }
 
   function fitSize(w, h, max) {
@@ -402,7 +411,7 @@ const galleryProjects = (state) => liveProjects(state).filter((p) => p.gallery);
 
   const api = {
     TYPES, PRIORITIES, STATUSES, EFFORTS, COLORS, NOW_CAP, MAX_IMAGE_SIDE, DEFAULT_SLOTS,
-    uid, slug, typeOf, effortOf, AREAS, areaOf, areaProject, projectArea, areaMatch, createNote, liveNotes, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
+    uid, slug, typeOf, effortOf, AREAS, areaOf, areaProject, projectArea, areaMatch, createNote, liveNotes, createPage, livePages, defaultState, createItem, liveProjects, galleryProjects, parseSlots, slotCounts, findUnusedImages, parseQuick, stripToken,
     filterItems, sortItems, sortGallery, reorder, groupByPriority, countNow, countOpen, countGallery, doneToday, weekSummary, seasonOf, holidayOf, lookOf,
     mergeStates, validateState, fitSize, projectName, copyItem, pickForMe, isNight, boardMarkdown,
   };

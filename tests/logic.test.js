@@ -401,3 +401,16 @@ test('notes keep a dragged order, new notes come first', () => {
   s.notes.push(d);
   assert.strictEqual(L.liveNotes(s, '')[0].text, 'd');
 });
+
+test('notebook pages are kept, merged and validated', () => {
+  const a = L.createPage({ title: 'A', text: 'x', created: 1 }), b = L.createPage({ title: 'B', created: 2 });
+  const s = Object.assign(L.defaultState(), { pages: [b, a] });
+  assert.deepStrictEqual(L.livePages(s).map((p) => p.title), ['A', 'B']);
+  const clean = L.validateState(JSON.parse(JSON.stringify(s)));
+  assert.strictEqual(clean.pages.length, 2);
+  assert.strictEqual(L.validateState({ projects: [], items: [] }).pages.length, 0);
+  const merged = L.mergeStates(L.defaultState(), s);
+  assert.strictEqual(merged.pages.length, 2);
+  a.deleted = true;
+  assert.strictEqual(L.livePages(s).length, 1);
+});

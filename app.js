@@ -9,6 +9,7 @@ let state = L.defaultState();
 const blankDraft = () => ({ project: '', type: 'idea', priority: 'soon', effort: '', area: null, slot: '', build: '', notes: '', images: [] });
 const ui = { project: 'all', view: 'list', slot: 'all', type: 'all', effort: 'all', area: 'main', status: 'active', q: '', open: null, drafting: false, draftItem: blankDraft(), last: '' };
 let ready = false;
+const isNotebook = () => ui.view === 'notebook';
 const isNotesView = () => ui.view === 'notes' || ui.view === 'gnotes'; // notes of a project (or All) or of a gallery
 
 // ---------- saving ----------
@@ -151,7 +152,7 @@ const GALLERY_STATUSES = [{ id: 'open', label: 'Idea' }, { id: 'doing', label: '
 
 function showView(projectId, view, area) {
   pigSay('view', { p: 0.15 });
-  if ((view === 'notes' || view === 'gnotes') && ui.drafting) { ui.drafting = false; ui.draftItem = blankDraft(); }
+  if ((view === 'notes' || view === 'gnotes' || view === 'notebook') && ui.drafting) { ui.drafting = false; ui.draftItem = blankDraft(); }
   ui.project = projectId;
   ui.area = area || (projectId === 'petshopper' ? 'main' : 'all'); // Pet Shopper's own tab leaves out the Varken tabs' items
   ui.view = view;
@@ -164,6 +165,11 @@ function showView(projectId, view, area) {
 function renderSide() {
   const rows = [{ id: 'all', name: 'All projects', emoji: '🌈', color: '#f4eeff' }].concat(projectsLive());
   const inGallery = !!galleryProject();
+  const notebookRow = `<div class="proj ${isNotebook() ? 'on' : ''}" data-notebook role="button" tabindex="0">
+        <span class="badge sub-notebook">📓</span>
+        <span class="name">Notebook</span>
+        <span class="count">${L.livePages(state).length || ''}</span>
+      </div>`;
   $('#projects').innerHTML = rows
     .map(
       (p) => `<div class="proj ${ui.project === p.id && (ui.view === 'list' || ui.view === 'notes') && !(p.id === 'petshopper' && ui.area !== 'main' && ui.area !== 'all') ? 'on' : ''}" data-project="${esc(p.id)}" role="button" tabindex="0">
@@ -189,10 +195,12 @@ function renderSide() {
           : ''
       }`
     )
-    .join('');
+    .join('')
+    .replace(/(<div class="proj [^"]*" data-project="all"[\s\S]*?<\/div>)/, '$1' + notebookRow);
 }
 
 function renderHead(poke) {
+  if (isNotebook()) return renderNotebookHead(poke);
   if (isNotesView()) return renderNotesHead(poke);
   const gp = galleryProject();
   const p = project(ui.project);
@@ -292,8 +300,11 @@ function renderListView() {
 function renderList() {
   const gp = galleryProject();
   const typing = document.activeElement;
+  document.body.classList.toggle('nb', isNotebook());
+  if (isNotebook() && typing && typing.id === 'nbText') { renderSide(); renderHead(); return; } // don't pull the page you are typing in away
   if (isNotesView() && typing && typing.tagName === 'TEXTAREA' && typing.closest('.note')) { renderSide(); renderHead(); return; } // don't pull the note you are typing in away
-  if (isNotesView()) renderNotes();
+  if (isNotebook()) renderNotebook();
+  else if (isNotesView()) renderNotes();
   else if (gp) renderGallery(gp);
   else renderListView();
   renderSide();
@@ -461,7 +472,7 @@ function endDraft() {
 }
 // The panel opens as soon as there is something typed (or pasted) and closes again if there is nothing to keep.
 function syncDraft() {
-  if (isNotesView()) return; // notes have no side panel
+  if (isNotesView() || isNotebook()) return; // notes have no side panel
   if ($('#quickInput').value.trim() !== '') ui.drafting ? paintDraft() : startDraft();
   else if (ui.drafting && !draftHasContent()) endDraft();
   else paintDraft();
@@ -898,7 +909,7 @@ async function start() {
   if (!project(ui.project) && ui.project !== 'all') ui.project = 'all';
   ui.area = ui.project === 'petshopper' ? (['varken', 'sketchpad'].includes(ui.area) ? ui.area : 'main') : 'all';
   if (ui.view === 'gnotes' && !(project(ui.project) || {}).gallery) ui.view = 'list';
-  else if (ui.view !== 'notes' && ui.view !== 'gnotes' && !galleryProject()) ui.view = 'list';
+  else if (ui.view !== 'notes' && ui.view !== 'gnotes' && ui.view !== 'notebook' && !galleryProject()) ui.view = 'list';
   ready = true;
   renderAll();
   refreshHints();

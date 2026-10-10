@@ -597,3 +597,18 @@ kbd { background: var(--bg2); border: 1px solid var(--line); border-bottom-width
 .note.dragging { opacity: .45; }
 .note.drop-before { box-shadow: -5px 0 0 -1px var(--pink); }
 .note.drop-after { box-shadow: 5px 0 0 -1px var(--pink); }
+
+/* the Notebook: a big notepad with page tabs */
+body.nb .tools, body.nb #quick, body.nb #quickHint, body.nb #viewTabs { display: none; }
+.badge.sub-notebook { background: #ffb38a; color: #2a1740; }
+#notebook { display: flex; flex-direction: column; margin-top: 18px; }
+.nb-tabs { display: flex; flex-wrap: wrap; gap: 4px; align-items: flex-end; padding: 0 8px; }
+.nb-tab, .nb-add, .nb-rename { font: inherit; font-weight: 700; border: 1px solid var(--line); border-bottom: 0; border-radius: 14px 14px 0 0; padding: 8px 16px; background: var(--bg2); color: var(--muted); cursor: pointer; }
+.nb-tab:hover, .nb-add:hover { color: var(--text); background: var(--card-hi); }
+.nb-tab.on { background: var(--card); color: var(--text); border-color: var(--lav); box-shadow: 0 -3px 0 var(--pink) inset; }
+.nb-x { margin-left: 8px; opacity: .55; font-weight: 800; }
+.nb-x:hover { opacity: 1; color: var(--danger); }
+.nb-add { padding: 8px 12px; color: var(--pink); }
+.nb-rename { background: var(--card); color: var(--text); width: 140px; border-color: var(--lav); }
+.nb-text { width: 100%; min-height: 60vh; resize: vertical; line-height: 1.7; font-size: 16px; padding: 18px 22px; border-radius: 0 22px 22px 22px; border: 1px solid var(--lav); background: repeating-linear-gradient(transparent 0 27px, #ffffff0d 27px 28px), var(--card); background-attachment: local; }
+.nb-text:focus { box-shadow: 0 0 0 3px #b9a4ff22; }
