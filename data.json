@@ -3309,7 +3309,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord",
       "notes": "",
       "build": "",
@@ -3320,7 +3320,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791472407421,
-      "updated": 1791472411179
+      "updated": 1791618710673
     },
     {
       "id": "muzpje0cvtvv4",
