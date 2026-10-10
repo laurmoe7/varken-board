@@ -3849,20 +3849,20 @@
     {
       "id": "mv1mngc6q6yvl",
       "project": "petshopper",
-      "type": "idea",
+      "type": "fix",
       "priority": "soon",
       "status": "open",
       "title": "make sure themes are checking profile, recipe input, and other less often used menus",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791590374518,
-      "updated": 1791590374518
+      "updated": 1791619159044
     }
   ],
   "notes": [
