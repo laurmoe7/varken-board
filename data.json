@@ -565,7 +565,7 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "celebrate holidays, birthdays",
       "notes": "",
       "build": "",
@@ -576,7 +576,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791237251757,
-      "updated": 1791371579972,
+      "updated": 1791670928492,
       "doneBuild": "",
       "order": 5
     },
