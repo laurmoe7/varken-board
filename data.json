@@ -3977,7 +3977,15 @@
       "order": 2
     }
   ],
-  "pages": [],
+  "pages": [
+    {
+      "id": "mv23rktpp6u9y",
+      "title": "Page 1",
+      "text": "",
+      "created": 1791619120429,
+      "updated": 1791619120429
+    }
+  ],
   "images": {
     "muvkreo7u0x0q": {
       "name": "1.png",
