@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-10T08:07:20.690Z_
+_Updated 2026-10-10T10:16:28.648Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **make app wrecking ball shorter** `mv28oos0j7afi`
 - [ ] 🔧 **fix loading** _(easy)_ `mv242mp7q68c0`
 - [ ] 🔧 **make sure themes are checking profile, recipe input, and other less often used menus** _(easy)_ `mv1mngc6q6yvl`
 - [ ] 🔧 **polish cool and scribbling theme for mini fumu** _(easy)_ `mv1mg9ni6pfv5`
