@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-10T07:59:29.030Z_
+_Updated 2026-10-10T08:07:20.690Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 🔧 **fix loading** _(easy)_ `mv242mp7q68c0`
 - [ ] 🔧 **make sure themes are checking profile, recipe input, and other less often used menus** _(easy)_ `mv1mngc6q6yvl`
 - [ ] 🔧 **polish cool and scribbling theme for mini fumu** _(easy)_ `mv1mg9ni6pfv5`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
