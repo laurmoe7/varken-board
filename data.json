@@ -3869,25 +3869,25 @@
       "project": "petshopper",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "fix loading",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791670873309,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791619636075,
-      "updated": 1791619636075
+      "updated": 1791670873309
     },
     {
       "id": "mv28oos0j7afi",
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make app wrecking ball shorter",
       "notes": "",
       "build": "",
@@ -3898,7 +3898,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791627383664,
-      "updated": 1791627383664
+      "updated": 1791670872098
     }
   ],
   "notes": [
