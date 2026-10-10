@@ -1,13 +1,12 @@
 # Varken board
 
-_Updated 2026-10-10T22:20:54.518Z_
+_Updated 2026-10-10T22:21:18.936Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
-- [ ] 💡 **make app wrecking ball shorter** `mv28oos0j7afi`
-- [ ] 🔧 **fix loading** _(easy)_ `mv242mp7q68c0`
+- [ ] 💡 **make app wrecking ball shorter** _(doing)_ `mv28oos0j7afi`
 - [ ] 🔧 **make sure themes are checking profile, recipe input, and other less often used menus** _(easy)_ `mv1mngc6q6yvl`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
@@ -47,7 +46,7 @@ _Updated 2026-10-10T22:20:54.518Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_78 done._
+_79 done._
 
 ### Cosmetics gallery
 
