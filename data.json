@@ -3881,6 +3881,24 @@
       "slot": "",
       "created": 1791619636075,
       "updated": 1791619636075
+    },
+    {
+      "id": "mv28oos0j7afi",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make app wrecking ball shorter",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791627383664,
+      "updated": 1791627383664
     }
   ],
   "notes": [
