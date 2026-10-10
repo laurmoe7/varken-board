@@ -1,13 +1,13 @@
 # Varken board
 
-_Updated 2026-10-10T07:58:45.531Z_
+_Updated 2026-10-10T07:59:15.557Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
 - [ ] 💡 **make sure themes are checking profile, recipe input, and other less often used menus** `mv1mngc6q6yvl`
-- [ ] 💡 **polish cool and scribbling theme for mini fumu** `mv1mg9ni6pfv5`
+- [ ] 🔧 **polish cool and scribbling theme for mini fumu** _(easy)_ `mv1mg9ni6pfv5`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
 - [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **need someone with 2 monitors to test** `muzf32dlphixr`
