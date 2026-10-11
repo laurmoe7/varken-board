@@ -3923,18 +3923,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "have pressing the cast button remove a prepared spell, if you are a prepared spell caster.",
       "notes": "add + and - button next prepare to quickly change it.",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791715657066,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791706343124,
-      "updated": 1791707319947
+      "updated": 1791715657066
     }
   ],
   "notes": [
