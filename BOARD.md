@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T13:49:02.730Z_
+_Updated 2026-10-11T16:33:02.937Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -35,7 +35,6 @@ _Updated 2026-10-11T13:49:02.730Z_
 - [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
 - [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
-- [ ] 💡 **dutch language support** _(medium)_ `muvxaekqjpzbb`
 - [ ] 💡 **color variations for skins** `muvqmyc8968to`
 - [ ] 💡 **add color variations to outfits/hats** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
@@ -44,7 +43,7 @@ _Updated 2026-10-11T13:49:02.730Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_82 done._
+_83 done._
 
 ### Cosmetics gallery
 
