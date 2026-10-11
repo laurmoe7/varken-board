@@ -3972,6 +3972,24 @@
       "slot": "",
       "created": 1791736606011,
       "updated": 1791736606011
+    },
+    {
+      "id": "mv4c86daipbis",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "Pet bumping. Two Mini Fumus on two screens wave at each other, using the sync you already have.",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791754264126,
+      "updated": 1791754264126
     }
   ],
   "notes": [
