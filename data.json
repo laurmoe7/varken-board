@@ -1198,18 +1198,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "someday",
-      "status": "open",
+      "status": "done",
       "title": "dutch language support",
       "notes": "",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791736378188,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791245444426,
-      "updated": 1791371579972
+      "updated": 1791736378188
     },
     {
       "id": "muvxaxe6yw4xw",
