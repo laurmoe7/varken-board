@@ -3905,18 +3905,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add a way to add custom modifiers to roll such as insufficient weapon proficiency or shooting outside of range increment of weapon.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791724071406,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791705804031,
-      "updated": 1791705804031
+      "updated": 1791724071406
     },
     {
       "id": "mv3jp2acefm51",
