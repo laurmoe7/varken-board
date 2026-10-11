@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-10T22:22:18.076Z_
+_Updated 2026-10-11T06:49:38.483Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -159,7 +159,6 @@ _2 done._
 
 ### ASAP
 
-- [ ] 💡 **be able to drag and drop cookie to move him** _(easy)_ _(Pathfinder)_ `muyeg9gs57isa`
 - [ ] 💡 **arm not holding lighter in light up animation, he is covering his face with his arm instead** _(easy)_ _(Pathfinder)_ `muyd0u8yl4p2r`
   > also make the tears go down his face when he fake crys. they are currently static.
 
@@ -186,7 +185,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_26 done._
+_27 done._
 
 ### Notes
 
