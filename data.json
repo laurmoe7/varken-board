@@ -2712,18 +2712,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "someday",
-      "status": "open",
+      "status": "done",
       "title": "support for rolling for stats",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791705813792,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791382940108,
-      "updated": 1791382940108
+      "updated": 1791705813792
     },
     {
       "id": "muy9pzfgzpi5w",
