@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T21:03:45.598Z_
+_Updated 2026-10-11T21:31:08.925Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -28,6 +28,7 @@ _Updated 2026-10-11T21:03:45.598Z_
 
 ### Someday
 
+- [ ] 💡 **Pet bumping. Two Mini Fumus on two screens wave at each other, using the sync you already have.** _(medium)_ `mv4c86daipbis`
 - [ ] 💡 **private and share shopping lists for hosueholds** _(medium)_ `muzqeqmy4s8a1`
 - [ ] 💡 **household to-do lists aren't synced, but allow households to send recommended reminders to each other.** _(medium)_ `muyn7h0ayf8jv`
   > something like "Mom sent: May 9th, grandma's at 5pm for dinner". when making a task for yourself, put an option to share with household members. give options to disable this. give sender a notification that other person accepted your reminder?
