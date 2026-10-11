@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T10:48:08.232Z_
+_Updated 2026-10-11T12:31:22.099Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -158,8 +158,6 @@ _2 done._
 ### Soon
 
 - [ ] 💡 **add a way to add custom modifiers to roll such as insufficient weapon proficiency or shooting outside of range increment of weapon.** _(Pathfinder)_ `mv3jdibjgxoz3`
-- [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
-  > add any features that would useful for something like this
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 
@@ -173,7 +171,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_35 done._
+_36 done._
 
 ### Notes
 
