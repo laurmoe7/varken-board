@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T16:36:50.621Z_
+_Updated 2026-10-11T21:03:45.598Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -35,7 +35,6 @@ _Updated 2026-10-11T16:36:50.621Z_
 - [ ] 💡 **export nibble as whatsapp sticker** _(medium)_ `muwkhvsr9p1ub`
 - [ ] 💡 **add syncing to google calendar to easily add other automated scheduled tasks, maybe** _(hard)_ `muw32ie6yf0nc`
 - [ ] 💡 **accounts and syncing with other household members** _(hard)_ `muvxblwe4wtzu`
-- [ ] 💡 **phone widget, able to add to list with voice from widget** _(hard)_ `muvxaxe6yw4xw`
 - [ ] 💡 **color variations for skins** `muvqmyc8968to`
 - [ ] 💡 **add color variations to outfits/hats** `muvqmowq1668d`
 - [ ] 💡 **more games to play/things to do with pet** `muvpk3c1bpab8`
