@@ -3653,18 +3653,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "volume slider",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791702494270,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791548331177,
-      "updated": 1791548331177
+      "updated": 1791702494270
     },
     {
       "id": "mv0xndggz82ve",
