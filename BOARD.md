@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T08:12:27.838Z_
+_Updated 2026-10-11T08:28:44.705Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -159,11 +159,11 @@ _2 done._
 
 ### Soon
 
+- [ ] 💡 **have pressing the cast button remove a prepared spell, if you are a prepared spell caster.** _(Pathfinder)_ _(doing)_ `mv3jp2acefm51`
+  > add + and - button next prepare to quickly change it.
 - [ ] 💡 **sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord** _(medium)_ _(Pathfinder)_ _(doing)_ `muzof0cdcaqx1`
 - [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muzmmnty7qynm`
 - [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ _(doing)_ `muyfqj7tv0cyk`
-- [ ] 💡 **have pressing the cast button remove a prepared spell, if you are a prepared spell caster.** _(Pathfinder)_ `mv3jp2acefm51`
-  > add + and - button next prepare to quickly change it.
 - [ ] 💡 **add a way to add custom modifiers to roll such as insufficient weapon proficiency or shooting outside of range increment of weapon.** _(Pathfinder)_ `mv3jdibjgxoz3`
 - [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
   > add any features that would useful for something like this
