@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T07:08:19.026Z_
+_Updated 2026-10-11T07:13:02.811Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -160,7 +160,7 @@ _2 done._
 ### Soon
 
 - [ ] 💡 **sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord** _(medium)_ _(Pathfinder)_ _(doing)_ `muzof0cdcaqx1`
-- [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ `muzmmnty7qynm`
+- [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muzmmnty7qynm`
 - [ ] 💡 **make cookie eat a cookie** _(easy)_ _(Pathfinder)_ `muyl2x5bbzko9`
 - [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ `muyfqj7tv0cyk`
 - [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
