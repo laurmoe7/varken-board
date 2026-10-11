@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T07:13:02.811Z_
+_Updated 2026-10-11T08:03:33.765Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -161,8 +161,8 @@ _2 done._
 
 - [ ] 💡 **sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord** _(medium)_ _(Pathfinder)_ _(doing)_ `muzof0cdcaqx1`
 - [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muzmmnty7qynm`
-- [ ] 💡 **make cookie eat a cookie** _(easy)_ _(Pathfinder)_ `muyl2x5bbzko9`
-- [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ `muyfqj7tv0cyk`
+- [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ _(doing)_ `muyfqj7tv0cyk`
+- [ ] 💡 **add a way to add custom modifiers to roll such as insufficient weapon proficiency or shooting outside of range increment of weapon.** _(Pathfinder)_ `mv3jdibjgxoz3`
 - [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
   > add any features that would useful for something like this
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
@@ -179,7 +179,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_29 done._
+_30 done._
 
 ### Notes
 
