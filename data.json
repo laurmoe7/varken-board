@@ -3291,7 +3291,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "option to use your own audio files for heal, damage, full heal, etc",
       "notes": "",
       "build": "",
@@ -3302,7 +3302,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791469405222,
-      "updated": 1791469405222
+      "updated": 1791702778339
     },
     {
       "id": "muzof0cdcaqx1",
