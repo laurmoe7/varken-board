@@ -2784,18 +2784,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "be able to drag and drop cookie to move him",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791701374229,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791395203564,
-      "updated": 1791472421837
+      "updated": 1791701374229
     },
     {
       "id": "muyfqj7tv0cyk",
