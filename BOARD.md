@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T08:31:34.885Z_
+_Updated 2026-10-11T09:31:58.036Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -8,7 +8,6 @@ _Updated 2026-10-11T08:31:34.885Z_
 
 - [ ] 🔧 **make sure themes are checking profile, recipe input, and other less often used menus** _(easy)_ `mv1mngc6q6yvl`
 - [ ] 💡 **add dark pink insides to mascot's ears** _(easy)_ _(Varken Board)_ `mv0xndggz82ve`
-- [ ] 💡 **change radial menu to more useful functions** _(easy)_ `mv0v5krvv6fqd`
 - [ ] 💡 **need someone with 2 monitors to test** _(medium)_ `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
   >  Plug it back in, and he should return to his old spot.
@@ -45,7 +44,7 @@ _Updated 2026-10-11T08:31:34.885Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_80 done._
+_81 done._
 
 ### Cosmetics gallery
 
