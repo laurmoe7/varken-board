@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T06:49:38.483Z_
+_Updated 2026-10-11T07:05:09.676Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -157,11 +157,6 @@ _2 done._
 
 ## 🍪 Cookie's Sheets (https://github.com/laurmoe7/pathfinder-sheet)
 
-### ASAP
-
-- [ ] 💡 **arm not holding lighter in light up animation, he is covering his face with his arm instead** _(easy)_ _(Pathfinder)_ `muyd0u8yl4p2r`
-  > also make the tears go down his face when he fake crys. they are currently static.
-
 ### Soon
 
 - [ ] 💡 **sync with tadd (discord d20 rolling bot) to enable rolling in the sheet, which would then be sent to discord** _(medium)_ _(Pathfinder)_ _(doing)_ `muzof0cdcaqx1`
@@ -185,7 +180,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_27 done._
+_28 done._
 
 ### Notes
 
