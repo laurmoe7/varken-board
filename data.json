@@ -3917,6 +3917,24 @@
       "slot": "",
       "created": 1791705804031,
       "updated": 1791705804031
+    },
+    {
+      "id": "mv3jp2acefm51",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "have pressing the cast button remove a prepared spell, if you are a prepared spell caster.",
+      "notes": "add + and - button next prepare to quickly change it.",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791706343124,
+      "updated": 1791706343124
     }
   ],
   "notes": [
