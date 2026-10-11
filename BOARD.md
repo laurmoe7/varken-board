@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T10:47:47.314Z_
+_Updated 2026-10-11T10:48:08.232Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -157,8 +157,6 @@ _2 done._
 
 ### Soon
 
-- [ ] 💡 **option to use your own audio files for heal, damage, full heal, etc** _(easy)_ _(Pathfinder)_ _(doing)_ `muzmmnty7qynm`
-- [ ] 💡 **have cookie take a little cartoon poop emoji on the floor** _(easy)_ _(Pathfinder)_ _(doing)_ `muyfqj7tv0cyk`
 - [ ] 💡 **add a way to add custom modifiers to roll such as insufficient weapon proficiency or shooting outside of range increment of weapon.** _(Pathfinder)_ `mv3jdibjgxoz3`
 - [ ] 💡 **add extra tab for story notes** _(easy)_ _(Pathfinder)_ `muy6hmnhb6cvy`
   > add any features that would useful for something like this
@@ -175,7 +173,7 @@ _2 done._
 - [ ] 💡 **Familiar variants (Improved Familiar, archetypes)** _(hard)_ _(Pathfinder)_ `seed-pathfinder-9`
   > Not modelled yet.
 
-_33 done._
+_35 done._
 
 ### Notes
 
