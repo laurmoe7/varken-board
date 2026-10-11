@@ -2802,7 +2802,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "have cookie take a little cartoon poop emoji on the floor",
       "notes": "",
       "build": "",
@@ -2813,25 +2813,25 @@
       "gallery": false,
       "slot": "",
       "created": 1791397362377,
-      "updated": 1791472419236
+      "updated": 1791705808591
     },
     {
       "id": "muyl2x5bbzko9",
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "make cookie eat a cookie",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791705806363,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791406338383,
-      "updated": 1791472414970
+      "updated": 1791705806363
     },
     {
       "id": "muympjdb9orqo",
@@ -3899,6 +3899,24 @@
       "slot": "",
       "created": 1791627383664,
       "updated": 1791670872098
+    },
+    {
+      "id": "mv3jdibjgxoz3",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add a way to add custom modifiers to roll such as insufficient weapon proficiency or shooting outside of range increment of weapon.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791705804031,
+      "updated": 1791705804031
     }
   ],
   "notes": [
