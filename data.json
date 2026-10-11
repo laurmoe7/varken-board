@@ -231,7 +231,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "someday",
-      "status": "open",
+      "status": "doing",
       "title": "Familiar variants (Improved Familiar, archetypes)",
       "notes": "Not modelled yet.",
       "build": "",
@@ -242,7 +242,7 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791371579972,
+      "updated": 1791724691349,
       "doneBuild": ""
     },
     {
