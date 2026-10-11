@@ -2802,18 +2802,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "have cookie take a little cartoon poop emoji on the floor",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791715681825,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791397362377,
-      "updated": 1791705808591
+      "updated": 1791715681825
     },
     {
       "id": "muyl2x5bbzko9",
@@ -3291,18 +3291,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "option to use your own audio files for heal, damage, full heal, etc",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791715683606,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791469405222,
-      "updated": 1791702778339
+      "updated": 1791715683606
     },
     {
       "id": "muzof0cdcaqx1",
