@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-11T09:31:58.036Z_
+_Updated 2026-10-11T09:32:05.483Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -18,7 +18,7 @@ _Updated 2026-10-11T09:31:58.036Z_
   > also allow the the bring them layers up and down.
 - [ ] 💡 **improve AR photos and features** _(medium)_ `muwpd9fj9aykv`
   > increase speed of photo taking. currently there is a large delay between taking the photo and it appearing on screen. but only sometimes. check on this. 
-- [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ `muvy6mn2nea3p`
+- [ ] 💡 **daily log in bonus, probably mystery boxes** _(medium)_ _(doing)_ `muvy6mn2nea3p`
 - [ ] 💡 **detach plushie from side of pet at night while sitting in bed awake with clipboard** _(hard)_ `muvx9t58kv98s`
 - [ ] 💡 **clapping and wow noises in dressing room** _(easy)_ `muvshshuzviba`
 - [ ] 💡 **celebrate holidays, birthdays** _(easy)_ _(doing)_ `muvset2l7bwrh`
