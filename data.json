@@ -3579,18 +3579,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "change radial menu to more useful functions",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791711112561,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791544190827,
-      "updated": 1791544190827
+      "updated": 1791711112562
     },
     {
       "id": "mv0x3x1o6s2f4",
