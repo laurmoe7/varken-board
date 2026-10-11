@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-11T13:08:16.615Z_
+_Updated 2026-10-11T13:08:22.551Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **volume slider** _(Varken Board)_ `mv3u9kh9ripu1`
 - [ ] 🔧 **make sure themes are checking profile, recipe input, and other less often used menus** _(easy)_ `mv1mngc6q6yvl`
 - [ ] 💡 **need someone with 2 monitors to test** _(medium)_ `muzf32dlphixr`
   > With two monitors, put him on the second one and unplug it. He should move to the main screen.
