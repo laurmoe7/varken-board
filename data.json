@@ -2694,18 +2694,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add extra tab for story notes",
       "notes": "add any features that would useful for something like this",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791721877315,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791381830381,
-      "updated": 1791381830381
+      "updated": 1791721877315
     },
     {
       "id": "muy75ex8eppd5",
