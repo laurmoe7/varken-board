@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-11T16:33:02.937Z_
+_Updated 2026-10-11T16:36:50.621Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **add option to lock fumu to background in mini fumu** _(medium)_ `mv41ppa39ko6x`
 - [ ] 💡 **volume slider** _(Varken Board)_ `mv3u9kh9ripu1`
 - [ ] 🔧 **make sure themes are checking profile, recipe input, and other less often used menus** _(easy)_ `mv1mngc6q6yvl`
 - [ ] 💡 **need someone with 2 monitors to test** _(medium)_ `muzf32dlphixr`
