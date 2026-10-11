@@ -3935,6 +3935,24 @@
       "slot": "",
       "created": 1791706343124,
       "updated": 1791715657066
+    },
+    {
+      "id": "mv3u9kh9ripu1",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "volume slider",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "varken",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791724095981,
+      "updated": 1791724095981
     }
   ],
   "notes": [
