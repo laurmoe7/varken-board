@@ -2766,18 +2766,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "now",
-      "status": "open",
+      "status": "done",
       "title": "arm not holding lighter in light up animation, he is covering his face with his arm instead",
       "notes": "also make the tears go down his face when he fake crys. they are currently static.",
       "build": "",
       "effort": "easy",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1791702305054,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791392804386,
-      "updated": 1791469431730
+      "updated": 1791702305054
     },
     {
       "id": "muyeg9gs57isa",
