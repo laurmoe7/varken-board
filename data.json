@@ -3990,6 +3990,24 @@
       "slot": "",
       "created": 1791754264126,
       "updated": 1791754264126
+    },
+    {
+      "id": "mv5865ksahl0c",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add separation between tasks for today and tasks for another day",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791807917500,
+      "updated": 1791807917500
     }
   ],
   "notes": [
