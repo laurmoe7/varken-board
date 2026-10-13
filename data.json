@@ -4062,6 +4062,24 @@
       "slot": "",
       "created": 1791879579239,
       "updated": 1791879579239
+    },
+    {
+      "id": "mv6h6xkfg65x4",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "push notifications for phone",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791883536495,
+      "updated": 1791883536495
     }
   ],
   "notes": [
