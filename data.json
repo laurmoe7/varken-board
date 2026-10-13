@@ -4050,18 +4050,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "dont require year for birthday",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791899720856,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791879579239,
-      "updated": 1791879579239
+      "updated": 1791899720856
     },
     {
       "id": "mv6h6xkfg65x4",
@@ -4086,18 +4086,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "remove white gradient on top of alert boxes",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791899718478,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791883552804,
-      "updated": 1791883552804
+      "updated": 1791899718478
     }
   ],
   "notes": [
