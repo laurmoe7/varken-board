@@ -1,14 +1,12 @@
 # Varken board
 
-_Updated 2026-10-13T09:25:58.669Z_
+_Updated 2026-10-13T13:55:26.121Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
-- [ ] 💡 **remove white gradient on top of alert boxes** `mv6h7a5g2upy7`
 - [ ] 💡 **push notifications for phone** `mv6h6xkfg65x4`
-- [ ] 💡 **dont require year for birthday** `mv6eu44nwebfk`
 - [ ] 💡 **remove background sounds options on wander mode.** _(easy)_ `mv6d65gw8rdbv`
   > make sure they are muted on wander mode.
 - [ ] 💡 **volume slider** _(Varken Board)_ `mv3u9kh9ripu1`
@@ -47,7 +45,7 @@ _Updated 2026-10-13T09:25:58.669Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_87 done._
+_89 done._
 
 ### Cosmetics gallery
 
