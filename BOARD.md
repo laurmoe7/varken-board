@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-13T05:13:21.804Z_
+_Updated 2026-10-13T05:42:48.210Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -118,7 +118,6 @@ _85 done._
 
 - have varken board say "Dansen!"
 - glorp alien skin
-- "evil": try to take teddy x times
 - grumpy chef: import a recipe on 3 different days
   
   jester: tease pet by holding ball above head for x days
