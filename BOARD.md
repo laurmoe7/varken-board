@@ -1,8 +1,13 @@
 # Varken board
 
-_Updated 2026-10-13T04:37:21.389Z_
+_Updated 2026-10-13T04:43:10.567Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
+
+### ASAP
+
+- [ ] 💡 **for mini fumu, add wander mode and room mode toggle.** _(easy)_ `mv673ljsj4679`
+  > wander mode removes the background and cushion, and lets him walk around more. they toys can be thrown outside his room and interact with the desktop. room mode turn on the background, and restricts his movement and interactions to stay inside his room. change settings to reflect this. such as having no "toys fly around the screen" option for room mode, have that off by default. still allow restriction of movement in wander mode thru settings.
 
 ### Soon
 
