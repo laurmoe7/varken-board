@@ -4072,14 +4072,14 @@
       "title": "push notifications for phone",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "area": "petshopper",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791883536495,
-      "updated": 1791883536495
+      "updated": 1791901224516
     },
     {
       "id": "mv6h7a5g2upy7",
@@ -4098,6 +4098,24 @@
       "slot": "",
       "created": 1791883552804,
       "updated": 1791899718478
+    },
+    {
+      "id": "mv6rpz44xz7su",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "app needs icon",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791901221124,
+      "updated": 1791901221124
     }
   ],
   "notes": [
