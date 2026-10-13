@@ -3960,18 +3960,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add option to lock fumu to background in mini fumu",
       "notes": "",
       "build": "",
       "effort": "medium",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791872028233,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791736606011,
-      "updated": 1791736606011
+      "updated": 1791872028233
     },
     {
       "id": "mv4c86daipbis",
@@ -3996,18 +3996,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add separation between tasks for today and tasks for another day",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1791872025651,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791807917500,
-      "updated": 1791807917500
+      "updated": 1791872025651
     },
     {
       "id": "mv673ljsj4679",
