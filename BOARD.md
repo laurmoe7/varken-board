@@ -1,11 +1,13 @@
 # Varken board
 
-_Updated 2026-10-13T06:13:53.140Z_
+_Updated 2026-10-13T07:33:06.847Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **remove background sounds options on wander mode.** _(easy)_ `mv6d65gw8rdbv`
+  > make sure they are muted on wander mode.
 - [ ] 💡 **volume slider** _(Varken Board)_ `mv3u9kh9ripu1`
 - [ ] 🔧 **make sure themes are checking profile, recipe input, and other less often used menus** _(easy)_ `mv1mngc6q6yvl`
 - [ ] 💡 **need someone with 2 monitors to test** _(medium)_ `muzf32dlphixr`
