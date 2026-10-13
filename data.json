@@ -4044,6 +4044,24 @@
       "slot": "",
       "created": 1791876781616,
       "updated": 1791876781616
+    },
+    {
+      "id": "mv6eu44nwebfk",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "dont require year for birthday",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791879579239,
+      "updated": 1791879579239
     }
   ],
   "notes": [
