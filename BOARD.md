@@ -1,12 +1,13 @@
 # Varken board
 
-_Updated 2026-10-13T13:55:26.121Z_
+_Updated 2026-10-13T14:20:30.603Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
-- [ ] 💡 **push notifications for phone** `mv6h6xkfg65x4`
+- [ ] 💡 **app needs icon** _(easy)_ `mv6rpz44xz7su`
+- [ ] 💡 **push notifications for phone** _(medium)_ `mv6h6xkfg65x4`
 - [ ] 💡 **remove background sounds options on wander mode.** _(easy)_ `mv6d65gw8rdbv`
   > make sure they are muted on wander mode.
 - [ ] 💡 **volume slider** _(Varken Board)_ `mv3u9kh9ripu1`
