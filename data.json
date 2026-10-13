@@ -4026,6 +4026,24 @@
       "slot": "",
       "created": 1791866584792,
       "updated": 1791868396168
+    },
+    {
+      "id": "mv6d65gw8rdbv",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "remove background sounds options on wander mode.",
+      "notes": "make sure they are muted on wander mode.",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791876781616,
+      "updated": 1791876781616
     }
   ],
   "notes": [
