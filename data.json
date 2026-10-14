@@ -4134,6 +4134,24 @@
       "slot": "",
       "created": 1791999929341,
       "updated": 1791999929341
+    },
+    {
+      "id": "mv8ekyz5iohdl",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "expand upon companions",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792000085009,
+      "updated": 1792000085009
     }
   ],
   "notes": [
