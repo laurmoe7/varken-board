@@ -4152,6 +4152,24 @@
       "slot": "",
       "created": 1792000085009,
       "updated": 1792000085009
+    },
+    {
+      "id": "mv8kw311tlczo",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sort inventory by abc dbutton",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792010681173,
+      "updated": 1792010681173
     }
   ],
   "notes": [
