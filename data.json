@@ -4116,6 +4116,24 @@
       "slot": "",
       "created": 1791901221124,
       "updated": 1791901221124
+    },
+    {
+      "id": "mv8ehmv1tzeo5",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add sorting for wizard schools in spell (metal, etc)",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1791999929341,
+      "updated": 1791999929341
     }
   ],
   "notes": [
