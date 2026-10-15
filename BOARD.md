@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-15T09:56:51.642Z_
+_Updated 2026-10-15T09:57:16.394Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -160,7 +160,7 @@ _2 done._
 
 - [ ] 💡 **ranged weapons using str for damage** _(Pathfinder)_ _(doing)_ `mv8l8f4icciax`
 - [ ] 💡 **sort inventory by abc dbutton** _(Pathfinder)_ _(doing)_ `mv8kw311tlczo`
-- [ ] 💡 **expand upon companions** _(Pathfinder)_ `mv8ekyz5iohdl`
+- [ ] 💡 **expand upon companions** _(Pathfinder)_ _(doing)_ `mv8ekyz5iohdl`
 - [ ] 💡 **add sorting for wizard schools in spell (metal, etc)** _(Pathfinder)_ `mv8ehmv1tzeo5`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
