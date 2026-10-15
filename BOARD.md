@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-15T09:56:34.629Z_
+_Updated 2026-10-15T09:56:51.642Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -159,7 +159,7 @@ _2 done._
 ### Soon
 
 - [ ] 💡 **ranged weapons using str for damage** _(Pathfinder)_ _(doing)_ `mv8l8f4icciax`
-- [ ] 💡 **sort inventory by abc dbutton** _(Pathfinder)_ `mv8kw311tlczo`
+- [ ] 💡 **sort inventory by abc dbutton** _(Pathfinder)_ _(doing)_ `mv8kw311tlczo`
 - [ ] 💡 **expand upon companions** _(Pathfinder)_ `mv8ekyz5iohdl`
 - [ ] 💡 **add sorting for wizard schools in spell (metal, etc)** _(Pathfinder)_ `mv8ehmv1tzeo5`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
