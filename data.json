@@ -4140,7 +4140,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "expand upon companions",
       "notes": "",
       "build": "",
@@ -4151,7 +4151,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792000085009,
-      "updated": 1792000085009
+      "updated": 1792058231611
     },
     {
       "id": "mv8kw311tlczo",
