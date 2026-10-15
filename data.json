@@ -4176,7 +4176,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "ranged weapons using str for damage",
       "notes": "",
       "build": "",
@@ -4187,7 +4187,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792011256722,
-      "updated": 1792011256722
+      "updated": 1792058189813
     }
   ],
   "notes": [
