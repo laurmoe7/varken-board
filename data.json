@@ -4170,6 +4170,24 @@
       "slot": "",
       "created": 1792010681173,
       "updated": 1792010681173
+    },
+    {
+      "id": "mv8l8f4icciax",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "ranged weapons using str for damage",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792011256722,
+      "updated": 1792011256722
     }
   ],
   "notes": [
