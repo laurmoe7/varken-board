@@ -4158,7 +4158,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "sort inventory by abc dbutton",
       "notes": "",
       "build": "",
@@ -4169,7 +4169,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792010681173,
-      "updated": 1792010681173
+      "updated": 1792058206857
     },
     {
       "id": "mv8l8f4icciax",
