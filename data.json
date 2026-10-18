@@ -2289,18 +2289,18 @@
       "project": "funfx",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "improve and clarify pack system",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "funfx",
-      "doneAt": 0,
+      "doneAt": 1792323500583,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791330940792,
-      "updated": 1791371579972
+      "updated": 1792323500583
     },
     {
       "id": "muxdaxaxx4xm6",
