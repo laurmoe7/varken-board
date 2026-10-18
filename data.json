@@ -108,8 +108,9 @@
       "gallery": false,
       "slot": "",
       "created": 1791231087088,
-      "updated": 1791371579972,
-      "doneBuild": ""
+      "updated": 1792323571111,
+      "doneBuild": "",
+      "order": 3
     },
     {
       "id": "seed-funfx-3",
@@ -1153,7 +1154,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791245215147,
-      "updated": 1791371579972
+      "updated": 1792323571111,
+      "order": 1
     },
     {
       "id": "muvx9t58kv98s",
@@ -2318,7 +2320,8 @@
       "gallery": false,
       "slot": "",
       "created": 1791332808729,
-      "updated": 1791371579972
+      "updated": 1792323571111,
+      "order": 0
     },
     {
       "id": "muxtxdcg64roy",
@@ -4188,6 +4191,25 @@
       "slot": "",
       "created": 1792011256722,
       "updated": 1792063578069
+    },
+    {
+      "id": "mvdr6c7m83wr4",
+      "project": "funfx",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "Check in game: guild messages, summon offered/taken, portal taken, res offered/taken",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "funfx",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792323568210,
+      "updated": 1792323571111,
+      "order": 2
     }
   ],
   "notes": [
