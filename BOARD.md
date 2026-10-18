@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-18T11:39:42.398Z_
+_Updated 2026-10-18T11:40:59.489Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -135,6 +135,7 @@ _89 done._
 
 ### Soon
 
+- [ ] 💡 **check in game: mounting up** _(easy)_ _(funFX)_ `mvdr86sz6y9k8`
 - [ ] 💡 **add more crit sounds that would work well with magic spells** _(easy)_ _(funFX)_ `muxdaxaxx4xm6`
 - [ ] 💡 **Check in game: guild messages, summon offered/taken, portal taken, res offered/taken** _(easy)_ _(funFX)_ `mvdr6c7m83wr4`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ _(funFX)_ `seed-funfx-2`
