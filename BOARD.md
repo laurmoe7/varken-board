@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-18T11:38:33.126Z_
+_Updated 2026-10-18T11:38:39.401Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -139,8 +139,6 @@ _89 done._
 - [ ] 🔧 **check if record heal works and is worth it** _(medium)_ _(funFX)_ `muvx5hnv9cih9`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ _(funFX)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
-- [ ] 🔧 **Check in game: new mail, auction sold and skill-up triggers** _(funFX)_ `seed-funfx-4`
-  > Built but never confirmed in game.
 
 ### Someday
 
@@ -149,7 +147,7 @@ _89 done._
 - [ ] 💡 **Bring back Mute game sound?** _(funFX)_ `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
-_4 done._
+_5 done._
 
 ## 🍪 Cookie's Sheets (https://github.com/laurmoe7/pathfinder-sheet)
 
