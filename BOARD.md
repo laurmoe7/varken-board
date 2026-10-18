@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-18T11:39:36.036Z_
+_Updated 2026-10-18T11:39:42.398Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -136,7 +136,6 @@ _89 done._
 ### Soon
 
 - [ ] 💡 **add more crit sounds that would work well with magic spells** _(easy)_ _(funFX)_ `muxdaxaxx4xm6`
-- [ ] 🔧 **check if record heal works and is worth it** _(medium)_ _(funFX)_ `muvx5hnv9cih9`
 - [ ] 💡 **Check in game: guild messages, summon offered/taken, portal taken, res offered/taken** _(easy)_ _(funFX)_ `mvdr6c7m83wr4`
 - [ ] 🔧 **Check in game: Crowd control with a real stun/root** _(medium)_ _(funFX)_ `seed-funfx-2`
   > /funfx cctest only fakes an effect. Also unconfirmed: whether the loss-of-control fields are readable in combat.
@@ -148,7 +147,7 @@ _89 done._
 - [ ] 💡 **Bring back Mute game sound?** _(funFX)_ `seed-funfx-7`
   > Removed on request; kept on branch mute-game-sound (Whisper variant on whisper-mute). Only if you want it again.
 
-_5 done._
+_6 done._
 
 ## 🍪 Cookie's Sheets (https://github.com/laurmoe7/pathfinder-sheet)
 
