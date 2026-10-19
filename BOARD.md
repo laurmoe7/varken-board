@@ -1,12 +1,11 @@
 # Varken board
 
-_Updated 2026-10-19T16:34:33.001Z_
+_Updated 2026-10-19T16:49:54.293Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
-- [ ] 💡 **add more dialogue for everything** _(easy)_ _(doing)_ `mvf24shsop4w1`
 - [ ] 💡 **app needs icon** _(easy)_ `mv6rpz44xz7su`
 - [ ] 💡 **push notifications for phone** _(medium)_ `mv6h6xkfg65x4`
 - [ ] 💡 **remove background sounds options on wander mode.** _(easy)_ `mv6d65gw8rdbv`
@@ -47,7 +46,7 @@ _Updated 2026-10-19T16:34:33.001Z_
   > The dressing room tests the idea; no payments yet.
 - [ ] 💡 **furniture locking and tweaks** `muvkqf71qnfau`
 
-_89 done._
+_90 done._
 
 ### Cosmetics gallery
 
