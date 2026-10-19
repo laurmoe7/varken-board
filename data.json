@@ -4229,6 +4229,24 @@
       "created": 1792323654515,
       "updated": 1792323890751,
       "order": 1
+    },
+    {
+      "id": "mvf24shsop4w1",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add more dialogue for everything",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792402437952,
+      "updated": 1792402437952
     }
   ],
   "notes": [
