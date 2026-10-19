@@ -4235,18 +4235,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "add more dialogue for everything",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1792428589247,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792402437952,
-      "updated": 1792427668537
+      "updated": 1792428589247
     }
   ],
   "notes": [
