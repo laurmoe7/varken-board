@@ -1,12 +1,12 @@
 # Varken board
 
-_Updated 2026-10-19T09:34:02.424Z_
+_Updated 2026-10-19T16:34:33.001Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
-- [ ] 💡 **add more dialogue for everything** _(easy)_ `mvf24shsop4w1`
+- [ ] 💡 **add more dialogue for everything** _(easy)_ _(doing)_ `mvf24shsop4w1`
 - [ ] 💡 **app needs icon** _(easy)_ `mv6rpz44xz7su`
 - [ ] 💡 **push notifications for phone** _(medium)_ `mv6h6xkfg65x4`
 - [ ] 💡 **remove background sounds options on wander mode.** _(easy)_ `mv6d65gw8rdbv`
