@@ -4247,6 +4247,24 @@
       "slot": "",
       "created": 1792402437952,
       "updated": 1792428589247
+    },
+    {
+      "id": "mvh2pyxscixsf",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "varken says good morning even if its not morning",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "varken",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792524358432,
+      "updated": 1792524358432
     }
   ],
   "notes": [
