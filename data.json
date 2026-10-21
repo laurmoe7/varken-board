@@ -4107,18 +4107,18 @@
       "project": "petshopper",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "app needs icon",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "petshopper",
-      "doneAt": 0,
+      "doneAt": 1792579980105,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1791901221124,
-      "updated": 1791901221124
+      "updated": 1792579980105
     },
     {
       "id": "mv8ehmv1tzeo5",
