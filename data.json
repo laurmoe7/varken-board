@@ -4419,6 +4419,24 @@
       "slot": "",
       "created": 1792776880345,
       "updated": 1792776903863
+    },
+    {
+      "id": "mvlcjygp596ho",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "fix camera inside buildings",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792782738745,
+      "updated": 1792782738745
     }
   ],
   "notes": [
