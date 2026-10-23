@@ -4455,6 +4455,24 @@
       "slot": "",
       "created": 1792782785137,
       "updated": 1792782785137
+    },
+    {
+      "id": "mvlco8nf36ptb",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add cow and sheep pastures to northern farms. windmills too",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792782938571,
+      "updated": 1792782938571
     }
   ],
   "notes": [
