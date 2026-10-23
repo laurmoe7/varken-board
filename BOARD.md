@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-23T19:13:10.327Z_
+_Updated 2026-10-23T19:15:43.375Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **add cow and sheep pastures to northern farms. windmills too** `mvlco8nf36ptb`
 - [ ] 💡 **fix mobs not going upstairs in stronghold. make stairs in stronghold building start from inside the building. make building bigger if needed.** `mvlcky9djoj3w`
 - [ ] 💡 **fix camera inside buildings** `mvlcjygp596ho`
 - [ ] 💡 **lights along paths, fireflies at night. not mobs, just firefly effect.** `mvl92e3dcl80x`
