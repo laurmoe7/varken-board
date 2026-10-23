@@ -4265,6 +4265,24 @@
       "slot": "",
       "created": 1792524358432,
       "updated": 1792524358432
+    },
+    {
+      "id": "mvikqbrnnxrw3",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "exp numbers did not get exported properly",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792615074323,
+      "updated": 1792615074323
     }
   ],
   "notes": [
