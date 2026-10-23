@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-21T12:30:12.620Z_
+_Updated 2026-10-23T14:57:35.703Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -152,6 +152,7 @@ _6 done._
 
 ### Soon
 
+- [ ] 💡 **exp numbers did not get exported properly** _(Pathfinder)_ `mvikqbrnnxrw3`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
 
