@@ -4311,6 +4311,24 @@
       "slot": "",
       "created": 1792767529499,
       "updated": 1792767529499
+    },
+    {
+      "id": "mvl4azzu1tx03",
+      "project": "petshopper",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "alert only mode for desktop, if you want to hide the pet but still get alerts",
+      "notes": "",
+      "build": "",
+      "effort": "easy",
+      "area": "petshopper",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792768883898,
+      "updated": 1792768883898
     }
   ],
   "notes": [
