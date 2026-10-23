@@ -4329,6 +4329,24 @@
       "slot": "",
       "created": 1792768883898,
       "updated": 1792768883898
+    },
+    {
+      "id": "mvl4yt31a8dg1",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "exploration items, think wod leveling experience",
+      "notes": "",
+      "build": "",
+      "effort": "medium",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792769994685,
+      "updated": 1792769994685
     }
   ],
   "notes": [
