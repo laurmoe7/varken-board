@@ -4401,6 +4401,24 @@
       "slot": "",
       "created": 1792775614110,
       "updated": 1792775614110
+    },
+    {
+      "id": "mvl92e3dcl80x",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "lights along paths",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792776880345,
+      "updated": 1792776880345
     }
   ],
   "notes": [
