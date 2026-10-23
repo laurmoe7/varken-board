@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-23T14:58:04.200Z_
+_Updated 2026-10-23T14:58:54.581Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -173,4 +173,8 @@ _42 done._
 
 ## 🧌 Goblin Game
 
-_Nothing open._
+### Soon
+
+- [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
+  > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
+
