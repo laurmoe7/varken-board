@@ -4383,6 +4383,24 @@
       "slot": "",
       "created": 1792774578908,
       "updated": 1792774578908
+    },
+    {
+      "id": "mvl8b926wew39",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "boats. make sure merchants can bring their carts on them. lets figure out how they should work.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792775614110,
+      "updated": 1792775614110
     }
   ],
   "notes": [
