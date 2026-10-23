@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-23T16:56:24.087Z_
+_Updated 2026-10-23T17:13:39.231Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **boats. make sure merchants can bring their carts on them. lets figure out how they should work.** `mvl8b926wew39`
 - [ ] 💡 **sheath weapons on back when not in combat** `mvl7p2akag3ni`
 - [ ] 💡 **change globs 3 colors. no blue, pink, purple. nothing too close to the green in the grummok area. current colors look bad.** `mvl7kkmd80dav`
 - [ ] 💡 **exploration items, think wod leveling experience** _(medium)_ `mvl4yt31a8dg1`
