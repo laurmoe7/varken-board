@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-23T17:39:59.572Z_
+_Updated 2026-10-23T19:12:23.905Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **fix camera inside buildings** `mvlcjygp596ho`
 - [ ] 💡 **lights along paths, fireflies at night. not mobs, just firefly effect.** `mvl92e3dcl80x`
 - [ ] 💡 **boats. make sure merchants can bring their carts on them. lets figure out how they should work.** `mvl8b926wew39`
 - [ ] 💡 **sheath weapons on back when not in combat** `mvl7p2akag3ni`
