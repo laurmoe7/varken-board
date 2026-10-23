@@ -1,11 +1,12 @@
 # Varken board
 
-_Updated 2026-10-23T14:58:54.581Z_
+_Updated 2026-10-23T15:21:29.044Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
 ### Soon
 
+- [ ] 💡 **alert only mode for desktop, if you want to hide the pet but still get alerts** _(easy)_ `mvl4azzu1tx03`
 - [ ] 💡 **varken says good morning even if its not morning** _(Varken Board)_ `mvh2pyxscixsf`
 - [ ] 💡 **remove background sounds options on wander mode.** _(easy)_ `mv6d65gw8rdbv`
   > make sure they are muted on wander mode.
