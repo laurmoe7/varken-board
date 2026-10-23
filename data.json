@@ -4354,7 +4354,7 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "change globs 3 colors. no blue, pink, purple. nothing too close to the green in the grummok area. current colors look bad.",
+      "title": "change globs 3 colors. no blue, pink, purple. nothing too close to the green in the grummok area. current colors look bad. make sure mount changes too.",
       "notes": "",
       "build": "",
       "effort": "",
@@ -4364,7 +4364,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792774369381,
-      "updated": 1792774369381
+      "updated": 1792777194848
     },
     {
       "id": "mvl7p2akag3ni",
