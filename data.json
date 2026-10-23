@@ -4443,18 +4443,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "fix mobs not going upstairs in stronghold. make stairs in stronghold building start from inside the building. make building bigger if needed.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792799575732,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792782785137,
-      "updated": 1792782785137
+      "updated": 1792799575732
     },
     {
       "id": "mvlco8nf36ptb",
