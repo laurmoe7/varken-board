@@ -4365,6 +4365,24 @@
       "slot": "",
       "created": 1792774369381,
       "updated": 1792774369381
+    },
+    {
+      "id": "mvl7p2akag3ni",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sheath weapons on back when not in combat",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792774578908,
+      "updated": 1792774578908
     }
   ],
   "notes": [
