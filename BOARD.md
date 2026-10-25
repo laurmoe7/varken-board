@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-25T23:40:54.741Z_
+_Updated 2026-10-25T23:45:35.732Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **display your remaining gold left when using coin toss** _(doing)_ `mvoe8jan3ac3r`
 - [ ] 💡 **remove paint bucket behind king's building** `mvoh0zatc75no`
 - [ ] 💡 **npc carriage that travels between goblin village and south beach, along the road.** `mvogh101f73da`
   > driven by a goblin, a cow pulling the carriage.
@@ -190,5 +189,5 @@ _42 done._
 - [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
   > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
 
-_5 done._
+_6 done._
 
