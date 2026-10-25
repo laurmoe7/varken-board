@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-25T22:00:11.071Z_
+_Updated 2026-10-25T22:21:37.879Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,8 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **make sure youre only considered in combat if you have hit or been hit by something recently** `mvoe70spvbapc`
+  > right now it seems using any skill, even while not hitting things, puts you in combat. also add combat indicators to the scrolling combat text.
 - [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
   - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
