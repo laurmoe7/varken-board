@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-25T22:53:25.711Z_
+_Updated 2026-10-25T23:25:25.025Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,8 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **display your remaining gold left when using coin toss** _(doing)_ `mvoe8jan3ac3r`
+- [ ] 💡 **npc carriage that travels between goblin village and south beach, along the road.** `mvogh101f73da`
+  > driven by a goblin, a cow pulling the carriage.
 - [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
   - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
