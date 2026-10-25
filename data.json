@@ -4461,18 +4461,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add cow and sheep pastures to northern farms. windmills too",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792965597321,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792782938571,
-      "updated": 1792782938571
+      "updated": 1792965597321
     },
     {
       "id": "mvochibjr99y7",
@@ -4491,6 +4491,26 @@
       "slot": "",
       "created": 1792964023039,
       "updated": 1792964023039
+    },
+    {
+      "id": "mvodf562gzctc",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sun turns black at end of day, and dawn",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mvodf493la790"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1792965592298,
+      "updated": 1792965592298
     }
   ],
   "notes": [
@@ -4803,6 +4823,10 @@
     "mv0x6rlennjmb": {
       "name": "image.png",
       "added": 1791547605557
+    },
+    "mvodf493la790": {
+      "name": "image.png",
+      "added": 1792965591114
     }
   }
 }
