@@ -4565,6 +4565,24 @@
       "slot": "",
       "created": 1792970719057,
       "updated": 1792970719057
+    },
+    {
+      "id": "mvoh0zatc75no",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "remove paint bucket behind king's building",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792971649973,
+      "updated": 1792971649973
     }
   ],
   "notes": [
