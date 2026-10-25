@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-25T21:33:48.553Z_
+_Updated 2026-10-25T21:59:58.747Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,8 +176,9 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
+  - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
-- [ ] 💡 **add cow and sheep pastures to northern farms. windmills too** `mvlco8nf36ptb`
 - [ ] 💡 **fix camera inside buildings** `mvlcjygp596ho`
 - [ ] 💡 **lights along paths, fireflies at night. not mobs, just firefly effect.** `mvl92e3dcl80x`
 - [ ] 💡 **boats. make sure merchants can bring their carts on them. lets figure out how they should work.** `mvl8b926wew39`
@@ -187,5 +188,5 @@ _42 done._
 - [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
   > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
 
-_1 done._
+_2 done._
 
