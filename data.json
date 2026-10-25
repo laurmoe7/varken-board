@@ -4511,6 +4511,24 @@
       "slot": "",
       "created": 1792965592298,
       "updated": 1792965592298
+    },
+    {
+      "id": "mvoe70spvbapc",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make sure youre only considered in combat if you have hit or been hit by something recently",
+      "notes": "right now it seems using any skill, even while not hitting things, puts you in combat. also add combat indicators to the scrolling combat text.",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792966893001,
+      "updated": 1792966893001
     }
   ],
   "notes": [
