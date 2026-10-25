@@ -4353,18 +4353,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "change globs 3 colors. no blue, pink, purple. nothing too close to the green in the grummok area. current colors look bad. make sure mount changes too.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792965606252,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792774369381,
-      "updated": 1792777194848
+      "updated": 1792965606252
     },
     {
       "id": "mvl7p2akag3ni",
@@ -4389,18 +4389,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "boats. make sure merchants can bring their carts on them. lets figure out how they should work.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792965603380,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792775614110,
-      "updated": 1792775614110
+      "updated": 1792965603380
     },
     {
       "id": "mvl92e3dcl80x",
