@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-25T22:52:57.628Z_
+_Updated 2026-10-25T22:53:25.711Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,7 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **display your remaining gold left when using coin toss** `mvoe8jan3ac3r`
+- [ ] 💡 **display your remaining gold left when using coin toss** _(doing)_ `mvoe8jan3ac3r`
 - [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
   - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
