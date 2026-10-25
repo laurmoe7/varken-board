@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-25T23:45:35.732Z_
+_Updated 2026-10-25T23:47:00.450Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,7 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **remove paint bucket behind king's building** `mvoh0zatc75no`
+- [ ] 💡 **remove paint bucket behind king's building** _(doing)_ `mvoh0zatc75no`
 - [ ] 💡 **npc carriage that travels between goblin village and south beach, along the road.** `mvogh101f73da`
   > driven by a goblin, a cow pulling the carriage.
 - [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
