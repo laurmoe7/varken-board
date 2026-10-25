@@ -4517,18 +4517,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "make sure youre only considered in combat if you have hit or been hit by something recently",
       "notes": "right now it seems using any skill, even while not hitting things, puts you in combat. also add combat indicators to the scrolling combat text.",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792968772708,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792966893001,
-      "updated": 1792966893001
+      "updated": 1792968772708
     },
     {
       "id": "mvoe8jan3ac3r",
