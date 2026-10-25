@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-23T23:53:00.778Z_
+_Updated 2026-10-25T21:33:48.553Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
 - [ ] 💡 **add cow and sheep pastures to northern farms. windmills too** `mvlco8nf36ptb`
 - [ ] 💡 **fix camera inside buildings** `mvlcjygp596ho`
 - [ ] 💡 **lights along paths, fireflies at night. not mobs, just firefly effect.** `mvl92e3dcl80x`
