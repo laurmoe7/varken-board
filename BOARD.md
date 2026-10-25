@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-25T22:22:48.755Z_
+_Updated 2026-10-25T22:52:57.628Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,8 +177,6 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **display your remaining gold left when using coin toss** `mvoe8jan3ac3r`
-- [ ] 💡 **make sure youre only considered in combat if you have hit or been hit by something recently** `mvoe70spvbapc`
-  > right now it seems using any skill, even while not hitting things, puts you in combat. also add combat indicators to the scrolling combat text.
 - [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
   - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
@@ -189,5 +187,5 @@ _42 done._
 - [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
   > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
 
-_4 done._
+_5 done._
 
