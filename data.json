@@ -4535,18 +4535,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "display your remaining gold left when using coin toss",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792971930748,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792966963631,
-      "updated": 1792968800746
+      "updated": 1792971930748
     },
     {
       "id": "mvogh101f73da",
