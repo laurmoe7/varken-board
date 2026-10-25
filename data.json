@@ -4473,6 +4473,24 @@
       "slot": "",
       "created": 1792782938571,
       "updated": 1792782938571
+    },
+    {
+      "id": "mvochibjr99y7",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "get quests from your mirror to yourself",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792964023039,
+      "updated": 1792964023039
     }
   ],
   "notes": [
