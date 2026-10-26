@@ -4571,18 +4571,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "remove paint bucket behind king's building",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792976080547,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792971649973,
-      "updated": 1792972015651
+      "updated": 1792976080547
     },
     {
       "id": "mvoiis4t5uwqv",
@@ -4621,6 +4621,26 @@
       "slot": "",
       "created": 1792974656175,
       "updated": 1792974656175
+    },
+    {
+      "id": "mvojntxds7fvq",
+      "project": "goblingame",
+      "type": "fix",
+      "priority": "soon",
+      "status": "open",
+      "title": "fix broken geometry right outside waterfall cave",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mvojnnlwc3xhw"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1792976075329,
+      "updated": 1792976077664
     }
   ],
   "notes": [
