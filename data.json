@@ -4685,18 +4685,19 @@
       "priority": "soon",
       "status": "open",
       "title": "reigns not attached to drivers hands or cow in traveling carriage",
-      "notes": "",
+      "notes": "round part around cow also doesnt stay around neck when changing elevation and turning around.",
       "build": "",
       "effort": "",
       "area": "",
       "doneAt": 0,
       "images": [
-        "mvp0m24ufc8f2"
+        "mvp0m24ufc8f2",
+        "mvp0slbq32li3"
       ],
       "gallery": false,
       "slot": "",
       "created": 1793004547270,
-      "updated": 1793004550445
+      "updated": 1793004880926
     }
   ],
   "notes": [
@@ -5025,6 +5026,10 @@
     "mvp0m24ufc8f2": {
       "name": "image.png",
       "added": 1793004546130
+    },
+    "mvp0slbq32li3": {
+      "name": "image.png",
+      "added": 1793004850939
     }
   }
 }
