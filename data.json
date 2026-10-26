@@ -4627,20 +4627,20 @@
       "project": "goblingame",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "fix broken geometry right outside waterfall cave",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793014292713,
       "images": [
         "mvojnnlwc3xhw"
       ],
       "gallery": false,
       "slot": "",
       "created": 1792976075329,
-      "updated": 1793006610753
+      "updated": 1793014292713
     },
     {
       "id": "mvokys6449zn7",
