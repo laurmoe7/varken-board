@@ -4423,20 +4423,20 @@
     {
       "id": "mvlcjygp596ho",
       "project": "goblingame",
-      "type": "idea",
+      "type": "fix",
       "priority": "soon",
       "status": "open",
       "title": "fix camera inside buildings",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "area": "",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792782738745,
-      "updated": 1792782738745
+      "updated": 1793006631008
     },
     {
       "id": "mvlcky9djoj3w",
@@ -4478,19 +4478,19 @@
       "id": "mvochibjr99y7",
       "project": "goblingame",
       "type": "idea",
-      "priority": "soon",
+      "priority": "someday",
       "status": "open",
       "title": "get quests from your mirror to yourself",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "area": "",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792964023039,
-      "updated": 1792964023039
+      "updated": 1793006628011
     },
     {
       "id": "mvodf562gzctc",
