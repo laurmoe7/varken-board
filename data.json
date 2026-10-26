@@ -4760,7 +4760,7 @@
       "priority": "soon",
       "status": "open",
       "title": "have floating mage hand ring bell for the barge at the docks.",
-      "notes": "add light effect to carriage's lantern, like the player's lantern. also add this effect to lantern on the barge, and any other lanterns placed around",
+      "notes": "add light effect to carriage's lantern, like the player's lantern. also add this effect to lantern on the barge, and any other lanterns placed around. turn the lantern on the barge around so it doesnt clip into the ",
       "build": "",
       "effort": "",
       "area": "",
@@ -4769,7 +4769,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793028640096,
-      "updated": 1793028640096
+      "updated": 1793028976844
     }
   ],
   "notes": [
