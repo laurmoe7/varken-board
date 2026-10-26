@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T09:23:35.698Z_
+_Updated 2026-10-26T09:23:45.300Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -185,11 +185,8 @@ _42 done._
 - [ ] 🔧 **fix broken geometry right outside waterfall cave** _(easy)_ `mvojntxds7fvq`
   - images: images/mvojnnlwc3xhw.jpg
 - [ ] 🔧 **check if rare drops are giving luk exp as intended (like the golden egg)** _(easy)_ `mvoitewfwbr7u`
-- [ ] 🐛 **twig bow not sheathing properly** `mvoiis4t5uwqv`
+- [ ] 🐛 **twig bow not sheathing properly** _(medium)_ `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
-- [ ] 💡 **sun turns black at end of day, and dawn.** `mvodf562gzctc`
-  > it also suddenly disappears. lets improve the look of the skybox
-  - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
 - [ ] 💡 **fix camera inside buildings** `mvlcjygp596ho`
 - [ ] 💡 **lights along paths, fireflies at night. not mobs, just firefly effect.** `mvl92e3dcl80x`
@@ -198,5 +195,5 @@ _42 done._
 - [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
   > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
 
-_9 done._
+_10 done._
 
