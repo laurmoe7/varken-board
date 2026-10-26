@@ -4641,6 +4641,24 @@
       "slot": "",
       "created": 1792976075329,
       "updated": 1792976077664
+    },
+    {
+      "id": "mvokys6449zn7",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "button to sheath and unsheath weapon",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792978265884,
+      "updated": 1792978265884
     }
   ],
   "notes": [
