@@ -4659,6 +4659,24 @@
       "slot": "",
       "created": 1792978265884,
       "updated": 1792978265884
+    },
+    {
+      "id": "mvokz95zhkfce",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sit emote. restore more hp while out of combat",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1792978287911,
+      "updated": 1792978287911
     }
   ],
   "notes": [
