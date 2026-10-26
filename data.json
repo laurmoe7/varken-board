@@ -4497,20 +4497,20 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "sun turns black at end of day, and dawn.",
       "notes": "it also suddenly disappears. lets improve the look of the skybox",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793006620025,
       "images": [
         "mvodf493la790"
       ],
       "gallery": false,
       "slot": "",
       "created": 1792965592298,
-      "updated": 1793004602004
+      "updated": 1793006620025
     },
     {
       "id": "mvoe70spvbapc",
@@ -4593,7 +4593,7 @@
       "title": "twig bow not sheathing properly",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "area": "",
       "doneAt": 0,
       "images": [
@@ -4602,12 +4602,12 @@
       "gallery": false,
       "slot": "",
       "created": 1792974160109,
-      "updated": 1792974160109
+      "updated": 1793006617225
     },
     {
       "id": "mvoitewfwbr7u",
       "project": "goblingame",
-      "type": "idea",
+      "type": "fix",
       "priority": "soon",
       "status": "open",
       "title": "check if rare drops are giving luk exp as intended (like the golden egg)",
@@ -4620,7 +4620,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792974656175,
-      "updated": 1793006613879
+      "updated": 1793006614852
     },
     {
       "id": "mvojntxds7fvq",
