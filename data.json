@@ -4498,8 +4498,8 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "sun turns black at end of day, and dawn",
-      "notes": "",
+      "title": "sun turns black at end of day, and dawn.",
+      "notes": "it also suddenly disappears. lets improve the look of the skybox",
       "build": "",
       "effort": "",
       "area": "",
@@ -4510,7 +4510,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792965592298,
-      "updated": 1792965592298
+      "updated": 1793004602004
     },
     {
       "id": "mvoe70spvbapc",
