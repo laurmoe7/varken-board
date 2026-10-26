@@ -4752,6 +4752,24 @@
       "slot": "",
       "created": 1793021072889,
       "updated": 1793021072889
+    },
+    {
+      "id": "mvpeyh5sns0g0",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "have floating mage hand ring bell for the barge at the docks.",
+      "notes": "add light effect to carriage's lantern, like the player's lantern. also add this effect to lantern on the barge, and any other lanterns placed around",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793028640096,
+      "updated": 1793028640096
     }
   ],
   "notes": [
