@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T09:23:56.031Z_
+_Updated 2026-10-26T09:24:17.355Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -178,7 +178,7 @@ _42 done._
 
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
-  > round part around cow also doesnt stay around neck when changing elevation and turning around.
+  > round part around cow also doesnt stay around neck when changing elevation and turning around. add light effect to carriage's lantern, like the player's lantern.
   - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
 - [ ] 💡 **sit emote. restore more hp while out of combat** _(easy)_ `mvokz95zhkfce`
 - [ ] 💡 **button to sheath and unsheath weapon** _(medium)_ `mvokys6449zn7`
