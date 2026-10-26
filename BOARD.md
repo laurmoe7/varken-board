@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T01:02:19.266Z_
+_Updated 2026-10-26T01:31:10.791Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **button to sheath and unsheath weapon** `mvokys6449zn7`
 - [ ] 🔧 **fix broken geometry right outside waterfall cave** `mvojntxds7fvq`
   - images: images/mvojnnlwc3xhw.jpg
 - [ ] 💡 **check if rare drops are giving luk exp as intended (like the golden egg)** `mvoitewfwbr7u`
