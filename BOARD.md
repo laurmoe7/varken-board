@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T01:31:10.791Z_
+_Updated 2026-10-26T01:31:32.707Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **sit emote. restore more hp while out of combat** `mvokz95zhkfce`
 - [ ] 💡 **button to sheath and unsheath weapon** `mvokys6449zn7`
 - [ ] 🔧 **fix broken geometry right outside waterfall cave** `mvojntxds7fvq`
   - images: images/mvojnnlwc3xhw.jpg
