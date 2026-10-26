@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T09:23:17.645Z_
+_Updated 2026-10-26T09:23:28.055Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,10 +177,10 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
-- [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** `mvp0m30ma1riq`
+- [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
   > round part around cow also doesnt stay around neck when changing elevation and turning around.
   - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
-- [ ] 💡 **sit emote. restore more hp while out of combat** `mvokz95zhkfce`
+- [ ] 💡 **sit emote. restore more hp while out of combat** _(easy)_ `mvokz95zhkfce`
 - [ ] 💡 **button to sheath and unsheath weapon** `mvokys6449zn7`
 - [ ] 🔧 **fix broken geometry right outside waterfall cave** `mvojntxds7fvq`
   - images: images/mvojnnlwc3xhw.jpg
