@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T15:36:22.095Z_
+_Updated 2026-10-26T15:36:29.388Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,7 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **have floating mage hand ring bell for the barge at the docks.** `mvpeyh5sns0g0`
-  > add light effect to carriage's lantern, like the player's lantern. also add this effect to lantern on the barge, and any other lanterns placed around. turn the lantern on the barge around so it doesnt clip into the piece of c
+  > add light effect to carriage's lantern, like the player's lantern. also add this effect to lantern on the barge, and any other lanterns placed around. turn the lantern on the barge around so it doesnt clip into the piece of cloth.
 - [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ `mvpaga9lrd1y0`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
