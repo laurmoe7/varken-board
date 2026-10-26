@@ -4553,18 +4553,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "npc carriage that travels between goblin village and south beach, along the road.",
       "notes": "driven by a goblin, a cow pulling the carriage.",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1792976534125,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792970719057,
-      "updated": 1792970719057
+      "updated": 1792976534125
     },
     {
       "id": "mvoh0zatc75no",
