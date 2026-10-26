@@ -4613,14 +4613,14 @@
       "title": "check if rare drops are giving luk exp as intended (like the golden egg)",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792974656175,
-      "updated": 1792974656175
+      "updated": 1793006613879
     },
     {
       "id": "mvojntxds7fvq",
@@ -4631,7 +4631,7 @@
       "title": "fix broken geometry right outside waterfall cave",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "",
       "doneAt": 0,
       "images": [
@@ -4640,7 +4640,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792976075329,
-      "updated": 1792976077664
+      "updated": 1793006610753
     },
     {
       "id": "mvokys6449zn7",
@@ -4651,14 +4651,14 @@
       "title": "button to sheath and unsheath weapon",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "medium",
       "area": "",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792978265884,
-      "updated": 1792978265884
+      "updated": 1793006609141
     },
     {
       "id": "mvokz95zhkfce",
