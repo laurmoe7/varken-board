@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T09:24:17.355Z_
+_Updated 2026-10-26T09:37:15.586Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -189,7 +189,6 @@ _42 done._
   - images: images/mvoifghsb5ysv.jpg
 - [ ] 🔧 **fix camera inside buildings** _(medium)_ `mvlcjygp596ho`
 - [ ] 💡 **lights along paths, fireflies at night. not mobs, just firefly effect.** `mvl92e3dcl80x`
-- [ ] 💡 **sheath weapons on back when not in combat** `mvl7p2akag3ni`
 - [ ] 💡 **exploration items, think wod leveling experience** _(medium)_ `mvl4yt31a8dg1`
 - [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
   > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
@@ -198,5 +197,5 @@ _42 done._
 
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_10 done._
+_11 done._
 
