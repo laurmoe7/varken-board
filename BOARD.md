@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T08:49:13.953Z_
+_Updated 2026-10-26T08:50:06.562Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -185,7 +185,8 @@ _42 done._
 - [ ] 💡 **check if rare drops are giving luk exp as intended (like the golden egg)** `mvoitewfwbr7u`
 - [ ] 🐛 **twig bow not sheathing properly** `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
-- [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
+- [ ] 💡 **sun turns black at end of day, and dawn.** `mvodf562gzctc`
+  > it also suddenly disappears. lets improve the look of the skybox
   - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
 - [ ] 💡 **fix camera inside buildings** `mvlcjygp596ho`
