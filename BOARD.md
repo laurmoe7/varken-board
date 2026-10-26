@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T00:54:47.100Z_
+_Updated 2026-10-26T01:02:19.266Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,8 +181,6 @@ _42 done._
 - [ ] 💡 **check if rare drops are giving luk exp as intended (like the golden egg)** `mvoitewfwbr7u`
 - [ ] 🐛 **twig bow not sheathing properly** `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
-- [ ] 💡 **npc carriage that travels between goblin village and south beach, along the road.** `mvogh101f73da`
-  > driven by a goblin, a cow pulling the carriage.
 - [ ] 💡 **sun turns black at end of day, and dawn** `mvodf562gzctc`
   - images: images/mvodf493la790.jpg
 - [ ] 💡 **get quests from your mirror to yourself** `mvochibjr99y7`
@@ -193,5 +191,5 @@ _42 done._
 - [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
   > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
 
-_7 done._
+_8 done._
 
