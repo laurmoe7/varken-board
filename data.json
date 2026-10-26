@@ -4677,6 +4677,26 @@
       "slot": "",
       "created": 1792978287911,
       "updated": 1792978287911
+    },
+    {
+      "id": "mvp0m30ma1riq",
+      "project": "goblingame",
+      "type": "bug",
+      "priority": "soon",
+      "status": "open",
+      "title": "reigns not attached to drivers hands or cow in traveling carriage",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mvp0m24ufc8f2"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1793004547270,
+      "updated": 1793004550445
     }
   ],
   "notes": [
@@ -5001,6 +5021,10 @@
     "mvojnnlwc3xhw": {
       "name": "image.png",
       "added": 1792976067145
+    },
+    "mvp0m24ufc8f2": {
+      "name": "image.png",
+      "added": 1793004546130
     }
   }
 }
