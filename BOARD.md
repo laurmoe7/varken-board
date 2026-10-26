@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T01:31:32.707Z_
+_Updated 2026-10-26T08:49:13.953Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,8 @@ _42 done._
 
 ### Soon
 
+- [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** `mvp0m30ma1riq`
+  - images: images/mvp0m24ufc8f2.jpg
 - [ ] 💡 **sit emote. restore more hp while out of combat** `mvokz95zhkfce`
 - [ ] 💡 **button to sheath and unsheath weapon** `mvokys6449zn7`
 - [ ] 🔧 **fix broken geometry right outside waterfall cave** `mvojntxds7fvq`
