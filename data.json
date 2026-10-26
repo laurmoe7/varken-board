@@ -4583,6 +4583,26 @@
       "slot": "",
       "created": 1792971649973,
       "updated": 1792972015651
+    },
+    {
+      "id": "mvoiis4t5uwqv",
+      "project": "goblingame",
+      "type": "bug",
+      "priority": "soon",
+      "status": "open",
+      "title": "twig bow not sheathing properly",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mvoifghsb5ysv"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1792974160109,
+      "updated": 1792974160109
     }
   ],
   "notes": [
