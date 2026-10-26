@@ -4669,14 +4669,14 @@
       "title": "sit emote. restore more hp while out of combat",
       "notes": "",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "",
       "doneAt": 0,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792978287911,
-      "updated": 1792978287911
+      "updated": 1793006602954
     },
     {
       "id": "mvp0m30ma1riq",
@@ -4687,7 +4687,7 @@
       "title": "reigns not attached to drivers hands or cow in traveling carriage",
       "notes": "round part around cow also doesnt stay around neck when changing elevation and turning around.",
       "build": "",
-      "effort": "",
+      "effort": "easy",
       "area": "",
       "doneAt": 0,
       "images": [
@@ -4697,7 +4697,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793004547270,
-      "updated": 1793004880926
+      "updated": 1793006606113
     },
     {
       "id": "mvp1gxp3r4q9c",
