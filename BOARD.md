@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T00:54:31.919Z_
+_Updated 2026-10-26T00:54:47.100Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,8 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **remove paint bucket behind king's building** _(doing)_ `mvoh0zatc75no`
+- [ ] 🔧 **fix broken geometry right outside waterfall cave** `mvojntxds7fvq`
+  - images: images/mvojnnlwc3xhw.jpg
 - [ ] 💡 **check if rare drops are giving luk exp as intended (like the golden egg)** `mvoitewfwbr7u`
 - [ ] 🐛 **twig bow not sheathing properly** `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
@@ -192,5 +193,5 @@ _42 done._
 - [ ] 💡 **day/night cycle and a way to test it.** _(medium)_ `mvl3hyxn6ddie`
   > when adding this, make lantern more effective. possibly add special monsters at night, like undead.
 
-_6 done._
+_7 done._
 
