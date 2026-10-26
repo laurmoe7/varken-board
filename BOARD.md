@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T00:22:47.073Z_
+_Updated 2026-10-26T00:31:01.956Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **remove paint bucket behind king's building** _(doing)_ `mvoh0zatc75no`
+- [ ] 💡 **check if rare drops are giving luk exp as intended (like the golden egg)** `mvoitewfwbr7u`
 - [ ] 🐛 **twig bow not sheathing properly** `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
 - [ ] 💡 **npc carriage that travels between goblin village and south beach, along the road.** `mvogh101f73da`
