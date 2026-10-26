@@ -4698,6 +4698,24 @@
       "slot": "",
       "created": 1793004547270,
       "updated": 1793004880926
+    },
+    {
+      "id": "mvp1gxp3r4q9c",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "keep coordinates on my screen to make it easier for you to find me when i send screenshots. put them in the bottom left or something. disable turning off the health bar in the top left by pressing p. that menu should not toggle off. add search bar to dev tool item list and update list.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793005986711,
+      "updated": 1793005986711
     }
   ],
   "notes": [
