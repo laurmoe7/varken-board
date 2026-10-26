@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T08:54:48.153Z_
+_Updated 2026-10-26T09:13:12.281Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **keep coordinates on my screen to make it easier for you to find me when i send screenshots. put them in the bottom left or something. disable turning off the health bar in the top left by pressing p. that menu should not toggle off. add search bar to dev tool item list and update list.** `mvp1gxp3r4q9c`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** `mvp0m30ma1riq`
   > round part around cow also doesnt stay around neck when changing elevation and turning around.
   - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
