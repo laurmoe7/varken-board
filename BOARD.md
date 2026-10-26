@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T16:01:29.306Z_
+_Updated 2026-10-26T16:01:49.446Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,9 @@ _42 done._
 
 ### Soon
 
+- [ ] 🔧 **mage hand at south beach not animated.** `mvpg2dcyo0imv`
+  > back of bell model not rendering.
+  - images: images/mvpg1zz6p4wjq.jpg
 - [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ `mvpaga9lrd1y0`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
