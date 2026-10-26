@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T09:23:28.055Z_
+_Updated 2026-10-26T09:23:35.698Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,10 +181,10 @@ _42 done._
   > round part around cow also doesnt stay around neck when changing elevation and turning around.
   - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
 - [ ] 💡 **sit emote. restore more hp while out of combat** _(easy)_ `mvokz95zhkfce`
-- [ ] 💡 **button to sheath and unsheath weapon** `mvokys6449zn7`
-- [ ] 🔧 **fix broken geometry right outside waterfall cave** `mvojntxds7fvq`
+- [ ] 💡 **button to sheath and unsheath weapon** _(medium)_ `mvokys6449zn7`
+- [ ] 🔧 **fix broken geometry right outside waterfall cave** _(easy)_ `mvojntxds7fvq`
   - images: images/mvojnnlwc3xhw.jpg
-- [ ] 💡 **check if rare drops are giving luk exp as intended (like the golden egg)** `mvoitewfwbr7u`
+- [ ] 🔧 **check if rare drops are giving luk exp as intended (like the golden egg)** _(easy)_ `mvoitewfwbr7u`
 - [ ] 🐛 **twig bow not sheathing properly** `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
 - [ ] 💡 **sun turns black at end of day, and dawn.** `mvodf562gzctc`
