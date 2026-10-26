@@ -4685,7 +4685,7 @@
       "priority": "soon",
       "status": "open",
       "title": "reigns not attached to drivers hands or cow in traveling carriage",
-      "notes": "round part around cow also doesnt stay around neck when changing elevation and turning around.",
+      "notes": "round part around cow also doesnt stay around neck when changing elevation and turning around. add light effect to carriage's lantern, like the player's lantern.",
       "build": "",
       "effort": "easy",
       "area": "",
@@ -4697,7 +4697,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793004547270,
-      "updated": 1793006606113
+      "updated": 1793006652543
     },
     {
       "id": "mvp1gxp3r4q9c",
