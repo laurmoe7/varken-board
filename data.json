@@ -4648,8 +4648,8 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "button to sheath and unsheath weapon",
-      "notes": "",
+      "title": "button to sheath and unsheath weapon.",
+      "notes": "have 2 different idles/ walk animations. 1 while holding a weapon and 1 while not.",
       "build": "",
       "effort": "medium",
       "area": "",
@@ -4658,7 +4658,7 @@
       "gallery": false,
       "slot": "",
       "created": 1792978265884,
-      "updated": 1793006609141
+      "updated": 1793007461982
     },
     {
       "id": "mvokz95zhkfce",
