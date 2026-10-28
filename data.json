@@ -4776,7 +4776,7 @@
       "project": "goblingame",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "mage hand at south beach not animated.",
       "notes": "back of bell model not rendering.",
       "build": "",
@@ -4789,7 +4789,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793030501410,
-      "updated": 1793030501410
+      "updated": 1793187503772
     },
     {
       "id": "mvreg0d69xp5o",
