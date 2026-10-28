@@ -4864,6 +4864,24 @@
       "slot": "",
       "created": 1793198533131,
       "updated": 1793198533131
+    },
+    {
+      "id": "mvsmpcqubq5jq",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "setting to turn down fog",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793223049926,
+      "updated": 1793223049926
     }
   ],
   "notes": [
