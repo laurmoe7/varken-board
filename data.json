@@ -4776,20 +4776,20 @@
       "project": "goblingame",
       "type": "fix",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "mage hand at south beach not animated.",
       "notes": "back of bell model not rendering.",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793193186879,
       "images": [
         "mvpg1zz6p4wjq"
       ],
       "gallery": false,
       "slot": "",
       "created": 1793030501410,
-      "updated": 1793187503772
+      "updated": 1793193186879
     },
     {
       "id": "mvreg0d69xp5o",
@@ -4826,6 +4826,24 @@
       "slot": "",
       "created": 1793149121594,
       "updated": 1793159308989
+    },
+    {
+      "id": "mvs4x8pmisglf",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "fun casino is dragon area",
+      "notes": "",
+      "build": "",
+      "effort": "hard",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793193184858,
+      "updated": 1793193184858
     }
   ],
   "notes": [
