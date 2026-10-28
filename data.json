@@ -4790,6 +4790,24 @@
       "slot": "",
       "created": 1793030501410,
       "updated": 1793030501410
+    },
+    {
+      "id": "mvreg0d69xp5o",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sort inventory button",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793148710874,
+      "updated": 1793148710874
     }
   ],
   "notes": [
