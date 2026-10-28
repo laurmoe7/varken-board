@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-28T13:13:12.097Z_
+_Updated 2026-10-28T14:42:19.994Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,8 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **missing support pole on ship towers** `mvs83vgr3t4bm`
+  - images: images/mvs83ue0zh1v1.jpg
 - [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** `mvreota2ab1tl`
 - [ ] 💡 **sort inventory button** `mvreg0d69xp5o`
 - [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ `mvpaga9lrd1y0`
