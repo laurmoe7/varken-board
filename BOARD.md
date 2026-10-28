@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-26T16:01:49.446Z_
+_Updated 2026-10-28T00:51:56.081Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **sort inventory button** `mvreg0d69xp5o`
 - [ ] 🔧 **mage hand at south beach not animated.** `mvpg2dcyo0imv`
   > back of bell model not rendering.
   - images: images/mvpg1zz6p4wjq.jpg
