@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-28T00:51:56.081Z_
+_Updated 2026-10-28T00:58:47.274Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **be able to climb up ladder on barge by pressing f on it from water** `mvreota2ab1tl`
 - [ ] 💡 **sort inventory button** `mvreg0d69xp5o`
 - [ ] 🔧 **mage hand at south beach not animated.** `mvpg2dcyo0imv`
   > back of bell model not rendering.
