@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-28T11:38:30.762Z_
+_Updated 2026-10-28T13:13:12.097Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 🔧 **mage hand at south beach not animated.** _(doing)_ `mvpg2dcyo0imv`
-  > back of bell model not rendering.
-  - images: images/mvpg1zz6p4wjq.jpg
 - [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** `mvreota2ab1tl`
 - [ ] 💡 **sort inventory button** `mvreg0d69xp5o`
 - [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ `mvpaga9lrd1y0`
@@ -198,7 +195,8 @@ _42 done._
 
 ### Someday
 
+- [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_14 done._
+_15 done._
 
