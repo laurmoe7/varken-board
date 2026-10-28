@@ -4815,7 +4815,7 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "be able to climb up ladder on barge by pressing f on it from water",
+      "title": "be able to climb up ladder on barge to get on barge by pressing f on it from water",
       "notes": "",
       "build": "",
       "effort": "",
@@ -4825,7 +4825,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793149121594,
-      "updated": 1793159288761
+      "updated": 1793159308989
     }
   ],
   "notes": [
