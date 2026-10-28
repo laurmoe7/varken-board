@@ -4844,6 +4844,26 @@
       "slot": "",
       "created": 1793193184858,
       "updated": 1793193184858
+    },
+    {
+      "id": "mvs83vgr3t4bm",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "missing support pole on ship towers",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mvs83ue0zh1v1"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1793198533131,
+      "updated": 1793198533131
     }
   ],
   "notes": [
@@ -5180,6 +5200,10 @@
     "mvpg1zz6p4wjq": {
       "name": "image.png",
       "added": 1793030484072
+    },
+    "mvs83ue0zh1v1": {
+      "name": "image.png",
+      "added": 1793198531743
     }
   }
 }
