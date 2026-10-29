@@ -4954,6 +4954,24 @@
       "slot": "",
       "created": 1793290987814,
       "updated": 1793290987814
+    },
+    {
+      "id": "mvty0tk4netsi",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "chat box. shows item drops and npc chatter",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793302526884,
+      "updated": 1793302526884
     }
   ],
   "notes": [
