@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T22:32:25.031Z_
+_Updated 2026-10-29T23:06:16.492Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **option to disabled "enhanced shadows", the special shadow effect from bonfires** `mvu5jtn0974d3`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **need way to abandon quests** `mvu3mhkqmoksq`
 - [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
