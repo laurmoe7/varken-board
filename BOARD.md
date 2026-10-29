@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T22:10:11.824Z_
+_Updated 2026-10-29T22:12:20.786Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **need way to abandon quests** `mvu3mhkqmoksq`
 - [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
 - [ ] 💡 **add debuff when you have stolen pack.** `mvu1na7pkpt0n`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
