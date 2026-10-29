@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T15:35:18.654Z_
+_Updated 2026-10-29T15:35:27.377Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -190,7 +190,6 @@ _42 done._
 - [ ] 💡 **sit emote. restore more hp while out of combat** _(easy)_ `mvokz95zhkfce`
 - [ ] 💡 **button to sheath and unsheath weapon.** _(medium)_ `mvokys6449zn7`
   > have 2 different idles/ walk animations. 1 while holding a weapon and 1 while not.
-- [ ] 🔧 **check if rare drops are giving luk exp as intended (like the golden egg)** _(easy)_ `mvoitewfwbr7u`
 - [ ] 🐛 **twig bow not sheathing properly** _(medium)_ `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
 - [ ] 🔧 **fix camera inside buildings** _(medium)_ `mvlcjygp596ho`
@@ -202,5 +201,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_17 done._
+_18 done._
 
