@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T22:12:20.786Z_
+_Updated 2026-10-29T22:23:05.233Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **need way to abandon quests** `mvu3mhkqmoksq`
 - [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
 - [ ] 💡 **add debuff when you have stolen pack.** `mvu1na7pkpt0n`
