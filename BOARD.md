@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T19:35:32.307Z_
+_Updated 2026-10-29T19:54:42.614Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,10 +176,10 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **housing farming** `mvtyphb17jqd0`
 - [ ] 💡 **chat box. shows item drops and npc chatter** `mvty0tk4netsi`
 - [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
-- [ ] 💡 **better lighting effects on both bonfires** `mvtnktaimvn2r`
 - [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
@@ -199,5 +199,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_21 done._
+_22 done._
 
