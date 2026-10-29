@@ -4740,7 +4740,7 @@
       "project": "goblingame",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "fix flickering shadows on full wobble settings",
       "notes": "",
       "build": "",
@@ -4751,7 +4751,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793021072889,
-      "updated": 1793021072889
+      "updated": 1793288113726
     },
     {
       "id": "mvpeyh5sns0g0",
