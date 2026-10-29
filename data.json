@@ -4979,8 +4979,8 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "housing farming",
-      "notes": "",
+      "title": "add farming for housing. no skill for it yet, if ever.",
+      "notes": "add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start",
       "build": "",
       "effort": "",
       "area": "",
@@ -4989,7 +4989,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793303677405,
-      "updated": 1793303677405
+      "updated": 1793304451753
     },
     {
       "id": "mvtys7zbc2bov",
