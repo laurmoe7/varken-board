@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T20:44:08.083Z_
+_Updated 2026-10-29T21:16:59.042Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **add debuff when you have stolen pack.** `mvu1na7pkpt0n`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
 - [ ] 💡 **make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.** `mvtyvcwsuizfa`
