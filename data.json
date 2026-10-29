@@ -5080,6 +5080,24 @@
       "slot": "",
       "created": 1793308613749,
       "updated": 1793308613749
+    },
+    {
+      "id": "mvu3jpyvfxnht",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "secondary resources for classes. mana, rage, energy..",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793311806775,
+      "updated": 1793311806775
     }
   ],
   "notes": [
