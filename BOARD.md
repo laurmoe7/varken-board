@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T16:23:12.992Z_
+_Updated 2026-10-29T18:43:32.369Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **missing support pole on ship towers** _(doing)_ `mvs83vgr3t4bm`
-  - images: images/mvs83ue0zh1v1.jpg
-- [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** _(doing)_ `mvreota2ab1tl`
 - [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ _(doing)_ `mvpaga9lrd1y0`
 - [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
@@ -202,5 +199,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_18 done._
+_20 done._
 
