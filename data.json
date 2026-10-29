@@ -4900,6 +4900,24 @@
       "slot": "",
       "created": 1793235579874,
       "updated": 1793283388062
+    },
+    {
+      "id": "mvtnktaimvn2r",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "better lighting effects on both bonfires",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793284983882,
+      "updated": 1793284983882
     }
   ],
   "notes": [
