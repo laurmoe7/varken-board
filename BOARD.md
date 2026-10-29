@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T15:35:03.359Z_
+_Updated 2026-10-29T15:35:18.654Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -179,10 +179,10 @@ _42 done._
 - [ ] 💡 **missing support pole on ship towers** _(doing)_ `mvs83vgr3t4bm`
   - images: images/mvs83ue0zh1v1.jpg
 - [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** _(doing)_ `mvreota2ab1tl`
+- [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ _(doing)_ `mvpaga9lrd1y0`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **better lighting effects on both bonfires** `mvtnktaimvn2r`
 - [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
-- [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ `mvpaga9lrd1y0`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
   > round part around cow also doesnt stay around neck when changing elevation and turning around. 
