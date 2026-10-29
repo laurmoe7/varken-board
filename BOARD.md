@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T20:08:04.997Z_
+_Updated 2026-10-29T20:08:56.789Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -179,7 +179,7 @@ _42 done._
 - [ ] 💡 **make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.** `mvtyvcwsuizfa`
 - [ ] 💡 **improve king's hut. make it more impressive, like a guarded tower with multiple stories. for the moment, no invisible wall so i can get inside. put in a throne with the king sitting on it. just put a goblin model there for now, sitting on the throne.** `mvtys7zbc2bov`
 - [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
-  > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start. stuffed pumpkin made with pumpkin, bread, 
+  > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.
 - [ ] 💡 **chat box. shows item drops and npc chatter** `mvty0tk4netsi`
 - [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
