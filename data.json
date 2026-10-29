@@ -5026,6 +5026,24 @@
       "slot": "",
       "created": 1793303951644,
       "updated": 1793303951644
+    },
+    {
+      "id": "mvu0eaxr1gfk3",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make item descriptions much simpler. no extra details or quirky text",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793306515167,
+      "updated": 1793306515167
     }
   ],
   "notes": [
