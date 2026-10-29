@@ -4796,25 +4796,25 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "sort inventory button",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793283393116,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793148710874,
-      "updated": 1793148710874
+      "updated": 1793283393116
     },
     {
       "id": "mvreota2ab1tl",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "be able to climb up ladder on barge to get on barge by pressing f on it from water",
       "notes": "",
       "build": "",
@@ -4825,7 +4825,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793149121594,
-      "updated": 1793159308989
+      "updated": 1793283391687
     },
     {
       "id": "mvs4x8pmisglf",
@@ -4850,7 +4850,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "missing support pole on ship towers",
       "notes": "",
       "build": "",
@@ -4863,14 +4863,14 @@
       "gallery": false,
       "slot": "",
       "created": 1793198533131,
-      "updated": 1793198533131
+      "updated": 1793283390148
     },
     {
       "id": "mvsmpcqubq5jq",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "setting to turn down fog",
       "notes": "",
       "build": "",
@@ -4881,7 +4881,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793223049926,
-      "updated": 1793223049926
+      "updated": 1793283388812
     },
     {
       "id": "mvsu5wwy8ev5c",
@@ -4899,7 +4899,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793235579874,
-      "updated": 1793235579874
+      "updated": 1793283388062
     }
   ],
   "notes": [
