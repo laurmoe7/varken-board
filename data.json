@@ -4961,7 +4961,7 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "chat box. shows item drops and npc chatter",
+      "title": "chat box. shows item drops and npc chatter, exp gains. give options",
       "notes": "",
       "build": "",
       "effort": "",
@@ -4971,7 +4971,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793302526884,
-      "updated": 1793302526884
+      "updated": 1793305937746
     },
     {
       "id": "mvtyphb17jqd0",
