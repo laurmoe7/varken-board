@@ -4972,6 +4972,24 @@
       "slot": "",
       "created": 1793302526884,
       "updated": 1793302526884
+    },
+    {
+      "id": "mvtyphb17jqd0",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "housing farming",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793303677405,
+      "updated": 1793303677405
     }
   ],
   "notes": [
