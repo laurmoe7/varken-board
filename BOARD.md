@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T00:59:45.053Z_
+_Updated 2026-10-29T14:16:37.858Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,12 +176,11 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
-- [ ] 💡 **setting to turn down fog** `mvsmpcqubq5jq`
-- [ ] 💡 **missing support pole on ship towers** `mvs83vgr3t4bm`
+- [ ] 💡 **setting to turn down fog** _(doing)_ `mvsmpcqubq5jq`
+- [ ] 💡 **missing support pole on ship towers** _(doing)_ `mvs83vgr3t4bm`
   - images: images/mvs83ue0zh1v1.jpg
-- [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** `mvreota2ab1tl`
-- [ ] 💡 **sort inventory button** `mvreg0d69xp5o`
+- [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** _(doing)_ `mvreota2ab1tl`
+- [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
 - [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ `mvpaga9lrd1y0`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
@@ -202,5 +201,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_15 done._
+_16 done._
 
