@@ -4918,6 +4918,24 @@
       "slot": "",
       "created": 1793284983882,
       "updated": 1793284983882
+    },
+    {
+      "id": "mvtownh09tx6j",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "improve hp bar over character",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793287215828,
+      "updated": 1793287215828
     }
   ],
   "notes": [
