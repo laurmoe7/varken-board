@@ -5152,6 +5152,24 @@
       "slot": "",
       "created": 1793313139955,
       "updated": 1793313139955
+    },
+    {
+      "id": "mvu5jtn0974d3",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "option to disabled \"enhanced shadows\", the special shadow effect from bonfires",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793315170764,
+      "updated": 1793315170764
     }
   ],
   "notes": [
