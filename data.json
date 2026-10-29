@@ -4609,18 +4609,18 @@
       "project": "goblingame",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "check if rare drops are giving luk exp as intended (like the golden egg)",
       "notes": "",
       "build": "",
       "effort": "easy",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793288122287,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792974656175,
-      "updated": 1793006614852
+      "updated": 1793288122287
     },
     {
       "id": "mvojntxds7fvq",
