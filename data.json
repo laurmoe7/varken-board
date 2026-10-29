@@ -4936,6 +4936,24 @@
       "slot": "",
       "created": 1793287215828,
       "updated": 1793287215828
+    },
+    {
+      "id": "mvtr5hyex4ax1",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need to be able to jump in water",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793290987814,
+      "updated": 1793290987814
     }
   ],
   "notes": [
