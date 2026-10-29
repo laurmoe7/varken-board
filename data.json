@@ -5062,6 +5062,24 @@
       "slot": "",
       "created": 1793306642912,
       "updated": 1793306642912
+    },
+    {
+      "id": "mvu1na7pkpt0n",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add debuff when you have stolen pack.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793308613749,
+      "updated": 1793308613749
     }
   ],
   "notes": [
