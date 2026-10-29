@@ -4814,18 +4814,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "be able to climb up ladder on barge to get on barge by pressing f on it from water",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793299407151,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793149121594,
-      "updated": 1793283391687
+      "updated": 1793299407151
     },
     {
       "id": "mvs4x8pmisglf",
@@ -4850,20 +4850,20 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "missing support pole on ship towers",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793299405796,
       "images": [
         "mvs83ue0zh1v1"
       ],
       "gallery": false,
       "slot": "",
       "created": 1793198533131,
-      "updated": 1793283390148
+      "updated": 1793299405796
     },
     {
       "id": "mvsmpcqubq5jq",
