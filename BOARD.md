@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T14:43:09.392Z_
+_Updated 2026-10-29T15:20:21.561Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,6 +180,7 @@ _42 done._
 - [ ] 💡 **missing support pole on ship towers** _(doing)_ `mvs83vgr3t4bm`
   - images: images/mvs83ue0zh1v1.jpg
 - [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** _(doing)_ `mvreota2ab1tl`
+- [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **better lighting effects on both bonfires** `mvtnktaimvn2r`
 - [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
 - [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ `mvpaga9lrd1y0`
