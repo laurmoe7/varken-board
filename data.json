@@ -4882,6 +4882,24 @@
       "slot": "",
       "created": 1793223049926,
       "updated": 1793223049926
+    },
+    {
+      "id": "mvsu5wwy8ev5c",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "chicken coop",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793235579874,
+      "updated": 1793235579874
     }
   ],
   "notes": [
