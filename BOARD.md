@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T15:20:21.561Z_
+_Updated 2026-10-29T15:35:03.359Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **setting to turn down fog** _(doing)_ `mvsmpcqubq5jq`
 - [ ] 💡 **missing support pole on ship towers** _(doing)_ `mvs83vgr3t4bm`
   - images: images/mvs83ue0zh1v1.jpg
 - [ ] 💡 **be able to climb up ladder on barge to get on barge by pressing f on it from water** _(doing)_ `mvreota2ab1tl`
@@ -203,5 +202,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_16 done._
+_17 done._
 
