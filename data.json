@@ -5116,6 +5116,24 @@
       "slot": "",
       "created": 1793311935866,
       "updated": 1793311935866
+    },
+    {
+      "id": "mvu409z72ux07",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make dropped packs bigger",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793312579203,
+      "updated": 1793312579203
     }
   ],
   "notes": [
