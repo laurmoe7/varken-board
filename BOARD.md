@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T18:48:13.676Z_
+_Updated 2026-10-29T19:35:32.307Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **chat box. shows item drops and npc chatter** `mvty0tk4netsi`
 - [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **better lighting effects on both bonfires** `mvtnktaimvn2r`
