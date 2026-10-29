@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T18:43:32.369Z_
+_Updated 2026-10-29T18:48:13.676Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 🔧 **fix flickering shadows on full wobble settings** _(medium)_ _(doing)_ `mvpaga9lrd1y0`
 - [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **better lighting effects on both bonfires** `mvtnktaimvn2r`
@@ -199,5 +198,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_20 done._
+_21 done._
 
