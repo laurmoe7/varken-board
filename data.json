@@ -5098,6 +5098,24 @@
       "slot": "",
       "created": 1793311806775,
       "updated": 1793311806775
+    },
+    {
+      "id": "mvu3mhkqmoksq",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need way to abandon quests",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793311935866,
+      "updated": 1793311935866
     }
   ],
   "notes": [
