@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T20:32:23.170Z_
+_Updated 2026-10-29T20:42:00.538Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
 - [ ] 💡 **make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.** `mvtyvcwsuizfa`
 - [ ] 💡 **improve king's hut. make it more impressive, like a guarded tower with multiple stories. for the moment, no invisible wall so i can get inside. put in a throne with the king sitting on it. just put a goblin model there for now, sitting on the throne.** `mvtys7zbc2bov`
 - [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
