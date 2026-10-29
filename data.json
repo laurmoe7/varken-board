@@ -5134,6 +5134,24 @@
       "slot": "",
       "created": 1793312579203,
       "updated": 1793312579203
+    },
+    {
+      "id": "mvu4cann5kq0m",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "someday",
+      "status": "open",
+      "title": "towns you can build up and repair by delivering packs",
+      "notes": "",
+      "build": "",
+      "effort": "hard",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793313139955,
+      "updated": 1793313139955
     }
   ],
   "notes": [
