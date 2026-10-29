@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-28T21:30:54.979Z_
+_Updated 2026-10-29T00:59:45.053Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
 - [ ] 💡 **setting to turn down fog** `mvsmpcqubq5jq`
 - [ ] 💡 **missing support pole on ship towers** `mvs83vgr3t4bm`
   - images: images/mvs83ue0zh1v1.jpg
