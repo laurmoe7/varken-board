@@ -4980,7 +4980,7 @@
       "priority": "soon",
       "status": "open",
       "title": "add farming for housing. no skill for it yet, if ever.",
-      "notes": "add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start. stuffed pumpkin made with pumpkin, bread, ",
+      "notes": "add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.",
       "build": "",
       "effort": "",
       "area": "",
@@ -4989,7 +4989,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793303677405,
-      "updated": 1793304479730
+      "updated": 1793304531803
     },
     {
       "id": "mvtys7zbc2bov",
