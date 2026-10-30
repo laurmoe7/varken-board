@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T16:07:09.767Z_
+_Updated 2026-10-30T16:07:17.216Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,8 +177,6 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.** _(doing)_ `mvtyvcwsuizfa`
-- [ ] 💡 **chat box. shows item drops and npc chatter, exp gains. give options** _(doing)_ `mvty0tk4netsi`
 - [ ] 💡 **consider bag of twigs in ammo slot. have the infinity symbol instead of saying "twigs" on it.** `mvv60p7w0u16a`
   > if you have no ammo equipped, then put on the bag of twigs. it still says "no arrows". fix this.
 - [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** `mvv0d49mh4itd`
@@ -212,5 +210,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_27 done._
+_29 done._
 
