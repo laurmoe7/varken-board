@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T16:13:50.305Z_
+_Updated 2026-10-30T21:52:17.492Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **make mobs 10+ levels higher than you have a skull for its level. you cant see their actual level** `mvvicjgxnjmqu`
 - [ ] 💡 **secondary classes need their original spells also displayed in the spell book.** `mvv69a82s04e5`
   > there is no description for thermal shock, twin threads.
 - [ ] 💡 **consider bag of twigs in ammo slot. have the infinity symbol instead of saying "twigs" on it.** `mvv60p7w0u16a`
