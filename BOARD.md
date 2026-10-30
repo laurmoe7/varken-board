@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T12:32:38.920Z_
+_Updated 2026-10-30T12:32:46.399Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,9 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **make interact key (f) look more like a keycap** _(doing)_ `mvuyat3bx4zk9`
 - [ ] 💡 **option to disabled "enhanced shadows", the special shadow effect from bonfires** _(doing)_ `mvu5jtn0974d3`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **make interact key (f) look more like a keycap** `mvuyat3bx4zk9`
 - [ ] 💡 **put categories on item tooltips. food, ingredients, junk, etc** `mvuya1f3cd0pa`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
