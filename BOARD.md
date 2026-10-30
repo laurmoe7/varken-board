@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T13:28:51.773Z_
+_Updated 2026-10-30T14:01:24.493Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.** _(doing)_ `mvtyvcwsuizfa`
 - [ ] 💡 **chat box. shows item drops and npc chatter, exp gains. give options** _(doing)_ `mvty0tk4netsi`
 - [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** `mvv0d49mh4itd`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
@@ -184,7 +185,6 @@ _42 done._
 - [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
-- [ ] 💡 **make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.** `mvtyvcwsuizfa`
 - [ ] 💡 **improve king's hut. make it more impressive, like a guarded tower with multiple stories. for the moment, no invisible wall so i can get inside. put in a throne with the king sitting on it. just put a goblin model there for now, sitting on the throne.** `mvtys7zbc2bov`
 - [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
   > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.
