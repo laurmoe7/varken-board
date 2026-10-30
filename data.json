@@ -4960,18 +4960,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "chat box. shows item drops and npc chatter, exp gains. give options",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793376431233,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793302526884,
-      "updated": 1793366340067
+      "updated": 1793376431233
     },
     {
       "id": "mvtyphb17jqd0",
@@ -5014,18 +5014,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793376430068,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793303951644,
-      "updated": 1793368879367
+      "updated": 1793376430068
     },
     {
       "id": "mvu0eaxr1gfk3",
