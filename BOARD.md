@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-29T23:20:58.100Z_
+_Updated 2026-10-30T00:24:43.626Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **search bar for all crafting menus** `mvu8cq8jeenii`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **option to disabled "enhanced shadows", the special shadow effect from bonfires** `mvu5jtn0974d3`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
