@@ -5278,6 +5278,24 @@
       "slot": "",
       "created": 1793376424364,
       "updated": 1793376424364
+    },
+    {
+      "id": "mvv69a82s04e5",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "secondary classes need their original spells also displayed in the spell book.",
+      "notes": "there is no description for thermal shock, twin threads.",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793376824834,
+      "updated": 1793376824834
     }
   ],
   "notes": [
