@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T12:31:04.440Z_
+_Updated 2026-10-30T12:32:38.920Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,7 +177,6 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **option to disabled "enhanced shadows", the special shadow effect from bonfires** _(doing)_ `mvu5jtn0974d3`
-- [ ] 💡 **need way to abandon quests** _(doing)_ `mvu3mhkqmoksq`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **make interact key (f) look more like a keycap** `mvuyat3bx4zk9`
 - [ ] 💡 **put categories on item tooltips. food, ingredients, junk, etc** `mvuya1f3cd0pa`
@@ -213,5 +212,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_23 done._
+_24 done._
 
