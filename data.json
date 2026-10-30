@@ -5188,6 +5188,24 @@
       "slot": "",
       "created": 1793316053188,
       "updated": 1793316053188
+    },
+    {
+      "id": "mvu8cq8jeenii",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "search bar for all crafting menus",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793319878611,
+      "updated": 1793319878611
     }
   ],
   "notes": [
