@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T16:07:17.216Z_
+_Updated 2026-10-30T16:13:50.305Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,8 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **secondary classes need their original spells also displayed in the spell book.** `mvv69a82s04e5`
+  > there is no description for thermal shock, twin threads.
 - [ ] 💡 **consider bag of twigs in ammo slot. have the infinity symbol instead of saying "twigs" on it.** `mvv60p7w0u16a`
   > if you have no ammo equipped, then put on the bag of twigs. it still says "no arrows". fix this.
 - [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** `mvv0d49mh4itd`
