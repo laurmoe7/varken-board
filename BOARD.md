@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T13:19:05.991Z_
+_Updated 2026-10-30T13:24:31.854Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -178,7 +178,6 @@ _42 done._
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **chat box. shows item drops and npc chatter, exp gains. give options** _(doing)_ `mvty0tk4netsi`
-- [ ] 💡 **put categories on item tooltips. food, ingredients, junk, etc** `mvuya1f3cd0pa`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
@@ -210,5 +209,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_26 done._
+_27 done._
 
