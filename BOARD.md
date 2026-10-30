@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T12:52:00.303Z_
+_Updated 2026-10-30T13:19:05.991Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **chat box. shows item drops and npc chatter, exp gains. give options** _(doing)_ `mvty0tk4netsi`
 - [ ] 💡 **put categories on item tooltips. food, ingredients, junk, etc** `mvuya1f3cd0pa`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
@@ -187,7 +188,6 @@ _42 done._
 - [ ] 💡 **improve king's hut. make it more impressive, like a guarded tower with multiple stories. for the moment, no invisible wall so i can get inside. put in a throne with the king sitting on it. just put a goblin model there for now, sitting on the throne.** `mvtys7zbc2bov`
 - [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
   > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.
-- [ ] 💡 **chat box. shows item drops and npc chatter, exp gains. give options** `mvty0tk4netsi`
 - [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
