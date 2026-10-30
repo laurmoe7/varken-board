@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T01:03:15.857Z_
+_Updated 2026-10-30T11:36:19.031Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **search bar for all crafting menus** _(doing)_ `mvu8cq8jeenii`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **option to disabled "enhanced shadows", the special shadow effect from bonfires** `mvu5jtn0974d3`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
@@ -212,5 +211,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_22 done._
+_23 done._
 
