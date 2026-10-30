@@ -5224,6 +5224,24 @@
       "slot": "",
       "created": 1793363423151,
       "updated": 1793363423151
+    },
+    {
+      "id": "mvuyat3bx4zk9",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make interact key (f) look more like a keycap",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793363459015,
+      "updated": 1793363459015
     }
   ],
   "notes": [
