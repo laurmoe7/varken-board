@@ -5158,18 +5158,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "option to disabled \"enhanced shadows\", the special shadow effect from bonfires",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793364715288,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793315170764,
-      "updated": 1793360200323
+      "updated": 1793364715288
     },
     {
       "id": "mvu62qisymalw",
@@ -5230,18 +5230,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "make interact key (f) look more like a keycap",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793364713174,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793363459015,
-      "updated": 1793363559133
+      "updated": 1793364713174
     }
   ],
   "notes": [
