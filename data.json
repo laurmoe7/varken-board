@@ -5230,7 +5230,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make interact key (f) look more like a keycap",
       "notes": "",
       "build": "",
@@ -5241,7 +5241,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793363459015,
-      "updated": 1793363459015
+      "updated": 1793363559133
     }
   ],
   "notes": [
