@@ -5014,7 +5014,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make con no longer effect holy damage, but add way to make holy heals damage undead. those can be effected by the increased con heals instead.",
       "notes": "",
       "build": "",
@@ -5025,7 +5025,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793303951644,
-      "updated": 1793360244572
+      "updated": 1793368879367
     },
     {
       "id": "mvu0eaxr1gfk3",
