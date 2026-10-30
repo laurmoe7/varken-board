@@ -5260,6 +5260,24 @@
       "slot": "",
       "created": 1793366926042,
       "updated": 1793366926042
+    },
+    {
+      "id": "mvv60p7w0u16a",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "consider bag of twigs in ammo slot. have the infinity symbol instead of saying \"twigs\" on it.",
+      "notes": "if you have no ammo equipped, then put on the bag of twigs. it still says \"no arrows\". fix this.",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793376424364,
+      "updated": 1793376424364
     }
   ],
   "notes": [
