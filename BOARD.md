@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T11:37:31.892Z_
+_Updated 2026-10-30T12:30:28.842Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -179,6 +179,7 @@ _42 done._
 - [ ] 💡 **option to disabled "enhanced shadows", the special shadow effect from bonfires** _(doing)_ `mvu5jtn0974d3`
 - [ ] 💡 **need way to abandon quests** _(doing)_ `mvu3mhkqmoksq`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **put categories on item tooltips. food, ingredients, junk, etc** `mvuya1f3cd0pa`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
