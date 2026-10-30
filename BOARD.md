@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-10-30T13:24:31.854Z_
+_Updated 2026-10-30T13:28:51.773Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -178,6 +178,7 @@ _42 done._
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **chat box. shows item drops and npc chatter, exp gains. give options** _(doing)_ `mvty0tk4netsi`
+- [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** `mvv0d49mh4itd`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
