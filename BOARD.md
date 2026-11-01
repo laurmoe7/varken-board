@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-01T16:56:46.305Z_
+_Updated 2026-11-01T17:36:31.700Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,9 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **make mobs 10+ levels higher than you have a skull for its level. you cant see their actual level** _(doing)_ `mvvicjgxnjmqu`
+- [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** _(doing)_ `mvv0d49mh4itd`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **make mobs 10+ levels higher than you have a skull for its level. you cant see their actual level** `mvvicjgxnjmqu`
-- [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** `mvv0d49mh4itd`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
