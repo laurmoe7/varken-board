@@ -5176,7 +5176,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make sure coin toss always travels, even if staring at the floor. so it's not wasted",
       "notes": "",
       "build": "",
@@ -5187,7 +5187,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793316053188,
-      "updated": 1793316053188
+      "updated": 1793554597861
     },
     {
       "id": "mvu8cq8jeenii",
