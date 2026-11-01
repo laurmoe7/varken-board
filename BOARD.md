@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-01T16:56:33.724Z_
+_Updated 2026-11-01T16:56:40.107Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,7 +181,6 @@ _42 done._
 - [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** `mvv0d49mh4itd`
 - [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** `mvu62qisymalw`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
-- [ ] 💡 **secondary resources for classes. mana, rage, energy..** `mvu3jpyvfxnht`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
 - [ ] 💡 **improve king's hut. make it more impressive, like a guarded tower with multiple stories. for the moment, no invisible wall so i can get inside. put in a throne with the king sitting on it. just put a goblin model there for now, sitting on the throne.** `mvtys7zbc2bov`
@@ -209,5 +208,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_31 done._
+_32 done._
 
