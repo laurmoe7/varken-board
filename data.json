@@ -5176,18 +5176,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "make sure coin toss always travels, even if staring at the floor. so it's not wasted",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793556179228,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793316053188,
-      "updated": 1793554597861
+      "updated": 1793556179228
     },
     {
       "id": "mvu8cq8jeenii",
@@ -5302,18 +5302,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "make mobs 10+ levels higher than you have a skull for its level. you cant see their actual level",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793556181830,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793397132177,
-      "updated": 1793554586252
+      "updated": 1793556181830
     }
   ],
   "notes": [
