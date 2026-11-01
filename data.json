@@ -4996,18 +4996,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "improve king's hut. make it more impressive, like a guarded tower with multiple stories. for the moment, no invisible wall so i can get inside. put in a throne with the king sitting on it. just put a goblin model there for now, sitting on the throne.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793552201357,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793303805287,
-      "updated": 1793303805287
+      "updated": 1793552201357
     },
     {
       "id": "mvtyvcwsuizfa",
