@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-01T17:36:42.999Z_
+_Updated 2026-11-01T18:03:06.960Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,7 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **make mobs 10+ levels higher than you have a skull for its level. you cant see their actual level** _(doing)_ `mvvicjgxnjmqu`
 - [ ] 💡 **be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.** _(doing)_ `mvv0d49mh4itd`
-- [ ] 💡 **make sure coin toss always travels, even if staring at the floor. so it's not wasted** _(doing)_ `mvu62qisymalw`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
@@ -207,5 +205,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_33 done._
+_35 done._
 
