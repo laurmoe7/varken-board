@@ -5248,18 +5248,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793561558057,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793366926042,
-      "updated": 1793554586662
+      "updated": 1793561558057
     },
     {
       "id": "mvv60p7w0u16a",
