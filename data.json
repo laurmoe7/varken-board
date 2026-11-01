@@ -5248,7 +5248,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "be still considered in combat until the enemy/enemies you engaged with either dies or resets, or you use a skill or something to de-aggro the mob.",
       "notes": "",
       "build": "",
@@ -5259,7 +5259,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793366926042,
-      "updated": 1793366926042
+      "updated": 1793554586662
     },
     {
       "id": "mvv60p7w0u16a",
@@ -5302,7 +5302,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make mobs 10+ levels higher than you have a skull for its level. you cant see their actual level",
       "notes": "",
       "build": "",
@@ -5313,7 +5313,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793397132177,
-      "updated": 1793397132177
+      "updated": 1793554586252
     }
   ],
   "notes": [
