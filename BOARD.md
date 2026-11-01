@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-01T16:56:40.107Z_
+_Updated 2026-11-01T16:56:46.305Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -183,7 +183,6 @@ _42 done._
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
-- [ ] 💡 **improve king's hut. make it more impressive, like a guarded tower with multiple stories. for the moment, no invisible wall so i can get inside. put in a throne with the king sitting on it. just put a goblin model there for now, sitting on the throne.** `mvtys7zbc2bov`
 - [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
   > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.
 - [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
@@ -208,5 +207,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_32 done._
+_33 done._
 
