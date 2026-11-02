@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T22:39:05.139Z_
+_Updated 2026-11-02T22:39:13.451Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -185,6 +185,7 @@ _42 done._
 - [ ] 💡 **bags flicker and move while trading** _(doing)_ `mvzqjliq64b95`
 - [ ] 💡 **time of day does not sync in multiplayer if someone changes the time of day** _(doing)_ `mvzq9yvhkdg8r`
 - [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** _(doing)_ `mvzq8snd7li6z`
+- [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** _(doing)_ `mvzpdcv1izu65`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
 - [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
@@ -194,7 +195,6 @@ _42 done._
   - images: images/mvzqb0wdh6q0j.jpg
 - [ ] 💡 **need to be able to split stacks** `mvzq5jg0oefsn`
 - [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
-- [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** `mvzpdcv1izu65`
 - [ ] 💡 **button to hide ui** `mvzn50qcua4as`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
