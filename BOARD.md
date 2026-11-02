@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T22:38:32.825Z_
+_Updated 2026-11-02T22:38:52.060Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -182,12 +182,12 @@ _42 done._
 - [ ] 💡 **party screen covers up other windows** _(doing)_ `mvzrbl8bcp06z`
 - [ ] 💡 **positional abilities not working well on co-op** _(doing)_ `mvzr5gs4zx3pp`
 - [ ] 💡 **cant interact with things if there is a goblin nearby** _(doing)_ `mvzqwzrrger7q`
+- [ ] 💡 **bags flicker and move while trading** _(doing)_ `mvzqjliq64b95`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
 - [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
 - [ ] 💡 **phrase skill tooltips more clearly** `mvzqrqjwneje2`
 - [ ] 💡 **need to be able to drag and drop for inventory** `mvzqnlgwp1hwr`
-- [ ] 💡 **bags flicker and move while trading** `mvzqjliq64b95`
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
   - images: images/mvzqb0wdh6q0j.jpg
 - [ ] 💡 **time of day does not sync in multiplayer if someone changes the time of day** `mvzq9yvhkdg8r`
