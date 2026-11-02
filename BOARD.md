@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T22:38:52.060Z_
+_Updated 2026-11-02T22:38:58.600Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -183,6 +183,8 @@ _42 done._
 - [ ] 💡 **positional abilities not working well on co-op** _(doing)_ `mvzr5gs4zx3pp`
 - [ ] 💡 **cant interact with things if there is a goblin nearby** _(doing)_ `mvzqwzrrger7q`
 - [ ] 💡 **bags flicker and move while trading** _(doing)_ `mvzqjliq64b95`
+- [ ] 💡 **time of day does not sync in multiplayer if someone changes the time of day** _(doing)_ `mvzq9yvhkdg8r`
+- [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** _(doing)_ `mvzq8snd7li6z`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
 - [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
@@ -190,8 +192,6 @@ _42 done._
 - [ ] 💡 **need to be able to drag and drop for inventory** `mvzqnlgwp1hwr`
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
   - images: images/mvzqb0wdh6q0j.jpg
-- [ ] 💡 **time of day does not sync in multiplayer if someone changes the time of day** `mvzq9yvhkdg8r`
-- [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** `mvzq8snd7li6z`
 - [ ] 💡 **need to be able to split stacks** `mvzq5jg0oefsn`
 - [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
 - [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** `mvzpdcv1izu65`
