@@ -5410,7 +5410,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "time of day does not sync in multiplayer if someone changes the time of day",
       "notes": "",
       "build": "",
@@ -5421,7 +5421,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793652313805,
-      "updated": 1793652313805
+      "updated": 1793659133880
     },
     {
       "id": "mvzqay157ijvt",
