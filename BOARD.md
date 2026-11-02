@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T21:03:13.319Z_
+_Updated 2026-11-02T21:09:49.069Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **positional abilities not working well on co-op** `mvzr5gs4zx3pp`
 - [ ] 💡 **cant interact with things if there is a goblin nearby** `mvzqwzrrger7q`
 - [ ] 💡 **phrase skill tooltips more clearly** `mvzqrqjwneje2`
 - [ ] 💡 **need to be able to drag and drop for inventory** `mvzqnlgwp1hwr`
