@@ -5478,6 +5478,24 @@
       "slot": "",
       "created": 1793652949616,
       "updated": 1793652949616
+    },
+    {
+      "id": "mvzqrqjwneje2",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "phrase skill tooltips more clearly",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793653142828,
+      "updated": 1793653142828
     }
   ],
   "notes": [
