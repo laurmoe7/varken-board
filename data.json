@@ -5332,6 +5332,24 @@
       "slot": "",
       "created": 1793647044084,
       "updated": 1793647044084
+    },
+    {
+      "id": "mvzpdcv1izu65",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "pudding and carriage driver not synced up in co-op",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793650792285,
+      "updated": 1793650792285
     }
   ],
   "notes": [
