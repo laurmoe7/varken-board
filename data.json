@@ -5339,7 +5339,7 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "pudding and carriage driver not synced up in co-op",
+      "title": "pudding and carriage driver not synced up in co-op, or ship or airship",
       "notes": "",
       "build": "",
       "effort": "",
@@ -5349,7 +5349,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793650792285,
-      "updated": 1793650792285
+      "updated": 1793652066760
     }
   ],
   "notes": [
