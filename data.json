@@ -5422,6 +5422,24 @@
       "slot": "",
       "created": 1793652313805,
       "updated": 1793652313805
+    },
+    {
+      "id": "mvzqay157ijvt",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "menu buttons cover map",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793652359369,
+      "updated": 1793652359369
     }
   ],
   "notes": [
