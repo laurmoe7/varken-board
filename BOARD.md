@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T20:44:24.180Z_
+_Updated 2026-11-02T20:45:18.888Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **time of day does not sync in multiplayer if someone changes the time of day** `mvzq9yvhkdg8r`
 - [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** `mvzq8snd7li6z`
 - [ ] 💡 **need to be able to split stacks** `mvzq5jg0oefsn`
 - [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
