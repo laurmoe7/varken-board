@@ -5442,6 +5442,24 @@
       "slot": "",
       "created": 1793652359369,
       "updated": 1793652363089
+    },
+    {
+      "id": "mvzqjliq64b95",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "bags flicker and move while trading",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793652763058,
+      "updated": 1793652763058
     }
   ],
   "notes": [
