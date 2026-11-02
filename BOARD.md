@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T20:41:12.469Z_
+_Updated 2026-11-02T20:41:43.138Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
 - [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** `mvzpdcv1izu65`
 - [ ] 💡 **button to hide ui** `mvzn50qcua4as`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
