@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T21:24:15.624Z_
+_Updated 2026-11-02T21:43:36.340Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
 - [ ] 💡 **cant see names in co-op ban list** `mvzrnzbm7xt5j`
   - images: images/mvzrnymwujuup.jpg
 - [ ] 💡 **party screen covers up other windows** `mvzrbl8bcp06z`
