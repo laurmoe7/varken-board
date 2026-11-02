@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T21:56:13.980Z_
+_Updated 2026-11-02T22:13:42.270Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** `mvztfmedxjp5x`
 - [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
 - [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
 - [ ] 💡 **cant see names in co-op ban list** `mvzrnzbm7xt5j`
