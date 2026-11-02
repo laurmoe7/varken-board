@@ -5350,6 +5350,24 @@
       "slot": "",
       "created": 1793650792285,
       "updated": 1793652066760
+    },
+    {
+      "id": "mvzq5cepy30qm",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "people fighting far away doesnt work properly",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793652098065,
+      "updated": 1793652098065
     }
   ],
   "notes": [
