@@ -5502,7 +5502,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "cant interact with things if there is a goblin nearby",
       "notes": "",
       "build": "",
@@ -5513,7 +5513,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793653388055,
-      "updated": 1793653388055
+      "updated": 1793659078075
     },
     {
       "id": "mvzr5gs4zx3pp",
