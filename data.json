@@ -5624,6 +5624,24 @@
       "slot": "",
       "created": 1793657616421,
       "updated": 1793659044879
+    },
+    {
+      "id": "mvzutjp3owklx",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make elite monster \"auto attacks\" easier to read so they can better be dodged/blocked",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793659945719,
+      "updated": 1793659945719
     }
   ],
   "notes": [
