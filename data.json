@@ -5642,6 +5642,24 @@
       "slot": "",
       "created": 1793659945719,
       "updated": 1793659945719
+    },
+    {
+      "id": "mvzuv2mjoo04n",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "option to set all stats/classes to a chosen number in dev tools",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793660016907,
+      "updated": 1793660016907
     }
   ],
   "notes": [
