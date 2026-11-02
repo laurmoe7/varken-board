@@ -5588,6 +5588,24 @@
       "slot": "",
       "created": 1793655810434,
       "updated": 1793655810434
+    },
+    {
+      "id": "mvzst6bddbwth",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "varken resetting after charging sometimes",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793656569145,
+      "updated": 1793656569145
     }
   ],
   "notes": [
