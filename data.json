@@ -5696,6 +5696,24 @@
       "slot": "",
       "created": 1793661269221,
       "updated": 1793661269221
+    },
+    {
+      "id": "mvzvo29mzm4if",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "have dodge/movement abilities maintain momentum",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793661369466,
+      "updated": 1793661369466
     }
   ],
   "notes": [
