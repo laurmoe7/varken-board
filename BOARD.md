@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T22:37:29.853Z_
+_Updated 2026-11-02T22:37:42.529Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,11 +177,11 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** _(doing)_ `mvztfmedxjp5x`
+- [ ] 💡 **cant see names in co-op ban list** _(doing)_ `mvzrnzbm7xt5j`
+  - images: images/mvzrnymwujuup.jpg
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
 - [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
-- [ ] 💡 **cant see names in co-op ban list** `mvzrnzbm7xt5j`
-  - images: images/mvzrnymwujuup.jpg
 - [ ] 💡 **party screen covers up other windows** `mvzrbl8bcp06z`
 - [ ] 💡 **positional abilities not working well on co-op** `mvzr5gs4zx3pp`
 - [ ] 💡 **cant interact with things if there is a goblin nearby** `mvzqwzrrger7q`
