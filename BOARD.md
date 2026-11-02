@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T20:46:12.708Z_
+_Updated 2026-11-02T20:52:48.089Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **bags flicker and move while trading** `mvzqjliq64b95`
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
   - images: images/mvzqb0wdh6q0j.jpg
 - [ ] 💡 **time of day does not sync in multiplayer if someone changes the time of day** `mvzq9yvhkdg8r`
