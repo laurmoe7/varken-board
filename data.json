@@ -5514,6 +5514,24 @@
       "slot": "",
       "created": 1793653388055,
       "updated": 1793653388055
+    },
+    {
+      "id": "mvzr5gs4zx3pp",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "positional abilities not working well on co-op",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793653783348,
+      "updated": 1793653783348
     }
   ],
   "notes": [
