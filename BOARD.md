@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T23:14:34.108Z_
+_Updated 2026-11-02T23:16:15.240Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -187,6 +187,7 @@ _42 done._
 - [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** _(doing)_ `mvzq8snd7li6z`
 - [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** _(doing)_ `mvzpdcv1izu65`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **have dodge/movement abilities maintain momentum** `mvzvo29mzm4if`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
   > - whether it stays missing or comes back after a few seconds
