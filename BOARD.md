@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T19:17:28.795Z_
+_Updated 2026-11-02T20:19:58.418Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **pudding and carriage driver not synced up in co-op** `mvzpdcv1izu65`
 - [ ] 💡 **button to hide ui** `mvzn50qcua4as`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
