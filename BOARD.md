@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T22:54:29.045Z_
+_Updated 2026-11-02T23:14:34.108Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -187,6 +187,12 @@ _42 done._
 - [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** _(doing)_ `mvzq8snd7li6z`
 - [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** _(doing)_ `mvzpdcv1izu65`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
+  > - which mob, and where
+  > - whether it stays missing or comes back after a few seconds
+  > - whether clicking it (targeting it) brings it back
+  > - whether that friend loaded in somewhere else before joining me
+  > - take a screenshot from their screen if they can (L in the game)
 - [ ] 💡 **add punishment for co-op. put a pillory in town, let people throw tomatoes at punished player. they stay there until the host frees them, or until a chosen time period.** `mvzuw2ki3mb8w`
 - [ ] 💡 **option to set all stats/classes to a chosen number in dev tools** `mvzuv2mjoo04n`
 - [ ] 💡 **make elite monster "auto attacks" easier to read so they can better be dodged/blocked** `mvzutjp3owklx`
