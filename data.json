@@ -5660,6 +5660,24 @@
       "slot": "",
       "created": 1793660016907,
       "updated": 1793660016907
+    },
+    {
+      "id": "mvzuw2ki3mb8w",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add punishment for co-op. put a pillory in town, let people throw tomatoes at punished player. they stay there until the host frees them, or until a chosen time period.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793660063490,
+      "updated": 1793660063490
     }
   ],
   "notes": [
