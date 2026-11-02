@@ -5368,6 +5368,24 @@
       "slot": "",
       "created": 1793652098065,
       "updated": 1793652098065
+    },
+    {
+      "id": "mvzq5jg0oefsn",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need to be able to split stacks",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793652107184,
+      "updated": 1793652107184
     }
   ],
   "notes": [
