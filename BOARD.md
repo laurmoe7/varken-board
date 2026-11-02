@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T22:39:13.451Z_
+_Updated 2026-11-02T22:52:31.311Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -187,6 +187,7 @@ _42 done._
 - [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** _(doing)_ `mvzq8snd7li6z`
 - [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** _(doing)_ `mvzpdcv1izu65`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **make elite monster "auto attacks" easier to read so they can better be dodged/blocked** `mvzutjp3owklx`
 - [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
 - [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
 - [ ] 💡 **phrase skill tooltips more clearly** `mvzqrqjwneje2`
