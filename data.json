@@ -5532,6 +5532,24 @@
       "slot": "",
       "created": 1793653783348,
       "updated": 1793653783348
+    },
+    {
+      "id": "mvzrbl8bcp06z",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "party screen covers up other windows",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793654069051,
+      "updated": 1793654069051
     }
   ],
   "notes": [
