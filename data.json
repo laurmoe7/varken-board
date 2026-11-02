@@ -5550,6 +5550,26 @@
       "slot": "",
       "created": 1793654069051,
       "updated": 1793654069051
+    },
+    {
+      "id": "mvzrnzbm7xt5j",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "cant see names in co-op ban list",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mvzrnymwujuup"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1793654647186,
+      "updated": 1793654647186
     }
   ],
   "notes": [
@@ -5894,6 +5914,10 @@
     "mvzqb0wdh6q0j": {
       "name": "image.png",
       "added": 1793652363089
+    },
+    "mvzrnymwujuup": {
+      "name": "image.png",
+      "added": 1793654646300
     }
   }
 }
