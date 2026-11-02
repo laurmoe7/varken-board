@@ -5314,6 +5314,24 @@
       "slot": "",
       "created": 1793397132177,
       "updated": 1793556181830
+    },
+    {
+      "id": "mvzn50qcua4as",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "button to hide ui",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793647044084,
+      "updated": 1793647044084
     }
   ],
   "notes": [
