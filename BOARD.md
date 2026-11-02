@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T21:14:34.420Z_
+_Updated 2026-11-02T21:24:15.624Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,8 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **cant see names in co-op ban list** `mvzrnzbm7xt5j`
+  - images: images/mvzrnymwujuup.jpg
 - [ ] 💡 **party screen covers up other windows** `mvzrbl8bcp06z`
 - [ ] 💡 **positional abilities not working well on co-op** `mvzr5gs4zx3pp`
 - [ ] 💡 **cant interact with things if there is a goblin nearby** `mvzqwzrrger7q`
