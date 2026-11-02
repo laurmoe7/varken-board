@@ -5606,6 +5606,24 @@
       "slot": "",
       "created": 1793656569145,
       "updated": 1793656569145
+    },
+    {
+      "id": "mvztfmedxjp5x",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "in co-op, players that are not the host can sometimes not see the hp bar or name of mobs",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793657616421,
+      "updated": 1793657616421
     }
   ],
   "notes": [
