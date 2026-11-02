@@ -5496,6 +5496,24 @@
       "slot": "",
       "created": 1793653142828,
       "updated": 1793653142828
+    },
+    {
+      "id": "mvzqwzrrger7q",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "cant interact with things if there is a goblin nearby",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793653388055,
+      "updated": 1793653388055
     }
   ],
   "notes": [
