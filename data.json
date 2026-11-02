@@ -5460,6 +5460,24 @@
       "slot": "",
       "created": 1793652763058,
       "updated": 1793652763058
+    },
+    {
+      "id": "mvzqnlgwp1hwr",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need to be able to drag and drop for inventory",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793652949616,
+      "updated": 1793652949616
     }
   ],
   "notes": [
