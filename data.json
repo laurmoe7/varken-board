@@ -5678,6 +5678,24 @@
       "slot": "",
       "created": 1793660063490,
       "updated": 1793660063490
+    },
+    {
+      "id": "mvzvlwx1h0loa",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "Co-op test with friends: when a friend can't see a mob's name or health bar, write down",
+      "notes": "- which mob, and where\n- whether it stays missing or comes back after a few seconds\n- whether clicking it (targeting it) brings it back\n- whether that friend loaded in somewhere else before joining me\n- take a screenshot from their screen if they can (L in the game)",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793661269221,
+      "updated": 1793661269221
     }
   ],
   "notes": [
