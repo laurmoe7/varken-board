@@ -5386,6 +5386,24 @@
       "slot": "",
       "created": 1793652107184,
       "updated": 1793652107184
+    },
+    {
+      "id": "mvzq8snd7li6z",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "fix cart death animation in co-op. cart does not appear to other players",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793652259081,
+      "updated": 1793652259081
     }
   ],
   "notes": [
