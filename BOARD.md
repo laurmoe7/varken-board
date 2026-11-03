@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T01:28:45.990Z_
+_Updated 2026-11-03T11:05:54.375Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,9 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **option to set all stats/classes to a chosen number in dev tools** _(doing)_ `mvzuv2mjoo04n`
-- [ ] 💡 **make elite monster "auto attacks" easier to read so they can better be dodged/blocked** _(doing)_ `mvzutjp3owklx`
 - [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** _(doing)_ `mvztfmedxjp5x`
-- [ ] 💡 **add con exp when trying food for the first time** _(doing)_ `mvzscww286cct`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **change shadowstep to put you behind the mob, with the camera also behind it** `mvzz5azqedba1`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
@@ -223,5 +221,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_46 done._
+_48 done._
 
