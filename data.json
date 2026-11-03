@@ -5576,7 +5576,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "add con exp when trying food for the first time",
       "notes": "",
       "build": "",
@@ -5587,7 +5587,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793655810434,
-      "updated": 1793655810434
+      "updated": 1793669308666
     },
     {
       "id": "mvzst6bddbwth",
