@@ -5374,18 +5374,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "need to be able to split stacks",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793740230158,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793652107184,
-      "updated": 1793652107184
+      "updated": 1793740230158
     },
     {
       "id": "mvzq8snd7li6z",
@@ -5466,18 +5466,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "need to be able to drag and drop for inventory",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793740225137,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793652949616,
-      "updated": 1793652949616
+      "updated": 1793740225137
     },
     {
       "id": "mvzqrqjwneje2",
