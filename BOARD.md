@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T22:09:50.623Z_
+_Updated 2026-11-03T22:10:00.174Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -183,7 +183,6 @@ _42 done._
   > - whether clicking it (targeting it) brings it back
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
-- [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
