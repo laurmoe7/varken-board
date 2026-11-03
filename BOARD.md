@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T01:28:27.563Z_
+_Updated 2026-11-03T01:28:34.314Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -179,6 +179,7 @@ _42 done._
 - [ ] 💡 **option to set all stats/classes to a chosen number in dev tools** _(doing)_ `mvzuv2mjoo04n`
 - [ ] 💡 **make elite monster "auto attacks" easier to read so they can better be dodged/blocked** _(doing)_ `mvzutjp3owklx`
 - [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** _(doing)_ `mvztfmedxjp5x`
+- [ ] 💡 **add con exp when trying food for the first time** _(doing)_ `mvzscww286cct`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **change shadowstep to put you behind the mob, with the camera also behind it** `mvzz5azqedba1`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
@@ -187,8 +188,7 @@ _42 done._
   > - whether clicking it (targeting it) brings it back
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
-- [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
-- [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
+- [ ] 💡 **varken resetting after charging sometimes,** `mvzst6bddbwth`
 - [ ] 💡 **phrase skill tooltips more clearly** `mvzqrqjwneje2`
 - [ ] 💡 **need to be able to drag and drop for inventory** `mvzqnlgwp1hwr`
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
