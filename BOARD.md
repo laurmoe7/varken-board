@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T22:09:43.065Z_
+_Updated 2026-11-03T22:09:50.623Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,11 +176,7 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **menu buttons cover map** _(doing)_ `mvzqay157ijvt`
-  - images: images/mvzqb0wdh6q0j.jpg
-- [ ] 💡 **button to hide ui** _(doing)_ `mvzn50qcua4as`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **need to be able to jump in water** _(doing)_ `mvtr5hyex4ax1`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
   > - whether it stays missing or comes back after a few seconds
@@ -210,5 +206,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_61 done._
+_64 done._
 
