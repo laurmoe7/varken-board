@@ -5757,18 +5757,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "be able to remove fences in build mode",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793740217405,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793728227985,
-      "updated": 1793739029155
+      "updated": 1793740217405
     },
     {
       "id": "mw0zhfe39asc6",
