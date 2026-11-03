@@ -5787,6 +5787,24 @@
       "slot": "",
       "created": 1793728244523,
       "updated": 1793728244523
+    },
+    {
+      "id": "mw128js9jfer5",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make it so players can walk over small objects on the ground, like varken can",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793732869161,
+      "updated": 1793732869161
     }
   ],
   "notes": [
