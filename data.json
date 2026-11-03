@@ -5702,18 +5702,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "have dodge/movement abilities maintain momentum",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793669268482,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793661369466,
-      "updated": 1793665021758
+      "updated": 1793669268482
     },
     {
       "id": "mvzz5azqedba1",
