@@ -5721,7 +5721,7 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "change shadowstep to put you behind the mob",
+      "title": "change shadowstep to put you behind the mob, with the camera also behind it",
       "notes": "",
       "build": "",
       "effort": "",
@@ -5731,7 +5731,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793667212774,
-      "updated": 1793667212774
+      "updated": 1793667222139
     }
   ],
   "notes": [
