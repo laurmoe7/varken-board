@@ -4942,18 +4942,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "need to be able to jump in water",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793743785802,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793290987814,
-      "updated": 1793740318195
+      "updated": 1793743785802
     },
     {
       "id": "mvty0tk4netsi",
@@ -5321,18 +5321,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "button to hide ui",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793743783233,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793647044084,
-      "updated": 1793740263431
+      "updated": 1793743783233
     },
     {
       "id": "mvzpdcv1izu65",
@@ -5429,20 +5429,20 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "menu buttons cover map",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793743784065,
       "images": [
         "mvzqb0wdh6q0j"
       ],
       "gallery": false,
       "slot": "",
       "created": 1793652359369,
-      "updated": 1793740245389
+      "updated": 1793743784065
     },
     {
       "id": "mvzqjliq64b95",
