@@ -5714,6 +5714,24 @@
       "slot": "",
       "created": 1793661369466,
       "updated": 1793665021758
+    },
+    {
+      "id": "mvzz5azqedba1",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "change shadowstep to put you behind the mob",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793667212774,
+      "updated": 1793667212774
     }
   ],
   "notes": [
