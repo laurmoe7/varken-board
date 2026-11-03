@@ -5805,6 +5805,24 @@
       "slot": "",
       "created": 1793732869161,
       "updated": 1793732869161
+    },
+    {
+      "id": "mw13p7sa75cqa",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "have reset all also reset the tutorial quests",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793735326378,
+      "updated": 1793735326378
     }
   ],
   "notes": [
