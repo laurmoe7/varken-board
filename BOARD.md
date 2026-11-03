@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T00:16:30.593Z_
+_Updated 2026-11-03T00:17:06.737Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,9 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **have dodge/movement abilities maintain momentum** _(doing)_ `mvzvo29mzm4if`
 - [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** _(doing)_ `mvztfmedxjp5x`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **have dodge/movement abilities maintain momentum** `mvzvo29mzm4if`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
   > - whether it stays missing or comes back after a few seconds
