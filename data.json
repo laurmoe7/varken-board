@@ -5702,7 +5702,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "have dodge/movement abilities maintain momentum",
       "notes": "",
       "build": "",
@@ -5713,7 +5713,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793661369466,
-      "updated": 1793661369466
+      "updated": 1793665021758
     }
   ],
   "notes": [
