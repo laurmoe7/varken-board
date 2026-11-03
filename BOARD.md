@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T19:07:54.362Z_
+_Updated 2026-11-03T19:48:51.500Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **have reset all also reset the tutorial quests** `mw13p7sa75cqa`
 - [ ] 💡 **make it so players can walk over small objects on the ground, like varken can** `mw128js9jfer5`
 - [ ] 💡 **explain tool belt in tutorial** `mw0zhfe39asc6`
 - [ ] 💡 **be able to remove fences in build mode** `mw0zh2mp44iqm`
