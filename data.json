@@ -5484,7 +5484,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "phrase skill tooltips more clearly",
       "notes": "",
       "build": "",
@@ -5495,7 +5495,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793653142828,
-      "updated": 1793653142828
+      "updated": 1793739048346
     },
     {
       "id": "mvzqwzrrger7q",
@@ -5594,18 +5594,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "varken resetting after charging sometimes, getting stuck on water outside the cave.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793739045311,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793656569145,
-      "updated": 1793669320554
+      "updated": 1793739045311
     },
     {
       "id": "mvztfmedxjp5x",
@@ -5721,18 +5721,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "change shadowstep to put you behind the mob, with the camera also behind it",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793739042235,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793667212774,
-      "updated": 1793667222139
+      "updated": 1793739042235
     },
     {
       "id": "mw0my0pjaown4",
