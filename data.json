@@ -5769,6 +5769,24 @@
       "slot": "",
       "created": 1793728227985,
       "updated": 1793728227985
+    },
+    {
+      "id": "mw0zhfe39asc6",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "explain tool belt in tutorial",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793728244523,
+      "updated": 1793728244523
     }
   ],
   "notes": [
