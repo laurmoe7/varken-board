@@ -5648,18 +5648,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "option to set all stats/classes to a chosen number in dev tools",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793704655513,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793660016907,
-      "updated": 1793665036143
+      "updated": 1793704655513
     },
     {
       "id": "mvzuw2ki3mb8w",
