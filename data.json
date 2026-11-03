@@ -5811,7 +5811,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "have reset all quests also reset the tutorial quests so i can test them",
       "notes": "",
       "build": "",
@@ -5822,7 +5822,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793735326378,
-      "updated": 1793736028595
+      "updated": 1793736398335
     }
   ],
   "notes": [
