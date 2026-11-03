@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T21:11:15.535Z_
+_Updated 2026-11-03T21:12:03.584Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,6 +180,7 @@ _42 done._
   - images: images/mvzqb0wdh6q0j.jpg
 - [ ] 💡 **button to hide ui** _(doing)_ `mvzn50qcua4as`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **need to be able to jump in water** _(doing)_ `mvtr5hyex4ax1`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
   > - whether it stays missing or comes back after a few seconds
@@ -191,7 +192,6 @@ _42 done._
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
 - [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
   > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.
-- [ ] 💡 **need to be able to jump in water** `mvtr5hyex4ax1`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **chicken coop** `mvsu5wwy8ev5c`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
