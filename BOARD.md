@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T11:17:40.942Z_
+_Updated 2026-11-03T11:23:31.083Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** _(doing)_ `mvztfmedxjp5x`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **change shadowstep to put you behind the mob, with the camera also behind it** `mvzz5azqedba1`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
