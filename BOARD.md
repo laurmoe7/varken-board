@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-02T23:16:15.240Z_
+_Updated 2026-11-03T00:16:30.593Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,15 +177,6 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** _(doing)_ `mvztfmedxjp5x`
-- [ ] 💡 **cant see names in co-op ban list** _(doing)_ `mvzrnzbm7xt5j`
-  - images: images/mvzrnymwujuup.jpg
-- [ ] 💡 **party screen covers up other windows** _(doing)_ `mvzrbl8bcp06z`
-- [ ] 💡 **positional abilities not working well on co-op** _(doing)_ `mvzr5gs4zx3pp`
-- [ ] 💡 **cant interact with things if there is a goblin nearby** _(doing)_ `mvzqwzrrger7q`
-- [ ] 💡 **bags flicker and move while trading** _(doing)_ `mvzqjliq64b95`
-- [ ] 💡 **time of day does not sync in multiplayer if someone changes the time of day** _(doing)_ `mvzq9yvhkdg8r`
-- [ ] 💡 **fix cart death animation in co-op. cart does not appear to other players** _(doing)_ `mvzq8snd7li6z`
-- [ ] 💡 **pudding and carriage driver not synced up in co-op, or ship or airship** _(doing)_ `mvzpdcv1izu65`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **have dodge/movement abilities maintain momentum** `mvzvo29mzm4if`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
@@ -233,5 +224,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_36 done._
+_44 done._
 
