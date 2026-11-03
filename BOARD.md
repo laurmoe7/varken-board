@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T01:27:53.782Z_
+_Updated 2026-11-03T01:28:17.289Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -186,7 +186,6 @@ _42 done._
   > - whether clicking it (targeting it) brings it back
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
-- [ ] 💡 **add punishment for co-op. put a pillory in town, let people throw tomatoes at punished player. they stay there until the host frees them, or until a chosen time period.** `mvzuw2ki3mb8w`
 - [ ] 💡 **make elite monster "auto attacks" easier to read so they can better be dodged/blocked** `mvzutjp3owklx`
 - [ ] 💡 **varken resetting after charging sometimes** `mvzst6bddbwth`
 - [ ] 💡 **add con exp when trying food for the first time** `mvzscww286cct`
@@ -224,5 +223,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_45 done._
+_46 done._
 
