@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T00:53:47.423Z_
+_Updated 2026-11-03T01:27:53.782Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **have dodge/movement abilities maintain momentum** _(doing)_ `mvzvo29mzm4if`
 - [ ] 💡 **option to set all stats/classes to a chosen number in dev tools** _(doing)_ `mvzuv2mjoo04n`
 - [ ] 💡 **in co-op, players that are not the host can sometimes not see the hp bar or name of mobs** _(doing)_ `mvztfmedxjp5x`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
@@ -225,5 +224,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_44 done._
+_45 done._
 
