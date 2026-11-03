@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T01:28:34.314Z_
+_Updated 2026-11-03T01:28:45.990Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -188,7 +188,7 @@ _42 done._
   > - whether clicking it (targeting it) brings it back
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
-- [ ] 💡 **varken resetting after charging sometimes,** `mvzst6bddbwth`
+- [ ] 💡 **varken resetting after charging sometimes, getting stuck on water outside the cave.** `mvzst6bddbwth`
 - [ ] 💡 **phrase skill tooltips more clearly** `mvzqrqjwneje2`
 - [ ] 💡 **need to be able to drag and drop for inventory** `mvzqnlgwp1hwr`
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
