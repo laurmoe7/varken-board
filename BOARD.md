@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T17:50:33.139Z_
+_Updated 2026-11-03T17:50:49.833Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **explain tool belt in tutorial** `mw0zhfe39asc6`
 - [ ] 💡 **be able to remove fences in build mode** `mw0zh2mp44iqm`
 - [ ] 💡 **tool belt items should be non combat items. so move the stuff like the vine charm from the tool belt to the accessories slot** `mw0my0pjaown4`
 - [ ] 💡 **change shadowstep to put you behind the mob, with the camera also behind it** `mvzz5azqedba1`
