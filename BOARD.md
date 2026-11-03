@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T20:50:41.815Z_
+_Updated 2026-11-03T20:50:50.427Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -178,16 +178,14 @@ _42 done._
 
 - [ ] 💡 **be able to remove fences in build mode** _(doing)_ `mw0zh2mp44iqm`
 - [ ] 💡 **tool belt items should be non combat items. so move the stuff like the vine charm from the tool belt to the accessories slot** _(doing)_ `mw0my0pjaown4`
+- [ ] 💡 **phrase skill tooltips more clearly** _(doing)_ `mvzqrqjwneje2`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **change shadowstep to put you behind the mob, with the camera also behind it** `mvzz5azqedba1`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
   > - whether it stays missing or comes back after a few seconds
   > - whether clicking it (targeting it) brings it back
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
-- [ ] 💡 **varken resetting after charging sometimes, getting stuck on water outside the cave.** `mvzst6bddbwth`
-- [ ] 💡 **phrase skill tooltips more clearly** `mvzqrqjwneje2`
 - [ ] 💡 **need to be able to drag and drop for inventory** `mvzqnlgwp1hwr`
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
   - images: images/mvzqb0wdh6q0j.jpg
@@ -221,5 +219,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_52 done._
+_54 done._
 
