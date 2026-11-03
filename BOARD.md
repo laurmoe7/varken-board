@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T21:10:50.048Z_
+_Updated 2026-11-03T21:11:08.319Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -178,6 +178,7 @@ _42 done._
 
 - [ ] 💡 **menu buttons cover map** _(doing)_ `mvzqay157ijvt`
   - images: images/mvzqb0wdh6q0j.jpg
+- [ ] 💡 **button to hide ui** _(doing)_ `mvzn50qcua4as`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
@@ -186,9 +187,7 @@ _42 done._
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
 - [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
-- [ ] 💡 **button to hide ui** `mvzn50qcua4as`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
-- [ ] 💡 **add more stuff in goblin village graveyard, mobs need to be spread out. groundskeeper or something** `mvu0h1i8s0z26`
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
 - [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
   > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.
@@ -214,5 +213,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_59 done._
+_60 done._
 
