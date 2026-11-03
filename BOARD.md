@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T20:06:58.371Z_
+_Updated 2026-11-03T20:50:21.430Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **have reset all quests also reset the tutorial quests so i can test them** _(doing)_ `mw13p7sa75cqa`
-- [ ] 💡 **make it so players can walk over small objects on the ground, like varken can** _(doing)_ `mw128js9jfer5`
-- [ ] 💡 **explain tool belt in tutorial** _(doing)_ `mw0zhfe39asc6`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **be able to remove fences in build mode** `mw0zh2mp44iqm`
 - [ ] 💡 **tool belt items should be non combat items. so move the stuff like the vine charm from the tool belt to the accessories slot** `mw0my0pjaown4`
@@ -224,5 +221,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_49 done._
+_52 done._
 
