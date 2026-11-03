@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T22:10:00.174Z_
+_Updated 2026-11-03T22:43:18.844Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **offhand weapon disappears while gliding** `mw19xkevjjaa1`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
   > - whether it stays missing or comes back after a few seconds
