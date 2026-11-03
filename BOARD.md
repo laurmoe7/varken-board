@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T21:12:10.309Z_
+_Updated 2026-11-03T22:09:43.065Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -190,8 +190,6 @@ _42 done._
 - [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
-- [ ] 💡 **add farming for housing. no skill for it yet, if ever.** `mvtyphb17jqd0`
-  > add wheat seeds along with pumpkin. pumpkin pie and bread recipes to start.
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
