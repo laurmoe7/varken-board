@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T21:10:32.004Z_
+_Updated 2026-11-03T21:10:50.048Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,8 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **menu buttons cover map** _(doing)_ `mvzqay157ijvt`
+  - images: images/mvzqb0wdh6q0j.jpg
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **Co-op test with friends: when a friend can't see a mob's name or health bar, write down** `mvzvlwx1h0loa`
   > - which mob, and where
@@ -183,8 +185,6 @@ _42 done._
   > - whether clicking it (targeting it) brings it back
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
-- [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
-  - images: images/mvzqb0wdh6q0j.jpg
 - [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
 - [ ] 💡 **button to hide ui** `mvzn50qcua4as`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
