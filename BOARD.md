@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T21:10:18.429Z_
+_Updated 2026-11-03T21:10:25.440Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -183,7 +183,6 @@ _42 done._
   > - whether clicking it (targeting it) brings it back
   > - whether that friend loaded in somewhere else before joining me
   > - take a screenshot from their screen if they can (L in the game)
-- [ ] 💡 **need to be able to drag and drop for inventory** `mvzqnlgwp1hwr`
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
   - images: images/mvzqb0wdh6q0j.jpg
 - [ ] 💡 **need to be able to split stacks** `mvzq5jg0oefsn`
@@ -216,5 +215,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_57 done._
+_58 done._
 
