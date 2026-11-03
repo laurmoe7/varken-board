@@ -5733,6 +5733,24 @@
       "slot": "",
       "created": 1793667212774,
       "updated": 1793667222139
+    },
+    {
+      "id": "mw0my0pjaown4",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "tool belt items should be non combat items. so move the stuff like the vine charm from the tool belt to the accessories slot",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793707183639,
+      "updated": 1793707183639
     }
   ],
   "notes": [
