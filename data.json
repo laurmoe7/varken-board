@@ -5825,6 +5825,24 @@
       "slot": "",
       "created": 1793735326378,
       "updated": 1793739016405
+    },
+    {
+      "id": "mw19xkevjjaa1",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "offhand weapon disappears while gliding",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793745793687,
+      "updated": 1793745793687
     }
   ],
   "notes": [
