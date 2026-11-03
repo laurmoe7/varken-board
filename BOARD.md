@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-03T21:10:25.440Z_
+_Updated 2026-11-03T21:10:32.004Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -185,7 +185,6 @@ _42 done._
   > - take a screenshot from their screen if they can (L in the game)
 - [ ] 💡 **menu buttons cover map** `mvzqay157ijvt`
   - images: images/mvzqb0wdh6q0j.jpg
-- [ ] 💡 **need to be able to split stacks** `mvzq5jg0oefsn`
 - [ ] 💡 **people fighting far away doesnt work properly** `mvzq5cepy30qm`
 - [ ] 💡 **button to hide ui** `mvzn50qcua4as`
 - [ ] 💡 **make dropped packs bigger** `mvu409z72ux07`
@@ -215,5 +214,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_58 done._
+_59 done._
 
