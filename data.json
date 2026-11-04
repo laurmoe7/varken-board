@@ -6045,6 +6045,24 @@
       "slot": "",
       "created": 1793804319369,
       "updated": 1793806157232
+    },
+    {
+      "id": "mw2ar5xpoui1x",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "button to unsheath weapon and keep it out, and the sheath it back, if youre out of combat",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793807640781,
+      "updated": 1793807640781
     }
   ],
   "notes": [
