@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T13:29:56.970Z_
+_Updated 2026-11-04T14:02:19.327Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,9 +176,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **add version of the turtle and bees bosses with more hp and damage to test fighting as a party. put them next to the current ones, with a bit of space** _(doing)_ `mw23i1k30r2zw`
-- [ ] 💡 **move back skibble and his counter in his shop** _(doing)_ `mw221z0ldrf1s`
-  - images: images/mw221ya3j3839.jpg
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **improve the tool belt** `mw25jjuxmrffy`
 - [ ] 💡 **fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural** `mw221hvdxr9p2`
@@ -215,5 +212,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_67 done._
+_69 done._
 
