@@ -4683,7 +4683,7 @@
       "project": "goblingame",
       "type": "bug",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "reigns not attached to drivers hands or cow in traveling carriage",
       "notes": "round part around cow also doesnt stay around neck when changing elevation and turning around. ",
       "build": "",
@@ -4697,7 +4697,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793004547270,
-      "updated": 1793028635650
+      "updated": 1793806552591
     },
     {
       "id": "mvp1gxp3r4q9c",
