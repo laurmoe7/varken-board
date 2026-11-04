@@ -5973,6 +5973,24 @@
       "slot": "",
       "created": 1793794252894,
       "updated": 1793794252894
+    },
+    {
+      "id": "mw23dv08tc7vk",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "display patch notes when updating somehow",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793795262776,
+      "updated": 1793795262776
     }
   ],
   "notes": [
