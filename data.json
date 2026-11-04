@@ -6305,7 +6305,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "line for displaying player names in the co-op menu is too short, cant see people's entire names",
       "notes": "",
       "build": "",
@@ -6316,7 +6316,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793820992786,
-      "updated": 1793820992786
+      "updated": 1793831588926
     },
     {
       "id": "mw2it4l3t48dx",
