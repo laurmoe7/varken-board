@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T19:15:50.988Z_
+_Updated 2026-11-04T19:26:59.779Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -210,6 +210,7 @@ _42 done._
 
 ### Someday
 
+- [ ] 💡 **aquarium furniture for house. catch fish and put it in it** _(medium)_ `mw2icy6jbjg64`
 - [ ] 💡 **towns you can build up and repair by delivering packs** _(hard)_ `mvu4cann5kq0m`
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
