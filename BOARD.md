@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T15:54:06.744Z_
+_Updated 2026-11-04T16:22:10.991Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,9 +177,6 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ _(doing)_ `mvp0m30ma1riq`
-  > round part around cow also doesnt stay around neck when changing elevation and turning around. 
-  - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
 - [ ] 💡 **button to unsheath weapon and keep it out, and the sheath it back, if youre out of combat** `mw2ar5xpoui1x`
 - [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
 - [ ] 💡 **some kind of error reporter when game crashes** `mw1ht4tizpyjl`
@@ -204,5 +201,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_76 done._
+_77 done._
 
