@@ -6335,6 +6335,24 @@
       "slot": "",
       "created": 1793821169271,
       "updated": 1793821169271
+    },
+    {
+      "id": "mw2ivqez1a7gh",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "ai of lookout orcs is not good. they often stop attacking and are very slow",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793821290875,
+      "updated": 1793821290875
     }
   ],
   "notes": [
