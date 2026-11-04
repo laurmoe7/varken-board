@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T18:10:31.859Z_
+_Updated 2026-11-04T18:11:30.849Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **batch cooking for the cooking quest doesnt count, for the cooking quest** `mw2fnv96vbavz`
 - [ ] 💡 **make mobs wait 3 seconds on spawn before aggroing onto anyone** `mw2fmm4twil0q`
 - [ ] 💡 **put specific item classifications on weapons (mace, staff, etc)** `mw2fik8equcj0`
 - [ ] 💡 **need more space or a scollbar in the professions page, not enough space for all professions to be listed** `mw2fau5oxkg1j`
