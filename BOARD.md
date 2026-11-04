@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T15:36:08.335Z_
+_Updated 2026-11-04T15:54:06.744Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,6 +180,7 @@ _42 done._
 - [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ _(doing)_ `mvp0m30ma1riq`
   > round part around cow also doesnt stay around neck when changing elevation and turning around. 
   - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
+- [ ] 💡 **button to unsheath weapon and keep it out, and the sheath it back, if youre out of combat** `mw2ar5xpoui1x`
 - [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
 - [ ] 💡 **some kind of error reporter when game crashes** `mw1ht4tizpyjl`
 - [ ] 💡 **make it so you have to confirm to get saved by goblins when you die, so you can get resurrected by someone** `mw1fdokvhhjid`
