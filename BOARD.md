@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T02:23:48.679Z_
+_Updated 2026-11-04T11:34:02.991Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
 - [ ] 💡 **some kind of error reporter when game crashes** `mw1ht4tizpyjl`
 - [ ] 💡 **make it so you have to confirm to get saved by goblins when you die, so you can get resurrected by someone** `mw1fdokvhhjid`
 - [ ] 💡 **offhand weapon disappears while gliding** `mw19xkevjjaa1`
