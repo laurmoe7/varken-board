@@ -6099,6 +6099,24 @@
       "slot": "",
       "created": 1793812212125,
       "updated": 1793812212125
+    },
+    {
+      "id": "mw2dw3ynhxrel",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "walking into grubb's shop makes you lag. the light is also very bright in there",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793812910351,
+      "updated": 1793812910351
     }
   ],
   "notes": [
