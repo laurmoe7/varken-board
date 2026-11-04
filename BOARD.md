@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T19:36:38.672Z_
+_Updated 2026-11-04T19:39:35.009Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,6 +153,7 @@ _6 done._
 
 ### Soon
 
+- [ ] 💡 **better description for rules like touch attack in the compendium** _(Pathfinder)_ `mw2it4l3t48dx`
 - [ ] 💡 **add way to roll touch attack for spells like cure serious wounds, which can be used as a touch attack on certain enemies** _(Pathfinder)_ `mw2ignkep5dhd`
 - [ ] 💡 **exp numbers did not get exported properly** _(Pathfinder)_ `mvikqbrnnxrw3`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
