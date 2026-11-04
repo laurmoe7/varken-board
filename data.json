@@ -5885,7 +5885,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "playing in windowed mode causes random freezes",
       "notes": "",
       "build": "",
@@ -5896,7 +5896,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793792037164,
-      "updated": 1793792037164
+      "updated": 1793801150922
     },
     {
       "id": "mw221hvdxr9p2",
