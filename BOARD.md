@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T17:10:18.148Z_
+_Updated 2026-11-04T17:21:56.009Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **walking into grubb's shop makes you lag. the light is also very bright in there** `mw2dw3ynhxrel`
 - [ ] 💡 **add in earnable titles** `mw2dh57hjyhtf`
 - [ ] 💡 **make it so 2 rogues sitting next to each makes all mob's ignore them. like the RO "gangster's paradise" skill. could be something special to unlock.** `mw2bwckmh0r06`
 - [ ] 💡 **button to unsheath weapon and keep it out, and the sheath it back, if youre out of combat** `mw2ar5xpoui1x`
