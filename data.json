@@ -5955,6 +5955,24 @@
       "slot": "",
       "created": 1793793115133,
       "updated": 1793793115133
+    },
+    {
+      "id": "mw22s7ry6t6lv",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make indicator for mining and woodcutting minigames. some small reminder that they exist while you are passive mining/woodcutting",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793794252894,
+      "updated": 1793794252894
     }
   ],
   "notes": [
