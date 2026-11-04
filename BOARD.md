@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T15:35:57.883Z_
+_Updated 2026-11-04T15:36:08.335Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -194,9 +194,6 @@ _42 done._
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
 - [ ] 💡 **sit emote. restore more hp while out of combat** _(easy)_ `mvokz95zhkfce`
-- [ ] 🐛 **twig bow not sheathing properly** _(medium)_ `mvoiis4t5uwqv`
-  - images: images/mvoifghsb5ysv.jpg
-- [ ] 🔧 **fix camera inside buildings** _(medium)_ `mvlcjygp596ho`
 - [ ] 💡 **lights along paths, fireflies at night. not mobs, just firefly effect.** `mvl92e3dcl80x`
 - [ ] 💡 **exploration items, think wod leveling experience** _(medium)_ `mvl4yt31a8dg1`
 
@@ -206,5 +203,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_74 done._
+_76 done._
 
