@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T17:22:54.831Z_
+_Updated 2026-11-04T18:01:05.349Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **need to make it so you cant use other skills and left click at the same time** `mw2fagrp35m7l`
 - [ ] 💡 **gorrak's note needs a new icon** `mw2dxdizoduxv`
 - [ ] 💡 **walking into grubb's shop makes you lag. the light is also very bright in there** `mw2dw3ynhxrel`
 - [ ] 💡 **add in earnable titles** `mw2dh57hjyhtf`
