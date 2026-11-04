@@ -5903,7 +5903,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural",
       "notes": "",
       "build": "",
@@ -5916,7 +5916,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793793006265,
-      "updated": 1793801830398
+      "updated": 1793805430904
     },
     {
       "id": "mw221z0ldrf1s",
