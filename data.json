@@ -6153,6 +6153,24 @@
       "slot": "",
       "created": 1793815259749,
       "updated": 1793815259749
+    },
+    {
+      "id": "mw2fau5oxkg1j",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need more space or a scollbar in the professions page, not enough space for all professions to be listed",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793815277100,
+      "updated": 1793815277100
     }
   ],
   "notes": [
