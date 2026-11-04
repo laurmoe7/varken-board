@@ -5861,6 +5861,24 @@
       "slot": "",
       "created": 1793754943663,
       "updated": 1793754943663
+    },
+    {
+      "id": "mw1ht4tizpyjl",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "some kind of error reporter when game crashes",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793759023782,
+      "updated": 1793759023782
     }
   ],
   "notes": [
