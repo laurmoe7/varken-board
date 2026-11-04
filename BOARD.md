@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T14:24:28.512Z_
+_Updated 2026-11-04T14:58:44.520Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -178,6 +178,7 @@ _42 done._
 
 - [ ] 💡 **improve the tool belt** _(doing)_ `mw25jjuxmrffy`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **grubb rotating and bobbing while standing at his shop** `mw28rz497faaq`
 - [ ] 💡 **fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural** `mw221hvdxr9p2`
   - images: images/mw27amm2rdl5c.jpg
 - [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
