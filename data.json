@@ -5979,7 +5979,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "display patch notes when updating somehow",
       "notes": "",
       "build": "",
@@ -5990,7 +5990,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793795262776,
-      "updated": 1793795262776
+      "updated": 1793795369123
     }
   ],
   "notes": [
