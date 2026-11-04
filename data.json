@@ -6207,6 +6207,24 @@
       "slot": "",
       "created": 1793815826573,
       "updated": 1793815826573
+    },
+    {
+      "id": "mw2fnv96vbavz",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "batch cooking for the cooking quest doesnt count, for the cooking quest",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793815885050,
+      "updated": 1793815885050
     }
   ],
   "notes": [
