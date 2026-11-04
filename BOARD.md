@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T19:29:52.499Z_
+_Updated 2026-11-04T19:36:38.672Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -179,6 +179,7 @@ _42 done._
 
 - [ ] 💡 **cant drag things into your cart** _(doing)_ `mw2g1saypa4uw`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **line for displaying player names in the co-op menu is too short, cant see people's entire names** `mw2ipceqc7lot`
 - [ ] 💡 **fix armpits twisting during dance animation for elf** `mw2gqylad6376`
   > add bones if you need to
   - images: images/mw2gqq2gz0ict.jpg
