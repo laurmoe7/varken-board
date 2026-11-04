@@ -6299,6 +6299,24 @@
       "slot": "",
       "created": 1793820587342,
       "updated": 1793820587342
+    },
+    {
+      "id": "mw2ipceqc7lot",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "line for displaying player names in the co-op menu is too short, cant see people's entire names",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793820992786,
+      "updated": 1793820992786
     }
   ],
   "notes": [
