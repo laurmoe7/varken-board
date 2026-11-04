@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T20:29:07.359Z_
+_Updated 2026-11-04T21:16:22.309Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,7 +180,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **cant drag things into your cart** _(doing)_ `mw2g1saypa4uw`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **ai of lookout orcs is not good. they often stop attacking and are very slow** `mw2ivqez1a7gh`
 - [ ] 💡 **line for displaying player names in the co-op menu is too short, cant see people's entire names** `mw2ipceqc7lot`
@@ -221,5 +220,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_77 done._
+_78 done._
 
