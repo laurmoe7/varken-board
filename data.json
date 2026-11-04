@@ -6171,6 +6171,24 @@
       "slot": "",
       "created": 1793815277100,
       "updated": 1793815277100
+    },
+    {
+      "id": "mw2fik8equcj0",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "put specific item classifications on weapons (mace, staff, etc)",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793815637486,
+      "updated": 1793815637486
     }
   ],
   "notes": [
