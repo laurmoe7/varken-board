@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T13:29:49.728Z_
+_Updated 2026-11-04T13:29:56.970Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,10 +177,10 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add version of the turtle and bees bosses with more hp and damage to test fighting as a party. put them next to the current ones, with a bit of space** _(doing)_ `mw23i1k30r2zw`
+- [ ] 💡 **move back skibble and his counter in his shop** _(doing)_ `mw221z0ldrf1s`
+  - images: images/mw221ya3j3839.jpg
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **improve the tool belt** `mw25jjuxmrffy`
-- [ ] 💡 **move back skibble and his counter in his shop** `mw221z0ldrf1s`
-  - images: images/mw221ya3j3839.jpg
 - [ ] 💡 **fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural** `mw221hvdxr9p2`
   - images: images/mw220wzq6xpuv.jpg
 - [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
