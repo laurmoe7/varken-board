@@ -6225,6 +6225,24 @@
       "slot": "",
       "created": 1793815885050,
       "updated": 1793815885050
+    },
+    {
+      "id": "mw2g1saypa4uw",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "cant drag things into your cart",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793816534410,
+      "updated": 1793816534410
     }
   ],
   "notes": [
