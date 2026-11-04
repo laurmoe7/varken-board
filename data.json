@@ -4425,18 +4425,18 @@
       "project": "goblingame",
       "type": "fix",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "fix camera inside buildings",
       "notes": "",
       "build": "",
       "effort": "medium",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793806562733,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792782738745,
-      "updated": 1793006631008
+      "updated": 1793806562733
     },
     {
       "id": "mvlcky9djoj3w",
@@ -4589,20 +4589,20 @@
       "project": "goblingame",
       "type": "bug",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "twig bow not sheathing properly",
       "notes": "",
       "build": "",
       "effort": "medium",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793806561343,
       "images": [
         "mvoifghsb5ysv"
       ],
       "gallery": false,
       "slot": "",
       "created": 1792974160109,
-      "updated": 1793006617225
+      "updated": 1793806561343
     },
     {
       "id": "mvoitewfwbr7u",
@@ -4647,18 +4647,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "button to sheath and unsheath weapon.",
       "notes": "have 2 different idles/ walk animations. 1 while holding a weapon and 1 while not.",
       "build": "",
       "effort": "medium",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793806556948,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1792978265884,
-      "updated": 1793007461982
+      "updated": 1793806556948
     },
     {
       "id": "mvokz95zhkfce",
