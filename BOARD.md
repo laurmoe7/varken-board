@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T12:31:03.392Z_
+_Updated 2026-11-04T13:28:12.629Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,6 +180,7 @@ _42 done._
 - [ ] 💡 **make indicator for mining and woodcutting minigames. some small reminder that they exist while you are passive mining/woodcutting** _(doing)_ `mw22s7ry6t6lv`
 - [ ] 💡 **add "transmog" slot for helmets, but give it a different name** _(doing)_ `mw223tvhzyh1t`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **improve the tool belt** `mw25jjuxmrffy`
 - [ ] 💡 **add version of the turtle and bees bosses with more hp and damage to test fighting as a party. put them next to the current ones, with a bit of space** `mw23i1k30r2zw`
 - [ ] 💡 **move back skibble and his counter in his shop** `mw221z0ldrf1s`
   - images: images/mw221ya3j3839.jpg
