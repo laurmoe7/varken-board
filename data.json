@@ -5903,20 +5903,20 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793806158488,
       "images": [
         "mw27amm2rdl5c"
       ],
       "gallery": false,
       "slot": "",
       "created": 1793793006265,
-      "updated": 1793805430904
+      "updated": 1793806158488
     },
     {
       "id": "mw221z0ldrf1s",
@@ -6033,18 +6033,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "grubb rotating and bobbing while standing at his shop",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793806157232,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793804319369,
-      "updated": 1793805410820
+      "updated": 1793806157232
     }
   ],
   "notes": [
