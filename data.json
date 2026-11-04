@@ -6281,6 +6281,24 @@
       "slot": "",
       "created": 1793820414475,
       "updated": 1793820414475
+    },
+    {
+      "id": "mw2ignkep5dhd",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add way to roll touch attack for spells like cure serious wounds, which can be used as a touch attack on certain enemies",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793820587342,
+      "updated": 1793820587342
     }
   ],
   "notes": [
