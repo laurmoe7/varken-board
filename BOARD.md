@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T15:35:25.393Z_
+_Updated 2026-11-04T15:35:57.883Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,9 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ _(doing)_ `mvp0m30ma1riq`
+  > round part around cow also doesnt stay around neck when changing elevation and turning around. 
+  - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
 - [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
 - [ ] 💡 **some kind of error reporter when game crashes** `mw1ht4tizpyjl`
 - [ ] 💡 **make it so you have to confirm to get saved by goblins when you die, so you can get resurrected by someone** `mw1fdokvhhjid`
@@ -190,12 +193,7 @@ _42 done._
 - [ ] 💡 **make item descriptions much simpler. no extra details or quirky text** `mvu0eaxr1gfk3`
 - [ ] 💡 **improve hp bar over character** `mvtownh09tx6j`
 - [ ] 💡 **animation that plays while you have the map open** _(easy)_ `mvp1tv8b3b93l`
-- [ ] 🐛 **reigns not attached to drivers hands or cow in traveling carriage** _(easy)_ `mvp0m30ma1riq`
-  > round part around cow also doesnt stay around neck when changing elevation and turning around. 
-  - images: images/mvp0m24ufc8f2.jpg, images/mvp0slbq32li3.jpg
 - [ ] 💡 **sit emote. restore more hp while out of combat** _(easy)_ `mvokz95zhkfce`
-- [ ] 💡 **button to sheath and unsheath weapon.** _(medium)_ `mvokys6449zn7`
-  > have 2 different idles/ walk animations. 1 while holding a weapon and 1 while not.
 - [ ] 🐛 **twig bow not sheathing properly** _(medium)_ `mvoiis4t5uwqv`
   - images: images/mvoifghsb5ysv.jpg
 - [ ] 🔧 **fix camera inside buildings** _(medium)_ `mvlcjygp596ho`
@@ -208,5 +206,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_73 done._
+_74 done._
 
