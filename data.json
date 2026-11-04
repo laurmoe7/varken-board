@@ -5843,6 +5843,24 @@
       "slot": "",
       "created": 1793745793687,
       "updated": 1793745793687
+    },
+    {
+      "id": "mw1fdokvhhjid",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make it so you have to confirm to get saved by goblins when you die, so you can get resurrected by someone",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793754943663,
+      "updated": 1793754943663
     }
   ],
   "notes": [
