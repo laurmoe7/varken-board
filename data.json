@@ -6135,6 +6135,24 @@
       "slot": "",
       "created": 1793812969403,
       "updated": 1793812969403
+    },
+    {
+      "id": "mw2fagrp35m7l",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need to make it so you cant use other skills and left click at the same time",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793815259749,
+      "updated": 1793815259749
     }
   ],
   "notes": [
