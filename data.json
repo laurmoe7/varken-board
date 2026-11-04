@@ -5879,6 +5879,24 @@
       "slot": "",
       "created": 1793759023782,
       "updated": 1793759023782
+    },
+    {
+      "id": "mw21gq3wbb0by",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "playing in windowed mode causes random freezes",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793792037164,
+      "updated": 1793792037164
     }
   ],
   "notes": [
