@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T18:41:43.839Z_
+_Updated 2026-11-04T18:41:57.109Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,9 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **fix armpits twisting during dance animation for elf** `mw2gqylad6376`
+  > add bones if you need to
+  - images: images/mw2gqq2gz0ict.jpg
 - [ ] 💡 **cant drag things into your cart** `mw2g1saypa4uw`
 - [ ] 💡 **batch cooking for the cooking quest doesnt count, for the cooking quest** `mw2fnv96vbavz`
 - [ ] 💡 **make mobs wait 3 seconds on spawn before aggroing onto anyone** `mw2fmm4twil0q`
