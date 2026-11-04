@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T15:16:56.720Z_
+_Updated 2026-11-04T15:17:15.853Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,9 +177,9 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **grubb rotating and bobbing while standing at his shop** _(doing)_ `mw28rz497faaq`
-- [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural** `mw221hvdxr9p2`
+- [ ] 💡 **fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural** _(doing)_ `mw221hvdxr9p2`
   - images: images/mw27amm2rdl5c.jpg
+- [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
 - [ ] 💡 **some kind of error reporter when game crashes** `mw1ht4tizpyjl`
 - [ ] 💡 **make it so you have to confirm to get saved by goblins when you die, so you can get resurrected by someone** `mw1fdokvhhjid`
