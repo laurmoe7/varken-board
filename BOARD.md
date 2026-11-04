@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T18:01:22.968Z_
+_Updated 2026-11-04T18:07:23.589Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **put specific item classifications on weapons (mace, staff, etc)** `mw2fik8equcj0`
 - [ ] 💡 **need more space or a scollbar in the professions page, not enough space for all professions to be listed** `mw2fau5oxkg1j`
 - [ ] 💡 **need to make it so you cant use other skills and left click at the same time** `mw2fagrp35m7l`
 - [ ] 💡 **gorrak's note needs a new icon** `mw2dxdizoduxv`
