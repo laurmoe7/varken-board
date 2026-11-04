@@ -6081,6 +6081,24 @@
       "slot": "",
       "created": 1793809562278,
       "updated": 1793809562278
+    },
+    {
+      "id": "mw2dh57hjyhtf",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add in earnable titles",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793812212125,
+      "updated": 1793812212125
     }
   ],
   "notes": [
