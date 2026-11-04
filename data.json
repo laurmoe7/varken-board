@@ -6243,6 +6243,26 @@
       "slot": "",
       "created": 1793816534410,
       "updated": 1793816534410
+    },
+    {
+      "id": "mw2gqylad6376",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "fix armpits twisting during dance animation for elf",
+      "notes": "add bones if you need to",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mw2gqq2gz0ict"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1793817708958,
+      "updated": 1793817708958
     }
   ],
   "notes": [
