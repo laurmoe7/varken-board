@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T11:50:35.622Z_
+_Updated 2026-11-04T11:52:00.145Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,6 +177,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **add "transmog" slot for helmets, but give it a different name** `mw223tvhzyh1t`
 - [ ] 💡 **move back skibble and his counter in his shop** `mw221z0ldrf1s`
   - images: images/mw221ya3j3839.jpg
 - [ ] 💡 **fix goblin sitting animation so the legs fold correctly over benches and make the arms more natural** `mw221hvdxr9p2`
