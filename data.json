@@ -5937,6 +5937,24 @@
       "slot": "",
       "created": 1793793028485,
       "updated": 1793793028485
+    },
+    {
+      "id": "mw223tvhzyh1t",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add \"transmog\" slot for helmets, but give it a different name",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1793793115133,
+      "updated": 1793793115133
     }
   ],
   "notes": [
