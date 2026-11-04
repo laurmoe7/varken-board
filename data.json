@@ -5923,20 +5923,20 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "move back skibble and his counter in his shop",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793800933105,
       "images": [
         "mw221ya3j3839"
       ],
       "gallery": false,
       "slot": "",
       "created": 1793793028485,
-      "updated": 1793798991815
+      "updated": 1793800933105
     },
     {
       "id": "mw223tvhzyh1t",
@@ -5997,18 +5997,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "add version of the turtle and bees bosses with more hp and damage to test fighting as a party. put them next to the current ones, with a bit of space",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793800933910,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793795457891,
-      "updated": 1793798984845
+      "updated": 1793800933910
     },
     {
       "id": "mw25jjuxmrffy",
