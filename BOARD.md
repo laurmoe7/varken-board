@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-05T23:03:40.225Z_
+_Updated 2026-11-05T23:03:46.391Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -185,10 +185,10 @@ _42 done._
   - images: images/mw2gqq2gz0ict.jpg
 - [ ] 💡 **make mobs wait 3 seconds on spawn before aggroing onto anyone** _(doing)_ `mw2fmm4twil0q`
 - [ ] 💡 **put specific item classifications on weapons (mace, staff, etc)** _(doing)_ `mw2fik8equcj0`
+- [ ] 💡 **walking into grubb's shop makes you lag. the light is also very bright in there** _(doing)_ `mw2dw3ynhxrel`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **need to make it so you cant use other skills and left click at the same time** `mw2fagrp35m7l`
 - [ ] 💡 **gorrak's note needs a new icon** `mw2dxdizoduxv`
-- [ ] 💡 **walking into grubb's shop makes you lag. the light is also very bright in there** `mw2dw3ynhxrel`
 - [ ] 💡 **add in earnable titles** `mw2dh57hjyhtf`
 - [ ] 💡 **make it so 2 rogues sitting next to each makes all mob's ignore them. like the RO "gangster's paradise" skill. could be something special to unlock.** `mw2bwckmh0r06`
 - [ ] 💡 **button to unsheath weapon and keep it out, and the sheath it back, if youre out of combat** `mw2ar5xpoui1x`
