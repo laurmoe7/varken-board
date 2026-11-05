@@ -6196,7 +6196,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make mobs wait 3 seconds on spawn before aggroing onto anyone",
       "notes": "",
       "build": "",
@@ -6207,7 +6207,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793815826573,
-      "updated": 1793815826573
+      "updated": 1793919814010
     },
     {
       "id": "mw2fnv96vbavz",
