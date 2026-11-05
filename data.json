@@ -6213,18 +6213,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "batch cooking for the cooking quest doesnt count, for the cooking quest",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793919785862,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793815885050,
-      "updated": 1793831601801
+      "updated": 1793919785862
     },
     {
       "id": "mw2g1saypa4uw",
@@ -6249,7 +6249,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "fix armpits twisting during dance animation for elf",
       "notes": "add bones if you need to",
       "build": "",
@@ -6262,7 +6262,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793817708958,
-      "updated": 1793817708958
+      "updated": 1793919783394
     },
     {
       "id": "mw2icy6jbjg64",
@@ -6305,18 +6305,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "line for displaying player names in the co-op menu is too short, cant see people's entire names",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1793919789296,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793820992786,
-      "updated": 1793831588926
+      "updated": 1793919789296
     },
     {
       "id": "mw2it4l3t48dx",
