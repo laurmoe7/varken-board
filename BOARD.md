@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-05T23:03:33.704Z_
+_Updated 2026-11-05T23:03:40.225Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -183,9 +183,9 @@ _42 done._
 - [ ] 💡 **fix armpits twisting during dance animation for elf** _(doing)_ `mw2gqylad6376`
   > add bones if you need to
   - images: images/mw2gqq2gz0ict.jpg
+- [ ] 💡 **make mobs wait 3 seconds on spawn before aggroing onto anyone** _(doing)_ `mw2fmm4twil0q`
 - [ ] 💡 **put specific item classifications on weapons (mace, staff, etc)** _(doing)_ `mw2fik8equcj0`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **make mobs wait 3 seconds on spawn before aggroing onto anyone** `mw2fmm4twil0q`
 - [ ] 💡 **need to make it so you cant use other skills and left click at the same time** `mw2fagrp35m7l`
 - [ ] 💡 **gorrak's note needs a new icon** `mw2dxdizoduxv`
 - [ ] 💡 **walking into grubb's shop makes you lag. the light is also very bright in there** `mw2dw3ynhxrel`
