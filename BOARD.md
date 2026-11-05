@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-04T22:33:27.120Z_
+_Updated 2026-11-05T23:03:11.090Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,13 +180,10 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **ai of lookout orcs is not good. they often stop attacking and are very slow** _(doing)_ `mw2ivqez1a7gh`
-- [ ] 💡 **line for displaying player names in the co-op menu is too short, cant see people's entire names** _(doing)_ `mw2ipceqc7lot`
-- [ ] 💡 **batch cooking for the cooking quest doesnt count, for the cooking quest** _(doing)_ `mw2fnv96vbavz`
-- [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **fix armpits twisting during dance animation for elf** `mw2gqylad6376`
+- [ ] 💡 **fix armpits twisting during dance animation for elf** _(doing)_ `mw2gqylad6376`
   > add bones if you need to
   - images: images/mw2gqq2gz0ict.jpg
+- [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **make mobs wait 3 seconds on spawn before aggroing onto anyone** `mw2fmm4twil0q`
 - [ ] 💡 **put specific item classifications on weapons (mace, staff, etc)** `mw2fik8equcj0`
 - [ ] 💡 **need more space or a scollbar in the professions page, not enough space for all professions to be listed** `mw2fau5oxkg1j`
@@ -220,5 +217,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_78 done._
+_81 done._
 
