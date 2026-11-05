@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-05T23:46:20.101Z_
+_Updated 2026-11-05T23:57:53.956Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -184,6 +184,8 @@ _42 done._
   > add bones if you need to
   - images: images/mw2gqq2gz0ict.jpg
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **improve repetitive texture where land meets water, the wet spots** `mw47h4l4jlk86`
+  - images: images/mw47h38oadbkn.jpg
 - [ ] 💡 **need to make it so you cant use other skills and left click at the same time** `mw2fagrp35m7l`
 - [ ] 💡 **gorrak's note needs a new icon** `mw2dxdizoduxv`
 - [ ] 💡 **add in earnable titles** `mw2dh57hjyhtf`
