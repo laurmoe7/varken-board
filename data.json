@@ -6390,6 +6390,26 @@
       "slot": "",
       "created": 1793824141551,
       "updated": 1793824141551
+    },
+    {
+      "id": "mw47h4l4jlk86",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "improve repetitive texture where land meets water, the wet spots",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mw47h38oadbkn"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1793923065976,
+      "updated": 1793923065976
     }
   ],
   "notes": [
@@ -6754,6 +6774,10 @@
     "mw2gqq2gz0ict": {
       "name": "image.png",
       "added": 1793817697916
+    },
+    "mw47h38oadbkn": {
+      "name": "image.png",
+      "added": 1793923064238
     }
   }
 }
