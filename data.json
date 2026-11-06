@@ -6360,7 +6360,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "check for spells that increase rolls and damage based on level, like magic missle",
       "notes": "",
       "build": "",
@@ -6371,14 +6371,14 @@
       "gallery": false,
       "slot": "",
       "created": 1793821872337,
-      "updated": 1793821872337
+      "updated": 1793924765823
     },
     {
       "id": "mw2kku0flglt9",
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "check box on spells to not roll the spell, but instead use it for damage. like for flaming sphere",
       "notes": "",
       "build": "",
@@ -6389,7 +6389,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793824141551,
-      "updated": 1793824141551
+      "updated": 1793924768090
     },
     {
       "id": "mw47h4l4jlk86",
