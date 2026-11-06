@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-05T23:57:53.956Z_
+_Updated 2026-11-06T00:26:13.266Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,8 +153,8 @@ _6 done._
 
 ### Soon
 
-- [ ] 💡 **check box on spells to not roll the spell, but instead use it for damage. like for flaming sphere** _(Pathfinder)_ `mw2kku0flglt9`
-- [ ] 💡 **check for spells that increase rolls and damage based on level, like magic missle** _(Pathfinder)_ `mw2j872plrm5w`
+- [ ] 💡 **check box on spells to not roll the spell, but instead use it for damage. like for flaming sphere** _(Pathfinder)_ _(doing)_ `mw2kku0flglt9`
+- [ ] 💡 **check for spells that increase rolls and damage based on level, like magic missle** _(Pathfinder)_ _(doing)_ `mw2j872plrm5w`
 - [ ] 💡 **better description for rules like touch attack in the compendium** _(Pathfinder)_ `mw2it4l3t48dx`
 - [ ] 💡 **add way to roll touch attack for spells like cure serious wounds, which can be used as a touch attack on certain enemies** _(Pathfinder)_ `mw2ignkep5dhd`
 - [ ] 💡 **exp numbers did not get exported properly** _(Pathfinder)_ `mvikqbrnnxrw3`
