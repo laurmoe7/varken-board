@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-06T00:26:13.266Z_
+_Updated 2026-11-07T20:55:56.300Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,9 +180,6 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **fix armpits twisting during dance animation for elf** _(doing)_ `mw2gqylad6376`
-  > add bones if you need to
-  - images: images/mw2gqq2gz0ict.jpg
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **improve repetitive texture where land meets water, the wet spots** `mw47h4l4jlk86`
   - images: images/mw47h38oadbkn.jpg
@@ -215,5 +212,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_84 done._
+_85 done._
 
