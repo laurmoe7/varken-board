@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-07T20:55:56.300Z_
+_Updated 2026-11-07T20:57:12.716Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,10 +180,10 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **need to make it so you cant use other skills and left click at the same time** _(doing)_ `mw2fagrp35m7l`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **improve repetitive texture where land meets water, the wet spots** `mw47h4l4jlk86`
   - images: images/mw47h38oadbkn.jpg
-- [ ] 💡 **need to make it so you cant use other skills and left click at the same time** `mw2fagrp35m7l`
 - [ ] 💡 **gorrak's note needs a new icon** `mw2dxdizoduxv`
 - [ ] 💡 **add in earnable titles** `mw2dh57hjyhtf`
 - [ ] 💡 **make it so 2 rogues sitting next to each makes all mob's ignore them. like the RO "gangster's paradise" skill. could be something special to unlock.** `mw2bwckmh0r06`
