@@ -6428,6 +6428,26 @@
       "slot": "",
       "created": 1794129660582,
       "updated": 1794129660582
+    },
+    {
+      "id": "mw7mzltgss6xh",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "mobs still getting stuck. this lightning bug got stuck on this fence, for example.",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mw7mzkiunjgfw"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794130520884,
+      "updated": 1794130520884
     }
   ],
   "notes": [
@@ -6796,6 +6816,10 @@
     "mw47h38oadbkn": {
       "name": "image.png",
       "added": 1793923064238
+    },
+    "mw7mzkiunjgfw": {
+      "name": "image.png",
+      "added": 1794130519211
     }
   }
 }
