@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-08T09:21:05.718Z_
+_Updated 2026-11-08T09:35:28.521Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -182,6 +182,8 @@ _42 done._
 
 - [ ] 💡 **need to make it so you cant use other skills and left click at the same time** _(doing)_ `mw2fagrp35m7l`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** `mw7mzltgss6xh`
+  - images: images/mw7mzkiunjgfw.jpg
 - [ ] 💡 **make it so secondary classes start with their upgraded skills.** `mw7mh606sqc1n`
 - [ ] 💡 **improve repetitive texture where land meets water, the wet spots** `mw47h4l4jlk86`
   - images: images/mw47h38oadbkn.jpg
