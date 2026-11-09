@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-09T23:44:08.534Z_
+_Updated 2026-11-09T23:44:25.915Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,6 +181,8 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter** `mw9wr7yby7niq`
+  - images: images/mw9wqw8skswf3.jpg
 - [ ] 💡 **need tutorial quest that leads you to brakka after finishing the killing globblings part.** `mw9uop1ll8xl1`
   > same with leading to gubba after finishing brakka's part. each step needs a reminder telling you where to go next for the tutorial.
 - [ ] 💡 **make it so you have to put packs away before switching off the merchant class or any of it's secondary classes. they can be put in storage** `mw7n8k0y4a02y`
