@@ -6484,6 +6484,26 @@
       "slot": "",
       "created": 1794264381129,
       "updated": 1794264542452
+    },
+    {
+      "id": "mw9wr7yby7niq",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mw9wqw8skswf3"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794267858179,
+      "updated": 1794267858179
     }
   ],
   "notes": [
