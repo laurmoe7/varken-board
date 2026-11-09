@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-08T09:42:23.656Z_
+_Updated 2026-11-09T22:46:26.453Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,8 +180,8 @@ _42 done._
 
 ### Soon
 
-- [ ] 💡 **need to make it so you cant use other skills and left click at the same time** _(doing)_ `mw2fagrp35m7l`
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **need tutorial quest that leads you to brakka after finishing the killing globblings part** `mw9uop1ll8xl1`
 - [ ] 💡 **make it so you have to put packs away before switching off the merchant class or any of it's secondary classes. they can be put in storage** `mw7n8k0y4a02y`
 - [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** `mw7mzltgss6xh`
   - images: images/mw7mzkiunjgfw.jpg
@@ -216,5 +216,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_85 done._
+_86 done._
 
