@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-09T22:46:33.625Z_
+_Updated 2026-11-09T22:47:35.048Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,7 +181,8 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **need tutorial quest that leads you to brakka after finishing the killing globblings part** `mw9uop1ll8xl1`
+- [ ] 💡 **need tutorial quest that leads you to brakka after finishing the killing globblings part.** `mw9uop1ll8xl1`
+  > same with leading to gubba after
 - [ ] 💡 **make it so you have to put packs away before switching off the merchant class or any of it's secondary classes. they can be put in storage** `mw7n8k0y4a02y`
 - [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** `mw7mzltgss6xh`
   - images: images/mw7mzkiunjgfw.jpg
