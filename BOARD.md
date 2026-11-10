@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T00:31:49.931Z_
+_Updated 2026-11-10T00:34:34.502Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -186,6 +186,7 @@ _42 done._
 - [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
   > maybe need a special belt item? like some kind of stool
 - [ ] 💡 **put new skills on your bar when you level up** `mw9wwln6nbfw6`
+  > have them light up until you use them for the first time, or hover over them
 - [ ] 💡 **item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter** `mw9wr7yby7niq`
   - images: images/mw9wqw8skswf3.jpg
 - [ ] 💡 **need tutorial quest that leads you to brakka after finishing the killing globblings part.** `mw9uop1ll8xl1`
