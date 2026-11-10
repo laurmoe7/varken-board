@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T00:14:35.976Z_
+_Updated 2026-11-10T00:14:51.266Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,7 +181,8 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **allow to fish while sitting/fishing while sitting** `mw9xu27utu0rk`
+- [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
+  > maybe need a special belt item?
 - [ ] 💡 **put new skills on your bar when you level up** `mw9wwln6nbfw6`
 - [ ] 💡 **item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter** `mw9wr7yby7niq`
   - images: images/mw9wqw8skswf3.jpg
