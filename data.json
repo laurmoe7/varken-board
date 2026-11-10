@@ -6540,6 +6540,24 @@
       "slot": "",
       "created": 1794269670330,
       "updated": 1794269686336
+    },
+    {
+      "id": "mw9xuv3w49z3i",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add option to hide/unhide belt equipment from showing on your character",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794269707772,
+      "updated": 1794269707772
     }
   ],
   "notes": [
