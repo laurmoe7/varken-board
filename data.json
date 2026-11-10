@@ -6416,38 +6416,38 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "make it so secondary classes start with their upgraded skills.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794311417299,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1794129660582,
-      "updated": 1794271068940
+      "updated": 1794311417299
     },
     {
       "id": "mw7mzltgss6xh",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "mobs still getting stuck. this lightning bug got stuck on this fence, for example.",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794311415622,
       "images": [
         "mw7mzkiunjgfw"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794130520884,
-      "updated": 1794270914751
+      "updated": 1794311415622
     },
     {
       "id": "mw7n8k0y4a02y",
@@ -6490,38 +6490,38 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794311413775,
       "images": [
         "mw9wqw8skswf3"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794267858179,
-      "updated": 1794271055110
+      "updated": 1794311413775
     },
     {
       "id": "mw9wwln6nbfw6",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "put new skills on your bar when you level up",
       "notes": "have them light up until you use them for the first time, or hover over them",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794311412248,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1794268109202,
-      "updated": 1794271048843
+      "updated": 1794311412248
     },
     {
       "id": "mw9xu27utu0rk",
