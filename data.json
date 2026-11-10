@@ -5070,7 +5070,7 @@
       "type": "idea",
       "priority": "soon",
       "status": "doing",
-      "title": "add debuff when you have stolen pack.",
+      "title": "add debuff when you have stolen pack with timer.",
       "notes": "",
       "build": "",
       "effort": "",
@@ -5080,7 +5080,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793308613749,
-      "updated": 1793360225216
+      "updated": 1794270507270
     },
     {
       "id": "mvu3jpyvfxnht",
