@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T12:14:12.035Z_
+_Updated 2026-11-10T17:08:42.413Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,6 +181,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **further categorize the crafting menu on each tab. by weapon, armor type, etc** `mway27gju9dan`
 - [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** `mwanjex29lrzk`
   - images: images/mwanjedtvsh08.jpg
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
