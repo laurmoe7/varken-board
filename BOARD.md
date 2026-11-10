@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T00:34:34.502Z_
+_Updated 2026-11-10T00:34:51.252Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -189,9 +189,6 @@ _42 done._
   > have them light up until you use them for the first time, or hover over them
 - [ ] 💡 **item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter** `mw9wr7yby7niq`
   - images: images/mw9wqw8skswf3.jpg
-- [ ] 💡 **need tutorial quest that leads you to brakka after finishing the killing globblings part.** `mw9uop1ll8xl1`
-  > same with leading to gubba after finishing brakka's part. each step needs a reminder telling you where to go next for the tutorial.
-- [ ] 💡 **make it so you have to put packs away before switching off the merchant class or any of it's secondary classes. they can be put in storage** `mw7n8k0y4a02y`
 - [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** `mw7mzltgss6xh`
   - images: images/mw7mzkiunjgfw.jpg
 - [ ] 💡 **make it so secondary classes start with their upgraded skills.** `mw7mh606sqc1n`
@@ -225,5 +222,5 @@ _42 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_86 done._
+_88 done._
 
