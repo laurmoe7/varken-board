@@ -6529,8 +6529,8 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "allow to fish while sitting/fishing while sitting",
-      "notes": "",
+      "title": "allow to fish while sitting/fishing while sitting.",
+      "notes": "maybe need a special belt item?",
       "build": "",
       "effort": "",
       "area": "",
@@ -6539,7 +6539,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794269670330,
-      "updated": 1794269670330
+      "updated": 1794269686336
     }
   ],
   "notes": [
