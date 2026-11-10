@@ -6510,7 +6510,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "put new skills on your bar when you level up",
       "notes": "have them light up until you use them for the first time, or hover over them",
       "build": "",
@@ -6521,7 +6521,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794268109202,
-      "updated": 1794270869335
+      "updated": 1794271048843
     },
     {
       "id": "mw9xu27utu0rk",
