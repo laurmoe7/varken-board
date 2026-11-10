@@ -6576,6 +6576,26 @@
       "slot": "",
       "created": 1794270237665,
       "updated": 1794270237665
+    },
+    {
+      "id": "mwanjex29lrzk",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "sometimes the loincloth shows thru the goblin's armor. not sure what causes this",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwanjedtvsh08"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794312843590,
+      "updated": 1794312843590
     }
   ],
   "notes": [
@@ -6952,6 +6972,10 @@
     "mw9wqw8skswf3": {
       "name": "image.png",
       "added": 1794267843009
+    },
+    "mwanjedtvsh08": {
+      "name": "image.png",
+      "added": 1794312842902
     }
   }
 }
