@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T00:37:42.282Z_
+_Updated 2026-11-10T00:37:53.847Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -186,12 +186,12 @@ _42 done._
   - images: images/mw9wqw8skswf3.jpg
 - [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** _(doing)_ `mw7mzltgss6xh`
   - images: images/mw7mzkiunjgfw.jpg
+- [ ] 💡 **make it so secondary classes start with their upgraded skills.** _(doing)_ `mw7mh606sqc1n`
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
 - [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** `mw9xuv3w49z3i`
 - [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
   > maybe need a special belt item? like some kind of stool
-- [ ] 💡 **make it so secondary classes start with their upgraded skills.** `mw7mh606sqc1n`
 - [ ] 💡 **improve repetitive texture where land meets water, the wet spots** `mw47h4l4jlk86`
   - images: images/mw47h38oadbkn.jpg
 - [ ] 💡 **gorrak's note needs a new icon** `mw2dxdizoduxv`
