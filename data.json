@@ -6472,18 +6472,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "need tutorial quest that leads you to brakka after finishing the killing globblings part.",
       "notes": "same with leading to gubba after finishing brakka's part. each step needs a reminder telling you where to go next for the tutorial.",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794270885705,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1794264381129,
-      "updated": 1794264542452
+      "updated": 1794270885705
     },
     {
       "id": "mw9wr7yby7niq",
