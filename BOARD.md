@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T11:50:22.818Z_
+_Updated 2026-11-10T12:14:12.035Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,6 +181,8 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** `mwanjex29lrzk`
+  - images: images/mwanjedtvsh08.jpg
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
 - [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** `mw9xuv3w49z3i`
 - [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
