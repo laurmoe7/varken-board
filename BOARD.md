@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T00:34:58.247Z_
+_Updated 2026-11-10T00:35:19.628Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,6 +180,8 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** _(doing)_ `mw7mzltgss6xh`
+  - images: images/mw7mzkiunjgfw.jpg
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
 - [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** `mw9xuv3w49z3i`
@@ -189,8 +191,6 @@ _42 done._
   > have them light up until you use them for the first time, or hover over them
 - [ ] 💡 **item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter** `mw9wr7yby7niq`
   - images: images/mw9wqw8skswf3.jpg
-- [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** `mw7mzltgss6xh`
-  - images: images/mw7mzkiunjgfw.jpg
 - [ ] 💡 **make it so secondary classes start with their upgraded skills.** `mw7mh606sqc1n`
 - [ ] 💡 **improve repetitive texture where land meets water, the wet spots** `mw47h4l4jlk86`
   - images: images/mw47h38oadbkn.jpg
