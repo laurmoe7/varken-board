@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T00:15:13.943Z_
+_Updated 2026-11-10T00:24:03.206Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,6 +181,7 @@ _42 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
 - [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** `mw9xuv3w49z3i`
 - [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
   > maybe need a special belt item?
