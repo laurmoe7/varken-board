@@ -6596,6 +6596,24 @@
       "slot": "",
       "created": 1794312843590,
       "updated": 1794312843590
+    },
+    {
+      "id": "mway27gju9dan",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "further categorize the crafting menu on each tab. by weapon, armor type, etc",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794330516547,
+      "updated": 1794330516547
     }
   ],
   "notes": [
