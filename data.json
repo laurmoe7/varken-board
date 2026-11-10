@@ -6512,7 +6512,7 @@
       "priority": "soon",
       "status": "open",
       "title": "put new skills on your bar when you level up",
-      "notes": "",
+      "notes": "have them light up until you use them for the first time, or hover over them",
       "build": "",
       "effort": "",
       "area": "",
@@ -6521,7 +6521,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794268109202,
-      "updated": 1794268109202
+      "updated": 1794270869335
     },
     {
       "id": "mw9xu27utu0rk",
