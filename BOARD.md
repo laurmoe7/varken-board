@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-10T00:35:19.628Z_
+_Updated 2026-11-10T00:37:34.576Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -180,6 +180,8 @@ _42 done._
 
 ### Soon
 
+- [ ] 💡 **put new skills on your bar when you level up** _(doing)_ `mw9wwln6nbfw6`
+  > have them light up until you use them for the first time, or hover over them
 - [ ] 💡 **mobs still getting stuck. this lightning bug got stuck on this fence, for example.** _(doing)_ `mw7mzltgss6xh`
   - images: images/mw7mzkiunjgfw.jpg
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
@@ -187,8 +189,6 @@ _42 done._
 - [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** `mw9xuv3w49z3i`
 - [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
   > maybe need a special belt item? like some kind of stool
-- [ ] 💡 **put new skills on your bar when you level up** `mw9wwln6nbfw6`
-  > have them light up until you use them for the first time, or hover over them
 - [ ] 💡 **item pickups cover the quest log. i think the pick ups in the chat is good enough so get rid of the extra counter** `mw9wr7yby7niq`
   - images: images/mw9wqw8skswf3.jpg
 - [ ] 💡 **make it so secondary classes start with their upgraded skills.** `mw7mh606sqc1n`
