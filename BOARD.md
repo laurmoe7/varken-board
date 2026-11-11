@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T19:40:21.772Z_
+_Updated 2026-11-11T20:29:42.316Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,6 +153,7 @@ _6 done._
 
 ### Soon
 
+- [ ] 💡 **add mercy to paladin lay on hands** _(Pathfinder)_ `mwckoibeow53q`
 - [ ] 💡 **add proper charges and charge counter to wands and such** _(Pathfinder)_ `mwcix3p2p7fhj`
 - [ ] 💡 **exp numbers did not get exported properly?** _(Pathfinder)_ `mvikqbrnnxrw3`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
