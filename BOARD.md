@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T23:15:42.797Z_
+_Updated 2026-11-11T23:18:05.799Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,6 +175,7 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **change quests from "hit" mobs to "defeat"** `mwcqp3mse8men`
 - [ ] 💡 **other players clip thru the bottom of the elevator and vibrate.** `mwcqlzkqo7p7x`
   > also remove the invisible wall from the sides of the elevator
   - images: images/mwcqljs2icrcs.jpg
