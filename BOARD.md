@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T22:39:58.806Z_
+_Updated 2026-11-11T22:44:35.006Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,6 +175,7 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **for the quest proper mud, put an interactable pile of mud you get the mud from, like the pig potion quest** `mwcpi0epr1jfc`
 - [ ] 💡 **blocking with a shield on adventurer still makes them dodge** `mwcp36mh68mqs`
   > also make sure on warrior or any other class, that if you have a shield, you block with the shield and not the weapon.
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
