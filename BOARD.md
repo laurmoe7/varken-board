@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T23:22:19.767Z_
+_Updated 2026-11-11T23:25:48.069Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,6 +175,7 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **decrease the distance in which you can hear the foghorn/bells from barges and boats** `mwcqz0rvvwina`
 - [ ] 💡 **make sure you get resurrected at the nearest bonfire after dying and releasing** `mwcqujz8ugkk7`
 - [ ] 💡 **mark on your map where you can turn in quests** `mwcqri5vkuvw9`
 - [ ] 💡 **change quests from "hit" mobs to "defeat"** `mwcqp3mse8men`
