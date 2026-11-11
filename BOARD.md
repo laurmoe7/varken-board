@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T23:07:49.558Z_
+_Updated 2026-11-11T23:08:23.757Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,6 +176,7 @@ _50 done._
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **can walk thru the pirate ship on this side, all floors** `mwcqbu6d4nmnb`
+  > also item drops drop thru the ship
   - images: images/mwcqbsm0girp0.jpg
 - [ ] 💡 **can attack monster thru the floors of the pirate ship with aoe skills, like warriors wild swing** `mwcqad5b75kq9`
 - [ ] 💡 **add hover over descriptions for attributes** `mwcprdx61s4vi`
