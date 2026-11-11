@@ -6288,18 +6288,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add way to roll touch attack for spells like cure serious wounds, which can be used as a touch attack on certain enemies",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1794404233346,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793820587342,
-      "updated": 1793820587342
+      "updated": 1794404233346
     },
     {
       "id": "mw2ipceqc7lot",
@@ -6360,18 +6360,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "check for spells that increase rolls and damage based on level, like magic missle",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1794404228065,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793821872337,
-      "updated": 1793924765823
+      "updated": 1794404228065
     },
     {
       "id": "mw2kku0flglt9",
