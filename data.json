@@ -6740,6 +6740,26 @@
       "slot": "",
       "created": 1794437069713,
       "updated": 1794437069713
+    },
+    {
+      "id": "mwcpmpv6sks0p",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "can see and hear other goblins fighting from very far away",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwcpmp50qtpu7"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794437289330,
+      "updated": 1794437289330
     }
   ],
   "notes": [
@@ -7120,6 +7140,10 @@
     "mwanjedtvsh08": {
       "name": "image.png",
       "added": 1794312842902
+    },
+    "mwcpmp50qtpu7": {
+      "name": "image.png",
+      "added": 1794437288391
     }
   }
 }
