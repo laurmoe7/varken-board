@@ -6632,6 +6632,24 @@
       "slot": "",
       "created": 1794426016502,
       "updated": 1794426016502
+    },
+    {
+      "id": "mwckoibeow53q",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add mercy to paladin lay on hands",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794428974778,
+      "updated": 1794428974778
     }
   ],
   "notes": [
