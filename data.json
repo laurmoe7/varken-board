@@ -6796,6 +6796,26 @@
       "slot": "",
       "created": 1794438392591,
       "updated": 1794438392591
+    },
+    {
+      "id": "mwcqbu6d4nmnb",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "can walk thru the pirate ship on this side, all floors",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwcqbsm0girp0"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794438461317,
+      "updated": 1794438461317
     }
   ],
   "notes": [
@@ -7180,6 +7200,10 @@
     "mwcpmp50qtpu7": {
       "name": "image.png",
       "added": 1794437288391
+    },
+    "mwcqbsm0girp0": {
+      "name": "image.png",
+      "added": 1794438459293
     }
   }
 }
