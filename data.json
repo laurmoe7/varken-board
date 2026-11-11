@@ -6620,18 +6620,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "add proper charges and charge counter to wands and such",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1794432960946,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1794426016502,
-      "updated": 1794426016502
+      "updated": 1794432960946
     },
     {
       "id": "mwckoibeow53q",
