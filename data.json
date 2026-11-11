@@ -6686,6 +6686,24 @@
       "slot": "",
       "created": 1794436116356,
       "updated": 1794436116356
+    },
+    {
+      "id": "mwcoyyfv1uqhu",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add downside to dying.",
+      "notes": "payment?",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794436180699,
+      "updated": 1794436180699
     }
   ],
   "notes": [
