@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T20:59:46.910Z_
+_Updated 2026-11-11T21:36:06.037Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,7 +153,6 @@ _6 done._
 
 ### Soon
 
-- [ ] 💡 **add proper charges and charge counter to wands and such** _(Pathfinder)_ `mwcix3p2p7fhj`
 - [ ] 💡 **exp numbers did not get exported properly?** _(Pathfinder)_ `mvikqbrnnxrw3`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
   > such as everyman gaming llc, and paizo fans united. if something is 3rd party, mark it as such. examples include: shifting mind racial trait for kitsune, salawaan kitsune subrace. if a sheet already has these things filled in in a custom field, convert it to be a normal field like everything else.
@@ -164,7 +163,7 @@ _6 done._
   > Not every spell: coverage is about 2,250 of the 2,900+ published. Feats, traits and archetypes stop at the Advanced Class Guide (2015), because that's where the free data source ends. Later books only contribute spells.
   > 
 
-_49 done._
+_50 done._
 
 ### Notes
 
