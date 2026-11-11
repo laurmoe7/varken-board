@@ -6712,7 +6712,7 @@
       "priority": "soon",
       "status": "open",
       "title": "blocking with a shield on adventurer still makes them dodge",
-      "notes": "",
+      "notes": "also make sure if ",
       "build": "",
       "effort": "",
       "area": "",
@@ -6721,7 +6721,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794436377929,
-      "updated": 1794436377929
+      "updated": 1794436726910
     }
   ],
   "notes": [
