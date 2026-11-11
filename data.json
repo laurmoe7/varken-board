@@ -6854,6 +6854,24 @@
       "slot": "",
       "created": 1794439080100,
       "updated": 1794439080100
+    },
+    {
+      "id": "mwcqri5vkuvw9",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "mark on your map where you can turn in quests",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794439192243,
+      "updated": 1794439192243
     }
   ],
   "notes": [
