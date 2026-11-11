@@ -6676,7 +6676,7 @@
       "priority": "soon",
       "status": "open",
       "title": "big globs respawn very faster after killing the big one. it needs to wait until after the little ones die",
-      "notes": "",
+      "notes": "bees from beehives also instantly respawn",
       "build": "",
       "effort": "",
       "area": "",
@@ -6685,7 +6685,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794436116356,
-      "updated": 1794436116356
+      "updated": 1794438715379
     },
     {
       "id": "mwcoyyfv1uqhu",
