@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T22:28:41.978Z_
+_Updated 2026-11-11T22:29:45.837Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,6 +175,8 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
+  > payment?
 - [ ] 💡 **big globs respawn very faster after killing the big one. it needs to wait until after the little ones die** `mwcoxksks27i0`
 - [ ] 💡 **further categorize the crafting menu on each tab. by weapon, armor type, etc** `mway27gju9dan`
 - [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** `mwanjex29lrzk`
