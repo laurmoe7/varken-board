@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T23:08:23.757Z_
+_Updated 2026-11-11T23:12:01.237Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -188,6 +188,7 @@ _50 done._
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
 - [ ] 💡 **big globs respawn very faster after killing the big one. it needs to wait until after the little ones die** `mwcoxksks27i0`
+  > bees from beehives also instantly respawn
 - [ ] 💡 **further categorize the crafting menu on each tab. by weapon, armor type, etc** `mway27gju9dan`
 - [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** `mwanjex29lrzk`
   - images: images/mwanjedtvsh08.jpg
