@@ -6668,6 +6668,24 @@
       "slot": "",
       "created": 1794430048945,
       "updated": 1794430780167
+    },
+    {
+      "id": "mwcoxksks27i0",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "big globs respawn very faster after killing the big one. it needs to wait until after the little ones die",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794436116356,
+      "updated": 1794436116356
     }
   ],
   "notes": [
