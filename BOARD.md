@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T20:47:34.137Z_
+_Updated 2026-11-11T20:50:00.677Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -153,8 +153,8 @@ _6 done._
 
 ### Soon
 
-- [ ] 💡 **need to be able to do rolls for skills for companions, even if they dont have points in them. make a nice compact way to do this** _(Pathfinder)_ `mwclbj5dygo9m`
-- [ ] 💡 **add mercy to paladin lay on hands** _(Pathfinder)_ `mwckoibeow53q`
+- [ ] 💡 **need to be able to do rolls for skills for companions, even if they dont have points in them. make a nice compact way to do this** _(Pathfinder)_ _(doing)_ `mwclbj5dygo9m`
+- [ ] 💡 **add mercy to paladin lay on hands** _(Pathfinder)_ _(doing)_ `mwckoibeow53q`
 - [ ] 💡 **add proper charges and charge counter to wands and such** _(Pathfinder)_ `mwcix3p2p7fhj`
 - [ ] 💡 **exp numbers did not get exported properly?** _(Pathfinder)_ `mvikqbrnnxrw3`
 - [ ] 💡 **additional support for 3rd party publishers** _(medium)_ _(Pathfinder)_ `muxujlnznx4aw`
