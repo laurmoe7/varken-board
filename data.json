@@ -6804,7 +6804,7 @@
       "priority": "soon",
       "status": "open",
       "title": "can walk thru the pirate ship on this side, all floors",
-      "notes": "",
+      "notes": "also item drops drop thru the ship",
       "build": "",
       "effort": "",
       "area": "",
@@ -6815,7 +6815,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794438461317,
-      "updated": 1794438461317
+      "updated": 1794438498012
     }
   ],
   "notes": [
