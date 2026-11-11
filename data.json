@@ -6836,6 +6836,24 @@
       "slot": "",
       "created": 1794438934874,
       "updated": 1794438934874
+    },
+    {
+      "id": "mwcqp3mse8men",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "change quests from \"hit\" mobs to \"defeat\"",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794439080100,
+      "updated": 1794439080100
     }
   ],
   "notes": [
