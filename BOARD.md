@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T22:38:52.147Z_
+_Updated 2026-11-11T22:39:03.796Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,7 +176,7 @@ _50 done._
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **blocking with a shield on adventurer still makes them dodge** `mwcp36mh68mqs`
-  > also make sure i
+  > also make sure on warrior or 
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
 - [ ] 💡 **big globs respawn very faster after killing the big one. it needs to wait until after the little ones die** `mwcoxksks27i0`
