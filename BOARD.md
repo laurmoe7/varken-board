@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-11T23:19:58.067Z_
+_Updated 2026-11-11T23:22:19.767Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,6 +175,7 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **make sure you get resurrected at the nearest bonfire after dying and releasing** `mwcqujz8ugkk7`
 - [ ] 💡 **mark on your map where you can turn in quests** `mwcqri5vkuvw9`
 - [ ] 💡 **change quests from "hit" mobs to "defeat"** `mwcqp3mse8men`
 - [ ] 💡 **other players clip thru the bottom of the elevator and vibrate.** `mwcqlzkqo7p7x`
