@@ -6638,7 +6638,7 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "add mercy to paladin lay on hands",
       "notes": "",
       "build": "",
@@ -6649,14 +6649,14 @@
       "gallery": false,
       "slot": "",
       "created": 1794428974778,
-      "updated": 1794428974778
+      "updated": 1794430195681
     },
     {
       "id": "mwclbj5dygo9m",
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "need to be able to do rolls for skills for companions, even if they dont have points in them. make a nice compact way to do this",
       "notes": "",
       "build": "",
@@ -6667,7 +6667,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794430048945,
-      "updated": 1794430048945
+      "updated": 1794430194998
     }
   ],
   "notes": [
