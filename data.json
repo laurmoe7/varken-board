@@ -6760,6 +6760,24 @@
       "slot": "",
       "created": 1794437289330,
       "updated": 1794437289330
+    },
+    {
+      "id": "mwcprdx61s4vi",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add hover over descriptions for attributes",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794437507130,
+      "updated": 1794437507130
     }
   ],
   "notes": [
