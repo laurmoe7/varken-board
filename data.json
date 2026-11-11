@@ -6324,18 +6324,18 @@
       "project": "pathfinder",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "better description for rules like touch attack in the compendium",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "pathfinder",
-      "doneAt": 0,
+      "doneAt": 1794425998258,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1793821169271,
-      "updated": 1793821169271
+      "updated": 1794425998258
     },
     {
       "id": "mw2ivqez1a7gh",
