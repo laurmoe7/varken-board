@@ -6712,7 +6712,7 @@
       "priority": "soon",
       "status": "open",
       "title": "blocking with a shield on adventurer still makes them dodge",
-      "notes": "also make sure on warrior or any other class, ",
+      "notes": "also make sure on warrior or any other class, that if you have a shield, you block with the shield and not the weapon.",
       "build": "",
       "effort": "",
       "area": "",
@@ -6721,7 +6721,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794436377929,
-      "updated": 1794436746513
+      "updated": 1794436793113
     }
   ],
   "notes": [
