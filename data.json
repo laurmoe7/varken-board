@@ -6614,6 +6614,24 @@
       "slot": "",
       "created": 1794330516547,
       "updated": 1794330516547
+    },
+    {
+      "id": "mwcix3p2p7fhj",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add proper charges and charge counter to wands and such",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794426016502,
+      "updated": 1794426016502
     }
   ],
   "notes": [
