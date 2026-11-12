@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T12:17:09.130Z_
+_Updated 2026-11-12T12:27:27.097Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,7 +174,6 @@ _50 done._
 
 ### Soon
 
-- [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **add crafting heading to the book of knowledge, like the crafting menus have** `mwdiiz9l12mk4`
 - [ ] 💡 **improve the fishing stool.** `mwdii923fm2t2`
   > give it a proper model, etc.
@@ -208,5 +207,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_110 done._
+_111 done._
 
