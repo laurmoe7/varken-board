@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T10:20:21.876Z_
+_Updated 2026-11-12T11:48:00.515Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,27 +174,6 @@ _50 done._
 
 ### Soon
 
-- [ ] 💡 **decrease the distance in which you can hear the foghorn/bells from barges and boats** _(doing)_ `mwcqz0rvvwina`
-- [ ] 💡 **make sure you get resurrected at the nearest bonfire after dying and releasing** _(doing)_ `mwcqujz8ugkk7`
-- [ ] 💡 **mark on your map where you can turn in quests** _(doing)_ `mwcqri5vkuvw9`
-- [ ] 💡 **change quests from "hit" mobs to "defeat"** _(doing)_ `mwcqp3mse8men`
-- [ ] 💡 **other players clip thru the bottom of the elevator and vibrate.** _(doing)_ `mwcqlzkqo7p7x`
-  > also remove the invisible wall from the sides of the elevator
-  - images: images/mwcqljs2icrcs.jpg
-- [ ] 💡 **can walk thru the pirate ship on this side, all floors** _(doing)_ `mwcqbu6d4nmnb`
-  > also item drops drop thru the ship
-  - images: images/mwcqbsm0girp0.jpg
-- [ ] 💡 **can attack monster thru the floors of the pirate ship with aoe skills, like warriors wild swing** _(doing)_ `mwcqad5b75kq9`
-- [ ] 💡 **add hover over descriptions for attributes** _(doing)_ `mwcprdx61s4vi`
-- [ ] 💡 **can see and hear other goblins fighting from very far away** _(doing)_ `mwcpmpv6sks0p`
-  - images: images/mwcpmp50qtpu7.jpg
-- [ ] 💡 **for the quest proper mud, put an interactable pile of mud you get the mud from, like the pig potion quest** _(doing)_ `mwcpi0epr1jfc`
-- [ ] 💡 **blocking with a shield on adventurer still makes them dodge** _(doing)_ `mwcp36mh68mqs`
-  > also make sure on warrior or any other class, that if you have a shield, you block with the shield and not the weapon.
-- [ ] 💡 **big globs respawn very faster after killing the big one. it needs to wait until after the little ones die** _(doing)_ `mwcoxksks27i0`
-  > bees from beehives also instantly respawn
-- [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** _(doing)_ `mwanjex29lrzk`
-  - images: images/mwanjedtvsh08.jpg
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
@@ -233,5 +212,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_92 done._
+_105 done._
 
