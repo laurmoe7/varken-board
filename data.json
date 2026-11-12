@@ -6860,7 +6860,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "mark on your map where you can turn in quests",
       "notes": "",
       "build": "",
@@ -6871,14 +6871,14 @@
       "gallery": false,
       "slot": "",
       "created": 1794439192243,
-      "updated": 1794439192243
+      "updated": 1794478723142
     },
     {
       "id": "mwcqujz8ugkk7",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "make sure you get resurrected at the nearest bonfire after dying and releasing",
       "notes": "",
       "build": "",
@@ -6889,7 +6889,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794439334564,
-      "updated": 1794439334564
+      "updated": 1794478720961
     },
     {
       "id": "mwcqz0rvvwina",
