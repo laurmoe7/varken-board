@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T12:13:54.574Z_
+_Updated 2026-11-12T12:14:07.852Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,8 +174,6 @@ _50 done._
 
 ### Soon
 
-- [ ] 💡 **improve repetitive texture where land meets water, the wet spots** _(doing)_ `mw47h4l4jlk86`
-  - images: images/mw47h38oadbkn.jpg
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
@@ -207,5 +205,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_109 done._
+_110 done._
 
