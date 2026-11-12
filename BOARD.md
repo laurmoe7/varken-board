@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T10:18:58.914Z_
+_Updated 2026-11-12T10:19:10.164Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -178,10 +178,10 @@ _50 done._
 - [ ] 💡 **make sure you get resurrected at the nearest bonfire after dying and releasing** _(doing)_ `mwcqujz8ugkk7`
 - [ ] 💡 **mark on your map where you can turn in quests** _(doing)_ `mwcqri5vkuvw9`
 - [ ] 💡 **change quests from "hit" mobs to "defeat"** _(doing)_ `mwcqp3mse8men`
-- [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **other players clip thru the bottom of the elevator and vibrate.** `mwcqlzkqo7p7x`
+- [ ] 💡 **other players clip thru the bottom of the elevator and vibrate.** _(doing)_ `mwcqlzkqo7p7x`
   > also remove the invisible wall from the sides of the elevator
   - images: images/mwcqljs2icrcs.jpg
+- [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **can walk thru the pirate ship on this side, all floors** `mwcqbu6d4nmnb`
   > also item drops drop thru the ship
   - images: images/mwcqbsm0girp0.jpg
