@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T10:19:10.164Z_
+_Updated 2026-11-12T10:19:23.047Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -181,10 +181,10 @@ _50 done._
 - [ ] 💡 **other players clip thru the bottom of the elevator and vibrate.** _(doing)_ `mwcqlzkqo7p7x`
   > also remove the invisible wall from the sides of the elevator
   - images: images/mwcqljs2icrcs.jpg
-- [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **can walk thru the pirate ship on this side, all floors** `mwcqbu6d4nmnb`
+- [ ] 💡 **can walk thru the pirate ship on this side, all floors** _(doing)_ `mwcqbu6d4nmnb`
   > also item drops drop thru the ship
   - images: images/mwcqbsm0girp0.jpg
+- [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **can attack monster thru the floors of the pirate ship with aoe skills, like warriors wild swing** `mwcqad5b75kq9`
 - [ ] 💡 **add hover over descriptions for attributes** `mwcprdx61s4vi`
 - [ ] 💡 **can see and hear other goblins fighting from very far away** `mwcpmpv6sks0p`
