@@ -6674,7 +6674,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "big globs respawn very faster after killing the big one. it needs to wait until after the little ones die",
       "notes": "bees from beehives also instantly respawn",
       "build": "",
@@ -6685,7 +6685,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794436116356,
-      "updated": 1794438715379
+      "updated": 1794478804687
     },
     {
       "id": "mwcoyyfv1uqhu",
