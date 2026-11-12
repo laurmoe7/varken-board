@@ -6802,7 +6802,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "can walk thru the pirate ship on this side, all floors",
       "notes": "also item drops drop thru the ship",
       "build": "",
@@ -6815,7 +6815,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794438461317,
-      "updated": 1794438498012
+      "updated": 1794478757940
     },
     {
       "id": "mwcqlzkqo7p7x",
