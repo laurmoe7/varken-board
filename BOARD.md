@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T11:48:17.882Z_
+_Updated 2026-11-12T11:48:33.080Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,11 +175,11 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **further categorize the crafting menu on each tab. by weapon, armor type, etc** _(doing)_ `mway27gju9dan`
+- [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** _(doing)_ `mw9xuv3w49z3i`
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
-- [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** `mw9xuv3w49z3i`
 - [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
   > maybe need a special belt item? like some kind of stool
 - [ ] 💡 **improve repetitive texture where land meets water, the wet spots** `mw47h4l4jlk86`
