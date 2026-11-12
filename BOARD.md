@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T11:49:00.708Z_
+_Updated 2026-11-12T11:49:26.720Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -176,14 +176,14 @@ _50 done._
 
 - [ ] 💡 **further categorize the crafting menu on each tab. by weapon, armor type, etc** _(doing)_ `mway27gju9dan`
 - [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** _(doing)_ `mw9xuv3w49z3i`
+- [ ] 💡 **allow to fish while sitting/fishing while sitting.** _(doing)_ `mw9xu27utu0rk`
+  > maybe need a special belt item? like some kind of stool
 - [ ] 💡 **improve repetitive texture where land meets water, the wet spots** _(doing)_ `mw47h4l4jlk86`
   - images: images/mw47h38oadbkn.jpg
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
-- [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
-  > maybe need a special belt item? like some kind of stool
 - [ ] 💡 **add in earnable titles** `mw2dh57hjyhtf`
 - [ ] 💡 **make it so 2 rogues sitting next to each makes all mob's ignore them. like the RO "gangster's paradise" skill. could be something special to unlock.** `mw2bwckmh0r06`
 - [ ] 💡 **button to unsheath weapon and keep it out, and then sheath it back, if youre out of combat** `mw2ar5xpoui1x`
