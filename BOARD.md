@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T10:20:10.716Z_
+_Updated 2026-11-12T10:20:21.876Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -193,12 +193,12 @@ _50 done._
   > also make sure on warrior or any other class, that if you have a shield, you block with the shield and not the weapon.
 - [ ] 💡 **big globs respawn very faster after killing the big one. it needs to wait until after the little ones die** _(doing)_ `mwcoxksks27i0`
   > bees from beehives also instantly respawn
+- [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** _(doing)_ `mwanjex29lrzk`
+  - images: images/mwanjedtvsh08.jpg
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
 - [ ] 💡 **further categorize the crafting menu on each tab. by weapon, armor type, etc** `mway27gju9dan`
-- [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** `mwanjex29lrzk`
-  - images: images/mwanjedtvsh08.jpg
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
 - [ ] 💡 **add option to hide/unhide belt equipment from showing on your character** `mw9xuv3w49z3i`
 - [ ] 💡 **allow to fish while sitting/fishing while sitting.** `mw9xu27utu0rk`
