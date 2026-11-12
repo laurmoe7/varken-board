@@ -6944,6 +6944,24 @@
       "slot": "",
       "created": 1794485823753,
       "updated": 1794485823753
+    },
+    {
+      "id": "mwdjdlyiblypv",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "need to add early easy way to unlock a basic, slower mount",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794487252842,
+      "updated": 1794487252842
     }
   ],
   "notes": [
