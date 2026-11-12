@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T10:19:23.047Z_
+_Updated 2026-11-12T10:19:29.769Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -184,9 +184,9 @@ _50 done._
 - [ ] 💡 **can walk thru the pirate ship on this side, all floors** _(doing)_ `mwcqbu6d4nmnb`
   > also item drops drop thru the ship
   - images: images/mwcqbsm0girp0.jpg
+- [ ] 💡 **can attack monster thru the floors of the pirate ship with aoe skills, like warriors wild swing** _(doing)_ `mwcqad5b75kq9`
+- [ ] 💡 **add hover over descriptions for attributes** _(doing)_ `mwcprdx61s4vi`
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **can attack monster thru the floors of the pirate ship with aoe skills, like warriors wild swing** `mwcqad5b75kq9`
-- [ ] 💡 **add hover over descriptions for attributes** `mwcprdx61s4vi`
 - [ ] 💡 **can see and hear other goblins fighting from very far away** `mwcpmpv6sks0p`
   - images: images/mwcpmp50qtpu7.jpg
 - [ ] 💡 **for the quest proper mud, put an interactable pile of mud you get the mud from, like the pig potion quest** `mwcpi0epr1jfc`
