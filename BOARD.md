@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T10:20:01.622Z_
+_Updated 2026-11-12T10:20:10.716Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -191,11 +191,11 @@ _50 done._
 - [ ] 💡 **for the quest proper mud, put an interactable pile of mud you get the mud from, like the pig potion quest** _(doing)_ `mwcpi0epr1jfc`
 - [ ] 💡 **blocking with a shield on adventurer still makes them dodge** _(doing)_ `mwcp36mh68mqs`
   > also make sure on warrior or any other class, that if you have a shield, you block with the shield and not the weapon.
+- [ ] 💡 **big globs respawn very faster after killing the big one. it needs to wait until after the little ones die** _(doing)_ `mwcoxksks27i0`
+  > bees from beehives also instantly respawn
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
-- [ ] 💡 **big globs respawn very faster after killing the big one. it needs to wait until after the little ones die** `mwcoxksks27i0`
-  > bees from beehives also instantly respawn
 - [ ] 💡 **further categorize the crafting menu on each tab. by weapon, armor type, etc** `mway27gju9dan`
 - [ ] 💡 **sometimes the loincloth shows thru the goblin's armor. not sure what causes this** `mwanjex29lrzk`
   - images: images/mwanjedtvsh08.jpg
