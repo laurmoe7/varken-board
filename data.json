@@ -6908,6 +6908,24 @@
       "slot": "",
       "created": 1794439542955,
       "updated": 1794484063755
+    },
+    {
+      "id": "mwdii923fm2t2",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "improve the fishing stool.",
+      "notes": "give it a proper model, etc.",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794485789787,
+      "updated": 1794485789787
     }
   ],
   "notes": [
