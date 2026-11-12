@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T11:48:49.369Z_
+_Updated 2026-11-12T11:49:00.708Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -186,7 +186,7 @@ _50 done._
   > maybe need a special belt item? like some kind of stool
 - [ ] 💡 **add in earnable titles** `mw2dh57hjyhtf`
 - [ ] 💡 **make it so 2 rogues sitting next to each makes all mob's ignore them. like the RO "gangster's paradise" skill. could be something special to unlock.** `mw2bwckmh0r06`
-- [ ] 💡 **button to unsheath weapon and keep it out, and the sheath it back, if youre out of combat** `mw2ar5xpoui1x`
+- [ ] 💡 **button to unsheath weapon and keep it out, and then sheath it back, if youre out of combat** `mw2ar5xpoui1x`
 - [ ] 💡 **playing in windowed mode causes random freezes** `mw21gq3wbb0by`
 - [ ] 💡 **some kind of error reporter when game crashes** `mw1ht4tizpyjl`
 - [ ] 💡 **make it so you have to confirm to get saved by goblins when you die, so you can get resurrected by someone** `mw1fdokvhhjid`
