@@ -6926,6 +6926,24 @@
       "slot": "",
       "created": 1794485789787,
       "updated": 1794485789787
+    },
+    {
+      "id": "mwdiiz9l12mk4",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "add crafting heading to the book of knowledge, like the crafting menus have",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794485823753,
+      "updated": 1794485823753
     }
   ],
   "notes": [
