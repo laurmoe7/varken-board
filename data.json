@@ -6822,7 +6822,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "other players clip thru the bottom of the elevator and vibrate.",
       "notes": "also remove the invisible wall from the sides of the elevator",
       "build": "",
@@ -6835,7 +6835,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794438934874,
-      "updated": 1794438934874
+      "updated": 1794478745438
     },
     {
       "id": "mwcqp3mse8men",
