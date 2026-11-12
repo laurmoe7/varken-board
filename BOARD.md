@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T10:19:36.552Z_
+_Updated 2026-11-12T10:19:42.864Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -186,10 +186,10 @@ _50 done._
   - images: images/mwcqbsm0girp0.jpg
 - [ ] 💡 **can attack monster thru the floors of the pirate ship with aoe skills, like warriors wild swing** _(doing)_ `mwcqad5b75kq9`
 - [ ] 💡 **add hover over descriptions for attributes** _(doing)_ `mwcprdx61s4vi`
-- [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
-- [ ] 💡 **can see and hear other goblins fighting from very far away** `mwcpmpv6sks0p`
+- [ ] 💡 **can see and hear other goblins fighting from very far away** _(doing)_ `mwcpmpv6sks0p`
   - images: images/mwcpmp50qtpu7.jpg
-- [ ] 💡 **for the quest proper mud, put an interactable pile of mud you get the mud from, like the pig potion quest** `mwcpi0epr1jfc`
+- [ ] 💡 **for the quest proper mud, put an interactable pile of mud you get the mud from, like the pig potion quest** _(doing)_ `mwcpi0epr1jfc`
+- [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
 - [ ] 💡 **blocking with a shield on adventurer still makes them dodge** `mwcp36mh68mqs`
   > also make sure on warrior or any other class, that if you have a shield, you block with the shield and not the weapon.
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
