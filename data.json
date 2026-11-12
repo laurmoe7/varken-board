@@ -6052,7 +6052,7 @@
       "type": "idea",
       "priority": "soon",
       "status": "open",
-      "title": "button to unsheath weapon and keep it out, and the sheath it back, if youre out of combat",
+      "title": "button to unsheath weapon and keep it out, and then sheath it back, if youre out of combat",
       "notes": "",
       "build": "",
       "effort": "",
@@ -6062,7 +6062,7 @@
       "gallery": false,
       "slot": "",
       "created": 1793807640781,
-      "updated": 1793807640781
+      "updated": 1794484135646
     },
     {
       "id": "mw2bwckmh0r06",
