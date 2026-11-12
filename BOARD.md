@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T12:16:34.973Z_
+_Updated 2026-11-12T12:17:09.130Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,6 +175,7 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add debuff when you have stolen pack with timer.** _(doing)_ `mvu1na7pkpt0n`
+- [ ] 💡 **add crafting heading to the book of knowledge, like the crafting menus have** `mwdiiz9l12mk4`
 - [ ] 💡 **improve the fishing stool.** `mwdii923fm2t2`
   > give it a proper model, etc.
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
