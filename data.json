@@ -7022,6 +7022,24 @@
       "slot": "",
       "created": 1794688392817,
       "updated": 1794688392817
+    },
+    {
+      "id": "mwgv63m9zhs4u",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "improve water elemental model. make them chubby and cute",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688456401,
+      "updated": 1794688456401
     }
   ],
   "notes": [
