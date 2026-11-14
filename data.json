@@ -7126,7 +7126,7 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "doing",
       "title": "fix signposts also showing text on the backside",
       "notes": "",
       "build": "",
@@ -7137,7 +7137,7 @@
       "gallery": false,
       "slot": "",
       "created": 1794689267288,
-      "updated": 1794689267288
+      "updated": 1794689891590
     }
   ],
   "notes": [
