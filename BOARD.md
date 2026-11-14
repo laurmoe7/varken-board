@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-12T12:40:58.812Z_
+_Updated 2026-11-14T20:29:38.202Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,6 +174,8 @@ _50 done._
 
 ### Soon
 
+- [ ] 💡 **cant talk to this goblin trader, too far** `mwguzz27eaw8n`
+  - images: images/mwguzy08wiotu.jpg
 - [ ] 💡 **need to add early easy way to unlock a basic, slower mount** `mwdjdlyiblypv`
 - [ ] 💡 **add crafting heading to the book of knowledge, like the crafting menus have** `mwdiiz9l12mk4`
 - [ ] 💡 **improve the fishing stool.** `mwdii923fm2t2`
