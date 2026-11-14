@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-14T20:39:16.709Z_
+_Updated 2026-11-14T20:40:11.066Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,6 +174,9 @@ _50 done._
 
 ### Soon
 
+- [ ] 💡 **remove this stone ramp and smooth the area.** `mwgvdjoepftx3`
+  > instead add a boost point to use a glider, pushing you up high to land on the stone.  also feel like these pillars need to be taller and wider, to allow more room for things on them.
+  - images: images/mwgvcfgyzviqx.jpg
 - [ ] 💡 **smooth this slope** `mwgvbhazs5xnj`
   - images: images/mwgvbggeo5491.jpg
 - [ ] 💡 **remove sand and desert stone from this area** `mwgva9pfddiv7`
