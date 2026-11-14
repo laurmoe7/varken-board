@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-14T22:27:23.415Z_
+_Updated 2026-11-14T22:42:17.934Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,7 +174,6 @@ _50 done._
 
 ### Soon
 
-- [ ] 💡 **add signpost to front of crop fence to see stats on all crops and trees** _(doing)_ `mwgysgv9fzryj`
 - [ ] 💡 **polish and improve items icons. make icons of different ores and such look more different, for example** `mwgyzl4v7f785`
 - [ ] 💡 **remove this stone ramp and smooth the area.** `mwgvdjoepftx3`
   > instead add a boost point to use a glider, pushing you up high to land on the stone.  also feel like these pillars need to be taller and wider, to allow more room for things on them.
@@ -227,5 +226,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_112 done._
+_113 done._
 
