@@ -6962,6 +6962,26 @@
       "slot": "",
       "created": 1794487252842,
       "updated": 1794487252842
+    },
+    {
+      "id": "mwguzz27eaw8n",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "cant talk to this goblin trader, too far",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwguzy08wiotu"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688170559,
+      "updated": 1794688170559
     }
   ],
   "notes": [
@@ -7354,6 +7374,10 @@
     "mwcqljs2icrcs": {
       "name": "image.png",
       "added": 1794438914406
+    },
+    "mwguzy08wiotu": {
+      "name": "image.png",
+      "added": 1794688169196
     }
   }
 }
