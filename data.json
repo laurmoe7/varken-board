@@ -7100,6 +7100,26 @@
       "slot": "",
       "created": 1794688707419,
       "updated": 1794688707419
+    },
+    {
+      "id": "mwgvdjoepftx3",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "remove this stone ramp and smooth the area.",
+      "notes": "instead add a boost point to use a glider, pushing you up high to land on the stone.  also feel like these pillars need to be taller and wider, to allow more room for things on them.",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwgvcfgyzviqx"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688803806,
+      "updated": 1794688803806
     }
   ],
   "notes": [
