@@ -6982,6 +6982,26 @@
       "slot": "",
       "created": 1794688170559,
       "updated": 1794688170559
+    },
+    {
+      "id": "mwgv1xvp1izyl",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "change the shallows here to that the pier just barely sticks over it, and into the deeper water so you can get on your water mount after getting off the pier.",
+      "notes": "also add steps to get onto the pier from the deeper water",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwgv1lwwegjgh"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688262341,
+      "updated": 1794688262341
     }
   ],
   "notes": [
