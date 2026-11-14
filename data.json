@@ -7040,6 +7040,26 @@
       "slot": "",
       "created": 1794688456401,
       "updated": 1794688456401
+    },
+    {
+      "id": "mwgv6qoajrpja",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "make transition from grass to sand smoother",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwgv6prifriuc"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688486282,
+      "updated": 1794688486282
     }
   ],
   "notes": [
@@ -7444,6 +7464,10 @@
     "mwgv4p2az1cmw": {
       "name": "image.png",
       "added": 1794688390887
+    },
+    "mwgv6prifriuc": {
+      "name": "image.png",
+      "added": 1794688485106
     }
   }
 }
