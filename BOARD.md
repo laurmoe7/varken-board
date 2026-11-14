@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-14T20:30:51.877Z_
+_Updated 2026-11-14T20:31:10.224Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,6 +174,9 @@ _50 done._
 
 ### Soon
 
+- [ ] 💡 **change the shallows here to that the pier just barely sticks over it, and into the deeper water so you can get on your water mount after getting off the pier.** `mwgv1xvp1izyl`
+  > also add steps to get onto the pier from the deeper water
+  - images: images/mwgv1lwwegjgh.jpg
 - [ ] 💡 **cant talk to this goblin trader, too far** `mwguzz27eaw8n`
   - images: images/mwguzy08wiotu.jpg
 - [ ] 💡 **need to add early easy way to unlock a basic, slower mount** `mwdjdlyiblypv`
