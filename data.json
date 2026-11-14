@@ -7080,6 +7080,26 @@
       "slot": "",
       "created": 1794688650915,
       "updated": 1794688650915
+    },
+    {
+      "id": "mwgvbhazs5xnj",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "smooth this slope",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwgvbggeo5491"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688707419,
+      "updated": 1794688707419
     }
   ],
   "notes": [
@@ -7492,6 +7512,10 @@
     "mwgva8uifq09b": {
       "name": "image.png",
       "added": 1794688649807
+    },
+    "mwgvbggeo5491": {
+      "name": "image.png",
+      "added": 1794688706321
     }
   }
 }
