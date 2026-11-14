@@ -7002,6 +7002,26 @@
       "slot": "",
       "created": 1794688262341,
       "updated": 1794688262341
+    },
+    {
+      "id": "mwgv4qk10ixox",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "reduce the amount of small foliage around oasises",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwgv4p2az1cmw"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688392817,
+      "updated": 1794688392817
     }
   ],
   "notes": [
@@ -7402,6 +7422,10 @@
     "mwgv1lwwegjgh": {
       "name": "image.png",
       "added": 1794688246835
+    },
+    "mwgv4p2az1cmw": {
+      "name": "image.png",
+      "added": 1794688390887
     }
   }
 }
