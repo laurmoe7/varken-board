@@ -7060,6 +7060,26 @@
       "slot": "",
       "created": 1794688486282,
       "updated": 1794688486282
+    },
+    {
+      "id": "mwgva9pfddiv7",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "remove sand and desert stone from this area",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [
+        "mwgva8uifq09b"
+      ],
+      "gallery": false,
+      "slot": "",
+      "created": 1794688650915,
+      "updated": 1794688650915
     }
   ],
   "notes": [
@@ -7468,6 +7488,10 @@
     "mwgv6prifriuc": {
       "name": "image.png",
       "added": 1794688485106
+    },
+    "mwgva8uifq09b": {
+      "name": "image.png",
+      "added": 1794688649807
     }
   }
 }
