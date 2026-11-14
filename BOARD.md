@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-14T20:37:38.403Z_
+_Updated 2026-11-14T20:38:36.418Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,6 +174,8 @@ _50 done._
 
 ### Soon
 
+- [ ] 💡 **smooth this slope** `mwgvbhazs5xnj`
+  - images: images/mwgvbggeo5491.jpg
 - [ ] 💡 **remove sand and desert stone from this area** `mwgva9pfddiv7`
   - images: images/mwgva8uifq09b.jpg
 - [ ] 💡 **make transition from grass to sand smoother** `mwgv6qoajrpja`
