@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-14T20:58:16.541Z_
+_Updated 2026-11-14T22:15:24.847Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,7 +174,6 @@ _50 done._
 
 ### Soon
 
-- [ ] 💡 **fix signposts also showing text on the backside** _(doing)_ `mwgvnhawqzyat`
 - [ ] 💡 **remove this stone ramp and smooth the area.** `mwgvdjoepftx3`
   > instead add a boost point to use a glider, pushing you up high to land on the stone.  also feel like these pillars need to be taller and wider, to allow more room for things on them.
   - images: images/mwgvcfgyzviqx.jpg
@@ -226,5 +225,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_111 done._
+_112 done._
 
