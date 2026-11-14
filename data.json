@@ -7120,6 +7120,24 @@
       "slot": "",
       "created": 1794688803806,
       "updated": 1794688803806
+    },
+    {
+      "id": "mwgvnhawqzyat",
+      "project": "goblingame",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "fix signposts also showing text on the backside",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1794689267288,
+      "updated": 1794689267288
     }
   ],
   "notes": [
