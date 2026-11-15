@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-15T09:05:33.307Z_
+_Updated 2026-11-15T09:05:45.906Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -177,7 +177,7 @@ _50 done._
 - [ ] 💡 **polish and improve items icons. make icons of different ores and such look more different, for example** _(doing)_ `mwgyzl4v7f785`
 - [ ] 💡 **smooth this slope** _(doing)_ `mwgvbhazs5xnj`
   - images: images/mwgvbggeo5491.jpg
-- [ ] 💡 **remove sand and desert stone from this area** `mwgva9pfddiv7`
+- [ ] 💡 **remove sand and desert stone from this area** _(doing)_ `mwgva9pfddiv7`
   - images: images/mwgva8uifq09b.jpg
 - [ ] 💡 **make transition from grass to sand smoother** `mwgv6qoajrpja`
   - images: images/mwgv6prifriuc.jpg
