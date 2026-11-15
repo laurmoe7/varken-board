@@ -6950,38 +6950,38 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "need to add early easy way to unlock a basic, slower mount",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794733678489,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1794487252842,
-      "updated": 1794487252842
+      "updated": 1794733678489
     },
     {
       "id": "mwguzz27eaw8n",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "open",
+      "status": "done",
       "title": "cant talk to this goblin trader, too far",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794733675480,
       "images": [
         "mwguzy08wiotu"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794688170559,
-      "updated": 1794688170559
+      "updated": 1794733675480
     },
     {
       "id": "mwgv1xvp1izyl",
