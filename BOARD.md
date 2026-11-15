@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-14T22:42:17.934Z_
+_Updated 2026-11-15T09:05:17.910Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,10 +174,7 @@ _50 done._
 
 ### Soon
 
-- [ ] 💡 **polish and improve items icons. make icons of different ores and such look more different, for example** `mwgyzl4v7f785`
-- [ ] 💡 **remove this stone ramp and smooth the area.** `mwgvdjoepftx3`
-  > instead add a boost point to use a glider, pushing you up high to land on the stone.  also feel like these pillars need to be taller and wider, to allow more room for things on them.
-  - images: images/mwgvcfgyzviqx.jpg
+- [ ] 💡 **polish and improve items icons. make icons of different ores and such look more different, for example** _(doing)_ `mwgyzl4v7f785`
 - [ ] 💡 **smooth this slope** `mwgvbhazs5xnj`
   - images: images/mwgvbggeo5491.jpg
 - [ ] 💡 **remove sand and desert stone from this area** `mwgva9pfddiv7`
@@ -226,5 +223,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_113 done._
+_114 done._
 
