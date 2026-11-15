@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-15T09:06:19.346Z_
+_Updated 2026-11-15T09:06:31.968Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -184,7 +184,7 @@ _50 done._
 - [ ] 💡 **improve water elemental model. make them chubby and cute** _(doing)_ `mwgv63m9zhs4u`
 - [ ] 💡 **reduce the amount of small foliage around oasises** _(doing)_ `mwgv4qk10ixox`
   - images: images/mwgv4p2az1cmw.jpg
-- [ ] 💡 **change the shallows here to that the pier just barely sticks over it, and into the deeper water so you can get on your water mount after getting off the pier.** `mwgv1xvp1izyl`
+- [ ] 💡 **change the shallows here to that the pier just barely sticks over it, and into the deeper water so you can get on your water mount after getting off the pier.** _(doing)_ `mwgv1xvp1izyl`
   > also add steps to get onto the pier from the deeper water
   - images: images/mwgv1lwwegjgh.jpg
 - [ ] 💡 **cant talk to this goblin trader, too far** `mwguzz27eaw8n`
