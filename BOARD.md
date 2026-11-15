@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-15T15:44:14.731Z_
+_Updated 2026-11-15T17:04:31.644Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,8 +175,6 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add crafting heading to the book of knowledge, like the crafting menus have** _(doing)_ `mwdiiz9l12mk4`
-- [ ] 💡 **improve the fishing stool.** _(doing)_ `mwdii923fm2t2`
-  > give it a proper model, etc.
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
 - [ ] 💡 **change shortcuts to agility?** `mw9y67z5irv95`
@@ -207,5 +205,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_123 done._
+_124 done._
 
