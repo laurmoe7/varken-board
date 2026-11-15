@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-15T09:06:31.968Z_
+_Updated 2026-11-15T09:08:00.508Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -187,9 +187,6 @@ _50 done._
 - [ ] 💡 **change the shallows here to that the pier just barely sticks over it, and into the deeper water so you can get on your water mount after getting off the pier.** _(doing)_ `mwgv1xvp1izyl`
   > also add steps to get onto the pier from the deeper water
   - images: images/mwgv1lwwegjgh.jpg
-- [ ] 💡 **cant talk to this goblin trader, too far** `mwguzz27eaw8n`
-  - images: images/mwguzy08wiotu.jpg
-- [ ] 💡 **need to add early easy way to unlock a basic, slower mount** `mwdjdlyiblypv`
 - [ ] 💡 **add crafting heading to the book of knowledge, like the crafting menus have** `mwdiiz9l12mk4`
 - [ ] 💡 **improve the fishing stool.** `mwdii923fm2t2`
   > give it a proper model, etc.
@@ -223,5 +220,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_114 done._
+_116 done._
 
