@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-15T15:43:58.665Z_
+_Updated 2026-11-15T15:44:14.731Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -175,7 +175,7 @@ _50 done._
 ### Soon
 
 - [ ] 💡 **add crafting heading to the book of knowledge, like the crafting menus have** _(doing)_ `mwdiiz9l12mk4`
-- [ ] 💡 **improve the fishing stool.** `mwdii923fm2t2`
+- [ ] 💡 **improve the fishing stool.** _(doing)_ `mwdii923fm2t2`
   > give it a proper model, etc.
 - [ ] 💡 **add downside to dying.** `mwcoyyfv1uqhu`
   > payment?
