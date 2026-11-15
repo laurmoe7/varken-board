@@ -6988,118 +6988,118 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "change the shallows here to that the pier just barely sticks over it, and into the deeper water so you can get on your water mount after getting off the pier.",
       "notes": "also add steps to get onto the pier from the deeper water",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794757417641,
       "images": [
         "mwgv1lwwegjgh"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794688262341,
-      "updated": 1794733586681
+      "updated": 1794757417641
     },
     {
       "id": "mwgv4qk10ixox",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "reduce the amount of small foliage around oasises",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794757416705,
       "images": [
         "mwgv4p2az1cmw"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794688392817,
-      "updated": 1794733574336
+      "updated": 1794757416705
     },
     {
       "id": "mwgv63m9zhs4u",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "improve water elemental model. make them chubby and cute",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794757415759,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1794688456401,
-      "updated": 1794733555939
+      "updated": 1794757415759
     },
     {
       "id": "mwgv6qoajrpja",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "make transition from grass to sand smoother",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794757414812,
       "images": [
         "mwgv6prifriuc"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794688486282,
-      "updated": 1794733550628
+      "updated": 1794757414812
     },
     {
       "id": "mwgva9pfddiv7",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "remove sand and desert stone from this area",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794757413857,
       "images": [
         "mwgva8uifq09b"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794688650915,
-      "updated": 1794733540888
+      "updated": 1794757413857
     },
     {
       "id": "mwgvbhazs5xnj",
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "smooth this slope",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794757412397,
       "images": [
         "mwgvbggeo5491"
       ],
       "gallery": false,
       "slot": "",
       "created": 1794688707419,
-      "updated": 1794733528368
+      "updated": 1794757412397
     },
     {
       "id": "mwgvdjoepftx3",
@@ -7162,18 +7162,18 @@
       "project": "goblingame",
       "type": "idea",
       "priority": "soon",
-      "status": "doing",
+      "status": "done",
       "title": "polish and improve items icons. make icons of different ores and such look more different, for example",
       "notes": "",
       "build": "",
       "effort": "",
       "area": "",
-      "doneAt": 0,
+      "doneAt": 1794757411401,
       "images": [],
       "gallery": false,
       "slot": "",
       "created": 1794694870975,
-      "updated": 1794733510387
+      "updated": 1794757411401
     }
   ],
   "notes": [
