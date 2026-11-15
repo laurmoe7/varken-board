@@ -1,6 +1,6 @@
 # Varken board
 
-_Updated 2026-11-15T09:08:00.508Z_
+_Updated 2026-11-15T15:43:42.387Z_
 
 ## 🐹 Pet Shopper (https://github.com/laurmoe7/pet-shopper)
 
@@ -174,19 +174,6 @@ _50 done._
 
 ### Soon
 
-- [ ] 💡 **polish and improve items icons. make icons of different ores and such look more different, for example** _(doing)_ `mwgyzl4v7f785`
-- [ ] 💡 **smooth this slope** _(doing)_ `mwgvbhazs5xnj`
-  - images: images/mwgvbggeo5491.jpg
-- [ ] 💡 **remove sand and desert stone from this area** _(doing)_ `mwgva9pfddiv7`
-  - images: images/mwgva8uifq09b.jpg
-- [ ] 💡 **make transition from grass to sand smoother** _(doing)_ `mwgv6qoajrpja`
-  - images: images/mwgv6prifriuc.jpg
-- [ ] 💡 **improve water elemental model. make them chubby and cute** _(doing)_ `mwgv63m9zhs4u`
-- [ ] 💡 **reduce the amount of small foliage around oasises** _(doing)_ `mwgv4qk10ixox`
-  - images: images/mwgv4p2az1cmw.jpg
-- [ ] 💡 **change the shallows here to that the pier just barely sticks over it, and into the deeper water so you can get on your water mount after getting off the pier.** _(doing)_ `mwgv1xvp1izyl`
-  > also add steps to get onto the pier from the deeper water
-  - images: images/mwgv1lwwegjgh.jpg
 - [ ] 💡 **add crafting heading to the book of knowledge, like the crafting menus have** `mwdiiz9l12mk4`
 - [ ] 💡 **improve the fishing stool.** `mwdii923fm2t2`
   > give it a proper model, etc.
@@ -220,5 +207,5 @@ _50 done._
 - [ ] 💡 **fun casino is dragon area** _(hard)_ `mvs4x8pmisglf`
 - [ ] 💡 **get quests from your mirror to yourself** _(medium)_ `mvochibjr99y7`
 
-_116 done._
+_123 done._
 
