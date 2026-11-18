@@ -7174,6 +7174,24 @@
       "slot": "",
       "created": 1794694870975,
       "updated": 1794757411401
+    },
+    {
+      "id": "mwmle6jyfjcac",
+      "project": "pathfinder",
+      "type": "idea",
+      "priority": "soon",
+      "status": "open",
+      "title": "power attack buffs are applying to companions it should not apply to, when you use it for yourself",
+      "notes": "",
+      "build": "",
+      "effort": "",
+      "area": "pathfinder",
+      "doneAt": 0,
+      "images": [],
+      "gallery": false,
+      "slot": "",
+      "created": 1795034834350,
+      "updated": 1795034834350
     }
   ],
   "notes": [
